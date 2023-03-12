@@ -2,7 +2,7 @@ local wezterm = require "wezterm"
 
 return {
     font = wezterm.font_with_fallback {
-        { family = 'HackGen35 Console', assume_emoji_presentation = false },
+        { family = 'UDEV Gothic 35JPDOC', assume_emoji_presentation = false },
         { family = "Noto Emoji",        weight = 700 },
     },
     use_ime = true,

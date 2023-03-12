@@ -1,7 +1,6 @@
 set number
 set cursorline
 set virtualedit=onemore
-set list
 set laststatus=2
 set scrolloff=4
 set belloff=all
@@ -32,6 +31,11 @@ noremap <S-h>   ^
 noremap <S-j>   }
 noremap <S-k>   {
 noremap <S-l>   $
+
+vnoremap <S-h>   ^
+vnoremap <S-j>   }
+vnoremap <S-k>   {
+vnoremap <S-l>   $
 
 inoremap <C-h> <BS>
 inoremap <C-d> <Delete>
