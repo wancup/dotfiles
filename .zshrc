@@ -15,7 +15,7 @@ setopt no_beep
 setopt ignore_eof
 
 # path
-export PATH=$PATH:$HOME/.cargo/bin
+export PATH=$PATH:$HOME/.cargo/bin:$HOME/.local/bin
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
