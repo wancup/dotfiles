@@ -1,3 +1,9 @@
 gui:
   showIcons: true
+customCommands:
+  - key: '<c-space>'
+    command: 'gitmoji -c'
+    context: 'files'
+    description: 'Commit changes with gitmoji'
+    subprocess: true
 
