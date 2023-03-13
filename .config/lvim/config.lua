@@ -11,6 +11,9 @@ lvim.log.level = "warn"
 lvim.format_on_save.enabled = true
 lvim.colorscheme = "lunar"
 
+-- 絵文字が半角で表示されるのを防ぐ
+vim.fn.setcellwidths({ { 0x2600, 0x27FF, 2 }, { 0x1F000, 0x1FFFF, 2 }, { 0x2B06, 0x2B07, 2 } })
+
 -- keymappings [view all the defaults by pressing <leader>Lk]
 lvim.leader = "space"
 
