@@ -96,6 +96,11 @@ code_actions.setup {
   },
 }
 
+-- customize statusline
+local components = require("lvim.core.lualine.components")
+lvim.builtin.lualine.sections.lualine_a = { components.mode, "mode" }
+lvim.builtin.lualine.sections.lualine_y = { components.encoding, components.location }
+
 -- Additional Plugins
 -- lvim.plugins = {
 --     {
