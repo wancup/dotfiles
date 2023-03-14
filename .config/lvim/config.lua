@@ -102,12 +102,15 @@ lvim.builtin.lualine.sections.lualine_a = { components.mode, "mode" }
 lvim.builtin.lualine.sections.lualine_y = { components.encoding, components.location }
 
 -- Additional Plugins
--- lvim.plugins = {
---     {
---       "folke/trouble.nvim",
---       cmd = "TroubleToggle",
---     },
--- }
+lvim.plugins = {
+  {
+    "petertriho/nvim-scrollbar",
+    config = function()
+      require("scrollbar").setup()
+    end,
+    lazy = true
+  },
+}
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 vim.api.nvim_create_autocmd("BufEnter", {
