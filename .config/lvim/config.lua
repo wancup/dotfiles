@@ -105,11 +105,13 @@ code_actions.setup {
 -- }
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
--- vim.api.nvim_create_autocmd("BufEnter", {
---   pattern = { "*.json", "*.jsonc" },
---   -- enable wrap mode for json files only
---   command = "setlocal wrap",
--- })
+vim.api.nvim_create_autocmd("BufEnter", {
+  callback = function()
+    -- avoid to automatic comment out
+    vim.opt.formatoptions:remove("r")
+    vim.opt.formatoptions:remove("o")
+  end
+})
 -- vim.api.nvim_create_autocmd("FileType", {
 --   pattern = "zsh",
 --   callback = function()
