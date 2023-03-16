@@ -49,6 +49,11 @@ lvim.builtin.terminal.active = true
 lvim.builtin.terminal.insert_mappings = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
+lvim.builtin.indentlines.options.show_current_context = true
+lvim.builtin.indentlines.on_config_done = function()
+  vim.cmd [[highlight IndentBlanklineChar guifg=#21202e gui=nocombine]]
+  vim.cmd [[highlight IndentBlanklineContextChar guifg=#6e6a86 gui=nocombine]]
+end
 
 local cmp = require "cmp"
 lvim.builtin.cmp.mapping["<C-j>"] = cmp.mapping.confirm({ select = false })
