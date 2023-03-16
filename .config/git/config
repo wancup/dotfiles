@@ -1,0 +1,15 @@
+[merge]
+  tool = lvimdiff
+
+[mergetool]
+  keepBackup = false
+
+[mergetool "lvimdiff"]
+  cmd = lvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+
+[diff]
+  tool = lvimdiff
+
+[difftool]
+  prompt = false
+
