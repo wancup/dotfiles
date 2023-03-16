@@ -9,7 +9,6 @@ an executable
 -- general
 lvim.log.level = "warn"
 lvim.format_on_save.enabled = true
-lvim.colorscheme = "lunar"
 
 -- 絵文字が半角で表示されるのを防ぐ
 vim.fn.setcellwidths({ { 0x2600, 0x27FF, 2 }, { 0x1F000, 0x1FFFF, 2 }, { 0x2B06, 0x2B07, 2 } })
@@ -103,6 +102,18 @@ lvim.builtin.lualine.sections.lualine_y = { components.encoding, components.loca
 
 -- Additional Plugins
 lvim.plugins = {
+  {
+    "rose-pine/neovim",
+    as = "rose-pine",
+    config = function()
+      require("rose-pine").setup({
+        dim_nc_background = true,
+        disable_italics = true,
+      })
+      vim.cmd("colorscheme rose-pine")
+    end,
+    lazy = true,
+  },
   {
     "petertriho/nvim-scrollbar",
     config = function()
