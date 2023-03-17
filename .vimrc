@@ -32,10 +32,10 @@ noremap <S-j>   }
 noremap <S-k>   {
 noremap <S-l>   $
 
-vnoremap <S-h>   ^
-vnoremap <S-j>   }
-vnoremap <S-k>   {
-vnoremap <S-l>   $
+xnoremap <S-h>   ^
+xnoremap <S-j>   }
+xnoremap <S-k>   {
+xnoremap <S-l>   $
 
 inoremap <C-h> <BS>
 inoremap <C-d> <Delete>
