@@ -24,7 +24,7 @@ return {
     event = { "BufReadPost", "BufNewFile" },
     config = true,
     keys = {
-      { "<leader>tl", "<cmd>TodoTrouble<cr>",   desc = "[T]odo [L]ist" },
+      { "<leader>tL", "<cmd>TodoTrouble<cr>",   desc = "[T]odo [L]ist" },
       { "<leader>ft", "<cmd>TodoTelescope<cr>", desc = "[F]ind [T]odos" },
     },
   },
