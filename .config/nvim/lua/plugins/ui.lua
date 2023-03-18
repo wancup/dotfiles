@@ -7,7 +7,7 @@ return {
       "nvim-tree/nvim-web-devicons"
     },
     opts = {
-      options = { theme = "codedark" },
+      options = { theme = "rose-pine" },
       sections = {
         lualine_a = { "mode" },
         lualine_b = { "branch", "diff", "diagnostics" },
@@ -15,8 +15,8 @@ return {
         lualine_x = { "encoding", "fileformat", "filetype" },
         lualine_y = { "filesize" },
         lualine_z = { "progress", "location" }
-      }
-    }
+      },
+    },
   },
 
   -- File Tree

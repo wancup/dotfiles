@@ -8,7 +8,7 @@ return {
         dim_nc_background = true,
         disable_italics = true,
         highlight_groups = {
-          NoiceCmdlinePrompt= {  bg = "love" },
+          Keyword = { fg = "#7c9cee" }, -- Overwrap to increase contrast
           NoiceCmdlinePopupBorder = { fg = "love" },
           NoiceCursor = { bg = "highlight_med" },
         },
