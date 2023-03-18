@@ -19,6 +19,7 @@ opt.scrolloff = 4
 opt.breakindent = true
 opt.splitbelow = true
 opt.splitright = true
+opt.pumheight = 10
 
 -- Search
 opt.hlsearch = true
