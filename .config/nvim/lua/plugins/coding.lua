@@ -1,0 +1,34 @@
+return {
+  -- Toggle Comment
+  {
+    "numToStr/Comment.nvim",
+    dependencies = { "JoosepAlviste/nvim-ts-context-commentstring", lazy = false },
+    keys = {
+      { "<leader>/", "<Plug>(comment_toggle_linewise_current)", mode = { "n" }, desc = "Toggle Comment" },
+      { "<leader>/", "<Plug>(comment_toggle_linewise_visual)",  mode = { "x" }, desc = "Toggle Selected Comment" }
+    },
+    opts = {
+      mappings = false,
+      pre_hook = function(...)
+        local ok, ts_context = pcall(require, "ts_context_commentstring.integrations.comment_nvim")
+        if ok then
+          return ts_context.create_pre_hook()(...)
+        end
+      end,
+    }
+  },
+
+  -- Better Rename
+  {
+    "smjonas/inc-rename.nvim",
+    keys = {
+      { "<leader>rn", "<cmd>IncRename <cr>", }
+    },
+    config = function()
+      require("inc_rename").setup()
+      vim.keymap.set("n", "<leader>rn", function()
+        return ":IncRename " .. vim.fn.expand("<cword>")
+      end, { expr = true, desc = "[R]e[N]ame" })
+    end
+  },
+}
