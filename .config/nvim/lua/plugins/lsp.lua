@@ -77,6 +77,7 @@ return {
         on_attach = on_attach,
         sources = {
           nls.builtins.formatting.shfmt,
+          nls.builtins.code_actions.gitsigns,
         },
       }
     end,
