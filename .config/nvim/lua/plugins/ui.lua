@@ -2,10 +2,7 @@ return {
   -- Status Line
   {
     "nvim-lualine/lualine.nvim",
-    dependencies = {
-      "nvim-lua/lsp-status.nvim",
-      "nvim-tree/nvim-web-devicons"
-    },
+    dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
       options = { theme = "rose-pine" },
       sections = {
