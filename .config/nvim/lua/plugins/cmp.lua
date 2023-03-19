@@ -9,7 +9,12 @@ return {
     "hrsh7th/nvim-cmp",
     version = false,
     event = "InsertEnter",
-    dependencies = { "hrsh7th/cmp-nvim-lsp", "L3MON4D3/LuaSnip", "saadparwaiz1/cmp_luasnip" },
+    dependencies = {
+      "hrsh7th/cmp-nvim-lsp",
+      "L3MON4D3/LuaSnip",
+      "saadparwaiz1/cmp_luasnip",
+      "onsails/lspkind.nvim"
+    },
     opts = function()
       require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/lua/snippets/" })
 
@@ -62,7 +67,10 @@ return {
           ["<CR>"] = cmp.mapping.confirm({ select = false }),
           ["<C-j>"] = cmp.mapping.confirm({ select = false }),
         }),
+        formatting = {
+          format = require("lspkind").cmp_format()
+        }
       }
     end
-  }
+  },
 }
