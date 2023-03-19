@@ -28,13 +28,9 @@ set encoding=utf-8
 noremap j gj
 noremap k gk
 noremap <S-h>   ^
-noremap <S-j>   }
-noremap <S-k>   {
 noremap <S-l>   $
 
 xnoremap <S-h>   ^
-xnoremap <S-j>   }
-xnoremap <S-k>   {
 xnoremap <S-l>   $
 
 inoremap <C-h> <BS>

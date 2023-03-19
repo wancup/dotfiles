@@ -4,14 +4,14 @@ local map = vim.keymap.set
 map("n", "j", "gj")
 map("n", "k", "gk")
 map("n", "<S-h>", "^")
-map("n", "<S-j>", "}")
-map("n", "<S-k>", "{")
 map("n", "<S-l>", "$")
+map("n", "<C-Up>", "<cmd>resize +2<cr>")
+map("n", "<C-Down>", "<cmd>resize -2<cr>")
+map("n", "<C-Left>", "<cmd>vertical resize -2<cr>")
+map("n", "<C-Right>", "<cmd>vertical resize +2<cr>")
 
 -- Visual
 map("x", "<S-h>", "^")
-map("x", "<S-j>", "}")
-map("x", "<S-k>", "{")
 map("x", "<S-l>", "$")
 
 -- Insert
