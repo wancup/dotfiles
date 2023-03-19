@@ -16,7 +16,7 @@ return {
       "onsails/lspkind.nvim"
     },
     opts = function()
-      require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/lua/snippets/" })
+      require("luasnip.loaders.from_lua").load()
 
       local cmp = require("cmp")
       local luasnip = require("luasnip")
