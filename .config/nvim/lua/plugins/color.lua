@@ -17,6 +17,9 @@ return {
           IlluminatedWordText = { bg = "love", blend = 20 },
           IlluminatedWordRead = { bg = "love", blend = 20 },
           IlluminatedWordWrite = { bg = "love", blend = 20 },
+          -- Node.js Package Info
+          PackageInfoOutdatedVersion = { fg = "love" },
+          PackageInfoUpToDateVersion = { fg = "highlight_med" },
         },
       })
       vim.cmd("colorscheme rose-pine")
@@ -42,7 +45,7 @@ return {
   {
     "RRethy/vim-illuminate",
     event = { "BufReadPost", "BufNewFile" },
-    opts ={
+    opts = {
       min_count_to_highlight = 2,
     },
     config = function(_, opts)

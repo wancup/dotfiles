@@ -103,6 +103,7 @@ return {
         ["<leader>gh"] = { name = "Git Hunk" },
         ["<leader>gb"] = { name = "Git Buffer" },
         ["<leader>n"] = { name = "Noice" },
+        ["<leader>N"] = { name = "Node.js" },
         ["<leader>q"] = { name = "Quickfix" },
         ["<leader>r"] = { name = "[R]e[N]ame" },
         ["<leader>t"] = { name = "Todo" },
