@@ -26,9 +26,6 @@ return {
       { "gt",         "<cmd>Telescope lsp_type_definitions<cr>", desc = "[G]oto [T]ype Definitions" },
       { "K",          vim.lsp.buf.hover,                         desc = "Hover" },
       { "gK",         vim.lsp.buf.signature_help,                desc = "Signature Help", },
-
-      -- Code Action
-      { "<leader>a",  vim.lsp.buf.code_action,                   desc = "Code [A]ction",            mode = { "n", "v" }, },
     },
     config = function()
       vim.diagnostic.config({ underline = true, severity_sort = true })
@@ -122,6 +119,15 @@ return {
         },
       }
     end,
+  },
+
+  -- Code Action Menu
+  {
+    "weilbith/nvim-code-action-menu",
+    cmd = "CodeActionMenu",
+    keys = {
+      { "<leader>a", "<cmd>CodeActionMenu<cr>", desc = "Code [A]ction", mode = { "n", "v" }, },
+    },
   },
 
 }
