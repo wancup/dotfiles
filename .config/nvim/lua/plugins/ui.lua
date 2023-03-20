@@ -102,6 +102,7 @@ return {
         ["<leader>g"] = { name = "Git" },
         ["<leader>gh"] = { name = "Git Hunk" },
         ["<leader>gb"] = { name = "Git Buffer" },
+        ["<leader>l"] = { name = "Lazygit" },
         ["<leader>n"] = { name = "Noice" },
         ["<leader>N"] = { name = "Node.js" },
         ["<leader>q"] = { name = "Quickfix" },

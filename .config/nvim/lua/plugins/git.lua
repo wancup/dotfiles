@@ -41,7 +41,7 @@ return {
   -- Lazygit
   {
     "kdheepak/lazygit.nvim",
-    cmd = {"LazyGit", "LazyGitCurrentFile", "LazyGitConfig", "LazyGitFilter", "LazyGitFilterCurrentFile"},
+    cmd = { "LazyGit", "LazyGitCurrentFile", "LazyGitConfig", "LazyGitFilter", "LazyGitFilterCurrentFile" },
     keys = {
       { "<leader>lg", "<cmd>LazyGit<cr>", desc = "[L]azy [G]it" },
     }
@@ -54,9 +54,24 @@ return {
     keys = {
       { "<leader>gd", "<cmd>DiffviewOpen<cr>",          desc = "[G]it [D]iff" },
       { "<leader>gc", "<cmd>DiffviewClose<cr>",         desc = "[G]it Diff [C]lose" },
-      { "<leader>gl", "<cmd>DiffviewFileHistory<cr>",   desc = "[G]it [L]og" },
-      { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "[G]it [H]istory" },
-    }
-  },
+      { "<leader>gl", "<cmd>DiffviewFileHistory %<cr>", desc = "[G]it [L]og Current File" },
+      { "<leader>gL", "<cmd>DiffviewFileHistory<cr>",   desc = "[G]it [L]og" },
+    },
+    config = function()
+      local actions = require("diffview.actions")
+      require("diffview").setup({
+        keymaps = {
+          file_panel = {
+            { "n", "<C-j>", actions.select_entry,     { desc = "Open the diff for the selected entry." } },
+            { "n", "q",     "<cmd>DiffviewClose<cr>", { desc = "Close Diffview" } },
+          },
+          file_history_panel = {
+            { "n", "<C-j>", actions.select_entry,     { desc = "Open the diff for the selected entry." } },
+            { "n", "q",     "<cmd>DiffviewClose<cr>", { desc = "Close Diffview" } },
+          }
+        },
+      })
+    end
+  }
 
 }
