@@ -1,4 +1,5 @@
 return {
+  -- Signs
   {
     "lewis6991/gitsigns.nvim",
     event = { "BufReadPre", "BufNewFile" },
@@ -21,8 +22,6 @@ return {
         map("n", "<leader>gbs", gs.stage_buffer, "[G]it [B]uffer [S]tage")
         map("n", "<leader>gbr", gs.reset_buffer, "[G]it [B]uffer [R]eset")
         map("n", "<leader>gB", function() gs.blame_line({ full = true }) end, "[G]it [B]lame Line")
-        map("n", "<leader>gd", gs.diffthis, "[G]it [D]iff This")
-        map("n", "<leader>gD", function() gs.diffthis("~") end, "[G]it [D]iff This ~")
         map(
           "n",
           "<leader>gt",
@@ -37,5 +36,27 @@ return {
         map({ 'o', 'x' }, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
       end,
     },
-  }
+  },
+
+  -- Lazygit
+  {
+    "kdheepak/lazygit.nvim",
+    cmd = {"LazyGit", "LazyGitCurrentFile", "LazyGitConfig", "LazyGitFilter", "LazyGitFilterCurrentFile"},
+    keys = {
+      { "<leader>lg", "<cmd>LazyGit<cr>", desc = "[L]azy [G]it" },
+    }
+  },
+
+  -- Diff View
+  {
+    "sindrets/diffview.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    keys = {
+      { "<leader>gd", "<cmd>DiffviewOpen<cr>",          desc = "[G]it [D]iff" },
+      { "<leader>gc", "<cmd>DiffviewClose<cr>",         desc = "[G]it Diff [C]lose" },
+      { "<leader>gl", "<cmd>DiffviewFileHistory<cr>",   desc = "[G]it [L]og" },
+      { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "[G]it [H]istory" },
+    }
+  },
+
 }

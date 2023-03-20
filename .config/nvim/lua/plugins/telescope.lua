@@ -2,7 +2,7 @@ return {
   {
     "nvim-telescope/telescope.nvim",
     version = "*",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    dependencies = { "nvim-lua/plenary.nvim", "olacin/telescope-gitmoji.nvim" },
     cmd = "Telescope",
     keys = {
       { "<leader><space>", "<cmd>Telescope live_grep<cr>",                 desc = "Live Grep" },
@@ -23,9 +23,13 @@ return {
       { "<leader>fS",      "<cmd>Telescope lsp_workspace_symbols<cr>",     desc = "[F]ind Workspace [S]ymbols", },
 
       -- git
-      { "<leader>gfc",     "<cmd>Telescope git_commits<CR>",               desc = "[G]it [F]ind [C]ommits" },
-      { "<leader>gfC",     "<cmd>Telescope git_commits<CR>",               desc = "[G]it [F]ind Buffer [C]ommits" },
-      { "<leader>gfs",     "<cmd>Telescope git_status<CR>",                desc = "[G]it [F]ind [S]tatus" },
+      { "<leader>fgl",     "<cmd>Telescope git_commits<cr>",               desc = "[F]ind [G]it [L]og" },
+      { "<leader>fgh",     "<cmd>Telescope git_bcommits<cr>",              desc = "[F]ind [G]it [H]istory" },
+      { "<leader>fgb",     "<cmd>Telescope git_branches<cr>",              desc = "[F]ind [G]it [B]ranches" },
+      { "<leader>fgs",     "<cmd>Telescope git_status<cr>",                desc = "[F]ind [G]it [S]tatus" },
+      { "<leader>fgS",     "<cmd>Telescope git_stash<cr>",                 desc = "[F]ind [G]it [S]tash" },
+      { "<leader>fgS",     "<cmd>Telescope git_stash<cr>",                 desc = "[F]ind [G]it [S]tash" },
+      { "<leader>fgm",     "<cmd>Telescope gitmoji<cr>",                   desc = "[F]ind [G]it[M]oji" },
     },
     opts = {
       defaults = {
@@ -40,6 +44,19 @@ return {
         },
         layout_strategy = "vertical",
       },
+      extensions = {
+        gitmoji = {
+          action = function(entry)
+            local emoji = entry.value.value
+            vim.fn.setreg(vim.v.register, emoji)
+          end,
+        },
+      },
     },
+    config = function(_, opts)
+      local telescope = require("telescope")
+      telescope.setup(opts)
+      telescope.load_extension("gitmoji")
+    end
   }
 }
