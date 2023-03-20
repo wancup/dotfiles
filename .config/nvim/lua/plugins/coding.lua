@@ -52,4 +52,13 @@ return {
     "windwp/nvim-ts-autotag",
     config = true,
   },
+
+  -- Session
+  {
+    "olimorris/persisted.nvim",
+    opts = {
+      use_git_branch = true,
+      autoload = true,
+    },
+  },
 }

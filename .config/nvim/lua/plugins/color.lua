@@ -8,9 +8,15 @@ return {
         dim_nc_background = true,
         disable_italics = true,
         highlight_groups = {
+          -- Treesitteer
           Keyword = { fg = "#7c9cee" }, -- Overwrap to increase contrast
+          -- Noice
           NoiceCmdlinePopupBorder = { fg = "love" },
           NoiceCursor = { bg = "highlight_med" },
+          -- Illuminate
+          IlluminatedWordText = { bg = "love", blend = 20 },
+          IlluminatedWordRead = { bg = "love", blend = 20 },
+          IlluminatedWordWrite = { bg = "love", blend = 20 },
         },
       })
       vim.cmd("colorscheme rose-pine")
@@ -29,4 +35,18 @@ return {
     },
   },
 
+  -- Easy Jump
+  { "unblevable/quick-scope" },
+
+  -- Cursor Word Highlight
+  {
+    "RRethy/vim-illuminate",
+    event = { "BufReadPost", "BufNewFile" },
+    opts ={
+      min_count_to_highlight = 2,
+    },
+    config = function(_, opts)
+      require("illuminate").configure(opts)
+    end,
+  },
 }

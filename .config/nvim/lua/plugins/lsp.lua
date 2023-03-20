@@ -8,6 +8,7 @@ return {
       { "williamboman/mason.nvim", config = true },
       "williamboman/mason-lspconfig.nvim",
       { "folke/neodev.nvim",       config = true },
+      "b0o/schemastore.nvim",
     },
     keys = {
       { "<leader>F",  "<cmd>Format<cr>",                         desc = "[F]ormat" },
@@ -41,7 +42,20 @@ return {
       local default_capabilities = vim.lsp.protocol.make_client_capabilities()
       local capabilities = require("cmp_nvim_lsp").default_capabilities(default_capabilities)
 
-      require("mason-lspconfig").setup()
+      require("mason-lspconfig").setup({
+        ensure_installed = {
+          "bashls",
+          "lua_ls",
+          "jsonls",
+          "yamlls",
+          "html",
+          "cssls",
+          "tsserver",
+          "tailwindcss",
+          "astro",
+          "rust_analyzer",
+        },
+      })
       require("mason-lspconfig").setup_handlers({
         function(server)
           require("lspconfig")[server].setup {
@@ -50,13 +64,36 @@ return {
           }
         end
       })
+
+      -- Setup Scheme
+      require('lspconfig').jsonls.setup {
+        settings = {
+          json = {
+            schemas = require('schemastore').json.schemas(),
+            validate = { enable = true },
+          },
+        },
+      }
+      require('lspconfig').yamlls.setup {
+        settings = {
+          yaml = {
+            schemas = require('schemastore').yaml.schemas(),
+          },
+        },
+      }
     end,
   },
 
   -- Linter and Formatter
   {
     "jose-elias-alvarez/null-ls.nvim",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      {
+        "jose-elias-alvarez/typescript.nvim",
+        config = true,
+      },
+    },
     opts = function()
       local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
       local on_attach = function(client, bufnr)
@@ -72,12 +109,16 @@ return {
         end
       end
 
-      local nls = require("null-ls")
+      local null_ls = require("null-ls")
       return {
         on_attach = on_attach,
         sources = {
-          nls.builtins.formatting.shfmt,
-          nls.builtins.code_actions.gitsigns,
+          null_ls.builtins.formatting.shfmt,
+          null_ls.builtins.code_actions.gitsigns,
+          null_ls.builtins.diagnostics.eslint,
+          null_ls.builtins.code_actions.eslint,
+          null_ls.builtins.formatting.prettier,
+          require("typescript.extensions.null-ls.code-actions"),
         },
       }
     end,
