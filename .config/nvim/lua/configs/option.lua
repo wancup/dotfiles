@@ -10,6 +10,7 @@ opt.undofile = true
 opt.clipboard = "unnamedplus"
 opt.spell = true
 opt.spelllang = "en_us"
+opt.timeoutlen = 300
 
 -- UI
 opt.cursorline = true

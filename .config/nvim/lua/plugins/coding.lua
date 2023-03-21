@@ -22,7 +22,7 @@ return {
   {
     "smjonas/inc-rename.nvim",
     keys = {
-      { "<leader>rn", "<cmd>IncRename <cr>", }
+      { "<leader>rn", "<cmd>IncRename <cr>", desc = "[R]e[N]ame" }
     },
     config = function()
       require("inc_rename").setup()
