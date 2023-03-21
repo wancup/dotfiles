@@ -8,7 +8,8 @@ opt.confirm = true
 opt.mouse = "a"
 opt.undofile = true
 opt.clipboard = "unnamedplus"
-opt.spelllang = { "en" }
+opt.spell = true
+opt.spelllang = "en_us"
 
 -- UI
 opt.cursorline = true
