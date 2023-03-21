@@ -11,4 +11,5 @@ return {
   initial_cols = 160,
   initial_rows = 48,
   color_scheme = "Duotone Dark",
+  audible_bell = "Disabled",
 }
