@@ -1,3 +1,6 @@
+[fetch]
+  prune = true
+
 [merge]
   tool = nvimdiff
 
