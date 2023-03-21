@@ -31,31 +31,45 @@ return {
       { "<leader>fgS",     "<cmd>Telescope git_stash<cr>",                 desc = "[F]ind [G]it [S]tash" },
       { "<leader>fgm",     "<cmd>Telescope gitmoji<cr>",                   desc = "[F]ind [G]it[M]oji" },
     },
-    opts = {
-      defaults = {
-        mappings = {
-          i = {
-            ["<C-i>"] = "which_key",
-            ["<C-j>"] = "select_default",
-          },
-          n = {
-            ["q"] = "close",
-          },
-        },
-        layout_strategy = "vertical",
-      },
-      extensions = {
-        gitmoji = {
-          action = function(entry)
-            local emoji = entry.value.value
-            vim.fn.setreg(vim.v.register, emoji)
-          end,
-        },
-      },
-    },
-    config = function(_, opts)
+    config = function()
       local telescope = require("telescope")
-      telescope.setup(opts)
+      local telescopeConfig = require("telescope.config")
+
+      -- Allow to find hidden files, exclude .git directory.
+      -- https://github.com/nvim-telescope/telescope.nvim/wiki/Configuration-Recipes#file-and-text-search-in-hidden-files-and-directories
+      local vimgrep_arguments = { unpack(telescopeConfig.values.vimgrep_arguments) }
+      table.insert(vimgrep_arguments, "--hidden")
+      table.insert(vimgrep_arguments, "--glob")
+      table.insert(vimgrep_arguments, "!**/.git/*")
+
+      telescope.setup({
+        defaults = {
+          mappings = {
+            i = {
+              ["<C-i>"] = "which_key",
+              ["<C-j>"] = "select_default",
+            },
+            n = {
+              ["q"] = "close",
+            },
+          },
+          layout_strategy = "vertical",
+          vimgrep_arguments = vimgrep_arguments,
+        },
+        extensions = {
+          gitmoji = {
+            action = function(entry)
+              local emoji = entry.value.value
+              vim.fn.setreg(vim.v.register, emoji)
+            end,
+          },
+        },
+        pickers = {
+          find_files = {
+            find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+          },
+        },
+      })
       telescope.load_extension("gitmoji")
     end
   }
