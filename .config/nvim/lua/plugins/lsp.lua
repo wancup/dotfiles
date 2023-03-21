@@ -66,7 +66,12 @@ return {
       require('lspconfig').jsonls.setup {
         settings = {
           json = {
-            schemas = require('schemastore').json.schemas(),
+            schemas = require('schemastore').json.schemas({
+              select = {
+                "package.json",
+                "tsconfig.json",
+              }
+            }),
             validate = { enable = true },
           },
         },
@@ -74,7 +79,14 @@ return {
       require('lspconfig').yamlls.setup {
         settings = {
           yaml = {
-            schemas = require('schemastore').yaml.schemas(),
+            schemas = require('schemastore').yaml.schemas({
+              select = {
+                "GitHub issue forms",
+                "GitHub Issue Template configuration",
+                "GitHub Workflow",
+                "GitHub Workflow Template Properties",
+              },
+            }),
           },
         },
       }
