@@ -33,6 +33,7 @@ return {
     },
     config = function()
       local telescope = require("telescope")
+      local actions = require("telescope.actions")
       local telescopeConfig = require("telescope.config")
 
       -- Allow to find hidden files, exclude .git directory.
@@ -48,6 +49,8 @@ return {
             i = {
               ["<C-i>"] = "which_key",
               ["<C-j>"] = "select_default",
+              ["<C-u>"] = false,
+              ["<esc>"] = actions.close,
             },
             n = {
               ["q"] = "close",

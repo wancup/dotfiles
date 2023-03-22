@@ -34,11 +34,30 @@ return {
       close_if_last_window = true,
       window = {
         mappings = {
-          ["<C-j>"] = "open",
+          ["<C-j>"] = "toggle_node",
+          ["<space>"] = false,
         },
         width = 30,
       },
       filesystem = {
+        window = {
+          mappings = {
+            ["<leader>ff"] = "find_files_in_dir",
+            ["<leader><leader>"] = "live_grep_in_dir",
+          }
+        },
+        commands = {
+          find_files_in_dir = function(state)
+            local node = state.tree:get_node()
+            local path = node:get_id()
+            require('telescope.builtin').find_files({ search_dirs = { path } })
+          end,
+          live_grep_in_dir = function(state)
+            local node = state.tree:get_node()
+            local path = node:get_id()
+            require('telescope.builtin').live_grep({ search_dirs = { path } })
+          end,
+        },
         filtered_items = {
           visible = true,
           hide_dotfiles = false,
