@@ -81,4 +81,26 @@ return {
       },
     },
   },
+
+  -- Better Register
+  {
+    "tversteeg/registers.nvim",
+    event = "VeryLazy",
+    keys = {
+      { "\"",    "<cmd>Registers<cr>", desc = "Open Registers", mode = { "n", "v" } },
+      { "<C-r>", "<cmd>Registers<cr>", desc = "Open Registers", mode = "i", }
+    },
+    cmd = { "Registers" },
+    config = function()
+      local registers = require("registers")
+      registers.setup({
+        bind_keys = {
+          normal = false,
+          visual = false,
+          insert = false,
+          ["<C-j>"] = registers.apply_register(),
+        }
+      })
+    end
+  },
 }
