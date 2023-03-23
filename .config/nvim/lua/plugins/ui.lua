@@ -36,6 +36,8 @@ return {
         mappings = {
           ["<C-j>"] = "open",
           ["<space>"] = false,
+          ["<"] = false,
+          [">"] = false,
         },
         width = 30,
       },
@@ -44,6 +46,7 @@ return {
           mappings = {
             ["<leader>ff"] = "find_files_in_dir",
             ["<leader><leader>"] = "live_grep_in_dir",
+            ["Y"] = "copy_file_name",
           }
         },
         commands = {
@@ -57,6 +60,10 @@ return {
             local path = node:get_id()
             require('telescope.builtin').live_grep({ search_dirs = { path } })
           end,
+          copy_file_name = function(state)
+            local node = state.tree:get_node()
+            vim.fn.setreg(vim.v.register, node.name)
+          end
         },
         filtered_items = {
           visible = true,
