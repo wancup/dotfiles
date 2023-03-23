@@ -34,7 +34,7 @@ return {
       close_if_last_window = true,
       window = {
         mappings = {
-          ["<C-j>"] = "toggle_node",
+          ["<C-j>"] = "open",
           ["<space>"] = false,
         },
         width = 30,
