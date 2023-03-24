@@ -5,3 +5,11 @@ vim.api.nvim_create_autocmd("BufEnter", {
     vim.opt.formatoptions:remove("o")
   end
 })
+
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+  pattern = { "*.ts", "*.tsx" },
+  callback = function()
+    vim.cmd("compiler tsc")
+    vim.opt.makeprg = "npx tsc"
+  end
+})
