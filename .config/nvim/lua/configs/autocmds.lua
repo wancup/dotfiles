@@ -10,6 +10,6 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
   pattern = { "*.ts", "*.tsx" },
   callback = function()
     vim.cmd("compiler tsc")
-    vim.opt.makeprg = "npx tsc"
+    vim.opt.makeprg = "npx tsc --noEmit --skipLibCheck"
   end
 })
