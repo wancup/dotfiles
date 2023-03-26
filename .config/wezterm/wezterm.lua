@@ -1,6 +1,6 @@
 local wezterm = require "wezterm"
 
-return {
+local config = {
   font = wezterm.font_with_fallback {
     { family = "UDEV Gothic 35JPDOC", assume_emoji_presentation = false },
     { family = "Noto Emoji",          weight = 700 },
@@ -13,3 +13,9 @@ return {
   color_scheme = "Duotone Dark",
   audible_bell = "Disabled",
 }
+
+if wezterm.target_triple == "aarch64-apple-darwin" then
+  config.default_prog = { "/opt/homebrew/bin/fish", "-l" }
+end
+
+return config
