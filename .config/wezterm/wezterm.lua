@@ -10,7 +10,7 @@ local config = {
   unicode_version = 14,
   initial_cols = 160,
   initial_rows = 48,
-  color_scheme = "Duotone Dark",
+  color_scheme = "tokyonight_night",
   audible_bell = "Disabled",
 }
 
