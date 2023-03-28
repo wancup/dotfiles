@@ -12,6 +12,11 @@ local config = {
   initial_rows = 48,
   color_scheme = "tokyonight_night",
   audible_bell = "Disabled",
+  colors = {
+    cursor_bg = "#524f67",
+    cursor_fg = "#e0def4",
+    cursor_border = "#524f67",
+  },
 }
 
 if wezterm.target_triple == "aarch64-apple-darwin" then
