@@ -41,15 +41,12 @@ return {
 
       require("mason-lspconfig").setup({
         ensure_installed = {
-          "bashls",
           "lua_ls",
           "jsonls",
           "yamlls",
           "html",
           "cssls",
           "tsserver",
-          "tailwindcss",
-          "astro",
           "rust_analyzer",
         },
       })
