@@ -7,7 +7,7 @@ return {
   s(
     "func",
     fmt(
-      "function {} ({}): {} {{\n}}", {
+      "function {}({}): {} {{\n}}", {
         i(1, "name"),
         i(2, "arguments"),
         i(3, "return_type"),
@@ -17,7 +17,7 @@ return {
   s(
     "efunc",
     fmt(
-      "export function {} ({}): {} {{\n}}", {
+      "export function {}({}): {} {{\n}}", {
         i(1, "name"),
         i(2, "arguments"),
         i(3, "return_type"),
@@ -27,7 +27,7 @@ return {
   s(
     "afunc",
     fmt(
-      "async function {} ({}): Promise<{}> {{\n}}", {
+      "async function {}({}): Promise<{}> {{\n}}", {
         i(1, "name"),
         i(2, "arguments"),
         i(3, "return_type"),
@@ -37,7 +37,7 @@ return {
   s(
     "eafunc",
     fmt(
-      "export async function {} ({}): Promise<{}> {{\n}}", {
+      "export async function {}({}): Promise<{}> {{\n}}", {
         i(1, "name"),
         i(2, "arguments"),
         i(3, "return_type"),
