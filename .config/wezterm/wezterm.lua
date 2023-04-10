@@ -21,6 +21,7 @@ local config = {
 
 if wezterm.target_triple == "aarch64-apple-darwin" then
   config.default_prog = { "/opt/homebrew/bin/fish", "-l" }
+  config.macos_forward_to_ime_modifier_mask = "SHIFT|CTRL"
 end
 
 return config
