@@ -30,4 +30,14 @@ return {
       State = l(l._1:sub(1, 1):upper() .. l._1:sub(2, -1), 1)
     })
   ),
+
+  s(
+    "func",
+    fmt(
+      "function {}({}): {} {{\n}}", {
+        i(1, "name"),
+        i(2, "arguments"),
+        i(3, "return_type"),
+      })
+  ),
 }
