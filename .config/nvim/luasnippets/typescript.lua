@@ -43,4 +43,40 @@ return {
         i(3, "return_type"),
       })
   ),
+
+  s(
+    "arr",
+    fmt(
+      "const {} = ({}): {} => {{\n}}", {
+        i(1, "name"),
+        i(2, "arguments"),
+        i(3, "return_type"),
+      })
+  ),
+
+  s(
+    "aarr",
+    fmt(
+      "const {} = async ({}): Promise<{}> => {{\n}}", {
+        i(1, "name"),
+        i(2, "arguments"),
+        i(3, "return_type"),
+      })
+  ),
+
+  s(
+    "cb",
+    fmt(
+      "({}) => {{\n}}", {
+        i(1),
+      })
+  ),
+
+  s(
+    "log",
+    fmt(
+      "console.log({})", {
+        i(1),
+      })
+  ),
 }
