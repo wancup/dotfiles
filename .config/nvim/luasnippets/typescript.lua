@@ -73,6 +73,14 @@ return {
   ),
 
   s(
+    "acb",
+    fmt(
+      "async ({}) => {{\n}}", {
+        i(1),
+      })
+  ),
+
+  s(
     "log",
     fmt(
       "console.log({})", {

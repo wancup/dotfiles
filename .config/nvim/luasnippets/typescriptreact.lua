@@ -9,14 +9,14 @@ return {
   s(
     "nrfc",
     fmt(
-    "import {{ ReactElement }} from \"react\";\n\ntype Props = {{}}\n\nfunction {}(props: Props): ReactElement{{\n}}", {
+    "import {{ ReactElement }} from \"react\";\n\ntype Props = {{}}\n\nfunction {}(props: Props): ReactElement{{\nreturn (\n\n)\n}}", {
       i(1, "name"),
     })
   ),
 
   s(
     "rfc",
-    fmt("function {}({}): ReactElement{{\n}}", {
+    fmt("function {}({}): ReactElement{{\nreturn (\n\n)\n}}", {
       i(1, "name"),
       i(2, "props")
     })
@@ -75,6 +75,14 @@ return {
     "cb",
     fmt(
       "({}) => {{\n}}", {
+        i(1),
+      })
+  ),
+
+  s(
+    "acb",
+    fmt(
+      "async ({}) => {{\n}}", {
         i(1),
       })
   ),
