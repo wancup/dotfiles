@@ -23,6 +23,14 @@ return {
   ),
 
   s(
+    "erfc",
+    fmt("export function {}({}): ReactElement{{\nreturn (\n\n)\n}}", {
+      i(1, "name"),
+      i(2, "props")
+    })
+  ),
+
+  s(
     "uses",
     fmt("const [{}, set{State}] = useState({});", {
       i(1, "state"),
