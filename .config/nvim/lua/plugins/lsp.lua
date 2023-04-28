@@ -46,47 +46,55 @@ return {
           "yamlls",
           "html",
           "cssls",
-          "tsserver",
+          "vtsls",
           "rust_analyzer",
         },
       })
       require("mason-lspconfig").setup_handlers({
         function(server)
+          if server == "jsonls" then
+            require("lspconfig").jsonls.setup {
+              settings = {
+                json = {
+                  schemas = require('schemastore').json.schemas({
+                    select = {
+                      "package.json",
+                      "tsconfig.json",
+                    }
+                  }),
+                  validate = { enable = true },
+                },
+              },
+            }
+            return
+          end
+
+          if server == "yamlls" then
+            require("lspconfig").yamlls.setup {
+              capabilities = capabilities,
+              on_attach = on_attach,
+              settings = {
+                yaml = {
+                  schemas = require('schemastore').yaml.schemas({
+                    select = {
+                      "GitHub issue forms",
+                      "GitHub Issue Template configuration",
+                      "GitHub Workflow",
+                      "GitHub Workflow Template Properties",
+                    },
+                  }),
+                },
+              },
+            }
+            return
+          end
+
           require("lspconfig")[server].setup {
             capabilities = capabilities,
             on_attach = on_attach,
           }
         end
       })
-
-      -- Setup Scheme
-      require('lspconfig').jsonls.setup {
-        settings = {
-          json = {
-            schemas = require('schemastore').json.schemas({
-              select = {
-                "package.json",
-                "tsconfig.json",
-              }
-            }),
-            validate = { enable = true },
-          },
-        },
-      }
-      require('lspconfig').yamlls.setup {
-        settings = {
-          yaml = {
-            schemas = require('schemastore').yaml.schemas({
-              select = {
-                "GitHub issue forms",
-                "GitHub Issue Template configuration",
-                "GitHub Workflow",
-                "GitHub Workflow Template Properties",
-              },
-            }),
-          },
-        },
-      }
     end,
   },
 
@@ -95,10 +103,6 @@ return {
     "jose-elias-alvarez/null-ls.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      {
-        "jose-elias-alvarez/typescript.nvim",
-        config = true,
-      },
     },
     opts = function()
       local lsp_formatting = function(bufnr)
@@ -133,7 +137,6 @@ return {
           null_ls.builtins.diagnostics.eslint_d,
           null_ls.builtins.code_actions.eslint_d,
           null_ls.builtins.formatting.prettier,
-          require("typescript.extensions.null-ls.code-actions"),
         },
       }
     end,
