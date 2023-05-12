@@ -39,7 +39,10 @@ return {
   },
 
   -- Easy Jump
-  { "unblevable/quick-scope" },
+  {
+    "ggandor/lightspeed.nvim",
+    config = true,
+  },
 
   -- Cursor Word Highlight
   {
