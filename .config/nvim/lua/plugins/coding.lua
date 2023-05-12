@@ -102,4 +102,12 @@ return {
       })
     end
   },
+
+  -- Easy Jump
+  {
+    "ggandor/lightspeed.nvim",
+    config = true,
+  },
+
+
 }

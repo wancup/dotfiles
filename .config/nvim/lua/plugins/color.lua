@@ -38,12 +38,6 @@ return {
     },
   },
 
-  -- Easy Jump
-  {
-    "ggandor/lightspeed.nvim",
-    config = true,
-  },
-
   -- Cursor Word Highlight
   {
     "RRethy/vim-illuminate",

@@ -22,6 +22,7 @@ opt.breakindent = true
 opt.splitbelow = true
 opt.splitright = true
 opt.pumheight = 10
+opt.relativenumber = true
 
 -- Search
 opt.hlsearch = true
