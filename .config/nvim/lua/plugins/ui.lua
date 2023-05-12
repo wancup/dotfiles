@@ -195,5 +195,12 @@ return {
     config = function(_, opts)
       require("mini.indentscope").setup(opts)
     end,
-  }
+  },
+
+  -- Display Color
+  {
+    "brenoprata10/nvim-highlight-colors",
+    config = true,
+  },
+
 }
