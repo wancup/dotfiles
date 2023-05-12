@@ -9,7 +9,7 @@ return {
   s(
     "nrfc",
     fmt(
-    "import {{ ReactElement }} from \"react\";\n\ntype Props = {{}}\n\nfunction {}(props: Props): ReactElement{{\nreturn (\n\n)\n}}", {
+    "import {{ ReactElement }} from \"react\";\n\ntype Props = {{}}\n\nexport function {}(props: Props): ReactElement{{\nreturn (\n\n)\n}}", {
       i(1, "name"),
     })
   ),
