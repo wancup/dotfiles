@@ -37,7 +37,7 @@ return {
     "windwp/nvim-autopairs",
     dependencies = { "hrsh7th/nvim-cmp" },
     config = function()
-      require("nvim-autopairs").setup({ check_ts = true, })
+      require("nvim-autopairs").setup({ check_ts = true, map_c_h = true })
       local cmp_autopairs = require('nvim-autopairs.completion.cmp')
       local cmp = require('cmp')
       cmp.event:on(
