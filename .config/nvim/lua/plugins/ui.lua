@@ -133,6 +133,7 @@ return {
         ["<leader>N"] = { name = "Node.js" },
         ["<leader>q"] = { name = "Quickfix" },
         ["<leader>r"] = { name = "[R]e[N]ame" },
+        ["<leader>s"] = { name = "Surround" },
         ["<leader>t"] = { name = "Todo" },
       })
     end,
