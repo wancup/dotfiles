@@ -25,8 +25,6 @@ syntax on
 set showmatch
 set encoding=utf-8
 
-noremap j gj
-noremap k gk
 noremap <S-h>   ^
 noremap <S-l>   $
 

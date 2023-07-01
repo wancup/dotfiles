@@ -1,8 +1,6 @@
 local map = vim.keymap.set
 
 -- Normal
-map("n", "j", "gj")
-map("n", "k", "gk")
 map("n", "<S-h>", "^")
 map("n", "<S-l>", "$")
 map("n", "<C-Up>", "<cmd>resize +2<cr>")
