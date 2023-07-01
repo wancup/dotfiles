@@ -21,5 +21,5 @@ alias lg="lazygit"
 
 # setup
 eval (/opt/homebrew/bin/brew shellenv)
-fnm env --use-on-cd | source
+rtx activate fish | source
 starship init fish | source
