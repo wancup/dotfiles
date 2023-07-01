@@ -7,7 +7,6 @@ local opt = vim.opt
 opt.confirm = true
 opt.mouse = "a"
 opt.undofile = true
-opt.clipboard = "unnamedplus"
 opt.spell = true
 opt.spelllang = "en_us"
 opt.timeoutlen = 300
