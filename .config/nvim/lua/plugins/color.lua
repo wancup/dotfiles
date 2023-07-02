@@ -49,4 +49,11 @@ return {
       require("illuminate").configure(opts)
     end,
   },
+
+  -- Tailspace
+  {
+    'echasnovski/mini.trailspace',
+    version = '*',
+    config = true,
+  },
 }
