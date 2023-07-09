@@ -22,6 +22,7 @@ opt.splitbelow = true
 opt.splitright = true
 opt.pumheight = 10
 opt.relativenumber = true
+opt.laststatus = 3
 
 -- Search
 opt.hlsearch = true
