@@ -86,17 +86,21 @@ return {
     "akinsho/bufferline.nvim",
     event = "VeryLazy",
     keys = {
-      { "<C-h>",      "<Cmd>BufferLineCyclePrev<CR>",  desc = "Buffer Prev" },
-      { "<C-l>",      "<Cmd>BufferLineCycleNext<CR>",  desc = "Buffer Next" },
-      { "<leader>bp", "<Cmd>BufferLinePick<CR>",       desc = "[B]uffer [P]ick" },
-      { "<leader>bc", "<Cmd>BufferLinePickClose<CR>",  desc = "[B]uffer Pick [C]lose" },
-      { "<leader>bt", "<Cmd>BufferLineTogglePin<CR>",  desc = "[B]uffer [T]oggle Pin" },
-      { "<leader>bH", "<Cmd>BufferLineCloseLeft<CR>",  desc = "[B]uffer Close Left" },
-      { "<leader>bL", "<Cmd>BufferLineCloseRight<CR>", desc = "[B]uffer Close Right" },
+      { "<C-h>",      "<Cmd>BufferLineCyclePrev<CR>",   desc = "Buffer Prev" },
+      { "<C-l>",      "<Cmd>BufferLineCycleNext<CR>",   desc = "Buffer Next" },
+      { "<leader>bp", "<Cmd>BufferLinePick<CR>",        desc = "[B]uffer [P]ick" },
+      { "<leader>bc", "<Cmd>BufferLinePickClose<CR>",   desc = "[B]uffer Pick [C]lose" },
+      { "<leader>bt", "<Cmd>BufferLineTogglePin<CR>",   desc = "[B]uffer [T]oggle Pin" },
+      { "<leader>bH", "<Cmd>BufferLineCloseLeft<CR>",   desc = "[B]uffer Close Left" },
+      { "<leader>bL", "<Cmd>BufferLineCloseRight<CR>",  desc = "[B]uffer Close Right" },
+      { "<leader>bO", "<Cmd>BufferLineCloseOthers<CR>", desc = "[B]uffer Close [O]thers" },
+      { "<leader>bh", "<Cmd>BufferLineMovePrev<CR>",    desc = "[B]uffer Move Left" },
+      { "<leader>bl", "<Cmd>BufferLineMoveNext<CR>",    desc = "[B]uffer Move Right" },
     },
     opts = {
       options = {
         always_show_bufferline = false,
+        diagnostics = "nvim_lsp",
         offsets = {
           {
             filetype = "neo-tree",
