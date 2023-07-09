@@ -8,7 +8,7 @@ return {
       {
         "<leader><space>",
         "<cmd>lua require('telescope.builtin').buffers({sort_mru=true, ignore_current_buffer=true})<cr>",
-        desc = "Current Buffers"
+        desc = "Recent Buffers"
       },
       { "<leader>fl",  "<cmd>Telescope live_grep<cr>",                 desc = "[F]ind [L]ive Grep" },
       { "<leader>fb",  "<cmd>Telescope buffers<cr>",                   desc = "[F]ind [B]uffers" },
