@@ -33,7 +33,7 @@ return {
   ),
 
   s(
-    "uses",
+    "us",
     fmt("const [{}, set{State}] = useState({});", {
       i(1, "state"),
       i(2, "initialState"),
