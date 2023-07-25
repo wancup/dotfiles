@@ -20,7 +20,7 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     cmd = "Neotree",
-    branch = "v2.x",
+    branch = "v3.x",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-web-devicons",
@@ -45,7 +45,7 @@ return {
         window = {
           mappings = {
             ["<leader>ff"] = "find_files_in_dir",
-            ["<leader><leader>"] = "live_grep_in_dir",
+            ["<leader>fl"] = "live_grep_in_dir",
             ["Y"] = "copy_file_name",
           }
         },
