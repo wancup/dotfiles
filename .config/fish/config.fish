@@ -18,6 +18,7 @@ end
 # alias
 alias rm="rm -i"
 alias lg="lazygit"
+alias n="nvim"
 
 # setup
 eval (/opt/homebrew/bin/brew shellenv)
