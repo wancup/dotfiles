@@ -81,7 +81,7 @@ return {
   ),
 
   s(
-    "log",
+    "cl",
     fmt(
       "console.log({})", {
         i(1),

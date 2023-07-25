@@ -44,7 +44,7 @@ return {
       end
 
       return {
-        sources = { { name = 'luasnip' }, { name = "nvim_lsp" }, },
+        sources = { { name = "nvim_lsp" }, { name = 'luasnip' }, },
         completion = { completeopt = "menu,menuone,noinsert", },
         snippet = {
           expand = function(args)
