@@ -203,7 +203,10 @@ return {
   -- Display Color
   {
     "brenoprata10/nvim-highlight-colors",
-    config = true,
+    event = "VeryLazy",
+    opts = {
+      enable_named_colors = false,
+    },
   },
 
 }
