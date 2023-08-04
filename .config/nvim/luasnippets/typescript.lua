@@ -5,7 +5,7 @@ local fmt = require("luasnip.extras.fmt").fmt
 
 return {
   s(
-    "func",
+    "fn",
     fmt(
       "function {}({}): {} {{\n}}", {
         i(1, "name"),
@@ -15,7 +15,7 @@ return {
   ),
 
   s(
-    "efunc",
+    "efn",
     fmt(
       "export function {}({}): {} {{\n}}", {
         i(1, "name"),
@@ -25,7 +25,7 @@ return {
   ),
 
   s(
-    "afunc",
+    "afn",
     fmt(
       "async function {}({}): Promise<{}> {{\n}}", {
         i(1, "name"),
@@ -35,7 +35,7 @@ return {
   ),
 
   s(
-    "eafunc",
+    "eafn",
     fmt(
       "export async function {}({}): Promise<{}> {{\n}}", {
         i(1, "name"),
@@ -61,6 +61,30 @@ return {
         i(1, "name"),
         i(2, "arguments"),
         i(3, "return_type"),
+      })
+  ),
+
+  s(
+    "if",
+    fmt(
+      "if ({}) {{\n}}", {
+        i(1),
+      })
+  ),
+
+  s(
+    "ife",
+    fmt(
+      "if ({}) {{\n}} else {{\n}}", {
+        i(1),
+      })
+  ),
+
+  s(
+    "try",
+    fmt(
+      "try {{{}\n}} catch(e: unknown) {{\n}}", {
+        i(1),
       })
   ),
 

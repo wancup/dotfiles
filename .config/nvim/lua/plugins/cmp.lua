@@ -44,7 +44,7 @@ return {
       end
 
       return {
-        sources = { { name = "nvim_lsp" }, { name = 'luasnip' }, },
+        sources = { { name = 'luasnip' }, { name = "nvim_lsp" } },
         completion = { completeopt = "menu,menuone,noinsert", },
         snippet = {
           expand = function(args)
@@ -62,7 +62,11 @@ return {
           ["<C-p>"] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
           ["<C-b>"] = cmp.mapping.scroll_docs(-4),
           ["<C-f>"] = cmp.mapping.scroll_docs(4),
-          ["<C-Space>"] = cmp.mapping.complete(),
+          ["<C-Space>"] = cmp.mapping.complete({
+            config = {
+              sources = { { name = "nvim_lsp" } }
+            }
+          }),
           ["<C-d>"] = cmp.mapping.abort(),
           ["<CR>"] = cmp.mapping.confirm({ select = false }),
           ["<C-j>"] = cmp.mapping.confirm({ select = false }),
