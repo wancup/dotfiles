@@ -2,7 +2,7 @@ return {
   -- Toggle Comment
   {
     "numToStr/Comment.nvim",
-    dependencies = { "JoosepAlviste/nvim-ts-context-commentstring", lazy = false },
+    dependencies = { "JoosepAlviste/nvim-ts-context-commentstring" },
     keys = {
       { "<leader>/", "<Plug>(comment_toggle_linewise_current)", mode = { "n" }, desc = "Toggle Comment" },
       { "<leader>/", "<Plug>(comment_toggle_linewise_visual)",  mode = { "x" }, desc = "Toggle Selected Comment" }
@@ -35,6 +35,7 @@ return {
   -- Auto Close Brackets
   {
     "windwp/nvim-autopairs",
+    event = "InsertEnter",
     dependencies = { "hrsh7th/nvim-cmp" },
     config = function()
       require("nvim-autopairs").setup({ check_ts = true, map_c_h = true })
@@ -50,6 +51,8 @@ return {
   -- Auto Close Tags
   {
     "windwp/nvim-ts-autotag",
+    event = "InsertEnter",
+    dependencies = { "hrsh7th/nvim-cmp" },
     config = true,
   },
 
@@ -84,6 +87,7 @@ return {
   -- Easy Jump
   {
     "ggandor/leap.nvim",
+    keys = { "S", "s" },
     config = function()
       local leap = require('leap')
       leap.add_default_mappings()
@@ -93,6 +97,7 @@ return {
   },
   {
     "jinh0/eyeliner.nvim",
+    keys = { "f", "F" },
     config = function()
       require 'eyeliner'.setup {
         highlight_on_key = true,
