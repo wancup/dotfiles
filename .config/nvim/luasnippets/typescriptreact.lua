@@ -133,4 +133,14 @@ return {
     "uc",
     { t("\"use client\"") }
   ),
+
+  s(
+    "co",
+    { t("import \"client-only\"") }
+  ),
+
+  s(
+    "so",
+    { t("import \"server-only\"") }
+  ),
 }

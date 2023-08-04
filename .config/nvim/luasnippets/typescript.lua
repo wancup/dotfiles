@@ -1,6 +1,7 @@
 local ls = require("luasnip")
 local s = ls.snippet
 local i = ls.insert_node
+local t = ls.text_node
 local fmt = require("luasnip.extras.fmt").fmt
 
 return {
@@ -110,5 +111,15 @@ return {
       "console.log({})", {
         i(1),
       })
+  ),
+
+  s(
+    "co",
+    { t("import \"client-only\"") }
+  ),
+
+  s(
+    "so",
+    { t("import \"server-only\"") }
   ),
 }
