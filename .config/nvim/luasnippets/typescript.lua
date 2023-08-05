@@ -93,6 +93,13 @@ return {
   ),
 
   s(
+    "class",
+    fmt("class {} {{\n}}", {
+      i(1),
+    })
+  ),
+
+  s(
     "for",
     c(1, {
       fmt("for (let {i} = {}; {i} {}; {}) {{\n}}", {
