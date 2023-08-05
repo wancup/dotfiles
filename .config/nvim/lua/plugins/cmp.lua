@@ -16,8 +16,6 @@ return {
       "onsails/lspkind.nvim"
     },
     opts = function()
-      require("luasnip.loaders.from_lua").load()
-
       local cmp = require("cmp")
       local luasnip = require("luasnip")
 
@@ -76,5 +74,15 @@ return {
         }
       }
     end
+  },
+
+  {
+    "L3MON4D3/LuaSnip",
+    event = "InsertEnter",
+    version = "2.*",
+    config = function()
+      require("luasnip").filetype_extend("typescriptreact", { "typescript" })
+      require("luasnip.loaders.from_lua").lazy_load()
+    end,
   },
 }
