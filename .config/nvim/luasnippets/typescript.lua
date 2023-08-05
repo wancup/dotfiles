@@ -93,6 +93,30 @@ return {
   ),
 
   s(
+    "for",
+    c(1, {
+      fmt("for (let {i} = {}; {i} {}; {}) {{\n}}", {
+        i = i(1, "i"),
+        i(2),
+        i(3),
+        i(4, "++i"),
+      }),
+      fmt("for (const {} of {}) {{\n}}", {
+        i(1, "item"),
+        i(2, "iteratable"),
+      }),
+    })
+  ),
+
+  s(
+    "switch",
+    fmt("switch ({}) {{\n  case {}:\n    break;\n  default:\n}}", {
+      i(1, "expr"),
+      i(2, "value"),
+    })
+  ),
+
+  s(
     "cb",
     fmt("({}) => {{\n}}", {
       i(1),
