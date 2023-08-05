@@ -3,6 +3,7 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
+    event = { "VeryLazy" },
     opts = {
       options = { theme = "rose-pine" },
       sections = {
@@ -160,7 +161,7 @@ return {
   },
 
   -- Scrollbar
-  { "petertriho/nvim-scrollbar", config = true },
+  { "petertriho/nvim-scrollbar", event = { "VeryLazy" }, config = true },
 
   -- Noice
   {

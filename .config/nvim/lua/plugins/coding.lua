@@ -113,6 +113,7 @@ return {
   {
     "echasnovski/mini.surround",
     version = "*",
+    keys = { "<leader>s" },
     opts = {
       mappings = {
         add = "<leader>sa", -- Add surrounding in Normal and Visual modes
