@@ -212,13 +212,4 @@ return {
       require("mini.indentscope").setup(opts)
     end,
   },
-
-  -- Display Color
-  {
-    "brenoprata10/nvim-highlight-colors",
-    event = "VeryLazy",
-    opts = {
-      enable_named_colors = false,
-    },
-  },
 }
