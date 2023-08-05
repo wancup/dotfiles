@@ -8,7 +8,7 @@ return {
     },
     keys = {
       { "<C-space>", desc = "Increment node selection" },
-      { "<C-h>",     desc = "Decrement node selection", mode = "x" },
+      { "<C-h>", desc = "Decrement node selection", mode = "x" },
     },
     opts = {
       highlight = { enable = true },

@@ -3,7 +3,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
     -- avoid to automatic comment out
     vim.opt.formatoptions:remove("r")
     vim.opt.formatoptions:remove("o")
-  end
+  end,
 })
 
 vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
@@ -11,5 +11,5 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
   callback = function()
     vim.cmd("compiler tsc")
     vim.opt.makeprg = "npx tsc --noEmit --skipLibCheck"
-  end
+  end,
 })

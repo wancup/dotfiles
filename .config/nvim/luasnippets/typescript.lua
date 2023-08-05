@@ -8,132 +8,112 @@ local fmt = require("luasnip.extras.fmt").fmt
 return {
   s(
     "fn",
-    fmt(
-      "function {}({}): {} {{\n}}", {
-        i(1, "name"),
-        i(2, "arguments"),
-        i(3, "return_type"),
-      })
+    fmt("function {}({}): {} {{\n}}", {
+      i(1, "name"),
+      i(2, "arguments"),
+      i(3, "return_type"),
+    })
   ),
 
   s(
     "efn",
-    fmt(
-      "export function {}({}): {} {{\n}}", {
-        i(1, "name"),
-        i(2, "arguments"),
-        i(3, "return_type"),
-      })
+    fmt("export function {}({}): {} {{\n}}", {
+      i(1, "name"),
+      i(2, "arguments"),
+      i(3, "return_type"),
+    })
   ),
 
   s(
     "afn",
-    fmt(
-      "async function {}({}): Promise<{}> {{\n}}", {
-        i(1, "name"),
-        i(2, "arguments"),
-        i(3, "return_type"),
-      })
+    fmt("async function {}({}): Promise<{}> {{\n}}", {
+      i(1, "name"),
+      i(2, "arguments"),
+      i(3, "return_type"),
+    })
   ),
 
   s(
     "eafn",
-    fmt(
-      "export async function {}({}): Promise<{}> {{\n}}", {
-        i(1, "name"),
-        i(2, "arguments"),
-        i(3, "return_type"),
-      })
+    fmt("export async function {}({}): Promise<{}> {{\n}}", {
+      i(1, "name"),
+      i(2, "arguments"),
+      i(3, "return_type"),
+    })
   ),
 
   s(
     "arr",
-    fmt(
-      "const {} = ({}): {} => {{\n}}", {
-        i(1, "name"),
-        i(2, "arguments"),
-        i(3, "return_type"),
-      })
+    fmt("const {} = ({}): {} => {{\n}}", {
+      i(1, "name"),
+      i(2, "arguments"),
+      i(3, "return_type"),
+    })
   ),
 
   s(
     "aarr",
-    fmt(
-      "const {} = async ({}): Promise<{}> => {{\n}}", {
-        i(1, "name"),
-        i(2, "arguments"),
-        i(3, "return_type"),
-      })
+    fmt("const {} = async ({}): Promise<{}> => {{\n}}", {
+      i(1, "name"),
+      i(2, "arguments"),
+      i(3, "return_type"),
+    })
   ),
 
   s(
     "if",
     c(1, {
-      fmt(
-        "if ({}) {{\n}}", {
-          i(1),
-        }),
-      fmt(
-        "if ({}) {{\n}} else {{\n}}", {
-          i(1),
-        }),
+      fmt("if ({}) {{\n}}", {
+        i(1),
+      }),
+      fmt("if ({}) {{\n}} else {{\n}}", {
+        i(1),
+      }),
     })
   ),
 
   s(
     "try",
-    fmt(
-      "try {{{}\n}} catch(e: unknown) {{\n}}", {
-        i(1),
-      })
+    fmt("try {{{}\n}} catch(e: unknown) {{\n}}", {
+      i(1),
+    })
   ),
 
   s(
     "interface",
     c(1, {
-      fmt(
-        "interface {} {{\n}}", {
-          i(1),
-        }),
-      fmt(
-        "interface {} extends {} {{\n}}", {
-          i(1),
-          i(2),
-        })
+      fmt("interface {} {{\n}}", {
+        i(1),
+      }),
+      fmt("interface {} extends {} {{\n}}", {
+        i(1),
+        i(2),
+      }),
     })
   ),
 
   s(
     "cb",
-    fmt(
-      "({}) => {{\n}}", {
-        i(1),
-      })
+    fmt("({}) => {{\n}}", {
+      i(1),
+    })
   ),
 
   s(
     "acb",
-    fmt(
-      "async ({}) => {{\n}}", {
-        i(1),
-      })
+    fmt("async ({}) => {{\n}}", {
+      i(1),
+    })
   ),
 
   s(
     "cl",
-    fmt(
-      "console.log({})", {
-        i(1),
-      })
+    fmt("console.log({})", {
+      i(1),
+    })
   ),
 
-  s(
-    "co",
-    { t("import \"client-only\"") }
-  ),
+  s("co", { t('import "client-only"') }),
 
-  s(
-    "so",
-    { t("import \"server-only\"") }
-  ),
+  s("so", { t('import "server-only"') }),
 }

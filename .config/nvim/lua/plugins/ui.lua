@@ -11,7 +11,7 @@ return {
         lualine_c = { { "filename", path = 1 } },
         lualine_x = { "encoding", "fileformat", "filetype" },
         lualine_y = { "filesize" },
-        lualine_z = { "progress", "location" }
+        lualine_z = { "progress", "location" },
       },
     },
   },
@@ -27,8 +27,8 @@ return {
       "MunifTanjim/nui.nvim",
     },
     keys = {
-      { "<leader>e",  "<cmd>Neotree reveal toggle<cr>",                  desc = "[E]xplore files", },
-      { "<leader>ge", "<cmd>Neotree reveal toggle git_status float<cr>", desc = "[G]it [E]xplore files", },
+      { "<leader>e", "<cmd>Neotree reveal toggle<cr>", desc = "[E]xplore files" },
+      { "<leader>ge", "<cmd>Neotree reveal toggle git_status float<cr>", desc = "[G]it [E]xplore files" },
     },
     opts = {
       close_if_last_window = true,
@@ -47,38 +47,38 @@ return {
             ["<leader>ff"] = "find_files_in_dir",
             ["<leader>fl"] = "live_grep_in_dir",
             ["Y"] = "copy_file_name",
-          }
+          },
         },
         commands = {
           find_files_in_dir = function(state)
             local node = state.tree:get_node()
             local path = node:get_id()
-            require('telescope.builtin').find_files({ search_dirs = { path } })
+            require("telescope.builtin").find_files({ search_dirs = { path } })
           end,
           live_grep_in_dir = function(state)
             local node = state.tree:get_node()
             local path = node:get_id()
-            require('telescope.builtin').live_grep({ search_dirs = { path } })
+            require("telescope.builtin").live_grep({ search_dirs = { path } })
           end,
           copy_file_name = function(state)
             local node = state.tree:get_node()
             vim.fn.setreg(vim.v.register, node.name)
-          end
+          end,
         },
         filtered_items = {
           visible = true,
           hide_dotfiles = false,
-        }
+        },
       },
       event_handlers = {
         {
           event = "file_opened",
           handler = function()
             require("neo-tree.command").execute({ action = "close" })
-          end
+          end,
         },
-      }
-    }
+      },
+    },
   },
 
   -- Bufferline
@@ -86,14 +86,14 @@ return {
     "akinsho/bufferline.nvim",
     event = "VeryLazy",
     keys = {
-      { "<leader>bp", "<Cmd>BufferLinePick<CR>",        desc = "[B]uffer [P]ick" },
-      { "<leader>bc", "<Cmd>BufferLinePickClose<CR>",   desc = "[B]uffer Pick [C]lose" },
-      { "<leader>bt", "<Cmd>BufferLineTogglePin<CR>",   desc = "[B]uffer [T]oggle Pin" },
-      { "<leader>bH", "<Cmd>BufferLineCloseLeft<CR>",   desc = "[B]uffer Close Left" },
-      { "<leader>bL", "<Cmd>BufferLineCloseRight<CR>",  desc = "[B]uffer Close Right" },
+      { "<leader>bp", "<Cmd>BufferLinePick<CR>", desc = "[B]uffer [P]ick" },
+      { "<leader>bc", "<Cmd>BufferLinePickClose<CR>", desc = "[B]uffer Pick [C]lose" },
+      { "<leader>bt", "<Cmd>BufferLineTogglePin<CR>", desc = "[B]uffer [T]oggle Pin" },
+      { "<leader>bH", "<Cmd>BufferLineCloseLeft<CR>", desc = "[B]uffer Close Left" },
+      { "<leader>bL", "<Cmd>BufferLineCloseRight<CR>", desc = "[B]uffer Close Right" },
       { "<leader>bO", "<Cmd>BufferLineCloseOthers<CR>", desc = "[B]uffer Close [O]thers" },
-      { "<leader>bh", "<Cmd>BufferLineMovePrev<CR>",    desc = "[B]uffer Move Left" },
-      { "<leader>bl", "<Cmd>BufferLineMoveNext<CR>",    desc = "[B]uffer Move Right" },
+      { "<leader>bh", "<Cmd>BufferLineMovePrev<CR>", desc = "[B]uffer Move Left" },
+      { "<leader>bl", "<Cmd>BufferLineMoveNext<CR>", desc = "[B]uffer Move Right" },
     },
     opts = {
       options = {
@@ -146,9 +146,9 @@ return {
     "folke/trouble.nvim",
     cmd = { "TroubleToggle", "Trouble" },
     keys = {
-      { "<leader>dL", "<cmd>TroubleToggle document_diagnostics<cr>",  desc = "[D]iagnostics [L]ist" },
+      { "<leader>dL", "<cmd>TroubleToggle document_diagnostics<cr>", desc = "[D]iagnostics [L]ist" },
       { "<leader>dW", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "[D]iagnostics [W]orkspace" },
-      { "<leader>qL", "<cmd>TroubleToggle quickfix<cr>",              desc = "[Q]uickfix [L]ist" },
+      { "<leader>qL", "<cmd>TroubleToggle quickfix<cr>", desc = "[Q]uickfix [L]ist" },
     },
     opts = {
       use_diagnostic_signs = true,
@@ -160,7 +160,7 @@ return {
   },
 
   -- Scrollbar
-  { "petertriho/nvim-scrollbar", config = true, },
+  { "petertriho/nvim-scrollbar", config = true },
 
   -- Noice
   {
@@ -182,8 +182,20 @@ return {
       },
     },
     keys = {
-      { "<leader>nm", function() require("noice").cmd("last") end,    desc = "[N]oice Last [M]essage" },
-      { "<leader>nh", function() require("noice").cmd("history") end, desc = "[N]oice [H]istory" },
+      {
+        "<leader>nm",
+        function()
+          require("noice").cmd("last")
+        end,
+        desc = "[N]oice Last [M]essage",
+      },
+      {
+        "<leader>nh",
+        function()
+          require("noice").cmd("history")
+        end,
+        desc = "[N]oice [H]istory",
+      },
     },
   },
 
@@ -208,5 +220,4 @@ return {
       enable_named_colors = false,
     },
   },
-
 }

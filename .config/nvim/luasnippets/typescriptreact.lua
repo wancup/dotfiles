@@ -10,17 +10,18 @@ return {
   s(
     "nrfc",
     fmt(
-      "import {{ ReactElement }} from \"react\";\n\ninterface Props = {{}}\n\nexport function {}(props: Props): ReactElement{{\nreturn (\n\n)\n}}",
+      'import {{ ReactElement }} from "react";\n\ninterface Props = {{}}\n\nexport function {}(props: Props): ReactElement{{\nreturn (\n\n)\n}}',
       {
         i(1, "name"),
-      })
+      }
+    )
   ),
 
   s(
     "rfc",
     fmt("function {}({}): ReactElement{{\nreturn (\n\n)\n}}", {
       i(1, "name"),
-      i(2, "props")
+      i(2, "props"),
     })
   ),
 
@@ -28,7 +29,7 @@ return {
     "erfc",
     fmt("export function {}({}): ReactElement{{\nreturn (\n\n)\n}}", {
       i(1, "name"),
-      i(2, "props")
+      i(2, "props"),
     })
   ),
 
@@ -37,13 +38,9 @@ return {
     fmt("const [{}, set{State}] = useState({});", {
       i(1, "state"),
       i(2, "initialState"),
-      State = l(l._1:sub(1, 1):upper() .. l._1:sub(2, -1), 1)
+      State = l(l._1:sub(1, 1):upper() .. l._1:sub(2, -1), 1),
     })
   ),
 
-  s(
-    "uc",
-    { t("\"use client\"") }
-  ),
-
+  s("uc", { t('"use client"') }),
 }

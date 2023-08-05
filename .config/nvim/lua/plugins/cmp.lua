@@ -13,7 +13,7 @@ return {
       "hrsh7th/cmp-nvim-lsp",
       "L3MON4D3/LuaSnip",
       "saadparwaiz1/cmp_luasnip",
-      "onsails/lspkind.nvim"
+      "onsails/lspkind.nvim",
     },
     opts = function()
       local cmp = require("cmp")
@@ -42,12 +42,12 @@ return {
       end
 
       return {
-        sources = { { name = 'luasnip' }, { name = "nvim_lsp" } },
-        completion = { completeopt = "menu,menuone,noinsert", },
+        sources = { { name = "luasnip" }, { name = "nvim_lsp" } },
+        completion = { completeopt = "menu,menuone,noinsert" },
         snippet = {
           expand = function(args)
             luasnip.lsp_expand(args.body)
-          end
+          end,
         },
         window = {
           completion = cmp.config.window.bordered(),
@@ -62,18 +62,18 @@ return {
           ["<C-f>"] = cmp.mapping.scroll_docs(4),
           ["<C-Space>"] = cmp.mapping.complete({
             config = {
-              sources = { { name = "nvim_lsp" } }
-            }
+              sources = { { name = "nvim_lsp" } },
+            },
           }),
           ["<C-d>"] = cmp.mapping.abort(),
           ["<CR>"] = cmp.mapping.confirm({ select = false }),
           ["<C-j>"] = cmp.mapping.confirm({ select = false }),
         }),
         formatting = {
-          format = require("lspkind").cmp_format()
-        }
+          format = require("lspkind").cmp_format(),
+        },
       }
-    end
+    end,
   },
 
   {
@@ -90,7 +90,7 @@ return {
           end
         end,
         mode = { "i", "s" },
-        desc = "select next snippet choice"
+        desc = "select next snippet choice",
       },
       {
         "<C-p>",
@@ -101,7 +101,7 @@ return {
           end
         end,
         mode = { "i", "s" },
-        desc = "select prev snippet choice"
+        desc = "select prev snippet choice",
       },
     },
     config = function()

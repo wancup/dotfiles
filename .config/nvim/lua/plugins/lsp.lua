@@ -7,31 +7,31 @@ return {
     dependencies = {
       { "williamboman/mason.nvim", config = true },
       "williamboman/mason-lspconfig.nvim",
-      { "folke/neodev.nvim",       config = true },
+      { "folke/neodev.nvim", config = true },
       "b0o/schemastore.nvim",
     },
     keys = {
-      { "<leader>F",  "<cmd>Format<cr>",                         desc = "[F]ormat" },
+      { "<leader>F", "<cmd>Format<cr>", desc = "[F]ormat" },
 
       -- Diagnostic
-      { "<leader>dl", vim.diagnostic.open_float,                 desc = "[D]iagnostics [L]ine" },
-      { "<leader>dn", vim.diagnostic.goto_next,                  desc = "[D]iagnostic [N]ext" },
-      { "<leader>dp", vim.diagnostic.goto_prev,                  desc = "[D]iagnostic [P]rev" },
+      { "<leader>dl", vim.diagnostic.open_float, desc = "[D]iagnostics [L]ine" },
+      { "<leader>dn", vim.diagnostic.goto_next, desc = "[D]iagnostic [N]ext" },
+      { "<leader>dp", vim.diagnostic.goto_prev, desc = "[D]iagnostic [P]rev" },
 
       -- Goto
-      { "gd",         "<cmd>Telescope lsp_definitions<cr>",      desc = "[G]oto [D]efinition", },
-      { "gr",         "<cmd>Telescope lsp_references<cr>",       desc = "[G]oto [R]eferences" },
-      { "gD",         vim.lsp.buf.declaration,                   desc = "[G]oto [D]eclaration" },
-      { "gI",         "<cmd>Telescope lsp_implementations<cr>",  desc = "[G]oto [I]mplementations" },
-      { "gt",         "<cmd>Telescope lsp_type_definitions<cr>", desc = "[G]oto [T]ype Definitions" },
-      { "K",          vim.lsp.buf.hover,                         desc = "Hover" },
-      { "gK",         vim.lsp.buf.signature_help,                desc = "Signature Help", },
+      { "gd", "<cmd>Telescope lsp_definitions<cr>", desc = "[G]oto [D]efinition" },
+      { "gr", "<cmd>Telescope lsp_references<cr>", desc = "[G]oto [R]eferences" },
+      { "gD", vim.lsp.buf.declaration, desc = "[G]oto [D]eclaration" },
+      { "gI", "<cmd>Telescope lsp_implementations<cr>", desc = "[G]oto [I]mplementations" },
+      { "gt", "<cmd>Telescope lsp_type_definitions<cr>", desc = "[G]oto [T]ype Definitions" },
+      { "K", vim.lsp.buf.hover, desc = "Hover" },
+      { "gK", vim.lsp.buf.signature_help, desc = "Signature Help" },
     },
     config = function()
       vim.diagnostic.config({ underline = true, severity_sort = true })
 
       local on_attach = function(_, bufnr)
-        vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
+        vim.api.nvim_buf_create_user_command(bufnr, "Format", function(_)
           vim.lsp.buf.format()
         end, {})
       end
@@ -44,16 +44,16 @@ return {
           Lua = {
             workspace = { checkThirdParty = false },
             telemetry = { enable = false },
-          }
+          },
         },
 
         jsonls = {
           json = {
-            schemas = require('schemastore').json.schemas({
+            schemas = require("schemastore").json.schemas({
               select = {
                 "package.json",
                 "tsconfig.json",
-              }
+              },
             }),
             validate = { enable = true },
           },
@@ -61,7 +61,7 @@ return {
 
         yamlls = {
           yaml = {
-            schemas = require('schemastore').yaml.schemas({
+            schemas = require("schemastore").yaml.schemas({
               select = {
                 "GitHub issue forms",
                 "GitHub Issue Template configuration",
@@ -86,12 +86,12 @@ return {
       })
       require("mason-lspconfig").setup_handlers({
         function(server)
-          require("lspconfig")[server].setup {
+          require("lspconfig")[server].setup({
             capabilities = capabilities,
             on_attach = on_attach,
-            settings = server_settings[server]
-          }
-        end
+            settings = server_settings[server],
+          })
+        end,
       })
     end,
   },
@@ -137,6 +137,7 @@ return {
           null_ls.builtins.formatting.prettier,
           null_ls.builtins.diagnostics.markdownlint,
           null_ls.builtins.diagnostics.shellcheck,
+          null_ls.builtins.formatting.stylua,
         },
       }
     end,
@@ -147,8 +148,7 @@ return {
     "weilbith/nvim-code-action-menu",
     cmd = "CodeActionMenu",
     keys = {
-      { "<leader>a", "<cmd>CodeActionMenu<cr>", desc = "Code [A]ction", mode = { "n", "v" }, },
+      { "<leader>a", "<cmd>CodeActionMenu<cr>", desc = "Code [A]ction", mode = { "n", "v" } },
     },
   },
-
 }
