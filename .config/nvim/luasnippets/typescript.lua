@@ -94,8 +94,14 @@ return {
 
   s(
     "class",
-    fmt("class {} {{\n}}", {
-      i(1),
+    c(1, {
+      fmt("class {} {{\n}}", {
+        i(1),
+      }),
+      fmt("class {} extends {} {{\n}}", {
+        i(1),
+        i(2),
+      }),
     })
   ),
 
