@@ -2,6 +2,7 @@ local ls = require("luasnip")
 local s = ls.snippet
 local i = ls.insert_node
 local t = ls.text_node
+local c = ls.choice_node
 local fmt = require("luasnip.extras.fmt").fmt
 
 return {
@@ -67,18 +68,16 @@ return {
 
   s(
     "if",
-    fmt(
-      "if ({}) {{\n}}", {
-        i(1),
-      })
-  ),
-
-  s(
-    "ife",
-    fmt(
-      "if ({}) {{\n}} else {{\n}}", {
-        i(1),
-      })
+    c(1, {
+      fmt(
+        "if ({}) {{\n}}", {
+          i(1),
+        }),
+      fmt(
+        "if ({}) {{\n}} else {{\n}}", {
+          i(1),
+        }),
+    })
   ),
 
   s(
@@ -87,6 +86,21 @@ return {
       "try {{{}\n}} catch(e: unknown) {{\n}}", {
         i(1),
       })
+  ),
+
+  s(
+    "interface",
+    c(1, {
+      fmt(
+        "interface {} {{\n}}", {
+          i(1),
+        }),
+      fmt(
+        "interface {} extends {} {{\n}}", {
+          i(1),
+          i(2),
+        })
+    })
   ),
 
   s(
