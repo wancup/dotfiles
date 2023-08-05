@@ -39,6 +39,40 @@ return {
       local default_capabilities = vim.lsp.protocol.make_client_capabilities()
       local capabilities = require("cmp_nvim_lsp").default_capabilities(default_capabilities)
 
+      local server_settings = {
+        lua_ls = {
+          Lua = {
+            workspace = { checkThirdParty = false },
+            telemetry = { enable = false },
+          }
+        },
+
+        jsonls = {
+          json = {
+            schemas = require('schemastore').json.schemas({
+              select = {
+                "package.json",
+                "tsconfig.json",
+              }
+            }),
+            validate = { enable = true },
+          },
+        },
+
+        yamlls = {
+          yaml = {
+            schemas = require('schemastore').yaml.schemas({
+              select = {
+                "GitHub issue forms",
+                "GitHub Issue Template configuration",
+                "GitHub Workflow",
+                "GitHub Workflow Template Properties",
+              },
+            }),
+          },
+        },
+      }
+
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
@@ -52,46 +86,10 @@ return {
       })
       require("mason-lspconfig").setup_handlers({
         function(server)
-          if server == "jsonls" then
-            require("lspconfig").jsonls.setup {
-              settings = {
-                json = {
-                  schemas = require('schemastore').json.schemas({
-                    select = {
-                      "package.json",
-                      "tsconfig.json",
-                    }
-                  }),
-                  validate = { enable = true },
-                },
-              },
-            }
-            return
-          end
-
-          if server == "yamlls" then
-            require("lspconfig").yamlls.setup {
-              capabilities = capabilities,
-              on_attach = on_attach,
-              settings = {
-                yaml = {
-                  schemas = require('schemastore').yaml.schemas({
-                    select = {
-                      "GitHub issue forms",
-                      "GitHub Issue Template configuration",
-                      "GitHub Workflow",
-                      "GitHub Workflow Template Properties",
-                    },
-                  }),
-                },
-              },
-            }
-            return
-          end
-
           require("lspconfig")[server].setup {
             capabilities = capabilities,
             on_attach = on_attach,
+            settings = server_settings[server]
           }
         end
       })
