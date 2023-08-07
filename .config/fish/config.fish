@@ -4,7 +4,6 @@ end
 
 if status --is-login
   fish_add_path $HOME/.cargo/bin
-  fish_add_path $HOME/.local/bin
   set -gx XDG_CONFIG_HOME $HOME/.config
 end
 

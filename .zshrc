@@ -16,7 +16,7 @@ setopt no_beep
 setopt ignore_eof
 
 # env
-export PATH="$PATH:$HOME/.cargo/bin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
