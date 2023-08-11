@@ -87,6 +87,8 @@ return {
     "akinsho/bufferline.nvim",
     event = "VeryLazy",
     keys = {
+      { "<leader><S-h>", "<Cmd>BufferLineCyclePrev<CR>" },
+      { "<leader><S-l>", "<Cmd>BufferLineCycleNext<CR>" },
       { "<leader>bp", "<Cmd>BufferLinePick<CR>", desc = "[B]uffer [P]ick" },
       { "<leader>bc", "<Cmd>BufferLinePickClose<CR>", desc = "[B]uffer Pick [C]lose" },
       { "<leader>bt", "<Cmd>BufferLineTogglePin<CR>", desc = "[B]uffer [T]oggle Pin" },
