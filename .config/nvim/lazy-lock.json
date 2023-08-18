@@ -41,6 +41,7 @@
   "renamer.nvim": { "branch": "develop", "commit": "1614d466df53899f11dd5395eaac3c09a275c384" },
   "rose-pine": { "branch": "main", "commit": "e29002cbee4854a9c8c4b148d8a52fae3176070f" },
   "schemastore.nvim": { "branch": "main", "commit": "6ef970b8acd694fb5690d1b8e1d6ad2ea0cc1431" },
+  "search-replace.nvim": { "branch": "main", "commit": "b3485c9cd14319c5320bbdd74af0b3c67733490d" },
   "telescope-gitmoji.nvim": { "branch": "master", "commit": "b8672e5f816fcf1f0a248e9c41f05e7b7f1e9d94" },
   "telescope.nvim": { "branch": "master", "commit": "776b509f80dd49d8205b9b0d94485568236d1192" },
   "todo-comments.nvim": { "branch": "main", "commit": "3094ead8edfa9040de2421deddec55d3762f64d1" },

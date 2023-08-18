@@ -137,7 +137,8 @@ return {
         ["<leader>n"] = { name = "Noice" },
         ["<leader>N"] = { name = "Node.js" },
         ["<leader>q"] = { name = "Quickfix" },
-        ["<leader>r"] = { name = "[R]e[N]ame" },
+        ["<leader>r"] = { name = "Replace" },
+        ["<leader>rb"] = { name = "ReplaceMultiBuffer" },
         ["<leader>s"] = { name = "Surround" },
         ["<leader>t"] = { name = "Todo" },
       })
