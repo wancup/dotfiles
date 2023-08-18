@@ -80,6 +80,7 @@ return {
         },
       })
       telescope.load_extension("gitmoji")
+      telescope.load_extension("persisted")
     end,
   },
 }
