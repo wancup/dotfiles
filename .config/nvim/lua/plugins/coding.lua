@@ -91,8 +91,20 @@ return {
   -- Session
   {
     "olimorris/persisted.nvim",
+    event = { "VeryLazy" },
+    keys = {
+      { "<leader>St", "<cmd>SessionToggle<cr>", desc = "[S]ession [T]oggle" },
+      { "<leader>Ss", "<cmd>SessionSave<cr>", desc = "[S]ession [S]ave" },
+      { "<leader>Sl", "<cmd>SessionLoad<cr>", desc = "[S]ession [L]oad" },
+    },
     opts = {
-      autoload = true,
+      should_autosave = function()
+        local filetype = vim.bo.filetype
+        if filetype == "alpha" or filetype == "lazy" then
+          return false
+        end
+        return true
+      end,
     },
   },
 

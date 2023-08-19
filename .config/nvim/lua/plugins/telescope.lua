@@ -26,6 +26,7 @@ return {
       { "<leader>fw", "<cmd>Telescope grep_string<cr>", desc = "[F]ind [W]ord" },
       { "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>", desc = "[F]ind [S]ymbols" },
       { "<leader>fS", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "[F]ind Workspace [S]ymbols" },
+      { "<leader>fn", "<cmd>Telescope persisted<cr>", desc = "[F]ind Sessio[n]" },
 
       -- git
       { "<leader>fgl", "<cmd>Telescope git_commits<cr>", desc = "[F]ind [G]it [L]og" },
