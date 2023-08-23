@@ -82,7 +82,12 @@ return {
       options = { theme = "rose-pine" },
       sections = {
         lualine_a = {
-          "mode",
+          {
+            "mode",
+            cond = function()
+              return not package.loaded["noice"] or not require("noice").api.status.mode.has()
+            end,
+          },
           {
             function()
               return require("noice").api.status.mode.get()
