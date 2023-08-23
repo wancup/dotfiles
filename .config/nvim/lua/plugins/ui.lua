@@ -81,7 +81,17 @@ return {
     opts = {
       options = { theme = "rose-pine" },
       sections = {
-        lualine_a = { "mode" },
+        lualine_a = {
+          "mode",
+          {
+            function()
+              return require("noice").api.status.mode.get()
+            end,
+            cond = function()
+              return package.loaded["noice"] and require("noice").api.status.mode.has()
+            end,
+          },
+        },
         lualine_b = { "branch", "diff", "diagnostics" },
         lualine_c = { { "filename", path = 1 } },
         lualine_x = { "encoding", "fileformat", "filetype" },
@@ -258,6 +268,12 @@ return {
         long_message_to_split = true,
         inc_rename = true,
         lsp_doc_border = true,
+      },
+      routes = {
+        {
+          view = "notify",
+          filter = { event = "msg_showmode" },
+        },
       },
     },
     keys = {
