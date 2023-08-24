@@ -48,7 +48,18 @@ return {
                                  
       Easier to change?
       ]]
-      local headers = { header1, header2, header3, header4 }
+      local header5 = [[
+
+██╗   ██╗ █████╗  ██████╗ ███╗   ██╗██╗
+╚██╗ ██╔╝██╔══██╗██╔════╝ ████╗  ██║██║
+ ╚████╔╝ ███████║██║  ███╗██╔██╗ ██║██║
+  ╚██╔╝  ██╔══██║██║   ██║██║╚██╗██║██║
+   ██║   ██║  ██║╚██████╔╝██║ ╚████║██║
+   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝
+
+        You ain't gonna need it
+      ]]
+      local headers = { header1, header2, header3, header4, header5 }
       math.randomseed(os.time())
       local random = math.random(1, #headers)
 
