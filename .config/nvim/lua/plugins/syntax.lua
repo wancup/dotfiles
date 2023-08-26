@@ -5,6 +5,7 @@ return {
     event = { "BufReadPost", "BufNewFile" },
     dependencies = {
       "nvim-treesitter/nvim-treesitter-textobjects",
+      "windwp/nvim-ts-autotag",
     },
     keys = {
       { "<C-space>", desc = "Increment node selection" },
@@ -44,5 +45,12 @@ return {
     config = function(_, opts)
       require("nvim-treesitter.configs").setup(opts)
     end,
+  },
+
+  -- Auto Close Tags
+  {
+    "windwp/nvim-ts-autotag",
+    event = "InsertEnter",
+    config = true,
   },
 }
