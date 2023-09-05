@@ -23,6 +23,8 @@ opt.splitright = true
 opt.pumheight = 10
 opt.relativenumber = true
 opt.laststatus = 3
+opt.list = true
+opt.listchars = { tab = "» " }
 
 -- Search
 opt.hlsearch = true
