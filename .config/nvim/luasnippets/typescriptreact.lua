@@ -7,41 +7,41 @@ local l = extras.lambda
 local fmt = require("luasnip.extras.fmt").fmt
 
 return {
-  s(
-    "nrfc",
-    fmt(
-      'import {{ ReactElement }} from "react";\n\ninterface {Name}Props {{}}\n\nexport function {}(props: {Name}Props): ReactElement{{\nreturn (\n\n)\n}}',
-      {
-        i(1, "name"),
-        Name = l(l._1, 1),
-      }
-    )
-  ),
+	s(
+		"nrfc",
+		fmt(
+			'import {{ ReactElement }} from "react";\n\ninterface {Name}Props {{}}\n\nexport function {}(props: {Name}Props): ReactElement{{\nreturn (\n\n)\n}}',
+			{
+				i(1, "name"),
+				Name = l(l._1, 1),
+			}
+		)
+	),
 
-  s(
-    "rfc",
-    fmt("function {}({}): ReactElement{{\nreturn (\n\n)\n}}", {
-      i(1, "name"),
-      i(2, "props"),
-    })
-  ),
+	s(
+		"rfc",
+		fmt("function {}({}): ReactElement{{\nreturn (\n\n)\n}}", {
+			i(1, "name"),
+			i(2, "props"),
+		})
+	),
 
-  s(
-    "erfc",
-    fmt("export function {}({}): ReactElement{{\nreturn (\n\n)\n}}", {
-      i(1, "name"),
-      i(2, "props"),
-    })
-  ),
+	s(
+		"erfc",
+		fmt("export function {}({}): ReactElement{{\nreturn (\n\n)\n}}", {
+			i(1, "name"),
+			i(2, "props"),
+		})
+	),
 
-  s(
-    "us",
-    fmt("const [{}, set{State}] = useState({});", {
-      i(1, "state"),
-      i(2, "initialState"),
-      State = l(l._1:sub(1, 1):upper() .. l._1:sub(2, -1), 1),
-    })
-  ),
+	s(
+		"us",
+		fmt("const [{}, set{State}] = useState({});", {
+			i(1, "state"),
+			i(2, "initialState"),
+			State = l(l._1:sub(1, 1):upper() .. l._1:sub(2, -1), 1),
+		})
+	),
 
-  s("uc", { t('"use client"') }),
+	s("uc", { t('"use client"') }),
 }
