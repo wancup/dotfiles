@@ -233,6 +233,7 @@ return {
 				["<leader>b"] = { name = "Buffer" },
 				["<leader>d"] = { name = "Diagnostics" },
 				["<leader>f"] = { name = "Find" },
+				["<leader>F"] = { name = "Fix" },
 				["<leader>fg"] = { name = "Find Git" },
 				["<leader>g"] = { name = "Git" },
 				["<leader>gh"] = { name = "Git Hunk" },

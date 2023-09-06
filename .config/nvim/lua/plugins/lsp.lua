@@ -11,7 +11,7 @@ return {
 			"b0o/schemastore.nvim",
 		},
 		keys = {
-			{ "<leader>F", "<cmd>Format<cr>", desc = "[F]ormat" },
+			{ "<leader>Ff", "<cmd>Format<cr>", desc = "[F]ix [F]ormat" },
 
 			-- Diagnostic
 			{ "<leader>dl", vim.diagnostic.open_float, desc = "[D]iagnostics [L]ine" },
@@ -134,7 +134,7 @@ return {
 					null_ls.builtins.code_actions.gitsigns,
 					null_ls.builtins.diagnostics.eslint_d,
 					null_ls.builtins.code_actions.eslint_d,
-					null_ls.builtins.formatting.prettier,
+					null_ls.builtins.formatting.prettierd,
 					null_ls.builtins.diagnostics.markdownlint,
 					null_ls.builtins.diagnostics.shellcheck,
 					null_ls.builtins.formatting.stylua,
