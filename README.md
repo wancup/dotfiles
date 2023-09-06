@@ -1,9 +1,8 @@
 # Personal Dotfiles
 
-## Nvim
+## Requirements
 
-### Requirements
-
-* ripgrep
-* fd
-
+* aqua
+* fish
+* Neovim
+* wezterm

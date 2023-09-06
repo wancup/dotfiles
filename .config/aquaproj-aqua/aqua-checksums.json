@@ -1,0 +1,74 @@
+{
+  "checksums": [
+    {
+      "id": "github_release/github.com/BurntSushi/ripgrep/13.0.0/ripgrep-13.0.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "B3432616745BCC36771A646A515990527B8ABD00BDD42BD790A1C94359F77291BE30E42068C17BABF3365FF919F0F76393843991879C0B26EE7FE3A4374FD8DB",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v0.18.1/stylua-macos-aarch64.zip",
+      "checksum": "24B5226F704A0E22B6405DE9654EF8C4E64C3C3146A99A4F2B1D3BDAB1D3536411FA9662EF6D484F2C3B23E795C35850D85529DC727048822C7D8C5CF624225D",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v0.18.1/stylua-macos-x86_64.zip",
+      "checksum": "C6544BB85B93D2B5912D874B864F853E85298B8C7BC6B719B95F0FB01C5247FB11807C8CA9C5E2EA5A11899F4F77C15C06C004860FC1972D23F0A7565AD36A94",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.9.0/rtx-v2023.9.0-macos-arm64.tar.gz",
+      "checksum": "9E589180545536DBF3120499D8DF7855C3E624254E51829B8A09AEA003008739",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.9.0/rtx-v2023.9.0-macos-x64.tar.gz",
+      "checksum": "C58B7D2EC93B99722F02693D6EFD5EA04784FB76782B7DB5D9155191F985C105",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.40.2/lazygit_0.40.2_Darwin_arm64.tar.gz",
+      "checksum": "2857416D0D5B21C28A69850B068E072D0064F158A5B6FCFA97A3DF8789F5DE7F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.40.2/lazygit_0.40.2_Darwin_x86_64.tar.gz",
+      "checksum": "0000CC8AE3A4818AF71BBB949674CC6874B9BA95DFA91FF15290F49CB04573FA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.6/jq-osx-amd64",
+      "checksum": "DF407CD34378F49FF8866D61A58CE1C367341062325C4C3BD07B0E1AD5D65758A2EDE94574B4279E1A0A208A04BAC487B7D898450FB614C2B94469D7621E583A",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/neovim/neovim/stable/nvim-macos.tar.gz",
+      "checksum": "6F7DE66C494D7B73CDF878F060DEDD1B2D66A648A387A245AA2AEC76A5B4C777",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sharkdp/bat/v0.23.0/bat-v0.23.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "EDCAC5D952C80EBF32F74E7B69650A2A12C8D7EA06050EF026394965C51F4503AFE1B97386967A439CE4E9472A443AD1F9154B939B0D559BE6AAD73EAE191A01",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/sharkdp/fd/v8.7.0/fd-v8.7.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "DC204DCE21E9307AA023F05ED00BB24244F3260C700E34E5069E4E51A1BA37CD34F677EA586C41877DF0A55BA6D6D0154BAEC56698AE774C5D15AEEC5B886991",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/starship/starship/v1.16.0/starship-aarch64-apple-darwin.tar.gz",
+      "checksum": "93F524D1801B6CA3A90484BD4EEBB77AFAE6A5133D1A59B09C957E16FAD20F4F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/starship/starship/v1.16.0/starship-x86_64-apple-darwin.tar.gz",
+      "checksum": "8E07CAAD1156380672202EB79247CDA15FAE265F7A278119E07A926C8D9D6009",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.44.1/registry.yaml",
+      "checksum": "7F9F50068A9014A08C5BF911D86F4B4F98709C3CDB0D995A26F64875CB21AD1D4DE3DF798EBBC7FA8546485CB4F028EB34E4D733E859422873CB5F47AF918A03",
+      "algorithm": "sha512"
+    }
+  ]
+}

@@ -1,12 +1,3 @@
-if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
-
-if status --is-login
-  fish_add_path $HOME/.cargo/bin
-  set -gx XDG_CONFIG_HOME $HOME/.config
-end
-
 # cdls
 functions --copy cd standard_cd
 function cd
@@ -18,6 +9,14 @@ end
 alias rm="rm -i"
 alias lg="lazygit"
 alias n="nvim"
+
+# path
+set -gx XDG_CONFIG_HOME $HOME/.config
+set -gx XDG_DATA_HOME $HOME/.local/share
+set -gx AQUA_ROOT_DIR $XDG_DATA_HOME/aquaproj-aqua
+set -gx AQUA_GLOBAL_CONFIG $XDG_CONFIG_HOME/aquaproj-aqua/aqua.yaml
+fish_add_path $AQUA_ROOT_DIR/bin
+fish_add_path $HOME/.cargo/bin
 
 # setup
 eval (/opt/homebrew/bin/brew shellenv)

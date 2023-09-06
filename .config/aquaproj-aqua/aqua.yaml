@@ -1,0 +1,20 @@
+---
+# aqua - Declarative CLI Version Manager
+# https://aquaproj.github.io/
+checksum:
+  enabled: true
+  require_checksum: true
+  supported_envs:
+    - darwin
+registries:
+- type: standard
+  ref: v4.44.1 # renovate: depName=aquaproj/aqua-registry
+packages:
+- name: sharkdp/fd@v8.7.0
+- name: sharkdp/bat@v0.23.0
+- name: BurntSushi/ripgrep@13.0.0
+- name: jesseduffield/lazygit@v0.40.2
+- name: jqlang/jq@jq-1.6
+- name: jdxcode/rtx@v2023.9.0
+- name: JohnnyMorganz/StyLua@v0.18.1
+- name: starship/starship@v1.16.0
