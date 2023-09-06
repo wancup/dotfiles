@@ -9,6 +9,9 @@ end
 alias rm="rm -i"
 alias lg="lazygit"
 alias n="nvim"
+if test "$TERM_PROGRAM" = "WezTerm"
+  alias ic="wezterm imgcat"
+end
 
 # path
 set -gx XDG_CONFIG_HOME $HOME/.config
