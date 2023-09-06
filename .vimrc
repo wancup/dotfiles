@@ -14,10 +14,12 @@ set incsearch
 set ignorecase
 set wrapscan
 
+set list
+set listchars=tab:»\ 
 set expandtab
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=0
+set softtabstop=-1
 set autoindent
 set smartindent
 

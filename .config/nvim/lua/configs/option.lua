@@ -34,7 +34,8 @@ opt.smartcase = true
 -- Indent
 opt.expandtab = true
 opt.tabstop = 2
-opt.shiftwidth = 2
+opt.shiftwidth = 0
+opt.softtabstop = -1
 opt.autoindent = true
 opt.smartindent = true
 
