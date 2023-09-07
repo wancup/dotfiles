@@ -2,7 +2,11 @@ return {
 	{
 		"nvim-telescope/telescope.nvim",
 		version = "*",
-		dependencies = { "nvim-lua/plenary.nvim", "olacin/telescope-gitmoji.nvim" },
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"olacin/telescope-gitmoji.nvim",
+			"nvim-telescope/telescope-ui-select.nvim",
+		},
 		cmd = "Telescope",
 		keys = {
 			{
@@ -36,6 +40,9 @@ return {
 			{ "<leader>fgS", "<cmd>Telescope git_stash<cr>", desc = "[F]ind [G]it [S]tash" },
 			{ "<leader>fgS", "<cmd>Telescope git_stash<cr>", desc = "[F]ind [G]it [S]tash" },
 			{ "<leader>fgm", "<cmd>Telescope gitmoji<cr>", desc = "[F]ind [G]it[M]oji" },
+
+			-- Code Action
+			{ "<leader>a", ":lua vim.lsp.buf.code_action()<cr>", desc = "Code [A]ction", mode = { "n", "v" } },
 		},
 		config = function()
 			local telescope = require("telescope")
@@ -70,6 +77,13 @@ return {
 					layout_strategy = "vertical",
 					vimgrep_arguments = vimgrep_arguments,
 				},
+
+				pickers = {
+					find_files = {
+						find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+					},
+				},
+
 				extensions = {
 					gitmoji = {
 						action = function(entry)
@@ -77,14 +91,20 @@ return {
 							vim.fn.setreg(vim.v.register, emoji)
 						end,
 					},
-				},
-				pickers = {
-					find_files = {
-						find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*" },
+					["ui-select"] = {
+						require("telescope.themes").get_cursor({
+							initial_mode = "normal",
+							layout_config = {
+								width = 0.8,
+								height = 0.35,
+							},
+						}),
 					},
 				},
 			})
+
 			telescope.load_extension("gitmoji")
+			telescope.load_extension("ui-select")
 			telescope.load_extension("persisted")
 		end,
 	},

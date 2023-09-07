@@ -142,13 +142,4 @@ return {
 			}
 		end,
 	},
-
-	-- Code Action Menu
-	{
-		"weilbith/nvim-code-action-menu",
-		cmd = "CodeActionMenu",
-		keys = {
-			{ "<leader>a", "<cmd>CodeActionMenu<cr>", desc = "Code [A]ction", mode = { "n", "v" } },
-		},
-	},
 }
