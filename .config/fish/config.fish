@@ -7,6 +7,7 @@ end
 
 # alias
 alias rm="rm -i"
+alias dc="docker compose"
 alias lg="lazygit"
 alias n="nvim"
 if test "$TERM_PROGRAM" = "WezTerm"
