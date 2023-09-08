@@ -1,3 +1,5 @@
+command_timeout = 2000
+
 [character]
 error_symbol = "[（´；ω；`）](bold red)"
 success_symbol = "[（๑╹ω╹๑ ）](bold green)"
