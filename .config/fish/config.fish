@@ -14,7 +14,7 @@ if test "$TERM_PROGRAM" = "WezTerm"
   alias ic="wezterm imgcat"
 end
 
-# path
+# environments
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx XDG_DATA_HOME $HOME/.local/share
 set -gx AQUA_ROOT_DIR $XDG_DATA_HOME/aquaproj-aqua
