@@ -1,10 +1,15 @@
 gui:
   showIcons: true
   nerdFontsVersion: "3"
+
 customCommands:
-  - key: '<c-space>'
-    command: 'gitmoji -c'
-    context: 'files'
-    description: 'Commit changes with gitmoji'
+  - key: "<c-space>"
+    command: "gitmoji -c"
+    context: "files"
+    description: "Commit changes with gitmoji"
     subprocess: true
 
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never

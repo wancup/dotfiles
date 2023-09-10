@@ -26,6 +26,16 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-aarch64-apple-darwin.tar.gz",
+      "checksum": "3C731E047F9D169C169DEA36A7F37645C5336DE1D1B26BEDE3E43F2FE170F98BD15746EE2959C8183ED61AADD749AA4EA54528C3571FA2C6A90CB41E15F89AB2",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-x86_64-apple-darwin.tar.gz",
+      "checksum": "86E285F6D341FF90860588453AE8F2DC1DDBFAD937D7DC46DDECE5385D443408381D1BDEBF8F92DDBEA7ABEE151116A535E4B5726856A845F1887AF38BE8AAFA",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/jdxcode/rtx/v2023.9.0/rtx-v2023.9.0-macos-arm64.tar.gz",
       "checksum": "9E589180545536DBF3120499D8DF7855C3E624254E51829B8A09AEA003008739",
       "algorithm": "sha256"
