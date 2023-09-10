@@ -14,6 +14,9 @@ if test "$TERM_PROGRAM" = "WezTerm"
   alias ic="wezterm imgcat"
 end
 
+# key bindings
+bind \cr fzf-history
+
 # environments
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx XDG_DATA_HOME $HOME/.local/share
