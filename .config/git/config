@@ -9,6 +9,7 @@
   navigate = true
   line-numbers = true
   keep-plus-minus-markers = true
+  tabs = 2
 
 [merge]
   tool = nvimdiff
