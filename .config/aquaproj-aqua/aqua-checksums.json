@@ -51,6 +51,16 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/0.42.0/fzf-0.42.0-darwin_amd64.zip",
+      "checksum": "8606714F086BC1A06CF80CCF455E9B83431F447594915AF494B1510077ACC72A9D0742BC6B53FB8CA79F5C096A2CF994C1559F1118AA1DDBC339F68B757875CD",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/0.42.0/fzf-0.42.0-darwin_arm64.zip",
+      "checksum": "B1E9B1C7A12DAC2087B76E5353A75C1D892D61364B3C2F9971AF3AB7A8EEB05657F52E6D3903E738F2BD6082C5792774909BCB96AAE7FC099649499AB660511D",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/neovim/neovim/stable/nvim-macos.tar.gz",
       "checksum": "6F7DE66C494D7B73CDF878F060DEDD1B2D66A648A387A245AA2AEC76A5B4C777",
       "algorithm": "sha256"
