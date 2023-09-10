@@ -89,6 +89,7 @@ return {
 						action = function(entry)
 							local emoji = entry.value.value
 							vim.fn.setreg(vim.v.register, emoji)
+							vim.fn.setreg("+", emoji)
 						end,
 					},
 					["ui-select"] = {
