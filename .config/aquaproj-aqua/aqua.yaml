@@ -14,7 +14,7 @@ packages:
 - name: sharkdp/bat@v0.23.0
 - name: BurntSushi/ripgrep@13.0.0
 - name: jesseduffield/lazygit@v0.40.2
-- name: jqlang/jq@jq-1.6
+- name: jqlang/jq@jq-1.7
 - name: jdxcode/rtx@v2023.9.0
 - name: JohnnyMorganz/StyLua@v0.18.2
 - name: starship/starship@v1.16.0
