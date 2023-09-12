@@ -71,6 +71,11 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7/jq-osx-amd64",
+      "checksum": "6D01FB9696F7A639FD805B18E54593149F0C8FDD5DE2E324D95390F69A35C43A6C0B11A6ACB5A2ADDCF3ED34B0BE47CAD190DA40B0FF173A06EEBD099DD9D716",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/junegunn/fzf/0.42.0/fzf-0.42.0-darwin_amd64.zip",
       "checksum": "8606714F086BC1A06CF80CCF455E9B83431F447594915AF494B1510077ACC72A9D0742BC6B53FB8CA79F5C096A2CF994C1559F1118AA1DDBC339F68B757875CD",
       "algorithm": "sha512"
