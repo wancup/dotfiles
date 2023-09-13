@@ -49,26 +49,8 @@ return {
 
 				jsonls = {
 					json = {
-						schemas = require("schemastore").json.schemas({
-							select = {
-								"package.json",
-								"tsconfig.json",
-							},
-						}),
+						schemas = require("schemastore").json.schemas(),
 						validate = { enable = true },
-					},
-				},
-
-				yamlls = {
-					yaml = {
-						schemas = require("schemastore").yaml.schemas({
-							select = {
-								"GitHub issue forms",
-								"GitHub Issue Template configuration",
-								"GitHub Workflow",
-								"GitHub Workflow Template Properties",
-							},
-						}),
 					},
 				},
 			}
