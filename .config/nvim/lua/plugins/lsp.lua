@@ -78,6 +78,7 @@ return {
 					"lua_ls",
 					"jsonls",
 					"yamlls",
+					"taplo",
 					"html",
 					"cssls",
 					"vtsls",
