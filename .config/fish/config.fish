@@ -16,6 +16,7 @@ end
 
 # key bindings
 bind \cr fzf-history
+bind \er history-pager
 
 # environments
 set -gx XDG_CONFIG_HOME $HOME/.config
