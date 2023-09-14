@@ -68,6 +68,7 @@ return {
 				dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
 				dashboard.button("l", "  Load Session", ":lua require('persisted').load()<CR>"),
 				dashboard.button("f", "  Find Files", ":Telescope find_files<CR>"),
+				dashboard.button("r", "󰡦  Find Recent Files", ":Telescope oldfiles<CR>"),
 				dashboard.button("p", "  Plugins", ":Lazy<CR>"),
 				dashboard.button("q", "󰩈  Quit NVIM", ":qa<CR>"),
 			}
