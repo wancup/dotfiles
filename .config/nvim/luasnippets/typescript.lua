@@ -184,6 +184,20 @@ return {
 		})
 	),
 
+	s(
+		"ce",
+		fmt("console.error({})", {
+			i(1),
+		})
+	),
+
+	s(
+		"cw",
+		fmt("console.warn({})", {
+			i(1),
+		})
+	),
+
 	s("co", { t('import "client-only"') }),
 
 	s("so", { t('import "server-only"') }),
