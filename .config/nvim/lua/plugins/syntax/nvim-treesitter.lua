@@ -46,11 +46,4 @@ return {
 			require("nvim-treesitter.configs").setup(opts)
 		end,
 	},
-
-	-- Auto Close Tags
-	{
-		"windwp/nvim-ts-autotag",
-		event = "InsertEnter",
-		config = true,
-	},
 }
