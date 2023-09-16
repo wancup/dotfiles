@@ -7,7 +7,7 @@ return {
 		keys = {
 			{ "<leader>dL", "<cmd>TroubleToggle document_diagnostics<cr>", desc = "[D]iagnostics [L]ist" },
 			{ "<leader>dW", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "[D]iagnostics [W]orkspace" },
-			{ "<leader>qL", "<cmd>TroubleToggle quickfix<cr>", desc = "[Q]uickfix [L]ist" },
+			{ "<leader>Lq", "<cmd>TroubleToggle quickfix<cr>", desc = "[L]ist [Q]uickfix" },
 		},
 		opts = {
 			use_diagnostic_signs = true,
