@@ -53,6 +53,18 @@ return {
 						validate = { enable = true },
 					},
 				},
+
+				yamlls = {
+					yaml = {
+						schemaStore = {
+							enable = false,
+							url = "",
+						},
+						schemas = require("schemastore").yaml.schemas({
+							ignore = { "Deployer Recipe" },
+						}),
+					},
+				},
 			}
 
 			require("mason-lspconfig").setup({
