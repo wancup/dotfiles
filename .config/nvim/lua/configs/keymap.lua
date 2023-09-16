@@ -8,10 +8,9 @@ map("n", "<C-Down>", "<cmd>resize -2<cr>")
 map("n", "<C-Left>", "<cmd>vertical resize +2<cr>")
 map("n", "<C-Right>", "<cmd>vertical resize -2<cr>")
 map("n", "<leader>Fe", ":<C-u>!eslint_d --fix %; prettierd --write %<cr>", { desc = "[F]ix [E]slint" })
-map("n", "<leader>o", "<cmd>w<cr>", { desc = "Write" })
-map("n", "<leader>O", "<cmd>wa<cr>", { desc = "Write All" })
-map("n", "<leader>q", "<cmd>bd<cr>", { desc = "Delete Buffer" })
-map("n", "<leader>Q", "<cmd>qa<cr>", { desc = "Quit All" })
+map("n", "<leader>o", "<cmd>wa<cr>", { desc = "Write All" })
+map("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit All" })
+map("n", "<leader>bd", "<cmd>bd<cr>", { desc = "[B]uffer [D]elete" })
 
 -- Visual
 map("x", "<S-h>", "^")
