@@ -20,6 +20,8 @@ return {
 					-- Node.js Package Info
 					PackageInfoOutdatedVersion = { fg = "love" },
 					PackageInfoUpToDateVersion = { fg = "highlight_med" },
+					-- Snipe Window
+					SnipeWinLabel = { fg = "love" },
 				},
 			})
 			vim.cmd("colorscheme rose-pine")
