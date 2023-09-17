@@ -10,6 +10,7 @@ alias rm="rm -i"
 alias dc="docker compose"
 alias lg="lazygit"
 alias n="nvim"
+alias fgc="fzf-git-commit"
 if test "$TERM_PROGRAM" = "WezTerm"
   alias ic="wezterm imgcat"
 end
