@@ -3,9 +3,9 @@ return {
 	{
 		"4513ECHO/vim-snipewin",
 		keys = {
-			{ "<leader><space>p", "<Cmd>call snipewin#select(g:snipewin#callback#goto)<CR>", desc = "[P]ick Window" },
+			{ "<leader><leader>p", "<Cmd>call snipewin#select(g:snipewin#callback#goto)<CR>", desc = "[P]ick Window" },
 			{
-				"<leader><space>c",
+				"<leader><leader>c",
 				"<Cmd>call snipewin#select(g:snipewin#callback#close)<CR>",
 				desc = "[C]lose Window",
 			},
