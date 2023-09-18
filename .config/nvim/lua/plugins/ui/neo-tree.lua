@@ -17,10 +17,12 @@ return {
 			close_if_last_window = true,
 			window = {
 				mappings = {
-					["<C-j>"] = "open",
 					["<space>"] = false,
 					["<"] = false,
 					[">"] = false,
+					["w"] = false,
+					["s"] = "open_split",
+					["v"] = "open_vsplit",
 				},
 				width = 30,
 			},

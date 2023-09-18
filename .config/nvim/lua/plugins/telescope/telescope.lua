@@ -61,9 +61,7 @@ return {
 					mappings = {
 						i = {
 							["<C-x>"] = false,
-							["<C-v>"] = false,
-							["<C-s>"] = actions.select_vertical,
-							["<C-S-s>"] = actions.select_horizontal,
+							["<C-s>"] = actions.select_horizontal,
 							["<C-i>"] = "which_key",
 							["<C-j>"] = "select_default",
 							["<C-u>"] = false,
