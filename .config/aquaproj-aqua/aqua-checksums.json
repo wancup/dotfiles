@@ -66,6 +66,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.9.1/rtx-v2023.9.1-macos-arm64.tar.gz",
+      "checksum": "4A6BAEE06A44E92661143B271CE5F2D9AEB582DF51A909C0038BF7C0CC818F01",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.9.1/rtx-v2023.9.1-macos-x64.tar.gz",
+      "checksum": "F2988702F606E6CD8F6640831A025142333760416564BC65DABC9BB20C581553",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jesseduffield/lazygit/v0.40.2/lazygit_0.40.2_Darwin_arm64.tar.gz",
       "checksum": "2857416D0D5B21C28A69850B068E072D0064F158A5B6FCFA97A3DF8789F5DE7F",
       "algorithm": "sha256"
@@ -79,6 +89,16 @@
       "id": "github_release/github.com/jqlang/jq/jq-1.6/jq-osx-amd64",
       "checksum": "DF407CD34378F49FF8866D61A58CE1C367341062325C4C3BD07B0E1AD5D65758A2EDE94574B4279E1A0A208A04BAC487B7D898450FB614C2B94469D7621E583A",
       "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7/jq-macos-amd64",
+      "checksum": "4B4568FB5C6CBB8F1A8F640FF601C6D2BBECF9FA8F2CF796C7482E7054A01C41",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jqlang/jq/jq-1.7/jq-macos-arm64",
+      "checksum": "B8D313FD4F3BD8A0B338B9DDD1C006FCCF9312DC609A20D2D6E4BAD964AA99F9",
+      "algorithm": "sha256"
     },
     {
       "id": "github_release/github.com/jqlang/jq/jq-1.7/jq-osx-amd64",
@@ -123,6 +143,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.44.1/registry.yaml",
       "checksum": "7F9F50068A9014A08C5BF911D86F4B4F98709C3CDB0D995A26F64875CB21AD1D4DE3DF798EBBC7FA8546485CB4F028EB34E4D733E859422873CB5F47AF918A03",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.48.2/registry.yaml",
+      "checksum": "61E097D3039D08E36AFF6E584E9C4ACA2F220567CED63989CCC73F3B9AB3A61723E8542E3A42BD1479D2EE5CA539543EDA5164E91130DA52389AB62EF1E1C145",
       "algorithm": "sha512"
     }
   ]
