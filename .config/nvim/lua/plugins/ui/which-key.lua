@@ -12,6 +12,7 @@ return {
 			wk.register({
 				mode = { "n", "v" },
 				["g"] = { name = "Goto" },
+				["<leader><leader>"] = { name = "Window" },
 				["<leader>b"] = { name = "Buffer" },
 				["<leader>d"] = { name = "Diagnostics" },
 				["<leader>f"] = { name = "Find" },

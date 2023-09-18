@@ -10,9 +10,9 @@ return {
 		cmd = "Telescope",
 		keys = {
 			{
-				"<leader><space>",
+				"<leader>f<leader>",
 				"<cmd>lua require('telescope.builtin').buffers({sort_mru=true, ignore_current_buffer=true})<cr>",
-				desc = "Recent Buffers",
+				desc = "[F]ind Recent Buffers",
 			},
 			{ "<leader>fl", "<cmd>Telescope live_grep<cr>", desc = "[F]ind [L]ive Grep" },
 			{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "[F]ind [B]uffers" },
