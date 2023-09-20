@@ -21,8 +21,8 @@ local config = {
 	disable_default_key_bindings = true,
 	keys = {
 		{ key = "Enter", mods = "ALT", action = act.ToggleFullScreen },
-		{ key = "s", mods = "SUPER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
-		{ key = "S", mods = "SUPER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+		{ key = "s", mods = "SUPER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+		{ key = "S", mods = "SUPER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 		{ key = "+", mods = "SUPER", action = act.IncreaseFontSize },
 		{ key = "-", mods = "SUPER", action = act.DecreaseFontSize },
 		{ key = "0", mods = "SUPER", action = act.ResetFontSize },
