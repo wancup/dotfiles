@@ -185,6 +185,13 @@ return {
 	),
 
 	s(
+		"ci",
+		fmt("console.info({})", {
+			i(1),
+		})
+	),
+
+	s(
 		"ce",
 		fmt("console.error({})", {
 			i(1),
