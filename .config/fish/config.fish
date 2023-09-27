@@ -12,6 +12,7 @@ alias lg="lazygit"
 alias n="nvim"
 alias fco="fzf-git-checkout"
 alias fgc="fzf-git-commit"
+alias ghna="gh-notify-actions"
 if test "$TERM_PROGRAM" = "WezTerm"
   alias ic="wezterm imgcat"
 end
