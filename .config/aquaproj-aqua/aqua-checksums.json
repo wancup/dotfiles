@@ -86,6 +86,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.9.2/rtx-v2023.9.2-macos-arm64.tar.gz",
+      "checksum": "C6CA4FBC64208EF12070F12F0F09A229B8667BFCEFA1B6D9850FC2D219E9DCD9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.9.2/rtx-v2023.9.2-macos-x64.tar.gz",
+      "checksum": "A28778B57BCDD994EFBB2024A1FE8317A8ECAC8F6DD3662F867B34135F41563F",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jesseduffield/lazygit/v0.40.2/lazygit_0.40.2_Darwin_arm64.tar.gz",
       "checksum": "2857416D0D5B21C28A69850B068E072D0064F158A5B6FCFA97A3DF8789F5DE7F",
       "algorithm": "sha256"
