@@ -18,7 +18,10 @@ return {
 		vim.api.nvim_create_autocmd("WinEnter", {
 			group = augroup,
 			callback = function(_)
-				if vim.tbl_contains({ "neo-tree" }, vim.bo.filetype) then
+				if
+					vim.tbl_contains({ "neo-tree" }, vim.bo.filetype)
+					or vim.tbl_contains({ "nofile", "prompt", "popup" }, vim.bo.buftype)
+				then
 					require("focus").focus_disable()
 				else
 					require("focus").focus_enable()
