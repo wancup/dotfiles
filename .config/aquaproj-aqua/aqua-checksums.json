@@ -56,6 +56,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.36.0/gh_2.36.0_macOS_amd64.zip",
+      "checksum": "B69714C8A5E2482FEB873838DB37B6DEBD0D955AE3A6BFDDD6F737EDCD95314E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.36.0/gh_2.36.0_macOS_arm64.zip",
+      "checksum": "D4E53E8B2127F2AD3F5356E81EF27B50F1CC2E202EA18DB4F69B4E9F77FD895F",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-aarch64-apple-darwin.tar.gz",
       "checksum": "3C731E047F9D169C169DEA36A7F37645C5336DE1D1B26BEDE3E43F2FE170F98BD15746EE2959C8183ED61AADD749AA4EA54528C3571FA2C6A90CB41E15F89AB2",
       "algorithm": "sha512"
@@ -64,6 +74,16 @@
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-x86_64-apple-darwin.tar.gz",
       "checksum": "86E285F6D341FF90860588453AE8F2DC1DDBFAD937D7DC46DDECE5385D443408381D1BDEBF8F92DDBEA7ABEE151116A535E4B5726856A845F1887AF38BE8AAFA",
       "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.10.1/rtx-v2023.10.1-macos-arm64.tar.gz",
+      "checksum": "BFB2E5F074B529B19115CDC7876D94830E4BBA80A6AB264628BFB8BA086B47F7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.10.1/rtx-v2023.10.1-macos-x64.tar.gz",
+      "checksum": "5081D18EB6B9FB48C41C4A7464AAF0B4924C3699412E671743954F125C94E4E1",
+      "algorithm": "sha256"
     },
     {
       "id": "github_release/github.com/jdxcode/rtx/v2023.9.0/rtx-v2023.9.0-macos-arm64.tar.gz",
@@ -173,6 +193,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.52.1/registry.yaml",
       "checksum": "CA858F3DEE8A0479ADD01759DEB142F939E197F813E4924046BE85D798DBBF46E0A23DCAE6B33EB15C6F6E2D476B70A8349AA9FC4D1B2997A9C806EAF7E9997D",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.54.0/registry.yaml",
+      "checksum": "43DB4660A54CF5F466EB5588DBB27309370DD55EEE9F81FA3C2C7D444E39DF9E9C5D279BF9F7BFB3AA3BD1FB810D25801C4BA0758C9CB86A1753C1DCFC4CB401",
       "algorithm": "sha512"
     }
   ]
