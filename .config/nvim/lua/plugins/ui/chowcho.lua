@@ -3,14 +3,14 @@ return {
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	keys = {
 		{
-			"<leader><leader>P",
+			"<C-w>P",
 			function()
 				require("chowcho").run()
 			end,
 			desc = "[P]ick Window with file name",
 		},
 		{
-			"<leader><leader>C",
+			"<C-w>C",
 			function()
 				require("chowcho").run(vim.api.nvim_win_hide)
 			end,
