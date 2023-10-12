@@ -166,6 +166,11 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/sharkdp/bat/v0.24.0/bat-v0.24.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "34C323ADE2B118F8127E9349B8FFB4928A729F9E39438A5F78556453BE2059D4C13FB01F5AB17A9369799BB1D75447A2CC9C6B1D34E472BE69248EABA79F13D7",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/sharkdp/fd/v8.7.0/fd-v8.7.0-x86_64-apple-darwin.tar.gz",
       "checksum": "DC204DCE21E9307AA023F05ED00BB24244F3260C700E34E5069E4E51A1BA37CD34F677EA586C41877DF0A55BA6D6D0154BAEC56698AE774C5D15AEEC5B886991",
       "algorithm": "sha512"
@@ -198,6 +203,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.54.0/registry.yaml",
       "checksum": "43DB4660A54CF5F466EB5588DBB27309370DD55EEE9F81FA3C2C7D444E39DF9E9C5D279BF9F7BFB3AA3BD1FB810D25801C4BA0758C9CB86A1753C1DCFC4CB401",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.60.0/registry.yaml",
+      "checksum": "8804D804442A5844EE3B6BAA0E702668009E67204A73C3DD998E758DF910C208AB781FC45DE5D92D2F755B2818A17F16B8CE8DEF0519FEA438552B8818908168",
       "algorithm": "sha512"
     }
   ]
