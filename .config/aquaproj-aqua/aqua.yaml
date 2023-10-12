@@ -11,7 +11,7 @@ registries:
   ref: v4.60.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: sharkdp/fd@v8.7.0
-- name: sharkdp/bat@v0.23.0
+- name: sharkdp/bat@v0.24.0
 - name: BurntSushi/ripgrep@13.0.0
 - name: jesseduffield/lazygit@v0.40.2
 - name: jqlang/jq@jq-1.7
