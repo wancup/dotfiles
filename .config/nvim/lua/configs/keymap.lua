@@ -13,10 +13,14 @@ map("n", "<leader>Fe", ":<C-u>!eslint_d --fix %; prettierd --write %<cr>", { des
 map("n", "<leader>o", "<cmd>wa<cr>", { desc = "Write All" })
 map("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit All" })
 map("n", "<leader>bd", "<cmd>bd<cr>", { desc = "[B]uffer [D]elete" })
+map("n", "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
+map("n", "<leader>p", '"+p', { desc = "[P]aste from Clipboard" })
+map("n", "<leader>P", '"+P', { desc = "[P]aste from Clipboard" })
 
 -- Visual
 map("x", "<S-h>", "^")
 map("x", "<S-l>", "$")
+map("x", "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
 
 -- Insert
 map("i", "<C-h>", "<BS>")
