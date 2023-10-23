@@ -66,6 +66,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.37.0/gh_2.37.0_macOS_amd64.zip",
+      "checksum": "0EECB97C52A90F86BD4466A63610CD27E10EA9714B88EE4EE86FDEB1F000E974",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.37.0/gh_2.37.0_macOS_arm64.zip",
+      "checksum": "B198E750C164A85DF371819C1F89C958C0EB4839AF2CC07C8B8D03077D5A8255",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-aarch64-apple-darwin.tar.gz",
       "checksum": "3C731E047F9D169C169DEA36A7F37645C5336DE1D1B26BEDE3E43F2FE170F98BD15746EE2959C8183ED61AADD749AA4EA54528C3571FA2C6A90CB41E15F89AB2",
       "algorithm": "sha512"
@@ -83,6 +93,16 @@
     {
       "id": "github_release/github.com/jdxcode/rtx/v2023.10.1/rtx-v2023.10.1-macos-x64.tar.gz",
       "checksum": "5081D18EB6B9FB48C41C4A7464AAF0B4924C3699412E671743954F125C94E4E1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.10.2/rtx-v2023.10.2-macos-arm64.tar.gz",
+      "checksum": "E4DAC7A9CAF6CC9950D6E15DDE6DA347881FD8D2BD9FD7F32502326AC0AE9B60",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.10.2/rtx-v2023.10.2-macos-x64.tar.gz",
+      "checksum": "A110D579276BCE3E28E0EAA9B13A9B865956307CEC3BED3C413A4A8778D21CDA",
       "algorithm": "sha256"
     },
     {
@@ -156,6 +176,16 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/0.43.0/fzf-0.43.0-darwin_amd64.zip",
+      "checksum": "87ACBCDE0E33803ED0D2A654082CAC36084CB032B065D4B50A16BB896EB00FDF7ABBD09B0682DDE54082D25E1971BCE3238BDF02E69D1851BE5A4A78A32B763C",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/0.43.0/fzf-0.43.0-darwin_arm64.zip",
+      "checksum": "3B7D32AB6C003AD669D72A79C96D8C291B7F56FE8369EF1326A7A63FB22EEA68DED06DF7855AFBB1D6C010E95B41B7112F476A25FE5B85898056F5EB692A0EBE",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/neovim/neovim/stable/nvim-macos.tar.gz",
       "checksum": "6F7DE66C494D7B73CDF878F060DEDD1B2D66A648A387A245AA2AEC76A5B4C777",
       "algorithm": "sha256"
@@ -173,6 +203,11 @@
     {
       "id": "github_release/github.com/sharkdp/fd/v8.7.0/fd-v8.7.0-x86_64-apple-darwin.tar.gz",
       "checksum": "DC204DCE21E9307AA023F05ED00BB24244F3260C700E34E5069E4E51A1BA37CD34F677EA586C41877DF0A55BA6D6D0154BAEC56698AE774C5D15AEEC5B886991",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/sharkdp/fd/v8.7.1/fd-v8.7.1-x86_64-apple-darwin.tar.gz",
+      "checksum": "1BC42476F45F9643FE065B57F7A7B6667546D70D73D7EDC3102FCFE7EC4D1E5864E7444946FAC040500324334B5F8D46F18D81CE603F889019C0821968FEC5AC",
       "algorithm": "sha512"
     },
     {
@@ -208,6 +243,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.60.0/registry.yaml",
       "checksum": "8804D804442A5844EE3B6BAA0E702668009E67204A73C3DD998E758DF910C208AB781FC45DE5D92D2F755B2818A17F16B8CE8DEF0519FEA438552B8818908168",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.73.0/registry.yaml",
+      "checksum": "AC3BFDE64D495267B93C0BEF7AA9ADEB7FCDDC4D4B56BAC794F36501FD1EFCAF392C3BEC365389202384CFD43F8EE1882F714825B29012D88E2D909C0E8B0855",
       "algorithm": "sha512"
     }
   ]
