@@ -31,6 +31,8 @@ return {
 			{ "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>", desc = "[F]ind [S]ymbols" },
 			{ "<leader>fS", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "[F]ind Workspace [S]ymbols" },
 			{ "<leader>fn", "<cmd>Telescope persisted<cr>", desc = "[F]ind Sessio[n]" },
+			{ "<leader>fq", "<cmd>Telescope quickfix<cr>", desc = "[F]ind [Q]uickfix" },
+			{ "<leader>fQ", "<cmd>Telescope quickfixhistory<cr>", desc = "[F]ind [Q]uickfixhistory" },
 
 			-- git
 			{ "<leader>fgl", "<cmd>Telescope git_commits<cr>", desc = "[F]ind [G]it [L]og" },
