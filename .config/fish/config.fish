@@ -7,14 +7,14 @@ end
 
 # alias
 alias rm="rm -i"
-alias dc="docker compose"
-alias lg="lazygit"
-alias n="nvim"
-alias fco="fzf-git-checkout"
-alias fgc="fzf-git-commit"
-alias ghna="gh-notify-actions"
+abbr dc "docker compose"
+abbr lg "lazygit"
+abbr n "nvim"
+abbr fco "fzf-git-checkout"
+abbr fgc "fzf-git-commit"
+abbr ghna "gh-notify-actions"
 if test "$TERM_PROGRAM" = "WezTerm"
-  alias ic="wezterm imgcat"
+  abbr ic "wezterm imgcat"
 end
 
 # key bindings
@@ -26,6 +26,7 @@ set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx XDG_DATA_HOME $HOME/.local/share
 set -gx AQUA_ROOT_DIR $XDG_DATA_HOME/aquaproj-aqua
 set -gx AQUA_GLOBAL_CONFIG $XDG_CONFIG_HOME/aquaproj-aqua/aqua.yaml
+set -gx MANPAGER 'nvim +Man!'
 fish_add_path $AQUA_ROOT_DIR/bin
 fish_add_path $HOME/.cargo/bin
 
