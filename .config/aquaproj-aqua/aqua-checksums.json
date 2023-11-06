@@ -76,6 +76,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.38.0/gh_2.38.0_macOS_amd64.zip",
+      "checksum": "71FFE7A5D9068A49D63A7094E51F6FFCCBEBEEBB4A2669CE39950FFB42EE86E1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.38.0/gh_2.38.0_macOS_arm64.zip",
+      "checksum": "23E54CC6575C5F110F7A69FA34450524C8D43DB76F523158C173B23F5E43F536",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-aarch64-apple-darwin.tar.gz",
       "checksum": "3C731E047F9D169C169DEA36A7F37645C5336DE1D1B26BEDE3E43F2FE170F98BD15746EE2959C8183ED61AADD749AA4EA54528C3571FA2C6A90CB41E15F89AB2",
       "algorithm": "sha512"
@@ -103,6 +113,16 @@
     {
       "id": "github_release/github.com/jdxcode/rtx/v2023.10.2/rtx-v2023.10.2-macos-x64.tar.gz",
       "checksum": "A110D579276BCE3E28E0EAA9B13A9B865956307CEC3BED3C413A4A8778D21CDA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.11.0/rtx-v2023.11.0-macos-arm64.tar.gz",
+      "checksum": "E105E7DD50F4E1E0E5FB6B6534EB8E50BD3B1DCA8C52FF8895CFAC8A75F85D78",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdxcode/rtx/v2023.11.0/rtx-v2023.11.0-macos-x64.tar.gz",
+      "checksum": "4227369DD8581170B862114BC41EF38BCBBE1823916E816ABFBCF623654C7A75",
       "algorithm": "sha256"
     },
     {
@@ -253,6 +273,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.78.0/registry.yaml",
       "checksum": "4B7CA7870ECE089CC14056C3638C8D51648FCEA3E10CFE369079C10D4FF5229F6D0E6297DB9BA0F8AF9F45EA84C3F16399BC0FCCE7752C544E1C824AEBC4630F",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.80.0/registry.yaml",
+      "checksum": "AE67B36D3CADD6EDF43E52D80C8D090D14F6666506B00A972CCCA185B1ACBE903BED9CAB90A3BB88F98D479B8B16E53CBAEF4B59866AEC5EB84472E94A84F57C",
       "algorithm": "sha512"
     }
   ]
