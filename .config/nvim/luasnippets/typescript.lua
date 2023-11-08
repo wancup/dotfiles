@@ -178,6 +178,14 @@ return {
 	),
 
 	s(
+		"tcb",
+		fmt("({}) => {}", {
+			i(1),
+			i(2, "void"),
+		})
+	),
+
+	s(
 		"cl",
 		fmt("console.log({})", {
 			i(1),
