@@ -213,6 +213,14 @@ return {
 		})
 	),
 
+	s(
+		"eff",
+		fmt('export {} from "{}"', {
+			i(1, "*"),
+			i(2),
+		})
+	),
+
 	s("co", { t('import "client-only"') }),
 
 	s("so", { t('import "server-only"') }),
