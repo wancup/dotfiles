@@ -26,6 +26,16 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v0.19.1/stylua-macos-aarch64.zip",
+      "checksum": "524CFF98CD3A86648863114A0F4E41B8616F8586D9A6B700515F57BBA1FFFC38B4B707E8D7CF665F898EE91086D4D60649FCA01981874BFDFDBE5B1DDC4A8A75",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v0.19.1/stylua-macos-x86_64.zip",
+      "checksum": "26EE8C93E744B626117DA3FC24BA22CF55F586CA84676E87F3BD38E206AB25715AF4CD91BA101EC7D011F2A3B9E5BC263177686A1E1656E164EBE02C2211A5A4",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.2/zoxide-0.9.2-aarch64-apple-darwin.tar.gz",
       "checksum": "6E4E4805D2EADEB1E6C81B65D7EBB189DE49E7030406B2154790ED20FF8F9D113B5DB77707022B1CCF3669928AB842383B0ACB5729D91BC6ABC0C2236A5F64D5",
       "algorithm": "sha512"
@@ -86,6 +96,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.39.1/gh_2.39.1_macOS_amd64.zip",
+      "checksum": "A604E54A840ADE62C9CB81B85225CF6F6D9686F5B11399FC961A6B71C59851FB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.39.1/gh_2.39.1_macOS_arm64.zip",
+      "checksum": "F854225778B7215480C442CD2E3EEEC1A56D33876BBBAD19DAF557C1B00D6913",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-aarch64-apple-darwin.tar.gz",
       "checksum": "3C731E047F9D169C169DEA36A7F37645C5336DE1D1B26BEDE3E43F2FE170F98BD15746EE2959C8183ED61AADD749AA4EA54528C3571FA2C6A90CB41E15F89AB2",
       "algorithm": "sha512"
@@ -94,6 +114,16 @@
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-x86_64-apple-darwin.tar.gz",
       "checksum": "86E285F6D341FF90860588453AE8F2DC1DDBFAD937D7DC46DDECE5385D443408381D1BDEBF8F92DDBEA7ABEE151116A535E4B5726856A845F1887AF38BE8AAFA",
       "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/jdx/rtx/v2023.11.4/rtx-v2023.11.4-macos-arm64.tar.gz",
+      "checksum": "38E4878AC3C1E4AFF09EEE74A2039B9E308B500225BCD520942B9A30C98DB59F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/rtx/v2023.11.4/rtx-v2023.11.4-macos-x64.tar.gz",
+      "checksum": "B4C9431E0EFD477C4F83E52BB9382AC92C2AE6D8152CB26DFD09683792D1EB74",
+      "algorithm": "sha256"
     },
     {
       "id": "github_release/github.com/jdxcode/rtx/v2023.10.1/rtx-v2023.10.1-macos-arm64.tar.gz",
@@ -206,6 +236,16 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/0.44.0/fzf-0.44.0-darwin_amd64.zip",
+      "checksum": "0E9157E1B87E0DD3D527B52DC7D3B6EE89E741072ACAA3F3C2DB5E3FE92702463B868B387887EEE0B01BCD03234E3FC5EB586725C4AEA27306AA21924F0A7CD8",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/0.44.0/fzf-0.44.0-darwin_arm64.zip",
+      "checksum": "590F53E4D73E9B767042DAC8A496B73824821AB59212F2CE66D2202DF7547D69A6F3D30459BC96653F4F7182C0AE08A96B2A4F01D43FB26F427C61EA50F03D35",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/neovim/neovim/stable/nvim-macos.tar.gz",
       "checksum": "6F7DE66C494D7B73CDF878F060DEDD1B2D66A648A387A245AA2AEC76A5B4C777",
       "algorithm": "sha256"
@@ -278,6 +318,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.80.0/registry.yaml",
       "checksum": "AE67B36D3CADD6EDF43E52D80C8D090D14F6666506B00A972CCCA185B1ACBE903BED9CAB90A3BB88F98D479B8B16E53CBAEF4B59866AEC5EB84472E94A84F57C",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.88.0/registry.yaml",
+      "checksum": "8C315B6F866105A9D068875C900C1694DA6807EA7C15238D5B3CBF0DD8A8C6DF00F721625B69A329DED0999187D5EC7B305ED5629B23CFCA9C0C49EEAA879382",
       "algorithm": "sha512"
     }
   ]
