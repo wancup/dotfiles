@@ -246,6 +246,16 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/0.44.1/fzf-0.44.1-darwin_amd64.zip",
+      "checksum": "613551E06BF295AAF5CA215058FFB0C19CAFA858CCA5CEBC8D5B96D695267095BFB839EF0FFBBBA32DF810C1DEC505D3DDEAD1C38DBB25EA14A1E277116C42C3",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/0.44.1/fzf-0.44.1-darwin_arm64.zip",
+      "checksum": "2A4792775AC771A6365790A16F7F6F2BBA4F7917290CDCA7B022FDDFF25EDF244F680DC9015CA828141EB50363D451E2473D3B321907895C9984C19B4119069C",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/neovim/neovim/stable/nvim-macos.tar.gz",
       "checksum": "6F7DE66C494D7B73CDF878F060DEDD1B2D66A648A387A245AA2AEC76A5B4C777",
       "algorithm": "sha256"
@@ -323,6 +333,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.88.0/registry.yaml",
       "checksum": "8C315B6F866105A9D068875C900C1694DA6807EA7C15238D5B3CBF0DD8A8C6DF00F721625B69A329DED0999187D5EC7B305ED5629B23CFCA9C0C49EEAA879382",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.90.0/registry.yaml",
+      "checksum": "CED416D34FC51960BB36B84547CB9D6E81923199BA6E4DAED8DFF12B52672136C3EDDDD90948E2FACB518BBE34F1D4CEC155AF238491C4DC119C70C7DB4D46C4",
       "algorithm": "sha512"
     }
   ]
