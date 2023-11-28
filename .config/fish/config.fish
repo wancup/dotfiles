@@ -8,6 +8,7 @@ end
 # alias
 alias rm="rm -i"
 abbr dc "docker compose"
+abbr dcb "docker compose build"
 abbr dcu "docker compose up"
 abbr dcud "docker compose up -d"
 abbr dcs "docker compose stop"
