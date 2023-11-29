@@ -41,6 +41,60 @@ return {
 				enable = true,
 				enable_autocmd = false,
 			},
+			textobjects = {
+				select = {
+					enable = true,
+					keymaps = {
+						["ib"] = "@block.inner",
+						["ab"] = "@block.outer",
+						["ic"] = "@class.inner",
+						["ac"] = "@class.outer",
+						["i/"] = "@comment.inner",
+						["a/"] = "@comment.outer",
+						["i="] = "@conditional.inner",
+						["a="] = "@conditional.outer",
+						["if"] = "@function.inner",
+						["af"] = "@function.outer",
+						["il"] = "@function.loop",
+						["al"] = "@function.loop",
+						["ip"] = "@parameter.inner",
+						["ap"] = "@parameter.outer",
+					},
+				},
+				move = {
+					enable = true,
+					goto_next_start = {
+						["]b"] = "@block.outer",
+						["]c"] = "@class.outer",
+						["]="] = "@conditional.outer",
+						["]f"] = "@function.outer",
+					},
+					goto_next_end = {
+						["]B"] = "@block.outer",
+						["]C"] = "@class.outer",
+						["]+"] = "@conditional.outer",
+						["]F"] = "@function.outer",
+					},
+					goto_previous_start = {
+						["[b"] = "@block.outer",
+						["[c"] = "@class.outer",
+						["[="] = "@conditional.outer",
+						["[f"] = "@function.outer",
+					},
+					goto_previous_end = {
+						["[B"] = "@block.outer",
+						["[C"] = "@class.outer",
+						["[+"] = "@conditional.outer",
+						["[F"] = "@function.outer",
+					},
+					goto_next = {
+						["]l"] = "@loop.*",
+					},
+					goto_previous = {
+						["]l"] = "@loop.*",
+					},
+				},
+			},
 		},
 		config = function(_, opts)
 			require("nvim-treesitter.configs").setup(opts)
