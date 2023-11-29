@@ -15,8 +15,8 @@ return {
 
 			-- Diagnostic
 			{ "<leader>dl", vim.diagnostic.open_float, desc = "[D]iagnostics [L]ine" },
-			{ "<leader>dn", vim.diagnostic.goto_next, desc = "[D]iagnostic [N]ext" },
-			{ "<leader>dp", vim.diagnostic.goto_prev, desc = "[D]iagnostic [P]rev" },
+			{ "[d", vim.diagnostic.goto_prev, desc = "Prev [D]iagnostic" },
+			{ "]d", vim.diagnostic.goto_next, desc = "Next [D]iagnostic" },
 
 			-- Goto
 			{ "gd", "<cmd>Telescope lsp_definitions<cr>", desc = "[G]oto [D]efinition" },
