@@ -11,6 +11,11 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/BurntSushi/ripgrep/14.0.3/ripgrep-14.0.3-x86_64-apple-darwin.tar.gz",
+      "checksum": "3D89440FEA9A67C8CCF6800D2FEAE929D05C1BD2DF341907448B470E3B0EB9BAD154E4BB68D1EB904E6D292369B82945351D42BB52B625542A98C49CB41F499D",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/JohnnyMorganz/StyLua/v0.18.1/stylua-macos-aarch64.zip",
       "checksum": "24B5226F704A0E22B6405DE9654EF8C4E64C3C3146A99A4F2B1D3BDAB1D3536411FA9662EF6D484F2C3B23E795C35850D85529DC727048822C7D8C5CF624225D",
       "algorithm": "sha512"
@@ -148,6 +153,16 @@
     {
       "id": "github_release/github.com/jdx/rtx/v2023.11.8/rtx-v2023.11.8-macos-x64.tar.gz",
       "checksum": "200B1E8F5D820F5637E1C43E4CF978D655037F31D2050998A95DF2E8E2F57398",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/rtx/v2023.11.9/rtx-v2023.11.9-macos-arm64.tar.gz",
+      "checksum": "655DA4E94F3431C4E82A1423107A8B709643C4E66E96A3C4C7BB181D4BA2C3E2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/rtx/v2023.11.9/rtx-v2023.11.9-macos-x64.tar.gz",
+      "checksum": "14A36BB91DA990493CF4D0522A480288EEF90D1DD4A8050F34893550383FCE0C",
       "algorithm": "sha256"
     },
     {
