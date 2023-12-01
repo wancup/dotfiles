@@ -221,7 +221,7 @@ return {
 
 	s(
 		"eff",
-		fmt('export {} from "{}"', {
+		fmt('export {} from "./{}"', {
 			i(1, "*"),
 			i(2),
 		})
