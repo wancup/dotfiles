@@ -14,7 +14,6 @@ return {
 				["g"] = { name = "Goto" },
 				["<leader><leader>"] = { name = "Window" },
 				["<leader>b"] = { name = "Buffer" },
-				["<leader>d"] = { name = "Diagnostics" },
 				["<leader>f"] = { name = "Find" },
 				["<leader>F"] = { name = "Fix" },
 				["<leader>fg"] = { name = "Find Git" },

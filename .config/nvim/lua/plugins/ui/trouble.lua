@@ -5,8 +5,8 @@ return {
 		"folke/trouble.nvim",
 		cmd = { "TroubleToggle", "Trouble" },
 		keys = {
-			{ "<leader>dL", "<cmd>TroubleToggle document_diagnostics<cr>", desc = "[D]iagnostics [L]ist" },
-			{ "<leader>dW", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "[D]iagnostics [W]orkspace" },
+			{ "<leader>Ld", "<cmd>TroubleToggle document_diagnostics<cr>", desc = "[L]ist [D]iagnostics" },
+			{ "<leader>LD", "<cmd>TroubleToggle workspace_diagnostics<cr>", desc = "[L]ist [D]iagnostics(Workspace)" },
 			{ "<leader>Lq", "<cmd>TroubleToggle quickfix<cr>", desc = "[L]ist [Q]uickfix" },
 		},
 		opts = {
