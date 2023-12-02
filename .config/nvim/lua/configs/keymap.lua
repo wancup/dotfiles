@@ -1,8 +1,32 @@
 local map = vim.keymap.set
 
+-- Normal and Visual
+map({ "n", "x" }, "<S-h>", "^")
+map({ "n", "x" }, "<S-l>", "$")
+map({ "n", "x" }, "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
+
+map({ "n", "x" }, "<leader>a", vim.lsp.buf.code_action, { desc = "Code [A]ction" })
+map({ "n", "x" }, "K", vim.lsp.buf.hover, { desc = "Hover" })
+map({ "n", "x" }, "gK", vim.lsp.buf.signature_help, { desc = "Signature Help" })
+map({ "n", "x" }, "gr", vim.lsp.buf.references, { desc = "[G]oto [R]eferences" })
+map({ "n", "x" }, "gt", function()
+	vim.lsp.buf.type_definition({ reuse_win = true })
+end, { desc = "[G]oto [T]ype Definitions" })
+map({ "n", "x" }, "gd", function()
+	vim.lsp.buf.definition({ reuse_win = true })
+end, { desc = "[G]oto [D]eclaration" })
+map({ "n", "x" }, "gD", function()
+	vim.lsp.buf.declaration({ reuse_win = true })
+end, { desc = "[G]oto [D]eclaration" })
+map({ "n", "x" }, "gI", vim.lsp.buf.implementation, { desc = "[G]oto [I]mplementation" })
+map({ "n", "x" }, "gs", vim.lsp.buf.document_symbol, { desc = "[G]oto [S]ymbol" })
+map({ "n", "x" }, "gS", vim.lsp.buf.workspace_symbol, { desc = "[G]oto [S]ymbol(Workspace)" })
+
+map({ "n", "x" }, "<leader>d", vim.diagnostic.open_float, { desc = "[D]iagnostics" })
+map({ "n", "x" }, "[d", vim.diagnostic.goto_prev, { desc = "Prev [D]iagnostics" })
+map({ "n", "x" }, "]d", vim.diagnostic.goto_next, { desc = "Next [D]iagnostics" })
+
 -- Normal
-map("n", "<S-h>", "^")
-map("n", "<S-l>", "$")
 map("n", "<C-Up>", "<cmd>resize +2<cr>")
 map("n", "<C-Down>", "<cmd>resize -2<cr>")
 map("n", "<C-Left>", "<cmd>vertical resize +2<cr>")
@@ -13,14 +37,8 @@ map("n", "<leader>Fe", ":<C-u>!eslint_d --fix %; prettierd --write %<cr>", { des
 map("n", "<leader>o", "<cmd>wa<cr>", { desc = "Write All" })
 map("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit All" })
 map("n", "<leader>bd", "<cmd>bd<cr>", { desc = "[B]uffer [D]elete" })
-map("n", "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
 map("n", "<leader>p", '"+p', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>P", '"+P', { desc = "[P]aste from Clipboard" })
-
--- Visual
-map("x", "<S-h>", "^")
-map("x", "<S-l>", "$")
-map("x", "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
 
 -- Insert
 map("i", "<C-h>", "<BS>")

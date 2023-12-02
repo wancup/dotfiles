@@ -42,9 +42,6 @@ return {
 			{ "<leader>fgS", "<cmd>Telescope git_stash<cr>", desc = "[F]ind [G]it [S]tash" },
 			{ "<leader>fgS", "<cmd>Telescope git_stash<cr>", desc = "[F]ind [G]it [S]tash" },
 			{ "<leader>fgm", "<cmd>Telescope gitmoji<cr>", desc = "[F]ind [G]it[M]oji" },
-
-			-- Code Action
-			{ "<leader>a", ":lua vim.lsp.buf.code_action()<cr>", desc = "Code [A]ction", mode = { "n", "v" } },
 		},
 		config = function()
 			local telescope = require("telescope")
