@@ -176,6 +176,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdx/rtx/v2023.12.5/rtx-v2023.12.5-macos-arm64.tar.gz",
+      "checksum": "39EEE4F57D9D2A9F27AC297FEF6C02B5D2ED8620A3F268246BAB1A840E5C0FC8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/rtx/v2023.12.5/rtx-v2023.12.5-macos-x64.tar.gz",
+      "checksum": "F11AFC93275F300203167D5F4752F5E0BC408FF107184A517497C0DA61025F5B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jdxcode/rtx/v2023.10.1/rtx-v2023.10.1-macos-arm64.tar.gz",
       "checksum": "BFB2E5F074B529B19115CDC7876D94830E4BBA80A6AB264628BFB8BA086B47F7",
       "algorithm": "sha256"
