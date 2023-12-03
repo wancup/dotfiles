@@ -9,17 +9,16 @@ return {
 		},
 		cmd = "Telescope",
 		keys = {
-			{
-				"<leader><leader>",
-				"<cmd>lua require('telescope.builtin').buffers({sort_mru=true, ignore_current_buffer=true})<cr>",
-				desc = "[F]ind Recent Buffers",
-			},
-			{ "<leader>fl", "<cmd>Telescope live_grep<cr>", desc = "[F]ind [L]ive Grep" },
-			{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "[F]ind [B]uffers" },
+			{ "<leader><leader>", "<cmd>Telescope live_grep<cr>", desc = "Find Live Grep" },
 			{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "[F]ind [F]iles" },
 			{ "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "[F]ind [R]ecent Files" },
 			{ "<leader>fR", "<cmd>Telescope resume<cr>", desc = "[F]ind [R]esume" },
 			{ "<leader>fa", "<cmd>Telescope autocommands<cr>", desc = "[F]ind [A]utoCommands" },
+			{
+				"<leader>fb",
+				"<cmd>lua require('telescope.builtin').buffers({sort_mru=true, ignore_current_buffer=true})<cr>",
+				desc = "[F]ind Recent [B]uffers",
+			},
 			{ "<leader>fB", "<cmd>Telescope current_buffer_fuzzy_find<cr>", desc = "[F]ind Current [B]uffer" },
 			{ "<leader>fc", "<cmd>Telescope commands<cr>", desc = "[F]ind [C]ommands" },
 			{ "<leader>fC", "<cmd>Telescope command_history<cr>", desc = "[F]ind [C]ommand History" },
