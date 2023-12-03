@@ -39,6 +39,7 @@ map("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit All" })
 map("n", "<leader>bd", "<cmd>bd<cr>", { desc = "[B]uffer [D]elete" })
 map("n", "<leader>p", '"+p', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>P", '"+P', { desc = "[P]aste from Clipboard" })
+map("n", "<leader>lq", "<cmd>copen<cr>", { desc = "[L]ist [Q]uickfix" })
 
 -- Insert
 map("i", "<C-h>", "<BS>")

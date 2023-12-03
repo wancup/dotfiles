@@ -1,3 +1,6 @@
+local disabled_fts = { "neo-tree" }
+local disabled_bts = { "nofile", "prompt", "popup" }
+
 return {
 	"nvim-focus/focus.nvim",
 	version = "*",
@@ -19,8 +22,8 @@ return {
 			group = augroup,
 			callback = function(_)
 				if
-					vim.tbl_contains({ "neo-tree" }, vim.bo.filetype)
-					or vim.tbl_contains({ "nofile", "prompt", "popup" }, vim.bo.buftype)
+					vim.tbl_contains(disabled_fts, vim.bo.filetype)
+					or vim.tbl_contains(disabled_bts, vim.bo.buftype)
 				then
 					require("focus").focus_disable()
 				else
