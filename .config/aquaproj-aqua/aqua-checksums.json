@@ -186,6 +186,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdx/rtx/v2023.12.7/rtx-v2023.12.7-macos-arm64.tar.gz",
+      "checksum": "141FAF186E69CCC01227A4DB654C713B6CC917DD8FB3DD1BC3204F0A288BD644",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/rtx/v2023.12.7/rtx-v2023.12.7-macos-x64.tar.gz",
+      "checksum": "5A4D4D15EE234C9A57C2D272E37A13C5908E0C1D86D18DEC29E6CCC63CF2AC48",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jdxcode/rtx/v2023.10.1/rtx-v2023.10.1-macos-arm64.tar.gz",
       "checksum": "BFB2E5F074B529B19115CDC7876D94830E4BBA80A6AB264628BFB8BA086B47F7",
       "algorithm": "sha256"
@@ -403,6 +413,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.92.2/registry.yaml",
       "checksum": "3DE8A454E1D3FFC37112534057FD39F78E2F2C15ED048AF14F7340BB6D4DEFF52D6C3368DC7CD3CA27B8E7EAC3ED42042EEF299CC825B1929993EFB8195C4E0E",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.96.0/registry.yaml",
+      "checksum": "C6BA22AA914D3C7C99EB637BF082C653CB30F4BEEC045F07BA0810F374B450C0D6B039F01B3D80DF2F7442A6BA3A9B7FE5EB0D53ECF2E995C3F3E169FB514ADD",
       "algorithm": "sha512"
     }
   ]
