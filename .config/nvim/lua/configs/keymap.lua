@@ -22,7 +22,9 @@ map({ "n", "x" }, "gI", vim.lsp.buf.implementation, { desc = "[G]oto [I]mplement
 map({ "n", "x" }, "gs", vim.lsp.buf.document_symbol, { desc = "[G]oto [S]ymbol" })
 map({ "n", "x" }, "gS", vim.lsp.buf.workspace_symbol, { desc = "[G]oto [S]ymbol(Workspace)" })
 
-map({ "n", "x" }, "<leader>d", vim.diagnostic.open_float, { desc = "[D]iagnostics" })
+map({ "n", "x" }, "<leader>d", function()
+	vim.diagnostic.open_float({ source = true })
+end, { desc = "[D]iagnostics" })
 map({ "n", "x" }, "[d", vim.diagnostic.goto_prev, { desc = "Prev [D]iagnostics" })
 map({ "n", "x" }, "]d", vim.diagnostic.goto_next, { desc = "Next [D]iagnostics" })
 
