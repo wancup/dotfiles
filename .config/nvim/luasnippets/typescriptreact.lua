@@ -44,4 +44,6 @@ return {
 	),
 
 	s("uc", { t('"use client"') }),
+
+	s("cn", { t("className=") }),
 }
