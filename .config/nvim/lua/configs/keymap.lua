@@ -5,7 +5,6 @@ map({ "n", "x" }, "<S-h>", "^")
 map({ "n", "x" }, "<S-l>", "$")
 map({ "n", "x" }, "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
 
-map({ "n", "x" }, "<leader>a", vim.lsp.buf.code_action, { desc = "Code [A]ction" })
 map({ "n", "x" }, "K", vim.lsp.buf.hover, { desc = "Hover" })
 map({ "n", "x" }, "gK", vim.lsp.buf.signature_help, { desc = "Signature Help" })
 map({ "n", "x" }, "gr", vim.lsp.buf.references, { desc = "[G]oto [R]eferences" })
