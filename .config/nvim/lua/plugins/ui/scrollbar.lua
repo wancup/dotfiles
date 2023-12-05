@@ -1,4 +1,4 @@
 -- Scrollbar
 return {
-	{ "petertriho/nvim-scrollbar", event = { "VeryLazy" }, config = true },
+	{ "petertriho/nvim-scrollbar", event = { "BufReadPost", "BufNewFile" }, config = true },
 }

@@ -2,7 +2,7 @@ return {
 	{
 		"echasnovski/mini.trailspace",
 		version = "*",
-		event = { "BufReadPost" },
+		event = { "BufReadPost", "BufNewFile" },
 		config = true,
 	},
 }
