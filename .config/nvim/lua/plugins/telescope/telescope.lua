@@ -68,6 +68,8 @@ return {
 							["<C-u>"] = false,
 							["<C-d>"] = actions.delete_buffer,
 							["<esc>"] = actions.close,
+							["<PageUp>"] = actions.preview_scrolling_up,
+							["<PageDown>"] = actions.preview_scrolling_down,
 						},
 						n = {
 							["q"] = "close",
