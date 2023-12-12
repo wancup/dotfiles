@@ -40,7 +40,7 @@ return {
 				window = {
 					mappings = {
 						["<leader>ff"] = "find_files_in_dir",
-						["<leader>fl"] = "live_grep_in_dir",
+						["<leader><leader>"] = "live_grep_in_dir",
 						["Y"] = "copy_file_name",
 					},
 				},
