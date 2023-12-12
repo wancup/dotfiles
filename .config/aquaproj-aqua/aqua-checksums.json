@@ -126,6 +126,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.40.0/gh_2.40.0_macOS_amd64.zip",
+      "checksum": "2E194072F57D065F20E0F568D01B80C2A06F5EDB036021A08F50F194ABF9AFC6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.40.0/gh_2.40.0_macOS_arm64.zip",
+      "checksum": "C0DE4AB634616E13FD0CBD51839F85407C18B16A1F04CEED2E60B4FDB7204627",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-aarch64-apple-darwin.tar.gz",
       "checksum": "3C731E047F9D169C169DEA36A7F37645C5336DE1D1B26BEDE3E43F2FE170F98BD15746EE2959C8183ED61AADD749AA4EA54528C3571FA2C6A90CB41E15F89AB2",
       "algorithm": "sha512"
@@ -183,6 +193,16 @@
     {
       "id": "github_release/github.com/jdx/rtx/v2023.12.2/rtx-v2023.12.2-macos-x64.tar.gz",
       "checksum": "72E8F595A1BD718AF35E7AF90CCC4859DF56AA3676A9AE4FAE9FA3446613C72B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/rtx/v2023.12.23/rtx-v2023.12.23-macos-arm64.tar.gz",
+      "checksum": "F15F6FBEA1FB072119108C1EB2378AEE410329E5E0C6F5950296C3B5141DC17F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/rtx/v2023.12.23/rtx-v2023.12.23-macos-x64.tar.gz",
+      "checksum": "2AC29BF7745BE9CE9B9DFFC8291576B4B8601DCB0B2B0D03E438E33B145816BB",
       "algorithm": "sha256"
     },
     {
@@ -369,6 +389,11 @@
       "id": "github_release/github.com/starship/starship/v1.16.0/starship-x86_64-apple-darwin.tar.gz",
       "checksum": "8E07CAAD1156380672202EB79247CDA15FAE265F7A278119E07A926C8D9D6009",
       "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.101.0/registry.yaml",
+      "checksum": "53FF4E5DBFFFA148E1E75A3513BC2EEFD32F0D291B0C1775CD776A4638ACA055A4FC4843C52E3EE2EAF7007D112D2863340D5E64EC185C3165D6D0CF1487D55B",
+      "algorithm": "sha512"
     },
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.44.1/registry.yaml",
