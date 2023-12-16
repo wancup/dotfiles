@@ -21,15 +21,15 @@ abbr gp "git pull"
 abbr gpp "git pull --prune"
 abbr lg "lazygit"
 abbr n "nvim"
-abbr fco "fzf-git-checkout"
-abbr fgc "fzf-git-commit"
-abbr ghna "gh-notify-actions"
+abbr fco "fzf_git_checkout"
+abbr fgc "fzf_git_commit"
+abbr ghna "gh_notify_actions"
 if test "$TERM_PROGRAM" = "WezTerm"
   abbr ic "wezterm imgcat"
 end
 
 # key bindings
-bind \cr fzf-history
+bind \cr fzf_history
 bind \er history-pager
 
 # vi mode
