@@ -44,6 +44,7 @@ return {
 			textobjects = {
 				select = {
 					enable = true,
+					lookahead = true,
 					keymaps = {
 						["ia"] = "@assignment.inner",
 						["aa"] = "@assignment.outer",
