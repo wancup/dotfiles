@@ -45,10 +45,14 @@ return {
 				select = {
 					enable = true,
 					keymaps = {
+						["ia"] = "@assignment.inner",
+						["aa"] = "@assignment.outer",
 						["ib"] = "@block.inner",
 						["ab"] = "@block.outer",
 						["ic"] = "@class.inner",
 						["ac"] = "@class.outer",
+						["iC"] = "@call.inner",
+						["aC"] = "@call.outer",
 						["i/"] = "@comment.inner",
 						["a/"] = "@comment.outer",
 						["i="] = "@conditional.inner",
