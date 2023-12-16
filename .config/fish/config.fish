@@ -32,6 +32,13 @@ end
 bind \cr fzf-history
 bind \er history-pager
 
+# vi mode
+set -g fish_key_bindings modal_key_bindings
+set -g fish_cursor_default block
+set -g fish_cursor_insert line
+set -g fish_cursor_replace_one underscore
+set -g fish_cursor_visual block
+
 # environments
 set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx XDG_DATA_HOME $HOME/.local/share
