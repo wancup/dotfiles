@@ -28,10 +28,6 @@ if test "$TERM_PROGRAM" = "WezTerm"
   abbr ic "wezterm imgcat"
 end
 
-# key bindings
-bind \cr fzf_history
-bind \er history-pager
-
 # vi mode
 set -g fish_key_bindings modal_key_bindings
 set -g fish_cursor_default block
