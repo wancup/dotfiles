@@ -9,7 +9,7 @@ return {
 				openc = "o",
 				drop = "O",
 				split = "s",
-				vsplit = "v",
+				vsplit = "S",
 				lastleave = "gl",
 				stoggleup = "u",
 				stoggledown = "<space>",

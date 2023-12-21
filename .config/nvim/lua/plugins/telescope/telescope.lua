@@ -64,6 +64,7 @@ return {
 						i = {
 							["<C-x>"] = false,
 							["<C-s>"] = actions.select_horizontal,
+							["<C-S-s>"] = actions.select_vertical,
 							["<C-i>"] = "which_key",
 							["<C-j>"] = "select_default",
 							["<C-u>"] = false,

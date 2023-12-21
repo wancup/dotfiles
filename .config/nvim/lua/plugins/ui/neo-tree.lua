@@ -32,7 +32,7 @@ return {
 					["<"] = false,
 					[">"] = false,
 					["s"] = "open_split",
-					["v"] = "open_vsplit",
+					["S"] = "open_vsplit",
 				},
 				width = 30,
 			},
