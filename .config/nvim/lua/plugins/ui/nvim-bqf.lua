@@ -5,8 +5,8 @@ return {
 		opts = {
 			magic_window = false,
 			func_map = {
-				open = "<cr>",
-				openc = "o",
+				open = "o",
+				openc = "<cr>",
 				drop = "O",
 				split = "s",
 				vsplit = "S",
