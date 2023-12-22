@@ -43,6 +43,14 @@ return {
 		})
 	),
 
+	s(
+		"ue",
+		fmt("useEffect(() => {{\n{}\n}}, [{}])", {
+			i(1),
+			i(2),
+		})
+	),
+
 	s("uc", { t('"use client"') }),
 
 	s("cn", { t("className=") }),
