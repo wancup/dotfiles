@@ -17,6 +17,7 @@ return {
 			indent = { enable = true },
 			autotag = { enable = true },
 			ensure_installed = {
+				"vimdoc",
 				"bash",
 				"html",
 				"javascript",
