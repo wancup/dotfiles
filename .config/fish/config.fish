@@ -47,6 +47,6 @@ fish_add_path $HOME/.cargo/bin
 
 # setup
 eval (/opt/homebrew/bin/brew shellenv)
-rtx activate fish | source
+mise activate fish | source
 starship init fish | source
 zoxide init fish | source

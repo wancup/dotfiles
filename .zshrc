@@ -20,6 +20,4 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export XDG_CONFIG_HOME="$HOME/.config"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(starship init zsh)"
-eval "$(rtx activate zsh)"
 
