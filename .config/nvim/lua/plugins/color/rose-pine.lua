@@ -5,8 +5,13 @@ return {
 		name = "rose-pine",
 		config = function()
 			require("rose-pine").setup({
-				dim_nc_background = true,
-				disable_italics = true,
+				dim_inactive_windows = true,
+
+				styles = {
+					italic = false,
+					transparency = true,
+				},
+
 				highlight_groups = {
 					-- Treesitteer
 					Keyword = { fg = "#7c9cee" }, -- Overwrap to increase contrast
