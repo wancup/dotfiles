@@ -456,6 +456,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/rhysd/actionlint/v1.6.26/actionlint_1.6.26_darwin_amd64.tar.gz",
+      "checksum": "BFA890E77A8508603C785AF09A30BBAB3A3255D291D8D27EFC3F20AC8E303A8E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/actionlint/v1.6.26/actionlint_1.6.26_darwin_arm64.tar.gz",
+      "checksum": "5E131AB7DE7AD051E1923B80D167AAA414734E97C720698C48778250E1DD2590",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sharkdp/bat/v0.23.0/bat-v0.23.0-x86_64-apple-darwin.tar.gz",
       "checksum": "EDCAC5D952C80EBF32F74E7B69650A2A12C8D7EA06050EF026394965C51F4503AFE1B97386967A439CE4E9472A443AD1F9154B939B0D559BE6AAD73EAE191A01",
       "algorithm": "sha512"
