@@ -171,6 +171,11 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/ducaale/xh/v0.20.1/xh-v0.20.1-x86_64-apple-darwin.tar.gz",
+      "checksum": "53D92596FCC308A2F222971C4A7173FAB37C58596157C50D05374D6B91D57440",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jdx/mise/v2024.1.14/mise-v2024.1.14-macos-arm64.tar.gz",
       "checksum": "E2F87E117E23D9ED961F63954BD1036FCAE747174E95F7280AAB436231AF9A7A",
       "algorithm": "sha256"
