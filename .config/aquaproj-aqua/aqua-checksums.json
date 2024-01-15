@@ -161,6 +161,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.42.0/gh_2.42.0_macOS_amd64.zip",
+      "checksum": "95EA4D2595D5635D64727F467AF9FA6785321D62756BB69DA13F6342AE29C6C5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.42.0/gh_2.42.0_macOS_arm64.zip",
+      "checksum": "01A9B2147C526DFAA4084914E1F14E0B5674595C15581BA4C717C57B93D24C29",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-aarch64-apple-darwin.tar.gz",
       "checksum": "3C731E047F9D169C169DEA36A7F37645C5336DE1D1B26BEDE3E43F2FE170F98BD15746EE2959C8183ED61AADD749AA4EA54528C3571FA2C6A90CB41E15F89AB2",
       "algorithm": "sha512"
@@ -183,6 +193,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.1.14/mise-v2024.1.14-macos-x64.tar.gz",
       "checksum": "B89CF13C10C01D492345022A12AF22C9054556B06849153B4895737F340386BA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.1.20/mise-v2024.1.20-macos-arm64.tar.gz",
+      "checksum": "76799A21D3AB9617BE6A3E006414E63F0E4DEDEF0FE2D766712826498B85BEE5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.1.20/mise-v2024.1.20-macos-x64.tar.gz",
+      "checksum": "35015F1D1F9D2EECF78A2C7DC0DE5B3959914767CF67B5BB5DFB3F16517EEEFD",
       "algorithm": "sha256"
     },
     {
@@ -533,6 +553,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.114.0/registry.yaml",
       "checksum": "A650594CDC792507BB1F96CCD72B3925B0E7166D73BA1B185CB3BCD9B0478B65C60226CAEA90917311F09FDF322F50A80430689C958D0E7C7558A23EDA7F9A89",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.117.0/registry.yaml",
+      "checksum": "71683E0AE2AF0313093865BD0294584E835909F27CB8CA1739862EAAD786FAB665B2B8CFF0E9CCCF218E1274FBD84F85B8C4B2B08CE461F5004447A0F823BD40",
       "algorithm": "sha512"
     },
     {
