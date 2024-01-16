@@ -24,3 +24,4 @@ packages:
 - name: jdx/mise@v2024.1.20
 - name: rhysd/actionlint@v1.6.26
 - name: ducaale/xh@v0.20.1
+- name: crate-ci/typos@v1.17.1
