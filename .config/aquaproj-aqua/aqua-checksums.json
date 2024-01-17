@@ -481,6 +481,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_amd64.zip",
+      "checksum": "8D34445FDDB590CAADC97027F27A340E639F9E13CD80CC929B170EEAFA9E1398",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_arm64.zip",
+      "checksum": "945BDC2B37393EC3720BB06CECF729A43A38890EDFF71EF92CCF1FD033FFD48A",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/neovim/neovim/stable/nvim-macos.tar.gz",
       "checksum": "6F7DE66C494D7B73CDF878F060DEDD1B2D66A648A387A245AA2AEC76A5B4C777",
       "algorithm": "sha256"
