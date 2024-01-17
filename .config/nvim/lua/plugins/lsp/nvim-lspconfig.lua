@@ -74,6 +74,15 @@ return {
 					})
 				end,
 			})
+
+			-- efm-langserver is installed by aqua
+			require("lspconfig").efm.setup({
+				init_options = {
+					documentFormatting = true,
+					documentRangeFormatting = true,
+					codeAction = true,
+				},
+			})
 		end,
 	},
 }

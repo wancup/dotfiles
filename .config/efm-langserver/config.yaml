@@ -1,0 +1,21 @@
+version: 2
+lint-debounce: 1s
+format-debounce: 0.5s
+
+root-markers:
+  - .git/
+
+tools:
+  any-typos: &any-typos
+    lint-source: typos
+    lint-debounce: 3s
+    lint-command: "typos - --format brief"
+    lint-ignore-exit-code: true
+    lint-stdin: true
+    lint-severity: 2
+    lint-formats:
+      - "-:%l:%c: %m"
+
+languages:
+  =:
+    - <<: *any-typos
