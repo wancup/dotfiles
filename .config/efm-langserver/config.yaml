@@ -12,7 +12,7 @@ tools:
     lint-command: "typos - --format brief"
     lint-ignore-exit-code: true
     lint-stdin: true
-    lint-severity: 2
+    lint-severity: 3
     lint-formats:
       - "-:%l:%c: %m"
 
