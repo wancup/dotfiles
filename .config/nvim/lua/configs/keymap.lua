@@ -88,10 +88,10 @@ map("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit All" })
 map("n", "<leader>bd", "<cmd>bd<cr>", { desc = "[B]uffer [D]elete" })
 map("n", "<leader>p", '"+p', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>P", '"+P', { desc = "[P]aste from Clipboard" })
-map("n", "<leader>lq", "<cmd>copen<cr>", { desc = "[L]ist [Q]uickfix" })
-map("n", "<leader>gcl", function()
+map("n", "<leader>ll", "<cmd>copen<cr>", { desc = "[L]ist Quickfix" })
+map("n", "<leader>lc", function()
 	git.conflict_list()
-end, { desc = "[G]it [C]onflict [L]ist" })
+end, { desc = "[L]ist Git [C]onflict" })
 
 -- Insert
 map("i", "<C-h>", "<BS>")

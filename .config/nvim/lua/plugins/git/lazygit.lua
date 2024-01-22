@@ -3,7 +3,7 @@ return {
 		"kdheepak/lazygit.nvim",
 		cmd = { "LazyGit", "LazyGitCurrentFile", "LazyGitConfig", "LazyGitFilter", "LazyGitFilterCurrentFile" },
 		keys = {
-			{ "<leader>G", "<cmd>LazyGit<cr>", desc = "lazy [G]it" },
+			{ "<leader>gg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
 		},
 	},
 }
