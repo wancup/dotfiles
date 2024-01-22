@@ -1,3 +1,4 @@
+local git = require("core.git")
 local map = vim.keymap.set
 
 -- Normal and Visual
@@ -65,6 +66,13 @@ end, { desc = "[D]iagnostics" })
 map({ "n", "x" }, "[d", vim.diagnostic.goto_prev, { desc = "Prev [D]iagnostics" })
 map({ "n", "x" }, "]d", vim.diagnostic.goto_next, { desc = "Next [D]iagnostics" })
 
+map({ "n", "x" }, "[c", function()
+	git.prev_conflict()
+end, { desc = "Goto Previous Conflict" })
+map({ "n", "x" }, "]c", function()
+	git.next_conflict()
+end, { desc = "Goto Next Conflict" })
+
 -- Normal
 map("n", "<C-Up>", "<cmd>resize +2<cr>")
 map("n", "<C-Down>", "<cmd>resize -2<cr>")
@@ -81,6 +89,9 @@ map("n", "<leader>bd", "<cmd>bd<cr>", { desc = "[B]uffer [D]elete" })
 map("n", "<leader>p", '"+p', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>P", '"+P', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>lq", "<cmd>copen<cr>", { desc = "[L]ist [Q]uickfix" })
+map("n", "<leader>gcl", function()
+	git.conflict_list()
+end, { desc = "[G]it [C]onflict [L]ist" })
 
 -- Insert
 map("i", "<C-h>", "<BS>")

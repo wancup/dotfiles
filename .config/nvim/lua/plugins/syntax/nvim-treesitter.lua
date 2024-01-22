@@ -73,25 +73,21 @@ return {
 					enable = true,
 					goto_next_start = {
 						["]b"] = "@block.outer",
-						["]c"] = "@class.outer",
 						["]="] = "@conditional.outer",
 						["]f"] = "@function.outer",
 					},
 					goto_next_end = {
 						["]B"] = "@block.outer",
-						["]C"] = "@class.outer",
 						["]+"] = "@conditional.outer",
 						["]F"] = "@function.outer",
 					},
 					goto_previous_start = {
 						["[b"] = "@block.outer",
-						["[c"] = "@class.outer",
 						["[="] = "@conditional.outer",
 						["[f"] = "@function.outer",
 					},
 					goto_previous_end = {
 						["[B"] = "@block.outer",
-						["[C"] = "@class.outer",
 						["[+"] = "@conditional.outer",
 						["[F"] = "@function.outer",
 					},
