@@ -51,6 +51,16 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v0.20.0/stylua-macos-aarch64.zip",
+      "checksum": "F1B1CF758FD4346248C78640C9B62610B811B87190942EA828A8228DD8292EE6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v0.20.0/stylua-macos-x86_64.zip",
+      "checksum": "858A3F6B69AAF4A1F94809F0371EDB4B27FA8D1DB230B55780C4B51194BC7125",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.2/zoxide-0.9.2-aarch64-apple-darwin.tar.gz",
       "checksum": "6E4E4805D2EADEB1E6C81B65D7EBB189DE49E7030406B2154790ED20FF8F9D113B5DB77707022B1CCF3669928AB842383B0ACB5729D91BC6ABC0C2236A5F64D5",
       "algorithm": "sha512"
@@ -171,8 +181,23 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.42.1/gh_2.42.1_macOS_amd64.zip",
+      "checksum": "206FBE6B8AA5C38279A4CA7DFEDF7EDA9042FC0BBEC0EA08995B6819E9A8F1B9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.42.1/gh_2.42.1_macOS_arm64.zip",
+      "checksum": "1A2E5433FC3713C0C1E160336C20D2D5242BB32D7654BEC81FB6055B405F1FCB",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/crate-ci/typos/v1.17.1/typos-v1.17.1-x86_64-apple-darwin.tar.gz",
       "checksum": "5740E693E489F592CDE54807F44D841FE190AC8307304A77E94437E83E5A293C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/crate-ci/typos/v1.17.2/typos-v1.17.2-x86_64-apple-darwin.tar.gz",
+      "checksum": "C36EF165DD68BB8D94B2B93794B229E40E7DBE3010B421BDF44046BDDD484FBE",
       "algorithm": "sha256"
     },
     {
@@ -208,6 +233,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.1.20/mise-v2024.1.20-macos-x64.tar.gz",
       "checksum": "35015F1D1F9D2EECF78A2C7DC0DE5B3959914767CF67B5BB5DFB3F16517EEEFD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.1.24/mise-v2024.1.24-macos-arm64.tar.gz",
+      "checksum": "673DE8D74998EEFB0B5E5F0DC9CC9FE59068A45502941D7B9CB348F9AE8F09CD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.1.24/mise-v2024.1.24-macos-x64.tar.gz",
+      "checksum": "03907397841387C42EF5EF850AAC7A9DFAE6C3CE776CFB1E07D2ABE6EE3E15B3",
       "algorithm": "sha256"
     },
     {
@@ -573,6 +608,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.117.0/registry.yaml",
       "checksum": "71683E0AE2AF0313093865BD0294584E835909F27CB8CA1739862EAAD786FAB665B2B8CFF0E9CCCF218E1274FBD84F85B8C4B2B08CE461F5004447A0F823BD40",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.122.1/registry.yaml",
+      "checksum": "47A0EDF6D542B753614CF26125BF7DD56802B2FB65D1E2EE62D864A038D266F8F80B3855DC9DE0B24879B22A641DFA1A1BF4E6FBFAC7EFB31528BAC29E7A0D3D",
       "algorithm": "sha512"
     },
     {
