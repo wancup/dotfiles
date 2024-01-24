@@ -37,6 +37,12 @@ return {
 						formatter = formatters.prettierd,
 					}),
 				},
+				css = {
+					formatters.if_file_exists({
+						pattern = prettier_config,
+						formatter = formatters.prettierd,
+					}),
+				},
 				javascript = {
 					formatters.if_file_exists({
 						pattern = eslint_config,
