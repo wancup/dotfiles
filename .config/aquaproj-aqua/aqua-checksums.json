@@ -516,6 +516,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/0.46.0/fzf-0.46.0-darwin_amd64.zip",
+      "checksum": "410E1F142A313A5FBE192CE958A14B790570647DB475F22193F0C95F0F71C6BF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/0.46.0/fzf-0.46.0-darwin_arm64.zip",
+      "checksum": "CE2C6EB28225A85707C809FC59EDF11CF6D01C0FB2CB3DF34A7D50EEDC212D95",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_amd64.zip",
       "checksum": "8D34445FDDB590CAADC97027F27A340E639F9E13CD80CC929B170EEAFA9E1398",
       "algorithm": "sha256"
