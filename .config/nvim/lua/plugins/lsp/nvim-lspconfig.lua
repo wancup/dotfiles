@@ -3,7 +3,7 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		event = { "BufReadPre", "BufNewFile" },
-		cmd = { "Format", "Mason" },
+		cmd = { "FormatByLsp", "Mason" },
 		dependencies = {
 			{ "williamboman/mason.nvim", config = true },
 			"williamboman/mason-lspconfig.nvim",
@@ -11,13 +11,13 @@ return {
 			"b0o/schemastore.nvim",
 		},
 		keys = {
-			{ "<leader>Ff", "<cmd>Format<cr>", desc = "[F]ix [F]ormat" },
+			{ "<leader>Ff", "<cmd>FormatByLsp<cr>", desc = "[F]ix [F]ormat Using LSP" },
 		},
 		config = function()
 			vim.diagnostic.config({ underline = true, severity_sort = true })
 
 			local on_attach = function(_, bufnr)
-				vim.api.nvim_buf_create_user_command(bufnr, "Format", function(_)
+				vim.api.nvim_buf_create_user_command(bufnr, "FormatByLsp", function(_)
 					vim.lsp.buf.format()
 				end, {})
 			end
