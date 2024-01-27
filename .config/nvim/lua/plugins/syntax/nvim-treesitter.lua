@@ -39,10 +39,6 @@ return {
 					node_decremental = "<C-h>",
 				},
 			},
-			context_commentstring = {
-				enable = true,
-				enable_autocmd = false,
-			},
 
 			textobjects = {
 				select = {
