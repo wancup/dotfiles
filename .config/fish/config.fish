@@ -7,6 +7,7 @@ end
 
 # alias
 alias rm="rm -i"
+abbr buu "brew upgrade && brew update"
 abbr dc "docker compose"
 abbr dcb "docker compose build"
 abbr dcu "docker compose up"
