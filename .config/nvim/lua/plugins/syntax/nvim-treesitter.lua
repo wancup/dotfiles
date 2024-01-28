@@ -6,7 +6,6 @@ return {
 		dependencies = {
 			"nvim-treesitter/nvim-treesitter-textobjects",
 			"windwp/nvim-ts-autotag",
-			"RRethy/nvim-treesitter-textsubjects",
 		},
 		keys = {
 			{ "<C-space>", desc = "Increment node selection" },
@@ -93,16 +92,6 @@ return {
 					goto_previous = {
 						["]l"] = "@loop.*",
 					},
-				},
-			},
-
-			textsubjects = {
-				enable = true,
-				keymaps = {
-					["i<Space>"] = "textsubjects-smart",
-					["a<Space>"] = "textsubjects-smart",
-					["a;"] = "textsubjects-container-outer",
-					["i;"] = "textsubjects-container-inner",
 				},
 			},
 		},
