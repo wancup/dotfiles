@@ -66,12 +66,8 @@ end, { desc = "[D]iagnostics" })
 map({ "n", "x" }, "[d", vim.diagnostic.goto_prev, { desc = "Prev [D]iagnostics" })
 map({ "n", "x" }, "]d", vim.diagnostic.goto_next, { desc = "Next [D]iagnostics" })
 
-map({ "n", "x" }, "[c", function()
-	git.prev_conflict()
-end, { desc = "Goto Previous Conflict" })
-map({ "n", "x" }, "]c", function()
-	git.next_conflict()
-end, { desc = "Goto Next Conflict" })
+map({ "n", "x" }, "[c", git.prev_conflict, { desc = "Goto Previous Conflict" })
+map({ "n", "x" }, "]c", git.next_conflict, { desc = "Goto Next Conflict" })
 
 -- Normal
 map("n", "<C-Up>", "<cmd>resize +2<cr>")
@@ -89,9 +85,7 @@ map("n", "<leader>bd", "<cmd>bd<cr>", { desc = "[B]uffer [D]elete" })
 map("n", "<leader>p", '"+p', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>P", '"+P', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>ll", "<cmd>copen<cr>", { desc = "[L]ist Quickfix" })
-map("n", "<leader>lc", function()
-	git.conflict_list()
-end, { desc = "[L]ist Git [C]onflict" })
+map("n", "<leader>lc", git.conflict_list, { desc = "[L]ist Git [C]onflict" })
 
 -- Insert
 map("i", "<C-h>", "<BS>")
