@@ -216,6 +216,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/ducaale/xh/v0.21.0/xh-v0.21.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "37183D514A906B7183DDB854F3EFF74927661D3BF23052C6F1604D9E49AD5594",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jdx/mise/v2024.1.14/mise-v2024.1.14-macos-arm64.tar.gz",
       "checksum": "E2F87E117E23D9ED961F63954BD1036FCAE747174E95F7280AAB436231AF9A7A",
       "algorithm": "sha256"
@@ -243,6 +248,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.1.24/mise-v2024.1.24-macos-x64.tar.gz",
       "checksum": "03907397841387C42EF5EF850AAC7A9DFAE6C3CE776CFB1E07D2ABE6EE3E15B3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.1.30/mise-v2024.1.30-macos-arm64.tar.gz",
+      "checksum": "DEB7BF0398626B4F83A4F33DEF59625C08693C03E2ACEF17323FF91B2D24D6B3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.1.30/mise-v2024.1.30-macos-x64.tar.gz",
+      "checksum": "9641638505A346B4DDBED127BADB1E6064C6FBA76877DBABB78C65C814873641",
       "algorithm": "sha256"
     },
     {
@@ -623,6 +638,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.122.1/registry.yaml",
       "checksum": "47A0EDF6D542B753614CF26125BF7DD56802B2FB65D1E2EE62D864A038D266F8F80B3855DC9DE0B24879B22A641DFA1A1BF4E6FBFAC7EFB31528BAC29E7A0D3D",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.125.0/registry.yaml",
+      "checksum": "7E391217C1CF63969EC607540E2CF6725206372AAA8D7E65DEB94B6283586B16E92F316A7138D3CDB00D208B6FB77174C838C600BF3D58CA3A9EBE7852842600",
       "algorithm": "sha512"
     },
     {
