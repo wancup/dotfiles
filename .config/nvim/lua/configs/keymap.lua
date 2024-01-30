@@ -1,6 +1,52 @@
 local git = require("core.git")
 local map = vim.keymap.set
 
+---@param cb function
+local function goto_split(cb)
+	vim.cmd("split")
+	cb()
+end
+
+---@param cb function
+local function goto_vsplit(cb)
+	vim.cmd("vsplit")
+	cb()
+end
+
+local function goto_split_ref()
+	goto_split(vim.lsp.buf.references)
+end
+local function goto_vsplit_ref()
+	goto_vsplit(vim.lsp.buf.references)
+end
+
+local function goto_type_def()
+	vim.lsp.buf.type_definition({ reuse_win = true })
+end
+local function goto_split_type_def()
+	goto_split(vim.lsp.buf.definition)
+end
+local function goto_vsplit_type_def()
+	goto_vsplit(vim.lsp.buf.definition)
+end
+
+local function goto_def()
+	vim.lsp.buf.definition({ reuse_win = true })
+end
+local function goto_split_def()
+	goto_split(vim.lsp.buf.definition)
+end
+local function goto_vsplit_def()
+	goto_vsplit(vim.lsp.buf.definition)
+end
+
+local function goto_split_impl()
+	goto_split(vim.lsp.buf.implementation)
+end
+local function goto_vsplit_impl()
+	goto_vsplit(vim.lsp.buf.implementation)
+end
+
 -- Normal and Visual
 map({ "n", "x" }, "<S-h>", "^")
 map({ "n", "x" }, "<S-l>", "$")
@@ -10,52 +56,20 @@ map({ "n", "x" }, "K", vim.lsp.buf.hover, { desc = "Hover" })
 map({ "n", "x" }, "gK", vim.lsp.buf.signature_help, { desc = "Signature Help" })
 
 map({ "n", "x" }, "gr", vim.lsp.buf.references, { desc = "[G]oto [R]eferences" })
-map({ "n", "x" }, "gsr", function()
-	vim.cmd("split")
-	vim.lsp.buf.references()
-end, { desc = "[G]oto [S]plit [R]eferences" })
-map({ "n", "x" }, "gSr", function()
-	vim.cmd("vsplit")
-	vim.lsp.buf.references()
-end, { desc = "[G]oto [V]split [R]eferences" })
+map({ "n", "x" }, "gsr", goto_split_ref, { desc = "[G]oto [S]plit [R]eferences" })
+map({ "n", "x" }, "gSr", goto_vsplit_ref, { desc = "[G]oto [V]split [R]eferences" })
 
-map({ "n", "x" }, "gt", function()
-	vim.lsp.buf.type_definition({ reuse_win = true })
-end, { desc = "[G]oto [T]ype Definitions" })
-map({ "n", "x" }, "gst", function()
-	vim.cmd("split")
-	vim.lsp.buf.definition()
-end, { desc = "[G]oto [S]plit [T]ype Defintions" })
-map({ "n", "x" }, "gSt", function()
-	vim.cmd("vsplit")
-	vim.lsp.buf.definition()
-end, { desc = "[G]oto [V]split [T]ype Defintions" })
+map({ "n", "x" }, "gt", goto_type_def, { desc = "[G]oto [T]ype Definitions" })
+map({ "n", "x" }, "gst", goto_split_type_def, { desc = "[G]oto [S]plit [T]ype Defintions" })
+map({ "n", "x" }, "gSt", goto_vsplit_type_def, { desc = "[G]oto [V]split [T]ype Defintions" })
 
-map({ "n", "x" }, "gd", function()
-	vim.lsp.buf.definition({ reuse_win = true })
-end, { desc = "[G]oto [D]eclaration" })
-map({ "n", "x" }, "gsd", function()
-	vim.cmd("split")
-	vim.lsp.buf.definition()
-end, { desc = "[G]oto [S]plit [D]eclaration" })
-map({ "n", "x" }, "gSd", function()
-	vim.cmd("vsplit")
-	vim.lsp.buf.definition()
-end, { desc = "[G]oto [V]split [D]eclaration" })
-
-map({ "n", "x" }, "gD", function()
-	vim.lsp.buf.declaration({ reuse_win = true })
-end, { desc = "[G]oto [D]eclaration" })
+map({ "n", "x" }, "gd", goto_def, { desc = "[G]oto [D]ifinition" })
+map({ "n", "x" }, "gsd", goto_split_def, { desc = "[G]oto [S]plit [D]ifinition" })
+map({ "n", "x" }, "gSd", goto_vsplit_def, { desc = "[G]oto [V]split [D]ifinition" })
 
 map({ "n", "x" }, "gI", vim.lsp.buf.implementation, { desc = "[G]oto [I]mplementation" })
-map({ "n", "x" }, "gsI", function()
-	vim.cmd("split")
-	vim.lsp.buf.implementation()
-end, { desc = "[G]oto [S]plit [I]mplementation" })
-map({ "n", "x" }, "gSI", function()
-	vim.cmd("vsplit")
-	vim.lsp.buf.implementation()
-end, { desc = "[G]oto [V]split [I]mplementation" })
+map({ "n", "x" }, "gsI", goto_split_impl, { desc = "[G]oto [S]plit [I]mplementation" })
+map({ "n", "x" }, "gSI", goto_vsplit_impl, { desc = "[G]oto [V]split [I]mplementation" })
 
 map({ "n", "x" }, "gb", vim.lsp.buf.document_symbol, { desc = "[G]oto Sym[b]ol" })
 map({ "n", "x" }, "gB", vim.lsp.buf.workspace_symbol, { desc = "[G]oto Sym[b]ol(Workspace)" })
