@@ -83,6 +83,9 @@ map({ "n", "x" }, "]d", vim.diagnostic.goto_next, { desc = "Next [D]iagnostics" 
 map({ "n", "x" }, "[c", git.prev_conflict, { desc = "Goto Previous Conflict" })
 map({ "n", "x" }, "]c", git.next_conflict, { desc = "Goto Next Conflict" })
 
+map({ "n", "x" }, "[q", "<cmd>cprev<cr>", { desc = "Goto Previous Quickfix" })
+map({ "n", "x" }, "]q", "<cmd>cnext<cr>", { desc = "Goto Next Quickfix" })
+
 -- Normal
 map("n", "<C-Up>", "<cmd>resize +2<cr>")
 map("n", "<C-Down>", "<cmd>resize -2<cr>")
