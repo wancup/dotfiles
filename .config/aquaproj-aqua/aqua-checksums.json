@@ -191,6 +191,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.43.1/gh_2.43.1_macOS_amd64.zip",
+      "checksum": "53F58C94324FCAE7E424E3CF7662D68025BF148350B83911846B330920083E56",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.43.1/gh_2.43.1_macOS_arm64.zip",
+      "checksum": "636B2C5E645C240EE0895F3A1D478469371AC114E68347957DE41E4BFE50EB7D",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/crate-ci/typos/v1.17.1/typos-v1.17.1-x86_64-apple-darwin.tar.gz",
       "checksum": "5740E693E489F592CDE54807F44D841FE190AC8307304A77E94437E83E5A293C",
       "algorithm": "sha256"
@@ -198,6 +208,11 @@
     {
       "id": "github_release/github.com/crate-ci/typos/v1.17.2/typos-v1.17.2-x86_64-apple-darwin.tar.gz",
       "checksum": "C36EF165DD68BB8D94B2B93794B229E40E7DBE3010B421BDF44046BDDD484FBE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/crate-ci/typos/v1.18.0/typos-v1.18.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "826D61D542D0A0434ACD67C0B263D9D4DEAFF913AEDFCCD8390857456DB5FC72",
       "algorithm": "sha256"
     },
     {
@@ -258,6 +273,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.1.30/mise-v2024.1.30-macos-x64.tar.gz",
       "checksum": "9641638505A346B4DDBED127BADB1E6064C6FBA76877DBABB78C65C814873641",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.2.4/mise-v2024.2.4-macos-arm64.tar.gz",
+      "checksum": "06EC020C2D123864ADDC96CB368EC344421FDD6AE8E246BCFC796A4BCE9C3B48",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.2.4/mise-v2024.2.4-macos-x64.tar.gz",
+      "checksum": "BC876F658E3D10AB80B3193B0611F7882EC196B4D5D1E60BD7EE6D164354D250",
       "algorithm": "sha256"
     },
     {
@@ -541,6 +566,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/0.46.1/fzf-0.46.1-darwin_amd64.zip",
+      "checksum": "D64DCC30455F7148257006E44A71724C13146C35CB030D9E1E71AAA74721CEBD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/0.46.1/fzf-0.46.1-darwin_arm64.zip",
+      "checksum": "53D66D2F9C6E44D6E7A0C29417FB2EC7D64F7DFF9976F3C295B0E2EF15AB734B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_amd64.zip",
       "checksum": "8D34445FDDB590CAADC97027F27A340E639F9E13CD80CC929B170EEAFA9E1398",
       "algorithm": "sha256"
@@ -548,6 +583,16 @@
     {
       "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_arm64.zip",
       "checksum": "945BDC2B37393EC3720BB06CECF729A43A38890EDFF71EF92CCF1FD033FFD48A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/mattn/efm-langserver/v0.0.50/efm-langserver_v0.0.50_darwin_amd64.zip",
+      "checksum": "1D859101E727493C7180CD39D22F65061148E469468529F7498E8A638FC9664C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/mattn/efm-langserver/v0.0.50/efm-langserver_v0.0.50_darwin_arm64.zip",
+      "checksum": "97BB371FF716FAEAECB8FA0D4B108068A015E5CA4A9FC6AE43DC44900FF39248",
       "algorithm": "sha256"
     },
     {
