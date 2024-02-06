@@ -216,6 +216,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.18.1/typos-v1.18.1-x86_64-apple-darwin.tar.gz",
+      "checksum": "8D2EE3058BDBB9FDABDE3FAC20006197941BA63C728B6A7C022A472BDB911D91",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-aarch64-apple-darwin.tar.gz",
       "checksum": "3C731E047F9D169C169DEA36A7F37645C5336DE1D1B26BEDE3E43F2FE170F98BD15746EE2959C8183ED61AADD749AA4EA54528C3571FA2C6A90CB41E15F89AB2",
       "algorithm": "sha512"
@@ -688,6 +693,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.125.0/registry.yaml",
       "checksum": "7E391217C1CF63969EC607540E2CF6725206372AAA8D7E65DEB94B6283586B16E92F316A7138D3CDB00D208B6FB77174C838C600BF3D58CA3A9EBE7852842600",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.128.0/registry.yaml",
+      "checksum": "2C8E7B0AC7D3FEA62102ED0154060969E5A8589571D13B1C2585AF08A3CD3F3778325D38271ABF5ED0653D02EB36B7524A98819120EAE01B4FF7DE3B07CD02EE",
       "algorithm": "sha512"
     },
     {
