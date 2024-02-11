@@ -221,6 +221,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.18.2/typos-v1.18.2-x86_64-apple-darwin.tar.gz",
+      "checksum": "5D31FF3C17F06660FE22ADE7853861A95D107A3FC8D607FA63E13B5A00495751",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-aarch64-apple-darwin.tar.gz",
       "checksum": "3C731E047F9D169C169DEA36A7F37645C5336DE1D1B26BEDE3E43F2FE170F98BD15746EE2959C8183ED61AADD749AA4EA54528C3571FA2C6A90CB41E15F89AB2",
       "algorithm": "sha512"
@@ -278,6 +283,26 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.1.30/mise-v2024.1.30-macos-x64.tar.gz",
       "checksum": "9641638505A346B4DDBED127BADB1E6064C6FBA76877DBABB78C65C814873641",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.2.11/mise-v2024.2.11-macos-arm64.tar.gz",
+      "checksum": "15D8620009557805C5255349FD3BBCA31014009E8E38A6DD5F2E1E8892C3DA11",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.2.11/mise-v2024.2.11-macos-x64.tar.gz",
+      "checksum": "43ACDC866850D5E7D9B5E2F43CE752FCC2E18025E800CA2FB35229C4230A9211",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.2.13/mise-v2024.2.13-macos-arm64.tar.gz",
+      "checksum": "1E5274859FBBD5B2D683A83E3120C678E2726B25B43F13B9C5D29398BFF8DB70",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.2.13/mise-v2024.2.13-macos-x64.tar.gz",
+      "checksum": "8AECA1E0730907238AB21CA5C36A94B408A4A0861087A6674DCC7320C1FC47E6",
       "algorithm": "sha256"
     },
     {
