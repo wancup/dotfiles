@@ -1,4 +1,5 @@
 local git = require("core.git")
+local window = require("core.window")
 local map = vim.keymap.set
 
 ---@param cb function
@@ -91,8 +92,9 @@ map("n", "<C-Up>", "<cmd>resize +2<cr>")
 map("n", "<C-Down>", "<cmd>resize -2<cr>")
 map("n", "<C-Left>", "<cmd>vertical resize +2<cr>")
 map("n", "<C-Right>", "<cmd>vertical resize -2<cr>")
-map("n", "<C-w>w", "<C-w>p")
-map("n", "<C-w><C-w>", "<C-w>p")
+map("n", "<C-w>p", window.pick_win, { desc = "[P]ick Window" })
+map("n", "<C-w>w", window.switch_win)
+map("n", "<C-w><C-w>", window.switch_win)
 map("n", "<Cr>", "a<Cr><Esc>O")
 map("n", "<S-Cr>", "i<Cr><Esc>O")
 map("n", "<leader>Fe", ":<C-u>!eslint_d --fix %; prettierd --write %<cr>", { desc = "[F]ix [E]slint" })
