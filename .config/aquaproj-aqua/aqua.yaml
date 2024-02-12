@@ -8,7 +8,7 @@ checksum:
     - darwin
 registries:
 - type: standard
-  ref: v4.128.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.131.1 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: sharkdp/fd@v9.0.0
 - name: sharkdp/bat@v0.24.0
