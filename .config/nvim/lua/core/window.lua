@@ -58,13 +58,14 @@ local function open_picker_win(win_id, label_char, file_name)
 end
 
 ---@param focusable_wins FocusableWin[]
-local function select_win(focusable_wins)
+---@param callback fun(win_id: integer)
+local function select_win(focusable_wins, callback)
 	local success, input_code = pcall(vim.fn.getchar)
 	if success and type(input_code) == "number" then
 		local input_char = vim.fn.nr2char(input_code)
 		for _, candidate in ipairs(focusable_wins) do
 			if candidate.label == input_char then
-				vim.api.nvim_set_current_win(candidate.win)
+				callback(candidate.win)
 			end
 		end
 	end
@@ -101,25 +102,30 @@ local function get_focusable_wins()
 	return focusable_wins
 end
 
-M.pick_win = function()
+---@param callback fun(win_id: integer)
+M.select_win = function(callback)
 	local current_win = vim.api.nvim_get_current_win()
 	local focusable_wins = get_focusable_wins()
 	local focusable_win_size = table.maxn(focusable_wins)
 	if focusable_win_size == 2 then
 		for _, candidate in ipairs(focusable_wins) do
 			if candidate.win ~= current_win then
-				vim.api.nvim_set_current_win(candidate.win)
+				callback(candidate.win)
 			end
 		end
 	elseif focusable_win_size > 2 then
 		vim.api.nvim_command("redraw")
-		select_win(focusable_wins)
+		select_win(focusable_wins, callback)
 	end
 
 	-- close all floating wins
 	for _, win in ipairs(focusable_wins) do
 		vim.api.nvim_win_close(win.float, true)
 	end
+end
+
+M.pick_win = function()
+	M.select_win(vim.api.nvim_set_current_win)
 end
 
 M.switch_win = function()
@@ -131,6 +137,17 @@ M.switch_win = function()
 	end
 
 	M.pick_win()
+end
+
+M.close_win = function()
+	local _close_win = function(win_id)
+		vim.api.nvim_win_close(win_id, false)
+	end
+	M.select_win(_close_win)
+end
+
+M.hide_win = function()
+	M.select_win(vim.api.nvim_win_hide)
 end
 
 return M

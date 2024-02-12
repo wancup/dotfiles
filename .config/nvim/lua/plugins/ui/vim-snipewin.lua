@@ -3,15 +3,15 @@ return {
 	{
 		"4513ECHO/vim-snipewin",
 		keys = {
-			-- {
-			-- 	"<C-w>p",
-			-- 	function()
-			-- 		require("snipewin").select(vim.fn["g:snipewin#callback#goto"])
-			-- 	end,
-			-- 	desc = "[P]ick Window",
-			-- },
 			{
-				"<C-w>c",
+				"<C-w><C-p>",
+				function()
+					require("snipewin").select(vim.fn["g:snipewin#callback#goto"])
+				end,
+				desc = "[P]ick Window",
+			},
+			{
+				"<C-w><C-c>",
 				function()
 					require("snipewin").select(vim.fn["g:snipewin#callback#close"])
 				end,
