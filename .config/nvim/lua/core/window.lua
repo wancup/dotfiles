@@ -49,7 +49,6 @@ end
 ---@param focusable_wins FocusableWin[]
 local function select_win(focusable_wins)
 	local success, input_code = pcall(vim.fn.getchar)
-	print(input_code)
 	if success and type(input_code) == "number" then
 		local input_char = vim.fn.nr2char(input_code)
 		for _, candidate in ipairs(focusable_wins) do
