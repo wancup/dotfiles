@@ -6,6 +6,10 @@ local M = {}
 ---@field label string
 
 local label_string = "fjdksla;"
+local hi_picker_label = "WindowSwitcherLabel"
+local hi_picker_sepalator = "WindowSwitcherSepalator"
+vim.api.nvim_set_hl(0, hi_picker_label, { fg = "#f25070" })
+vim.api.nvim_set_hl(0, hi_picker_sepalator, { fg = "#3c3c3c" })
 
 --- Open float window
 --- @param win_id integer
@@ -16,20 +20,27 @@ local function open_picker_win(win_id, label_char, file_name)
 	local win_width = vim.api.nvim_win_get_width(win_id)
 	local win_height = vim.api.nvim_win_get_height(win_id)
 
-	local file_name_length = vim.api.nvim_strwidth(file_name)
-	local label_padding = math.ceil(file_name_length / 2) - 1
+	local file_extension = vim.fn.fnamemodify(file_name, ":e")
+	local icon, icon_hi = require("nvim-web-devicons").get_icon(file_name, file_extension, { default = true })
+	local description = icon .. "  " .. file_name
+	local description_length = vim.api.nvim_strwidth(description)
+	local label_padding = math.ceil(description_length / 2) - 1
 	local label = string.rep(" ", label_padding) .. string.upper(label_char)
-	local sepalator = string.rep("─", file_name_length)
+	local sepalator = string.rep("─", description_length)
 	local buf = vim.api.nvim_create_buf(false, true)
+	local window_width = description_length + 2
 
-	local buf_contents = { "", label, sepalator, file_name, "" }
+	local buf_contents = { "", label, sepalator, description, "" }
 	local lines = {}
 	for _, line in ipairs(buf_contents) do
 		table.insert(lines, " " .. line)
 	end
 	vim.api.nvim_buf_set_lines(buf, 0, -1, true, lines)
+	vim.api.nvim_buf_add_highlight(buf, -1, hi_picker_label, 1, 1, window_width)
+	vim.api.nvim_buf_add_highlight(buf, -1, hi_picker_sepalator, 2, 1, 1 + vim.fn.strlen(sepalator))
+	vim.api.nvim_buf_add_highlight(buf, -1, icon_hi, 3, 2, 2 + vim.fn.strlen(icon))
 
-	local x = math.floor((win_width / 2) - (file_name_length / 2))
+	local x = math.floor((win_width / 2) - (description_length / 2))
 	local y = math.floor(win_height / 2) - 2
 	local win = vim.api.nvim_open_win(buf, false, {
 		win = win_id,
@@ -39,7 +50,7 @@ local function open_picker_win(win_id, label_char, file_name)
 		col = x,
 		row = y,
 		style = "minimal",
-		width = file_name_length + 2,
+		width = window_width,
 		height = 5,
 	})
 
