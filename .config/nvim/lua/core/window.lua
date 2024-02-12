@@ -52,6 +52,7 @@ local function open_picker_win(win_id, label_char, file_name)
 		style = "minimal",
 		width = window_width,
 		height = 5,
+		border = "rounded",
 	})
 
 	return win
