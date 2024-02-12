@@ -151,4 +151,23 @@ M.hide_win = function()
 	M.select_win(vim.api.nvim_win_hide)
 end
 
+local aspect_ratio = 2.5
+M.toggle_orientation = function()
+	local buf = vim.api.nvim_get_current_buf()
+	local win_width = vim.api.nvim_win_get_width(0)
+	local win_height = vim.api.nvim_win_get_height(0)
+
+	vim.api.nvim_win_hide(0)
+
+	if win_width > (win_height * aspect_ratio) then
+		vim.cmd("vsplit")
+		local opened_win = vim.api.nvim_get_current_win()
+		vim.api.nvim_win_set_buf(opened_win, buf)
+	else
+		vim.cmd("split")
+		local opened_win = vim.api.nvim_get_current_win()
+		vim.api.nvim_win_set_buf(opened_win, buf)
+	end
+end
+
 return M
