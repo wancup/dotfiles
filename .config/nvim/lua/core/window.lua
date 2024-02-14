@@ -8,15 +8,19 @@ local M = {}
 local label_string = "fjdksla;"
 local hi_picker_label = "WindowSwitcherLabel"
 local hi_picker_sepalator = "WindowSwitcherSepalator"
+local hi_picker_file_path = "WindowSwitcherFilePath"
+
 vim.api.nvim_set_hl(0, hi_picker_label, { fg = "#f25070" })
 vim.api.nvim_set_hl(0, hi_picker_sepalator, { fg = "#3c3c3c" })
+vim.api.nvim_set_hl(0, hi_picker_file_path, { fg = "#696969" })
 
 --- Open float window
 --- @param win_id integer
 --- @param label_char string
 --- @param file_name string
+--- @param file_path string
 --- @return integer win_id created window id
-local function open_picker_win(win_id, label_char, file_name)
+local function open_picker_win(win_id, label_char, file_name, file_path)
 	local win_width = vim.api.nvim_win_get_width(win_id)
 	local win_height = vim.api.nvim_win_get_height(win_id)
 
@@ -24,23 +28,27 @@ local function open_picker_win(win_id, label_char, file_name)
 	local icon, icon_hi = require("nvim-web-devicons").get_icon(file_name, file_extension, { default = true })
 	local description = icon .. "  " .. file_name
 	local description_length = vim.api.nvim_strwidth(description)
-	local label_padding = math.ceil(description_length / 2) - 1
-	local label = string.rep(" ", label_padding) .. string.upper(label_char)
-	local sepalator = string.rep("─", description_length)
-	local buf = vim.api.nvim_create_buf(false, true)
-	local window_width = description_length + 2
+	local file_path_length = vim.api.nvim_strwidth(file_path)
+	local content_width = math.max(description_length, file_path_length)
+	local window_width = content_width + 2
 
-	local buf_contents = { "", label, sepalator, description, "" }
+	local label_padding = math.ceil(content_width / 2) - 1
+	local label = string.rep(" ", label_padding) .. string.upper(label_char)
+	local sepalator = string.rep("─", content_width)
+	local buf = vim.api.nvim_create_buf(false, true)
+
+	local buf_contents = { "", label, sepalator, file_path, description, "" }
 	local lines = {}
 	for _, line in ipairs(buf_contents) do
 		table.insert(lines, " " .. line)
 	end
 	vim.api.nvim_buf_set_lines(buf, 0, -1, true, lines)
-	vim.api.nvim_buf_add_highlight(buf, -1, hi_picker_label, 1, 1, window_width)
+	vim.api.nvim_buf_add_highlight(buf, -1, hi_picker_label, 1, 1, content_width)
 	vim.api.nvim_buf_add_highlight(buf, -1, hi_picker_sepalator, 2, 1, 1 + vim.fn.strlen(sepalator))
-	vim.api.nvim_buf_add_highlight(buf, -1, icon_hi, 3, 2, 2 + vim.fn.strlen(icon))
+	vim.api.nvim_buf_add_highlight(buf, -1, hi_picker_file_path, 3, 1, 1 + vim.fn.strlen(sepalator))
+	vim.api.nvim_buf_add_highlight(buf, -1, icon_hi, 4, 2, 2 + vim.fn.strlen(icon))
 
-	local x = math.floor((win_width / 2) - (description_length / 2))
+	local x = math.floor((win_width / 2) - (content_width / 2))
 	local y = math.floor(win_height / 2) - 2
 	local win = vim.api.nvim_open_win(buf, false, {
 		win = win_id,
@@ -51,7 +59,7 @@ local function open_picker_win(win_id, label_char, file_name)
 		row = y,
 		style = "minimal",
 		width = window_width,
-		height = 5,
+		height = table.maxn(buf_contents),
 		border = "rounded",
 	})
 
@@ -84,13 +92,15 @@ local function get_focusable_wins()
 
 		if is_focusable then
 			local buf = vim.api.nvim_win_get_buf(win)
-			local file_path = vim.api.nvim_buf_get_name(buf)
-			local file_name = vim.fn.fnamemodify(file_path, ":t")
+			local file_full_path = vim.api.nvim_buf_get_name(buf)
+			local file_path = vim.fn.fnamemodify(file_full_path, ":.:h")
+			local shorten_file_path = vim.fn.pathshorten(file_path, 3) .. "/"
+			local file_name = vim.fn.fnamemodify(file_full_path, ":t")
 			local label_index = table.maxn(focusable_wins) + 1
 
 			-- TODO: check out of range
 			local label = string.sub(label_string, label_index, label_index)
-			local opened_win = open_picker_win(win, label, file_name)
+			local opened_win = open_picker_win(win, label, file_name, shorten_file_path)
 
 			local candidate = {
 				win = win,
