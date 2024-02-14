@@ -1,3 +1,4 @@
+local window = require("core.window")
 local files = require("mini.files")
 
 vim.keymap.set("n", "<leader>e", function()
@@ -39,3 +40,32 @@ vim.keymap.set("n", "<leader>my", function()
 		vim.fn.setreg(vim.v.register, entry.name)
 	end
 end, { buffer = true, desc = "[M]ini.files [Y]ank file name" })
+
+vim.keymap.set("n", "<C-s>", function()
+	local entry = files.get_fs_entry()
+	if entry ~= nil then
+		files.close()
+		vim.cmd("split")
+		vim.cmd("e " .. entry.path)
+	end
+end, { buffer = true, desc = "Open file in the split window" })
+
+vim.keymap.set("n", "<C-S-s>", function()
+	local entry = files.get_fs_entry()
+	if entry ~= nil then
+		files.close()
+		vim.cmd("vsplit")
+		vim.cmd("e " .. entry.path)
+	end
+end, { buffer = true, desc = "Open file in the vsplit window" })
+
+vim.keymap.set("n", "<leader>mp", function()
+	local entry = files.get_fs_entry()
+	if entry ~= nil then
+		files.close()
+		window.select_win(function(win)
+			vim.api.nvim_set_current_win(win)
+			vim.cmd("e " .. entry.path)
+		end)
+	end
+end, { buffer = true, desc = "[M]ini.files [P]ick window and open" })
