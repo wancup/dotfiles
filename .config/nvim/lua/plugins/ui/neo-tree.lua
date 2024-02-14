@@ -21,7 +21,7 @@ return {
 			},
 		},
 		keys = {
-			{ "<leader>e", "<cmd>Neotree reveal toggle<cr>", desc = "[E]xplore files" },
+			{ "<leader>E", "<cmd>Neotree reveal toggle<cr>", desc = "[E]xplore files" },
 			{ "<leader>ge", "<cmd>Neotree reveal toggle git_status float<cr>", desc = "[G]it [E]xplore files" },
 		},
 		opts = {
@@ -37,6 +37,7 @@ return {
 				width = 30,
 			},
 			filesystem = {
+				hijack_netrw_behavior = "disabled",
 				window = {
 					mappings = {
 						["<leader>ff"] = "find_files_in_dir",
