@@ -3,8 +3,9 @@ local prettier_config = { ".prettierrc", ".prettierrc.*", "prettier.config.*" }
 
 return {
 	"elentok/format-on-save.nvim",
-	event = "BufWritePre",
-	cmd = { "Format", "FormatOn", "FormatOff" },
+	-- event = "BufWritePre",
+	-- cmd = { "Format", "FormatOn", "FormatOff" },
+	lazy = true,
 	config = function()
 		local formatters = require("format-on-save.formatters")
 		require("format-on-save").setup({
