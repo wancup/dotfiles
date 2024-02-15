@@ -13,7 +13,6 @@ opt.timeoutlen = 300
 
 -- UI
 opt.cursorline = true
-opt.virtualedit = "onemore"
 opt.number = true
 opt.termguicolors = true
 opt.scrolloff = 10
