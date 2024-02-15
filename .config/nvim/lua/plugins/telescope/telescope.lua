@@ -5,7 +5,6 @@ return {
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 			"olacin/telescope-gitmoji.nvim",
-			"nvim-telescope/telescope-ui-select.nvim",
 		},
 		cmd = "Telescope",
 		keys = {
@@ -42,9 +41,6 @@ return {
 			{ "<leader>fgS", "<cmd>Telescope git_stash<cr>", desc = "[F]ind [G]it [S]tash" },
 			{ "<leader>fgS", "<cmd>Telescope git_stash<cr>", desc = "[F]ind [G]it [S]tash" },
 			{ "<leader>fgm", "<cmd>Telescope gitmoji<cr>", desc = "[F]ind [G]it[M]oji" },
-
-			-- Code Action
-			{ "<leader>a", vim.lsp.buf.code_action, desc = "Code [A]ction", mode = { "n", "v" } },
 		},
 		config = function()
 			local telescope = require("telescope")
@@ -95,20 +91,10 @@ return {
 							vim.fn.setreg("+", emoji)
 						end,
 					},
-					["ui-select"] = {
-						require("telescope.themes").get_cursor({
-							initial_mode = "normal",
-							layout_config = {
-								width = 0.8,
-								height = 0.35,
-							},
-						}),
-					},
 				},
 			})
 
 			telescope.load_extension("gitmoji")
-			telescope.load_extension("ui-select")
 			telescope.load_extension("persisted")
 		end,
 	},
