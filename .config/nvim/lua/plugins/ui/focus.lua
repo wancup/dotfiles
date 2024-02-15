@@ -3,7 +3,7 @@ local disabled_bts = { "nofile", "prompt", "popup" }
 
 return {
 	"nvim-focus/focus.nvim",
-	version = "*",
+	version = false,
 	event = { "WinNew" },
 	opts = {
 		enable = true,

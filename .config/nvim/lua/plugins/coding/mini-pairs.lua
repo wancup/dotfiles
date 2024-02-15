@@ -2,7 +2,7 @@
 return {
 	{
 		"echasnovski/mini.pairs",
-		version = "*",
+		version = false,
 		event = "InsertEnter",
 		config = true,
 	},
