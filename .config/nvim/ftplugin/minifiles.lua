@@ -8,7 +8,7 @@ end, { buffer = true, desc = "Close mini.files" })
 vim.keymap.set("n", "_", function()
 	local cwd = vim.fn.getcwd()
 	files.open(cwd)
-end, { buffer = true, desc = "Open CDW" })
+end, { buffer = true, desc = "Open CWD" })
 
 vim.keymap.set("n", "<cr>", function()
 	files.go_in({ close_on_file = true })
