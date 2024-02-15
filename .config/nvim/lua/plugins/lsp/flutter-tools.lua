@@ -16,6 +16,10 @@ return {
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 		},
-		config = true,
+		opts = {
+			widget_guides = {
+				enabled = true,
+			},
+		},
 	},
 }
