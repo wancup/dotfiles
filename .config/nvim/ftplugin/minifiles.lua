@@ -59,7 +59,7 @@ vim.keymap.set("n", "<C-S-s>", function()
 	end
 end, { buffer = true, desc = "Open file in the vsplit window" })
 
-vim.keymap.set("n", "<leader>mp", function()
+vim.keymap.set("n", "<C-w>p", function()
 	local entry = files.get_fs_entry()
 	if entry ~= nil then
 		files.close()
@@ -68,4 +68,4 @@ vim.keymap.set("n", "<leader>mp", function()
 			vim.cmd("e " .. entry.path)
 		end)
 	end
-end, { buffer = true, desc = "[M]ini.files [P]ick window and open" })
+end, { buffer = true, desc = "mini.files [W]indow [P]ick and open" })
