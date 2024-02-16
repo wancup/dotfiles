@@ -1,7 +1,14 @@
 local window = require("core.window")
 local files = require("mini.files")
 
+vim.keymap.set("n", "J", "j", { buffer = true })
+vim.keymap.set("n", "K", "k", { buffer = true })
+
 vim.keymap.set("n", "<leader>e", function()
+	files.close()
+end, { buffer = true, desc = "Close mini.files" })
+
+vim.keymap.set("n", "<esc>", function()
 	files.close()
 end, { buffer = true, desc = "Close mini.files" })
 

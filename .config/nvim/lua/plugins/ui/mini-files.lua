@@ -15,10 +15,11 @@ return {
 		},
 		opts = {
 			mappings = {
+				close = "",
 				go_in = "",
-				go_in_plus = "l",
+				go_in_plus = "L",
 				go_out = "",
-				go_out_plus = "h",
+				go_out_plus = "H",
 			},
 			options = {
 				use_as_default_explorer = false,
