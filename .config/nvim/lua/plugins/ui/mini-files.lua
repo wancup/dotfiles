@@ -24,6 +24,11 @@ return {
 			options = {
 				use_as_default_explorer = false,
 			},
+			windows = {
+				preview = true,
+				width_focus = 40,
+				width_preview = 50,
+			},
 		},
 	},
 }
