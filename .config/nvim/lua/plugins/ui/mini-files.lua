@@ -20,6 +20,7 @@ return {
 				go_in_plus = "L",
 				go_out = "",
 				go_out_plus = "H",
+				reveal_cwd = "",
 			},
 			options = {
 				use_as_default_explorer = false,
