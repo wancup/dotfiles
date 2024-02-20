@@ -35,6 +35,13 @@ return {
 				desc = "Enable format-on-save",
 				force = true,
 			})
+
+			vim.api.nvim_create_user_command("Format", function()
+				require("conform").format({ async = true })
+			end, {
+				desc = "Format by conform",
+				force = true,
+			})
 		end,
 	},
 }
