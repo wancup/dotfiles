@@ -145,7 +145,7 @@ M.pick_win = function()
 	M.select_win(vim.api.nvim_set_current_win)
 end
 
-M.switch_win = function()
+M.previous_win = function()
 	local current_win = vim.api.nvim_get_current_win()
 	vim.cmd("wincmd p")
 	local selected_win = vim.api.nvim_get_current_win()
