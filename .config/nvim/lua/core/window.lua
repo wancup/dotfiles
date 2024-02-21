@@ -118,20 +118,26 @@ M.select_win = function(callback)
 	local current_win = vim.api.nvim_get_current_win()
 	local focusable_wins = get_focusable_wins()
 	local focusable_win_size = table.maxn(focusable_wins)
+
+	local close_pickup_wins = function()
+		for _, win in ipairs(focusable_wins) do
+			vim.api.nvim_win_close(win.float, true)
+		end
+	end
+
 	if focusable_win_size == 2 then
 		for _, candidate in ipairs(focusable_wins) do
 			if candidate.win ~= current_win then
+				close_pickup_wins()
 				callback(candidate.win)
 			end
 		end
 	elseif focusable_win_size > 2 then
 		vim.api.nvim_command("redraw")
-		select_win(focusable_wins, callback)
-	end
-
-	-- close all floating wins
-	for _, win in ipairs(focusable_wins) do
-		vim.api.nvim_win_close(win.float, true)
+		select_win(focusable_wins, function(win_id)
+			close_pickup_wins()
+			callback(win_id)
+		end)
 	end
 end
 
@@ -150,11 +156,14 @@ M.switch_win = function()
 	M.pick_win()
 end
 
-M.close_win = function()
-	local _close_win = function(win_id)
-		vim.api.nvim_win_close(win_id, false)
+M.remove_win_buf = function()
+	local _remove_buf = function(win_id)
+		local buf = vim.api.nvim_win_get_buf(win_id)
+		vim.api.nvim_buf_call(buf, function()
+			vim.cmd("bdelete")
+		end)
 	end
-	M.select_win(_close_win)
+	M.select_win(_remove_buf)
 end
 
 M.hide_win = function()
