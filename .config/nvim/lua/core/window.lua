@@ -67,16 +67,22 @@ local function open_picker_win(win_id, label_char, file_name, file_path)
 end
 
 ---@param focusable_wins FocusableWin[]
----@param callback fun(win_id: integer)
-local function select_win(focusable_wins, callback)
+---@param callback fun(win_id: integer | nil)
+local function select_focusable_win(focusable_wins, callback)
+	local is_callback_called = false
 	local success, input_code = pcall(vim.fn.getchar)
 	if success and type(input_code) == "number" then
 		local input_char = vim.fn.nr2char(input_code)
 		for _, candidate in ipairs(focusable_wins) do
 			if candidate.label == input_char then
 				callback(candidate.win)
+				is_callback_called = true
 			end
 		end
+	end
+
+	if not is_callback_called then
+		callback(nil)
 	end
 end
 
@@ -126,18 +132,22 @@ M.select_win = function(callback)
 	end
 
 	if focusable_win_size == 2 then
+		close_pickup_wins()
 		for _, candidate in ipairs(focusable_wins) do
 			if candidate.win ~= current_win then
-				close_pickup_wins()
 				callback(candidate.win)
 			end
 		end
 	elseif focusable_win_size > 2 then
 		vim.api.nvim_command("redraw")
-		select_win(focusable_wins, function(win_id)
+		select_focusable_win(focusable_wins, function(win_id)
 			close_pickup_wins()
-			callback(win_id)
+			if win_id ~= nil then
+				callback(win_id)
+			end
 		end)
+	else
+		close_pickup_wins()
 	end
 end
 
