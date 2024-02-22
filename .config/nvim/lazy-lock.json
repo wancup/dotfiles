@@ -54,7 +54,6 @@
   "rose-pine": { "branch": "main", "commit": "f977eeba34b030b37f93ece2fbd792477606203b" },
   "schemastore.nvim": { "branch": "main", "commit": "12ff3accf50fe1e59b360b2feb0b1be13d14bd3c" },
   "search-replace.nvim": { "branch": "main", "commit": "d92290a02d97f4e9b8cd60d28b56b403432158d5" },
-  "sunglasses.nvim": { "branch": "main", "commit": "fe31ab6fdd4eaaec545eed729b0d59e63a0934f9" },
   "telescope-gitmoji.nvim": { "branch": "master", "commit": "7e89f41aa25fb06ad5fe27b5524494266e08e3f9" },
   "telescope.nvim": { "branch": "master", "commit": "b744cf59752aaa01561afb4223006de26f3836fd" },
   "todo-comments.nvim": { "branch": "main", "commit": "833d8dd8b07eeda37a09e99460f72a02616935cb" },
