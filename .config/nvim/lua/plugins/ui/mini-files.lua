@@ -15,7 +15,6 @@ return {
 		},
 		opts = {
 			mappings = {
-				close = "",
 				go_in = "",
 				go_in_plus = "L",
 				go_out = "",
