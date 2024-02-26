@@ -76,6 +76,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/YS-L/csvlens/v0.7.0/csvlens-aarch64-apple-darwin.tar.xz",
+      "checksum": "EC6DC5B97DBC9B7CBA80D972B90BBD980F2D2AE82B15056CC1962A22D6C58D62",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/YS-L/csvlens/v0.7.0/csvlens-x86_64-apple-darwin.tar.xz",
+      "checksum": "1B87EF13F1758E21BB8CF63404882801DE992FD10E331EBFE75283EE8D71650B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.2/zoxide-0.9.2-aarch64-apple-darwin.tar.gz",
       "checksum": "6E4E4805D2EADEB1E6C81B65D7EBB189DE49E7030406B2154790ED20FF8F9D113B5DB77707022B1CCF3669928AB842383B0ACB5729D91BC6ABC0C2236A5F64D5",
       "algorithm": "sha512"
@@ -93,6 +103,16 @@
     {
       "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.3/zoxide-0.9.3-x86_64-apple-darwin.tar.gz",
       "checksum": "63648EED0C7480FE4EFF3702AA62FD856FD1E055D30FBED91DA6CAC66D327177",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.4/zoxide-0.9.4-aarch64-apple-darwin.tar.gz",
+      "checksum": "19E9BCFFCF2B3EB7AFBA41BDAA56DB53BDF2211249868D833FE124E9E791E8B6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.4/zoxide-0.9.4-x86_64-apple-darwin.tar.gz",
+      "checksum": "AABF0524E34C53317AA0E71128ED8570FF3187A19F26A29E61896E4C6B0FE381",
       "algorithm": "sha256"
     },
     {
@@ -358,6 +378,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.2.16/mise-v2024.2.16-macos-x64.tar.gz",
       "checksum": "D2EE9541E2BC6AEFE5C3E8877744F5309757B0FCED673879B70EDD0670CE917A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.2.18/mise-v2024.2.18-macos-arm64.tar.gz",
+      "checksum": "B88780F209F0A5694A763AFF53356997AE77DF41662ECB3246F98A8B5728FFFB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.2.18/mise-v2024.2.18-macos-x64.tar.gz",
+      "checksum": "962FFBD2951FFC0FE6BEE1FFDA459977E786526D37E35FC381577EFCB038F8A6",
       "algorithm": "sha256"
     },
     {
@@ -696,6 +726,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/rhysd/actionlint/v1.6.27/actionlint_1.6.27_darwin_amd64.tar.gz",
+      "checksum": "1459F1EC2182162C85BEDDACFF9B05D1CB921BFB2656A6FD9151E9CD84CD63E9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/actionlint/v1.6.27/actionlint_1.6.27_darwin_arm64.tar.gz",
+      "checksum": "4B8EFF986643B8D9918C4FD3ADA9C0EEE7E59230A53A46A9BD9686521DCAD170",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sharkdp/bat/v0.23.0/bat-v0.23.0-x86_64-apple-darwin.tar.gz",
       "checksum": "EDCAC5D952C80EBF32F74E7B69650A2A12C8D7EA06050EF026394965C51F4503AFE1B97386967A439CE4E9472A443AD1F9154B939B0D559BE6AAD73EAE191A01",
       "algorithm": "sha512"
@@ -788,6 +828,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.138.0/registry.yaml",
       "checksum": "9FAF5379FE46052080DE374BD559144DA17CDB925273D40FAFE53A4479C98D683B2FA0F57FB8391CE5B70DBFEE099D62D94E7CBE703D80DE22518D38B5C8E06F",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.142.0/registry.yaml",
+      "checksum": "A920B4389BB50FEC05A86DF4F6B2B7573F1247F591565F831FCF447A9498797038EE3EE14004D78739FF73BFC51BB90AAABF0537D8C49F1D15D1EC0F9FF678E9",
       "algorithm": "sha512"
     },
     {
