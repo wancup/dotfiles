@@ -691,6 +691,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/koalaman/shellcheck/v0.9.0/shellcheck-v0.9.0.darwin.x86_64.tar.xz",
+      "checksum": "7D3730694707605D6E60CEC4EFCB79A0632D61BABC035AA16CDA1B897536ACF5",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_amd64.zip",
       "checksum": "8D34445FDDB590CAADC97027F27A340E639F9E13CD80CC929B170EEAFA9E1398",
       "algorithm": "sha256"

@@ -16,7 +16,13 @@ return {
 		config = function()
 			vim.diagnostic.config({ underline = true, severity_sort = true })
 
-			local on_attach = function(_, bufnr)
+			local _on_attach = function(server, _, bufnr)
+				if server == "eslint" then
+					vim.api.nvim_create_autocmd("BufWritePre", {
+						buffer = bufnr,
+						command = "EslintFixAll",
+					})
+				end
 				vim.api.nvim_buf_create_user_command(bufnr, "FormatByLsp", function(_)
 					vim.lsp.buf.format()
 				end, {})
@@ -55,6 +61,7 @@ return {
 
 			require("mason-lspconfig").setup({
 				ensure_installed = {
+					"bashls",
 					"lua_ls",
 					"jsonls",
 					"yamlls",
@@ -62,6 +69,7 @@ return {
 					"html",
 					"cssls",
 					"vtsls",
+					"eslint",
 					"rust_analyzer",
 				},
 			})
@@ -69,7 +77,9 @@ return {
 				function(server)
 					require("lspconfig")[server].setup({
 						capabilities = capabilities,
-						on_attach = on_attach,
+						on_attach = function(client, buffnr)
+							_on_attach(server, client, buffnr)
+						end,
 						settings = server_settings[server],
 					})
 				end,
