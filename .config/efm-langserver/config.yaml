@@ -16,6 +16,19 @@ tools:
     lint-formats:
       - "-:%l:%c: %m"
 
+  markdown-markdownlint: &markdown-markdownlint
+    lint-source: markdownlint
+    lint-severity: 2
+    lint-command: "markdownlint -s"
+    lint-stdin: true
+    lint-formats:
+      - "%f:%l %m"
+      - "%f:%l:%c %m"
+      - "%f: %l: %m"
+
 languages:
   =:
     - <<: *any-typos
+
+  markdown:
+    - <<: *markdown-markdownlint
