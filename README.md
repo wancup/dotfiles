@@ -2,12 +2,12 @@
 
 ## Requirements
 
-* aqua
-* fish
-* Neovim
-* wezterm
+- Homebrew
 
-### Fonts
+## Setup
 
-* UDEV Gothic 35JPDOC
-* Noto Emoji
+```sh
+sh install.sh
+sh brew.sh
+aqua i -a -l
+```
