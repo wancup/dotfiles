@@ -29,7 +29,7 @@ abbr gsb "fzf_git_switch_branch"
 abbr gsc "fzf_git_show_commit"
 abbr lg "lazygit"
 abbr n "nvim"
-abbr nn "nvim --clean"
+abbr nn "nvim_clipboard"
 if test "$TERM_PROGRAM" = "WezTerm"
   abbr ic "wezterm imgcat"
 end
