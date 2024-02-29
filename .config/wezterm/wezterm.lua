@@ -17,6 +17,7 @@ local config = {
 		cursor_bg = "#524f67",
 		cursor_fg = "#e0def4",
 		cursor_border = "#524f67",
+		compose_cursor = "#524f67",
 	},
 	disable_default_key_bindings = true,
 	keys = {
