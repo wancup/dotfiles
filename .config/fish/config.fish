@@ -59,5 +59,4 @@ fish_add_path $HOME/flutter/bin
 # setup
 eval (/opt/homebrew/bin/brew shellenv)
 mise activate fish | source
-starship init fish | source
 zoxide init fish | source
