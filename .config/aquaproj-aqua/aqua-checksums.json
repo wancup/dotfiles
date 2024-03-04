@@ -786,6 +786,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/sharkdp/pastel/v0.9.0/pastel-v0.9.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "36CCA0B2C4F495922AE6793597C4F336A47B2AA356503EC2037BCB16865CDEB2",
+      "algorithm": "sha256"
+    },
+    {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.101.0/registry.yaml",
       "checksum": "53FF4E5DBFFFA148E1E75A3513BC2EEFD32F0D291B0C1775CD776A4638ACA055A4FC4843C52E3EE2EAF7007D112D2863340D5E64EC185C3165D6D0CF1487D55B",
       "algorithm": "sha512"
