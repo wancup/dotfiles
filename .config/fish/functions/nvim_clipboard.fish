@@ -1,8 +1,14 @@
 function nvim_clipboard
-  set tmp_file "$XDG_STATE_HOME/nvim-clipbord.txt"
-  nvim $tmp_file
-  if test -f $tmp_file
-    echo -n "$(cat $tmp_file)" | pbcopy
-    rm -f $tmp_file
+  set -l target_dir "$XDG_DATA_HOME/nvim-clipbord"
+  if not test -d $target_dir
+    mkdir $target_dir
+  end
+
+  date "+%Y-%m-%d_%H-%M-%S" | read -l now
+  set -l target_file "$target_dir/$now.txt"
+  nvim $target_file
+  if test -f $target_file
+    echo -n "$(cat $target_file)" | pbcopy
+    rm -f $target_file
   end
 end
