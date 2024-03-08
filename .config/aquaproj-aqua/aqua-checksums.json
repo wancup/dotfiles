@@ -256,6 +256,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.45.0/gh_2.45.0_macOS_amd64.zip",
+      "checksum": "82BEA89EEA5DDFCD5F88C53857FC2220EE361E0B65629F153D10695971A44195",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.45.0/gh_2.45.0_macOS_arm64.zip",
+      "checksum": "A0423ACD5954932A817D531A8160B67CF0456EA6C9E68C11C054C19EA7A6714B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/crate-ci/typos/v1.17.1/typos-v1.17.1-x86_64-apple-darwin.tar.gz",
       "checksum": "5740E693E489F592CDE54807F44D841FE190AC8307304A77E94437E83E5A293C",
       "algorithm": "sha256"
@@ -288,6 +298,11 @@
     {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dalance/procs/v0.14.5/procs-v0.14.5-x86_64-mac.zip",
+      "checksum": "9B165F5D5A8C808337604F7E932024623BFA040A2A770CBD2923061A7F24BA9E",
       "algorithm": "sha256"
     },
     {
@@ -418,6 +433,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.2.4/mise-v2024.2.4-macos-x64.tar.gz",
       "checksum": "BC876F658E3D10AB80B3193B0611F7882EC196B4D5D1E60BD7EE6D164354D250",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.3.1/mise-v2024.3.1-macos-arm64.tar.gz",
+      "checksum": "CF49417F2EDE5972243ECD174A7E06026B6AD3A8FED5109B0C2C78FCA441D5AD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.3.1/mise-v2024.3.1-macos-x64.tar.gz",
+      "checksum": "D57837DF47CF8CD27D22F9D47949552D3891506B91A40EAE418EE0F4E38677E7",
       "algorithm": "sha256"
     },
     {
@@ -708,6 +733,11 @@
     {
       "id": "github_release/github.com/junegunn/fzf/0.46.1/fzf-0.46.1-darwin_arm64.zip",
       "checksum": "53D66D2F9C6E44D6E7A0C29417FB2EC7D64F7DFF9976F3C295B0E2EF15AB734B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.x86_64.tar.xz",
+      "checksum": "EF27684F23279D112D8AD84E0823642E43F838993BBB8C0963DB9B58A90464C2",
       "algorithm": "sha256"
     },
     {
