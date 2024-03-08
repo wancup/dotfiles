@@ -29,4 +29,4 @@ packages:
 - name: koalaman/shellcheck@v0.9.0
 - name: sharkdp/hyperfine@v1.18.0
 - name: sharkdp/pastel@v0.9.0
-- name: dalance/procs@v0.14.4
+- name: dalance/procs@v0.14.5
