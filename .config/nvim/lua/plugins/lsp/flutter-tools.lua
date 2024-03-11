@@ -17,6 +17,7 @@ return {
 			"nvim-lua/plenary.nvim",
 		},
 		opts = {
+			fvm = true,
 			widget_guides = {
 				enabled = true,
 			},

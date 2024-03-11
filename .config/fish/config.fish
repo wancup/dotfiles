@@ -54,7 +54,6 @@ set -gx MANPAGER 'nvim +Man!'
 # paths
 fish_add_path $AQUA_ROOT_DIR/bin
 fish_add_path $HOME/.cargo/bin
-fish_add_path $HOME/flutter/bin
 
 # setup
 eval (/opt/homebrew/bin/brew shellenv)

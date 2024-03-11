@@ -756,6 +756,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/leoafarias/fvm/3.0.13/fvm-3.0.13-macos-arm64.tar.gz",
+      "checksum": "0A5A3B0C8BBE2DD802045AB9ACEEF204ED6834EDF2D3270A4D051CF2F046CBED",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/leoafarias/fvm/3.0.13/fvm-3.0.13-macos-x64.tar.gz",
+      "checksum": "E752064032266B305D83269CEE5989872EC0365047BD94C5E9E5AECAC9E945DC",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_amd64.zip",
       "checksum": "8D34445FDDB590CAADC97027F27A340E639F9E13CD80CC929B170EEAFA9E1398",
       "algorithm": "sha256"
