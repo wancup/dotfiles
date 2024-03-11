@@ -736,6 +736,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/0.47.0/fzf-0.47.0-darwin_amd64.zip",
+      "checksum": "75A23E4DB7D64E730ACC1ABCCDA91ED56CE860630F369A9DC19723BF925FDE45",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/0.47.0/fzf-0.47.0-darwin_arm64.zip",
+      "checksum": "A20C35957EDAC97ACE6B0C44F5122C657ED16A2B183B6FF5E82F205C2740AF74",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.x86_64.tar.xz",
       "checksum": "EF27684F23279D112D8AD84E0823642E43F838993BBB8C0963DB9B58A90464C2",
       "algorithm": "sha256"
@@ -883,6 +893,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.147.0/registry.yaml",
       "checksum": "4ECE3DAB7C181EDB94F51C0EBA44F52A4FBF77DFA5F5609D33B5B03A093C17ED8C2F337656862461FF269AE74642C51773475C2472A91326AE04E4106A99F72D",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.151.0/registry.yaml",
+      "checksum": "32BE4B0256194DA0F78FD10F092E5C359F66F2C16C6CA914F9E9A2736775BC0D556B51BA052E4C91335968CF49FD61E872394FC5A505440EE8728DD67A8E3869",
       "algorithm": "sha512"
     },
     {
