@@ -11,6 +11,7 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				dart = { "dart_format" },
+				dockerfile = { "dprint" },
 				markdown = { { "dprint", "prettierd", "prettier" } },
 				yaml = { { "prettierd", "prettier" } },
 				json = { { "dprint", "prettierd", "prettier" } },
