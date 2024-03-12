@@ -70,6 +70,7 @@ return {
 					"cssls",
 					"vtsls",
 					"eslint",
+					"dprint",
 					"rust_analyzer",
 				},
 			})

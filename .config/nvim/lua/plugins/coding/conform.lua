@@ -3,17 +3,23 @@ return {
 		"stevearc/conform.nvim",
 		event = { "BufWritePre" },
 		opts = {
+			formatters = {
+				dprint = {
+					require_cwd = true,
+				},
+			},
 			formatters_by_ft = {
 				lua = { "stylua" },
 				dart = { "dart_format" },
-				markdown = { { "prettierd", "prettier" } },
+				markdown = { { "dprint", "prettierd", "prettier" } },
 				yaml = { { "prettierd", "prettier" } },
-				json = { { "prettierd", "prettier" } },
+				json = { { "dprint", "prettierd", "prettier" } },
 				css = { { "prettierd", "prettier" } },
-				javascript = { { "prettierd", "prettier" }, "eslint_d" },
-				javascriptreact = { { "prettierd", "prettier" }, "eslint_d" },
-				typescript = { { "prettierd", "prettier" }, "eslint_d" },
-				typescriptreact = { { "prettierd", "prettier" }, "eslint_d" },
+				toml = { { "dprint" } },
+				javascript = { { "dprint", "prettierd", "prettier" }, "eslint_d" },
+				javascriptreact = { { "dprint", "prettierd", "prettier" }, "eslint_d" },
+				typescript = { { "dprint", "prettierd", "prettier" }, "eslint_d" },
+				typescriptreact = { { "dprint", "prettierd" }, "eslint_d" },
 			},
 			format_on_save = function()
 				if vim.g.format_on_save then
