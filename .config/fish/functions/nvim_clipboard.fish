@@ -1,5 +1,5 @@
 function nvim_clipboard
-  set -l target_dir "$XDG_DATA_HOME/nvim-clipbord"
+  set -l target_dir "$TMPDIR/nvim-clipbord"
   if not test -d $target_dir
     mkdir $target_dir
   end
