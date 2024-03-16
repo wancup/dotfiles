@@ -846,6 +846,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/sxyazi/yazi/v0.2.4/yazi-aarch64-apple-darwin.zip",
+      "checksum": "DC6A8D66EA65CBFC436140C0A6904F4AC8251295C7E7A80CE8087DA44F5F54CC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sxyazi/yazi/v0.2.4/yazi-x86_64-apple-darwin.zip",
+      "checksum": "E30AA0112060A7A3217C1E8363885371F817CDA181354DDCCBA78208A7ECDED8",
+      "algorithm": "sha256"
+    },
+    {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.101.0/registry.yaml",
       "checksum": "53FF4E5DBFFFA148E1E75A3513BC2EEFD32F0D291B0C1775CD776A4638ACA055A4FC4843C52E3EE2EAF7007D112D2863340D5E64EC185C3165D6D0CF1487D55B",
       "algorithm": "sha512"
