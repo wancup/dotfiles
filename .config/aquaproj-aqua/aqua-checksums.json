@@ -316,6 +316,16 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/dandavison/delta/0.17.0/delta-0.17.0-aarch64-apple-darwin.tar.gz",
+      "checksum": "2C62F44345E86AC12F75C097D0A5344B4AA90827D5E75DFCFE3FE843F51BB3CB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.17.0/delta-0.17.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "E8B8107AA0725B7A0DEEE556C05BB655846F0F49BB8A8EC44CB1F78D4A3274FE",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/ducaale/xh/v0.20.1/xh-v0.20.1-x86_64-apple-darwin.tar.gz",
       "checksum": "53D92596FCC308A2F222971C4A7173FAB37C58596157C50D05374D6B91D57440",
       "algorithm": "sha256"
@@ -443,6 +453,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.3.1/mise-v2024.3.1-macos-x64.tar.gz",
       "checksum": "D57837DF47CF8CD27D22F9D47949552D3891506B91A40EAE418EE0F4E38677E7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.3.6/mise-v2024.3.6-macos-arm64.tar.gz",
+      "checksum": "2FB07DB80C41DCCB311F2749E72F2AFE242E8A2214503E679B96B0DD97BDB9DA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.3.6/mise-v2024.3.6-macos-x64.tar.gz",
+      "checksum": "D66597F80E8CD81F78CA8B1C5217F02D44526439DDD41429C9E4EA2D67AB0306",
       "algorithm": "sha256"
     },
     {
@@ -746,6 +766,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/0.48.1/fzf-0.48.1-darwin_amd64.zip",
+      "checksum": "69B9700464C9125F61CC3EEB7393DBE1C5A8C7E528B750D70968F4CB220A3523",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/0.48.1/fzf-0.48.1-darwin_arm64.zip",
+      "checksum": "5044D95F02DA3611A5737778A100695736195D6C42B40F5C2112E25C2588B4AA",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.x86_64.tar.xz",
       "checksum": "EF27684F23279D112D8AD84E0823642E43F838993BBB8C0963DB9B58A90464C2",
       "algorithm": "sha256"
@@ -763,6 +793,16 @@
     {
       "id": "github_release/github.com/leoafarias/fvm/3.0.13/fvm-3.0.13-macos-x64.tar.gz",
       "checksum": "E752064032266B305D83269CEE5989872EC0365047BD94C5E9E5AECAC9E945DC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/leoafarias/fvm/3.0.14/fvm-3.0.14-macos-arm64.tar.gz",
+      "checksum": "33897CFE921AB0F0A4926248B3FC1F43327F49653281BC5B0DC0368ABAB6879D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/leoafarias/fvm/3.0.14/fvm-3.0.14-macos-x64.tar.gz",
+      "checksum": "3D0722321ACE7AB14619EE004F01618235021D61CDF3B2263F7191E5EF0AE993",
       "algorithm": "sha256"
     },
     {
