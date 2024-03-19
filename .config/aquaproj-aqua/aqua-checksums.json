@@ -116,6 +116,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/bensadeh/tailspin/3.0.0/tailspin-aarch64-apple-darwin.tar.gz",
+      "checksum": "CBA1A5E5D86CC0B6BAEEA17A52E96574716D575222C582713DEE4417C60C8E3D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/bensadeh/tailspin/3.0.0/tailspin-x86_64-apple-darwin.tar.gz",
+      "checksum": "4CF24318EB7AB8CB1A621EF9FF2DEB3CDF6669210921CB63B37EFE1CBC44D8A7",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/cli/cli/v2.34.0/gh_2.34.0_macOS_amd64.zip",
       "checksum": "9D6CD7C3952BB9A1CDAEAF04C456C558F8510FFBDC93BB4B40A85013C638BFCA",
       "algorithm": "sha256"
