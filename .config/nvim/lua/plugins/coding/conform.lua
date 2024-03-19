@@ -21,6 +21,7 @@ return {
 				javascriptreact = { { "dprint", "prettierd", "prettier" }, "eslint_d" },
 				typescript = { { "dprint", "prettierd", "prettier" }, "eslint_d" },
 				typescriptreact = { { "dprint", "prettierd" }, "eslint_d" },
+				rust = { "rustfmt" },
 			},
 			format_on_save = function()
 				if vim.g.format_on_save then
