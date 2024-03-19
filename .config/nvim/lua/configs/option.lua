@@ -43,3 +43,10 @@ vim.fn.setcellwidths({ { 0x2600, 0x27FF, 2 }, { 0x1F000, 0x1FFFF, 2 }, { 0x2B06,
 
 -- LSP
 vim.diagnostic.config({ virtual_text = { source = true } })
+
+-- Custom Filetype
+vim.filetype.add({
+	filename = {
+		[".env"] = "conf",
+	},
+})
