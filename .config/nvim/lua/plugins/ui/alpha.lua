@@ -6,7 +6,7 @@ return {
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		config = function()
 			local dashboard = require("alpha.themes.dashboard")
-			local header1 = [[
+			local header_nvim = [[
 
 ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
 ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
@@ -16,7 +16,7 @@ return {
 ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
                                                   
       ]]
-			local header2 = [[
+			local header_hello = [[
 
 ██╗  ██╗███████╗██╗     ██╗      ██████╗        ██╗    ██╗ ██████╗ ██████╗ ██╗     ██████╗ ██╗
 ██║  ██║██╔════╝██║     ██║     ██╔═══██╗       ██║    ██║██╔═══██╗██╔══██╗██║     ██╔══██╗██║
@@ -26,7 +26,7 @@ return {
 ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═════╝ ╚═╝
                                                                                               
       ]]
-			local header3 = [[
+			local header_kiss = [[
 
 ██╗  ██╗██╗███████╗███████╗
 ██║ ██╔╝██║██╔════╝██╔════╝
@@ -37,7 +37,7 @@ return {
                            
   Keep it simple, stupid.
       ]]
-			local header4 = [[
+			local header_etc = [[
 
 ███████╗████████╗ ██████╗██████╗ 
 ██╔════╝╚══██╔══╝██╔════╝╚════██╗
@@ -48,7 +48,7 @@ return {
                                  
       Easier to change?
       ]]
-			local header5 = [[
+			local header_yagni = [[
 
 ██╗   ██╗ █████╗  ██████╗ ███╗   ██╗██╗
 ╚██╗ ██╔╝██╔══██╗██╔════╝ ████╗  ██║██║
@@ -71,7 +71,7 @@ return {
 
 Zero One Infinity rule
       ]]
-			local headers = { header1, header2, header3, header4, header5, header_zoi }
+			local headers = { header_nvim, header_hello, header_kiss, header_etc, header_yagni, header_zoi }
 			math.randomseed(os.time())
 			local random = math.random(1, #headers)
 
