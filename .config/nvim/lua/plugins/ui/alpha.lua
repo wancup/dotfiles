@@ -59,7 +59,19 @@ return {
 
         You ain't gonna need it
       ]]
-			local headers = { header1, header2, header3, header4, header5 }
+
+			local header_zoi = [[
+
+ ███████╗ ██████╗ ██╗
+ ╚══███╔╝██╔═══██╗██║
+   ███╔╝ ██║   ██║██║
+  ███╔╝  ██║   ██║██║
+ ███████╗╚██████╔╝██║
+ ╚══════╝ ╚═════╝ ╚═╝
+
+Zero One Infinity rule
+      ]]
+			local headers = { header1, header2, header3, header4, header5, header_zoi }
 			math.randomseed(os.time())
 			local random = math.random(1, #headers)
 
