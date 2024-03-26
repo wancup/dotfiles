@@ -33,3 +33,4 @@ packages:
 - name: leoafarias/fvm@3.1.1
 - name: sxyazi/yazi@v0.2.4
 - name: bensadeh/tailspin@3.0.0
+- name: watchexec/watchexec@v1.25.1

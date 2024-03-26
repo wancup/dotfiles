@@ -946,6 +946,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/watchexec/watchexec/v1.25.1/watchexec-1.25.1-aarch64-apple-darwin.tar.xz",
+      "checksum": "FD8508FD972BC100A778156DA2F00AF7094DB7CAE22FC0E377208F0A78BE3E2A4D1DFCB984A8725FCF3C8B4124E98E2F4C60C9B4A936D0F5465C8749B1DEBA8A",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/watchexec/watchexec/v1.25.1/watchexec-1.25.1-x86_64-apple-darwin.tar.xz",
+      "checksum": "80F9D475B1655197155815503B0DC2F0C9DFF2EAE1711735D770FCCF23C78469DFBFA14BA34034775130910105D3DA879D969B960822E9FC82343801D7D222BA",
+      "algorithm": "sha512"
+    },
+    {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.101.0/registry.yaml",
       "checksum": "53FF4E5DBFFFA148E1E75A3513BC2EEFD32F0D291B0C1775CD776A4638ACA055A4FC4843C52E3EE2EAF7007D112D2863340D5E64EC185C3165D6D0CF1487D55B",
       "algorithm": "sha512"
