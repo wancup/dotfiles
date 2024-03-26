@@ -35,3 +35,4 @@ packages:
 - name: bensadeh/tailspin@3.0.0
 - name: watchexec/watchexec@v1.25.1
 - name: zaghaghi/openapi-tui@0.6.1
+- name: Wilfred/difftastic@0.56.1
