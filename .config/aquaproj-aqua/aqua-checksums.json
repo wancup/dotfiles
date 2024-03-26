@@ -86,6 +86,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/YS-L/csvlens/v0.8.1/csvlens-aarch64-apple-darwin.tar.xz",
+      "checksum": "8085798E58DA3242BF3B5CEF9AF5A4D4038D47655802708178F2AE77C001B037",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/YS-L/csvlens/v0.8.1/csvlens-x86_64-apple-darwin.tar.xz",
+      "checksum": "7E6D9502AFC10ED50F59EAE695F5923617180395F7D2C4FD0200CC5F651C3034",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.2/zoxide-0.9.2-aarch64-apple-darwin.tar.gz",
       "checksum": "6E4E4805D2EADEB1E6C81B65D7EBB189DE49E7030406B2154790ED20FF8F9D113B5DB77707022B1CCF3669928AB842383B0ACB5729D91BC6ABC0C2236A5F64D5",
       "algorithm": "sha512"
@@ -493,6 +503,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.3.7/mise-v2024.3.7-macos-x64.tar.gz",
       "checksum": "AD72B69746F3E53F7A05F5057BEE9690998CAB0F157D720180A382331ABEA47F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.3.9/mise-v2024.3.9-macos-arm64.tar.gz",
+      "checksum": "A5D002E85B27DE3F65BF45A95881DE6E0F21D824A52CD0F79DF91CAC931BE5D9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.3.9/mise-v2024.3.9-macos-x64.tar.gz",
+      "checksum": "484DC4B994BF9FC19511AEF11BFBE53EB910BB26F1EC64F30A6393935126C60D",
       "algorithm": "sha256"
     },
     {
@@ -1023,6 +1043,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.154.0/registry.yaml",
       "checksum": "8DD34CC8E818D5B85DC29610AB7BCC758A01B269B3B94D6FBEF94F91D0D6D9CCBAE6A71AD06EC58B0EC93144FCD168CDA43CB3C4D5756A89BFA9B1CC7C56040A",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.155.1/registry.yaml",
+      "checksum": "221DED8E07FF0320860D9186644979B8E89FC1944301EA86A0F148A1A4296AB1D350A6C5794FD2E8D00F6D6766EB1FE80E335DD6B2BB40524556F81BADB838B3",
       "algorithm": "sha512"
     },
     {
