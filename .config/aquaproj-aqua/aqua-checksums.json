@@ -711,6 +711,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.41.0/lazygit_0.41.0_Darwin_arm64.tar.gz",
+      "checksum": "9852AB019DB915CE171912F8F1666BD0EB7DE0B353553DDB91737441511706F6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.41.0/lazygit_0.41.0_Darwin_x86_64.tar.gz",
+      "checksum": "3A6546DBFC54A3D8D486665A329F50A865EF979D68AF8E07EFD981431CD1193D",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jqlang/jq/jq-1.6/jq-osx-amd64",
       "checksum": "DF407CD34378F49FF8866D61A58CE1C367341062325C4C3BD07B0E1AD5D65758A2EDE94574B4279E1A0A208A04BAC487B7D898450FB614C2B94469D7621E583A",
       "algorithm": "sha512"
