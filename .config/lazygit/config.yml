@@ -1,5 +1,8 @@
 gui:
   nerdFontsVersion: "3"
+  theme:
+    selectedLineBgColor:
+      - underline
 
 customCommands:
   - key: "<c-space>"
