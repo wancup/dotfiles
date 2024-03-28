@@ -27,6 +27,8 @@ return {
 					PackageInfoUpToDateVersion = { fg = "highlight_med" },
 					-- Snipe Window
 					SnipeWinLabel = { fg = "love" },
+					-- Flutter-Tools
+					FlutterWidgetGuides = { fg = "muted" },
 				},
 			})
 			vim.cmd("colorscheme rose-pine")
