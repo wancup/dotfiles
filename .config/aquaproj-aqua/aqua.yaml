@@ -36,3 +36,4 @@ packages:
 - name: watchexec/watchexec@v1.25.1
 - name: zaghaghi/openapi-tui@0.6.1
 - name: Wilfred/difftastic@0.56.1
+- name: dprint/dprint@0.45.0

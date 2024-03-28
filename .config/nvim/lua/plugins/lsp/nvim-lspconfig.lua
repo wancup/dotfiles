@@ -70,7 +70,6 @@ return {
 					"cssls",
 					"vtsls",
 					"eslint",
-					"dprint",
 					"rust_analyzer",
 				},
 			})
@@ -86,7 +85,7 @@ return {
 				end,
 			})
 
-			-- efm-langserver is installed by aqua
+			-- setup LSPs installed by aqua
 			require("lspconfig").efm.setup({
 				init_options = {
 					documentFormatting = true,
@@ -94,6 +93,7 @@ return {
 					codeAction = true,
 				},
 			})
+			require("lspconfig").dprint.setup({})
 		end,
 	},
 }

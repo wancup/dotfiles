@@ -361,6 +361,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/dprint/dprint/0.45.0/dprint-aarch64-apple-darwin.zip",
+      "checksum": "CF23AB2785CA25F27ED5CA5127663DFE0131AE146D0B8D5159B06E0694AD74AC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dprint/dprint/0.45.0/dprint-x86_64-apple-darwin.zip",
+      "checksum": "6DF01E0357049AD3BC62BBD2F60C9C448BD747B650EBF20F7AB5A38CEFD36B44",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/ducaale/xh/v0.20.1/xh-v0.20.1-x86_64-apple-darwin.tar.gz",
       "checksum": "53D92596FCC308A2F222971C4A7173FAB37C58596157C50D05374D6B91D57440",
       "algorithm": "sha256"
