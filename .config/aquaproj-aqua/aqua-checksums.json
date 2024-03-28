@@ -131,6 +131,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
+      "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-x86_64-apple-darwin.tar.gz",
+      "checksum": "4C4732B12E1F65F6E5D3B9F5374BD5433F6673F838CA7656C9AAFD490718FA2A",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/bensadeh/tailspin/3.0.0/tailspin-aarch64-apple-darwin.tar.gz",
       "checksum": "CBA1A5E5D86CC0B6BAEEA17A52E96574716D575222C582713DEE4417C60C8E3D",
       "algorithm": "sha256"
