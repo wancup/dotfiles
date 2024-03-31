@@ -7,10 +7,6 @@ return {
 			"nvim-treesitter/nvim-treesitter-textobjects",
 			"windwp/nvim-ts-autotag",
 		},
-		keys = {
-			{ "<C-space>", desc = "Increment node selection" },
-			{ "<C-h>", desc = "Decrement node selection", mode = "x" },
-		},
 		opts = {
 			highlight = { enable = true },
 			indent = { enable = true },
@@ -30,13 +26,7 @@ return {
 				"yaml",
 			},
 			incremental_selection = {
-				enable = true,
-				keymaps = {
-					init_selection = "<C-space>",
-					node_incremental = "<C-space>",
-					scope_incremental = false,
-					node_decremental = "<C-h>",
-				},
+				enable = false,
 			},
 
 			textobjects = {
