@@ -29,6 +29,12 @@ return {
 					gs.toggle_word_diff()
 				end, "[G]it [T]oggle Deleted")
 
+				-- Quickfix
+				map("n", "<leader>lg", gs.setqflist, "[L]ist [G]it Hunks")
+				map("n", "<leader>lG", function()
+					gs.setqflist("all")
+				end, "[L]ist [G]it All Hunks")
+
 				-- Text Object
 				map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>")
 			end,
