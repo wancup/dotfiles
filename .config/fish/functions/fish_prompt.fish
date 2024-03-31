@@ -1,6 +1,7 @@
 function fish_prompt
   set -l exit_code $status
   set -lx fish_prompt_pwd_dir_length 0
+  set -g VIRTUAL_ENV_DISABLE_PROMPT true
 
   # VCS
   set -lx __fish_git_prompt_showdirtystate true
@@ -29,6 +30,8 @@ function fish_prompt
       echo -n -s " node:" (node --version)
     else if test -f "Cargo.toml"
       echo -n -s " rust:" (string split " " (rustc --version))[2]
+    else if test -n "$VIRTUAL_ENV"
+      echo -n -s " " (path basename $VIRTUAL_ENV) ":" (python --version)
     end
   end
 
