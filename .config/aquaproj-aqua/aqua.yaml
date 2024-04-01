@@ -34,7 +34,7 @@ packages:
 - name: sxyazi/yazi@v0.2.4
 - name: bensadeh/tailspin@3.0.0
 - name: watchexec/watchexec@v1.25.1
-- name: zaghaghi/openapi-tui@0.6.1
+- name: zaghaghi/openapi-tui@0.7.1
 - name: Wilfred/difftastic@0.56.1
 - name: dprint/dprint@0.45.0
 - name: astral-sh/ruff@v0.3.4
