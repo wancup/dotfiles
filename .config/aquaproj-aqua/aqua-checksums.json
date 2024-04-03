@@ -71,6 +71,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/Wilfred/difftastic/0.57.0/difft-x86_64-apple-darwin.tar.gz",
+      "checksum": "CDB491B40AA831038758C67E24E828BDD0591BFDEAE139B320F34C02D0EA44D0",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/YS-L/csvlens/v0.6.0/csvlens-aarch64-apple-darwin.tar.xz",
       "checksum": "7217EAC231F4F0E65C6489CA2899CBB4FC6455E4905B61521F0BB61CA9E121E7",
       "algorithm": "sha256"
@@ -141,6 +146,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/v0.3.5/ruff-0.3.5-aarch64-apple-darwin.tar.gz",
+      "checksum": "75522512ED44A554968483E205F3C7260B7E05C90462A9EDF69C8F0D737DDF1D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/v0.3.5/ruff-0.3.5-x86_64-apple-darwin.tar.gz",
+      "checksum": "2CEDC2B72F82351C9AE4DC4E2DCD7C1D416744FF37A1E5C2F53A09363FA0B314",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/bensadeh/tailspin/3.0.0/tailspin-aarch64-apple-darwin.tar.gz",
       "checksum": "CBA1A5E5D86CC0B6BAEEA17A52E96574716D575222C582713DEE4417C60C8E3D",
       "algorithm": "sha256"
@@ -148,6 +163,16 @@
     {
       "id": "github_release/github.com/bensadeh/tailspin/3.0.0/tailspin-x86_64-apple-darwin.tar.gz",
       "checksum": "4CF24318EB7AB8CB1A621EF9FF2DEB3CDF6669210921CB63B37EFE1CBC44D8A7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/bensadeh/tailspin/3.0.1/tailspin-aarch64-apple-darwin.tar.gz",
+      "checksum": "1568EA2B5FD37899294972F4770CD751ADF5B1F8AB6039CA49DEC2C2ED6CD7A3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/bensadeh/tailspin/3.0.1/tailspin-x86_64-apple-darwin.tar.gz",
+      "checksum": "4D9514973E483BC1BFE38BAEC269B0116228BC501019B329D42001C0DCE9FBE1",
       "algorithm": "sha256"
     },
     {
@@ -338,6 +363,11 @@
     {
       "id": "github_release/github.com/crate-ci/typos/v1.19.0/typos-v1.19.0-x86_64-apple-darwin.tar.gz",
       "checksum": "C80A5ED91C1265E241162F93E1AEE64C0603E09F68BAFF8AD1B465A3FBE355F4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/crate-ci/typos/v1.20.3/typos-v1.20.3-x86_64-apple-darwin.tar.gz",
+      "checksum": "3B9F2FA808B042E82024387F7792A593371D6FAFE73F53DAF0671B16BE0E0D19",
       "algorithm": "sha256"
     },
     {
@@ -538,6 +568,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.3.9/mise-v2024.3.9-macos-x64.tar.gz",
       "checksum": "484DC4B994BF9FC19511AEF11BFBE53EB910BB26F1EC64F30A6393935126C60D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.4.0/mise-v2024.4.0-macos-arm64.tar.gz",
+      "checksum": "E23275595C92A6EE97FBD16C3D1980F95037DEB40B14F955DDFD86FB9988806D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.4.0/mise-v2024.4.0-macos-x64.tar.gz",
+      "checksum": "04D6F6A05E9733458D0487D58E4AB6441DD71CD031F94E4E284894226C4B84AC",
       "algorithm": "sha256"
     },
     {
@@ -901,6 +941,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/leoafarias/fvm/3.1.3/fvm-3.1.3-macos-arm64.tar.gz",
+      "checksum": "DA72B5473EC02B94CECA7F005D8A7E098291F3E57FA7724CDBEE9C1E1B5798A4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/leoafarias/fvm/3.1.3/fvm-3.1.3-macos-x64.tar.gz",
+      "checksum": "6CAAC49966D0CDF326F4D25C15169467A3142EE39CA307CCD6A677BFE56A3FA0",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_amd64.zip",
       "checksum": "8D34445FDDB590CAADC97027F27A340E639F9E13CD80CC929B170EEAFA9E1398",
       "algorithm": "sha256"
@@ -1018,6 +1068,16 @@
     {
       "id": "github_release/github.com/zaghaghi/openapi-tui/0.6.1/openapi-tui-0.6.1-macos-x86_64.tar.gz",
       "checksum": "F0CD2BE0299F751B753DB7A8DCB6CDB8F95FCD6E3550635D119680700585028E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/zaghaghi/openapi-tui/0.7.1/openapi-tui-0.7.1-macos-arm64.tar.gz",
+      "checksum": "5AD9B7C1AC2F398C443E86EBA31313042D93DA3C9E8F90132092EE57B1827C2A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/zaghaghi/openapi-tui/0.7.1/openapi-tui-0.7.1-macos-x86_64.tar.gz",
+      "checksum": "F9582F505F1FE870E9269E3326CD0ED23D9EF09D37EADBAEBA0F803603490505",
       "algorithm": "sha256"
     },
     {
