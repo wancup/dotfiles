@@ -29,6 +29,7 @@ return {
 				["<leader>rb"] = { name = "ReplaceMultiBuffer" },
 				["<leader>s"] = { name = "Surround" },
 				["<leader>S"] = { name = "Session" },
+				["<leader>u"] = { name = "UI" },
 			})
 		end,
 	},

@@ -5,6 +5,9 @@ return {
 	"nvim-focus/focus.nvim",
 	version = false,
 	event = { "WinNew" },
+	keys = {
+		{ "<leader>uf", "<cmd>FocusAutoresize<cr>", desc = "[U]I [F]ocus Resize" },
+	},
 	opts = {
 		enable = true,
 		autoresize = {
