@@ -1,4 +1,4 @@
-function diff_stdout -d "diff two commands stdouts"
+function diff_stdout -d "diff two command's stdouts"
 
   function show_help
     echo ""
