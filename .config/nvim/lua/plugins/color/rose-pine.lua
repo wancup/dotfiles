@@ -29,6 +29,8 @@ return {
 					SnipeWinLabel = { fg = "love" },
 					-- Flutter-Tools
 					FlutterWidgetGuides = { fg = "muted" },
+					-- Lsp_Signature
+					LspSignatureActiveParameter = { fg = "love", bg = "highlight_med" },
 				},
 			})
 			vim.cmd("colorscheme rose-pine")
