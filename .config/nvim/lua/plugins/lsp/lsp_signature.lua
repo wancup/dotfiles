@@ -7,6 +7,7 @@ return {
 		},
 		opts = {
 			bind = true,
+			floating_window_above_cur_line = false,
 			close_timeout = nil,
 			handler_opts = {
 				border = "rounded",
