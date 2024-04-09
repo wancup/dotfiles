@@ -13,6 +13,7 @@ return {
 			},
 			hint_enable = false,
 			always_trigger = true,
+			toggle_key = "<C-s>",
 		},
 	},
 }
