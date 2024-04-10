@@ -16,6 +16,10 @@ return {
 				Cursor = {
 					color = "#666666",
 				},
+				GitDelete = {
+					text = ".",
+					highlight = "GitSignsChange",
+				},
 			},
 			handlers = {
 				cursor = false,
