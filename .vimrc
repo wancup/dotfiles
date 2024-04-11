@@ -1,6 +1,5 @@
 set number
 set cursorline
-set virtualedit=onemore
 set laststatus=2
 set scrolloff=4
 set belloff=all
