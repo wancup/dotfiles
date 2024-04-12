@@ -2,7 +2,8 @@
 return {
 	{
 		"olimorris/persisted.nvim",
-		event = { "VeryLazy" },
+		event = { "VimLeavePre" },
+		cmd = { "SessionLoad", "SessionSave", "SessionToggle" },
 		keys = {
 			{ "<leader>St", "<cmd>SessionToggle<cr>", desc = "[S]ession [T]oggle" },
 			{ "<leader>Ss", "<cmd>SessionSave<cr>", desc = "[S]ession [S]ave" },
