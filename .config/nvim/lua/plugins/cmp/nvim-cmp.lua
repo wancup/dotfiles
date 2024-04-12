@@ -8,9 +8,10 @@ return {
 	{
 		"hrsh7th/nvim-cmp",
 		version = false,
-		event = "InsertEnter",
+		event = { "InsertEnter", "CmdlineEnter" },
 		dependencies = {
 			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/cmp-cmdline",
 			"L3MON4D3/LuaSnip",
 			"saadparwaiz1/cmp_luasnip",
 			"onsails/lspkind.nvim",
@@ -73,6 +74,20 @@ return {
 					format = require("lspkind").cmp_format(),
 				},
 			}
+		end,
+
+		config = function(_, opts)
+			local cmp = require("cmp")
+			cmp.setup(opts)
+
+			cmp.setup.cmdline(":", {
+				completion = { completeopt = "menu,menuone,noselect" },
+				mapping = cmp.mapping.preset.cmdline(),
+				sources = cmp.config.sources({
+					{ name = "cmdline" },
+				}),
+				matching = { disallow_symbol_nonprefix_matching = false },
+			})
 		end,
 	},
 }
