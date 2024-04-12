@@ -1,4 +1,9 @@
--- Session Manager
+local disabled_fts = {
+	"alpha",
+	"lazy",
+	"",
+}
+
 return {
 	{
 		"olimorris/persisted.nvim",
@@ -11,8 +16,7 @@ return {
 		},
 		opts = {
 			should_autosave = function()
-				local filetype = vim.bo.filetype
-				if filetype == "alpha" or filetype == "lazy" then
+				if vim.tbl_contains(disabled_fts, vim.bo.filetype) then
 					return false
 				end
 				return true
