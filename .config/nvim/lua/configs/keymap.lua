@@ -1,3 +1,4 @@
+local diagnostic = require("core.diagnostic")
 local git = require("core.git")
 local window = require("core.window")
 local map = vim.keymap.set
@@ -111,6 +112,8 @@ map("n", "<leader>p", '"+p', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>P", '"+P', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>ll", "<cmd>copen<cr>", { desc = "[L]ist Quickfix" })
 map("n", "<leader>lc", git.conflict_list, { desc = "[L]ist Git [C]onflict" })
+map("n", "<leader>ld", diagnostic.current_buf_list, { desc = "[L]ist [D]iagnostics" })
+map("n", "<leader>lD", diagnostic.workspace_list, { desc = "[L]ist [D]iagnostics(Workspace)" })
 
 -- Insert
 map("i", "<C-h>", "<BS>")
