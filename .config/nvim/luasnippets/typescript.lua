@@ -217,6 +217,13 @@ return {
 	),
 
 	s(
+		"cd",
+		fmt("console.debug({})", {
+			i(1),
+		})
+	),
+
+	s(
 		"cl",
 		fmt("console.log({})", {
 			i(1),
