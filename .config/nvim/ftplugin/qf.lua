@@ -1,1 +1,7 @@
-vim.keymap.set("n", "q", "<cmd>cclose<cr>", { buffer = true })
+vim.keymap.set("n", "q", function()
+	vim.cmd("wincmd p")
+	vim.cmd("cclose")
+end, { buffer = true })
+
+-- Move qf window to bottom
+vim.cmd("wincmd J")

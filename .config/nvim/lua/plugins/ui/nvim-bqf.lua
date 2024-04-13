@@ -4,6 +4,10 @@ return {
 		ft = { "qf" },
 		opts = {
 			magic_window = false,
+			auto_resize_height = true,
+			preview = {
+				win_height = 30,
+			},
 			func_map = {
 				open = "o",
 				openc = "<cr>",
