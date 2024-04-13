@@ -6,7 +6,7 @@ return {
 			magic_window = false,
 			auto_resize_height = true,
 			preview = {
-				win_height = 30,
+				win_height = 25,
 			},
 			func_map = {
 				open = "o",
