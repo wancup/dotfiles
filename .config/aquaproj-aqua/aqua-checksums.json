@@ -156,6 +156,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/v0.3.7/ruff-0.3.7-aarch64-apple-darwin.tar.gz",
+      "checksum": "A29B08B6D793C516EF7FFACC76A666905C5EFB7EADD98E28CD9A4D50016731AA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/v0.3.7/ruff-0.3.7-x86_64-apple-darwin.tar.gz",
+      "checksum": "B1C961C1BED427E74AB72950C6DEBCB078C82ABA0EE347183CC27A9FC8AAA43B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/bensadeh/tailspin/3.0.0/tailspin-aarch64-apple-darwin.tar.gz",
       "checksum": "CBA1A5E5D86CC0B6BAEEA17A52E96574716D575222C582713DEE4417C60C8E3D",
       "algorithm": "sha256"
@@ -391,6 +401,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.20.8/typos-v1.20.8-x86_64-apple-darwin.tar.gz",
+      "checksum": "3F321104F7D5FE7F7D773D888EF0B235AAD6C64889486B1D0858335C8F7075B7",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -448,6 +463,11 @@
     {
       "id": "github_release/github.com/ducaale/xh/v0.21.0/xh-v0.21.0-x86_64-apple-darwin.tar.gz",
       "checksum": "37183D514A906B7183DDB854F3EFF74927661D3BF23052C6F1604D9E49AD5594",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/ducaale/xh/v0.22.0/xh-v0.22.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "891A015AC04FDA2A27DF82991B9495213CE38D97827192C771DA798BF10C875B",
       "algorithm": "sha256"
     },
     {
@@ -618,6 +638,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.4.3/mise-v2024.4.3-macos-x64.tar.gz",
       "checksum": "6FB8C5090E52FC1F2A95BE8ABA2B7BD3B2BC04F8D005BE1BFD958AF4411CA5A9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.4.4/mise-v2024.4.4-macos-arm64.tar.gz",
+      "checksum": "E1EDEF813CF908E0D3567222CB09221F61644552F170755CA7705D1C509B58CD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.4.4/mise-v2024.4.4-macos-x64.tar.gz",
+      "checksum": "A991E0C743C9EF1542549A954929CB75B8093897C8212713E631359B5C9E4570",
       "algorithm": "sha256"
     },
     {
