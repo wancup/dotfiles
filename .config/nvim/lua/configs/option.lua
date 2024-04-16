@@ -38,8 +38,14 @@ opt.softtabstop = -1
 opt.autoindent = true
 opt.smartindent = true
 
--- Avoid to invalid emooji display
-vim.fn.setcellwidths({ { 0x2600, 0x27FF, 2 }, { 0x1F000, 0x1FFFF, 2 }, { 0x2B06, 0x2B07, 2 } })
+-- Avoid to invalid ambiwidth chars display
+vim.fn.setcellwidths({
+	{ 0x2600, 0x27FF, 2 }, -- ☀ ~ ⛿
+	{ 0x1F000, 0x1FFFF, 2 },
+	{ 0x2B06, 0x2B07, 2 },
+	{ 8592, 8595, 2 }, -- ← ~ →
+	{ 9312, 9331, 2 }, -- ① ~ ⑳
+})
 
 -- LSP
 vim.diagnostic.config({ virtual_text = { source = true } })
