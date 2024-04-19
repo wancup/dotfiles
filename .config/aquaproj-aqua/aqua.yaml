@@ -38,3 +38,4 @@ packages:
 - name: Wilfred/difftastic@0.57.0
 - name: dprint/dprint@0.45.1
 - name: astral-sh/ruff@v0.3.7
+- name: XAMPPRocky/tokei@v12.1.2

@@ -76,6 +76,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-x86_64-apple-darwin.tar.gz",
+      "checksum": "2AF8ABB6A08B0513F9D16CA2C7CD37949B858D2A3E3227BE8CC412B3B4937D5B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/YS-L/csvlens/v0.6.0/csvlens-aarch64-apple-darwin.tar.xz",
       "checksum": "7217EAC231F4F0E65C6489CA2899CBB4FC6455E4905B61521F0BB61CA9E121E7",
       "algorithm": "sha256"
