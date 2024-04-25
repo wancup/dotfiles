@@ -171,6 +171,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/v0.4.1/ruff-0.4.1-aarch64-apple-darwin.tar.gz",
+      "checksum": "A990D1FF93F9EB039ED2FF68E283994F070F7C5FBC45E2F79BA0D6A0A16C38A8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/v0.4.1/ruff-0.4.1-x86_64-apple-darwin.tar.gz",
+      "checksum": "CF5CF66D116A26C020EA7CE158015BDE7A91B3737F788A7DDA9660B40585D623",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/bensadeh/tailspin/3.0.0/tailspin-aarch64-apple-darwin.tar.gz",
       "checksum": "CBA1A5E5D86CC0B6BAEEA17A52E96574716D575222C582713DEE4417C60C8E3D",
       "algorithm": "sha256"
@@ -361,6 +371,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.48.0/gh_2.48.0_macOS_amd64.zip",
+      "checksum": "A66CE76B849BF2942C3BB90CD48C9E4BE8E41396D9FFAE7DF26DA4843F27F304",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.48.0/gh_2.48.0_macOS_arm64.zip",
+      "checksum": "B82C847C581D2540D12F266D7F1739274C5CCCBFC0DFFE236739AC5CC21ACC91",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/crate-ci/typos/v1.17.1/typos-v1.17.1-x86_64-apple-darwin.tar.gz",
       "checksum": "5740E693E489F592CDE54807F44D841FE190AC8307304A77E94437E83E5A293C",
       "algorithm": "sha256"
@@ -388,6 +408,11 @@
     {
       "id": "github_release/github.com/crate-ci/typos/v1.19.0/typos-v1.19.0-x86_64-apple-darwin.tar.gz",
       "checksum": "C80A5ED91C1265E241162F93E1AEE64C0603E09F68BAFF8AD1B465A3FBE355F4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/crate-ci/typos/v1.20.10/typos-v1.20.10-x86_64-apple-darwin.tar.gz",
+      "checksum": "E0FDD6FA3838F0D538655A8C205B8E34ADD56E4803B133AF13879CCE7F7DBB0B",
       "algorithm": "sha256"
     },
     {
@@ -663,6 +688,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.4.5/mise-v2024.4.5-macos-x64.tar.gz",
       "checksum": "523127515A8BEC0927EAB37303B0CA9F4A3DBD099542D826E5BC4562D5FE3782",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.4.8/mise-v2024.4.8-macos-arm64.tar.gz",
+      "checksum": "9E93922546638B3ACF7FEA72ADFA9B44A03B1886994AF3C30FB13DC5449B9DF2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.4.8/mise-v2024.4.8-macos-x64.tar.gz",
+      "checksum": "3A68339C6DA1315D583E8BAED496026C739ABDAE84B834328739DAA5CAD41ED2",
       "algorithm": "sha256"
     },
     {
@@ -1056,6 +1091,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/leoafarias/fvm/3.1.4/fvm-3.1.4-macos-arm64.tar.gz",
+      "checksum": "EA4D9B807A1ABC9A7EA2BADB62733D9B0E79BB38CBCB298257342028BCF6D877",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/leoafarias/fvm/3.1.4/fvm-3.1.4-macos-x64.tar.gz",
+      "checksum": "66E04B3893082F7A4BA7695C2D177CBA0B1902AF47BE0CEC9241F2DFAEA849EC",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_amd64.zip",
       "checksum": "8D34445FDDB590CAADC97027F27A340E639F9E13CD80CC929B170EEAFA9E1398",
       "algorithm": "sha256"
@@ -1156,6 +1201,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/sxyazi/yazi/v0.2.5/yazi-aarch64-apple-darwin.zip",
+      "checksum": "D25544C80DB4AF44C6EDCE5285F29AE42F1DBBE7AF90819E25496C93F0F4B8EF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sxyazi/yazi/v0.2.5/yazi-x86_64-apple-darwin.zip",
+      "checksum": "A7DFCE802AEFCA1DF47783CC91B8E6A5001E2764E7E27C0431C9E25DF3B9EDA5",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/watchexec/watchexec/v1.25.1/watchexec-1.25.1-aarch64-apple-darwin.tar.xz",
       "checksum": "FD8508FD972BC100A778156DA2F00AF7094DB7CAE22FC0E377208F0A78BE3E2A4D1DFCB984A8725FCF3C8B4124E98E2F4C60C9B4A936D0F5465C8749B1DEBA8A",
       "algorithm": "sha512"
@@ -1163,6 +1218,16 @@
     {
       "id": "github_release/github.com/watchexec/watchexec/v1.25.1/watchexec-1.25.1-x86_64-apple-darwin.tar.xz",
       "checksum": "80F9D475B1655197155815503B0DC2F0C9DFF2EAE1711735D770FCCF23C78469DFBFA14BA34034775130910105D3DA879D969B960822E9FC82343801D7D222BA",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/watchexec/watchexec/v2.0.0/watchexec-2.0.0-aarch64-apple-darwin.tar.xz",
+      "checksum": "5FC05BC3DD53210E8061C13A7C371F6A4B89EB09B162354986F4FDAB4FAD19E10322C2D522567F7D566A46500666C5ADE0D9F50FD4927EEC487DE19C3E4A46BF",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/watchexec/watchexec/v2.0.0/watchexec-2.0.0-x86_64-apple-darwin.tar.xz",
+      "checksum": "94AEDF9D56A1C381DA17A0DDA85F3A341899E9C5F6EE47B831C856D62710002A417D30F0A8B8F90490E11513AD961C549ACFA9CD84CFA02CCFB7113866042E4B",
       "algorithm": "sha512"
     },
     {
@@ -1278,6 +1343,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.162.0/registry.yaml",
       "checksum": "C9532CA1D9E6A0D1178699E5F3FF7D6B88693F95158BFB9E160A2D4CE9DD89E6D851FFC438C1B392B2253CE03974D343C67607FD2DEDAB55F34104712B6C33B3",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.166.0/registry.yaml",
+      "checksum": "D10458CA72A704AA0E780981B8EE46B653D5720969BFF6276443A427C987F3FA488B3BBFE4B6AC03498C610C0DE6ED440E66D596CC9B4E5CB03033CA49E95FEE",
       "algorithm": "sha512"
     },
     {
