@@ -111,6 +111,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/YS-L/csvlens/v0.9.0/csvlens-aarch64-apple-darwin.tar.xz",
+      "checksum": "0B8C30314BD827F11AC766F662C91B68AE03DD2BC529C46DD7DD290A96478309",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/YS-L/csvlens/v0.9.0/csvlens-x86_64-apple-darwin.tar.xz",
+      "checksum": "80042964EE3F9F029C2862CCA078065D768FD27047337F1C971DCE4BF521AA91",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.2/zoxide-0.9.2-aarch64-apple-darwin.tar.gz",
       "checksum": "6E4E4805D2EADEB1E6C81B65D7EBB189DE49E7030406B2154790ED20FF8F9D113B5DB77707022B1CCF3669928AB842383B0ACB5729D91BC6ABC0C2236A5F64D5",
       "algorithm": "sha512"
@@ -178,6 +188,16 @@
     {
       "id": "github_release/github.com/astral-sh/ruff/v0.4.1/ruff-0.4.1-x86_64-apple-darwin.tar.gz",
       "checksum": "CF5CF66D116A26C020EA7CE158015BDE7A91B3737F788A7DDA9660B40585D623",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/v0.4.3/ruff-0.4.3-aarch64-apple-darwin.tar.gz",
+      "checksum": "7B29FD8FD234E091AFC264BBAD95C54A9DF99DA490EEAC67309EFD58E36C2F2D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/v0.4.3/ruff-0.4.3-x86_64-apple-darwin.tar.gz",
+      "checksum": "8DCBC118DA18A6C83FAB6778A130708221C214F4EDAC9CEBB64AD2F36AF3F7FF",
       "algorithm": "sha256"
     },
     {
@@ -381,6 +401,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.49.0/gh_2.49.0_macOS_amd64.zip",
+      "checksum": "F3A6204264A442839187E9D9FB850C8C457EB07F4558E46F2CCEF20020E55E87",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.49.0/gh_2.49.0_macOS_arm64.zip",
+      "checksum": "4C589DFABDF92D33DF8BB4AF474F6A5DC1945E2A67247469260104FBFD58978C",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/crate-ci/typos/v1.17.1/typos-v1.17.1-x86_64-apple-darwin.tar.gz",
       "checksum": "5740E693E489F592CDE54807F44D841FE190AC8307304A77E94437E83E5A293C",
       "algorithm": "sha256"
@@ -433,6 +463,11 @@
     {
       "id": "github_release/github.com/crate-ci/typos/v1.20.8/typos-v1.20.8-x86_64-apple-darwin.tar.gz",
       "checksum": "3F321104F7D5FE7F7D773D888EF0B235AAD6C64889486B1D0858335C8F7075B7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/crate-ci/typos/v1.21.0/typos-v1.21.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "B808F5598249E7E8F6A7DC9E58A6591C62DE1D273C04BABA50EA248CAD01F8B5",
       "algorithm": "sha256"
     },
     {
@@ -698,6 +733,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.4.8/mise-v2024.4.8-macos-x64.tar.gz",
       "checksum": "3A68339C6DA1315D583E8BAED496026C739ABDAE84B834328739DAA5CAD41ED2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.5.3/mise-v2024.5.3-macos-arm64.tar.gz",
+      "checksum": "C39D63EDC38179DB3B0BDE2F51F9BDFB49E6526968F4AAE59571D7493CA59BC9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.5.3/mise-v2024.5.3-macos-x64.tar.gz",
+      "checksum": "B0C882039D76C2D0DA6D724913417984FD2EF02602296E05BD4C2D5026358FED",
       "algorithm": "sha256"
     },
     {
@@ -1041,6 +1086,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/0.51.0/fzf-0.51.0-darwin_amd64.zip",
+      "checksum": "E32E1A1953882EB76085EE266E49C845CB9F0F554ACAA87D962EC0F108CE99E8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/0.51.0/fzf-0.51.0-darwin_arm64.zip",
+      "checksum": "3A21637A95714AE39547C55802313CBEC1268D501F2213925C67911247868526",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.x86_64.tar.xz",
       "checksum": "EF27684F23279D112D8AD84E0823642E43F838993BBB8C0963DB9B58A90464C2",
       "algorithm": "sha256"
@@ -1166,6 +1221,11 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/sharkdp/fd/v10.0.0/fd-v10.0.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "B032AD8118C55C54B56C05B0FF62FDB85CB95C86DFF5D5B79123FF7A9381C688",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sharkdp/fd/v8.7.0/fd-v8.7.0-x86_64-apple-darwin.tar.gz",
       "checksum": "DC204DCE21E9307AA023F05ED00BB24244F3260C700E34E5069E4E51A1BA37CD34F677EA586C41877DF0A55BA6D6D0154BAEC56698AE774C5D15AEEC5B886991",
       "algorithm": "sha512"
@@ -1231,6 +1291,16 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/watchexec/watchexec/v2.1.1/watchexec-2.1.1-aarch64-apple-darwin.tar.xz",
+      "checksum": "809C34388607B920150B9AD5E9C26AA557D57DA4B6B0145E6E0B11DBE732BB0994CCA33E48D9100E25F298F38AA89A52B431FE7C1D7CD28022CAB0F9263C524D",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/watchexec/watchexec/v2.1.1/watchexec-2.1.1-x86_64-apple-darwin.tar.xz",
+      "checksum": "01D7CA09C954E6860CB0178E9F01939E0B1C2FB991CAC8859E2BA459BF84F7A31CF4992DF8C7CAE1FCB5909652053B1CF58DBF0CBB97CAEABF56DF12C843FDB6",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/zaghaghi/openapi-tui/0.6.1/openapi-tui-0.6.1-macos-arm64.tar.gz",
       "checksum": "3A8BE991F5DE142DC193D93493E223A24F2BBAE20DA90A2E8A3BAB00DA1C06CD",
       "algorithm": "sha256"
@@ -1258,6 +1328,16 @@
     {
       "id": "github_release/github.com/zaghaghi/openapi-tui/0.8.0/openapi-tui-0.8.0-macos-x86_64.tar.gz",
       "checksum": "2463BC1974D7122D267D468573F2B1DA12BC3EA48C2AEDFC87EE3D5F5BC4A9AF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/zaghaghi/openapi-tui/0.9.2/openapi-tui-0.9.2-macos-arm64.tar.gz",
+      "checksum": "7DF61A99A82489B1AC98FB2091F9AEAB8A0CF20113DE150C0FA4793223E978FB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/zaghaghi/openapi-tui/0.9.2/openapi-tui-0.9.2-macos-x86_64.tar.gz",
+      "checksum": "8533D755C41612F067E7D0F0E7110D41251CCDFAD7D2C1A29513A9ED3FEA63B8",
       "algorithm": "sha256"
     },
     {
@@ -1348,6 +1428,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.166.0/registry.yaml",
       "checksum": "D10458CA72A704AA0E780981B8EE46B653D5720969BFF6276443A427C987F3FA488B3BBFE4B6AC03498C610C0DE6ED440E66D596CC9B4E5CB03033CA49E95FEE",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.172.0/registry.yaml",
+      "checksum": "8F3624D7013C943F561D17EB517103A183090DC96841FF9A4ACBE4583C44EC9416C9AE59CC62DD548AC4635A9BDDD3B48F4035C88E8B4ED48C6F72CEC68D56B7",
       "algorithm": "sha512"
     },
     {
