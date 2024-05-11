@@ -201,6 +201,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/v0.4.4/ruff-0.4.4-aarch64-apple-darwin.tar.gz",
+      "checksum": "BC285F4CC528DD1AA495E4E58C8D204720389B5EBAB3DEEFC14CB97D07A1A460",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/v0.4.4/ruff-0.4.4-x86_64-apple-darwin.tar.gz",
+      "checksum": "1C2ACFD16DB77B010873053AD43160951BAF2653CFC38BF66A3F377912F49299",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/bensadeh/tailspin/3.0.0/tailspin-aarch64-apple-darwin.tar.gz",
       "checksum": "CBA1A5E5D86CC0B6BAEEA17A52E96574716D575222C582713DEE4417C60C8E3D",
       "algorithm": "sha256"
@@ -408,6 +418,16 @@
     {
       "id": "github_release/github.com/cli/cli/v2.49.0/gh_2.49.0_macOS_arm64.zip",
       "checksum": "4C589DFABDF92D33DF8BB4AF474F6A5DC1945E2A67247469260104FBFD58978C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.49.1/gh_2.49.1_macOS_amd64.zip",
+      "checksum": "E9417428FA3D06602DB8E872C951BECFB1CD49262734A1F69BAA6EAE877EC3DE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.49.1/gh_2.49.1_macOS_arm64.zip",
+      "checksum": "841F51C01F8C0AC92631F46B7225BC71535FD9D0F97E5BE2271FB14A7F8F2128",
       "algorithm": "sha256"
     },
     {
@@ -1096,6 +1116,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/0.52.0/fzf-0.52.0-darwin_amd64.zip",
+      "checksum": "9367168144560B997AEFB6E79FC16C3ACB37158524FEFFFC3D9F54F601767781",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/0.52.0/fzf-0.52.0-darwin_arm64.zip",
+      "checksum": "816FA84A3E133C985BDA542482F58035D6D6D362B08354683570B15B9AFD01FC",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.x86_64.tar.xz",
       "checksum": "EF27684F23279D112D8AD84E0823642E43F838993BBB8C0963DB9B58A90464C2",
       "algorithm": "sha256"
@@ -1211,6 +1241,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/rhysd/actionlint/v1.7.0/actionlint_1.7.0_darwin_amd64.tar.gz",
+      "checksum": "138AFF674F31BD218030D4B00B3024BF0C721B75A7EC8E90B743763F81E3128E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/actionlint/v1.7.0/actionlint_1.7.0_darwin_arm64.tar.gz",
+      "checksum": "806E73FBAFE54B7324D9478798534C5195FB71EA171633D9035B3FCA237ADDD3",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sharkdp/bat/v0.23.0/bat-v0.23.0-x86_64-apple-darwin.tar.gz",
       "checksum": "EDCAC5D952C80EBF32F74E7B69650A2A12C8D7EA06050EF026394965C51F4503AFE1B97386967A439CE4E9472A443AD1F9154B939B0D559BE6AAD73EAE191A01",
       "algorithm": "sha512"
@@ -1223,6 +1263,11 @@
     {
       "id": "github_release/github.com/sharkdp/fd/v10.0.0/fd-v10.0.0-x86_64-apple-darwin.tar.gz",
       "checksum": "B032AD8118C55C54B56C05B0FF62FDB85CB95C86DFF5D5B79123FF7A9381C688",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sharkdp/fd/v10.1.0/fd-v10.1.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "316CDAF5C6EC7E8B0664914DF1DA21C511AEF2A023E13F8628354E60E0346DAC",
       "algorithm": "sha256"
     },
     {
