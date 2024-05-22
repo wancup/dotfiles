@@ -54,7 +54,6 @@ map({ "n", "x" }, "<S-h>", "^")
 map({ "n", "x" }, "<S-l>", "$")
 map({ "n", "x" }, "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
 
-map({ "n", "x" }, "K", vim.lsp.buf.hover, { desc = "Hover" })
 map({ "n", "x" }, "gK", vim.lsp.buf.signature_help, { desc = "Signature Help" })
 
 map({ "n", "x" }, "gr", vim.lsp.buf.references, { desc = "[G]oto [R]eferences" })
@@ -79,8 +78,6 @@ map({ "n", "x" }, "gB", vim.lsp.buf.workspace_symbol, { desc = "[G]oto Sym[b]ol(
 map({ "n", "x" }, "<leader>d", function()
 	vim.diagnostic.open_float({ source = true })
 end, { desc = "[D]iagnostics" })
-map({ "n", "x" }, "[d", vim.diagnostic.goto_prev, { desc = "Prev [D]iagnostics" })
-map({ "n", "x" }, "]d", vim.diagnostic.goto_next, { desc = "Next [D]iagnostics" })
 
 map({ "n", "x" }, "[c", git.prev_conflict, { desc = "Goto Previous Conflict" })
 map({ "n", "x" }, "]c", git.next_conflict, { desc = "Goto Next Conflict" })
