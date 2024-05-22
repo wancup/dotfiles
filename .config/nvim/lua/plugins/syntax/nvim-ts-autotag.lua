@@ -2,7 +2,7 @@
 return {
 	{
 		"windwp/nvim-ts-autotag",
-		event = "InsertEnter",
+		event = { "BufReadPost", "BufNewFile" },
 		config = true,
 	},
 }
