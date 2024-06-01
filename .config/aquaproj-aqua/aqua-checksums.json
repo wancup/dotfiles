@@ -236,6 +236,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/v0.4.7/ruff-0.4.7-aarch64-apple-darwin.tar.gz",
+      "checksum": "B2F7E84D50503DFEDF3C3162D01DE94006804E31E566DFBB345C5CC8E06B803B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/v0.4.7/ruff-0.4.7-x86_64-apple-darwin.tar.gz",
+      "checksum": "D6A9B5D26710E60DACCC0B8C1B74A10D0E0EFDFF7276FA9BCDB0B04973831D5A",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/bensadeh/tailspin/3.0.0/tailspin-aarch64-apple-darwin.tar.gz",
       "checksum": "CBA1A5E5D86CC0B6BAEEA17A52E96574716D575222C582713DEE4417C60C8E3D",
       "algorithm": "sha256"
@@ -463,6 +473,16 @@
     {
       "id": "github_release/github.com/cli/cli/v2.49.2/gh_2.49.2_macOS_arm64.zip",
       "checksum": "5DCE39FAF543EC981AED6C1351C7031A5C0D19FD0EFC8513544CBE94465F2749",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.50.0/gh_2.50.0_macOS_amd64.zip",
+      "checksum": "D18ACD3874C9B914E0631C308F8E2609BD45456272BACFA70221C46C76C635F6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.50.0/gh_2.50.0_macOS_arm64.zip",
+      "checksum": "85FCED36325E212410D0EEA97970251852B317D49D6D72FD6156E522F2896BC5",
       "algorithm": "sha256"
     },
     {
@@ -818,6 +838,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.5.23/mise-v2024.5.23-macos-x64.tar.gz",
       "checksum": "50E818A8755D5818E9F21E9B2C844D16D4A7D40DB3A7FF2AAF086ED2BFBF19D5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.5.28/mise-v2024.5.28-macos-arm64.tar.gz",
+      "checksum": "BDA2E01FB945AC8F4E6A7E020A02A81AD695589E5CE4ED13258E937295930196",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.5.28/mise-v2024.5.28-macos-x64.tar.gz",
+      "checksum": "86773EFDCA5E71B3FEEA9C02EDE184F26F8D0B5B1E15B656D296A54A5BFCFE98",
       "algorithm": "sha256"
     },
     {
@@ -1271,6 +1301,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/leoafarias/fvm/3.1.6/fvm-3.1.6-macos-arm64.tar.gz",
+      "checksum": "B2D4B82C2A990FC0C4C8F78D439B149E06DC6C5FD314E1026CC637A75764A9B1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/leoafarias/fvm/3.1.6/fvm-3.1.6-macos-x64.tar.gz",
+      "checksum": "C5C6F8B25FF91B955AF937491EF108A33C2AC1905D52FF31590E9E86C69A7A25",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_amd64.zip",
       "checksum": "8D34445FDDB590CAADC97027F27A340E639F9E13CD80CC929B170EEAFA9E1398",
       "algorithm": "sha256"
@@ -1333,6 +1373,16 @@
     {
       "id": "github_release/github.com/rhysd/actionlint/v1.7.0/actionlint_1.7.0_darwin_arm64.tar.gz",
       "checksum": "806E73FBAFE54B7324D9478798534C5195FB71EA171633D9035B3FCA237ADDD3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/actionlint/v1.7.1/actionlint_1.7.1_darwin_amd64.tar.gz",
+      "checksum": "EE24184E2E7003C19EB739717B34B7C65D096F2CA0DF8D571837B4F20112D573",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/actionlint/v1.7.1/actionlint_1.7.1_darwin_arm64.tar.gz",
+      "checksum": "A72F66F28A4CC294670ABB7A5E3392033700E00CC6A385C32FB769971B71EC9F",
       "algorithm": "sha256"
     },
     {
