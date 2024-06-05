@@ -7,7 +7,6 @@ return {
 		dependencies = {
 			{ "williamboman/mason.nvim", config = true },
 			"williamboman/mason-lspconfig.nvim",
-			{ "folke/neodev.nvim", config = true },
 			"b0o/schemastore.nvim",
 		},
 		keys = {
