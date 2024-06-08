@@ -1,5 +1,5 @@
-local disabled_fts = { "neo-tree" }
-local disabled_bts = { "nofile", "prompt", "popup" }
+local disabled_fts = { "blame" }
+local disabled_bts = { "prompt", "popup" }
 
 return {
 	"nvim-focus/focus.nvim",
@@ -28,9 +28,23 @@ return {
 					vim.tbl_contains(disabled_fts, vim.bo.filetype)
 					or vim.tbl_contains(disabled_bts, vim.bo.buftype)
 				then
-					require("focus").focus_disable()
+					vim.w.focus_disable = true
 				else
-					require("focus").focus_enable()
+					vim.w.focus_disable = false
+				end
+			end,
+		})
+
+		vim.api.nvim_create_autocmd("FileType", {
+			group = augroup,
+			callback = function(_)
+				if
+					vim.tbl_contains(disabled_fts, vim.bo.filetype)
+					or vim.tbl_contains(disabled_bts, vim.bo.buftype)
+				then
+					vim.b.focus_disable = true
+				else
+					vim.b.focus_disable = false
 				end
 			end,
 		})
