@@ -18,10 +18,10 @@ require("lazy").setup({
 		{ import = "plugins.cmp" },
 		{ import = "plugins.coding" },
 		{ import = "plugins.color" },
+		{ import = "plugins.command" },
 		{ import = "plugins.git" },
 		{ import = "plugins.lsp" },
 		{ import = "plugins.syntax" },
-		{ import = "plugins.telescope" },
 		{ import = "plugins.ui" },
 	},
 })
