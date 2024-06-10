@@ -74,6 +74,15 @@ return {
 			})
 			require("mason-lspconfig").setup_handlers({
 				function(server)
+					-- Disable vtsls for flow.js
+					if server == "vtsls" then
+						local root_path = vim.fs.root(0, { ".flowconfig" })
+						if root_path ~= nil then
+							require("lspconfig").flow.setup({})
+							return
+						end
+					end
+
 					require("lspconfig")[server].setup({
 						capabilities = capabilities,
 						on_attach = function(client, buffnr)
