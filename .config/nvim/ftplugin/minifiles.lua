@@ -45,6 +45,37 @@ vim.keymap.set("n", "<leader>my", function()
 	end
 end, { buffer = true, desc = "[M]ini.files [Y]ank file name" })
 
+vim.keymap.set("n", "<leader>mY", function()
+	local entry = files.get_fs_entry()
+	if entry ~= nil then
+		local root_path = vim.fs.root(entry.path, ".git")
+		local file_path = entry.path
+		if root_path ~= nil then
+			file_path = string.sub(entry.path, string.len(root_path) + 1)
+		end
+		vim.fn.setreg(vim.v.register, file_path)
+	end
+end, { buffer = true, desc = "[M]ini.files [Y]ank file path" })
+
+vim.keymap.set("n", "<leader>m<leader>y", function()
+	local entry = files.get_fs_entry()
+	if entry ~= nil then
+		vim.fn.setreg("+", entry.name)
+	end
+end, { buffer = true, desc = "[M]ini.files [Y]ank file name to Clipboard" })
+
+vim.keymap.set("n", "<leader>m<leader>Y", function()
+	local entry = files.get_fs_entry()
+	if entry ~= nil then
+		local root_path = vim.fs.root(entry.path, ".git")
+		local file_path = entry.path
+		if root_path ~= nil then
+			file_path = string.sub(entry.path, string.len(root_path) + 1)
+		end
+		vim.fn.setreg("+", file_path)
+	end
+end, { buffer = true, desc = "[M]ini.files [Y]ank file path to Clipboard" })
+
 vim.keymap.set("n", "<C-s>", function()
 	local entry = files.get_fs_entry()
 	if entry ~= nil then
