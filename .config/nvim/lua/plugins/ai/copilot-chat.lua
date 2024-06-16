@@ -32,17 +32,12 @@ return {
 				},
 				FixDiagnostic = {
 					prompt = "このファイルについての以下のdiagnosticsの問題を解説し、修正したコード案を提示してください。",
-					selection = select.diagnostics,
 				},
 				Commit = {
 					prompt = "コミットメッセージを書いてください。メッセージはすべてをgitcommit形式のコードブロックとしてラップしてください。",
-					selection = select.gitdiff,
 				},
 				CommitStaged = {
 					prompt = "コミットメッセージを書いてください。メッセージはすべてをgitcommit形式のコードブロックとしてラップしてください。",
-					selection = function(source)
-						return select.gitdiff(source, true)
-					end,
 				},
 			},
 		},
