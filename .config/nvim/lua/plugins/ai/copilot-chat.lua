@@ -9,6 +9,16 @@ return {
 		cmd = {
 			"CopilotChat",
 			"CopilotChatOpen",
+			"CopilotChatReset",
+			"CopilotChatExplain",
+			"CopilotChatReview",
+			"CopilotChatFix",
+			"CopilotChatOptimize",
+			"CopilotChatDocs",
+			"CopilotChatTests",
+			"CopilotChatFixDiagnostic",
+			"CopilotChatCommit",
+			"CopilotChatCommitStaged",
 		},
 		opts = {
 			prompts = {
