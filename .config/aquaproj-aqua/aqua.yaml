@@ -39,3 +39,4 @@ packages:
 - name: dprint/dprint@0.46.2
 - name: astral-sh/ruff@v0.4.9
 - name: XAMPPRocky/tokei@v12.1.2
+- name: hadolint/hadolint@v2.12.0

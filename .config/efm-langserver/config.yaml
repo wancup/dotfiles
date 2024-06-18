@@ -26,9 +26,17 @@ tools:
       - "%f:%l:%c %m"
       - "%f: %l: %m"
 
+  dockerfile-hadolint: &dockerfile-hadolint
+    lint-source: hadolint
+    lint-command: "hadolint --no-color -"
+    lint-stdin: true
+    lint-formats:
+      - "%f:%l DL%n %t%.%#: %m"
+
 languages:
   =:
     - <<: *any-typos
-
   markdown:
     - <<: *markdown-markdownlint
+  dockerfile:
+    - <<: *dockerfile-hadolint
