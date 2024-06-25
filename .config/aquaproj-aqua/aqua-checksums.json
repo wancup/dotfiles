@@ -526,6 +526,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.52.0/gh_2.52.0_macOS_amd64.zip",
+      "checksum": "784858B533165E64BD2F5253ED885CF5BC30D620EDB82EBB150B20DC1C98EF38",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.52.0/gh_2.52.0_macOS_arm64.zip",
+      "checksum": "C1C445154EDE0707CAF24907C74A153E397635EBB35887E73937DE1F00DC0C10",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/crate-ci/typos/v1.17.1/typos-v1.17.1-x86_64-apple-darwin.tar.gz",
       "checksum": "5740E693E489F592CDE54807F44D841FE190AC8307304A77E94437E83E5A293C",
       "algorithm": "sha256"
@@ -608,6 +618,11 @@
     {
       "id": "github_release/github.com/crate-ci/typos/v1.22.8/typos-v1.22.8-x86_64-apple-darwin.tar.gz",
       "checksum": "BFC6D0369C4EC8E5D24A58D7EE0F4FD05C14F5DE7506CF1CBD2C3D0742FF06FA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/crate-ci/typos/v1.22.9/typos-v1.22.9-x86_64-apple-darwin.tar.gz",
+      "checksum": "7BF1CB6710601519D3FB860DB2F613E5F652693F42590739EAA0E2826E3EBF3E",
       "algorithm": "sha256"
     },
     {
@@ -1809,6 +1824,11 @@
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.194.0/registry.yaml",
       "checksum": "C50E38D6A4CD77D9CE4E5E02F98DE13C9EE926C655D2562E3B6B6303464BDBB8",
       "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.196.0/registry.yaml",
+      "checksum": "8D720E70A301A8B0AC15111B3466119590328F8FBBB817EADFD51D8D22BF1BDE40D8EDA82C5EEAF0D3A40F5248BC7F72151C73858E2DE1B46F05C49EC66520AF",
+      "algorithm": "sha512"
     },
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.44.1/registry.yaml",
