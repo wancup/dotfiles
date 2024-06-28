@@ -15,11 +15,14 @@ local function goto_vsplit(cb)
 	cb()
 end
 
+local function goto_references()
+	vim.lsp.buf.references({ includeDeclaration = false })
+end
 local function goto_split_ref()
-	goto_split(vim.lsp.buf.references)
+	goto_split(goto_references)
 end
 local function goto_vsplit_ref()
-	goto_vsplit(vim.lsp.buf.references)
+	goto_vsplit(goto_references)
 end
 
 local function goto_type_def()
@@ -56,7 +59,7 @@ map({ "n", "x" }, "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
 
 map({ "n", "x" }, "gK", vim.lsp.buf.signature_help, { desc = "Signature Help" })
 
-map({ "n", "x" }, "gr", vim.lsp.buf.references, { desc = "[G]oto [R]eferences" })
+map({ "n", "x" }, "gr", goto_references, { desc = "[G]oto [R]eferences" })
 map({ "n", "x" }, "gsr", goto_split_ref, { desc = "[G]oto [S]plit [R]eferences" })
 map({ "n", "x" }, "gSr", goto_vsplit_ref, { desc = "[G]oto [V]split [R]eferences" })
 
