@@ -48,6 +48,6 @@ function diff_stdout -d "diff two command's stdouts"
 
   rm -f $input2
   rm -f $input1
-  rm_empty_dir $tmp_dir
+  rmdir $tmp_dir
   return $exit_code
 end
