@@ -166,6 +166,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.5.0/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "A9203EE067703EF9589CAE0D78E3DEF76E855650D721F77057A3B60638302B36",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.5.0/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "283A2D23AF7D3B05173E34AADE53C4D04694E44CA240B61E5B95C887A379EAF1",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -703,6 +713,16 @@
     {
       "id": "github_release/github.com/dprint/dprint/0.46.3/dprint-x86_64-apple-darwin.zip",
       "checksum": "A9F4C71F1E32E99152E8278CCBD27C059246DFA1C3D8B3CB1FA0837BDD269B3E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dprint/dprint/0.47.0/dprint-aarch64-apple-darwin.zip",
+      "checksum": "78D939C95291DABADDE7C05CEB32F5E6C4616B5F1896B8881F974F5553868C6D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dprint/dprint/0.47.0/dprint-x86_64-apple-darwin.zip",
+      "checksum": "9235688846867ABDD69C214A1CADE5FD4348BE82BCC1075B2B447D535BF483A2",
       "algorithm": "sha256"
     },
     {
@@ -1828,6 +1848,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.196.0/registry.yaml",
       "checksum": "8D720E70A301A8B0AC15111B3466119590328F8FBBB817EADFD51D8D22BF1BDE40D8EDA82C5EEAF0D3A40F5248BC7F72151C73858E2DE1B46F05C49EC66520AF",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.200.0/registry.yaml",
+      "checksum": "3307C0800604EE8FEB504C1513C3A63B0D050A646DEB8CF1023F72B065D3F9E2C8108D1CF63946785CF886231E57BD5A79EA28A42AB8CB51F83791962EF544AB",
       "algorithm": "sha512"
     },
     {
