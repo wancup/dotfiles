@@ -21,7 +21,6 @@ return {
 				["<leader>g"] = { name = "Git" },
 				["<leader>gh"] = { name = "Git Hunk" },
 				["<leader>gb"] = { name = "Git Buffer" },
-				["<leader>j"] = { name = "TreeSJ" },
 				["<leader>l"] = { name = "List" },
 				["<leader>n"] = { name = "Noice" },
 				["<leader>N"] = { name = "Node.js" },
@@ -29,6 +28,7 @@ return {
 				["<leader>rb"] = { name = "ReplaceMultiBuffer" },
 				["<leader>s"] = { name = "Surround" },
 				["<leader>S"] = { name = "Session" },
+				["<leader>t"] = { name = "TreeSJ" },
 				["<leader>u"] = { name = "UI" },
 			})
 		end,
