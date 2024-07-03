@@ -43,7 +43,10 @@ return {
 			end
 
 			return {
-				sources = { { name = "luasnip" }, { name = "nvim_lsp" } },
+				sources = {
+					{ name = "luasnip", group_index = 1 },
+					{ name = "nvim_lsp", group_index = 2 },
+				},
 				completion = { completeopt = "menu,menuone,noinsert" },
 				snippet = {
 					expand = function(args)
