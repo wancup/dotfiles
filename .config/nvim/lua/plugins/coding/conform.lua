@@ -26,7 +26,7 @@ return {
 			},
 			format_on_save = function()
 				if vim.g.format_on_save then
-					return { timeout_ms = 1000, lsp_fallback = false }
+					return { timeout_ms = 5000, lsp_fallback = false }
 				end
 			end,
 		},
