@@ -636,6 +636,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.23.0/typos-v1.23.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "C7EF5FAD02F594B887E71D31A3737FD2E00776BF3FA3E422B8F20AD8D2695D5A",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -1033,6 +1038,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.6.6/mise-v2024.6.6-macos-x64.tar.gz",
       "checksum": "321547336E4EB5033FD80469595E94F0BA0EF5C730413438A53B04275DC181B6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.7.0/mise-v2024.7.0-macos-arm64.tar.gz",
+      "checksum": "C10EB90124D1A2B11DB32582F41310DF377639832C252D728850DC156A3034A4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.7.0/mise-v2024.7.0-macos-x64.tar.gz",
+      "checksum": "62456D20159F2436C58A49CC42E3AB0B17A98B9E401B53FCAB756BE448044EED",
       "algorithm": "sha256"
     },
     {
@@ -1673,6 +1688,16 @@
     {
       "id": "github_release/github.com/watchexec/watchexec/v2.1.1/watchexec-2.1.1-x86_64-apple-darwin.tar.xz",
       "checksum": "01D7CA09C954E6860CB0178E9F01939E0B1C2FB991CAC8859E2BA459BF84F7A31CF4992DF8C7CAE1FCB5909652053B1CF58DBF0CBB97CAEABF56DF12C843FDB6",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/watchexec/watchexec/v2.1.2/watchexec-2.1.2-aarch64-apple-darwin.tar.xz",
+      "checksum": "B27A1B6028C63A218DEAE159611FC7C3B963DC3227B72C6E52A41110613A5FE343CA135EB1480D1178300BCB1B6FF75C2DD64F87C892198D42372A18B103CA2C",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/watchexec/watchexec/v2.1.2/watchexec-2.1.2-x86_64-apple-darwin.tar.xz",
+      "checksum": "48F65FA4020EB040A287284AEFDCE245102E04FD3DAC1095684F1FC8DB3B62CBC0657C86569AB67AFF100A3C7C44BF0BC3B07500DD52324F31C4018B93A33CCD",
       "algorithm": "sha512"
     },
     {
