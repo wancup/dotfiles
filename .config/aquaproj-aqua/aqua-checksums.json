@@ -176,6 +176,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.5.1/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "E12809A04A29C7730FC25764CEAC4920CC0C91C3993EE78AA908C9157FCFBCD7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.5.1/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "2728CEE87B15D28D19D87D32C00C3CA5C742471C65A0395EC833E93AD681960B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -641,6 +651,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.23.1/typos-v1.23.1-x86_64-apple-darwin.tar.gz",
+      "checksum": "668FF31882A34B09BB027847B7DCE732B2F3F29C87A385CD58B81D73AD3444A8",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -728,6 +743,16 @@
     {
       "id": "github_release/github.com/dprint/dprint/0.47.0/dprint-x86_64-apple-darwin.zip",
       "checksum": "9235688846867ABDD69C214A1CADE5FD4348BE82BCC1075B2B447D535BF483A2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dprint/dprint/0.47.1/dprint-aarch64-apple-darwin.zip",
+      "checksum": "AD208FDD2941DF0D6B133DFCC18AFE39622648A3566A39D4574784288D4111C8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dprint/dprint/0.47.1/dprint-x86_64-apple-darwin.zip",
+      "checksum": "9528A8939951A04E14DDA9D4A62A87A07E5FF483DA5F5E19AE94C35E1B9D4F2A",
       "algorithm": "sha256"
     },
     {
