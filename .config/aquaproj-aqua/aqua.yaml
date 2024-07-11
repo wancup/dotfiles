@@ -40,3 +40,4 @@ packages:
 - name: astral-sh/ruff@0.5.1
 - name: XAMPPRocky/tokei@v12.1.2
 - name: hadolint/hadolint@v2.12.0
+- name: sharkdp/hexyl@v0.14.0
