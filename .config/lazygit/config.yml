@@ -3,6 +3,8 @@ gui:
   theme:
     selectedLineBgColor:
       - underline
+  showDivergenceFromBaseBranch: arrowAndNumber
+  expandFocusedSidePanel: true
 
 customCommands:
   - key: "<c-space>"
