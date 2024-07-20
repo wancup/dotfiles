@@ -196,6 +196,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.5.3/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "8CD1EA3998D7F8C9F11173903A0D6B24936E1E7C007940CA970EB1730E352900",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.5.3/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "C0F0E357BEA24EEE58B561094BFA879FEF40A2A8C75BAD817FF0C221C7F5073A",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -1136,6 +1146,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdx/mise/v2024.7.4/mise-v2024.7.4-macos-arm64.tar.gz",
+      "checksum": "4E0E645B8F8DC25BE64F229E8613C34883D0D3FA63D8CA90B3A15BA1A72F90C4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.7.4/mise-v2024.7.4-macos-x64.tar.gz",
+      "checksum": "93082F129EA632B8905C2F962A5BFE54BA74F8D5AC410355867515F24AE3DD30",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jdx/rtx/v2023.11.4/rtx-v2023.11.4-macos-arm64.tar.gz",
       "checksum": "38E4878AC3C1E4AFF09EEE74A2039B9E308B500225BCD520942B9A30C98DB59F",
       "algorithm": "sha256"
@@ -1543,6 +1563,16 @@
     {
       "id": "github_release/github.com/junegunn/fzf/v0.54.0/fzf-0.54.0-darwin_arm64.zip",
       "checksum": "DFC8AE6675FA887A83EFDC9AA7A353FBF26F212CAAFC42D582ECD6A79F89CA22",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.54.1/fzf-0.54.1-darwin_amd64.zip",
+      "checksum": "2F23D43495FD0EE0C5A18D9A801584380EFF7CD523F40DA320B59F22434D15B9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.54.1/fzf-0.54.1-darwin_arm64.zip",
+      "checksum": "DE5F27FDEC3BAE1C3FB6C540BD7E85D3BC9055E989797147C7FFBB2ABCAA1298",
       "algorithm": "sha256"
     },
     {
