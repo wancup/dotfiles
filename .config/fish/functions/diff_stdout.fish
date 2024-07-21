@@ -1,15 +1,15 @@
 function diff_stdout -d "diff two command's stdouts"
 
   function show_help
-    echo ""
-    echo "USAGE:"
-    echo -e "\tdiff_stdout [OPTIONS] 'command1' 'command2'"
-    echo ""
-    echo "OPTIONS:"
-    echo -e "\t-F, --fixed-strings\t Compare two inputs as normal string"
-    echo -e "\t-P, --no-pager\t Use default diff"
-    echo -e "\t-h, --help\t\t Show this help"
-    echo ""
+    echo -e "
+USAGE:
+\tdiff_stdout [OPTIONS] 'command1' 'command2'
+
+OPTIONS:
+\t-F, --fixed-strings\t Compare two inputs as normal string
+\t-P, --no-pager\t Use default diff
+\t-h, --help\t\t Show this help
+"
   end
 
   argparse h/help F/fixed-strings P/no-pager -- $argv
