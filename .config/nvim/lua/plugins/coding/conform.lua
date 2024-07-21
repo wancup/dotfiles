@@ -1,3 +1,17 @@
+---@param bufnr integer
+---@param ... string
+---@return string
+local function get_available_formatter(bufnr, ...)
+	local conform = require("conform")
+	for i = 1, select("#", ...) do
+		local formatter = select(i, ...)
+		if conform.get_formatter_info(formatter, bufnr).available then
+			return formatter
+		end
+	end
+	return select(-1, ...)
+end
+
 return {
 	{
 		"stevearc/conform.nvim",
@@ -12,15 +26,23 @@ return {
 				lua = { "stylua" },
 				dart = { "dart_format" },
 				dockerfile = { "dprint" },
-				markdown = { { "dprint", "prettierd", "prettier" } },
-				yaml = { { "dprint", "prettierd", "prettier" } },
-				json = { { "dprint", "prettierd", "prettier" } },
-				css = { { "dprint", "prettierd", "prettier" } },
-				toml = { { "dprint" } },
-				javascript = { { "dprint", "prettierd", "prettier" }, "eslint_d" },
-				javascriptreact = { { "dprint", "prettierd", "prettier" }, "eslint_d" },
-				typescript = { { "dprint", "prettierd", "prettier" }, "eslint_d" },
-				typescriptreact = { { "dprint", "prettierd" }, "eslint_d" },
+				markdown = { "dprint", "prettierd", "prettier", stop_after_first = true },
+				yaml = { "dprint", "prettierd", "prettier", stop_after_first = true },
+				json = { "dprint", "prettierd", "prettier", stop_after_first = true },
+				css = { "dprint", "prettierd", "prettier", stop_after_first = true },
+				toml = { "dprint" },
+				javascript = function(bufnr)
+					return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+				end,
+				javascriptreact = function(bufnr)
+					return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+				end,
+				typescript = function(bufnr)
+					return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+				end,
+				typescriptreact = function(bufnr)
+					return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+				end,
 				rust = { "rustfmt" },
 				python = { "ruff_format", "ruff_fix" },
 			},
