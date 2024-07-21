@@ -24,6 +24,7 @@ return {
 			},
 			formatters_by_ft = {
 				lua = { "stylua" },
+				fish = { "fish_indent" },
 				dart = { "dart_format" },
 				dockerfile = { "dprint" },
 				markdown = { "dprint", "prettierd", "prettier", stop_after_first = true },
