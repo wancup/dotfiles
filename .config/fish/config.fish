@@ -1,15 +1,15 @@
 # cdls
 functions --copy cd standard_cd
 function cd
-  standard_cd $argv
-  ls -a
+    standard_cd $argv
+    ls -a
 end
 
 # alias
 alias rm="rm -i"
 abbr au "aqua update-checksum"
 abbr buu "brew upgrade && brew update"
-abbr diffs "diff_stdout"
+abbr diffs diff_stdout
 abbr dc "docker compose"
 abbr dcb "docker compose build"
 abbr dcd "docker compose down"
@@ -19,10 +19,10 @@ abbr dcu "docker compose up"
 abbr dcud "docker compose up -d"
 abbr dsp "docker system prune"
 abbr dspa "docker system prune -a"
-abbr ffr "fzf_gh_co_for_review"
-abbr fpr "fzf_gh_co_pr"
-abbr fsb "fzf_git_switch_branch"
-abbr fsc "fzf_git_show_commit"
+abbr ffr fzf_gh_co_for_review
+abbr fpr fzf_gh_co_pr
+abbr fsb fzf_git_switch_branch
+abbr fsc fzf_git_show_commit
 abbr gbi "git blame --ignore-revs-file .git-blame-ignore-revs"
 abbr gc "git clone"
 abbr gdd "GIT_EXTERNAL_DIFF=difft git diff"
@@ -30,16 +30,16 @@ abbr gds "GIT_EXTERNAL_DIFF=difft git show --ext-diff"
 abbr gdl "GIT_EXTERNAL_DIFF=difft git log -p --ext-diff"
 abbr gf "git fetch"
 abbr gfp "git fetch --prune"
-abbr ghna "gh_notify_actions"
+abbr ghna gh_notify_actions
 abbr gn "git --no-pager"
 abbr gp "git pull"
 abbr gpp "git pull --prune"
 abbr gs "git switch"
-abbr lg "lazygit"
-abbr n "nvim"
-abbr nn "nvim_clipboard"
-if test "$TERM_PROGRAM" = "WezTerm"
-  abbr ic "wezterm imgcat"
+abbr lg lazygit
+abbr n nvim
+abbr nn nvim_clipboard
+if test "$TERM_PROGRAM" = WezTerm
+    abbr ic "wezterm imgcat"
 end
 
 # vi mode
