@@ -63,6 +63,7 @@ return {
 							["<C-i>"] = "which_key",
 							["<C-j>"] = "select_default",
 							["<C-u>"] = false,
+							["<C-k>"] = false,
 							["<C-d>"] = actions.delete_buffer,
 							["<esc>"] = actions.close,
 							["<PageUp>"] = actions.preview_scrolling_up,
