@@ -3,11 +3,16 @@ return {
 		"nvim-telescope/telescope.nvim",
 		dependencies = {
 			"nvim-lua/plenary.nvim",
+			"nvim-telescope/telescope-live-grep-args.nvim",
 			"olacin/telescope-gitmoji.nvim",
 		},
 		cmd = "Telescope",
 		keys = {
-			{ "<leader><leader>", "<cmd>Telescope live_grep<cr>", desc = "Find Live Grep" },
+			{
+				"<leader><leader>",
+				":lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>",
+				desc = "Find Live Grep",
+			},
 			{
 				"<leader>f<leader>",
 				"<cmd>lua require('telescope.builtin').buffers({sort_mru=true, ignore_current_buffer=true})<cr>",
@@ -45,6 +50,7 @@ return {
 			local telescope = require("telescope")
 			local actions = require("telescope.actions")
 			local telescopeConfig = require("telescope.config")
+			local lga_actions = require("telescope-live-grep-args.actions")
 
 			-- Allow to find hidden files, exclude .git directory.
 			-- https://github.com/nvim-telescope/telescope.nvim/wiki/Configuration-Recipes#file-and-text-search-in-hidden-files-and-directories
@@ -92,9 +98,20 @@ return {
 							vim.fn.setreg("+", emoji)
 						end,
 					},
+
+					live_grep_args = {
+						auto_quoting = true,
+						mappings = {
+							i = {
+								["<C-t>"] = lga_actions.quote_prompt({ postfix = " -t " }),
+								["<C-g>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
+							},
+						},
+					},
 				},
 			})
 
+			telescope.load_extension("live_grep_args")
 			telescope.load_extension("gitmoji")
 			telescope.load_extension("persisted")
 		end,
