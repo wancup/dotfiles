@@ -68,6 +68,7 @@ return {
 							["<esc>"] = actions.close,
 							["<PageUp>"] = actions.preview_scrolling_up,
 							["<PageDown>"] = actions.preview_scrolling_down,
+							["<C-space>"] = actions.to_fuzzy_refine,
 						},
 						n = {
 							["q"] = "close",
