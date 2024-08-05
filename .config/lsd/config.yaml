@@ -1,0 +1,7 @@
+date: '+%F %T'
+
+sorting:
+  dir-grouping: first
+
+header: true
+

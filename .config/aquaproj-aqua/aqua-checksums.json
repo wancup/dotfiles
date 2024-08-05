@@ -1751,6 +1751,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/lsd-rs/lsd/v1.1.2/lsd-v1.1.2-x86_64-apple-darwin.tar.gz",
+      "checksum": "DF5CC97FE1C63D3DE4E7FDA7594743FD961F75024062B1A0C58CA296B8337EB8",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/mattn/efm-langserver/v0.0.49/efm-langserver_v0.0.49_darwin_amd64.zip",
       "checksum": "8D34445FDDB590CAADC97027F27A340E639F9E13CD80CC929B170EEAFA9E1398",
       "algorithm": "sha256"

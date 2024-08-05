@@ -2,7 +2,7 @@
 functions --copy cd standard_cd
 function cd
     standard_cd $argv
-    ls -a
+    lsd -a
 end
 
 # alias
@@ -35,6 +35,8 @@ abbr gn "git --no-pager"
 abbr gp "git pull"
 abbr gpp "git pull --prune"
 abbr gs "git switch"
+abbr la lsd -a
+abbr ll lsd -la
 abbr lg lazygit
 abbr n nvim
 abbr nn nvim_clipboard
