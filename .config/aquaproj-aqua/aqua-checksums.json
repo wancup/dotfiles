@@ -1786,6 +1786,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/o2sh/onefetch/2.21.0/onefetch-mac.tar.gz",
+      "checksum": "C77F363D071BFC1DF6B1EB4B1187A33420EBF8606A605F859F96545D9B400DBC",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/rhysd/actionlint/v1.6.26/actionlint_1.6.26_darwin_amd64.tar.gz",
       "checksum": "BFA890E77A8508603C785AF09A30BBAB3A3255D291D8D27EFC3F20AC8E303A8E",
       "algorithm": "sha256"
