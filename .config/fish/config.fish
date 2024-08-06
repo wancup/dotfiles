@@ -19,10 +19,10 @@ abbr dcu "docker compose up"
 abbr dcud "docker compose up -d"
 abbr dsp "docker system prune"
 abbr dspa "docker system prune -a"
-abbr ffr fzf_gh_co_for_review
-abbr fpr fzf_gh_co_pr
-abbr fsb fzf_git_switch_branch
-abbr fsc fzf_git_show_commit
+abbr ffr find_gh_pr_for_review
+abbr fpr find_gh_pr
+abbr fgb find_git_branch
+abbr fgc find_git_commit
 abbr gbi "git blame --ignore-revs-file .git-blame-ignore-revs"
 abbr gc "git clone"
 abbr gdd "GIT_EXTERNAL_DIFF=difft git diff"
