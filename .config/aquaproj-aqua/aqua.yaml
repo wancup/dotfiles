@@ -43,3 +43,4 @@ packages:
 - name: sharkdp/hexyl@v0.14.0
 - name: o2sh/onefetch@2.21.0
 - name: lsd-rs/lsd@v1.1.2
+- name: jesseduffield/lazydocker@v0.23.3

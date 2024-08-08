@@ -1421,6 +1421,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.23.3/lazydocker_0.23.3_Darwin_x86_64.tar.gz",
+      "checksum": "03608E90CDC51EAA65D92394C4B3172E04426C80D80F9F74FA2F073B33A02614",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jesseduffield/lazygit/v0.40.2/lazygit_0.40.2_Darwin_arm64.tar.gz",
       "checksum": "2857416D0D5B21C28A69850B068E072D0064F158A5B6FCFA97A3DF8789F5DE7F",
       "algorithm": "sha256"
