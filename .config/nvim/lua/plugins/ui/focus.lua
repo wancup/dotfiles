@@ -1,4 +1,4 @@
-local disabled_fts = { "blame", "alpha", "minifiles" }
+local disabled_fts = { "blame", "alpha", "minifiles", "aerial" }
 local disabled_bts = { "prompt", "popup" }
 
 return {

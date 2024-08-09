@@ -4,6 +4,9 @@ return {
 		"RRethy/vim-illuminate",
 		event = { "BufReadPost", "BufNewFile" },
 		opts = {
+			filetypes_denylist = {
+				"aerial",
+			},
 			min_count_to_highlight = 2,
 			large_file_cutoff = 2000,
 		},
