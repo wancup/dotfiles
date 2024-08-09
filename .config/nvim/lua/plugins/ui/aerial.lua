@@ -7,8 +7,8 @@ return {
 		},
 		cmd = { "AerialToggle", "AerialOpen", "AerialOpenAll", "AerialNavToggle", "AerialNavOpen" },
 		keys = {
-			{ "<leader>o", "<cmd>AerialToggle<cr>", desc = "[U]I [O]utline" },
-			{ "<leader>O", "<cmd>AerialNavToggle<cr>", desc = "[U]I [O]utline(Nav)" },
+			{ "<leader>o", "<cmd>AerialToggle<cr>", desc = "[O]utline" },
+			{ "<leader>O", "<cmd>AerialNavToggle<cr>", desc = "[O]utline(Nav)" },
 		},
 		opts = {
 			layout = {
