@@ -8,8 +8,8 @@ prompt: enabled
 pager: delta
 # Aliases allow you to create nicknames for gh commands
 aliases:
-    co: pr checkout
-    for-review: pr list --search "user-review-requested:@me"
+  co: pr checkout
+  for-review: pr list --search "user-review-requested:@me"
 # The path to a unix socket through which send HTTP connections. If blank, HTTP traffic will be handled by net/http.DefaultTransport.
 http_unix_socket:
 # What web browser gh should use when opening URLs. If blank, will refer to environment.

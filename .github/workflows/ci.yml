@@ -10,10 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Format
+      - name: Format Lua
         uses: JohnnyMorganz/stylua-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: 0.20.0
           args: --check --allow-hidden .
 
+      - name: Format Others
+        uses: dprint/check@v2.2
