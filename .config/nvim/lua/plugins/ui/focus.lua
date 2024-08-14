@@ -1,4 +1,12 @@
-local disabled_fts = { "blame", "alpha", "minifiles", "aerial" }
+local disabled_fts = {
+	"blame",
+	"alpha",
+	"minifiles",
+	"aerial",
+	"neotest-summary",
+	"neotest-output",
+	"neotest-output-panel",
+}
 local disabled_bts = { "prompt", "popup" }
 
 return {

@@ -21,6 +21,7 @@ return {
 					{ "<leader>g", group = "Git" },
 					{ "<leader>gh", group = "Git Hunk" },
 					{ "<leader>gb", group = "Git Buffer" },
+					{ "<leader>j", group = "TreeSJ" },
 					{ "<leader>l", group = "List" },
 					{ "<leader>n", group = "Noice" },
 					{ "<leader>N", group = "Node.js" },
@@ -28,7 +29,7 @@ return {
 					{ "<leader>rb", group = "ReplaceMultiBuffer" },
 					{ "<leader>s", group = "Surround" },
 					{ "<leader>S", group = "Session" },
-					{ "<leader>t", group = "TreeSJ" },
+					{ "<leader>t", group = "Test" },
 					{ "<leader>u", group = "UI" },
 				},
 			})
