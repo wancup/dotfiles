@@ -8,11 +8,18 @@ return {
 					enabled = false,
 				},
 				char = {
-					enabled = false,
+					enabled = true,
+					autohide = true,
+					jump_labels = true,
+					multi_line = true,
 				},
 			},
 		},
 		keys = {
+			"f",
+			"F",
+			"t",
+			"T",
 			{
 				"s",
 				mode = { "n", "x", "o" },

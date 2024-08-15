@@ -31,6 +31,9 @@ return {
 					FlutterWidgetGuides = { fg = "muted" },
 					-- Lsp_Signature
 					LspSignatureActiveParameter = { fg = "love", bg = "highlight_med" },
+					-- Flash
+					FlashMatch = { fg = "text", bg = "highlight_high" },
+					FlashLabel = { fg = "gold", bg = "base", bold = true },
 				},
 			})
 			vim.cmd("colorscheme rose-pine")
