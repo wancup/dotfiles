@@ -246,6 +246,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.6.0/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "3BFB3D2961C772F8088AF50FF772531C366049611EE8841F041DE14703DCBE6B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.6.0/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "CA2038F716713E48847229C2A54F58AACE01214DC2AAC681042D675B84DD1FFF",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -1241,6 +1251,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdx/mise/v2024.8.6/mise-v2024.8.6-macos-arm64.tar.gz",
+      "checksum": "430F5C828A3CEB9CA93814922D4FBFC65D1481D5B474CCB4478255DA7AD79730",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.8.6/mise-v2024.8.6-macos-x64.tar.gz",
+      "checksum": "1F9EE313C6651E06063ACEFDF27030B287656BF68810916648F8AD27B62A5447",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jdx/rtx/v2023.11.4/rtx-v2023.11.4-macos-arm64.tar.gz",
       "checksum": "38E4878AC3C1E4AFF09EEE74A2039B9E308B500225BCD520942B9A30C98DB59F",
       "algorithm": "sha256"
@@ -1918,6 +1938,16 @@
     {
       "id": "github_release/github.com/sxyazi/yazi/v0.3.0/yazi-x86_64-apple-darwin.zip",
       "checksum": "7578D8C45192CCED083113CF09278C2A367EB38E87A75ADD7E3F3FD16F280C83",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sxyazi/yazi/v0.3.1/yazi-aarch64-apple-darwin.zip",
+      "checksum": "EDC38D7B815A44D592E9D9077B194A7FE4976276593B67AF62E00738B88605C6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sxyazi/yazi/v0.3.1/yazi-x86_64-apple-darwin.zip",
+      "checksum": "B8547BEC60143BC09D311EE9EC31C0E6C25FCDF8BB8BD2FB42282FFA5E7CFE3F",
       "algorithm": "sha256"
     },
     {
