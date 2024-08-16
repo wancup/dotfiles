@@ -41,6 +41,7 @@ abbr lr lazydocker
 abbr lg lazygit
 abbr n nvim
 abbr nn nvim_clipboard
+abbr o. "open ."
 if test "$TERM_PROGRAM" = WezTerm
     abbr ic "wezterm imgcat"
 end
