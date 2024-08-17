@@ -20,3 +20,9 @@ for conf in $dot_configs; do
     ln -s "${base_dir}/.config/${name}" "${link_path}"
   fi
 done
+
+# SKK dict
+skk_dir="${HOME}/.local/share/skk"
+mkdir -p "${skk_dir}"
+curl https://skk-dev.github.io/dict/SKK-JISYO.L.gz --output "${skk_dir}/SKK-JISYO.L.gz"
+gzip -d -f "${skk_dir}/SKK-JISYO.L.gz"
