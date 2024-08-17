@@ -31,6 +31,7 @@ noremap <S-l>   $
 
 xnoremap <S-h>   ^
 xnoremap <S-l>   $
+xnoremap y ygv<Esc>
 
 inoremap <C-h> <BS>
 inoremap <C-d> <Delete>

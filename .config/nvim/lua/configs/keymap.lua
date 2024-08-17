@@ -126,3 +126,6 @@ map("i", "<C-n>", "<Down>")
 map("i", "<C-p>", "<Up>")
 map("i", "<C-f>", "<Right>")
 map("i", "<C-b>", "<Left>")
+
+-- Visual
+map("x", "y", "ygv<Esc>")
