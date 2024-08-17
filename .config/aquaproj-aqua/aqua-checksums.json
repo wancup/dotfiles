@@ -1816,6 +1816,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/neovim/neovim/v0.10.1/nvim-macos-arm64.tar.gz",
+      "checksum": "4B322A8DA38F0BBDCDCC9A2B224A7B5267F0B1610B7345CB880D803E03BB860B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/neovim/neovim/v0.10.1/nvim-macos-x86_64.tar.gz",
+      "checksum": "DD88C86164E6FB34EE364C4A2B42C6A1832890003AE7C9C733032697D92CF7A6",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/o2sh/onefetch/2.21.0/onefetch-mac.tar.gz",
       "checksum": "C77F363D071BFC1DF6B1EB4B1187A33420EBF8606A605F859F96545D9B400DBC",
       "algorithm": "sha256"

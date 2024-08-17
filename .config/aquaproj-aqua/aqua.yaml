@@ -44,3 +44,4 @@ packages:
   - name: o2sh/onefetch@2.21.0
   - name: lsd-rs/lsd@v1.1.2
   - name: jesseduffield/lazydocker@v0.23.3
+  - name: neovim/neovim@v0.10.1
