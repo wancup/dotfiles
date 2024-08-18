@@ -9,3 +9,4 @@ brew install font-noto-emoji
 brew install font-udev-gothic
 
 brew install markdownlint-cli
+brew install imagemagick
