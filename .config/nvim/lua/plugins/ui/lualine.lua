@@ -10,16 +10,13 @@ return {
 				lualine_a = {
 					{
 						"mode",
-						cond = function()
-							return not package.loaded["noice"] or not require("noice").api.status.mode.has()
-						end,
 					},
 					{
 						function()
-							return require("noice").api.status.mode.get()
+							return "Rec(" .. vim.fn.reg_recording() .. ")"
 						end,
 						cond = function()
-							return package.loaded["noice"] and require("noice").api.status.mode.has()
+							return vim.fn.reg_recording() ~= ""
 						end,
 					},
 				},
