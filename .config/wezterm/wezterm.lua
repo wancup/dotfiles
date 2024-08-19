@@ -26,6 +26,8 @@ local config = {
 		{ key = "j", mods = "LEADER", action = act.ActivatePaneDirection("Down") },
 		{ key = "k", mods = "LEADER", action = act.ActivatePaneDirection("Up") },
 		{ key = "l", mods = "LEADER", action = act.ActivatePaneDirection("Right") },
+		{ key = "p", mods = "LEADER", action = act.PaneSelect({ alphabet = "fjdksla;" }) },
+		{ key = "x", mods = "LEADER", action = act.PaneSelect({ alphabet = "fjdksla;", mode = "SwapWithActive" }) },
 		{ key = "s", mods = "LEADER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 		{ key = "S", mods = "LEADER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
 		{ key = "H", mods = "LEADER", action = act.ActivateTabRelative(-1) },
