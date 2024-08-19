@@ -5,6 +5,9 @@ return {
 		opts = {
 			input = {
 				enabled = true,
+				win_options = {
+					listchars = "precedes:-,extends:-",
+				},
 			},
 			select = {
 				enabled = true,
