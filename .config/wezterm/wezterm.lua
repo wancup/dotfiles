@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 local act = wezterm.action
 
+local shell_path = "/opt/homebrew/bin/fish"
 local config = {
 	font = wezterm.font_with_fallback({
 		{ family = "UDEV Gothic 35JPDOC", assume_emoji_presentation = false },
@@ -70,6 +71,17 @@ local config = {
 		{ key = "P", mods = "SUPER", action = act.ActivateCommandPalette },
 		{ key = "q", mods = "SUPER", action = act.QuitApplication },
 		{ key = "r", mods = "SUPER", action = act.ReloadConfiguration },
+		{
+			key = "i",
+			mods = "SUPER",
+			action = act.SplitPane({
+				direction = "Down",
+				size = { Cells = 5 },
+				command = {
+					args = { shell_path, "-c", "nvim_clipboard" },
+				},
+			}),
+		},
 		{ key = "t", mods = "SUPER", action = act.SpawnTab("CurrentPaneDomain") },
 		{
 			key = "u",
@@ -77,7 +89,7 @@ local config = {
 			action = act.CharSelect({ copy_on_select = true, copy_to = "ClipboardAndPrimarySelection" }),
 		},
 		{ key = "v", mods = "SUPER", action = act.PasteFrom("Clipboard") },
-		{ key = "w", mods = "SUPER", action = act.CloseCurrentTab({ confirm = true }) },
+		{ key = "w", mods = "SUPER", action = act.CloseCurrentPane({ confirm = true }) },
 		{ key = "x", mods = "SUPER", action = act.ActivateCopyMode },
 		{ key = "X", mods = "SUPER", action = act.QuickSelect },
 		{ key = "z", mods = "SUPER", action = act.TogglePaneZoomState },
@@ -154,7 +166,7 @@ local config = {
 }
 
 if wezterm.target_triple == "aarch64-apple-darwin" then
-	config.default_prog = { "/opt/homebrew/bin/fish", "-l" }
+	config.default_prog = { shell_path, "-l" }
 	config.macos_forward_to_ime_modifier_mask = "SHIFT|CTRL"
 end
 
