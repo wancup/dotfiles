@@ -10,6 +10,7 @@ opt.undofile = true
 opt.spell = true
 opt.spelllang = "en_us"
 opt.timeoutlen = 300
+opt.shell = "fish"
 
 -- UI
 opt.cursorline = true
