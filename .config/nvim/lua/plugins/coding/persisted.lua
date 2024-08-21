@@ -19,6 +19,9 @@ return {
 				if vim.tbl_contains(disabled_fts, vim.bo.filetype) then
 					return false
 				end
+				if vim.fn.expand("%:p"):match("nvim%-clipboard/.*%.txt") then
+					return false
+				end
 				return true
 			end,
 		},
