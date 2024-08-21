@@ -10,3 +10,7 @@ brew install font-udev-gothic
 
 brew install markdownlint-cli
 brew install imagemagick
+
+if [ "$(uname)" = 'Darwin' ]; then
+  brew install --cask nikitabobko/tap/aerospace
+fi

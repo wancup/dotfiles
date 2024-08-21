@@ -2,6 +2,7 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 
 local shell_path = "/opt/homebrew/bin/fish"
+
 local config = {
 	font = wezterm.font_with_fallback({
 		{ family = "UDEV Gothic 35JPDOC", assume_emoji_presentation = false },
@@ -47,7 +48,7 @@ local config = {
 		{ key = "-", mods = "SUPER|SHIFT", action = act.DecreaseFontSize },
 		{ key = "=", mods = "SUPER|SHIFT", action = act.ResetFontSize },
 
-		{ key = "Enter", mods = "ALT", action = act.ToggleFullScreen },
+		-- { key = "Enter", mods = "ALT", action = act.ToggleFullScreen },
 
 		{ key = "s", mods = "SUPER", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
 		{ key = "S", mods = "SUPER", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
