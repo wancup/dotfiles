@@ -45,4 +45,4 @@ packages:
   - name: lsd-rs/lsd@v1.1.3
   - name: jesseduffield/lazydocker@v0.23.3
   - name: neovim/neovim@v0.10.1
-  - name: denoland/deno@v1.45.5
+  - name: denoland/deno@v1.46.0
