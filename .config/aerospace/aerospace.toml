@@ -93,7 +93,7 @@ cmd-alt-h = [] # Disable "hide others"
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles horizontal vertical'
-alt-comma = 'layout accordion horizontal vertical'
+alt-comma = 'layout accordion vertical horizontal'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#fullscreen
 alt-enter = 'fullscreen'
