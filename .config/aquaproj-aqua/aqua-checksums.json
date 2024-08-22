@@ -666,6 +666,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.55.0/gh_2.55.0_macOS_amd64.zip",
+      "checksum": "58448671A680C2B5245333BB44466305A28CF65E8F090C1FFD7EF5E729AF4463",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.55.0/gh_2.55.0_macOS_arm64.zip",
+      "checksum": "11B60CEF134DA32E001DEC47C897FE7023AC2059B1327F71F04436D1F4B59459",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/crate-ci/typos/v1.17.1/typos-v1.17.1-x86_64-apple-darwin.tar.gz",
       "checksum": "5740E693E489F592CDE54807F44D841FE190AC8307304A77E94437E83E5A293C",
       "algorithm": "sha256"
@@ -833,6 +843,16 @@
     {
       "id": "github_release/github.com/denoland/deno/v1.45.5/deno-x86_64-apple-darwin.zip",
       "checksum": "EDD8A3D04526B2E06FABA8527DFE50F718B422CB03949900A60EABD368669DED",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v1.46.0/deno-aarch64-apple-darwin.zip",
+      "checksum": "BB0FA9591B4495FF6728BE13D80A3C8DB792CC3BDDBA107CD183A99AB7DB8B48",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v1.46.0/deno-x86_64-apple-darwin.zip",
+      "checksum": "4680AB0F8BEB58AD7CDE725406FEABCD96A06736466A2FCC5C63F6047B1F4390",
       "algorithm": "sha256"
     },
     {
@@ -1278,6 +1298,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.8.11/mise-v2024.8.11-macos-x64.tar.gz",
       "checksum": "EC388CC79962FE4CD114A95D2D6AE0123257B77DE5AB4473085137808D52D9A8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.8.12/mise-v2024.8.12-macos-arm64.tar.gz",
+      "checksum": "5A8E2E10DA9B4F092B65927B5A471896FCA1CE4C8FA4289690F112A2B23D9D83",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.8.12/mise-v2024.8.12-macos-x64.tar.gz",
+      "checksum": "4A1A1D765B72F36D0E0120634A5F70139EDCAA22EB32198762B192281084CD3D",
       "algorithm": "sha256"
     },
     {
@@ -1833,6 +1863,11 @@
     {
       "id": "github_release/github.com/lsd-rs/lsd/v1.1.3/lsd-v1.1.3-x86_64-apple-darwin.tar.gz",
       "checksum": "6DB6BC97FC5658298454A108F9990F0F33BDE7B60A274D34CCFEA69334B666F4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-x86_64-apple-darwin.tar.gz",
+      "checksum": "4245E4E8F6FC14376A1F96D210DCF7C55954AFACB831C965D2759259CBA516EF",
       "algorithm": "sha256"
     },
     {
