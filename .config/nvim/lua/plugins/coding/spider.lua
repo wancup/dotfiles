@@ -18,5 +18,8 @@ return {
 				mode = { "n", "o", "x" },
 			},
 		},
+		opts = {
+			skipInsignificantPunctuation = false,
+		},
 	},
 }
