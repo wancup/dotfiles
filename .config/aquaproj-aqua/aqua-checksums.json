@@ -266,6 +266,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.6.2/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "BBC64C8438EDB6C98A466EE398E1ECB59D2B44BA78D440CE8F8194F994B42667",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.6.2/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "91666282E17342AA1011A7610C0044751B89E3883D6AD943800D1B9F102D5F89",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -791,6 +801,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.23.7/typos-v1.23.7-x86_64-apple-darwin.tar.gz",
+      "checksum": "B1A2F9FD13526E49AAC9800F47DAC49D4B8B1A9B2306E5C9F30DCCCA5E9BD874",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -853,6 +868,16 @@
     {
       "id": "github_release/github.com/denoland/deno/v1.46.0/deno-x86_64-apple-darwin.zip",
       "checksum": "4680AB0F8BEB58AD7CDE725406FEABCD96A06736466A2FCC5C63F6047B1F4390",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v1.46.1/deno-aarch64-apple-darwin.zip",
+      "checksum": "D250E5F38B0C0D5F4A0F3E063CA75467DBDD2339EA4ED4942CB4426C6D67BAEC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v1.46.1/deno-x86_64-apple-darwin.zip",
+      "checksum": "D182EDA039F0F44E0DA8411AB055F7DD3372B1E9FDD35DCC833B44F6BD0E5AA5",
       "algorithm": "sha256"
     },
     {
@@ -1978,6 +2003,11 @@
     {
       "id": "github_release/github.com/sharkdp/fd/v10.1.0/fd-v10.1.0-x86_64-apple-darwin.tar.gz",
       "checksum": "316CDAF5C6EC7E8B0664914DF1DA21C511AEF2A023E13F8628354E60E0346DAC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sharkdp/fd/v10.2.0/fd-v10.2.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "991A648A58870230AF9547C1AE33E72CB5C5199A622FE5E540E162D6DBA82D48",
       "algorithm": "sha256"
     },
     {
