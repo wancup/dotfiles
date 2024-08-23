@@ -39,6 +39,14 @@ return {
 	),
 
 	s(
+		"mfn",
+		fmt("{}({}) {{\n}}", {
+			i(1, "name"),
+			i(2, "arguments"),
+		})
+	),
+
+	s(
 		"arr",
 		fmt("const {} = ({}) => {{\n}}", {
 			i(1, "name"),
