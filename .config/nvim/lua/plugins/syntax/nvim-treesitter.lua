@@ -12,6 +12,7 @@ return {
 			ensure_installed = {
 				"vimdoc",
 				"bash",
+				"css",
 				"html",
 				"javascript",
 				"json",
