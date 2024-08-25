@@ -1,4 +1,5 @@
 # cdls
+functions --erase standard_cd
 functions --copy cd standard_cd
 function cd
     standard_cd $argv
