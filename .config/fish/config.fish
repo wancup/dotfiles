@@ -1,6 +1,7 @@
 # cdls
-functions --erase standard_cd
-functions --copy cd standard_cd
+if not functions --query standard_cd
+    functions --copy cd standard_cd
+end
 function cd
     standard_cd $argv
     lsd -a
