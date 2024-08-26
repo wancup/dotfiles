@@ -30,6 +30,7 @@ return {
 				markdown = { "dprint", "prettierd", "prettier", stop_after_first = true },
 				yaml = { "dprint", "prettierd", "prettier", stop_after_first = true },
 				json = { "dprint", "prettierd", "prettier", stop_after_first = true },
+				jsonc = { "dprint", "prettierd", "prettier", stop_after_first = true },
 				css = { "dprint", "prettierd", "prettier", stop_after_first = true },
 				toml = { "dprint" },
 				javascript = function(bufnr)
