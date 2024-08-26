@@ -806,6 +806,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.24.1/typos-v1.24.1-x86_64-apple-darwin.tar.gz",
+      "checksum": "66873990F851EF7BBC860317F848CF6C3F8783F6AB3DA6FF449FC0900AF07CD7",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -848,6 +853,16 @@
     {
       "id": "github_release/github.com/dandavison/delta/0.18.0/delta-0.18.0-x86_64-apple-darwin.tar.gz",
       "checksum": "B9C1BB15395A6C91C0131040B7DAD9D6980822117451BC1212387EEAC017302A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.18.1/delta-0.18.1-aarch64-apple-darwin.tar.gz",
+      "checksum": "77759EF57AC289B696D66670926B85C5C3DCEC5171795541B89D3CCB3A976C34",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.18.1/delta-0.18.1-x86_64-apple-darwin.tar.gz",
+      "checksum": "C77F95269EB1D10E433012A8025D4D736E4FB36D1978FE94087FCB63E25DF49B",
       "algorithm": "sha256"
     },
     {
@@ -1881,6 +1896,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/leoafarias/fvm/3.2.0/fvm-3.2.0-macos-arm64.tar.gz",
+      "checksum": "00676CEAFF22B74549728FCEC1C27C6ED5991B8F0D1240D1E033BAE34BBA8F4D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/leoafarias/fvm/3.2.0/fvm-3.2.0-macos-x64.tar.gz",
+      "checksum": "2840BA082C7C65335EF8990803E9D3312E39EA0CF488D3CA1978F4B30E28A25E",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/lsd-rs/lsd/v1.1.2/lsd-v1.1.2-x86_64-apple-darwin.tar.gz",
       "checksum": "DF5CC97FE1C63D3DE4E7FDA7594743FD961F75024062B1A0C58CA296B8337EB8",
       "algorithm": "sha256"
@@ -2348,6 +2373,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.213.1/registry.yaml",
       "checksum": "A6A8FEDAA2BE0EA4CAF83762BB4BBA13C65B02E407C3E7CB063B8359F42DEA73F7A3D5F8E461AD778AD4B64909BC873CD8B7F24296ED0ED91C7CBDA6F955A044",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.218.0/registry.yaml",
+      "checksum": "FB6483C15F31F1FB2F88C38C3964AEE934A347336D5582F79BFC181366C8CF481C2ECECC28E35DBCB8A71B213AFC8C6BE93790D38D517A00E9CC68544193F9C9",
       "algorithm": "sha512"
     },
     {
