@@ -14,7 +14,6 @@ return {
 					mode = { "n", "v" },
 					{ "g", group = "Goto" },
 					{ "<leader>b", group = "Buffer" },
-					{ "<leader>c", group = "Color" },
 					{ "<leader>f", group = "Find" },
 					{ "<leader>F", group = "Fix" },
 					{ "<leader>fg", group = "Find Git" },
