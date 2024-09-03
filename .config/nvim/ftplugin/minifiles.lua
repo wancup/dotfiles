@@ -26,7 +26,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 	local entry = files.get_fs_entry()
 	if entry ~= nil then
 		files.close()
-		require("telescope.builtin").live_grep({ search_dirs = { entry.path } })
+		require("telescope").extensions.live_grep_args.live_grep_args({ search_dirs = { entry.path } })
 	end
 end, { buffer = true, desc = "Live-grep in dir" })
 
