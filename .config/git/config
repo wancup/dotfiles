@@ -3,7 +3,7 @@
   editor = nvim
 
 [log]
-  date = iso
+  date = iso-strict
 
 [interactive]
   diffFilter = delta --color-only --features=interactive
