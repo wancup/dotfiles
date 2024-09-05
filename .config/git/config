@@ -2,6 +2,9 @@
   pager = delta
   editor = nvim
 
+[log]
+  date = iso
+
 [interactive]
   diffFilter = delta --color-only --features=interactive
 
