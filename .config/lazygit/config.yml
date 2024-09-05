@@ -25,6 +25,6 @@ git:
     --abbrev-commit \
     --decorate \
     --date=iso-strict \
-    --pretty=format:\"%C(auto)%H %d%n%C(magenta)Author: %an (%ad) <%ae>%n%C(magenta)Commit: %cn (%cd) <%ce>%n%n%w(0,4,4)%B%n\" \
+    --pretty=format:\"%C(auto)%H %d%nAuthor(%ad): %an <%ae>%nCommit(%cd): %cn <%ce>%n%n%w(0,4,4)%B%n\" \
     {{branchName}} --"
   overrideGpg: true
