@@ -826,6 +826,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.24.5/typos-v1.24.5-x86_64-apple-darwin.tar.gz",
+      "checksum": "B13D36015F59D9897E783E8B7EA6B047C319B3885A4EA4939A550F808363300D",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -918,6 +923,16 @@
     {
       "id": "github_release/github.com/denoland/deno/v1.46.2/deno-x86_64-apple-darwin.zip",
       "checksum": "BE2137DCB7FD3B7E949AEA9377F92058543D0BEB14AB6B2DC61679704C203525",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v1.46.3/deno-aarch64-apple-darwin.zip",
+      "checksum": "E74F8DDD6D8205654905A4E42B5A605AB110722A7898AEF68BC35D6E704C2946",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v1.46.3/deno-x86_64-apple-darwin.zip",
+      "checksum": "A7A3D9FCCED6F959728457E93270C7E3F612C039CD7C58022094D6FA4EF28FE2",
       "algorithm": "sha256"
     },
     {
@@ -1413,6 +1428,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.8.6/mise-v2024.8.6-macos-x64.tar.gz",
       "checksum": "1F9EE313C6651E06063ACEFDF27030B287656BF68810916648F8AD27B62A5447",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.9.0/mise-v2024.9.0-macos-arm64.tar.gz",
+      "checksum": "270FDE3B85A0D28E57DAF26118005108297EB71E281C3ABBE66DCADC2B4430C9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.9.0/mise-v2024.9.0-macos-x64.tar.gz",
+      "checksum": "1FF2F47DF636A6C1D3C52C95D41C373F689F6E6C950709C78C31E40AC3B4098F",
       "algorithm": "sha256"
     },
     {
@@ -2168,6 +2193,16 @@
     {
       "id": "github_release/github.com/sxyazi/yazi/v0.3.2/yazi-x86_64-apple-darwin.zip",
       "checksum": "9FEBA97AF90EBE8AEB41B7929DBE6A4AACEBFCF84E1ECC4481186B927D6A540A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sxyazi/yazi/v0.3.3/yazi-aarch64-apple-darwin.zip",
+      "checksum": "B804F7719BCA720308189CC40A0907CACFCD5713CF7746B7000E3AC2C86BF7F3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sxyazi/yazi/v0.3.3/yazi-x86_64-apple-darwin.zip",
+      "checksum": "4E39B1A277C629D5D3E72A4F62B287E043AC52E3D4A738716344C8FAF26284C3",
       "algorithm": "sha256"
     },
     {
