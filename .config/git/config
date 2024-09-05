@@ -5,6 +5,9 @@
 [log]
   date = iso-strict
 
+[format]
+  pretty = format:"%C(auto)%H %d%nAuthor(%ad): %an <%ae>%nCommit(%cd): %cn <%ce>%n%n%Creset%w(0,4,4)%B%n"
+
 [interactive]
   diffFilter = delta --color-only --features=interactive
 
