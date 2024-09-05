@@ -3,6 +3,7 @@
 [manager]
 sort_dir_first = true
 show_hidden = true
+linemode = "size"
 
 [preview]
 wrap = "yes"
