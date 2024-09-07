@@ -1,0 +1,4 @@
+"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
+
+[status]
+mode_normal = { fg = "white", bg = "black", bold = true }
