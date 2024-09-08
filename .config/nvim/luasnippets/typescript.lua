@@ -159,7 +159,7 @@ return {
 			}),
 			fmt("for (const {} of {}) {{\n}}", {
 				i(1, "item"),
-				i(2, "iteratable"),
+				i(2, "iterable"),
 			}),
 		})
 	),
