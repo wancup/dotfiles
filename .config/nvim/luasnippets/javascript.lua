@@ -10,7 +10,7 @@ return {
 		"fn",
 		fmt("function {}({}) {{\n}}", {
 			i(1, "name"),
-			i(2, "arguments"),
+			i(2, ""),
 		})
 	),
 
@@ -18,7 +18,7 @@ return {
 		"efn",
 		fmt("export function {}({}) {{\n}}", {
 			i(1, "name"),
-			i(2, "arguments"),
+			i(2, ""),
 		})
 	),
 
@@ -26,7 +26,7 @@ return {
 		"afn",
 		fmt("async function {}({}) {{\n}}", {
 			i(1, "name"),
-			i(2, "arguments"),
+			i(2, ""),
 		})
 	),
 
@@ -34,7 +34,7 @@ return {
 		"eafn",
 		fmt("export async function {}({}) {{\n}}", {
 			i(1, "name"),
-			i(2, "arguments"),
+			i(2, ""),
 		})
 	),
 
@@ -42,7 +42,7 @@ return {
 		"mfn",
 		fmt("{}({}) {{\n}}", {
 			i(1, "name"),
-			i(2, "arguments"),
+			i(2, ""),
 		})
 	),
 
@@ -50,7 +50,7 @@ return {
 		"arr",
 		fmt("const {} = ({}) => {{\n}}", {
 			i(1, "name"),
-			i(2, "arguments"),
+			i(2, ""),
 		})
 	),
 
@@ -58,7 +58,7 @@ return {
 		"aarr",
 		fmt("const {} = async ({}) => {{\n}}", {
 			i(1, "name"),
-			i(2, "arguments"),
+			i(2, ""),
 		})
 	),
 
