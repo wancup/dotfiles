@@ -47,6 +47,14 @@ return {
 	),
 
 	s(
+		"mafn",
+		fmt("async {}({}) {{\n}}", {
+			i(1, "name"),
+			i(2, ""),
+		})
+	),
+
+	s(
 		"arr",
 		fmt("const {} = ({}) => {{\n}}", {
 			i(1, "name"),
