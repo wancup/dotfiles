@@ -52,26 +52,8 @@ return {
 	),
 
 	s(
-		"msfn",
-		fmt("static {}({}): {} {{\n}}", {
-			i(1, "name"),
-			i(2, ""),
-			i(3, "return_type"),
-		})
-	),
-
-	s(
 		"mafn",
 		fmt("async {}({}): {} {{\n}}", {
-			i(1, "name"),
-			i(2, ""),
-			i(3, "return_type"),
-		})
-	),
-
-	s(
-		"msafn",
-		fmt("staic async {}({}): {} {{\n}}", {
 			i(1, "name"),
 			i(2, ""),
 			i(3, "return_type"),
