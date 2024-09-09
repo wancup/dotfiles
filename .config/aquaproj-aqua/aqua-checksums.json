@@ -26,6 +26,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/BurntSushi/ripgrep/14.1.1/ripgrep-14.1.1-aarch64-apple-darwin.tar.gz",
+      "checksum": "24AD76777745FBFF131C8FBC466742B011F925BFA4FFFA2DED6DEF23B5B937BE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/BurntSushi/ripgrep/14.1.1/ripgrep-14.1.1-x86_64-apple-darwin.tar.gz",
+      "checksum": "FC87E78F7CB3FEA12D69072E7EF3B21509754717B746368FD40D88963630E2B3",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/JohnnyMorganz/StyLua/v0.18.1/stylua-macos-aarch64.zip",
       "checksum": "24B5226F704A0E22B6405DE9654EF8C4E64C3C3146A99A4F2B1D3BDAB1D3536411FA9662EF6D484F2C3B23E795C35850D85529DC727048822C7D8C5CF624225D",
       "algorithm": "sha512"
@@ -283,6 +293,16 @@
     {
       "id": "github_release/github.com/astral-sh/ruff/0.6.3/ruff-x86_64-apple-darwin.tar.gz",
       "checksum": "B4885A75385635C49F642D0C19B805DBAC15D810726BF1B85FE5BE4FDBB27389",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.6.4/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "2648DD09984C82DB9F3163CE8762C89536E4BF0E198F17E06A01C0E32214273E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.6.4/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "4438CBC80C6AA0E839ABC3ABB2A869A27113631CB40AA26540572FB53752C432",
       "algorithm": "sha256"
     },
     {
@@ -693,6 +713,16 @@
     {
       "id": "github_release/github.com/cli/cli/v2.55.0/gh_2.55.0_macOS_arm64.zip",
       "checksum": "11B60CEF134DA32E001DEC47C897FE7023AC2059B1327F71F04436D1F4B59459",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.56.0/gh_2.56.0_macOS_amd64.zip",
+      "checksum": "A5631FE81910685851C012B4496618823EC0EC91CDAB89F1FF318B45C6482BEF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.56.0/gh_2.56.0_macOS_arm64.zip",
+      "checksum": "9ED2417FD4459840A08B5AAD19CC0EC638514020488121E7D90211DB79629DAC",
       "algorithm": "sha256"
     },
     {
@@ -1666,6 +1696,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.44.0/lazygit_0.44.0_Darwin_arm64.tar.gz",
+      "checksum": "520E2408BD52A9CD27757F4F0C960E23765DDBF2B02BC33E7C027ED41B2AD42F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.44.0/lazygit_0.44.0_Darwin_x86_64.tar.gz",
+      "checksum": "38C8BAD7C6D93A0C44F713E14289D61EDF28734C96F588FCEA401AC60D1CC639",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jqlang/jq/jq-1.6/jq-osx-amd64",
       "checksum": "DF407CD34378F49FF8866D61A58CE1C367341062325C4C3BD07B0E1AD5D65758A2EDE94574B4279E1A0A208A04BAC487B7D898450FB614C2B94469D7621E583A",
       "algorithm": "sha512"
@@ -2141,6 +2181,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/sharkdp/pastel/v0.10.0/pastel-v0.10.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "5410FADB9EE352339B6396A33D8F25906BFEAAA4E6DB4C18DB378B66D2956C28",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sharkdp/pastel/v0.9.0/pastel-v0.9.0-x86_64-apple-darwin.tar.gz",
       "checksum": "36CCA0B2C4F495922AE6793597C4F336A47B2AA356503EC2037BCB16865CDEB2",
       "algorithm": "sha256"
@@ -2484,6 +2529,11 @@
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.219.0/registry.yaml",
       "checksum": "1DB65B303DF61A9A1AE98C86AB8E078CDA1D6231E5ED9133991D8BA5E3A3B181EF8C7CF6C77D1FA915193A953700EBFB275DA3133B6623FBE4C1221199593E75",
       "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.219.1/registry.yaml",
+      "checksum": "1D0AFCD7CF1341D193C0C1EF57F900323C7D3BEDC4EC38B57FEE2D9D56687F9A",
+      "algorithm": "sha256"
     },
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.44.1/registry.yaml",
