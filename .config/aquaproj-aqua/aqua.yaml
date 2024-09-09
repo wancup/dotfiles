@@ -12,7 +12,7 @@ registries:
 packages:
   - name: sharkdp/fd@v10.2.0
   - name: sharkdp/bat@v0.24.0
-  - name: BurntSushi/ripgrep@14.1.0
+  - name: BurntSushi/ripgrep@14.1.1
   - name: jesseduffield/lazygit@v0.44.0
   - name: jqlang/jq@jq-1.7.1
   - name: JohnnyMorganz/StyLua@v0.20.0
