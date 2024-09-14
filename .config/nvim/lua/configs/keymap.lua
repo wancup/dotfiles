@@ -45,6 +45,9 @@ local function goto_vsplit_def()
 	goto_vsplit(vim.lsp.buf.definition)
 end
 
+local function goto_impl()
+	vim.lsp.buf.implementation({ reuse_win = true })
+end
 local function goto_split_impl()
 	goto_split(vim.lsp.buf.implementation)
 end
@@ -71,7 +74,7 @@ map({ "n", "x" }, "gd", goto_def, { desc = "[G]oto [D]ifinition" })
 map({ "n", "x" }, "gsd", goto_split_def, { desc = "[G]oto [S]plit [D]ifinition" })
 map({ "n", "x" }, "gSd", goto_vsplit_def, { desc = "[G]oto [V]split [D]ifinition" })
 
-map({ "n", "x" }, "gI", vim.lsp.buf.implementation, { desc = "[G]oto [I]mplementation" })
+map({ "n", "x" }, "gI", goto_impl, { desc = "[G]oto [I]mplementation" })
 map({ "n", "x" }, "gsI", goto_split_impl, { desc = "[G]oto [S]plit [I]mplementation" })
 map({ "n", "x" }, "gSI", goto_vsplit_impl, { desc = "[G]oto [V]split [I]mplementation" })
 
