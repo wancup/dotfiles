@@ -1,6 +1,7 @@
 local diagnostic = require("core.diagnostic")
 local git = require("core.git")
 local window = require("core.window")
+local register = require("core.register")
 local map = vim.keymap.set
 
 ---@param cb function
@@ -117,6 +118,7 @@ map("n", "<leader>ll", "<cmd>copen<cr>", { desc = "[L]ist Quickfix" })
 map("n", "<leader>lc", git.conflict_list, { desc = "[L]ist Git [C]onflict" })
 map("n", "<leader>ld", diagnostic.current_buf_list, { desc = "[L]ist [D]iagnostics" })
 map("n", "<leader>lD", diagnostic.workspace_list, { desc = "[L]ist [D]iagnostics(Workspace)" })
+map("n", "<C-z>", register.edit_register, { desc = "Edit Register" })
 
 -- Insert
 map("i", "<C-h>", "<BS>")
