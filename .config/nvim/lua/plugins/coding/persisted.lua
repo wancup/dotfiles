@@ -15,7 +15,7 @@ return {
 			{ "<leader>Sl", "<cmd>SessionLoad<cr>", desc = "[S]ession [L]oad" },
 		},
 		opts = {
-			should_autosave = function()
+			should_save = function()
 				if vim.tbl_contains(disabled_fts, vim.bo.filetype) then
 					return false
 				end
