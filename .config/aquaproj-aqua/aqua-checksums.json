@@ -196,6 +196,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.5/zoxide-0.9.5-aarch64-apple-darwin.tar.gz",
+      "checksum": "AE42E5E152DC54EFBEA1FC5B2AFA0B212A3FB866620E7AF3F1E66ADFCCF05B75",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.5/zoxide-0.9.5-x86_64-apple-darwin.tar.gz",
+      "checksum": "187834CD925BC587E597E7E1696EB9E4136742E58B05B4EAC00F967BB7A92B25",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/0.5.0/ruff-aarch64-apple-darwin.tar.gz",
       "checksum": "A9203EE067703EF9589CAE0D78E3DEF76E855650D721F77057A3B60638302B36",
       "algorithm": "sha256"
@@ -303,6 +313,16 @@
     {
       "id": "github_release/github.com/astral-sh/ruff/0.6.4/ruff-x86_64-apple-darwin.tar.gz",
       "checksum": "4438CBC80C6AA0E839ABC3ABB2A869A27113631CB40AA26540572FB53752C432",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.6.5/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "0AABA0D91936201966031ABA56679147EB2FA9B36FBBC66EF22BADC985C2C9CA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.6.5/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "D19092460CB34259E16635EAA539CB396F836A777D687EAD1F2BD84C0D9DACF9",
       "algorithm": "sha256"
     },
     {
@@ -916,6 +936,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-aarch64-apple-darwin.tar.gz",
+      "checksum": "6BA38DCE9F91EE1B9A24AA4AEDE1DB7195258FE176C3F8276AE2D4457D8170A0",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dandavison/delta/0.18.2/delta-0.18.2-x86_64-apple-darwin.tar.gz",
+      "checksum": "E9B5C4A9E73D2119C687E074F0D97F188E30E5FE8AE0E6D455755F74BB5CC0CF",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/denoland/deno/v1.45.5/deno-aarch64-apple-darwin.zip",
       "checksum": "36A37289CEAF1CF52DF3C748DAB47BF31DFB374FE5485125732DE66A859B3589",
       "algorithm": "sha256"
@@ -1468,6 +1498,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.9.0/mise-v2024.9.0-macos-x64.tar.gz",
       "checksum": "1FF2F47DF636A6C1D3C52C95D41C373F689F6E6C950709C78C31E40AC3B4098F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.9.3/mise-v2024.9.3-macos-arm64.tar.gz",
+      "checksum": "E2088B382E7EDA22BD9E1CB1F42B64574EBAF3BD86C92EBCEAB598FA084350AB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.9.3/mise-v2024.9.3-macos-x64.tar.gz",
+      "checksum": "9C759456487242EA36B5BDE709B652215693AB10986A352E752ADE5EC69180B2",
       "algorithm": "sha256"
     },
     {
