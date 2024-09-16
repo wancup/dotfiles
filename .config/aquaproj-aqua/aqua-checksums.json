@@ -116,6 +116,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/YS-L/csvlens/v0.10.1/csvlens-aarch64-apple-darwin.tar.xz",
+      "checksum": "B1FAB26DD2980E72569A3B2E38F98F8023869B70EA89AF054EC870ACA191F594",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/YS-L/csvlens/v0.10.1/csvlens-x86_64-apple-darwin.tar.xz",
+      "checksum": "7C2DB76A2FA73641291D6F3F49A37E3935FB604A854AB1907CEE14F38F64E67F",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/YS-L/csvlens/v0.6.0/csvlens-aarch64-apple-darwin.tar.xz",
       "checksum": "7217EAC231F4F0E65C6489CA2899CBB4FC6455E4905B61521F0BB61CA9E121E7",
       "algorithm": "sha256"
@@ -1511,6 +1521,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdx/mise/v2024.9.4/mise-v2024.9.4-macos-arm64.tar.gz",
+      "checksum": "24CD6CEA807EF4DB9F0E684F8722FECAD6E3FA37AFE1853413D96A1DABB3420A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.9.4/mise-v2024.9.4-macos-x64.tar.gz",
+      "checksum": "DBCC7904C14E593BE04F13937B0020BB6155AF18B2A69035C6FB5B980570A521",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jdx/rtx/v2023.11.4/rtx-v2023.11.4-macos-arm64.tar.gz",
       "checksum": "38E4878AC3C1E4AFF09EEE74A2039B9E308B500225BCD520942B9A30C98DB59F",
       "algorithm": "sha256"
@@ -2574,6 +2594,11 @@
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.219.1/registry.yaml",
       "checksum": "1D0AFCD7CF1341D193C0C1EF57F900323C7D3BEDC4EC38B57FEE2D9D56687F9A",
       "algorithm": "sha256"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.220.1/registry.yaml",
+      "checksum": "E52926392614425EFC6D74D06B885F918A401FC2E44500FFD0A0D19758BCCE0EFBC0A4F7760058ACD1007B69D2239C9834A4151CCC963DE2E65D6D267A0E0906",
+      "algorithm": "sha512"
     },
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.44.1/registry.yaml",
