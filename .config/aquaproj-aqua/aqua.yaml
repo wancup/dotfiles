@@ -16,7 +16,7 @@ packages:
   - name: jesseduffield/lazygit@v0.44.1
   - name: jqlang/jq@jq-1.7.1
   - name: JohnnyMorganz/StyLua@v0.20.0
-  - name: ajeetdsouza/zoxide@v0.9.5
+  - name: ajeetdsouza/zoxide@v0.9.6
   - name: junegunn/fzf@v0.55.0
   - name: dandavison/delta@0.18.2
   - name: cli/cli@v2.57.0
