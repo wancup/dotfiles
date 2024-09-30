@@ -356,6 +356,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.6.8/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "E554D55281391138E44B30CCD38C666388E4AEB05417C9FFB98A6CBB014AEF0D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.6.8/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "44039CEA2AED4787CEDCDA0C35E5B352530D6CA2178F39C8BD4FF63526C43AEF",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -1546,6 +1556,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdx/mise/v2024.9.13/mise-v2024.9.13-macos-arm64.tar.gz",
+      "checksum": "C60F59D2EF898A783F65B73A0D13E2A2F6E49A554E30D64B860CE7D02ADCD153",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.9.13/mise-v2024.9.13-macos-x64.tar.gz",
+      "checksum": "7DCC87A16586D1999CA44F77BA80FCAD5918AFED7191BE8CD32A3123B0524FF8",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jdx/mise/v2024.9.3/mise-v2024.9.3-macos-arm64.tar.gz",
       "checksum": "E2088B382E7EDA22BD9E1CB1F42B64574EBAF3BD86C92EBCEAB598FA084350AB",
       "algorithm": "sha256"
@@ -2251,6 +2271,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/rhysd/actionlint/v1.7.3/actionlint_1.7.3_darwin_amd64.tar.gz",
+      "checksum": "33E960B719C87ECC0C807CF4945FD4078980CD2E626B27DED0E9551C757FA8F6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/actionlint/v1.7.3/actionlint_1.7.3_darwin_arm64.tar.gz",
+      "checksum": "B4E8DAB8DDA48ECEFF6AFEA67D0FE4A14B8D4EA7191CF233C1E1AF8A62F37C24",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sharkdp/bat/v0.23.0/bat-v0.23.0-x86_64-apple-darwin.tar.gz",
       "checksum": "EDCAC5D952C80EBF32F74E7B69650A2A12C8D7EA06050EF026394965C51F4503AFE1B97386967A439CE4E9472A443AD1F9154B939B0D559BE6AAD73EAE191A01",
       "algorithm": "sha512"
@@ -2663,6 +2693,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.223.1/registry.yaml",
       "checksum": "7E7053B97D5F721773C9FA87AEDBD57942F4881F679D8F1723C0F23C372854FFF143662A113C4D4C1FC3E2546B29AF7952AA50CE571F49806A589615F1BAB75C",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.227.0/registry.yaml",
+      "checksum": "B3A1629CC2867824D3A263DE2D5604EA51858E19D64F64749D8A6D015756C9EE2A32F47E4A7D5BA0D633B3FB269F341FC922CF90CFDEEA0E62B99E7EB3C4AE4B",
       "algorithm": "sha512"
     },
     {
