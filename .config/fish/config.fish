@@ -6,6 +6,10 @@ function cd
     standard_cd $argv
     lsd -a
 end
+function __zoxide_cd_internal
+    standard_cd $argv
+    lsd -a
+end
 
 # alias
 alias rm="rm -i"
