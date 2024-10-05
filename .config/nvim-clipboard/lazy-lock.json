@@ -1,0 +1,6 @@
+{
+  "denops.vim": { "branch": "main", "commit": "08146a5ba9b0d79ddba46af5f6b3bff2260c4441" },
+  "lazy.nvim": { "branch": "main", "commit": "1159bdccd8910a0fd0914b24d6c3d186689023d9" },
+  "skkeleton": { "branch": "main", "commit": "438737ec49bcf1303521bdcccb5e06ced7b60c5e" },
+  "vim-maketable": { "branch": "master", "commit": "d72e73f333c64110524197ec637897bd1464830f" }
+}

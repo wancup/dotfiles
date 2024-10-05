@@ -6,7 +6,7 @@ function nvim_clipboard
 
     date "+%Y-%m-%d_%H-%M-%S" | read -l now
     set -l target_file "$target_dir/$now.txt"
-    nvim $target_file
+    NVIM_APPNAME=nvim-clipboard nvim $target_file
     if test -f $target_file
         echo -n "$(cat $target_file)" | pbcopy
         rm -f $target_file
