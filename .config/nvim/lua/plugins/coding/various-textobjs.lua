@@ -4,6 +4,9 @@ return {
 		event = { "BufReadPost", "BufNewFile" },
 		opts = {
 			useDefaultKeymaps = true,
+			disabledKeymaps = {
+				"r",
+			},
 		},
 	},
 }
