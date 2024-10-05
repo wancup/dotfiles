@@ -47,6 +47,7 @@ return {
 				end,
 				rust = { "rustfmt" },
 				python = { "ruff_format", "ruff_fix" },
+				terraform = { "tofu_fmt" },
 			},
 			format_on_save = function()
 				if vim.g.format_on_save then

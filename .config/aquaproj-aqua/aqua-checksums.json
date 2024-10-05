@@ -2276,6 +2276,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/opentofu/opentofu/v1.8.3/tofu_1.8.3_darwin_amd64.zip",
+      "checksum": "8BC839343D1ABF4A2CA06A1CE4540C61950183F125167B33E9BB3BC7189ABA7A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/opentofu/opentofu/v1.8.3/tofu_1.8.3_darwin_arm64.zip",
+      "checksum": "6BC4D30FE2AFB1FCBFFF7D9FD337EABFDB9D7A575DC6C0D542E1F0F2D3B09F14",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/rhysd/actionlint/v1.6.26/actionlint_1.6.26_darwin_amd64.tar.gz",
       "checksum": "BFA890E77A8508603C785AF09A30BBAB3A3255D291D8D27EFC3F20AC8E303A8E",
       "algorithm": "sha256"
