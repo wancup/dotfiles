@@ -23,7 +23,6 @@ return {
 		},
 		ui = {
 			number = true,
-			relativenumber = true,
 			hybridnumber = true,
 		},
 	},
