@@ -7,6 +7,7 @@ local l = extras.lambda
 local fmt = require("luasnip.extras.fmt").fmt
 
 return {
+	-- React
 	s(
 		"nrfc",
 		fmt(
@@ -54,4 +55,25 @@ return {
 	s("uc", { t('"use client"') }),
 
 	s("cn", { t("className=") }),
+
+	-- Solid
+	s(
+		"nsfc",
+		fmt(
+			'import {{ JSX }} from "solid-js";\n\ninterface {Name}Props {{}}\n\nexport function {}(props: {Name}Props): JSX.Element{{\nreturn (\n\n)\n}}',
+			{
+				i(1, "name"),
+				Name = l(l._1, 1),
+			}
+		)
+	),
+
+	s(
+		"cs",
+		fmt("const [{}, set{State}] = createSignal({});", {
+			i(1, "state"),
+			i(2, "initialState"),
+			State = l(l._1:sub(1, 1):upper() .. l._1:sub(2, -1), 1),
+		})
+	),
 }
