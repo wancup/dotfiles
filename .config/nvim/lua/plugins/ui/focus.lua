@@ -21,10 +21,6 @@ return {
 		autoresize = {
 			enable = true,
 		},
-		ui = {
-			number = true,
-			hybridnumber = true,
-		},
 	},
 	config = function(_, opts)
 		local augroup = vim.api.nvim_create_augroup("FocusDisable", { clear = true })
