@@ -76,4 +76,6 @@ return {
 			State = l(l._1:sub(1, 1):upper() .. l._1:sub(2, -1), 1),
 		})
 	),
+
+	s("class", { t("class=") }),
 }

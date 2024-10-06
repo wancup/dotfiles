@@ -149,6 +149,19 @@ return {
 	),
 
 	s(
+		"eclass",
+		c(1, {
+			fmt("export class {} {{\n}}", {
+				i(1),
+			}),
+			fmt("export class {} extends {} {{\n}}", {
+				i(1),
+				i(2),
+			}),
+		})
+	),
+
+	s(
 		"for",
 		c(1, {
 			fmt("for (let {i} = {}; {i} {}; {}) {{\n}}", {
