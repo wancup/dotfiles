@@ -136,6 +136,27 @@ return {
 	),
 
 	s(
+		"einterface",
+		c(1, {
+			fmt("export interface {} {{\n}}", {
+				i(1),
+			}),
+			fmt("export interface {} extends {} {{\n}}", {
+				i(1),
+				i(2),
+			}),
+		})
+	),
+
+	s(
+		"et",
+		fmt("export type {} = {}", {
+			i(1),
+			i(2),
+		})
+	),
+
+	s(
 		"class",
 		c(1, {
 			fmt("class {} {{\n}}", {

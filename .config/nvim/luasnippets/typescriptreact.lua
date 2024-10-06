@@ -78,4 +78,11 @@ return {
 	),
 
 	s("class", { t("class=") }),
+
+	s(
+		"om",
+		fmt("onMount(() => {{\n{}\n}})", {
+			i(1),
+		})
+	),
 }
