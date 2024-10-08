@@ -174,10 +174,12 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-semicolon = 'mode service'
-alt-w = 'mode window'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#enable
 alt-q = 'enable off'
+
+# See: https://nikitabobko.github.io/AeroSpace/commands#macos-native-minimize
+alt-w = 'macos-native-minimize'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#exec-and-forget
 alt-b = 'exec-and-forget open -a Firefox' # Browser
@@ -187,6 +189,7 @@ alt-s = 'exec-and-forget open -a Slack'
 alt-shift-s = 'exec-and-forget open -a Spotify'
 alt-d = 'exec-and-forget open -a Discord'
 alt-t = 'exec-and-forget open -a WezTerm' # Terminal
+alt-i = 'exec-and-forget open -a "iPhone Mirroring"' # Terminal
 
 # See: https://nikitabobko.github.io/AeroSpace/guide#callbacks
 # Media
@@ -253,24 +256,3 @@ h = ['join-with left', 'mode main']
 j = ['join-with down', 'mode main']
 k = ['join-with up', 'mode main']
 l = ['join-with right', 'mode main']
-
-[mode.window.binding]
-esc = ['mode main']
-# r = ['flatten-workspace-tree', 'mode main'] # reset layout
-# s = ['layout sticky tiling', 'mode main'] # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
-f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
-
-h = ['focus left', 'mode main']
-j = ['focus down', 'mode main']
-k = ['focus up', 'mode main']
-l = ['focus right', 'mode main']
-
-shift-h = ['move left', 'mode main']
-shift-j = ['move down', 'mode main']
-shift-k = ['move up', 'mode main']
-shift-l = ['move right', 'mode main']
-
-ctrl-h = ['join-with left', 'mode main']
-ctrl-j = ['join-with down', 'mode main']
-ctrl-k = ['join-with up', 'mode main']
-ctrl-l = ['join-with right', 'mode main']
