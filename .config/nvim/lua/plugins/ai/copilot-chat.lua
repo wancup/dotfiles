@@ -6,6 +6,11 @@ return {
 			"github/copilot.vim",
 			"nvim-lua/plenary.nvim",
 		},
+		init = function()
+			vim.api.nvim_create_user_command("CC", function()
+				vim.cmd("CopilotChat")
+			end, {})
+		end,
 		cmd = {
 			"CopilotChat",
 			"CopilotChatOpen",
