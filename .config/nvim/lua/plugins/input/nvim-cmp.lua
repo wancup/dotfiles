@@ -15,7 +15,6 @@ return {
 			"L3MON4D3/LuaSnip",
 			"saadparwaiz1/cmp_luasnip",
 			"onsails/lspkind.nvim",
-			"rinx/cmp-skkeleton",
 		},
 		opts = function()
 			local cmp = require("cmp")
