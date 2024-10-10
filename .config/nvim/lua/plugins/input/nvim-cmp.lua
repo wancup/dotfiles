@@ -73,7 +73,6 @@ return {
 					}),
 					["<C-d>"] = cmp.mapping.abort(),
 					["<CR>"] = cmp.mapping.confirm({ select = false }),
-					["<C-j>"] = cmp.mapping.confirm({ select = false }),
 				}),
 				formatting = {
 					format = require("lspkind").cmp_format(),
