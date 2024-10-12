@@ -14,6 +14,11 @@ return {
 				immediatelyCancel = false,
 				userDictionary = "~/.local/state/skkeleton",
 			})
+			vim.fn["skkeleton#register_kanatable"]("rom", {
+				[" "] = { "　" },
+				["("] = { "（" },
+				[")"] = { "）" },
+			})
 			vim.fn["skkeleton#initialize"]()
 		end,
 	},
