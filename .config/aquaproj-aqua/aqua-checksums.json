@@ -516,6 +516,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/bensadeh/tailspin/4.0.0/tailspin-aarch64-apple-darwin.tar.gz",
+      "checksum": "317C5ED427A6371DFF81323FB140E905F5F2714C3D74D0BBF9BF5A517284F84D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/bensadeh/tailspin/4.0.0/tailspin-x86_64-apple-darwin.tar.gz",
+      "checksum": "69628E002A53A7AA418871898664C113839AA20BD8D06EB4386D0C9434BA933D",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/cli/cli/v2.34.0/gh_2.34.0_macOS_amd64.zip",
       "checksum": "9D6CD7C3952BB9A1CDAEAF04C456C558F8510FFBDC93BB4B40A85013C638BFCA",
       "algorithm": "sha256"
@@ -961,6 +971,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.26.0/typos-v1.26.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "DB42D4F08EFD0C07A152B48CF6E338E1D74DBA0CE6D762DC5DD33D98F2A86A26",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -1076,6 +1091,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/denoland/deno/v2.0.0/deno-aarch64-apple-darwin.zip",
+      "checksum": "AD122B1C8C823378469FB4972C0CC6DAFC01353DFA5C7303D199BDC1DEE9D5E9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.0.0/deno-x86_64-apple-darwin.zip",
+      "checksum": "B74D019D948E50E3EEBDE16D9C67D5633F46636AF04ADBB7FCA1B5A37232DD80",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dprint/dprint/0.45.0/dprint-aarch64-apple-darwin.zip",
       "checksum": "CF23AB2785CA25F27ED5CA5127663DFE0131AE146D0B8D5159B06E0694AD74AC",
       "algorithm": "sha256"
@@ -1176,6 +1201,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/ducaale/xh/v0.23.0/xh-v0.23.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "CEDFB95E23FF56F40E481A3431C5A7E37E4E4D53D43FB3E3CDF2D75B23C26376",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/hadolint/hadolint/v2.12.0/hadolint-Darwin-x86_64",
       "checksum": "2A5B7AFCAB91645C39A7CEBEFCD835B865F7488E69BE24567F433DFC3D41CD27",
       "algorithm": "sha256"
@@ -1228,6 +1258,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.10.0/mise-v2024.10.0-macos-x64.tar.gz",
       "checksum": "9588E3C23039A514F481B5E839A24048B0000D3675CAECDC37B8DE62DF7E7240",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.10.7/mise-v2024.10.7-macos-arm64.tar.gz",
+      "checksum": "E45DE3AAB649A6C637FEE7D3170956B14AD000A853AA4E17BFB41F936104BD28",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.10.7/mise-v2024.10.7-macos-x64.tar.gz",
+      "checksum": "FAAD7F45DEFCEB0C8B0280B04B14C806F1A89BEF37DE57BEAC60F4931820F9AC",
       "algorithm": "sha256"
     },
     {
@@ -2496,6 +2536,16 @@
       "algorithm": "sha512"
     },
     {
+      "id": "github_release/github.com/watchexec/watchexec/v2.2.0/watchexec-2.2.0-aarch64-apple-darwin.tar.xz",
+      "checksum": "DE3130022F22AB8AEA120BA504EAB26CE2407A0F4F1CFE1D3BD74ECFA627BC6F22DDB170B1BCD8BA4FE126220390E21265EED9AED6945F085A805C80E78E487D",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "github_release/github.com/watchexec/watchexec/v2.2.0/watchexec-2.2.0-x86_64-apple-darwin.tar.xz",
+      "checksum": "2FD53528864BB1F9675DFABDF38D124757D9D48D21AB882BA0546266A52FCB55C3B8E9494203224F2B6E19B9191FFF77124E48B2AFB85CD02A3132571D192DFB",
+      "algorithm": "sha512"
+    },
+    {
       "id": "github_release/github.com/zaghaghi/openapi-tui/0.10.0/openapi-tui-0.10.0-macos-arm64.tar.gz",
       "checksum": "B1356AC39AF2F4CC95E5B26CA0E2E29B7A985217F04606A181D6E39D0427C93F",
       "algorithm": "sha256"
@@ -2768,6 +2818,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.230.0/registry.yaml",
       "checksum": "CDDA7A7DF1E6810F3149297BC15D77E6D6908DAF69645AA828CA11253C12C13E1A1D3A147E8FA3F577EB74D3356EAE1A711E2E17C0A6F448E8C199C1B30D66B0",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.235.0/registry.yaml",
+      "checksum": "08F5421BB3ECAF8C252A35FC47AF52264E8A3D1F43A821C19EA23773F67E7C56A715EE8E96B4217F4C3CB203D1D393C89EC9393E81A6C253280C205E9789D895",
       "algorithm": "sha512"
     },
     {
