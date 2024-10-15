@@ -21,7 +21,6 @@ map("n", "<leader>P", '"+P', { desc = "[P]aste from Clipboard" })
 -- Insert
 map("i", "<C-h>", "<BS>")
 map("i", "<C-d>", "<Delete>")
-map("i", "<C-j>", "<CR>")
 map("i", "<C-k>", "<C-o>d$")
 map("i", "<C-a>", "<Home>")
 map("i", "<C-e>", "<End>")

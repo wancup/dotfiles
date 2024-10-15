@@ -31,7 +31,6 @@ return {
 							actions.scroll_view(0.25),
 							{ desc = "Scroll the view down" },
 						},
-						{ "n", "<C-j>", actions.select_entry, { desc = "Open the diff for the selected entry." } },
 						{ "n", "q", "<cmd>DiffviewClose<cr>", { desc = "Close Diffview" } },
 					},
 					file_history_panel = {
@@ -49,7 +48,6 @@ return {
 							actions.scroll_view(0.25),
 							{ desc = "Scroll the view down" },
 						},
-						{ "n", "<C-j>", actions.select_entry, { desc = "Open the diff for the selected entry." } },
 						{ "n", "q", "<cmd>DiffviewClose<cr>", { desc = "Close Diffview" } },
 					},
 				},

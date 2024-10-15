@@ -35,7 +35,6 @@ xnoremap y ygv<Esc>
 
 inoremap <C-h> <BS>
 inoremap <C-d> <Delete>
-inoremap <C-j> <CR>
 inoremap <C-k> <C-o>d$
 inoremap <C-a> <Home>
 inoremap <C-e> <End>

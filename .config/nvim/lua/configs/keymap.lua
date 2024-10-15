@@ -123,7 +123,6 @@ map("n", "<C-e>", register.edit_register, { desc = "Edit Register" })
 -- Insert
 map("i", "<C-h>", "<BS>")
 map("i", "<C-d>", "<Delete>")
-map("i", "<C-j>", "<CR>")
 map("i", "<C-k>", "<C-o>d$")
 map("i", "<C-a>", "<Home>")
 map("i", "<C-e>", "<End>")
