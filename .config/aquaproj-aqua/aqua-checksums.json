@@ -376,6 +376,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.7.0/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "8A5815E81D225107CE6BE5E441D2E17C9503DDEA7E01A4A11189462B533C9F31",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.7.0/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "1848E227CE7476009141FA427A5DB941934349EF01CA5E2835FFD7DF7B8A2761",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -826,6 +836,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.59.0/gh_2.59.0_macOS_amd64.zip",
+      "checksum": "A19B03ED9D5A4D61815151196072FA49C12FB568FC24F0D914CE57097B65FA69",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.59.0/gh_2.59.0_macOS_arm64.zip",
+      "checksum": "9DBB2ADB97E1AFD27B34F008C2B9D20D664096A14A36D72278EB08604BE268CB",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/crate-ci/typos/v1.17.1/typos-v1.17.1-x86_64-apple-darwin.tar.gz",
       "checksum": "5740E693E489F592CDE54807F44D841FE190AC8307304A77E94437E83E5A293C",
       "algorithm": "sha256"
@@ -1098,6 +1118,16 @@
     {
       "id": "github_release/github.com/denoland/deno/v2.0.0/deno-x86_64-apple-darwin.zip",
       "checksum": "B74D019D948E50E3EEBDE16D9C67D5633F46636AF04ADBB7FCA1B5A37232DD80",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.0.2/deno-aarch64-apple-darwin.zip",
+      "checksum": "D627BFFC38F7F5804656C71BB6AF8EE2F5C8010DF34886B4414D4C78514350DF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.0.2/deno-x86_64-apple-darwin.zip",
+      "checksum": "9AFD5DDC4CA123754115FEE4A4ED883B63343696A5380AF05DB263169A84F20F",
       "algorithm": "sha256"
     },
     {
