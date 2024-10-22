@@ -1011,6 +1011,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/dalance/procs/v0.14.7/procs-v0.14.7-x86_64-mac.zip",
+      "checksum": "A1BC3F0CE2E924F0C8F17064A52D308A87EDB2ACB6BBA71470D0359FE0B90A51",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dandavison/delta/0.16.5/delta-0.16.5-aarch64-apple-darwin.tar.gz",
       "checksum": "3C731E047F9D169C169DEA36A7F37645C5336DE1D1B26BEDE3E43F2FE170F98BD15746EE2959C8183ED61AADD749AA4EA54528C3571FA2C6A90CB41E15F89AB2",
       "algorithm": "sha512"
@@ -1208,6 +1213,16 @@
     {
       "id": "github_release/github.com/dprint/dprint/0.47.2/dprint-x86_64-apple-darwin.zip",
       "checksum": "B174A7BC1EE55413DA80B4469A5BCD1D91FDDA2B813AC212BC8BBD0DF293C448",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dprint/dprint/0.47.4/dprint-aarch64-apple-darwin.zip",
+      "checksum": "522783119D1AB52164FF2AAEA2072C1578A7B8988156A0ADD06D370EB58D439E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dprint/dprint/0.47.4/dprint-x86_64-apple-darwin.zip",
+      "checksum": "16F360C526C14C070AB618CF6C36FF9C8BF5B32C7E07A0C0C9B58D91697B4A40",
       "algorithm": "sha256"
     },
     {
@@ -2853,6 +2868,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.235.0/registry.yaml",
       "checksum": "08F5421BB3ECAF8C252A35FC47AF52264E8A3D1F43A821C19EA23773F67E7C56A715EE8E96B4217F4C3CB203D1D393C89EC9393E81A6C253280C205E9789D895",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.239.0/registry.yaml",
+      "checksum": "D3CAA8F0575A5AE21EF32C9FE4CEB74E9DB5B82C5B1E72BD5EB7A036222DD1DA5E98D7E26D0BDBFB70C936F048FF9A563563F62CA08D48E570CD7C55D7F6F508",
       "algorithm": "sha512"
     },
     {
