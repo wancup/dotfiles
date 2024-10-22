@@ -46,7 +46,6 @@ return {
 				sources = {
 					{ name = "luasnip", group_index = 1 },
 					{ name = "nvim_lsp", group_index = 2 },
-					{ name = "skkeleton", group_index = 3 },
 				},
 				completion = { completeopt = "menu,menuone,noinsert" },
 				snippet = {
