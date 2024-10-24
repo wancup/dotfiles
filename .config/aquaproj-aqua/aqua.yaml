@@ -23,7 +23,7 @@ packages:
   - name: jdx/mise@v2024.10.9
   - name: rhysd/actionlint@v1.7.3
   - name: ducaale/xh@v0.23.0
-  - name: crate-ci/typos@v1.26.0
+  - name: crate-ci/typos@v1.26.2
   - name: mattn/efm-langserver@v0.0.53
   - name: YS-L/csvlens@v0.10.1
   - name: koalaman/shellcheck@v0.10.0
