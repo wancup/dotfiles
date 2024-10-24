@@ -101,6 +101,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/Wilfred/difftastic/0.61.0/difft-x86_64-apple-darwin.tar.gz",
+      "checksum": "4398816AF7110CEFC802D26D3D9E78C37C408464927BE97243D37700442D276A",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-x86_64-apple-darwin.tar.gz",
       "checksum": "2AF8ABB6A08B0513F9D16CA2C7CD37949B858D2A3E3227BE8CC412B3B4937D5B",
       "algorithm": "sha256"
@@ -996,6 +1001,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.26.2/typos-v1.26.2-x86_64-apple-darwin.tar.gz",
+      "checksum": "AAE19A7B044F846AC9ECF920E1678465CE34A15A6243073E9E10ACC36C92E553",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -1013,6 +1023,11 @@
     {
       "id": "github_release/github.com/dalance/procs/v0.14.7/procs-v0.14.7-x86_64-mac.zip",
       "checksum": "A1BC3F0CE2E924F0C8F17064A52D308A87EDB2ACB6BBA71470D0359FE0B90A51",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dalance/procs/v0.14.8/procs-v0.14.8-x86_64-mac.zip",
+      "checksum": "B9C3C6B59B4B7613908665DA9E2765439F38D13E9AAD9674A00C61FBAFEBC4E0",
       "algorithm": "sha256"
     },
     {
@@ -1313,6 +1328,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.10.7/mise-v2024.10.7-macos-x64.tar.gz",
       "checksum": "FAAD7F45DEFCEB0C8B0280B04B14C806F1A89BEF37DE57BEAC60F4931820F9AC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.10.9/mise-v2024.10.9-macos-arm64.tar.gz",
+      "checksum": "A580C5529C2DA8D507C04631A345DFF93E10F9C2688F8AC738D57AC9C1FF4094",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.10.9/mise-v2024.10.9-macos-x64.tar.gz",
+      "checksum": "78CC9DB68C30DAA6E0CD2DC45F978B5E50F055A4AE7AA88F80F17E7DD78EED2E",
       "algorithm": "sha256"
     },
     {
@@ -2368,6 +2393,16 @@
     {
       "id": "github_release/github.com/opentofu/opentofu/v1.8.3/tofu_1.8.3_darwin_arm64.zip",
       "checksum": "6BC4D30FE2AFB1FCBFFF7D9FD337EABFDB9D7A575DC6C0D542E1F0F2D3B09F14",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/opentofu/opentofu/v1.8.4/tofu_1.8.4_darwin_amd64.zip",
+      "checksum": "E4C5374F1929791DB35B22C1AC78F6AAC27CDFD88FE5988F06471C7CBAF36367",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/opentofu/opentofu/v1.8.4/tofu_1.8.4_darwin_arm64.zip",
+      "checksum": "E19C89062E793E3F8B602BA436172631E72758F11ED1DB29FE854CFBE4B11633",
       "algorithm": "sha256"
     },
     {
