@@ -1,6 +1,7 @@
 return {
 	{
 		"vim-skk/skkeleton",
+		cond = true,
 		event = { "InsertEnter", "CmdlineEnter" },
 		dependencies = {
 			"vim-denops/denops.vim",
