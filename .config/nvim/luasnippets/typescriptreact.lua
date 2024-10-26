@@ -39,7 +39,7 @@ return {
 		"us",
 		fmt("const [{}, set{State}] = useState({});", {
 			i(1, "state"),
-			i(2, "initialState"),
+			i(2),
 			State = l(l._1:sub(1, 1):upper() .. l._1:sub(2, -1), 1),
 		})
 	),
@@ -69,10 +69,18 @@ return {
 	),
 
 	s(
+		"sfc",
+		fmt("function {}(props: {{{}}}): JSX.Element{{\nreturn (\n\n)\n}}", {
+			i(1, "name"),
+			i(2),
+		})
+	),
+
+	s(
 		"cs",
 		fmt("const [{}, set{State}] = createSignal({});", {
 			i(1, "state"),
-			i(2, "initialState"),
+			i(2),
 			State = l(l._1:sub(1, 1):upper() .. l._1:sub(2, -1), 1),
 		})
 	),
