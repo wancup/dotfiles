@@ -391,6 +391,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.7.1/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "88FE24BAD9DDF252E9CB9771A36D55357BD014ACF86BAC1AE2D29C72718CE513",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.7.1/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "708814D5572728F83C8EE3C745B24397887BDFBACA1E5F7F27C2F3EE0D65B5AB",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -851,6 +861,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.60.1/gh_2.60.1_macOS_amd64.zip",
+      "checksum": "D44C5D0DACD23341293F18A17486A93392A29EF702EFA468FA3636A01637FE95",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.60.1/gh_2.60.1_macOS_arm64.zip",
+      "checksum": "1930A3DB9A2D1C420E476D06F3D4A8F02DB8472D2630A1099968C3B82F231F1F",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/crate-ci/typos/v1.17.1/typos-v1.17.1-x86_64-apple-darwin.tar.gz",
       "checksum": "5740E693E489F592CDE54807F44D841FE190AC8307304A77E94437E83E5A293C",
       "algorithm": "sha256"
@@ -1006,6 +1026,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.26.8/typos-v1.26.8-x86_64-apple-darwin.tar.gz",
+      "checksum": "5403D47865B172311F78455F54AE37DE02288F8DCDB7EEF5DCB5A1E396955DBD",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -1151,6 +1176,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/denoland/deno/v2.0.3/deno-aarch64-apple-darwin.zip",
+      "checksum": "55F36E9DA03EAF3218DABC12AEF219090DE4AF183E56F360A7AA394B53F08613",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.0.3/deno-x86_64-apple-darwin.zip",
+      "checksum": "87F2D1730F374E2745CD4A6BEF77A36807549A9F7C9418EDCE24C7C4158C52B7",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dprint/dprint/0.45.0/dprint-aarch64-apple-darwin.zip",
       "checksum": "CF23AB2785CA25F27ED5CA5127663DFE0131AE146D0B8D5159B06E0694AD74AC",
       "algorithm": "sha256"
@@ -1241,6 +1276,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/dprint/dprint/0.47.5/dprint-aarch64-apple-darwin.zip",
+      "checksum": "5E333931F3CFE43BB8924A1C2C5B3021CBB983294FA020F67858B93689FD805D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/dprint/dprint/0.47.5/dprint-x86_64-apple-darwin.zip",
+      "checksum": "F1284D78A556D530241E382915263484F590418F12DD7608ECC7DD0C8F78615C",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/ducaale/xh/v0.20.1/xh-v0.20.1-x86_64-apple-darwin.tar.gz",
       "checksum": "53D92596FCC308A2F222971C4A7173FAB37C58596157C50D05374D6B91D57440",
       "algorithm": "sha256"
@@ -1318,6 +1363,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.10.0/mise-v2024.10.0-macos-x64.tar.gz",
       "checksum": "9588E3C23039A514F481B5E839A24048B0000D3675CAECDC37B8DE62DF7E7240",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.10.11/mise-v2024.10.11-macos-arm64.tar.gz",
+      "checksum": "12871C9CBE20F344DB7CB1F90DB1D0E4423F6DA9E6C8BD0CDBE573249863FA11",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.10.11/mise-v2024.10.11-macos-x64.tar.gz",
+      "checksum": "D111BDE645E8C57E3BB529E5ED02E6C6DA36AE2678D8EF4D93D6A3530FD125F9",
       "algorithm": "sha256"
     },
     {
@@ -2203,6 +2258,16 @@
     {
       "id": "github_release/github.com/junegunn/fzf/v0.55.0/fzf-0.55.0-darwin_arm64.tar.gz",
       "checksum": "D9E796F54B485196572DBE5F72A3771296C8E74952DF19800A8D7D596921794D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.56.0/fzf-0.56.0-darwin_amd64.tar.gz",
+      "checksum": "29E54EBF67373A7E1305F833624C7CBCE15A5D0D41BCA1C80777AB7DD82C3DFE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.56.0/fzf-0.56.0-darwin_arm64.tar.gz",
+      "checksum": "9516460D1111FD26111FAB3DACABEC86F05A2BD427B4CCA0E3846777E4499E9C",
       "algorithm": "sha256"
     },
     {
