@@ -401,6 +401,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.7.2/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "1C9F5A4FC815330D01FD8A56A7A70114FF3ED149BD997FF831524313705BA991",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.7.2/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "5815756947D0A7B1D90805B07FFB2C376C8A9800E9462D545839DC0D79A091D2",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -1031,6 +1041,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.27.0/typos-v1.27.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "A32F37E3663C6A6904ED9D8FD51E7C303685A0E9FAC976E2D7BFF88412D169CE",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -1183,6 +1198,16 @@
     {
       "id": "github_release/github.com/denoland/deno/v2.0.3/deno-x86_64-apple-darwin.zip",
       "checksum": "87F2D1730F374E2745CD4A6BEF77A36807549A9F7C9418EDCE24C7C4158C52B7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.0.4/deno-aarch64-apple-darwin.zip",
+      "checksum": "E2A7E6E1BAA4E2724A5527211B10D50DF18130EC20D89D999C6474E2A017264A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.0.4/deno-x86_64-apple-darwin.zip",
+      "checksum": "E92BC04420420C5E08E86D8F886E5C289D466BAE2FB7A1094DD8C395DBE23436",
       "algorithm": "sha256"
     },
     {
@@ -1403,6 +1428,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.10.9/mise-v2024.10.9-macos-x64.tar.gz",
       "checksum": "78CC9DB68C30DAA6E0CD2DC45F978B5E50F055A4AE7AA88F80F17E7DD78EED2E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.0/mise-v2024.11.0-macos-arm64.tar.gz",
+      "checksum": "51EE9C8B13AD1038233104B42DC97D4DFB1259E002D7CC1449E33EF690026995",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.0/mise-v2024.11.0-macos-x64.tar.gz",
+      "checksum": "5735E15802E2C42E144222B0F6BEC953058FC165EA566222AF322ED090D82A0B",
       "algorithm": "sha256"
     },
     {
@@ -2576,6 +2611,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/sharkdp/hexyl/v0.15.0/hexyl-v0.15.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "0510B29A1FCCB631AA41B1890E0239330BFD4F13BC676139661B67A61CD60066",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sharkdp/hyperfine/v1.18.0/hyperfine-v1.18.0-x86_64-apple-darwin.tar.gz",
       "checksum": "F421263F160F4B4967D0A1420B06A48CB60E429C610096F99BB433DD719685C6",
       "algorithm": "sha256"
@@ -2988,6 +3028,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.245.0/registry.yaml",
       "checksum": "206137852AC004C6679748FF866169C6AE88976CBA2B7F5E9E84C7926B3ACC08958279B02157FDE73E6E6D6A1A2369C9D1E63EC118FEF18743F6E81505EBFB0E",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.246.0/registry.yaml",
+      "checksum": "0657DBD3A2D92E4F36FFBF6690A4D4B47B0CF99B12F63646A1ADE6A90D95F1B9A513E4CD92D652595A9749D281FB2FD4E3506E22DB0487B293B427F22B251204",
       "algorithm": "sha512"
     },
     {
