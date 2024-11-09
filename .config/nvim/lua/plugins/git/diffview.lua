@@ -6,8 +6,6 @@ return {
 		keys = {
 			{ "<leader>gd", "<cmd>DiffviewOpen<cr>", desc = "[G]it [D]iff" },
 			{ "<leader>gD", "<cmd>DiffviewClose<cr>", desc = "[G]it [D]iff Close" },
-			{ "<leader>gl", "<cmd>DiffviewFileHistory %<cr>", desc = "[G]it [L]og Current File" },
-			{ "<leader>gL", "<cmd>DiffviewFileHistory<cr>", desc = "[G]it [L]og" },
 		},
 		config = function()
 			local actions = require("diffview.actions")
