@@ -89,6 +89,13 @@ end, { desc = "[D]iagnostics" })
 map({ "n", "x" }, "[c", git.prev_conflict, { desc = "Goto Previous Conflict" })
 map({ "n", "x" }, "]c", git.next_conflict, { desc = "Goto Next Conflict" })
 
+map({ "n", "x" }, "[d", function()
+	vim.diagnostic.goto_prev({ float = true })
+end, { desc = "Goto Previous Diagnostic" })
+map({ "n", "x" }, "]d", function()
+	vim.diagnostic.goto_next({ float = true })
+end, { desc = "Goto Next Diagnostic" })
+
 map({ "n", "x" }, "[q", "<cmd>cprev<cr>", { desc = "Goto Previous Quickfix" })
 map({ "n", "x" }, "]q", "<cmd>cnext<cr>", { desc = "Goto Next Quickfix" })
 
