@@ -411,6 +411,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.7.3/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "C149E86FFE69AF6D8A121E750FE360C3FDCC643B3D73640D852413F9EEA534EB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.7.3/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "EA2D718132B50BD24CD285D5D823BA9B947B258CFAD102F6A649A6FE556069E1",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -881,6 +891,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/cli/cli/v2.61.0/gh_2.61.0_macOS_amd64.zip",
+      "checksum": "794AB3AA580EDF3849FF5A4F11B3E5179953958D97A6B71D7CA6FDDC043C8E43",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/cli/cli/v2.61.0/gh_2.61.0_macOS_arm64.zip",
+      "checksum": "1489F762F2E0D49AA5FD8A7CF652FAAE5F8AC9212612B78C3180CBD88D00DB25",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/crate-ci/typos/v1.17.1/typos-v1.17.1-x86_64-apple-darwin.tar.gz",
       "checksum": "5740E693E489F592CDE54807F44D841FE190AC8307304A77E94437E83E5A293C",
       "algorithm": "sha256"
@@ -1046,6 +1066,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.27.3/typos-v1.27.3-x86_64-apple-darwin.tar.gz",
+      "checksum": "3AFDF4A7101E7B074A364D6EEB4D4EC2F9EC567002F540D774E1CFE12849A8B5",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -1208,6 +1233,16 @@
     {
       "id": "github_release/github.com/denoland/deno/v2.0.4/deno-x86_64-apple-darwin.zip",
       "checksum": "E92BC04420420C5E08E86D8F886E5C289D466BAE2FB7A1094DD8C395DBE23436",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.0.6/deno-aarch64-apple-darwin.zip",
+      "checksum": "627EAFEE904CD625D7056D53377444DBD24789434B1062E9A141793C0F38CBBB",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.0.6/deno-x86_64-apple-darwin.zip",
+      "checksum": "E52A6FE0B1ADA1511EA6EE298682AAF932D5886F2965C8DBD64538A3C6E7E054",
       "algorithm": "sha256"
     },
     {
@@ -1438,6 +1473,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.11.0/mise-v2024.11.0-macos-x64.tar.gz",
       "checksum": "5735E15802E2C42E144222B0F6BEC953058FC165EA566222AF322ED090D82A0B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.6/mise-v2024.11.6-macos-arm64.tar.gz",
+      "checksum": "8DFC098FF7571A3687E820CEBE49C9F620FFC7BBE351888A87F82B3E576C4425",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.6/mise-v2024.11.6-macos-x64.tar.gz",
+      "checksum": "4917E3FE21E30455AE9CE051D9DA67BCFD20EFAAB1394BBAB2A2F9D11CEB4833",
       "algorithm": "sha256"
     },
     {
@@ -2316,6 +2361,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/v0.56.1/fzf-0.56.1-darwin_amd64.tar.gz",
+      "checksum": "2830A37FA6F2949570560C8B340897D2466B9B82EA57DDBF75A594D001C67047",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.56.1/fzf-0.56.1-darwin_arm64.tar.gz",
+      "checksum": "2DA2F7278502E8F61CE051BBBF4D9DE18CF6DC752DE91CA93149882C512C0700",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.x86_64.tar.xz",
       "checksum": "EF27684F23279D112D8AD84E0823642E43F838993BBB8C0963DB9B58A90464C2",
       "algorithm": "sha256"
@@ -2516,6 +2571,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/opentofu/opentofu/v1.8.5/tofu_1.8.5_darwin_amd64.zip",
+      "checksum": "CB6D1B949691E50BED6C9CC17AEFC999CF27E52200521EFA9F107CE3EE08260F",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/opentofu/opentofu/v1.8.5/tofu_1.8.5_darwin_arm64.zip",
+      "checksum": "C77E545AB847C0D6ACD322C010F457E1A30448476945C04074A48882C4B86DFE",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/rhysd/actionlint/v1.6.26/actionlint_1.6.26_darwin_amd64.tar.gz",
       "checksum": "BFA890E77A8508603C785AF09A30BBAB3A3255D291D8D27EFC3F20AC8E303A8E",
       "algorithm": "sha256"
@@ -2563,6 +2628,16 @@
     {
       "id": "github_release/github.com/rhysd/actionlint/v1.7.3/actionlint_1.7.3_darwin_arm64.tar.gz",
       "checksum": "B4E8DAB8DDA48ECEFF6AFEA67D0FE4A14B8D4EA7191CF233C1E1AF8A62F37C24",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/actionlint/v1.7.4/actionlint_1.7.4_darwin_amd64.tar.gz",
+      "checksum": "63A3BA90EE2325AFAD3FF2E64A4D80688C261E6C68BE8E6AB91214637BF936B8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rhysd/actionlint/v1.7.4/actionlint_1.7.4_darwin_arm64.tar.gz",
+      "checksum": "CBD193BB490F598D77E179261D7B76DFEBD049DDDEDE5803BA21CBF6A469AEEE",
       "algorithm": "sha256"
     },
     {
@@ -3033,6 +3108,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.246.0/registry.yaml",
       "checksum": "0657DBD3A2D92E4F36FFBF6690A4D4B47B0CF99B12F63646A1ADE6A90D95F1B9A513E4CD92D652595A9749D281FB2FD4E3506E22DB0487B293B427F22B251204",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.249.0/registry.yaml",
+      "checksum": "68CAD3A40709928574DC0CC51F364B6B1914B01366C7D5F71E5321A2237FDA9B168DA98CF04DD66E499E47DF332B5BA522E8F920E2F9E549A36A3C048EBDDF5D",
       "algorithm": "sha512"
     },
     {
