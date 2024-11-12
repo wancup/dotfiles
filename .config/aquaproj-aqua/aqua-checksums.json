@@ -1496,6 +1496,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jdx/mise/v2024.11.8/mise-v2024.11.8-macos-arm64.tar.gz",
+      "checksum": "C1B063ED03539CFCC94E07002C228463C1C175DCCD758534FD9D205CF4A46984",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.8/mise-v2024.11.8-macos-x64.tar.gz",
+      "checksum": "C2CFEDBCBD064259B1AFCA60B5329538D010CFDBFAFB4068D4C6A9B87CE899CA",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jdx/mise/v2024.2.11/mise-v2024.2.11-macos-arm64.tar.gz",
       "checksum": "15D8620009557805C5255349FD3BBCA31014009E8E38A6DD5F2E1E8892C3DA11",
       "algorithm": "sha256"
@@ -2381,6 +2391,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/junegunn/fzf/v0.56.2/fzf-0.56.2-darwin_amd64.tar.gz",
+      "checksum": "5A61904D0326898BF73C3E72FB2F7FBA96952587A63EF479378F9A277DBB1C34",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/junegunn/fzf/v0.56.2/fzf-0.56.2-darwin_arm64.tar.gz",
+      "checksum": "DC2D182296F1110AD449BF3D96A45C4DBDF042892386FFB4C446A8BF80727326",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/koalaman/shellcheck/v0.10.0/shellcheck-v0.10.0.darwin.x86_64.tar.xz",
       "checksum": "EF27684F23279D112D8AD84E0823642E43F838993BBB8C0963DB9B58A90464C2",
       "algorithm": "sha256"
@@ -2703,6 +2723,11 @@
     {
       "id": "github_release/github.com/sharkdp/hyperfine/v1.18.0/hyperfine-v1.18.0-x86_64-apple-darwin.tar.gz",
       "checksum": "F421263F160F4B4967D0A1420B06A48CB60E429C610096F99BB433DD719685C6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sharkdp/hyperfine/v1.19.0/hyperfine-v1.19.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "80AD420C0A9A5D090F6CA0DDC9305A139D57BA6B6E8E7ADF22C800389BAF3AB6",
       "algorithm": "sha256"
     },
     {
