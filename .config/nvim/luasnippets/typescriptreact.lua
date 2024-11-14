@@ -85,6 +85,14 @@ return {
 		})
 	),
 
+	s(
+		"cm",
+		fmt("const {} = createMemo(() => {})", {
+			i(1),
+			i(2),
+		})
+	),
+
 	s("class", { t("class=") }),
 
 	s(
