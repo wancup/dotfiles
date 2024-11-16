@@ -11,9 +11,10 @@ return {
 	s(
 		"nrfc",
 		fmt(
-			'import {{ ReactElement }} from "react";\n\ninterface {Name}Props {{}}\n\nexport function {}(props: {Name}Props): ReactElement{{\nreturn (\n\n)\n}}',
+			'import {{ ReactElement }} from "react";\n\ninterface {Name}Props {{}}\n\nexport function {}(props: {Name}Props): ReactElement{{\nreturn (\n{}\n)\n}}',
 			{
 				i(1, "name"),
+				i(2),
 				Name = l(l._1, 1),
 			}
 		)
@@ -60,9 +61,10 @@ return {
 	s(
 		"nsfc",
 		fmt(
-			'import {{ JSX }} from "solid-js";\n\ninterface {Name}Props {{}}\n\nexport function {}(props: {Name}Props): JSX.Element{{\nreturn (\n\n)\n}}',
+			'import {{ JSX }} from "solid-js";\n\ninterface {Name}Props {{}}\n\nexport function {}(props: {Name}Props): JSX.Element{{\nreturn (\n{}\n)\n}}',
 			{
 				i(1, "name"),
+				i(2),
 				Name = l(l._1, 1),
 			}
 		)
