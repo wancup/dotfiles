@@ -276,35 +276,35 @@ return {
 	),
 
 	s(
-		"cd",
+		"c.d",
 		fmt("console.debug({})", {
 			i(1),
 		})
 	),
 
 	s(
-		"cl",
+		"c.l",
 		fmt("console.log({})", {
 			i(1),
 		})
 	),
 
 	s(
-		"ci",
+		"c.i",
 		fmt("console.info({})", {
 			i(1),
 		})
 	),
 
 	s(
-		"ce",
+		"c.e",
 		fmt("console.error({})", {
 			i(1),
 		})
 	),
 
 	s(
-		"cw",
+		"c.w",
 		fmt("console.warn({})", {
 			i(1),
 		})
