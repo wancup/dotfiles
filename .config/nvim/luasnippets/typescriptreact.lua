@@ -95,6 +95,13 @@ return {
 		})
 	),
 
+	s(
+		"ce",
+		fmt("createEffect(() => {{\n{}\n}})", {
+			i(1),
+		})
+	),
+
 	s("class", { t("class=") }),
 
 	s(
