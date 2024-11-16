@@ -62,10 +62,11 @@ return {
 
 	s(
 		"arr",
-		fmt("const {} = ({}): {} => {{\n}}", {
+		fmt("const {} = ({}): {} => {{\n{}\n}}", {
 			i(1, "name"),
 			i(2, ""),
 			i(3, "return_type"),
+			i(4),
 		})
 	),
 
@@ -117,8 +118,9 @@ return {
 
 	s(
 		"try",
-		fmt("try {{{}\n}} catch(e: unknown) {{\n}}", {
+		fmt("try {{\n{}\n}} catch(e: unknown) {{\n{}\n}}", {
 			i(1),
+			i(2),
 		})
 	),
 
