@@ -22,9 +22,10 @@ return {
 
 	s(
 		"rfc",
-		fmt("function {}({}): ReactElement{{\nreturn (\n\n)\n}}", {
+		fmt("function {}({}): ReactElement{{\nreturn (\n{}\n)\n}}", {
 			i(1, "name"),
 			i(2, "props"),
+			i(3),
 		})
 	),
 
@@ -72,9 +73,10 @@ return {
 
 	s(
 		"sfc",
-		fmt("function {}(props: {{{}}}): JSX.Element{{\nreturn (\n\n)\n}}", {
+		fmt("function {}(props: {{{}}}): JSX.Element{{\nreturn (\n{}\n)\n}}", {
 			i(1, "name"),
 			i(2),
+			i(3),
 		})
 	),
 
