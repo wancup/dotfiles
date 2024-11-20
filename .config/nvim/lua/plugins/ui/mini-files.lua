@@ -4,7 +4,7 @@ return {
 		version = false,
 		keys = {
 			{
-				"<leader>e",
+				"<leader>E",
 				function()
 					local current_buf = vim.api.nvim_buf_get_name(0)
 					require("mini.files").open(current_buf)
