@@ -7,6 +7,11 @@ return {
 				"<cmd>Yazi<cr>",
 				desc = "[E]xplore files",
 			},
+			{
+				"<leader>E",
+				"<cmd>Yazi toggle<cr>",
+				desc = "Yazi toggle",
+			},
 		},
 		opts = {
 			keymaps = {
