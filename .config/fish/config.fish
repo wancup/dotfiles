@@ -77,7 +77,6 @@ fish_add_path $AQUA_ROOT_DIR/bin
 fish_add_path $HOME/.cargo/bin
 
 # setup
-eval (/opt/homebrew/bin/brew shellenv)
-mise activate fish | source
-zoxide init fish | source
-fzf --fish | source
+if test -z "$NVIM"
+    setup
+end
