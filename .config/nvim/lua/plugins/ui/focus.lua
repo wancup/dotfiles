@@ -1,7 +1,6 @@
 local disabled_fts = {
 	"blame",
 	"alpha",
-	"minifiles",
 	"aerial",
 	"neotest-summary",
 	"neotest-output",
