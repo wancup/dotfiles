@@ -86,6 +86,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.0.1/stylua-macos-aarch64.zip",
+      "checksum": "3D9CAAA660DA4B3BC092E805D09AF59E42B7504F1253C863B682EA3FC80944F2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.0.1/stylua-macos-x86_64.zip",
+      "checksum": "D22E6F1005A191C5A41BDF9F51ED07737EBF2C776CF8AF0FEFF372AA1DC0ED78",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/Wilfred/difftastic/0.56.1/difft-x86_64-apple-darwin.tar.gz",
       "checksum": "289D968397637AF1CB954F356B51CF3C55A1543D888859D2F5AFDFABEA291709",
       "algorithm": "sha256"
@@ -188,6 +198,16 @@
     {
       "id": "github_release/github.com/YS-L/csvlens/v0.9.1/csvlens-x86_64-apple-darwin.tar.xz",
       "checksum": "286C465397552D3500B9C4954DC2C14975396FBA8AA3A8BAD7B88852322D6ECD",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.10/rainfrog-v0.2.10-aarch64-apple-darwin.tar.gz",
+      "checksum": "46E6049CD55EE972A4A3D361FBE292D41F0886A64824398E902A58101664C9AA",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.10/rainfrog-v0.2.10-x86_64-apple-darwin.tar.gz",
+      "checksum": "1B06DA20CCE2D1B3460690A0E40FFA08A9C1E9DB187679C8C772EF0327401000",
       "algorithm": "sha256"
     },
     {
@@ -1523,6 +1543,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.11.15/mise-v2024.11.15-macos-x64.tar.gz",
       "checksum": "6967232BADC390E57E63463455879176B036831E515AF1FA5035D400A7E0C4D9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.18/mise-v2024.11.18-macos-arm64.tar.gz",
+      "checksum": "7736117531B4097438429EFDCB9CFF85960D6DF0692656EA5039603928AB8024",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.18/mise-v2024.11.18-macos-x64.tar.gz",
+      "checksum": "1CA3F9024959DCE0870B7B61BDFCEFCAC9ED488C514A7FD146EF4344F8108FEC",
       "algorithm": "sha256"
     },
     {
