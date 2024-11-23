@@ -62,11 +62,19 @@ return {
 
 	s(
 		"arr",
-		fmt("const {} = ({}): {} => {{\n{}\n}}", {
-			i(1, "name"),
-			i(2, ""),
-			i(3, "return_type"),
-			i(4),
+		c(1, {
+			fmt("const {} = ({}): {} => {{\n{}\n}}", {
+				i(1, "name"),
+				i(2, ""),
+				i(3, "return_type"),
+				i(4),
+			}),
+			fmt("const {} = ({}): {} => {}", {
+				i(1, "name"),
+				i(2, ""),
+				i(3, "return_type"),
+				i(4),
+			}),
 		})
 	),
 
