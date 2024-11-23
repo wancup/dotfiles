@@ -2,7 +2,6 @@
 
 [manager]
 prepend_keymap = [
-  { on = ["<Enter>"], run = "enter", desc = "Enter the child directory" },
   { on = ["Q"], run = ["quit"], desc = "Exit and Change Directory" },
   { on = ["q"], run = "quit --no-cwd-file", desc = "Exit the process without writing cwd-file" },
   { on = ["<PageUp>"], run = "seek -5", desc = "Seek up 5 units in the preview" },
