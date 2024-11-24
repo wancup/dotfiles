@@ -471,6 +471,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/ruff/0.8.0/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "EEDE1DC7E7BF14CEEF1B2EF7274CF74B5AA4939F8299EF5B42DC72F25FD4513C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/ruff/0.8.0/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "8C5B868D1AEFD277B360D16D5D05A5498A184CFBAE41EC3441FEF6ABF89EA449",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/astral-sh/ruff/v0.3.4/ruff-0.3.4-aarch64-apple-darwin.tar.gz",
       "checksum": "426BAF89977FEA38C9B5B924233316C85EDC6F655E3ECD39EF00AA745E70EFEA",
       "algorithm": "sha256"
@@ -1306,6 +1316,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/denoland/deno/v2.1.1/deno-aarch64-apple-darwin.zip",
+      "checksum": "91A95616381F9F5D1A7108DAC5957221BBBC10A7AF13BAC67E718BDD2500FFF7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/denoland/deno/v2.1.1/deno-x86_64-apple-darwin.zip",
+      "checksum": "475E7D0D91BA2E6916A00CCF60368CB4D6B122A6757938DDA045A10A2BDFA846",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dprint/dprint/0.45.0/dprint-aarch64-apple-darwin.zip",
       "checksum": "CF23AB2785CA25F27ED5CA5127663DFE0131AE146D0B8D5159B06E0694AD74AC",
       "algorithm": "sha256"
@@ -1553,6 +1573,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.11.18/mise-v2024.11.18-macos-x64.tar.gz",
       "checksum": "1CA3F9024959DCE0870B7B61BDFCEFCAC9ED488C514A7FD146EF4344F8108FEC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.27/mise-v2024.11.27-macos-arm64.tar.gz",
+      "checksum": "B90C91C7B9BDAADBE71EA0FF0C9106BD1331751253C27CB87311612014ABD65C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.27/mise-v2024.11.27-macos-x64.tar.gz",
+      "checksum": "C2F0D995B858FE5DF660E2F74952116CA50FADBE6DA527AADFE7386FBF520C96",
       "algorithm": "sha256"
     },
     {
@@ -2161,6 +2191,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.1/lazydocker_0.24.1_Darwin_x86_64.tar.gz",
+      "checksum": "7B4C73C7B1B62B9702A701AC0A8A1D8913602173362E8EE96D4FC03EF556AD10",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jesseduffield/lazygit/v0.40.2/lazygit_0.40.2_Darwin_arm64.tar.gz",
       "checksum": "2857416D0D5B21C28A69850B068E072D0064F158A5B6FCFA97A3DF8789F5DE7F",
       "algorithm": "sha256"
@@ -2688,6 +2723,16 @@
     {
       "id": "github_release/github.com/opentofu/opentofu/v1.8.5/tofu_1.8.5_darwin_arm64.zip",
       "checksum": "C77E545AB847C0D6ACD322C010F457E1A30448476945C04074A48882C4B86DFE",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/opentofu/opentofu/v1.8.6/tofu_1.8.6_darwin_amd64.zip",
+      "checksum": "5D7DC48AE76C7AC2EB8AEEDBAB1B234A3744EE0491645F227CD740362A4D4CC8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/opentofu/opentofu/v1.8.6/tofu_1.8.6_darwin_arm64.zip",
+      "checksum": "51E5B6BD1372C273CAC656101E2B3AFC50A730F3992053F4238EB13F82D40599",
       "algorithm": "sha256"
     },
     {
