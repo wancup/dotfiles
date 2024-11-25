@@ -21,10 +21,10 @@ return {
 				open_file_in_tab = false,
 				grep_in_directory = "<C-space>",
 				replace_in_directory = "<C-g>",
-				cycle_open_buffers = "_",
+				cycle_open_buffers = "<C-tab>",
 				copy_relative_path_to_selected_files = "<C-y>",
 				send_to_quickfix_list = "<C-q>",
-				change_working_directory = "=",
+				change_working_directory = "<C-=>",
 			},
 			integrations = {
 				grep_in_directory = function(directory)
