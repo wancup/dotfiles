@@ -1141,6 +1141,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/crate-ci/typos/v1.28.0/typos-v1.28.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "81CC96177058B761D3509884EBCBF81A51CF78DF342A90F54FA4F65A61E5AD8B",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dalance/procs/v0.14.4/procs-v0.14.4-x86_64-mac.zip",
       "checksum": "F01A1D1610D298EE360C231781F786E727E4CB8531722AB046B63C83884071A8",
       "algorithm": "sha256"
@@ -1583,6 +1588,16 @@
     {
       "id": "github_release/github.com/jdx/mise/v2024.11.27/mise-v2024.11.27-macos-x64.tar.gz",
       "checksum": "C2F0D995B858FE5DF660E2F74952116CA50FADBE6DA527AADFE7386FBF520C96",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.29/mise-v2024.11.29-macos-arm64.tar.gz",
+      "checksum": "F38FB9BD22F674F3C3629A0DD709F44DCA9D4384FE495173E0786AEA0E091D3A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jdx/mise/v2024.11.29/mise-v2024.11.29-macos-x64.tar.gz",
+      "checksum": "9998E239D2F3B525F931334937692E505B3E9383752EB524AED1FDBC074454BA",
       "algorithm": "sha256"
     },
     {
@@ -2661,6 +2676,16 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/mattn/efm-langserver/v0.0.54/efm-langserver_v0.0.54_darwin_amd64.zip",
+      "checksum": "2A65211D4AB1D27C4CF11B2200BCBE3E62DA7073E5BA5F3A67C5262D725729B2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/mattn/efm-langserver/v0.0.54/efm-langserver_v0.0.54_darwin_arm64.zip",
+      "checksum": "4770A18B1BC4DEA29C9F0F1DDD2F10AA622FDA71167A9B42B0EB0C10471A90C7",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/neovim/neovim/stable/nvim-macos.tar.gz",
       "checksum": "6F7DE66C494D7B73CDF878F060DEDD1B2D66A648A387A245AA2AEC76A5B4C777",
       "algorithm": "sha256"
@@ -3278,6 +3303,11 @@
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.254.0/registry.yaml",
       "checksum": "C36DF75FFFA91D65CB6171D97664A1F8F987D06D6DE63EE60D669BE62D4BF2626ECDDE2966B60B69FD09842A08DC7363A83F49D87223A7AB8CA721944230552F",
+      "algorithm": "sha512"
+    },
+    {
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.260.0/registry.yaml",
+      "checksum": "EF84A9164BC534B0B73FB84129066FABE5197709F253648EFD9B2FC8CCAC55AE2198966AB97EACE9908BD71D955911E7C6ECFD3C0B0FEA5230D7D3E9F2C2F2FC",
       "algorithm": "sha512"
     },
     {
