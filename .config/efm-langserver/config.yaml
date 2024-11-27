@@ -35,6 +35,20 @@ tools:
     lint-formats:
       - "%f:%l DL%n %t%.%#: %m"
 
+  yaml-actionlint: &yaml-actionlint
+    lint-source: actionlint
+    lint-command: "actionlint -no-color -oneline -"
+    lint-stdin: true
+    lint-formats:
+      - "%f:%l:%c: %.%#: SC%n:%trror:%m"
+      - "%f:%l:%c: %.%#: SC%n:%tarning:%m"
+      - "%f:%l:%c: %.%#: SC%n:%tnfo:%m"
+      - "%f:%l:%c: %m"
+    lint-after-open: true
+    root-markers:
+      - .github/
+    require-marker: true
+
 languages:
   =:
     - <<: *any-typos
@@ -42,3 +56,5 @@ languages:
     - <<: *markdown-markdownlint
   dockerfile:
     - <<: *dockerfile-hadolint
+  yaml:
+    - <<: *yaml-actionlint
