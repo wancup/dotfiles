@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mattn/efm-langserver/master/schema.json
+
 version: 2
 lint-debounce: 1s
 format-debounce: 0.5s
