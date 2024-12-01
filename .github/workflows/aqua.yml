@@ -19,12 +19,10 @@ jobs:
       - uses: aquaproj/aqua-installer@f13c5d2f0357708d85477aabe50fd3f725528745
         with:
           aqua_version: v2.38.2
-          working_directory: .config/aquaproj-aqua
         env:
           AQUA_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - uses: aquaproj/update-checksum-action@4963338fe99be2c6fc0ecd972c3b683239e7d85a
         with:
           prune: true
-          working_directory: .config/aquaproj-aqua
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
