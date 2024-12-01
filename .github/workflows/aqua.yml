@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    defaults:
+      run:
+        working-directory: .config/aquaproj-aqua
     steps:
       - uses: actions/checkout@v4
       - uses: aquaproj/aqua-installer@f13c5d2f0357708d85477aabe50fd3f725528745
