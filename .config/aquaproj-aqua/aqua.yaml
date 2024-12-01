@@ -45,6 +45,6 @@ packages:
   - name: lsd-rs/lsd@v1.1.5
   - name: jesseduffield/lazydocker@v0.24.1
   - name: neovim/neovim@v0.10.2
-  - name: denoland/deno@v2.1.1
+  - name: denoland/deno@v2.1.2
   - name: opentofu/opentofu@v1.8.6
   - name: achristmascarl/rainfrog@v0.2.10
