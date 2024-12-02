@@ -25,6 +25,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       - run: |
           aqua update-checksum --prune
-          git add .aqua-checksums.json
+          git add aqua-checksums.json
           git commit -m "Update aqua checksum"
           git push origin
