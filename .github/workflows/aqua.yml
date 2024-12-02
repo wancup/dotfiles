@@ -27,4 +27,6 @@ jobs:
           aqua update-checksum --prune
           git add aqua-checksums.json
           git commit -m "Update aqua checksum"
-          git push origin HEAD
+          git push origin "$BRANCH"
+        env:
+          BRANCH: ${{ github.head_ref }}
