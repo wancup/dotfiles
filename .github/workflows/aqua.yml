@@ -27,4 +27,4 @@ jobs:
           aqua update-checksum --prune
           git add aqua-checksums.json
           git commit -m "Update aqua checksum"
-          git push origin
+          git push origin HEAD
