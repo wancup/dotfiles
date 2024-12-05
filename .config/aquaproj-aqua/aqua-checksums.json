@@ -231,13 +231,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/opentofu/opentofu/v1.8.6/tofu_1.8.6_darwin_amd64.zip",
-      "checksum": "5D7DC48AE76C7AC2EB8AEEDBAB1B234A3744EE0491645F227CD740362A4D4CC8",
+      "id": "github_release/github.com/opentofu/opentofu/v1.8.7/tofu_1.8.7_darwin_amd64.zip",
+      "checksum": "7FF1307EC5DD14B2660EC91B39354CEC24AA492A03338D8A37FB542FB0B031F7",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/opentofu/opentofu/v1.8.6/tofu_1.8.6_darwin_arm64.zip",
-      "checksum": "51E5B6BD1372C273CAC656101E2B3AFC50A730F3992053F4238EB13F82D40599",
+      "id": "github_release/github.com/opentofu/opentofu/v1.8.7/tofu_1.8.7_darwin_arm64.zip",
+      "checksum": "FEC8D934B9F69E033154265B60677604777505D3634945B3043C46E0030B5E5D",
       "algorithm": "sha256"
     },
     {
