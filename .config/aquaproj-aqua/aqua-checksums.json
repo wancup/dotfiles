@@ -11,13 +11,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.0.1/stylua-macos-aarch64.zip",
-      "checksum": "3D9CAAA660DA4B3BC092E805D09AF59E42B7504F1253C863B682EA3FC80944F2",
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.0.2/stylua-macos-aarch64.zip",
+      "checksum": "126BE217B089755AF3C681D0597585136D181864470232899A6DE31F68BA16FD",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.0.1/stylua-macos-x86_64.zip",
-      "checksum": "D22E6F1005A191C5A41BDF9F51ED07737EBF2C776CF8AF0FEFF372AA1DC0ED78",
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.0.2/stylua-macos-x86_64.zip",
+      "checksum": "4CB47D1C0131A19F7BDB8FC10D6347F038D4853EAA13D9970A8C611FA4731606",
       "algorithm": "sha256"
     },
     {
