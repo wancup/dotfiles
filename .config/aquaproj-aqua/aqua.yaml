@@ -25,7 +25,7 @@ packages:
   - name: ducaale/xh@v0.23.0
   - name: crate-ci/typos@v1.28.2
   - name: mattn/efm-langserver@v0.0.54
-  - name: YS-L/csvlens@v0.10.1
+  - name: YS-L/csvlens@v0.11.0
   - name: koalaman/shellcheck@v0.10.0
   - name: sharkdp/hyperfine@v1.19.0
   - name: sharkdp/pastel@v0.10.0
