@@ -3,9 +3,11 @@ return {
 		"chrisgrieser/nvim-various-textobjs",
 		event = { "BufReadPost", "BufNewFile" },
 		opts = {
-			useDefaultKeymaps = true,
-			disabledKeymaps = {
-				"r",
+			keymaps = {
+				useDefaults = true,
+				disabledDefaults = {
+					"r",
+				},
 			},
 		},
 	},
