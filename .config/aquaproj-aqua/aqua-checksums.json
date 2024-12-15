@@ -176,13 +176,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/junegunn/fzf/v0.56.3/fzf-0.56.3-darwin_amd64.tar.gz",
-      "checksum": "E884D810A9D168CF3AAC12B02474BF9EF5A9DAF72EAE8C5FE8590256DD9015E5",
+      "id": "github_release/github.com/junegunn/fzf/v0.57.0/fzf-0.57.0-darwin_amd64.tar.gz",
+      "checksum": "CECAFB8AEC9BE56B4559489A4D97A1BB202095C604B00512638003DFADBBF527",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/junegunn/fzf/v0.56.3/fzf-0.56.3-darwin_arm64.tar.gz",
-      "checksum": "E626056343FD6814A13AB28B8530F771B80DCA7C8393C56B82DF4229A7424D63",
+      "id": "github_release/github.com/junegunn/fzf/v0.57.0/fzf-0.57.0-darwin_arm64.tar.gz",
+      "checksum": "B4E1C5322652BC2672C32DC37993F8D501DF7AECB3FA9E545A3D80ECA8AE9A2F",
       "algorithm": "sha256"
     },
     {
