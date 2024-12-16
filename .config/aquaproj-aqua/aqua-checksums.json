@@ -91,8 +91,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/crate-ci/typos/v1.28.3/typos-v1.28.3-x86_64-apple-darwin.tar.gz",
-      "checksum": "3DC98F8DEA4DDD592351DC7D05A81E419E21B96EF9DAD99143248FD713A42D3A",
+      "id": "github_release/github.com/crate-ci/typos/v1.28.4/typos-v1.28.4-x86_64-apple-darwin.tar.gz",
+      "checksum": "F8B196C7E0CBF3548377552A4C4BD2A13F18B58281FAA7152DDF82F3C9DB3A6A",
       "algorithm": "sha256"
     },
     {
