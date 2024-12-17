@@ -31,6 +31,10 @@ return {
 					require("telescope").extensions.live_grep_args.live_grep_args({ search_dirs = { directory } })
 				end,
 			},
+			future_features = {
+				ya_emit_reveal = true,
+				ya_emit_open = true,
+			},
 		},
 	},
 }
