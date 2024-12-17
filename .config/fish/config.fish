@@ -39,6 +39,7 @@ abbr gfp "git fetch --prune"
 abbr ghna gh_notify_actions
 abbr gn "git --no-pager"
 abbr gp "git pull"
+abbr gpr "git pull --rebase"
 abbr gpp "git pull --prune"
 abbr gs "git switch"
 abbr la lsd -a
