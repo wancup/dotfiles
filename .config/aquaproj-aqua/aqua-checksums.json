@@ -121,13 +121,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dprint/dprint/0.47.6/dprint-aarch64-apple-darwin.zip",
-      "checksum": "4F33C24141A19638AB045FE5E95654FF0EF8DB29949E145D28EA3CC5B088A042",
+      "id": "github_release/github.com/dprint/dprint/0.48.0/dprint-aarch64-apple-darwin.zip",
+      "checksum": "31EFAF7D6FBDBB53188C457105E894D08B0C43EB02878ABAE778EDAEDD0A5C70",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dprint/dprint/0.47.6/dprint-x86_64-apple-darwin.zip",
-      "checksum": "B54950D447E0D17FCC2732BF99928503DEB39B5B764E5B33995449BF6059C857",
+      "id": "github_release/github.com/dprint/dprint/0.48.0/dprint-x86_64-apple-darwin.zip",
+      "checksum": "FFADF5FC645F3596F76C534CB2F10591C98513823134F085339B42E09ED919AB",
       "algorithm": "sha256"
     },
     {
