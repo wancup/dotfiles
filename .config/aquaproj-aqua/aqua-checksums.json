@@ -81,13 +81,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/cli/cli/v2.63.2/gh_2.63.2_macOS_amd64.zip",
-      "checksum": "A5F80B98819D753449224288FD089405B19CABD128C1CBC92922FD6D44E5EE5B",
+      "id": "github_release/github.com/cli/cli/v2.64.0/gh_2.64.0_macOS_amd64.zip",
+      "checksum": "7CF59A9F0D7D37932DE0CF501A2305FE8032C643DDEDACD47369A712E400E0E8",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/cli/cli/v2.63.2/gh_2.63.2_macOS_arm64.zip",
-      "checksum": "0A53C536C8CC7D1C72C75FF836B018BB7F4351DD1C1C87711DA4ADF6B36824EE",
+      "id": "github_release/github.com/cli/cli/v2.64.0/gh_2.64.0_macOS_arm64.zip",
+      "checksum": "4F26239FC923120C26325B5C54759275E5A68892A26E52351B74AB7E7AC22BA1",
       "algorithm": "sha256"
     },
     {
