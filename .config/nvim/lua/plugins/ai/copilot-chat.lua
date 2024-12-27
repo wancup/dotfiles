@@ -1,7 +1,6 @@
 return {
 	{
 		"CopilotC-Nvim/CopilotChat.nvim",
-		branch = "canary",
 		dependencies = {
 			"github/copilot.vim",
 			"nvim-lua/plenary.nvim",
@@ -28,31 +27,28 @@ return {
 		opts = {
 			prompts = {
 				Explain = {
-					prompt = "/COPILOT_EXPLAIN 選択しているコードの説明を段落分けした文章で説明してください。",
+					prompt = "> /COPILOT_EXPLAIN\n\n選択しているコードの説明を段落分けした文章で説明してください。",
 				},
 				Review = {
-					prompt = "/COPILOT_REVIEW 選択したコードをレビューしてください。",
+					prompt = "> /COPILOT_REVIEW\n\n選択したコードをレビューしてください。",
 				},
 				Fix = {
-					prompt = "/COPILOT_GENERATE このコードには問題があります。バグを修正したコードを書いてください。",
+					prompt = "> /COPILOT_GENERATE\n\nこのコードには問題があります。バグを修正したコードを書いてください。",
 				},
 				Optimize = {
-					prompt = "/COPILOT_GENERATE 選択したコードのパフォーマンスと可読性を改善してください。",
+					prompt = "> /COPILOT_GENERATE\n\n選択したコードのパフォーマンスと可読性を改善してください。",
 				},
 				Docs = {
-					prompt = "/COPILOT_GENERATE このセクションにドキュメントコメントを追加してください。",
+					prompt = "> /COPILOT_GENERATE\n\nこのセクションにドキュメントコメントを追加してください。",
 				},
 				Tests = {
-					prompt = "/COPILOT_GENERATE このコードのテストを生成してください。",
+					prompt = "> /COPILOT_GENERATE\n\nこのコードのテストを生成してください。",
 				},
-				FixDiagnostic = {
-					prompt = "このファイルについての以下のdiagnosticsの問題を解説し、修正したコード案を提示してください。",
+				Diagnostic = {
+					prompt = "このファイルについてのdiagnosticsの問題を解説し、修正したコード案を提示してください。",
 				},
 				Commit = {
-					prompt = "コミットメッセージを書いてください。メッセージはすべてをgitcommit形式のコードブロックとしてラップしてください。",
-				},
-				CommitStaged = {
-					prompt = "コミットメッセージを書いてください。メッセージはすべてをgitcommit形式のコードブロックとしてラップしてください。",
+					prompt = "#git:staged\n\nコミットメッセージを書いてください。メッセージはすべてをgitcommit形式のコードブロックとしてラップしてください。",
 				},
 			},
 		},
