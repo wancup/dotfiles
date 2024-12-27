@@ -46,5 +46,5 @@ packages:
   - name: jesseduffield/lazydocker@v0.24.1
   - name: neovim/neovim@v0.10.3
   - name: denoland/deno@v2.1.4
-  - name: opentofu/opentofu@v1.8.7
+  - name: opentofu/opentofu@v1.8.8
   - name: achristmascarl/rainfrog@v0.2.10
