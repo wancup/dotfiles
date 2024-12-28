@@ -2,6 +2,9 @@ local wezterm = require("wezterm")
 local act = wezterm.action
 
 local shell_path = "/opt/homebrew/bin/fish"
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+	shell_path = "/home/linuxbrew/.linuxbrew/bin/fish"
+end
 
 local config = {
 	font = wezterm.font_with_fallback({
@@ -169,6 +172,10 @@ local config = {
 if wezterm.target_triple == "aarch64-apple-darwin" then
 	config.default_prog = { shell_path, "-l" }
 	config.macos_forward_to_ime_modifier_mask = "SHIFT|CTRL"
+end
+if wezterm.target_triple == "x86_64-pc-windows-msvc" then
+	config.default_prog = { "wsl.exe", "--distribution", "Debian", "--", shell_path, "-l" }
+	config.font_size = 11
 end
 
 return config
