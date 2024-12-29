@@ -26,11 +26,6 @@ syntax on
 set showmatch
 set encoding=utf-8
 
-noremap <S-h>   ^
-noremap <S-l>   $
-
-xnoremap <S-h>   ^
-xnoremap <S-l>   $
 xnoremap y ygv<Esc>
 
 inoremap <C-h> <BS>

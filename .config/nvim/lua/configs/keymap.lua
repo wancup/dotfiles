@@ -57,8 +57,6 @@ local function goto_vsplit_impl()
 end
 
 -- Normal and Visual
-map({ "n", "x" }, "<S-h>", "^")
-map({ "n", "x" }, "<S-l>", "$")
 map({ "n", "x" }, "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
 
 map({ "n", "x" }, "gK", vim.lsp.buf.signature_help, { desc = "Signature Help" })
