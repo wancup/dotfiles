@@ -76,6 +76,7 @@ local config = {
 		{ key = "y", mods = "LEADER", action = act.ActivateCopyMode },
 		{ key = "z", mods = "LEADER", action = act.TogglePaneZoomState },
 		{ key = "-", mods = "LEADER", action = act.ActivateLastTab },
+		{ key = "-", mods = "LEADER|CTRL", action = act.ActivateLastTab },
 		{ key = "LeftArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Left", 5 }) },
 		{ key = "RightArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Right", 5 }) },
 		{ key = "UpArrow", mods = "LEADER", action = act.AdjustPaneSize({ "Up", 5 }) },
