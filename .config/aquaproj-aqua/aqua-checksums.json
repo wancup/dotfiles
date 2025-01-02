@@ -256,18 +256,18 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ducaale/xh/v0.23.0/xh-v0.23.0-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "C3E7D0D019B0423241C9E4D367811F68F68A38CB003190C9BBE6F4C024C70EEB",
+      "id": "github_release/github.com/ducaale/xh/v0.23.1/xh-v0.23.1-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "52654B727A7A9DD712AFAA40F4B6D3127079B9D95C24EE7A96E477941E5CA751",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ducaale/xh/v0.23.0/xh-v0.23.0-x86_64-apple-darwin.tar.gz",
-      "checksum": "CEDFB95E23FF56F40E481A3431C5A7E37E4E4D53D43FB3E3CDF2D75B23C26376",
+      "id": "github_release/github.com/ducaale/xh/v0.23.1/xh-v0.23.1-x86_64-apple-darwin.tar.gz",
+      "checksum": "E9E0F97E16095D2AFB7E9247E6D250C95673DC3305A05539AAFC2506AB59AD0A",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ducaale/xh/v0.23.0/xh-v0.23.0-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "79FB00506A53AE2BBC490E4690C75D488FF029E06F8E7835095D1C680103488A",
+      "id": "github_release/github.com/ducaale/xh/v0.23.1/xh-v0.23.1-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "A29ED6AFCABF2C575C24499397FA3A840047DFFC4A68E4A1A886F22584712946",
       "algorithm": "sha256"
     },
     {
