@@ -181,13 +181,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/crate-ci/typos/v1.29.1/typos-v1.29.1-x86_64-apple-darwin.tar.gz",
-      "checksum": "33002029990B5645FE9A541FA321A2BB053894B776F57435B6A75AD1854AD007",
+      "id": "github_release/github.com/crate-ci/typos/v1.29.4/typos-v1.29.4-x86_64-apple-darwin.tar.gz",
+      "checksum": "8F4B7D97EA6BF5ED1E9F4545CAB39886373B07766A00EDBEF10DE2F567D3762E",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/crate-ci/typos/v1.29.1/typos-v1.29.1-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "F4D9630C51BDF9398EBCD70BEE485302EB14B9E4DDF1F8101DEAB8D30621FFDA",
+      "id": "github_release/github.com/crate-ci/typos/v1.29.4/typos-v1.29.4-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "5EEBAFF491E2D503B225751E461BCBA849EFC19C6075F780B45887920A2E3506",
       "algorithm": "sha256"
     },
     {
