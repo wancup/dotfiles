@@ -49,3 +49,4 @@ packages:
   - name: denoland/deno@v2.1.4
   - name: opentofu/opentofu@v1.8.8
   - name: achristmascarl/rainfrog@v0.2.10
+  - name: jorgerojas26/lazysql@v0.3.3

@@ -44,8 +44,9 @@ abbr gpp "git pull --prune"
 abbr gs "git switch"
 abbr la lsd -a
 abbr ll lsd -la
-abbr lr lazydocker
 abbr lg lazygit
+abbr lq lazysql
+abbr lr lazydocker
 abbr n nvim
 abbr nn nvim_clipboard
 abbr o. "open ."
