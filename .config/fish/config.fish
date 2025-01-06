@@ -13,7 +13,7 @@ end
 
 # alias
 alias rm="rm -i"
-abbr au "aqua update-checksum"
+abbr au "aqua update-checksum --prune"
 abbr buu "brew upgrade && brew update"
 abbr diffs diff_stdout
 abbr dc "docker compose"
