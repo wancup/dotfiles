@@ -13,6 +13,8 @@ end
 
 # alias
 alias rm="rm -i"
+abbr agi "aqua generate -i"
+abbr aia "aqua install -a -l"
 abbr au "aqua update-checksum --prune"
 abbr buu "brew upgrade && brew update"
 abbr diffs diff_stdout
