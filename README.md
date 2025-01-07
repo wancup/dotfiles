@@ -10,8 +10,6 @@
 mkdir ~/.config
 sh install.sh
 sh brew.sh
-
-cd .config/aquaproj-aqua
 aqua i -a -l
 ```
 
