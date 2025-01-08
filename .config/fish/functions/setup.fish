@@ -29,7 +29,6 @@ OPTIONS:
         aqua completion fish >~/.config/fish/completions/aqua.fish
 
         echo "" >$cache_file
-        mise activate fish >>$cache_file
         zoxide init fish >>$cache_file
         fzf --fish >>$cache_file
     end
