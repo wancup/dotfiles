@@ -27,10 +27,12 @@ OPTIONS:
     if not test -f "$cache_file"; or set -ql _flag_force
         mkdir -p $cache_dir
         aqua completion fish >~/.config/fish/completions/aqua.fish
+        fnm completions --shell fish >~/.config/fish/completions/fnm.fish
 
         echo "" >$cache_file
         zoxide init fish >>$cache_file
         fzf --fish >>$cache_file
+        fnm env --use-on-cd --shell fish >>$cache_file
     end
 
     source $cache_file

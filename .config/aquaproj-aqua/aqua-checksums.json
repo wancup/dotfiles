@@ -41,6 +41,21 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/Schniz/fnm/v1.38.1/fnm-arm64.zip",
+      "checksum": "69FEDA9455931C26C84BE9F95F5E6F69E8B64686E68069FAB7CFC34756CD2944",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/Schniz/fnm/v1.38.1/fnm-linux.zip",
+      "checksum": "B69E5C9A05C1E17E4A7DE9A17DF14BA430D049F2591AF791A6F850A170296069",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/Schniz/fnm/v1.38.1/fnm-macos.zip",
+      "checksum": "80DEB3DB3DB45598F25AEA594C10936A7658F70826104FE37E33B4072A5E11F9",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/Wilfred/difftastic/0.62.0/difft-x86_64-apple-darwin.tar.gz",
       "checksum": "0177E4E507293C6676197E5FD3B13DD2295D57D7E6BFAB646C12CD08E0516E5D",
       "algorithm": "sha256"
