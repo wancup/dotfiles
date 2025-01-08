@@ -45,7 +45,7 @@ return {
 				Tests = {
 					prompt = "> /COPILOT_GENERATE\n\nこのコードのテストを生成してください。",
 				},
-				Diagnostic = {
+				FixDiagnostic = {
 					prompt = "このファイルについてのdiagnosticsの問題を解説し、修正したコード案を提示してください。",
 				},
 				Commit = {
