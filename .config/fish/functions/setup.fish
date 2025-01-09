@@ -16,7 +16,6 @@ OPTIONS:
     end
 
     if test "$(uname)" = Linux
-        ssh-agent fish
         eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
     end
     if test "$(uname)" = Darwin
