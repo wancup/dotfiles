@@ -51,3 +51,4 @@ packages:
   - name: jorgerojas26/lazysql@v0.3.3
   - name: Schniz/fnm@v1.38.1
   - name: golang/go@go1.23.4
+  - name: shenwei356/csvtk@v0.32.0

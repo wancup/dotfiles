@@ -611,6 +611,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/shenwei356/csvtk/v0.32.0/csvtk_darwin_amd64.tar.gz",
+      "checksum": "EE8A1A3F70F9F5D59411A6AA8525802FED7BCF749D09111E4D14DFD286C1E7A8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/shenwei356/csvtk/v0.32.0/csvtk_darwin_arm64.tar.gz",
+      "checksum": "19C66EE5B2FA71D64C5C0345C938D9C4CC4D3327F161C223894BCB5D5149D97D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/shenwei356/csvtk/v0.32.0/csvtk_linux_amd64.tar.gz",
+      "checksum": "CABFE4A3C20693C7EE2D0A49B305A5342039D174A2949A8F798C49CF8F086E76",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/shenwei356/csvtk/v0.32.0/csvtk_linux_arm64.tar.gz",
+      "checksum": "5D479EB4C87BF67B5DE5420B4EBB1DFD8A385EDA5129F03C05A5BA203C218D9D",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sxyazi/yazi/v0.4.2/yazi-aarch64-apple-darwin.zip",
       "checksum": "654D6EDE9310690D772947B82874F63E4DB14DE57DB5F355813E92FFF257420D",
       "algorithm": "sha256"
