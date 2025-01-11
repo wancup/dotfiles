@@ -28,3 +28,6 @@ git:
     --pretty=format:\"%C(auto)%H %d%nAuthor(%ad): %an <%ae>%nCommit(%cd): %cn <%ce>%n%n%w(0,4,4)%B%n\" \
     {{branchName}} --"
   overrideGpg: true
+
+os:
+  editPreset: "nvim-remote"
