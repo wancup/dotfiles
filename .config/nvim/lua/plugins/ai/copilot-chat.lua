@@ -52,6 +52,12 @@ return {
 					prompt = "#git:staged\n\nコミットメッセージを書いてください。メッセージはすべてをgitcommit形式のコードブロックとしてラップしてください。",
 				},
 			},
+			mappings = {
+				reset = {
+					normal = "<S-BS>",
+					insert = false,
+				},
+			},
 		},
 	},
 }
