@@ -3,7 +3,7 @@ return {
 		"akinsho/toggleterm.nvim",
 		version = "*",
 		keys = {
-			{ "<leader>T", "<cmd>ToggleTerm<cr>", desc = "Toggle[T]erm" },
+			{ "<leader>mm", "<cmd>ToggleTerm<cr>", desc = "ToggleTer[m]" },
 			{
 				"<leader>gg",
 				function()
@@ -28,6 +28,30 @@ return {
 					lazygit:toggle()
 				end,
 				desc = "[G]it [L]og Current File",
+			},
+			{
+				"<leader>mr",
+				function()
+					local Terminal = require("toggleterm.Terminal").Terminal
+					local lazydocker = Terminal:new({
+						cmd = "lazydocker",
+						direction = "float",
+					})
+					lazydocker:toggle()
+				end,
+				desc = "lazysql",
+			},
+			{
+				"<leader>mq",
+				function()
+					local Terminal = require("toggleterm.Terminal").Terminal
+					local lazysql = Terminal:new({
+						cmd = "lazysql",
+						direction = "float",
+					})
+					lazysql:toggle()
+				end,
+				desc = "lazysql",
 			},
 		},
 		opts = {
