@@ -138,6 +138,7 @@ map("i", "<C-n>", "<Down>")
 map("i", "<C-p>", "<Up>")
 map("i", "<C-f>", "<Right>")
 map("i", "<C-b>", "<Left>")
+map("i", "<C-l>", "<Esc>la")
 map("i", "<C-r><C-r>", "<C-r>0")
 
 -- Visual
