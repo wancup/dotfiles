@@ -4,6 +4,7 @@ return {
 		"akinsho/bufferline.nvim",
 		event = "VeryLazy",
 		keys = {
+			{ "<leader>b<leader>", "<Cmd>BufferLineGoToBuffer -1<CR>", desc = "Goto Last [B]uffer" },
 			{ "<leader>bp", "<Cmd>BufferLineCyclePrev<CR>", desc = "[B]uffer [P]rev" },
 			{ "<leader>bn", "<Cmd>BufferLineCycleNext<CR>", desc = "[B]uffer [N]ext" },
 			{ "<leader>bP", "<Cmd>BufferLinePick<CR>", desc = "[B]uffer [P]ick" },
