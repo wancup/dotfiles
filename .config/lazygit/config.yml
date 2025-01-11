@@ -29,5 +29,7 @@ git:
     {{branchName}} --"
   overrideGpg: true
 
+promptToReturnFromSubprocess: false
+
 os:
   editPreset: "nvim-remote"
