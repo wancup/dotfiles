@@ -5,9 +5,9 @@ return {
 		event = "VeryLazy",
 		keys = {
 			{ "<leader>b<leader>", "<Cmd>BufferLineGoToBuffer -1<CR>", desc = "Goto Last [B]uffer" },
-			{ "<leader>bp", "<Cmd>BufferLineCyclePrev<CR>", desc = "[B]uffer [P]rev" },
-			{ "<leader>bn", "<Cmd>BufferLineCycleNext<CR>", desc = "[B]uffer [N]ext" },
-			{ "<leader>bP", "<Cmd>BufferLinePick<CR>", desc = "[B]uffer [P]ick" },
+			{ "[b", "<Cmd>BufferLineCyclePrev<CR>", desc = "[B]uffer [P]rev" },
+			{ "]b", "<Cmd>BufferLineCycleNext<CR>", desc = "[B]uffer [N]ext" },
+			{ "<leader>bp", "<Cmd>BufferLinePick<CR>", desc = "[B]uffer [P]ick" },
 			{ "<leader>bc", "<Cmd>BufferLinePickClose<CR>", desc = "[B]uffer Pick [C]lose" },
 			{ "<leader>bt", "<Cmd>BufferLineTogglePin<CR>", desc = "[B]uffer [T]oggle Pin" },
 			{ "<leader>bH", "<Cmd>BufferLineCloseLeft<CR>", desc = "[B]uffer Close Left" },

@@ -57,22 +57,18 @@ return {
 				move = {
 					enable = true,
 					goto_next_start = {
-						["]b"] = "@block.outer",
 						["]="] = "@conditional.outer",
 						["]f"] = "@function.outer",
 					},
 					goto_next_end = {
-						["]B"] = "@block.outer",
 						["]+"] = "@conditional.outer",
 						["]F"] = "@function.outer",
 					},
 					goto_previous_start = {
-						["[b"] = "@block.outer",
 						["[="] = "@conditional.outer",
 						["[f"] = "@function.outer",
 					},
 					goto_previous_end = {
-						["[B"] = "@block.outer",
 						["[+"] = "@conditional.outer",
 						["[F"] = "@function.outer",
 					},
