@@ -58,4 +58,7 @@ vim.filetype.add({
 	filename = {
 		[".env"] = "conf",
 	},
+	pattern = {
+		[".*/%.github/workflows/.*%.y(a?)ml"] = "yaml.gha",
+	},
 })
