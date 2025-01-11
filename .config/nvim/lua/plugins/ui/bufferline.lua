@@ -20,13 +20,6 @@ return {
 			options = {
 				always_show_bufferline = false,
 				diagnostics = "nvim_lsp",
-				offsets = {
-					{
-						filetype = "neo-tree",
-						text = "Neo-tree",
-						highlight = "Directory",
-					},
-				},
 			},
 		},
 	},
