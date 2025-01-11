@@ -3,6 +3,7 @@ gui:
     selectedLineBgColor:
       - underline
   expandFocusedSidePanel: true
+  returnImmediately: true
 
 commandTemplates:
   dockerCompose: docker compose
