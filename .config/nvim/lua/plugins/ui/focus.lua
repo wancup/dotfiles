@@ -5,6 +5,7 @@ local disabled_fts = {
 	"neotest-summary",
 	"neotest-output",
 	"neotest-output-panel",
+	"toggleterm",
 }
 local disabled_bts = { "prompt", "popup" }
 
