@@ -13,70 +13,68 @@ local function get_available_formatter(bufnr, ...)
 end
 
 return {
-	{
-		"stevearc/conform.nvim",
-		event = { "BufWritePre" },
-		opts = {
-			formatters = {
-				dprint = {
-					require_cwd = true,
-				},
+	"stevearc/conform.nvim",
+	event = { "BufWritePre" },
+	opts = {
+		formatters = {
+			dprint = {
+				require_cwd = true,
 			},
-			formatters_by_ft = {
-				lua = { "stylua" },
-				fish = { "fish_indent" },
-				dart = { "dart_format" },
-				dockerfile = { "dprint" },
-				markdown = { "dprint", "prettierd", "prettier", stop_after_first = true },
-				yaml = { "dprint", "prettierd", "prettier", stop_after_first = true },
-				json = { "dprint", "prettierd", "prettier", stop_after_first = true },
-				jsonc = { "dprint", "prettierd", "prettier", stop_after_first = true },
-				css = { "dprint", "prettierd", "prettier", stop_after_first = true },
-				toml = { "dprint" },
-				javascript = function(bufnr)
-					return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
-				end,
-				javascriptreact = function(bufnr)
-					return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
-				end,
-				typescript = function(bufnr)
-					return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
-				end,
-				typescriptreact = function(bufnr)
-					return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
-				end,
-				rust = { "rustfmt" },
-				python = { "ruff_format", "ruff_fix" },
-				terraform = { "tofu_fmt" },
-				["terraform-vars"] = { "tofu_fmt" },
-			},
-			format_on_save = function()
-				if vim.g.format_on_save then
-					return { timeout_ms = 5000, lsp_fallback = false }
-				end
-			end,
 		},
-		init = function()
-			vim.g.format_on_save = true
-			vim.api.nvim_create_user_command("FormatOff", function()
-				vim.g.format_on_save = false
-			end, {
-				desc = "Disable format-on-save",
-				force = true,
-			})
-			vim.api.nvim_create_user_command("FormatOn", function()
-				vim.g.format_on_save = true
-			end, {
-				desc = "Enable format-on-save",
-				force = true,
-			})
-
-			vim.api.nvim_create_user_command("Format", function()
-				require("conform").format({ async = true })
-			end, {
-				desc = "Format by conform",
-				force = true,
-			})
+		formatters_by_ft = {
+			lua = { "stylua" },
+			fish = { "fish_indent" },
+			dart = { "dart_format" },
+			dockerfile = { "dprint" },
+			markdown = { "dprint", "prettierd", "prettier", stop_after_first = true },
+			yaml = { "dprint", "prettierd", "prettier", stop_after_first = true },
+			json = { "dprint", "prettierd", "prettier", stop_after_first = true },
+			jsonc = { "dprint", "prettierd", "prettier", stop_after_first = true },
+			css = { "dprint", "prettierd", "prettier", stop_after_first = true },
+			toml = { "dprint" },
+			javascript = function(bufnr)
+				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+			end,
+			javascriptreact = function(bufnr)
+				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+			end,
+			typescript = function(bufnr)
+				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+			end,
+			typescriptreact = function(bufnr)
+				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+			end,
+			rust = { "rustfmt" },
+			python = { "ruff_format", "ruff_fix" },
+			terraform = { "tofu_fmt" },
+			["terraform-vars"] = { "tofu_fmt" },
+		},
+		format_on_save = function()
+			if vim.g.format_on_save then
+				return { timeout_ms = 5000, lsp_fallback = false }
+			end
 		end,
 	},
+	init = function()
+		vim.g.format_on_save = true
+		vim.api.nvim_create_user_command("FormatOff", function()
+			vim.g.format_on_save = false
+		end, {
+			desc = "Disable format-on-save",
+			force = true,
+		})
+		vim.api.nvim_create_user_command("FormatOn", function()
+			vim.g.format_on_save = true
+		end, {
+			desc = "Enable format-on-save",
+			force = true,
+		})
+
+		vim.api.nvim_create_user_command("Format", function()
+			require("conform").format({ async = true })
+		end, {
+			desc = "Format by conform",
+			force = true,
+		})
+	end,
 }

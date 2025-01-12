@@ -1,7 +1,5 @@
 return {
-	{
-		"stevearc/overseer.nvim",
-		cmd = { "OverseerRun", "OverseerToggle" },
-		opts = {},
-	},
+	"stevearc/overseer.nvim",
+	cmd = { "OverseerRun", "OverseerToggle" },
+	opts = {},
 }

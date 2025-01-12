@@ -1,7 +1,5 @@
 return {
-	{
-		"nmac427/guess-indent.nvim",
-		event = { "BufReadPre", "BufNewFile" },
-		config = true,
-	},
+	"nmac427/guess-indent.nvim",
+	event = { "BufReadPre", "BufNewFile" },
+	config = true,
 }

@@ -1,11 +1,9 @@
--- Startup
 return {
-	{
-		"goolord/alpha-nvim",
-		event = { "VimEnter" },
-		config = function()
-			local dashboard = require("alpha.themes.dashboard")
-			local header_nvim = [[
+	"goolord/alpha-nvim",
+	event = { "VimEnter" },
+	config = function()
+		local dashboard = require("alpha.themes.dashboard")
+		local header_nvim = [[
 
 ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
 ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
@@ -15,7 +13,7 @@ return {
 ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
                                                   
       ]]
-			local header_hello = [[
+		local header_hello = [[
 
 ██╗  ██╗███████╗██╗     ██╗      ██████╗        ██╗    ██╗ ██████╗ ██████╗ ██╗     ██████╗ ██╗
 ██║  ██║██╔════╝██║     ██║     ██╔═══██╗       ██║    ██║██╔═══██╗██╔══██╗██║     ██╔══██╗██║
@@ -25,7 +23,7 @@ return {
 ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═╝     ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═════╝ ╚═╝
                                                                                               
       ]]
-			local header_kiss = [[
+		local header_kiss = [[
 
 ██╗  ██╗██╗███████╗███████╗
 ██║ ██╔╝██║██╔════╝██╔════╝
@@ -36,7 +34,7 @@ return {
                            
   Keep it simple, stupid.
       ]]
-			local header_etc = [[
+		local header_etc = [[
 
 ███████╗████████╗ ██████╗██████╗ 
 ██╔════╝╚══██╔══╝██╔════╝╚════██╗
@@ -47,7 +45,7 @@ return {
                                  
       Easier to change?
       ]]
-			local header_yagni = [[
+		local header_yagni = [[
 
 ██╗   ██╗ █████╗  ██████╗ ███╗   ██╗██╗
 ╚██╗ ██╔╝██╔══██╗██╔════╝ ████╗  ██║██║
@@ -59,7 +57,7 @@ return {
         You ain't gonna need it
       ]]
 
-			local header_zoi = [[
+		local header_zoi = [[
 
  ███████╗ ██████╗ ██╗
  ╚══███╔╝██╔═══██╗██║
@@ -70,34 +68,29 @@ return {
 
 Zero One Infinity rule
       ]]
-			local headers = { header_nvim, header_hello, header_kiss, header_etc, header_yagni, header_zoi }
-			math.randomseed(os.time())
-			local random = math.random(1, #headers)
+		local headers = { header_nvim, header_hello, header_kiss, header_etc, header_yagni, header_zoi }
+		math.randomseed(os.time())
+		local random = math.random(1, #headers)
 
-			dashboard.section.header.val = vim.split(headers[random], "\n")
-			dashboard.section.buttons.val = {
-				dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
-				dashboard.button("l", "  Load Session", ":lua require('persisted').load()<CR>"),
-				dashboard.button("e", "  Explore Files", ":Yazi<CR>"),
-				dashboard.button("f", "  Find Files", ":Telescope find_files<CR>"),
-				dashboard.button("r", "󰡦  Find Recent Files", ":Telescope oldfiles<CR>"),
-				dashboard.button("p", "  Plugins", ":Lazy<CR>"),
-				dashboard.button("q", "󰩈  Quit NVIM", ":qa<CR>"),
-			}
-			require("alpha").setup(dashboard.config)
+		dashboard.section.header.val = vim.split(headers[random], "\n")
+		dashboard.section.buttons.val = {
+			dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
+			dashboard.button("l", "  Load Session", ":lua require('persisted').load()<CR>"),
+			dashboard.button("e", "  Explore Files", ":Yazi<CR>"),
+			dashboard.button("f", "  Find Files", ":Telescope find_files<CR>"),
+			dashboard.button("r", "󰡦  Find Recent Files", ":Telescope oldfiles<CR>"),
+			dashboard.button("p", "  Plugins", ":Lazy<CR>"),
+			dashboard.button("q", "󰩈  Quit NVIM", ":qa<CR>"),
+		}
+		require("alpha").setup(dashboard.config)
 
-			vim.api.nvim_create_autocmd("User", {
-				pattern = "LazyVimStarted",
-				callback = function()
-					local stats = require("lazy").stats()
-					dashboard.section.footer.val = "Loaded "
-						.. stats.count
-						.. " plugins in "
-						.. stats.startuptime
-						.. "ms"
-					pcall(vim.cmd.AlphaRedraw)
-				end,
-			})
-		end,
-	},
+		vim.api.nvim_create_autocmd("User", {
+			pattern = "LazyVimStarted",
+			callback = function()
+				local stats = require("lazy").stats()
+				dashboard.section.footer.val = "Loaded " .. stats.count .. " plugins in " .. stats.startuptime .. "ms"
+				pcall(vim.cmd.AlphaRedraw)
+			end,
+		})
+	end,
 }
