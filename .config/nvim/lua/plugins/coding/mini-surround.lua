@@ -3,7 +3,15 @@ return {
 	{
 		"echasnovski/mini.surround",
 		version = false,
-		event = "VeryLazy",
+		keys = {
+			"<leader>sa",
+			"<leader>sd",
+			"<leader>sf",
+			"<leader>sF",
+			"<leader>sh",
+			"<leader>sr",
+			"<leader>sn",
+		},
 		opts = {
 			mappings = {
 				add = "<leader>sa", -- Add surrounding in Normal and Visual modes
