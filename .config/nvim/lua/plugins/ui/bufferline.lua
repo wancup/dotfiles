@@ -2,7 +2,7 @@
 return {
 	{
 		"akinsho/bufferline.nvim",
-		event = "VeryLazy",
+		event = { "BufReadPost", "BufNewFile" },
 		keys = {
 			{ "<leader>b<leader>", "<Cmd>BufferLineGoToBuffer -1<CR>", desc = "Goto Last [B]uffer" },
 			{ "[b", "<Cmd>BufferLineCyclePrev<CR>", desc = "[B]uffer [P]rev" },
