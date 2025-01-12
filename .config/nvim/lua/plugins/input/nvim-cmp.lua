@@ -12,6 +12,7 @@ return {
 		dependencies = {
 			"hrsh7th/cmp-nvim-lsp",
 			"hrsh7th/cmp-cmdline",
+			"hrsh7th/cmp-nvim-lsp-signature-help",
 			"L3MON4D3/LuaSnip",
 			"saadparwaiz1/cmp_luasnip",
 			"onsails/lspkind.nvim",
@@ -46,6 +47,7 @@ return {
 				sources = {
 					{ name = "luasnip" },
 					{ name = "nvim_lsp" },
+					{ name = "nvim_lsp_signature_help" },
 				},
 				completion = { completeopt = "menu,menuone,noinsert" },
 				snippet = {
