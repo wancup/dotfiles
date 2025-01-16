@@ -96,23 +96,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.10/rainfrog-v0.2.10-aarch64-apple-darwin.tar.gz",
-      "checksum": "46E6049CD55EE972A4A3D361FBE292D41F0886A64824398E902A58101664C9AA",
+      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.11/rainfrog-v0.2.11-aarch64-apple-darwin.tar.gz",
+      "checksum": "22854FBACD5249214274CD404495A3C55F75407E0B5647E203C3A8BE586FF9E7",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.10/rainfrog-v0.2.10-aarch64-unknown-linux-gnu.tar.gz",
-      "checksum": "2E6B1513A83AC00034B344FC9BBDC553EAE6577B7C8DCC57398B3C53982B1E8C",
+      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.11/rainfrog-v0.2.11-aarch64-unknown-linux-gnu.tar.gz",
+      "checksum": "8C7B4AB1A0AA2C78966E7FBB0717968BD5A4F43096C7AF38D07F3AAA6CB9D3B2",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.10/rainfrog-v0.2.10-x86_64-apple-darwin.tar.gz",
-      "checksum": "1B06DA20CCE2D1B3460690A0E40FFA08A9C1E9DB187679C8C772EF0327401000",
+      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.11/rainfrog-v0.2.11-x86_64-apple-darwin.tar.gz",
+      "checksum": "65175DF02A9592C335E7DFB139E8EDB59BB1D09696B03E43A95A5D9AEC3C5BE9",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.10/rainfrog-v0.2.10-x86_64-unknown-linux-gnu.tar.gz",
-      "checksum": "1DF62C4FD77C38BD038DB09364EC92A19092765922916346ADC35D382A8FAAA5",
+      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.11/rainfrog-v0.2.11-x86_64-unknown-linux-gnu.tar.gz",
+      "checksum": "B5934126AD123662B9CA93294C756B875718806D8E0E0ED76F411C838ED78438",
       "algorithm": "sha256"
     },
     {
