@@ -96,26 +96,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.11/rainfrog-v0.2.11-aarch64-apple-darwin.tar.gz",
-      "checksum": "22854FBACD5249214274CD404495A3C55F75407E0B5647E203C3A8BE586FF9E7",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.11/rainfrog-v0.2.11-aarch64-unknown-linux-gnu.tar.gz",
-      "checksum": "8C7B4AB1A0AA2C78966E7FBB0717968BD5A4F43096C7AF38D07F3AAA6CB9D3B2",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.11/rainfrog-v0.2.11-x86_64-apple-darwin.tar.gz",
-      "checksum": "65175DF02A9592C335E7DFB139E8EDB59BB1D09696B03E43A95A5D9AEC3C5BE9",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/achristmascarl/rainfrog/v0.2.11/rainfrog-v0.2.11-x86_64-unknown-linux-gnu.tar.gz",
-      "checksum": "B5934126AD123662B9CA93294C756B875718806D8E0E0ED76F411C838ED78438",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/ajeetdsouza/zoxide/v0.9.6/zoxide-0.9.6-aarch64-apple-darwin.tar.gz",
       "checksum": "B0B6DDB238DFF0CD787C1210F69AB1179544F56C165CFF112131DB78625EA6C4",
       "algorithm": "sha256"
