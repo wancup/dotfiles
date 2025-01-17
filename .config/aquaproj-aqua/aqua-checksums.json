@@ -206,13 +206,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dalance/procs/v0.14.8/procs-v0.14.8-x86_64-linux.zip",
-      "checksum": "F573C1762922A107E7C18F7AE6ECA2447DDE22BF1A580C2612B0C5FCEF495F11",
+      "id": "github_release/github.com/dalance/procs/v0.14.9/procs-v0.14.9-x86_64-linux.zip",
+      "checksum": "B3D1BAAF8BEADF6E97D0F9FD9847447800F067601C95C64B5456BDDAC72AA558",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dalance/procs/v0.14.8/procs-v0.14.8-x86_64-mac.zip",
-      "checksum": "B9C3C6B59B4B7613908665DA9E2765439F38D13E9AAD9674A00C61FBAFEBC4E0",
+      "id": "github_release/github.com/dalance/procs/v0.14.9/procs-v0.14.9-x86_64-mac.zip",
+      "checksum": "B9901FCA0E2C5D3DA890A46D3F53E84CC48D5F07C676D676594A93145FEE3721",
       "algorithm": "sha256"
     },
     {
