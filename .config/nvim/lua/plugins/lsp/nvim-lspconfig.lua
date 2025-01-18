@@ -14,13 +14,7 @@ return {
 	config = function()
 		vim.diagnostic.config({ underline = true, severity_sort = true })
 
-		local _on_attach = function(server, _, bufnr)
-			if server == "eslint" then
-				vim.api.nvim_create_autocmd("BufWritePre", {
-					buffer = bufnr,
-					command = "EslintFixAll",
-				})
-			end
+		local _on_attach = function(_, _, bufnr)
 			vim.api.nvim_buf_create_user_command(bufnr, "FormatByLsp", function(_)
 				vim.lsp.buf.format()
 			end, {})
@@ -67,7 +61,6 @@ return {
 				"html",
 				"cssls",
 				"vtsls",
-				"eslint",
 				"rust_analyzer",
 			},
 		})
@@ -91,6 +84,18 @@ return {
 				})
 			end,
 		})
+
+		-- Install Non-lsp deps
+		local registry = require("mason-registry")
+		for _, pkg_name in ipairs({ "eslint_d" }) do
+			local ok, pkg = pcall(registry.get_package, pkg_name)
+			if ok then
+				if not pkg:is_installed() then
+					vim.notify("Missing [" .. pkg.name .. "], installing...", vim.log.levels.INFO)
+					pkg:install()
+				end
+			end
+		end
 
 		-- setup LSPs installed by aqua
 		require("lspconfig").efm.setup({
