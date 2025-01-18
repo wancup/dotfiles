@@ -20,6 +20,7 @@ return {
 		"CopilotChatOptimize",
 		"CopilotChatDocs",
 		"CopilotChatTests",
+		"CopilotChatExplainDiagnostic",
 		"CopilotChatFixDiagnostic",
 		"CopilotChatCommit",
 		"CopilotChatCommitStaged",
@@ -44,8 +45,11 @@ return {
 			Tests = {
 				prompt = "> /COPILOT_GENERATE\n\nこのコードのテストを生成してください。",
 			},
+			ExplainDiagnostic = {
+				prompt = "> /COPILOT_EXPLAIN\n\nこのファイルについてのdiagnosticsの問題を解説してください。",
+			},
 			FixDiagnostic = {
-				prompt = "> /COPILOT_GENERATE\n\nこのファイルについてのdiagnosticsの問題を解説し、修正したコード案を提示してください。",
+				prompt = "> /COPILOT_GENERATE\n\nこのファイルについてのdiagnosticsの問題を修正したコード案を提示してください。",
 			},
 			Commit = {
 				prompt = "#git:staged\n\nコミットメッセージを書いてください。メッセージはすべてをgitcommit形式のコードブロックとしてラップしてください。",
