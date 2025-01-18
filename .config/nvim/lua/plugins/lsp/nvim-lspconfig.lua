@@ -97,14 +97,6 @@ return {
 			end
 		end
 
-		-- setup LSPs installed by aqua
-		require("lspconfig").efm.setup({
-			init_options = {
-				documentFormatting = true,
-				documentRangeFormatting = true,
-				codeAction = true,
-			},
-		})
 		require("lspconfig").dprint.setup({})
 	end,
 }
