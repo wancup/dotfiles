@@ -60,7 +60,6 @@ return {
 				"taplo",
 				"html",
 				"cssls",
-				"vtsls",
 				"rust_analyzer",
 			},
 		})
