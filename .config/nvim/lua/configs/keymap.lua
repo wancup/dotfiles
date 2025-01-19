@@ -84,19 +84,6 @@ map({ "n", "x" }, "<leader>d", function()
 	vim.diagnostic.open_float({ source = true })
 end, { desc = "[D]iagnostics" })
 
-map({ "n", "x" }, "[c", git.prev_conflict, { desc = "Goto Previous Conflict" })
-map({ "n", "x" }, "]c", git.next_conflict, { desc = "Goto Next Conflict" })
-
-map({ "n", "x" }, "[d", function()
-	vim.diagnostic.goto_prev({ float = true })
-end, { desc = "Goto Previous Diagnostic" })
-map({ "n", "x" }, "]d", function()
-	vim.diagnostic.goto_next({ float = true })
-end, { desc = "Goto Next Diagnostic" })
-
-map({ "n", "x" }, "[q", "<cmd>cprev<cr>", { desc = "Goto Previous Quickfix" })
-map({ "n", "x" }, "]q", "<cmd>cnext<cr>", { desc = "Goto Next Quickfix" })
-
 map({ "n", "x" }, "<leader>a", vim.lsp.buf.code_action, { desc = "Code [A]ction" })
 map({ "n", "x" }, "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[N]ame" })
 

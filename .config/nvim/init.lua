@@ -27,4 +27,5 @@ require("lazy").setup({
 	},
 })
 require("configs.keymap")
+require("configs.goto")
 require("configs.autocmd")
