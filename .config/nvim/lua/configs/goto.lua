@@ -15,7 +15,7 @@ local function next_diagnostic()
 end
 
 ---@param reverse boolean
-local function goto(reverse)
+local function do_motion(reverse)
 	local current_motion = vim.g.current_motion_type
 	if current_motion == nil then
 		return
@@ -54,14 +54,14 @@ end
 ---@param identifyer string | nil
 local function set_and_goto(identifyer)
 	vim.g.current_motion_type = identifyer
-	goto(false)
+	do_motion(false)
 end
 
 map("<C-,>", function()
-	goto(true)
+	do_motion(true)
 end, "Repeat prev motion")
 map("<C-;>", function()
-	goto(false)
+	do_motion(false)
 end, "Repeat prev reversed motion")
 
 map("[c", function()
