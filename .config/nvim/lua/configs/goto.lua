@@ -29,6 +29,10 @@ local function do_motion(reverse)
 			prev_diagnostic()
 		elseif current_motion == "D" then
 			next_diagnostic()
+		elseif current_motion == "h" then
+			require("gitsigns").nav_hunk("prev")
+		elseif current_motion == "H" then
+			require("gitsigns").nav_hunk("next")
 		elseif current_motion == "q" then
 			vim.cmd("cprev")
 		elseif current_motion == "Q" then
@@ -43,6 +47,10 @@ local function do_motion(reverse)
 			next_diagnostic()
 		elseif current_motion == "D" then
 			prev_diagnostic()
+		elseif current_motion == "h" then
+			require("gitsigns").nav_hunk("next")
+		elseif current_motion == "H" then
+			require("gitsigns").nav_hunk("prev")
 		elseif current_motion == "q" then
 			vim.cmd("cnext")
 		elseif current_motion == "Q" then
@@ -77,6 +85,13 @@ end, "Goto Previous Diagnostic")
 map("]d", function()
 	set_and_goto("d")
 end, "Goto Next Diagnostic")
+
+map("[h", function()
+	set_and_goto("H")
+end, "Goto Previous Hunk")
+map("]h", function()
+	set_and_goto("h")
+end, "Goto Next Hunk")
 
 map("[q", function()
 	set_and_goto("Q")
