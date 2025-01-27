@@ -246,8 +246,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dprint/dprint/0.48.0/dprint-x86_64-unknown-linux-gnu.zip",
-      "checksum": "746C7134DE53329A01934F20241ACC7B6BE95B95F8A197689A465ECF58E13F1B",
+      "id": "github_release/github.com/dprint/dprint/0.48.0/dprint-x86_64-unknown-linux-musl.zip",
+      "checksum": "49E4B31F3A3606A4A796180104B6E2AFFBF701F1D7CCA5A8917424CCAC907442",
       "algorithm": "sha256"
     },
     {
@@ -626,8 +626,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sxyazi/yazi/v0.4.2/yazi-aarch64-unknown-linux-gnu.zip",
-      "checksum": "21F2D73F48C1A167F8E6BFE21920B7049DE35CE1A9D4BBA79754F398C7115EEB",
+      "id": "github_release/github.com/sxyazi/yazi/v0.4.2/yazi-aarch64-unknown-linux-musl.zip",
+      "checksum": "51F40AA2901820705ED6EED8F0E218C5AD1B3314660F092E3E5E599F5BF6849D",
       "algorithm": "sha256"
     },
     {
@@ -636,8 +636,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sxyazi/yazi/v0.4.2/yazi-x86_64-unknown-linux-gnu.zip",
-      "checksum": "059C8875C971B1D214813E3203FBF3C9995DE2B150EF774E55D61EAC65F45F07",
+      "id": "github_release/github.com/sxyazi/yazi/v0.4.2/yazi-x86_64-unknown-linux-musl.zip",
+      "checksum": "378BD0AF3528479CBE79CB700B50AAEEDEB6DCAD1F0AD04083DF0212F22D1E20",
       "algorithm": "sha256"
     },
     {
@@ -701,8 +701,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.297.0/registry.yaml",
-      "checksum": "C4F51854EEEFC6BE7158EA8BA140702D871B01999692C708DBA05AD4A53E0D6B041CAA620DC8252A522B2F296A4BCC481350095C6845DA5B621A1B9219C6B7DE",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.300.2/registry.yaml",
+      "checksum": "3B7046B92736A250F29B32D37A953B9AFD19AAF21F566A144D21705298E3189D353B238083F9FDB1A687A737408C7FEE43E9273A443EFF37131211D474251590",
       "algorithm": "sha512"
     }
   ]
