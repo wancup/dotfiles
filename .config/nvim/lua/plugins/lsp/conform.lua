@@ -20,6 +20,12 @@ return {
 			dprint = {
 				require_cwd = true,
 			},
+			prettier = {
+				require_cwd = true,
+			},
+			prettierd = {
+				require_cwd = true,
+			},
 		},
 		formatters_by_ft = {
 			lua = { "stylua" },
