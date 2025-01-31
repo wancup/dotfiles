@@ -37,6 +37,10 @@ local function do_motion(reverse)
 			vim.cmd("cprev")
 		elseif current_motion == "Q" then
 			vim.cmd("cnext")
+		elseif current_motion == "t" then
+			require("todo-comments").jump_prev()
+		elseif current_motion == "T" then
+			require("todo-comments").jump_next()
 		end
 	else
 		if current_motion == "c" then
@@ -55,6 +59,10 @@ local function do_motion(reverse)
 			vim.cmd("cnext")
 		elseif current_motion == "Q" then
 			vim.cmd("cprev")
+		elseif current_motion == "t" then
+			require("todo-comments").jump_next()
+		elseif current_motion == "T" then
+			require("todo-comments").jump_prev()
 		end
 	end
 end
@@ -99,3 +107,10 @@ end, "Goto Previous Quickfix")
 map("]q", function()
 	set_and_goto("q")
 end, "Goto Next Quickfix")
+
+map("[t", function()
+	set_and_goto("T")
+end, "Goto Previous Todo")
+map("]t", function()
+	set_and_goto("t")
+end, "Goto Next Todo")
