@@ -76,8 +76,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-x86_64-unknown-linux-gnu.tar.gz",
-      "checksum": "C8C5C4AB9E1FF47E745DE70F4AF3214078657399FA7A0DA0B5F209D780E49978",
+      "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "331E77046935D655DCE8D97EBB943FCC7E9684586DADF3D197F3DF5E760CD31B",
       "algorithm": "sha256"
     },
     {
@@ -91,8 +91,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/YS-L/csvlens/v0.11.0/csvlens-x86_64-unknown-linux-gnu.tar.xz",
-      "checksum": "3BD99DC7C1CDB08DA99B536ACD82C49F4E82C3C14D4CCFAEB4CB11E569EA6207",
+      "id": "github_release/github.com/YS-L/csvlens/v0.11.0/csvlens-x86_64-unknown-linux-musl.tar.xz",
+      "checksum": "4C13C51850D067772ED2171F1F981A1D876412A2BC6EF6ACC446EC5CA474ECC1",
       "algorithm": "sha256"
     },
     {
@@ -701,9 +701,9 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.300.2/registry.yaml",
-      "checksum": "3B7046B92736A250F29B32D37A953B9AFD19AAF21F566A144D21705298E3189D353B238083F9FDB1A687A737408C7FEE43E9273A443EFF37131211D474251590",
-      "algorithm": "sha512"
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.306.0/registry.yaml",
+      "checksum": "D1CCC6E86A37B745675CAD14F4969D05D4C4C7CA59BF07B094E9E09585AA24E3",
+      "algorithm": "sha256"
     }
   ]
 }
