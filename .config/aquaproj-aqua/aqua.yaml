@@ -51,3 +51,4 @@ packages:
   - name: Schniz/fnm@v1.38.1
   - name: golang/go@go1.23.5
   - name: shenwei356/csvtk@v0.32.0
+  - name: pnpm/pnpm@v10.1.0
