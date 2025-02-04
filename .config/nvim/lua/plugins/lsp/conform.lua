@@ -38,6 +38,9 @@ return {
 			jsonc = { "dprint", "prettierd", "prettier", stop_after_first = true },
 			css = { "dprint", "prettierd", "prettier", stop_after_first = true },
 			toml = { "dprint" },
+			astro = function(bufnr)
+				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+			end,
 			javascript = function(bufnr)
 				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
 			end,

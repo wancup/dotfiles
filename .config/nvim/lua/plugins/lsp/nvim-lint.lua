@@ -7,6 +7,7 @@ return {
 			fish = { "fish" },
 			markdown = { "markdownlint" },
 			dockerfile = { "hadolint" },
+			astro = { "eslint_d" },
 			javascript = { "eslint_d" },
 			javascriptreact = { "eslint_d" },
 			typescript = { "eslint_d" },
