@@ -58,6 +58,7 @@ end
 
 -- Normal and Visual
 map({ "n", "x" }, "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
+map({ "n", "x" }, "M", "`m")
 
 map({ "n", "x" }, "gK", vim.lsp.buf.signature_help, { desc = "Signature Help" })
 
