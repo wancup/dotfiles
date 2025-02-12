@@ -49,6 +49,6 @@ packages:
   - name: opentofu/opentofu@v1.9.0
   - name: jorgerojas26/lazysql@v0.3.4
   - name: Schniz/fnm@v1.38.1
-  - name: golang/go@go1.23.6
+  - name: golang/go@go1.24.0
   - name: shenwei356/csvtk@v0.32.0
   - name: pnpm/pnpm@v10.3.0
