@@ -18,7 +18,7 @@ jobs:
           ref: ${{ github.head_ref }}
       - uses: aquaproj/aqua-installer@f13c5d2f0357708d85477aabe50fd3f725528745
         with:
-          aqua_version: v2.44.0
+          aqua_version: v2.44.1
           working_directory: .config/aquaproj-aqua
         env:
           AQUA_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
