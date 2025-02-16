@@ -416,6 +416,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-aarch64-apple-darwin.tar.gz",
+      "checksum": "D39006922BABB1A96806E8F3F3BC197276C807A625617091C43836D8924A0C07",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-aarch64-unknown-linux-musl.tar.gz",
       "checksum": "DD84C4ADD323288FF3DC072955E4FF2364A074A68BF9F1A6FB6556AD310C723B",
       "algorithm": "sha256"
@@ -726,9 +731,9 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.306.0/registry.yaml",
-      "checksum": "D1CCC6E86A37B745675CAD14F4969D05D4C4C7CA59BF07B094E9E09585AA24E3",
-      "algorithm": "sha256"
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.314.0/registry.yaml",
+      "checksum": "03DCD1F2CCE5509AF01F997387857B257FF935085B6993FF41D9515B2EA5398709D6EF0533AEEF3196A6E7EDCB00F4CB68582B628D2AB05185170F0646071EB7",
+      "algorithm": "sha512"
     }
   ]
 }
