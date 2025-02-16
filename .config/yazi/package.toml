@@ -8,5 +8,10 @@ use = "yazi-rs/plugins:jump-to-char"
 rev = "beb586a"
 hash = "af11685de39c366ec1137fcbccacdbff"
 
+[[plugin.deps]]
+use = "yazi-rs/plugins:max-preview"
+rev = "beb586a"
+hash = "15b2ff7f6563c14d5b2e93b3e9da35de"
+
 [flavor]
 deps = []
