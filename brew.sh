@@ -6,6 +6,7 @@ brew install fish
 
 brew install markdownlint-cli
 brew install imagemagick
+brew install gitmoji
 
 if [ "$(uname)" = 'Darwin' ]; then
   brew install wezterm
