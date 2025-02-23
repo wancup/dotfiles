@@ -81,18 +81,18 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/YS-L/csvlens/v0.11.0/csvlens-aarch64-apple-darwin.tar.xz",
-      "checksum": "F9A0E7697F9D83CFF0E26409F38233A252AF878B2660737B5476ECE5C487FB3E",
+      "id": "github_release/github.com/YS-L/csvlens/v0.12.0/csvlens-aarch64-apple-darwin.tar.xz",
+      "checksum": "E115DD199E3ED901C5B0FEFDE1B3D7AA18C472F27DC17B2A5EC50552A3D5E6CD",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/YS-L/csvlens/v0.11.0/csvlens-x86_64-apple-darwin.tar.xz",
-      "checksum": "D0F7D252E9A4FD92029D5C6297238F49AFEA752454C88329F8E87A48C9CF50DA",
+      "id": "github_release/github.com/YS-L/csvlens/v0.12.0/csvlens-x86_64-apple-darwin.tar.xz",
+      "checksum": "9A8EF5954DA4F307FCADD1B2214BBD250D99F00B7DD48E77836B44E18CF10C5F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/YS-L/csvlens/v0.11.0/csvlens-x86_64-unknown-linux-musl.tar.xz",
-      "checksum": "4C13C51850D067772ED2171F1F981A1D876412A2BC6EF6ACC446EC5CA474ECC1",
+      "id": "github_release/github.com/YS-L/csvlens/v0.12.0/csvlens-x86_64-unknown-linux-musl.tar.xz",
+      "checksum": "C952CAEFEBCEAF1F40239BCE2D52296A1626CCA54C973C51C47A58C9BDDF0B45",
       "algorithm": "sha256"
     },
     {
