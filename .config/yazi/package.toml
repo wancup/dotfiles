@@ -9,9 +9,9 @@ rev = "5186af7"
 hash = "af11685de39c366ec1137fcbccacdbff"
 
 [[plugin.deps]]
-use = "yazi-rs/plugins:max-preview"
+use = "yazi-rs/plugins:toggle-pane"
 rev = "5186af7"
-hash = "a8025f2bb311e869069364fba01abffc"
+hash = "2391805528b59d562a51f9b33f4a8236"
 
 [flavor]
 deps = []
