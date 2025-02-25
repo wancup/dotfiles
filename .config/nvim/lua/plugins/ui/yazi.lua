@@ -31,8 +31,7 @@ return {
 			end,
 		},
 		future_features = {
-			ya_emit_reveal = true,
-			ya_emit_open = true,
+			process_events_live = false,
 		},
 	},
 }
