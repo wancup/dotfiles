@@ -701,23 +701,23 @@
       "algorithm": "sha512"
     },
     {
-      "id": "github_release/github.com/zaghaghi/openapi-tui/0.10.0/openapi-tui-0.10.0-linux-arm64.tar.gz",
-      "checksum": "6A2F610DCABF8AD4FB7E99DA4855FE8D7F6BEDB33BD9A210FCF2DAC707660711",
+      "id": "github_release/github.com/zaghaghi/openapi-tui/0.10.2/openapi-tui-0.10.2-linux-arm64.tar.gz",
+      "checksum": "AEBA3C08E0EEA3683EC1998F4A2A4B7B9F75C7A7A19D8C85E71CB498875EF493",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/zaghaghi/openapi-tui/0.10.0/openapi-tui-0.10.0-linux-x86_64.tar.gz",
-      "checksum": "1049E12892DEBC8AE5727B35C339CEA30E2C93939B12AC1B5B570088C40FBCC6",
+      "id": "github_release/github.com/zaghaghi/openapi-tui/0.10.2/openapi-tui-0.10.2-linux-x86_64.tar.gz",
+      "checksum": "433D95B763E72A11EA5E676B33624E6C8B3DCDD5C997737BEF59D51AF27BBF46",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/zaghaghi/openapi-tui/0.10.0/openapi-tui-0.10.0-macos-arm64.tar.gz",
-      "checksum": "B1356AC39AF2F4CC95E5B26CA0E2E29B7A985217F04606A181D6E39D0427C93F",
+      "id": "github_release/github.com/zaghaghi/openapi-tui/0.10.2/openapi-tui-0.10.2-macos-arm64.tar.gz",
+      "checksum": "5C6B525C6CD23C02D5DB4A3BA8FCAEBEBD5AE45D35CDC4554E7CD5E7E72E72FF",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/zaghaghi/openapi-tui/0.10.0/openapi-tui-0.10.0-macos-x86_64.tar.gz",
-      "checksum": "45A7C555D7742E1E35AA2220D6BBD97FC7A73745BCF1D16A16ACA14A14BD3F1D",
+      "id": "github_release/github.com/zaghaghi/openapi-tui/0.10.2/openapi-tui-0.10.2-macos-x86_64.tar.gz",
+      "checksum": "ACED4134549CBD6861D660B967D3122C631369C6299A8D74CBCB366DB37CF011",
       "algorithm": "sha256"
     },
     {
