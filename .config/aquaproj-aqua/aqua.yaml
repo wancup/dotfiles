@@ -36,7 +36,7 @@ packages:
   - name: watchexec/watchexec@v2.3.0
   - name: zaghaghi/openapi-tui@0.10.2
   - name: Wilfred/difftastic@0.63.0
-  - name: dprint/dprint@0.49.0
+  - name: dprint/dprint@0.49.1
   - name: astral-sh/ruff@0.11.0
   - name: XAMPPRocky/tokei@v12.1.2
   - name: hadolint/hadolint@v2.12.0
