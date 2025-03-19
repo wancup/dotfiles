@@ -7,16 +7,22 @@ jobs:
   checks:
     runs-on: ubuntu-latest
     permissions: read-all
+    env:
+      AQUA_GLOBAL_CONFIG: .config/aquaproj-aqua/aqua.yaml
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Format Lua
-        uses: JohnnyMorganz/stylua-action@v4
+      - uses: aquaproj/aqua-installer@e2d0136abcf70b7a2f6f505720640750557c4b33
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          version: 0.20.0
-          args: --check --allow-hidden .
+          aqua_version: v2.45.1
+          aqua_opts: "-a -l"
+        env:
+          AQUA_CONFIG: .config/aquaproj-aqua/aqua.yaml
+          AQUA_LOG_LEVEL: info
+
+      - name: Format Lua
+        run: stylua --check --allow-hidden .
 
       - name: Format Others
-        uses: dprint/check@v2.2
+        run: dprint check
