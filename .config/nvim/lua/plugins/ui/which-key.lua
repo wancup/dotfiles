@@ -22,8 +22,6 @@ return {
 				{ "<leader>l", group = "List" },
 				{ "<leader>n", group = "Noice" },
 				{ "<leader>N", group = "Node.js" },
-				{ "<leader>r", group = "Replace" },
-				{ "<leader>rb", group = "ReplaceMultiBuffer" },
 				{ "<leader>s", group = "Surround" },
 				{ "<leader>S", group = "Session" },
 				{ "<leader>t", group = "Test" },
