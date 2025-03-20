@@ -11,7 +11,7 @@ jobs:
       AQUA_GLOBAL_CONFIG: .config/aquaproj-aqua/aqua.yaml
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
       - uses: aquaproj/aqua-installer@e2d0136abcf70b7a2f6f505720640750557c4b33
         with:
