@@ -16,7 +16,7 @@ return {
 			["yaml.gha"] = { "actionlint" },
 		}
 
-		lint.linters.cspell = require("lint.util").wrap(lint.linters.typos, function(diagnostic)
+		lint.linters.typos = require("lint.util").wrap(lint.linters.typos, function(diagnostic)
 			diagnostic.severity = vim.diagnostic.severity.INFO
 			return diagnostic
 		end)
