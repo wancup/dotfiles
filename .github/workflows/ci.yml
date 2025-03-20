@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: aquaproj/aqua-installer@e2d0136abcf70b7a2f6f505720640750557c4b33
+      - uses: aquaproj/aqua-installer@91f637bb27008ede355b872e1b7bb6e959ad4713
         with:
           aqua_version: v2.46.0
           aqua_opts: "-a -l"
