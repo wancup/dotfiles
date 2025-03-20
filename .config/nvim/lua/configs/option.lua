@@ -7,7 +7,7 @@ local opt = vim.opt
 opt.confirm = true
 opt.mouse = "a"
 opt.undofile = true
-opt.timeoutlen = 300
+opt.timeoutlen = 5000
 opt.shell = "fish"
 
 -- UI

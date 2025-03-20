@@ -8,7 +8,7 @@ opt.confirm = true
 opt.mouse = "a"
 opt.spell = true
 opt.spelllang = "en_us"
-opt.timeoutlen = 300
+opt.timeoutlen = 5000
 opt.shell = "fish"
 
 -- UI
