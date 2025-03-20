@@ -17,7 +17,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - uses: aquaproj/aqua-installer@e2d0136abcf70b7a2f6f505720640750557c4b33
+      - uses: aquaproj/aqua-installer@e2d0136abcf70b7a2f6f505720640750557c4b33 # v3
         with:
           aqua_version: v2.46.0
           working_directory: .config/aquaproj-aqua
