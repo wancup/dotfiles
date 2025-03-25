@@ -136,6 +136,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/astral-sh/uv/0.6.9/uv-aarch64-apple-darwin.tar.gz",
+      "checksum": "A6841484AFFB3C123313DF98BCD8932208BDFB3D9D90A72AEC274E8A696CAA88",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/uv/0.6.9/uv-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "4DE15999C38A0E57A3708ECCB1FE3295B3D1C0C69410029B16E5E42452D232A9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/uv/0.6.9/uv-x86_64-apple-darwin.tar.gz",
+      "checksum": "96EB2BFBE2BB3B74836AA5D6F563AE21BBB9E071148ADFDA1E67000735A020A3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/astral-sh/uv/0.6.9/uv-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "2B2914DA53F9412A1AAD7457CEE424680DA037E6A49C378365C3B5FF5EF0B926",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/bensadeh/tailspin/4.0.0/tailspin-aarch64-apple-darwin.tar.gz",
       "checksum": "317C5ED427A6371DFF81323FB140E905F5F2714C3D74D0BBF9BF5A517284F84D",
       "algorithm": "sha256"
