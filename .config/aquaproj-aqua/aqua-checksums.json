@@ -156,23 +156,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bensadeh/tailspin/4.0.0/tailspin-aarch64-apple-darwin.tar.gz",
-      "checksum": "317C5ED427A6371DFF81323FB140E905F5F2714C3D74D0BBF9BF5A517284F84D",
+      "id": "github_release/github.com/bensadeh/tailspin/5.0.0/tailspin-aarch64-apple-darwin.tar.gz",
+      "checksum": "4AE9CC099B49E79668BF31583425653FD6649F4C1DB1B54D41D40A314E779518",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bensadeh/tailspin/4.0.0/tailspin-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "541C6808B51C64EA9F4C6EBA4F89706B71201BFB7EB115EBDDF689E4B8A4E283",
+      "id": "github_release/github.com/bensadeh/tailspin/5.0.0/tailspin-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "163EA875C1911002BAA9ADF34EAAE37A9D8F2ACA1BC0344F91289BEA9CD1BCEB",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bensadeh/tailspin/4.0.0/tailspin-x86_64-apple-darwin.tar.gz",
-      "checksum": "69628E002A53A7AA418871898664C113839AA20BD8D06EB4386D0C9434BA933D",
+      "id": "github_release/github.com/bensadeh/tailspin/5.0.0/tailspin-x86_64-apple-darwin.tar.gz",
+      "checksum": "7343D426BE9F87181BB84165CEBB4136408B7225262977A12E75FFF44AF362A8",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bensadeh/tailspin/4.0.0/tailspin-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "FE5A4C041474C97D221BDCE4F85DAADAF02141C3137FF9808D9FCF0BAFE16D1A",
+      "id": "github_release/github.com/bensadeh/tailspin/5.0.0/tailspin-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "FEF9E8DDF73E0B7E0DBF9B2C4164D3C67717B32A221B7A6490D94B9B3B31FEC9",
       "algorithm": "sha256"
     },
     {
@@ -759,11 +759,6 @@
       "id": "http/golang.org/dl/go1.24.1.linux-arm64.tar.gz",
       "checksum": "8DF5750FFC0281017FB6070FBA450F5D22B600A02081DCEEF47966FFAF36A3AF",
       "algorithm": "sha256"
-    },
-    {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.331.1/registry.yaml",
-      "checksum": "B28E60528688242F3A933D2CD31584ABBC67844E817CBB797E5B37E9209CB90C00B936CDA5AD023FA5A83D5BF5B0BAF684EE692CE465D6A91EAAE8211465C816",
-      "algorithm": "sha512"
     },
     {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.333.0/registry.yaml",
