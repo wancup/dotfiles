@@ -32,7 +32,7 @@ packages:
   - name: dalance/procs@v0.14.10
   - name: leoafarias/fvm@3.2.1
   - name: sxyazi/yazi@v25.3.2
-  - name: bensadeh/tailspin@4.0.0
+  - name: bensadeh/tailspin@5.0.0
   - name: watchexec/watchexec@v2.3.0
   - name: zaghaghi/openapi-tui@0.10.2
   - name: Wilfred/difftastic@0.63.0
