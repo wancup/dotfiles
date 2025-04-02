@@ -136,23 +136,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/uv/0.6.11/uv-aarch64-apple-darwin.tar.gz",
-      "checksum": "A5B14A92448B908D1A5415F2A49522010FEF8972695E2F7BBB4E5C5F88024573",
+      "id": "github_release/github.com/astral-sh/uv/0.6.12/uv-aarch64-apple-darwin.tar.gz",
+      "checksum": "FAB8DB5B62DA1E945524B8D1A9D4946FCC6D9B77EC0CAB423D953E82159967AC",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/uv/0.6.11/uv-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "DE20C247EF6A6BC0948E611ACE3F3F321C098D7BF75B737F169C1DB06B4F4D69",
+      "id": "github_release/github.com/astral-sh/uv/0.6.12/uv-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "E999AE0679BFABE8A1E6343B8B204A531A6C851E315CAFF9B326F34182884AF6",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/uv/0.6.11/uv-x86_64-apple-darwin.tar.gz",
-      "checksum": "099B163CE5098558CCDC1DF54BDCF8B02EB11364458095E95F8DD54FF8984D96",
+      "id": "github_release/github.com/astral-sh/uv/0.6.12/uv-x86_64-apple-darwin.tar.gz",
+      "checksum": "5B6EE08766DE11DC49EE9E292333E8B46EF2CEAAA3EBB0388467E114FCA2ED8C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/uv/0.6.11/uv-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "23AABFA5D0BDE26D151EAF31A392595A5C88E74E0BC804351B02FBB0328F8AAA",
+      "id": "github_release/github.com/astral-sh/uv/0.6.12/uv-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "25F055A556576003FEFC0F5FD213BF3C6DF1824D4C7FC35E6361FBECC420139F",
       "algorithm": "sha256"
     },
     {
