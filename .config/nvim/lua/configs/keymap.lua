@@ -17,6 +17,7 @@ map({ "n", "x" }, "M", "`m")
 
 map({ "n", "x" }, "gK", vim.lsp.buf.signature_help, { desc = "Signature Help" })
 
+map({ "n", "x" }, "g<esc>", float_lsp.close_all_window, { desc = "Close LSP Info Windows" })
 map({ "n", "x" }, "gr", float_lsp.show_references, { desc = "[G]oto [R]eferences" })
 map({ "n", "x" }, "gt", float_lsp.show_type_definition, { desc = "[G]oto [T]ype Definitions" })
 map({ "n", "x" }, "gd", float_lsp.show_definition, { desc = "[G]oto [D]ifinition" })
