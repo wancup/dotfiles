@@ -10,10 +10,10 @@ M.close_all_window = function()
 	windows = {}
 end
 
+---@param bufnr integer
 ---@param item table
 ---@return integer
-local function open_float_window(item)
-	local bufnr = item.bufnr or vim.fn.bufadd(item.filename)
+local function open_float_window(bufnr, item)
 	local width = math.ceil(vim.o.columns * 0.7)
 	local height = math.ceil(vim.o.lines * 0.4)
 	local win = vim.api.nvim_open_win(bufnr, true, {
@@ -83,7 +83,15 @@ local function handle_lsp_list(event)
 			local win = vim.api.nvim_get_current_win()
 			vim.api.nvim_win_set_cursor(win, { item.lnum, item.col - 1 })
 		else
-			open_float_window(item)
+			local bufnr = item.bufnr or vim.fn.bufadd(item.filename)
+			local wins = vim.fn.win_findbuf(bufnr)
+			if #wins > 0 then
+				local _win = wins[1]
+				vim.api.nvim_set_current_win(_win)
+				vim.api.nvim_win_set_cursor(_win, { item.lnum, item.col - 1 })
+			else
+				open_float_window(bufnr, item)
+			end
 		end
 	else
 		vim.fn.setqflist({}, " ", { title = event.title, items = event.items })
