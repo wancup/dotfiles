@@ -41,7 +41,7 @@ packages:
   - name: XAMPPRocky/tokei@v12.1.2
   - name: hadolint/hadolint@v2.12.0
   - name: sharkdp/hexyl@v0.16.0
-  - name: o2sh/onefetch@2.23.1
+  - name: o2sh/onefetch@2.24.0
   - name: lsd-rs/lsd@v1.1.5
   - name: jesseduffield/lazydocker@v0.24.1
   - name: neovim/neovim@v0.11.0
