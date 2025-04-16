@@ -217,9 +217,6 @@ run = 'move-node-to-workspace 9'
 if.app-id = 'com.apple.iCal'
 run = 'move-node-to-workspace 1'
 [[on-window-detected]]
-if.app-id = 'com.google.Chrome'
-run = 'move-node-to-workspace 1'
-[[on-window-detected]]
 if.app-id = 'com.apple.mail'
 run = 'move-node-to-workspace 1'
 [[on-window-detected]]
