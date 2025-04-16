@@ -25,6 +25,20 @@ return {
 			mode = { "i", "s" },
 			desc = "select prev snippet choice",
 		},
+		{
+			"<tab>",
+			function()
+				require("luasnip").expand_or_jump()
+			end,
+			mode = { "i", "s" },
+		},
+		{
+			"<S-tab>",
+			function()
+				require("luasnip").jump(-1)
+			end,
+			mode = { "i", "s" },
+		},
 	},
 	config = function()
 		require("luasnip").filetype_extend("typescriptreact", { "typescript" })
