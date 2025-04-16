@@ -33,8 +33,10 @@ return {
 				enable = true,
 				lookahead = false,
 				keymaps = {
-					["ia"] = "@assignment.inner",
-					["aa"] = "@assignment.outer",
+					["ia"] = "@attribute.inner",
+					["aa"] = "@attribute.outer",
+					["iA"] = "@assignment.inner",
+					["aA"] = "@assignment.outer",
 					["ib"] = "@block.inner",
 					["ab"] = "@block.outer",
 					["iC"] = "@class.inner",
