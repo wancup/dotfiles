@@ -11,6 +11,9 @@ return {
 				{ fg = CHUNK_HILIGH_COLOR },
 				{ fg = "#d91d2f" },
 			},
+			chars = {
+				right_arrow = "┤",
+			},
 		},
 		line_num = {
 			enable = true,
