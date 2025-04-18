@@ -26,7 +26,6 @@ local function open_float_window(bufnr, item)
 		zindex = #windows + 1,
 	})
 	vim.api.nvim_win_set_buf(win, bufnr)
-	vim.api.nvim_set_option_value("modifiable", false, { buf = bufnr })
 	vim.api.nvim_win_set_cursor(win, { item.lnum, item.col - 1 })
 
 	-- Keymap
