@@ -28,7 +28,7 @@ return {
 		{
 			"<tab>",
 			function()
-				require("luasnip").expand_or_jump()
+				require("luasnip").jump(1)
 			end,
 			mode = { "i", "s" },
 		},
