@@ -112,4 +112,8 @@ return {
 			i(1),
 		})
 	),
+
+	s("eslint", { t("// eslint-disable-next-line ") }),
+
+	s("tse", { t("// @ts-expect-error ") }),
 }
