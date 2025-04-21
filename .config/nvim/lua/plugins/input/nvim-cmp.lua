@@ -24,10 +24,8 @@ return {
 		local open_or_select_next = function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
-			elseif has_words_before() then
-				cmp.complete()
 			else
-				fallback()
+				cmp.complete()
 			end
 		end
 
