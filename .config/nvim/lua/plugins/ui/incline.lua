@@ -9,6 +9,9 @@ return {
 			falling = 500,
 			rising = 100,
 		},
+		hide = {
+			cursorline = true,
+		},
 		window = {
 			zindex = 5,
 		},
