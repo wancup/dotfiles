@@ -21,14 +21,6 @@ return {
 
 		local luasnip = require("luasnip")
 
-		local open_or_select_next = function(fallback)
-			if cmp.visible() then
-				cmp.select_next_item({ behavior = cmp.SelectBehavior.Insert })
-			else
-				cmp.complete()
-			end
-		end
-
 		local mapping = {
 			["<C-d>"] = cmp.mapping(cmp.mapping.abort(), { "i", "s", "c" }),
 			["<C-k>"] = cmp.mapping(
@@ -39,7 +31,11 @@ return {
 				cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
 				{ "i", "s", "c" }
 			),
-			["<C-space>"] = cmp.mapping(open_or_select_next, { "i", "s", "c" }),
+			["<C-space>"] = cmp.mapping.complete({
+				config = {
+					sources = { { name = "nvim_lsp" } },
+				},
+			}),
 			["<CR>"] = cmp.mapping(cmp.mapping.confirm({ select = false }), { "i", "s", "c" }),
 		}
 
