@@ -10,6 +10,7 @@ brew install gitmoji
 
 if [ "$(uname)" = 'Darwin' ]; then
   brew install wezterm
+  brew install FelixKratz/formulae/borders
   brew install --cask mtgto/macskk/macskk
   brew install --cask nikitabobko/tap/aerospace
 
