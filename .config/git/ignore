@@ -2,3 +2,8 @@ __tmp/
 .idea/
 .DS_Store
 
+# typos config
+typos.toml
+_typos.toml
+.typos.toml
+
