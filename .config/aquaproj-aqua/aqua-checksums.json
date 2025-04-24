@@ -581,6 +581,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/rust-lang/rust-analyzer/2025-04-21/rust-analyzer-aarch64-apple-darwin.gz",
+      "checksum": "DAF7D0695AE33923E78C0E05E3CC757281F4E53D622D380C2561F4681447D620",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rust-lang/rust-analyzer/2025-04-21/rust-analyzer-aarch64-unknown-linux-gnu.gz",
+      "checksum": "936965F6E6A0201691C57C8481672BA8CAB2F231686E597D15E65C20077EA1D6",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rust-lang/rust-analyzer/2025-04-21/rust-analyzer-x86_64-apple-darwin.gz",
+      "checksum": "78158CB243F1318D674385DF8097183572946ADFCDDA1E82893BD42486EBEA76",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rust-lang/rust-analyzer/2025-04-21/rust-analyzer-x86_64-unknown-linux-gnu.gz",
+      "checksum": "3CD447F12C21944DDEEA08B2C8D0B512FF6FA4A2FE798095170B6C8FB8C8CC22",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sharkdp/bat/v0.25.0/bat-v0.25.0-aarch64-apple-darwin.tar.gz",
       "checksum": "B3ED5A7515545445881F1036F0CC1B708C2B86CBCE01C1B4033F38E0CFCC7B3C",
       "algorithm": "sha256"

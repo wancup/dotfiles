@@ -21,7 +21,6 @@ return {
 				"taplo",
 				"html",
 				"cssls",
-				"rust_analyzer",
 			},
 		})
 

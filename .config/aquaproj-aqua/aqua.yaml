@@ -53,3 +53,4 @@ packages:
   - name: shenwei356/csvtk@v0.33.0
   - name: pnpm/pnpm@v10.9.0
   - name: astral-sh/uv@0.6.16
+  - name: rust-lang/rust-analyzer@2025-04-21
