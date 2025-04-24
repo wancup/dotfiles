@@ -49,7 +49,12 @@ vim.fn.setcellwidths({
 })
 
 -- LSP
-vim.diagnostic.config({ virtual_text = { source = true } })
+vim.diagnostic.config({
+	virtual_text = { source = true },
+	underline = true,
+	severity_sort = true,
+})
+vim.lsp.enable("dprint")
 
 -- Custom Filetype
 vim.filetype.add({

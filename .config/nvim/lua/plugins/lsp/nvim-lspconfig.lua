@@ -12,45 +12,6 @@ return {
 		{ "<leader>Ff", "<cmd>FormatByLsp<cr>", desc = "[F]ix [F]ormat Using LSP" },
 	},
 	config = function()
-		vim.diagnostic.config({ underline = true, severity_sort = true })
-
-		local _on_attach = function(_, _, bufnr)
-			vim.api.nvim_buf_create_user_command(bufnr, "FormatByLsp", function(_)
-				vim.lsp.buf.format()
-			end, {})
-		end
-
-		local default_capabilities = vim.lsp.protocol.make_client_capabilities()
-		local capabilities = require("cmp_nvim_lsp").default_capabilities(default_capabilities)
-
-		local server_settings = {
-			lua_ls = {
-				Lua = {
-					workspace = { checkThirdParty = false },
-					telemetry = { enable = false },
-				},
-			},
-
-			jsonls = {
-				json = {
-					schemas = require("schemastore").json.schemas(),
-					validate = { enable = true },
-				},
-			},
-
-			yamlls = {
-				yaml = {
-					schemaStore = {
-						enable = false,
-						url = "",
-					},
-					schemas = require("schemastore").yaml.schemas({
-						ignore = { "Deployer Recipe" },
-					}),
-				},
-			},
-		}
-
 		require("mason-lspconfig").setup({
 			ensure_installed = {
 				"bashls",
@@ -63,25 +24,28 @@ return {
 				"rust_analyzer",
 			},
 		})
-		require("mason-lspconfig").setup_handlers({
-			function(server)
-				-- Disable vtsls for flow
-				if server == "vtsls" then
-					local root_path = vim.fs.root(0, { ".flowconfig" })
-					if root_path ~= nil then
-						require("lspconfig").flow.setup({})
-						return
-					end
-				end
 
-				require("lspconfig")[server].setup({
-					capabilities = capabilities,
-					on_attach = function(client, buffnr)
-						_on_attach(server, client, buffnr)
-					end,
-					settings = server_settings[server],
-				})
-			end,
+		require("lspconfig").jsonls.setup({
+			settings = {
+				json = {
+					schemas = require("schemastore").json.schemas(),
+					validate = { enable = true },
+				},
+			},
+		})
+
+		require("lspconfig").yamlls.setup({
+			settings = {
+				yaml = {
+					schemaStore = {
+						enable = false,
+						url = "",
+					},
+					schemas = require("schemastore").yaml.schemas({
+						ignore = { "Deployer Recipe" },
+					}),
+				},
+			},
 		})
 
 		-- Install Non-lsp deps
@@ -96,6 +60,6 @@ return {
 			end
 		end
 
-		require("lspconfig").dprint.setup({})
+		vim.lsp.enable(require("mason-lspconfig").get_installed_servers())
 	end,
 }
