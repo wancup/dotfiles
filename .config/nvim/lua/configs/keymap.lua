@@ -14,6 +14,10 @@ vim.keymap.del({ "n", "x" }, "gra")
 -- Normal and Visual
 map({ "n", "x" }, "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
 map({ "n", "x" }, "M", "`m")
+map({ "n", "x" }, "j", "gj", { noremap = true })
+map({ "n", "x" }, "gj", "j", { noremap = true })
+map({ "n", "x" }, "k", "gk", { noremap = true })
+map({ "n", "x" }, "gk", "k", { noremap = true })
 
 map({ "n", "x" }, "gK", vim.lsp.buf.signature_help, { desc = "Signature Help" })
 
