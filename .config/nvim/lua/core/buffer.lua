@@ -21,7 +21,6 @@ M.delete_buffer = function()
 			vim.api.nvim_buf_delete(current_buf, {})
 		end
 	else
-		vim.notify("Alternate buffer is invalid!")
 		vim.cmd("bdelete")
 	end
 end
