@@ -3,7 +3,7 @@
   "extends": [
     "config:best-practices",
     "github>aquaproj/aqua-renovate-config#2.7.5",
-    "github>kachick/renovate-config-dprint#1.1.0"
+    "github>kachick/renovate-config-dprint#1.3.0"
   ],
   "packageRules": [
     {
