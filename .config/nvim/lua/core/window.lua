@@ -33,7 +33,7 @@ local function open_picker_win(win_id, label_char, file_name, file_path)
 	local window_width = content_width + 2
 
 	local label_padding = math.ceil(content_width / 2) - 1
-	local label = string.rep(" ", label_padding) .. string.upper(label_char)
+	local label = string.rep(" ", label_padding) .. label_char
 	local sepalator = string.rep("─", content_width)
 	local buf = vim.api.nvim_create_buf(false, true)
 
