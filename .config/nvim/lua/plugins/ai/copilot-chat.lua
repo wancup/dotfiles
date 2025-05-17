@@ -28,28 +28,31 @@ return {
 	opts = {
 		prompts = {
 			Explain = {
-				prompt = "> /COPILOT_EXPLAIN\n\n選択しているコードの説明を段落分けした文章で説明してください。",
+				prompt = "選択しているコードの説明を段落分けした文章で説明してください。",
+				system_prompt = "COPILOT_EXPLAIN",
 			},
 			Review = {
-				prompt = "> /COPILOT_REVIEW\n\n選択したコードをレビューしてください。",
+				prompt = "選択したコードをレビューしてください。",
+				system_prompt = "COPILOT_REVIEW",
 			},
 			Fix = {
-				prompt = "> /COPILOT_GENERATE\n\nこのコードには問題があります。バグを修正したコードを書いてください。",
+				prompt = "このコードには問題があります。バグを修正したコードを書いてください。",
 			},
 			Optimize = {
-				prompt = "> /COPILOT_GENERATE\n\n選択したコードのパフォーマンスと可読性を改善してください。",
+				prompt = "選択したコードのパフォーマンスと可読性を改善してください。",
 			},
 			Docs = {
-				prompt = "> /COPILOT_GENERATE\n\nこのセクションにドキュメントコメントを追加してください。",
+				prompt = "このセクションにドキュメントコメントを追加してください。",
 			},
 			Tests = {
-				prompt = "> /COPILOT_GENERATE\n\nこのコードのテストを生成してください。",
+				prompt = "このコードのテストを生成してください。",
 			},
 			ExplainDiagnostic = {
-				prompt = "> /COPILOT_EXPLAIN\n\nこのファイルについてのdiagnosticsの問題を解説してください。",
+				prompt = "このファイルについてのdiagnosticsの問題を解説してください。",
+				system_prompt = "COPILOT_EXPLAIN",
 			},
 			FixDiagnostic = {
-				prompt = "> /COPILOT_GENERATE\n\nこのファイルについてのdiagnosticsの問題を修正したコード案を提示してください。",
+				prompt = "このファイルについてのdiagnosticsの問題を修正したコード案を提示してください。",
 			},
 			Commit = {
 				prompt = "#git:staged\n\nコミットメッセージを書いてください。メッセージはすべてをgitcommit形式のコードブロックとしてラップしてください。",
