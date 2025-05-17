@@ -2,7 +2,7 @@
   "denops.vim": { "branch": "main", "commit": "4ff8f353ee54ee67288c1099242444ccb0ab5b69" },
   "eskk.vim": { "branch": "master", "commit": "e530575790cca5d6603b8ab984298459ecf3c0c0" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
-  "skkeleton": { "branch": "main", "commit": "cf385775279c0c7eed3fbebfac1022f1f05ea292" },
+  "skkeleton": { "branch": "main", "commit": "3e019b331fbf9bd1d4539e7bd650a1c543125cee" },
   "tuskk.vim": { "branch": "main", "commit": "794e5edcf864b82a69f396c28e26d78ee5f91a9f" },
   "vim-maketable": { "branch": "master", "commit": "d72e73f333c64110524197ec637897bd1464830f" }
 }
