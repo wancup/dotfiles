@@ -9,6 +9,7 @@ return {
 		"L3MON4D3/LuaSnip",
 		"saadparwaiz1/cmp_luasnip",
 		"onsails/lspkind.nvim",
+		{ "zbirenbaum/copilot-cmp", dependencies = { "zbirenbaum/copilot.lua" }, config = true },
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -36,6 +37,7 @@ return {
 		cmp.setup({
 			sources = {
 				{ name = "luasnip" },
+				{ name = "copilot" },
 				{ name = "nvim_lsp" },
 				{ name = "nvim_lsp_signature_help" },
 			},
@@ -52,7 +54,8 @@ return {
 			mapping = mapping,
 			formatting = {
 				format = require("lspkind").cmp_format({
-					mode = "symbol",
+					mode = "symbol_text",
+					symbol_map = { Copilot = "" },
 					maxwidth = {
 						menu = function()
 							return math.floor(0.3 * vim.api.nvim_win_get_width(0))
