@@ -37,9 +37,9 @@ return {
 		cmp.setup({
 			sources = {
 				{ name = "luasnip" },
-				{ name = "copilot" },
 				{ name = "nvim_lsp" },
 				{ name = "nvim_lsp_signature_help" },
+				{ name = "copilot" },
 			},
 			completion = { completeopt = "menu,menuone,noinsert" },
 			snippet = {
