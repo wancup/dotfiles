@@ -34,7 +34,7 @@ map({ "n", "x" }, "<leader>d", function()
 	vim.diagnostic.open_float({ source = true })
 end, { desc = "[D]iagnostics" })
 
-map({ "n", "x" }, "<leader>a", vim.lsp.buf.code_action, { desc = "Code [A]ction" })
+map({ "n", "x" }, "<leader><leader>", vim.lsp.buf.code_action, { desc = "Code [A]ction" })
 map({ "n", "x" }, "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[N]ame" })
 
 -- Normal

@@ -11,6 +11,7 @@ return {
 			{
 				mode = { "n", "v" },
 				{ "g", group = "Goto" },
+				{ "<leader>a", group = "AI" },
 				{ "<leader>b", group = "Buffer" },
 				{ "<leader>c", group = "Command" },
 				{ "<leader>f", group = "Find" },
@@ -21,6 +22,7 @@ return {
 				{ "<leader>gb", group = "Git Buffer" },
 				{ "<leader>j", group = "TreeSJ" },
 				{ "<leader>l", group = "List" },
+				{ "<leader>m", group = "Terminal" },
 				{ "<leader>n", group = "Noice" },
 				{ "<leader>N", group = "Node.js" },
 				{ "<leader>r", group = "Rename" },

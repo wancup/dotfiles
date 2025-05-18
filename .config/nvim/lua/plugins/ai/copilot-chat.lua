@@ -25,6 +25,10 @@ return {
 		"CopilotChatCommit",
 		"CopilotChatCommitStaged",
 	},
+	keys = {
+		{ "<leader>aa", "<cmd>CopilotChat<cr>", desc = "CopilotChat" },
+		{ "<leader>af", "<cmd>CopilotChatFix<cr>", desc = "CopilotChatFix" },
+	},
 	opts = {
 		prompts = {
 			Explain = {
