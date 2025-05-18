@@ -2,7 +2,7 @@ return {
 	{
 		"vim-skk/skkeleton",
 		cond = true,
-		event = { "InsertEnter", "CmdlineEnter" },
+		event = { "VimEnter" },
 		dependencies = {
 			"vim-denops/denops.vim",
 		},
@@ -21,6 +21,9 @@ return {
 				[")"] = { "）" },
 			})
 			vim.fn["skkeleton#initialize"]()
+
+			vim.cmd("startinsert")
+			vim.fn["skkeleton#handle"]("enable", {})
 		end,
 	},
 }
