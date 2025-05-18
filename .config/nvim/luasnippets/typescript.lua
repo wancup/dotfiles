@@ -10,7 +10,7 @@ return {
 		fmt("function {}({}): {} {{\n}}", {
 			i(1, "name"),
 			i(2, ""),
-			i(3, "return_type"),
+			i(3, "void"),
 		})
 	),
 
@@ -19,7 +19,7 @@ return {
 		fmt("export function {}({}): {} {{\n}}", {
 			i(1, "name"),
 			i(2, ""),
-			i(3, "return_type"),
+			i(3, "void"),
 		})
 	),
 
@@ -28,7 +28,7 @@ return {
 		fmt("async function {}({}): Promise<{}> {{\n}}", {
 			i(1, "name"),
 			i(2, ""),
-			i(3, "return_type"),
+			i(3, "void"),
 		})
 	),
 
@@ -37,7 +37,7 @@ return {
 		fmt("export async function {}({}): Promise<{}> {{\n}}", {
 			i(1, "name"),
 			i(2, ""),
-			i(3, "return_type"),
+			i(3, "void"),
 		})
 	),
 
@@ -46,7 +46,7 @@ return {
 		fmt("{}({}): {} {{\n}}", {
 			i(1, "name"),
 			i(2, ""),
-			i(3, "return_type"),
+			i(3, "void"),
 		})
 	),
 
@@ -55,7 +55,7 @@ return {
 		fmt("async {}({}): {} {{\n}}", {
 			i(1, "name"),
 			i(2, ""),
-			i(3, "return_type"),
+			i(3, "void"),
 		})
 	),
 
@@ -64,7 +64,7 @@ return {
 		fmt("const {} = ({}): {} => {{\n{}\n}}", {
 			i(1, "name"),
 			i(2, ""),
-			i(3, "return_type"),
+			i(3, "void"),
 			i(4),
 		})
 	),
@@ -74,7 +74,7 @@ return {
 		fmt("const {} = ({}): {} => {}", {
 			i(1, "name"),
 			i(2, ""),
-			i(3, "return_type"),
+			i(3, "void"),
 			i(4),
 		})
 	),
@@ -84,7 +84,7 @@ return {
 		fmt("const {} = async ({}): Promise<{}> => {{\n}}", {
 			i(1, "name"),
 			i(2, ""),
-			i(3, "return_type"),
+			i(3, "void"),
 		})
 	),
 
