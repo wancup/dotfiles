@@ -23,11 +23,11 @@ return {
 		"CopilotChatExplainDiagnostic",
 		"CopilotChatFixDiagnostic",
 		"CopilotChatCommit",
-		"CopilotChatCommitStaged",
 	},
 	keys = {
 		{ "<leader>aa", "<cmd>CopilotChat<cr>", desc = "CopilotChat" },
 		{ "<leader>af", "<cmd>CopilotChatFix<cr>", desc = "CopilotChatFix" },
+		{ "<leader>ac", "<cmd>CopilotChatCommit<cr>", desc = "CopilotChatCommit" },
 	},
 	opts = {
 		prompts = {
@@ -59,7 +59,8 @@ return {
 				prompt = "このファイルについてのdiagnosticsの問題を修正したコード案を提示してください。",
 			},
 			Commit = {
-				prompt = "#git:staged\n\nコミットメッセージを書いてください。メッセージはすべてをgitcommit形式のコードブロックとしてラップしてください。",
+				prompt = "コミットメッセージを書いてください。メッセージはすべてをgitcommit形式のコードブロックとしてラップしてください。",
+				context = "git:staged",
 			},
 		},
 		mappings = {
