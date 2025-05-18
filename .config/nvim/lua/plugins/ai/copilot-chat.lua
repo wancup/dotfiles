@@ -25,7 +25,7 @@ return {
 		"CopilotChatCommit",
 	},
 	keys = {
-		{ "<leader>aa", "<cmd>CopilotChat<cr>", desc = "CopilotChat" },
+		{ "<leader>aa", "<cmd>CopilotChat<cr>", desc = "CopilotChat", mode = { "n", "x" } },
 		{ "<leader>af", "<cmd>CopilotChatFix<cr>", desc = "CopilotChatFix" },
 		{ "<leader>ac", "<cmd>CopilotChatCommit<cr>", desc = "CopilotChatCommit" },
 	},
