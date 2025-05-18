@@ -12,7 +12,26 @@ return {
 			":lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>",
 			desc = "Find Live Grep",
 		},
-		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "[F]ind [F]iles" },
+		{
+			"<leader>ff",
+			function()
+				require("telescope.builtin").find_files({
+					find_command = {
+						"rg",
+						"--files",
+						"--hidden",
+						"--no-ignore",
+						"--glob",
+						"!**/.git/*",
+						"--glob",
+						"!**/node_modules/*",
+						"--glob",
+						"!**/target/*",
+					},
+				})
+			end,
+			desc = "[F]ind [F]iles",
+		},
 		{ "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "[F]ind [R]ecent Files" },
 		{ "<leader>fR", "<cmd>Telescope resume<cr>", desc = "[F]ind [R]esume" },
 		{ "<leader>fa", "<cmd>Telescope autocommands<cr>", desc = "[F]ind [A]utoCommands" },
