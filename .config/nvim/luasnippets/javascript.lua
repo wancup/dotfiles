@@ -2,7 +2,6 @@ local ls = require("luasnip")
 local s = ls.snippet
 local i = ls.insert_node
 local t = ls.text_node
-local c = ls.choice_node
 local fmt = require("luasnip.extras.fmt").fmt
 
 return {
@@ -116,43 +115,49 @@ return {
 
 	s(
 		"class",
-		c(1, {
-			fmt("class {} {{\n}}", {
-				i(1),
-			}),
-			fmt("class {} extends {} {{\n}}", {
-				i(1),
-				i(2),
-			}),
+		fmt("class {} {{\n}}", {
+			i(1),
+		})
+	),
+
+	s(
+		"classe",
+		fmt("class {} extends {} {{\n}}", {
+			i(1),
+			i(2),
 		})
 	),
 
 	s(
 		"eclass",
-		c(1, {
-			fmt("export class {} {{\n}}", {
-				i(1),
-			}),
-			fmt("export class {} extends {} {{\n}}", {
-				i(1),
-				i(2),
-			}),
+		fmt("export class {} {{\n}}", {
+			i(1),
+		})
+	),
+
+	s(
+		"eclasse",
+		fmt("export class {} extends {} {{\n}}", {
+			i(1),
+			i(2),
 		})
 	),
 
 	s(
 		"for",
-		c(1, {
-			fmt("for (let {i} = {}; {i} {}; {}) {{\n}}", {
-				i = i(1, "i"),
-				i(2),
-				i(3),
-				i(4, "++i"),
-			}),
-			fmt("for (const {} of {}) {{\n}}", {
-				i(1, "item"),
-				i(2, "iterable"),
-			}),
+		fmt("for (let {i} = {}; {i} {}; {}) {{\n}}", {
+			i = i(1, "i"),
+			i(2),
+			i(3),
+			i(4, "++i"),
+		})
+	),
+
+	s(
+		"forof",
+		fmt("for (const {} of {}) {{\n}}", {
+			i(1, "item"),
+			i(2, "iterable"),
 		})
 	),
 
@@ -172,56 +177,49 @@ return {
 	),
 
 	s(
-		"describe",
-		fmt('describe("{}", () => {{\n}})', {
-			i(1),
-		})
-	),
-
-	s(
-		"it",
-		fmt('it("{}", () => {{\n}})', {
-			i(1),
-		})
-	),
-
-	s(
 		"tt",
-		c(1, {
-			fmt('test("{}", ({}) => {{\n}})', {
-				i(1),
-				i(2),
-			}),
-			fmt('test("{}", async ({}) => {{\n}})', {
-				i(1),
-				i(2),
-			}),
+		fmt('test("{}", ({}) => {{\n}})', {
+			i(1),
+			i(2),
+		})
+	),
+
+	s(
+		"tta",
+		fmt('test("{}", async ({}) => {{\n}})', {
+			i(1),
+			i(2),
 		})
 	),
 
 	s(
 		"cb",
-		c(1, {
-			fmt("({}) => {{\n}}", {
-				i(1),
-			}),
-			fmt("({}) => ({})", {
-				i(1),
-				i(2),
-			}),
+		fmt("({}) => {{\n}}", {
+			i(1),
+		})
+	),
+
+	s(
+		"cbs",
+		fmt("({}) => {}", {
+			i(1),
+			i(2),
 		})
 	),
 
 	s(
 		"acb",
-		c(1, {
-			fmt("async ({}) => {{\n}}", {
-				i(1),
-			}),
-			fmt("async ({}) => ({})", {
-				i(1),
-				i(2),
-			}),
+		fmt("async ({}) => ({})", {
+			i(1),
+			i(2),
+		})
+	),
+
+	s(
+		"acbs",
+		fmt("async ({}) => {}", {
+			i(1),
+			i(2),
 		})
 	),
 

@@ -11,10 +11,11 @@ return {
 	s(
 		"nrfc",
 		fmt(
-			'import {{ type ReactElement }} from "react";\n\ninterface {Name}Props {{}}\n\nexport function {}(props: {Name}Props): ReactElement{{\nreturn (\n{}\n)\n}}',
+			'import {{ type ReactElement }} from "react";\n\ninterface {Name}Props {{\n{}\n}}\n\nexport function {}(props: {Name}Props): ReactElement{{\nreturn (\n{}\n)\n}}',
 			{
-				i(1, "name"),
 				i(2),
+				i(1, "name"),
+				i(3),
 				Name = l(l._1, 1),
 			}
 		)
@@ -24,7 +25,7 @@ return {
 		"rfc",
 		fmt("function {}({}): ReactElement{{\nreturn (\n{}\n)\n}}", {
 			i(1, "name"),
-			i(2, "props"),
+			i(2),
 			i(3),
 		})
 	),
@@ -33,7 +34,7 @@ return {
 		"erfc",
 		fmt("export function {}({}): ReactElement{{\nreturn (\n\n)\n}}", {
 			i(1, "name"),
-			i(2, "props"),
+			i(2),
 		})
 	),
 
@@ -56,7 +57,7 @@ return {
 
 	s("uc", { t('"use client"') }),
 
-	s("cn", { t("className=") }),
+	s("cn", fmt("className={{{}}}", { i(1) })),
 
 	-- Solid
 	s(
