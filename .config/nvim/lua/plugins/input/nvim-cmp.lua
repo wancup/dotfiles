@@ -18,11 +18,11 @@ return {
 
 		local mapping = {
 			["<C-d>"] = cmp.mapping(cmp.mapping.abort(), { "i", "s", "c" }),
-			["<C-k>"] = cmp.mapping(
+			["<C-p>"] = cmp.mapping(
 				cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
 				{ "i", "s", "c" }
 			),
-			["<C-j>"] = cmp.mapping(
+			["<C-n>"] = cmp.mapping(
 				cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
 				{ "i", "s", "c" }
 			),
