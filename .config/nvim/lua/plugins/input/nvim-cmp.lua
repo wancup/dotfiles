@@ -26,20 +26,26 @@ return {
 				cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
 				{ "i", "s", "c" }
 			),
-			["<C-space>"] = cmp.mapping.complete({
-				config = {
-					sources = { { name = "nvim_lsp" } },
-				},
-			}),
+			["<C-space>"] = function()
+				if cmp.visible() then
+					cmp.complete({
+						config = {
+							sources = { { name = "copilot" } },
+						},
+					})
+				else
+					cmp.complete()
+				end
+			end,
 			["<CR>"] = cmp.mapping(cmp.mapping.confirm({ select = false }), { "i", "s", "c" }),
 		}
 
 		cmp.setup({
 			sources = {
-				{ name = "luasnip" },
-				{ name = "nvim_lsp" },
-				{ name = "nvim_lsp_signature_help" },
-				{ name = "copilot" },
+				{ name = "luasnip", group_index = 1 },
+				{ name = "nvim_lsp", group_index = 1 },
+				{ name = "nvim_lsp_signature_help", group_index = 1 },
+				{ name = "copilot", group_index = 2 },
 			},
 			completion = { completeopt = "menu,menuone,noinsert" },
 			snippet = {
