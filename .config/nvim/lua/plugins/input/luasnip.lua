@@ -9,11 +9,11 @@ return {
 				local luasnip = require("luasnip")
 				if luasnip.jumpable(1) then
 					luasnip.jump(1)
+				else
+					vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<tab>", true, false, true), "n", true)
 				end
-				return "<tab>"
 			end,
 			mode = { "i", "s" },
-			expr = true,
 		},
 		{
 			"<S-tab>",
@@ -21,11 +21,11 @@ return {
 				local luasnip = require("luasnip")
 				if luasnip.jumpable(-1) then
 					luasnip.jump(-1)
+				else
+					vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<S-tab>", true, false, true), "n", true)
 				end
-				return "<S-tab>"
 			end,
 			mode = { "i", "s" },
-			expr = true,
 		},
 	},
 	config = function()
