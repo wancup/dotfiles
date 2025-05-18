@@ -71,6 +71,7 @@ set -gx XDG_CONFIG_HOME $HOME/.config
 set -gx XDG_CACHE_HOME $HOME/.cache
 set -gx XDG_DATA_HOME $HOME/.local/share
 set -gx XDG_STATE_HOME $HOME/.local/state
+set -gx XDG_BIN_HOME $HOME/.local/bin
 set -gx AQUA_ROOT_DIR $XDG_DATA_HOME/aquaproj-aqua
 set -gx AQUA_GLOBAL_CONFIG $XDG_CONFIG_HOME/aquaproj-aqua/aqua.yaml
 set -gx MANPAGER 'nvim +Man!'
