@@ -7,3 +7,6 @@ typos.toml
 _typos.toml
 .typos.toml
 
+# AI tool
+.aider*
+.aider.conf.yml
