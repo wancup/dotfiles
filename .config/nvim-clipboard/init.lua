@@ -19,3 +19,8 @@ require("lazy").setup({
 		{ import = "plugins" },
 	},
 })
+
+vim.api.nvim_create_autocmd("VimEnter", {
+	pattern = "*",
+	command = "startinsert",
+})
