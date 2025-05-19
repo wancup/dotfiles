@@ -49,6 +49,12 @@ return {
 		}
 
 		cmp.setup({
+			enabled = function()
+				if vim.fn.exists("skkeleton#is_enabled") and vim.fn["skkeleton#is_enabled"]() then
+					return false
+				end
+				return true
+			end,
 			sources = {
 				{ name = "luasnip", group_index = 1 },
 				{ name = "nvim_lsp", group_index = 1 },
