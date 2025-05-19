@@ -21,9 +21,9 @@ local function do_motion(reverse)
 		return
 	end
 	if reverse then
-		if current_motion == "c" then
+		if current_motion == "x" then
 			git.prev_conflict()
-		elseif current_motion == "C" then
+		elseif current_motion == "X" then
 			git.next_conflict()
 		elseif current_motion == "d" then
 			prev_diagnostic()
@@ -43,9 +43,9 @@ local function do_motion(reverse)
 			require("todo-comments").jump_next()
 		end
 	else
-		if current_motion == "c" then
+		if current_motion == "x" then
 			git.next_conflict()
-		elseif current_motion == "C" then
+		elseif current_motion == "X" then
 			git.prev_conflict()
 		elseif current_motion == "d" then
 			next_diagnostic()
@@ -80,11 +80,11 @@ map("<C-;>", function()
 	do_motion(false)
 end, "Repeat prev reversed motion")
 
-map("[c", function()
-	set_and_goto("C")
+map("[x", function()
+	set_and_goto("X")
 end, "Goto Previous Conflict")
-map("]c", function()
-	set_and_goto("c")
+map("]x", function()
+	set_and_goto("x")
 end, "Goto Next Conflict")
 
 map("[d", function()
