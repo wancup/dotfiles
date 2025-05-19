@@ -5,11 +5,6 @@ return {
 		"zbirenbaum/copilot.lua",
 		"nvim-lua/plenary.nvim",
 	},
-	init = function()
-		vim.api.nvim_create_user_command("CC", function()
-			vim.cmd("CopilotChat")
-		end, {})
-	end,
 	cmd = {
 		"CopilotChat",
 		"CopilotChatOpen",
@@ -23,11 +18,6 @@ return {
 		"CopilotChatExplainDiagnostic",
 		"CopilotChatFixDiagnostic",
 		"CopilotChatCommit",
-	},
-	keys = {
-		{ "<leader>aa", "<cmd>CopilotChat<cr>", desc = "CopilotChat", mode = { "n", "x" } },
-		{ "<leader>af", "<cmd>CopilotChatFix<cr>", desc = "CopilotChatFix" },
-		{ "<leader>ac", "<cmd>CopilotChatCommit<cr>", desc = "CopilotChatCommit" },
 	},
 	opts = {
 		prompts = {
