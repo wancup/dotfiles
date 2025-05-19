@@ -8,10 +8,10 @@ local function map(key, cb, desc)
 end
 
 local function prev_diagnostic()
-	vim.diagnostic.goto_prev({ float = true })
+	vim.diagnostic.jump({ float = true, count = -1 })
 end
 local function next_diagnostic()
-	vim.diagnostic.goto_next({ float = true })
+	vim.diagnostic.jump({ float = true, count = 1 })
 end
 
 ---@param reverse boolean
