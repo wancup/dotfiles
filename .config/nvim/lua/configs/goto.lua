@@ -21,7 +21,11 @@ local function do_motion(reverse)
 		return
 	end
 	if reverse then
-		if current_motion == "x" then
+		if current_motion == "c" then
+			vim.cmd.normal({ "[c", bang = true })
+		elseif current_motion == "C" then
+			vim.cmd.normal({ "]c", bang = true })
+		elseif current_motion == "x" then
 			git.prev_conflict()
 		elseif current_motion == "X" then
 			git.next_conflict()
@@ -43,7 +47,11 @@ local function do_motion(reverse)
 			require("todo-comments").jump_next()
 		end
 	else
-		if current_motion == "x" then
+		if current_motion == "c" then
+			vim.cmd.normal({ "]c", bang = true })
+		elseif current_motion == "C" then
+			vim.cmd.normal({ "[c", bang = true })
+		elseif current_motion == "x" then
 			git.next_conflict()
 		elseif current_motion == "X" then
 			git.prev_conflict()
@@ -79,6 +87,13 @@ end, "Repeat prev motion")
 map("<C-;>", function()
 	do_motion(false)
 end, "Repeat prev reversed motion")
+
+map("[c", function()
+	set_and_goto("C")
+end, "Goto Previous Diff")
+map("]c", function()
+	set_and_goto("c")
+end, "Goto Next Diff")
 
 map("[x", function()
 	set_and_goto("X")
