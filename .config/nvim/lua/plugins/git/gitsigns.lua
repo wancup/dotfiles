@@ -14,27 +14,27 @@ return {
 				vim.keymap.set(mode, l, r, { buffer = buffer, desc = desc })
 			end
 
-			map("n", "<leader>ghP", gs.preview_hunk, "[G]it [H]unk [P]review")
-			map({ "n", "v" }, "<leader>ghs", ":Gitsigns stage_hunk<CR>", "[G]it [H]unk [S]tage")
-			map({ "n", "v" }, "<leader>ghr", ":Gitsigns reset_hunk<CR>", "[G]it [H]unk [R]eset")
-			map("n", "<leader>gbs", gs.stage_buffer, "[G]it [B]uffer [S]tage")
-			map("n", "<leader>gbr", gs.reset_buffer, "[G]it [B]uffer [R]eset")
+			map("n", "<leader>ghP", gs.preview_hunk, "Git Hunk Preview")
+			map({ "n", "v" }, "<leader>ghs", ":Gitsigns stage_hunk<CR>", "Git Hunk Stage")
+			map({ "n", "v" }, "<leader>ghr", ":Gitsigns reset_hunk<CR>", "Git Hunk Reset")
+			map("n", "<leader>gbs", gs.stage_buffer, "Git Buffer Stage")
+			map("n", "<leader>gbr", gs.reset_buffer, "Git Buffer Reset")
 			map("n", "<leader>gm", function()
 				gs.blame()
-			end, "[G]it bla[M]e")
+			end, "Git blame")
 			map("n", "<leader>gM", function()
 				gs.blame_line({ full = true })
-			end, "[G]it bla[M]e in line")
+			end, "Git blame in line")
 			map("n", "<leader>gt", function()
 				gs.toggle_deleted()
 				gs.toggle_word_diff()
-			end, "[G]it [T]oggle Deleted")
+			end, "Git Toggle Deleted")
 
 			-- Quickfix
-			map("n", "<leader>lg", gs.setqflist, "[L]ist [G]it Hunks")
+			map("n", "<leader>lg", gs.setqflist, "List Git Hunks")
 			map("n", "<leader>lG", function()
 				gs.setqflist("all")
-			end, "[L]ist [G]it All Hunks")
+			end, "List Git All Hunks")
 
 			-- Text Object
 			map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>")

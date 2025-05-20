@@ -26,7 +26,7 @@ return {
 				})
 				lazygit:toggle()
 			end,
-			desc = "[G]it [L]og Current File",
+			desc = "Git Log Current File",
 		},
 		{
 			"<leader>mr",
