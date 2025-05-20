@@ -64,6 +64,14 @@ return {
 			chat = {
 				show_header_separator = true,
 				show_settings = true,
+				window = {
+					layout = "float",
+					height = 0.9,
+					width = 0.9,
+					opts = {
+						number = false,
+					},
+				},
 			},
 		},
 		opts = {
