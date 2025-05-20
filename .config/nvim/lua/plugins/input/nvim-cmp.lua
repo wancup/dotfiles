@@ -53,7 +53,11 @@ return {
 				if vim.fn.exists("skkeleton#is_enabled") and vim.fn["skkeleton#is_enabled"]() then
 					return false
 				end
-				return true
+				local disabled = false
+				disabled = disabled or (vim.api.nvim_get_option_value("buftype", { buf = 0 }) == "prompt")
+				disabled = disabled or (vim.fn.reg_recording() ~= "")
+				disabled = disabled or (vim.fn.reg_executing() ~= "")
+				return not disabled
 			end,
 			sources = {
 				{ name = "luasnip", group_index = 1 },
