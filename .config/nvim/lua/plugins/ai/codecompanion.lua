@@ -34,7 +34,13 @@ return {
 			"<leader>at",
 			":'<,'>CodeCompanion /translate<cr>",
 			desc = "Translare text to Japanese",
-			mode = { "n", "x" },
+			mode = { "x" },
+		},
+		{
+			"<leader>an",
+			":'<,'>CodeCompanion /naming<cr>",
+			desc = "Naming with CodeCompanion",
+			mode = { "n" },
 		},
 	},
 	opts = {
@@ -69,7 +75,7 @@ return {
 				description = "Translate text to Japanese",
 				opts = {
 					short_name = "translate",
-					modes = { "v" },
+					modes = { "x" },
 					auto_submit = true,
 					user_prompt = false,
 					stop_context_insertion = true,
@@ -87,6 +93,28 @@ return {
 
 							return "以下の文章を日本語に翻訳してください。\n\n" .. text .. "\n"
 						end,
+					},
+				},
+			},
+
+			["Naming"] = {
+				strategy = "chat",
+				description = "Naming suggestion",
+				opts = {
+					short_name = "naming",
+					modes = { "n" },
+					auto_submit = true,
+					user_prompt = true,
+					stop_context_insertion = true,
+				},
+				prompts = {
+					{
+						role = "system",
+						content = "あなたは英語と日本語に精通しているプロのプログラマーです。",
+					},
+					{
+						role = "user",
+						content = "以下の言葉をプログラミングで使用するとき、その命名案を複数出力してください。",
 					},
 				},
 			},
