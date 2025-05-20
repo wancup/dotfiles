@@ -16,7 +16,7 @@ return {
 			},
 		},
 		line_num = {
-			enable = true,
+			enable = false,
 			style = { CHUNK_HILIGH_COLOR },
 			use_treesitter = true,
 		},
