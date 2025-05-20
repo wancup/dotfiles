@@ -6,6 +6,7 @@ local disabled_fts = {
 	"neotest-output",
 	"neotest-output-panel",
 	"toggleterm",
+	"gitsigns-blame",
 }
 local disabled_bts = { "prompt", "popup" }
 
