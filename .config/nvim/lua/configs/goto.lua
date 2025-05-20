@@ -14,63 +14,86 @@ local function next_diagnostic()
 	vim.diagnostic.jump({ float = true, count = 1 })
 end
 
+local motion_map = {
+	c = {
+		forward = function()
+			vim.cmd.normal({ "]c", bang = true })
+		end,
+		backward = function()
+			vim.cmd.normal({ "[c", bang = true })
+		end,
+	},
+	C = {
+		forward = function()
+			vim.cmd.normal({ "[c", bang = true })
+		end,
+		backward = function()
+			vim.cmd.normal({ "]c", bang = true })
+		end,
+	},
+	x = { forward = git.next_conflict, backward = git.prev_conflict },
+	X = { forward = git.prev_conflict, backward = git.next_conflict },
+	d = { forward = next_diagnostic, backward = prev_diagnostic },
+	D = { forward = prev_diagnostic, backward = next_diagnostic },
+	h = {
+		forward = function()
+			require("gitsigns").nav_hunk("next")
+		end,
+		backward = function()
+			require("gitsigns").nav_hunk("prev")
+		end,
+	},
+	H = {
+		forward = function()
+			require("gitsigns").nav_hunk("prev")
+		end,
+		backward = function()
+			require("gitsigns").nav_hunk("next")
+		end,
+	},
+	q = { forward = "cnext", backward = "cprev" },
+	Q = { forward = "cprev", backward = "cnext" },
+	t = {
+		forward = function()
+			require("todo-comments").jump_next()
+		end,
+		backward = function()
+			require("todo-comments").jump_prev()
+		end,
+	},
+	T = {
+		forward = function()
+			require("todo-comments").jump_prev()
+		end,
+		backward = function()
+			require("todo-comments").jump_next()
+		end,
+	},
+}
+
 ---@param reverse boolean
 local function do_motion(reverse)
 	local current_motion = vim.g.current_motion_type
-	if current_motion == nil then
+	if not current_motion then
 		return
 	end
+
+	local motion = motion_map[current_motion]
+	if not motion then
+		return
+	end
+
 	if reverse then
-		if current_motion == "c" then
-			vim.cmd.normal({ "[c", bang = true })
-		elseif current_motion == "C" then
-			vim.cmd.normal({ "]c", bang = true })
-		elseif current_motion == "x" then
-			git.prev_conflict()
-		elseif current_motion == "X" then
-			git.next_conflict()
-		elseif current_motion == "d" then
-			prev_diagnostic()
-		elseif current_motion == "D" then
-			next_diagnostic()
-		elseif current_motion == "h" then
-			require("gitsigns").nav_hunk("prev")
-		elseif current_motion == "H" then
-			require("gitsigns").nav_hunk("next")
-		elseif current_motion == "q" then
-			vim.cmd("cprev")
-		elseif current_motion == "Q" then
-			vim.cmd("cnext")
-		elseif current_motion == "t" then
-			require("todo-comments").jump_prev()
-		elseif current_motion == "T" then
-			require("todo-comments").jump_next()
+		if type(motion.backward) == "string" then
+			vim.cmd(motion.backward)
+		else
+			motion.backward()
 		end
 	else
-		if current_motion == "c" then
-			vim.cmd.normal({ "]c", bang = true })
-		elseif current_motion == "C" then
-			vim.cmd.normal({ "[c", bang = true })
-		elseif current_motion == "x" then
-			git.next_conflict()
-		elseif current_motion == "X" then
-			git.prev_conflict()
-		elseif current_motion == "d" then
-			next_diagnostic()
-		elseif current_motion == "D" then
-			prev_diagnostic()
-		elseif current_motion == "h" then
-			require("gitsigns").nav_hunk("next")
-		elseif current_motion == "H" then
-			require("gitsigns").nav_hunk("prev")
-		elseif current_motion == "q" then
-			vim.cmd("cnext")
-		elseif current_motion == "Q" then
-			vim.cmd("cprev")
-		elseif current_motion == "t" then
-			require("todo-comments").jump_next()
-		elseif current_motion == "T" then
-			require("todo-comments").jump_prev()
+		if type(motion.forward) == "string" then
+			vim.cmd(motion.forward)
+		else
+			motion.forward()
 		end
 	end
 end
@@ -88,44 +111,23 @@ map("<C-;>", function()
 	do_motion(false)
 end, "Repeat prev reversed motion")
 
-map("[c", function()
-	set_and_goto("C")
-end, "Goto Previous Diff")
-map("]c", function()
-	set_and_goto("c")
-end, "Goto Next Diff")
+local motions = {
+	{ key = "[c", id = "C", desc = "Goto Previous Diff" },
+	{ key = "]c", id = "c", desc = "Goto Next Diff" },
+	{ key = "[x", id = "X", desc = "Goto Previous Conflict" },
+	{ key = "]x", id = "x", desc = "Goto Next Conflict" },
+	{ key = "[d", id = "D", desc = "Goto Previous Diagnostic" },
+	{ key = "]d", id = "d", desc = "Goto Next Diagnostic" },
+	{ key = "[h", id = "H", desc = "Goto Previous Hunk" },
+	{ key = "]h", id = "h", desc = "Goto Next Hunk" },
+	{ key = "[q", id = "Q", desc = "Goto Previous Quickfix" },
+	{ key = "]q", id = "q", desc = "Goto Next Quickfix" },
+	{ key = "[t", id = "T", desc = "Goto Previous Todo" },
+	{ key = "]t", id = "t", desc = "Goto Next Todo" },
+}
 
-map("[x", function()
-	set_and_goto("X")
-end, "Goto Previous Conflict")
-map("]x", function()
-	set_and_goto("x")
-end, "Goto Next Conflict")
-
-map("[d", function()
-	set_and_goto("D")
-end, "Goto Previous Diagnostic")
-map("]d", function()
-	set_and_goto("d")
-end, "Goto Next Diagnostic")
-
-map("[h", function()
-	set_and_goto("H")
-end, "Goto Previous Hunk")
-map("]h", function()
-	set_and_goto("h")
-end, "Goto Next Hunk")
-
-map("[q", function()
-	set_and_goto("Q")
-end, "Goto Previous Quickfix")
-map("]q", function()
-	set_and_goto("q")
-end, "Goto Next Quickfix")
-
-map("[t", function()
-	set_and_goto("T")
-end, "Goto Previous Todo")
-map("]t", function()
-	set_and_goto("t")
-end, "Goto Next Todo")
+for _, motion in ipairs(motions) do
+	map(motion.key, function()
+		set_and_goto(motion.id)
+	end, motion.desc)
+end
