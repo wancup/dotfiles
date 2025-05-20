@@ -14,7 +14,7 @@ local function next_diagnostic()
 	vim.diagnostic.jump({ float = true, count = 1 })
 end
 
-local motion_map = {
+local base_motion_map = {
 	c = {
 		forward = function()
 			vim.cmd.normal({ "]c", bang = true })
@@ -23,18 +23,8 @@ local motion_map = {
 			vim.cmd.normal({ "[c", bang = true })
 		end,
 	},
-	C = {
-		forward = function()
-			vim.cmd.normal({ "[c", bang = true })
-		end,
-		backward = function()
-			vim.cmd.normal({ "]c", bang = true })
-		end,
-	},
 	x = { forward = git.next_conflict, backward = git.prev_conflict },
-	X = { forward = git.prev_conflict, backward = git.next_conflict },
 	d = { forward = next_diagnostic, backward = prev_diagnostic },
-	D = { forward = prev_diagnostic, backward = next_diagnostic },
 	h = {
 		forward = function()
 			require("gitsigns").nav_hunk("next")
@@ -43,16 +33,7 @@ local motion_map = {
 			require("gitsigns").nav_hunk("prev")
 		end,
 	},
-	H = {
-		forward = function()
-			require("gitsigns").nav_hunk("prev")
-		end,
-		backward = function()
-			require("gitsigns").nav_hunk("next")
-		end,
-	},
 	q = { forward = "cnext", backward = "cprev" },
-	Q = { forward = "cprev", backward = "cnext" },
 	t = {
 		forward = function()
 			require("todo-comments").jump_next()
@@ -61,15 +42,16 @@ local motion_map = {
 			require("todo-comments").jump_prev()
 		end,
 	},
-	T = {
-		forward = function()
-			require("todo-comments").jump_prev()
-		end,
-		backward = function()
-			require("todo-comments").jump_next()
-		end,
-	},
 }
+
+local motion_map = {}
+for id, motion in pairs(base_motion_map) do
+	motion_map[id] = motion
+	motion_map[id:upper()] = {
+		forward = motion.backward,
+		backward = motion.forward,
+	}
+end
 
 ---@param reverse boolean
 local function do_motion(reverse)
