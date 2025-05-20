@@ -1,5 +1,4 @@
 local disabled_fts = {
-	"blame",
 	"alpha",
 	"aerial",
 	"neotest-summary",
