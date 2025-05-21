@@ -75,18 +75,20 @@ map("n", "<leader>lD", diagnostic.workspace_list, { desc = "List Diagnostics(Wor
 map("n", "<C-e>", register.edit_register, { desc = "Edit Register" })
 map("n", "<leader>tq", ":tabclose<cr>", { desc = "Quite tab and buffers" })
 
+-- Insert and Cmdline
+map({ "i", "c" }, "<C-h>", "<BS>")
+map({ "i", "c" }, "<C-d>", "<Delete>")
+map({ "i", "c" }, "<C-a>", "<Home>")
+map({ "i", "c" }, "<C-e>", "<End>")
+map({ "i", "c" }, "<C-f>", "<Right>")
+map({ "i", "c" }, "<C-b>", "<Left>")
+map({ "i", "c" }, "<C-r><C-r>", "<C-r>0")
+
 -- Insert
-map("i", "<C-h>", "<BS>")
-map("i", "<C-d>", "<Delete>")
-map("i", "<C-k>", "<C-o>d$")
-map("i", "<C-a>", "<Home>")
-map("i", "<C-e>", "<End>")
+map("i", "<C-l>", "<Esc>la")
 map("i", "<C-n>", "<Down>")
 map("i", "<C-p>", "<Up>")
-map("i", "<C-f>", "<Right>")
-map("i", "<C-b>", "<Left>")
-map("i", "<C-l>", "<Esc>la")
-map("i", "<C-r><C-r>", "<C-r>0")
+map("i", "<C-k>", "<C-o>d$")
 
 -- Visual
 map("x", "y", "ygv<Esc>")
