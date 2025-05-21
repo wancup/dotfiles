@@ -199,7 +199,6 @@ local config = {
 
 if wezterm.target_triple == "aarch64-apple-darwin" then
 	config.default_prog = { shell_path, "-l" }
-	config.macos_forward_to_ime_modifier_mask = "SHIFT|CTRL"
 end
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 	config.default_prog = { "wsl.exe", "--distribution", "Debian", "--", shell_path, "-l" }
