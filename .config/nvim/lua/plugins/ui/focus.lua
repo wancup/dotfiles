@@ -14,7 +14,14 @@ return {
 	version = false,
 	event = { "WinNew" },
 	keys = {
-		{ "<leader>uf", "<cmd>FocusAutoresize<cr>", desc = "[U]I [F]ocus Resize" },
+		{
+			"<leader>uf",
+			function()
+				vim.cmd("FocusEnable")
+				vim.cmd("FocusAutoresize")
+			end,
+			desc = "Focus Resize",
+		},
 	},
 	opts = {
 		enable = true,
