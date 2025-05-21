@@ -5,7 +5,7 @@ return {
 	event = { "BufReadPost", "BufNewFile" },
 	config = true,
 	keys = {
-		{ "<leader>lt", "<cmd>TodoQuickFix<cr>", desc = "[L]ist [T]odo" },
-		{ "<leader>ft", "<cmd>TodoTelescope<cr>", desc = "[F]ind [T]odos" },
+		{ "<leader>lt", "<cmd>TodoQuickFix<cr>", desc = "List Todo" },
+		{ "<leader>ft", "<cmd>TodoTelescope<cr>", desc = "Find Todos" },
 	},
 }
