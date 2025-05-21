@@ -38,6 +38,7 @@ map({ "n", "x" }, "<leader><leader>", vim.lsp.buf.code_action, { desc = "Code Ac
 map({ "n", "x" }, "<leader>rn", vim.lsp.buf.rename, { desc = "ReName" })
 
 -- Normal
+map("n", "<C-q>", ":q<cr>")
 map("n", "<C-Up>", "<cmd>resize +2<cr>")
 map("n", "<C-Down>", "<cmd>resize -2<cr>")
 map("n", "<C-Left>", "<cmd>vertical resize +2<cr>")

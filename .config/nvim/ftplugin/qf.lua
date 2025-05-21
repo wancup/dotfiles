@@ -1,4 +1,4 @@
-vim.keymap.set("n", "q", function()
+vim.keymap.set("n", "<C-q>", function()
 	vim.cmd("wincmd p")
 	vim.cmd("cclose")
 	require("focus").focus_autoresize()
