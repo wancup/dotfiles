@@ -14,6 +14,9 @@ return {
 				vim.keymap.set(mode, l, r, { buffer = buffer, desc = desc })
 			end
 
+			map("n", "<leader>ghp", function()
+				gs.preview_hunk_inline()
+			end, "Git Hunk Preview Inline")
 			map("n", "<leader>ghP", gs.preview_hunk, "Git Hunk Preview")
 			map({ "n", "v" }, "<leader>ghs", ":Gitsigns stage_hunk<CR>", "Git Hunk Stage")
 			map({ "n", "v" }, "<leader>ghr", ":Gitsigns reset_hunk<CR>", "Git Hunk Reset")
@@ -25,10 +28,6 @@ return {
 			map("n", "<leader>gM", function()
 				gs.blame_line({ full = true })
 			end, "Git blame in line")
-			map("n", "<leader>gt", function()
-				gs.toggle_deleted()
-				gs.toggle_word_diff()
-			end, "Git Toggle Deleted")
 
 			-- Quickfix
 			map("n", "<leader>lg", gs.setqflist, "List Git Hunks")
