@@ -102,7 +102,9 @@ return {
 							local text =
 								require("codecompanion.helpers.actions").get_code(context.start_line, context.end_line)
 
-							return "以下の文章を日本語に翻訳してください。\n\n" .. text .. "\n"
+							return "以下の文章を翻訳してください。元の文章が英語の場合は日本語に、元が日本語の場合は英語に翻訳してください。\n\n"
+								.. text
+								.. "\n"
 						end,
 					},
 				},
