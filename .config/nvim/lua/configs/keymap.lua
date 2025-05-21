@@ -58,6 +58,13 @@ map("n", "<S-cr>", "i<Cr><Esc>")
 map("n", "<leader>w", "<cmd>wa<cr>", { desc = "Write All" })
 map("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit All" })
 map("n", "<leader>bd", buffer.delete_buffer, { desc = "[B]uffer [D]elete" })
+map("n", "<leader>bc", function()
+	for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+		if vim.bo[buf].buftype == "acwrite" then
+			vim.api.nvim_buf_delete(buf, {})
+		end
+	end
+end, { desc = "Clear acwrite buffers" })
 map("n", "<leader>p", '"+p', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>P", '"+P', { desc = "[P]aste from Clipboard" })
 map("n", "<leader>ll", "<cmd>copen<cr>", { desc = "[L]ist Quickfix" })
