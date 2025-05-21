@@ -72,6 +72,7 @@ map("n", "<leader>lc", git.conflict_list, { desc = "List Git Conflict" })
 map("n", "<leader>ld", diagnostic.current_buf_list, { desc = "List Diagnostics" })
 map("n", "<leader>lD", diagnostic.workspace_list, { desc = "List Diagnostics(Workspace)" })
 map("n", "<C-e>", register.edit_register, { desc = "Edit Register" })
+map("n", "<leader>tq", ":tabclose<cr>", { desc = "Quite tab and buffers" })
 
 -- Insert
 map("i", "<C-h>", "<BS>")

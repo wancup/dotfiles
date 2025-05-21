@@ -28,7 +28,7 @@ return {
 				{ "<leader>r", group = "Rename" },
 				{ "<leader>s", group = "Surround" },
 				{ "<leader>S", group = "Session" },
-				{ "<leader>t", group = "Test" },
+				{ "<leader>t", group = "Test and Tab" },
 				{ "<leader>u", group = "UI" },
 			},
 		})
