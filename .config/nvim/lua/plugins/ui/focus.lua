@@ -27,6 +27,11 @@ return {
 		enable = true,
 		autoresize = {
 			enable = true,
+			minheight = 5,
+		},
+		ui = {
+			number = true,
+			signcolumn = false,
 		},
 	},
 	config = function(_, opts)
