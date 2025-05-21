@@ -73,6 +73,9 @@ return {
 					},
 				},
 			},
+			diff = {
+				enabled = false,
+			},
 		},
 		opts = {
 			language = "Japanese",
@@ -131,17 +134,25 @@ return {
 	init = function()
 		vim.cmd([[cab cc CodeCompanion]])
 
-		local group = vim.api.nvim_create_augroup("CodeCompanionNotification", {})
+		local group = vim.api.nvim_create_augroup("CodeCompanionEventsFn", {})
 
 		vim.api.nvim_create_autocmd("User", {
 			group = group,
 			pattern = "CodeCompanionRequestStarted",
 			callback = function()
-				vim.notify("[CodeCompanion] Request Started!")
+				vim.api.nvim_command("stopinsert")
+				vim.notify("[CodeCompanion] Request Started")
 			end,
 		})
 
-		-- Hello, World!
+		vim.api.nvim_create_autocmd("User", {
+			group = group,
+			pattern = "CodeCompanionRequestStreaming",
+			callback = function()
+				vim.notify("[CodeCompanion] Request Streaming...")
+			end,
+		})
+
 		vim.api.nvim_create_autocmd("User", {
 			group = group,
 			pattern = "CodeCompanionRequestFinished",
