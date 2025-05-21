@@ -27,18 +27,11 @@ return {
 	},
 	keys = {
 		{
-			"<leader>nm",
-			function()
-				require("noice").cmd("last")
-			end,
-			desc = "[N]oice Last [M]essage",
-		},
-		{
-			"<leader>nh",
+			"<leader>ln",
 			function()
 				require("noice").cmd("history")
 			end,
-			desc = "[N]oice [H]istory",
+			desc = "Noice History List",
 		},
 	},
 }
