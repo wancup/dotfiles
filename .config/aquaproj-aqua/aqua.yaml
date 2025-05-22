@@ -37,7 +37,7 @@ packages:
   - name: zaghaghi/openapi-tui@0.10.2
   - name: Wilfred/difftastic@0.63.0
   - name: dprint/dprint@0.50.0
-  - name: astral-sh/ruff@0.11.10
+  - name: astral-sh/ruff@0.11.11
   - name: XAMPPRocky/tokei@v12.1.2
   - name: hadolint/hadolint@v2.12.0
   - name: sharkdp/hexyl@v0.16.0
