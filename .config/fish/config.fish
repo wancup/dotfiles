@@ -44,6 +44,7 @@ abbr gp "git pull"
 abbr gpr "git pull --rebase"
 abbr gpp "git pull --prune"
 abbr gs "git switch"
+abbr gsm "git switch main"
 abbr la lsd -a
 abbr ll lsd -la
 abbr lg lazygit
