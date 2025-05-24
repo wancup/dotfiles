@@ -11,7 +11,7 @@ customCommands:
     command: "gitmoji -c"
     context: "files"
     description: "Commit changes with gitmoji"
-    subprocess: true
+    output: terminal
 
 git:
   commit:
