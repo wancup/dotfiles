@@ -266,6 +266,8 @@ return {
 		})
 	),
 
+	s("ec", { t("exoprt const") }),
+
 	s("co", { t('import "client-only"') }),
 
 	s("so", { t('import "server-only"') }),
