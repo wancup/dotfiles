@@ -70,6 +70,10 @@ return {
 				},
 			},
 			completion = { completeopt = "menu,menuone,noinsert" },
+			performance = {
+				debounce = 10,
+				throttle = 10,
+			},
 			snippet = {
 				expand = function(args)
 					luasnip.lsp_expand(args.body)
