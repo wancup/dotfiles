@@ -266,7 +266,7 @@ return {
 		})
 	),
 
-	s("ec", { t("exoprt const") }),
+	s("ec", { t("export const") }),
 
 	s("co", { t('import "client-only"') }),
 
