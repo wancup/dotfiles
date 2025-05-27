@@ -6,6 +6,22 @@ local fmt = require("luasnip.extras.fmt").fmt
 
 return {
 	s(
+		"ec",
+		fmt("export const {} = {};", {
+			i(1, ""),
+			i(2, ""),
+		})
+	),
+
+	s(
+		"c",
+		fmt("const {} = {};", {
+			i(1, ""),
+			i(2, ""),
+		})
+	),
+
+	s(
 		"fn",
 		fmt("function {}({}): {} {{\n}}", {
 			i(1, "name"),
@@ -290,35 +306,35 @@ return {
 	),
 
 	s(
-		"c.d",
+		"cd",
 		fmt("console.debug({})", {
 			i(1),
 		})
 	),
 
 	s(
-		"c.l",
+		"cl",
 		fmt("console.log({})", {
 			i(1),
 		})
 	),
 
 	s(
-		"c.i",
+		"ci",
 		fmt("console.info({})", {
 			i(1),
 		})
 	),
 
 	s(
-		"c.e",
+		"ce",
 		fmt("console.error({})", {
 			i(1),
 		})
 	),
 
 	s(
-		"c.w",
+		"cw",
 		fmt("console.warn({})", {
 			i(1),
 		})
@@ -331,8 +347,6 @@ return {
 			i(2),
 		})
 	),
-
-	s("ec", { t("export const") }),
 
 	s("co", { t('import "client-only"') }),
 
