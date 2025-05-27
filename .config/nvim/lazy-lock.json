@@ -24,6 +24,7 @@
   "flutter-tools.nvim": { "branch": "main", "commit": "d5bb1dc3db78d7ab65dd8c5a6f32a38e383b9cb1" },
   "focus.nvim": { "branch": "master", "commit": "5500e1a9e926eec5a361d910679282fd723c0a96" },
   "gitlinker.nvim": { "branch": "master", "commit": "23982c86f50a9c3f4bc531d41b7a4a68ddd12355" },
+  "gitmoji.nvim": { "branch": "main", "commit": "2659de229c2b26d50732f1220700eebbcdb2d6ef" },
   "gitsigns.nvim": { "branch": "main", "commit": "8b729e489f1475615dc6c9737da917b3bc163605" },
   "guess-indent.nvim": { "branch": "main", "commit": "84a4987ff36798c2fc1169cbaff67960aed9776f" },
   "hlchunk.nvim": { "branch": "main", "commit": "474ec5d0f220158afa83aaefab32402e710d3032" },

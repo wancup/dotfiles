@@ -10,6 +10,7 @@ return {
 		"saadparwaiz1/cmp_luasnip",
 		"onsails/lspkind.nvim",
 		{ "zbirenbaum/copilot-cmp", dependencies = { "zbirenbaum/copilot.lua" }, config = true },
+		{ "Dynge/gitmoji.nvim", opts = { completion = { append_space = true, complete_as = "emoji" } } },
 	},
 	config = function()
 		local cmp = require("cmp")
@@ -112,6 +113,12 @@ return {
 
 		cmp.setup.cmdline({ "/", "?" }, {
 			enabled = false,
+		})
+
+		cmp.setup.filetype("gitcommit", {
+			sources = cmp.config.sources({
+				{ name = "gitmoji" },
+			}),
 		})
 
 		vim.lsp.config("*", {
