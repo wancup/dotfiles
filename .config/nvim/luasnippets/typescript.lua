@@ -348,6 +348,8 @@ return {
 		})
 	),
 
+	s("sat", { t("satisfies") }),
+
 	s("co", { t('import "client-only"') }),
 
 	s("so", { t('import "server-only"') }),
