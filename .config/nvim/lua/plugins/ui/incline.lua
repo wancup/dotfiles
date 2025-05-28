@@ -13,7 +13,7 @@ return {
 			cursorline = true,
 		},
 		window = {
-			zindex = 5,
+			zindex = 1,
 		},
 		render = function(props)
 			local buf_name = vim.api.nvim_buf_get_name(props.buf)
