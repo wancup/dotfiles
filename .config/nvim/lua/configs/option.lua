@@ -1,3 +1,5 @@
+local font = require("core/font")
+
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
@@ -23,6 +25,7 @@ opt.laststatus = 3
 opt.list = true
 opt.listchars = { tab = "» ", lead = "˒" }
 opt.ambiwidth = "single"
+font.apply_cellwidths()
 
 -- Search
 opt.hlsearch = true
@@ -36,18 +39,6 @@ opt.shiftwidth = 0
 opt.softtabstop = -1
 opt.autoindent = true
 opt.smartindent = true
-
--- NOTE: Cannot match the terminal settings, so temporarily commented out.
--- Avoid to invalid ambiwidth chars display
--- vim.fn.setcellwidths({
--- 	{ 0x1F000, 0x1FFFF, 2 }, -- 🀀 ~ 🫸
--- 	{ 0x2190, 0x2193, 2 }, -- ← ~ ↓
--- 	{ 0x2025, 0x2026, 2 }, -- ‥ ~ …
--- 	{ 0x2460, 0x2473, 2 }, -- ① ~ ⑳
--- 	{ 0x2600, 0x27FF, 2 }, -- ☀ ~ ⛿
--- 	{ 0x2B05, 0x2B07, 2 }, -- ⬅ ~ ⬇
--- 	{ 0x25BC, 0x25BD, 2 }, -- ▼ ~ ▽
--- })
 
 -- LSP
 vim.diagnostic.config({
