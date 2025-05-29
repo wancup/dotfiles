@@ -1,6 +1,6 @@
 "$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
 
-[manager]
+[mgr]
 prepend_keymap = [
   { on = ["Q"], run = ["quit"], desc = "Exit and Change Directory" },
   { on = ["q"], run = "quit --no-cwd-file", desc = "Exit the process without writing cwd-file" },

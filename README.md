@@ -11,7 +11,7 @@ mkdir ~/.config
 sh install.sh
 sh brew.sh
 aqua i -a -l
-ya pack --install
+ya pkg install
 ```
 
 ### Windows(WSL)
