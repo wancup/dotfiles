@@ -196,9 +196,6 @@ alt-i = 'exec-and-forget open -a "iPhone Mirroring"' # Terminal
 # See: https://nikitabobko.github.io/AeroSpace/guide#callbacks
 # Media
 [[on-window-detected]]
-if.app-id = 'com.apple.AppStore'
-run = 'move-node-to-workspace 9'
-[[on-window-detected]]
 if.app-id = 'com.apple.Notes'
 run = 'move-node-to-workspace 9'
 [[on-window-detected]]
@@ -226,6 +223,9 @@ if.app-id = 'com.tinyspeck.slackmacgap'
 run = 'move-node-to-workspace 1'
 
 # Floating
+[[on-window-detected]]
+if.app-id = 'com.apple.AppStore'
+run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'com.apple.finder'
 run = 'layout floating'
