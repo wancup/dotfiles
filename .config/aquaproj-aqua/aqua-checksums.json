@@ -246,23 +246,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/denoland/deno/v2.3.4/deno-aarch64-apple-darwin.zip",
-      "checksum": "912F13BA486A55BA3E235BC91FDDFD51E95A45598972CE026D34F206117CB14C",
+      "id": "github_release/github.com/denoland/deno/v2.3.5/deno-aarch64-apple-darwin.zip",
+      "checksum": "C4B97B260D534B27BD31D0DAC1E7D8DD83375B08510D7889B38B734EE932BB75",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/denoland/deno/v2.3.4/deno-aarch64-unknown-linux-gnu.zip",
-      "checksum": "3C8F0D776C967C9173D8A0FCCE78ADAC627DAFDE47FCF8F6907856F38D386273",
+      "id": "github_release/github.com/denoland/deno/v2.3.5/deno-aarch64-unknown-linux-gnu.zip",
+      "checksum": "8B5C2495AA2E8763ACB6FE6F5B03FEDA4AF31A1F2628DEDE1E41F82A8B950366",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/denoland/deno/v2.3.4/deno-x86_64-apple-darwin.zip",
-      "checksum": "4A4AF49EA8E4CDED2FD66B925CBA7401B6931F6D134C81A5E8BBD06B2FB4F9DF",
+      "id": "github_release/github.com/denoland/deno/v2.3.5/deno-x86_64-apple-darwin.zip",
+      "checksum": "F071932798DA027BB2C8DA28D89E31A48CA6357AD376798628DD4766F206DCA8",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/denoland/deno/v2.3.4/deno-x86_64-unknown-linux-gnu.zip",
-      "checksum": "501AD8AE9309093A836D446B5084FD9DC915FCD7F06A170320BF3E22A0EA4929",
+      "id": "github_release/github.com/denoland/deno/v2.3.5/deno-x86_64-unknown-linux-gnu.zip",
+      "checksum": "096DDB8B151ADB26F34AC6A8F2BEB774776E4B80173824181EB2D2F81E00D111",
       "algorithm": "sha256"
     },
     {
