@@ -28,13 +28,15 @@ return {
 				{ "i", "s", "c" }
 			),
 			["<C-space>"] = function()
-				if cmp.visible() then
+				if cmp.visible() and not vim.g.cmp_copilot_enabled then
+					vim.g.cmp_copilot_enabled = true
 					cmp.complete({
 						config = {
 							sources = { { name = "copilot" } },
 						},
 					})
 				else
+					vim.g.cmp_copilot_enabled = false
 					cmp.complete({
 						config = {
 							sources = {
