@@ -4,9 +4,14 @@ return {
 		"nvim-lua/plenary.nvim",
 		"nvim-telescope/telescope-live-grep-args.nvim",
 		"olacin/telescope-gitmoji.nvim",
+		"nvim-telescope/telescope-ui-select.nvim",
 	},
 	cmd = "Telescope",
 	keys = {
+		-- CodeAction with Telescope UI
+		{ "<leader><leader>", vim.lsp.buf.code_action, mode = { "n", "x" }, { desc = "Code Action" } },
+
+		-- Telescope Commands
 		{
 			"<leader>f<leader>",
 			":lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>",
@@ -134,11 +139,18 @@ return {
 						},
 					},
 				},
+
+				["ui-select"] = {
+					require("telescope.themes").get_cursor({
+						initial_mode = "normal",
+					}),
+				},
 			},
 		})
 
 		telescope.load_extension("live_grep_args")
 		telescope.load_extension("gitmoji")
 		telescope.load_extension("persisted")
+		telescope.load_extension("ui-select")
 	end,
 }
