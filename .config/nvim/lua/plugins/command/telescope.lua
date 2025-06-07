@@ -32,8 +32,8 @@ return {
 			end,
 			desc = "[F]ind [F]iles",
 		},
-		{ "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "[F]ind [R]ecent Files" },
-		{ "<leader>fR", "<cmd>Telescope resume<cr>", desc = "[F]ind [R]esume" },
+		{ "<leader>fr", "<cmd>Telescope resume<cr>", desc = "[F]ind [R]esume" },
+		{ "<leader>fR", "<cmd>Telescope oldfiles<cr>", desc = "[F]ind [R]ecent Files" },
 		{ "<leader>fa", "<cmd>Telescope autocommands<cr>", desc = "[F]ind [A]utoCommands" },
 		{
 			"<leader>fb",
@@ -51,8 +51,7 @@ return {
 		{ "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>", desc = "[F]ind [S]ymbols" },
 		{ "<leader>fS", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "[F]ind Workspace [S]ymbols" },
 		{ "<leader>fn", "<cmd>Telescope persisted<cr>", desc = "[F]ind Sessio[n]" },
-		{ "<leader>fq", "<cmd>Telescope quickfix<cr>", desc = "[F]ind [Q]uickfix" },
-		{ "<leader>fQ", "<cmd>Telescope quickfixhistory<cr>", desc = "[F]ind [Q]uickfixhistory" },
+		{ "<leader>fq", "<cmd>Telescope quickfixhistory<cr>", desc = "[F]ind [Q]uickfixhistory" },
 
 		-- git
 		{ "<leader>fgl", "<cmd>Telescope git_commits<cr>", desc = "[F]ind [G]it [L]og" },
