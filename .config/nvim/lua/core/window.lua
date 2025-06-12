@@ -43,10 +43,11 @@ local function open_picker_win(win_id, label_char, file_name, file_path)
 		table.insert(lines, " " .. line)
 	end
 	vim.api.nvim_buf_set_lines(buf, 0, -1, true, lines)
-	vim.api.nvim_buf_add_highlight(buf, -1, hi_picker_label, 1, 1, content_width)
-	vim.api.nvim_buf_add_highlight(buf, -1, hi_picker_sepalator, 2, 1, 1 + vim.fn.strlen(sepalator))
-	vim.api.nvim_buf_add_highlight(buf, -1, hi_picker_file_path, 3, 1, 1 + vim.fn.strlen(sepalator))
-	vim.api.nvim_buf_add_highlight(buf, -1, icon_hi, 4, 2, 2 + vim.fn.strlen(icon))
+	local ns_id = vim.api.nvim_create_namespace("window-picker")
+	vim.hl.range(buf, ns_id, hi_picker_label, { 1, 1 }, { 1, content_width })
+	vim.hl.range(buf, ns_id, hi_picker_sepalator, { 2, 1 }, { 2, 1 + vim.fn.strlen(sepalator) })
+	vim.hl.range(buf, ns_id, hi_picker_file_path, { 3, 1 }, { 3, 1 + vim.fn.strlen(sepalator) })
+	vim.hl.range(buf, ns_id, icon_hi, { 4, 2 }, { 4, 2 + vim.fn.strlen(icon) })
 
 	local x = math.floor((win_width / 2) - (content_width / 2))
 	local y = math.floor(win_height / 2) - 2
