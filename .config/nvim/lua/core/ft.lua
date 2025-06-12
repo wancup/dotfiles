@@ -19,7 +19,7 @@ local function highlight_forward(buf, cursor_line, ns_id)
 	local cursor_col_num = vim.api.nvim_win_get_cursor(0)[2]
 	local char_dict = {}
 	for i = 2, #cursor_line do
-		if i <= cursor_col_num then
+		if i <= cursor_col_num + 1 then
 			goto continue
 		end
 
