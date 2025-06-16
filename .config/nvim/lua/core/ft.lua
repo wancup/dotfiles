@@ -11,9 +11,8 @@ vim.api.nvim_set_hl(0, hi_ft_second, { fg = "#56949f" })
 
 local function highlight_char(buf, col, prev_count)
 	local cursor_row_num = vim.api.nvim_win_get_cursor(0)[1] - 1
-	local col_num = col - 1
 	local higroup = prev_count == 0 and hi_ft_first or hi_ft_second
-	vim.hl.range(buf, ft_ns_id, higroup, { cursor_row_num, col_num }, { cursor_row_num, col_num })
+	vim.hl.range(buf, ft_ns_id, higroup, { cursor_row_num, col }, { cursor_row_num, col })
 end
 
 local function highlight_forward(buf, cursor_line)
@@ -27,7 +26,7 @@ local function highlight_forward(buf, cursor_line)
 		local char = cursor_line:sub(i, i)
 		local prev_count = char_dict[char] or 0
 		if prev_count <= 1 then
-			highlight_char(buf, i, prev_count)
+			highlight_char(buf, i - 1, prev_count)
 		end
 
 		char_dict[char] = prev_count + 1
@@ -38,7 +37,7 @@ end
 local function highlight_backward(buf, cursor_line)
 	local cursor_col_num = vim.api.nvim_win_get_cursor(0)[2]
 	local char_dict = {}
-	for i = #cursor_line, 1, -1 do
+	for i = #cursor_line, 0, -1 do
 		if i >= cursor_col_num then
 			goto continue
 		end
