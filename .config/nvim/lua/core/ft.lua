@@ -37,15 +37,15 @@ end
 local function highlight_backward(buf, cursor_line)
 	local cursor_col_num = vim.api.nvim_win_get_cursor(0)[2]
 	local char_dict = {}
-	for i = #cursor_line, 0, -1 do
-		if i >= cursor_col_num then
+	for i = #cursor_line, 1, -1 do
+		if i > cursor_col_num then
 			goto continue
 		end
 
 		local char = cursor_line:sub(i, i)
 		local prev_count = char_dict[char] or 0
 		if prev_count <= 1 then
-			highlight_char(buf, i, prev_count)
+			highlight_char(buf, i - 1, prev_count)
 		end
 
 		char_dict[char] = prev_count + 1
