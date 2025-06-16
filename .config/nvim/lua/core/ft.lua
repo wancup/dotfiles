@@ -4,18 +4,19 @@ local MAX_LINE_LENGTH = 1000
 
 local hi_ft_first = "FtHighlightFirst"
 local hi_ft_second = "FtHighlightSecond"
+local ft_ns_id = vim.api.nvim_create_namespace("ft_highlight")
 
 vim.api.nvim_set_hl(0, hi_ft_first, { fg = "#f6c177" })
 vim.api.nvim_set_hl(0, hi_ft_second, { fg = "#56949f" })
 
-local function highlight_char(buf, ns_id, col, prev_count)
+local function highlight_char(buf, col, prev_count)
 	local cursor_row_num = vim.api.nvim_win_get_cursor(0)[1] - 1
 	local col_num = col - 1
 	local higroup = prev_count == 0 and hi_ft_first or hi_ft_second
-	vim.hl.range(buf, ns_id, higroup, { cursor_row_num, col_num }, { cursor_row_num, col_num })
+	vim.hl.range(buf, ft_ns_id, higroup, { cursor_row_num, col_num }, { cursor_row_num, col_num })
 end
 
-local function highlight_forward(buf, cursor_line, ns_id)
+local function highlight_forward(buf, cursor_line)
 	local cursor_col_num = vim.api.nvim_win_get_cursor(0)[2]
 	local char_dict = {}
 	for i = 2, #cursor_line do
@@ -26,7 +27,7 @@ local function highlight_forward(buf, cursor_line, ns_id)
 		local char = cursor_line:sub(i, i)
 		local prev_count = char_dict[char] or 0
 		if prev_count <= 1 then
-			highlight_char(buf, ns_id, i, prev_count)
+			highlight_char(buf, i, prev_count)
 		end
 
 		char_dict[char] = prev_count + 1
@@ -34,7 +35,7 @@ local function highlight_forward(buf, cursor_line, ns_id)
 	end
 end
 
-local function highlight_backward(buf, cursor_line, ns_id)
+local function highlight_backward(buf, cursor_line)
 	local cursor_col_num = vim.api.nvim_win_get_cursor(0)[2]
 	local char_dict = {}
 	for i = #cursor_line, 1, -1 do
@@ -45,7 +46,7 @@ local function highlight_backward(buf, cursor_line, ns_id)
 		local char = cursor_line:sub(i, i)
 		local prev_count = char_dict[char] or 0
 		if prev_count <= 1 then
-			highlight_char(buf, ns_id, i, prev_count)
+			highlight_char(buf, i, prev_count)
 		end
 
 		char_dict[char] = prev_count + 1
@@ -62,14 +63,13 @@ M.highlight_ft = function(command, mode)
 	end
 
 	local buf = vim.api.nvim_get_current_buf()
-	local ns_id = vim.api.nvim_create_namespace("ft_highlight")
 	local cursor_row_num = vim.api.nvim_win_get_cursor(0)[1] - 1
-	vim.hl.range(buf, ns_id, "Comment", { cursor_row_num, 1 }, { cursor_row_num, #cursor_line })
+	vim.hl.range(buf, ft_ns_id, "Comment", { cursor_row_num, 1 }, { cursor_row_num, #cursor_line })
 
 	if command == "f" or command == "t" then
-		highlight_forward(buf, cursor_line, ns_id)
+		highlight_forward(buf, cursor_line)
 	else
-		highlight_backward(buf, cursor_line, ns_id)
+		highlight_backward(buf, cursor_line)
 	end
 
 	vim.api.nvim_command("redraw")
@@ -84,7 +84,7 @@ M.highlight_ft = function(command, mode)
 			vim.api.nvim_feedkeys(command .. input_char, "n", false)
 		end
 	end
-	vim.api.nvim_buf_clear_namespace(0, ns_id, 0, -1)
+	vim.api.nvim_buf_clear_namespace(0, ft_ns_id, 0, -1)
 end
 
 return M
