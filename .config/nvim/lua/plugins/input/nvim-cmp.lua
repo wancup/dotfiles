@@ -27,19 +27,25 @@ return {
 				cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
 				{ "i", "s", "c" }
 			),
-			["<C-space>"] = cmp.mapping.complete({
-				config = {
-					sources = {
-						{ name = "nvim_lsp", group_index = 1 },
-						{ name = "nvim_lsp_signature_help", group_index = 1 },
+			["<C-space>"] = cmp.mapping(
+				cmp.mapping.complete({
+					config = {
+						sources = {
+							{ name = "nvim_lsp", group_index = 1 },
+							{ name = "nvim_lsp_signature_help", group_index = 1 },
+						},
 					},
-				},
-			}),
-			["<C-,>"] = cmp.mapping.complete({
-				config = {
-					sources = { { name = "copilot" } },
-				},
-			}),
+				}),
+				{ "i", "s", "c" }
+			),
+			["<C-,>"] = cmp.mapping(
+				cmp.mapping.complete({
+					config = {
+						sources = { { name = "copilot" } },
+					},
+				}),
+				{ "i" }
+			),
 			["<CR>"] = cmp.mapping(cmp.mapping.confirm({ select = false }), { "i", "s", "c" }),
 		}
 
