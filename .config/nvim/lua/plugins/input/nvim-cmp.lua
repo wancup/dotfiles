@@ -27,27 +27,24 @@ return {
 				cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
 				{ "i", "s", "c" }
 			),
-			["<C-space>"] = function()
-				if cmp.visible() and not vim.g.cmp_copilot_enabled then
-					vim.g.cmp_copilot_enabled = true
-					cmp.complete({
-						config = {
-							sources = { { name = "copilot" } },
+			["<C-space>"] = cmp.mapping(function()
+				cmp.complete({
+					config = {
+						sources = {
+							{ name = "nvim_lsp", group_index = 1 },
+							{ name = "nvim_lsp_signature_help", group_index = 1 },
+							{ name = "copilot", group_index = 2 },
 						},
-					})
-				else
-					vim.g.cmp_copilot_enabled = false
-					cmp.complete({
-						config = {
-							sources = {
-								{ name = "nvim_lsp", group_index = 1 },
-								{ name = "nvim_lsp_signature_help", group_index = 1 },
-								{ name = "copilot", group_index = 2 },
-							},
-						},
-					})
-				end
-			end,
+					},
+				})
+			end),
+			["<C-,>"] = cmp.mapping(function()
+				cmp.complete({
+					config = {
+						sources = { { name = "copilot" } },
+					},
+				})
+			end),
 			["<CR>"] = cmp.mapping(cmp.mapping.confirm({ select = false }), { "i", "s", "c" }),
 		}
 
@@ -67,6 +64,7 @@ return {
 				{ name = "luasnip", group_index = 1 },
 				{ name = "nvim_lsp", group_index = 1 },
 				{ name = "nvim_lsp_signature_help", group_index = 1 },
+				{ name = "copilot", group_index = 2 },
 				per_filetype = {
 					codecompanion = { "codecompanion" },
 				},
