@@ -9,7 +9,6 @@ return {
 		"L3MON4D3/LuaSnip",
 		"saadparwaiz1/cmp_luasnip",
 		"onsails/lspkind.nvim",
-		{ "zbirenbaum/copilot-cmp", dependencies = { "zbirenbaum/copilot.lua" }, config = true },
 		{ "Dynge/gitmoji.nvim", opts = { completion = { append_space = true, complete_as = "emoji" } } },
 	},
 	config = function()
@@ -37,14 +36,6 @@ return {
 					},
 				}),
 				{ "i", "s", "c" }
-			),
-			["<C-,>"] = cmp.mapping(
-				cmp.mapping.complete({
-					config = {
-						sources = { { name = "copilot" } },
-					},
-				}),
-				{ "i" }
 			),
 			["<CR>"] = cmp.mapping(cmp.mapping.confirm({ select = false }), { "i", "s", "c" }),
 		}
@@ -87,7 +78,6 @@ return {
 			formatting = {
 				format = require("lspkind").cmp_format({
 					mode = "symbol_text",
-					symbol_map = { Copilot = "" },
 					maxwidth = {
 						menu = function()
 							return math.floor(0.3 * vim.api.nvim_win_get_width(0))
