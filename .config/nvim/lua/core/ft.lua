@@ -58,6 +58,7 @@ end
 M.highlight_ft = function(command, mode)
 	local cursor_line = vim.api.nvim_get_current_line()
 	if #cursor_line < 2 or #cursor_line > MAX_LINE_LENGTH then
+		vim.notify("[FT] No length to motion!", vim.log.levels.DEBUG)
 		return
 	end
 
@@ -71,6 +72,7 @@ M.highlight_ft = function(command, mode)
 		highlight_backward(buf, cursor_line)
 	end
 
+	vim.notify("[FT] Wait for input!", vim.log.levels.DEBUG)
 	vim.api.nvim_command("redraw")
 	local success, input_code = pcall(vim.fn.getchar)
 	if success and type(input_code) == "number" then
