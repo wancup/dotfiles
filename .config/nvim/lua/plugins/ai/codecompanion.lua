@@ -46,7 +46,10 @@ return {
 	opts = {
 		strategies = {
 			chat = {
-				adapter = "copilot",
+				adapter = {
+					name = "copilot",
+					model = "claude-sonnet-4",
+				},
 				keymaps = {
 					clear = { modes = { n = "<S-BS>" } },
 					stop = { modes = { n = "<C-c>", i = "<C-c>" } },
