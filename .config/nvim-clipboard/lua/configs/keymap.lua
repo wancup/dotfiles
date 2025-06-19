@@ -4,6 +4,10 @@ local map = vim.keymap.set
 map({ "n", "x" }, "<S-h>", "^")
 map({ "n", "x" }, "<S-l>", "$")
 map({ "n", "x" }, "<leader>y", '"+y', { desc = "[Y]ank to Clipboard" })
+map({ "n", "x" }, "j", "gj", { noremap = true })
+map({ "n", "x" }, "gj", "j", { noremap = true })
+map({ "n", "x" }, "k", "gk", { noremap = true })
+map({ "n", "x" }, "gk", "k", { noremap = true })
 
 -- Normal
 map("n", "<C-Up>", "<cmd>resize +2<cr>")
