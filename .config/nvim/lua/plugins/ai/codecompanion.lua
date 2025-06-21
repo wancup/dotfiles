@@ -1,3 +1,5 @@
+local chat_model = os.getenv("CODECOMPANION_CHAT_MODEL")
+
 return {
 	"olimorris/codecompanion.nvim",
 	dependencies = {
@@ -46,10 +48,10 @@ return {
 	opts = {
 		strategies = {
 			chat = {
-				adapter = {
+				adapter = chat_model and {
 					name = "copilot",
-					model = "claude-sonnet-4",
-				},
+					model = chat_model,
+				} or "copilot",
 				keymaps = {
 					clear = { modes = { n = "<S-BS>" } },
 					stop = { modes = { n = "<C-c>", i = "<C-c>" } },
