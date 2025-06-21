@@ -23,7 +23,6 @@ return {
 			vim.fn["skkeleton#initialize"]()
 
 			vim.cmd("startinsert")
-			vim.fn["skkeleton#handle"]("enable", {})
 		end,
 	},
 }
