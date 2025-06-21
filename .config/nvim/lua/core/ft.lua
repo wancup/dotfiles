@@ -56,6 +56,7 @@ end
 ---@param command 'f'| 't' | 'F' | 'T'
 ---@param mode 'o' | 'any'
 M.highlight_ft = function(command, mode)
+	vim.notify("[FT] Start motion!", vim.log.levels.DEBUG)
 	local cursor_line = vim.api.nvim_get_current_line()
 	if #cursor_line < 2 or #cursor_line > MAX_LINE_LENGTH then
 		vim.notify("[FT] No length to motion!", vim.log.levels.DEBUG)
