@@ -80,7 +80,8 @@ M.highlight_ft = function(command, mode)
 		local input_char = vim.fn.nr2char(input_code)
 		if mode == "o" then
 			local op = vim.api.nvim_eval("v:operator")
-			vim.notify(op)
+			local esc = vim.api.nvim_replace_termcodes("<Esc>", true, false, true)
+			vim.api.nvim_feedkeys(esc, "n", false)
 			vim.api.nvim_feedkeys(op .. command .. input_char, "n", false)
 		else
 			vim.api.nvim_feedkeys(command .. input_char, "n", false)
