@@ -79,9 +79,9 @@ M.highlight_ft = function(command, mode)
 			local op = vim.api.nvim_eval("v:operator")
 			local esc = vim.api.nvim_replace_termcodes("<Esc>", true, false, true)
 			vim.api.nvim_feedkeys(esc, "n", false)
-			vim.api.nvim_feedkeys(op .. command .. input_char, "ni", false)
+			vim.api.nvim_feedkeys(op .. command .. input_char, "n", false)
 		else
-			vim.api.nvim_feedkeys(command .. input_char, "ni", false)
+			vim.api.nvim_feedkeys(command .. input_char, "n", false)
 		end
 	end
 	vim.api.nvim_buf_clear_namespace(0, ft_ns_id, 0, -1)
