@@ -54,9 +54,9 @@ local function highlight_backward(buf, cursor_line)
 	end
 end
 
-local function is_insert_mode()
+local function should_ignore()
 	local mode = vim.fn.mode()
-	return mode:match("^i") ~= nil
+	return mode:match("^[it]") ~= nil
 end
 
 local function clear_highlight()
@@ -91,7 +91,7 @@ M.setup = function()
 			clear_highlight()
 		end
 
-		if is_insert_mode() then
+		if should_ignore() then
 			return
 		end
 
