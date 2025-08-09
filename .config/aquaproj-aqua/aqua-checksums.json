@@ -56,13 +56,23 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/Wilfred/difftastic/0.64.0/difft-aarch64-apple-darwin.tar.gz",
+      "checksum": "E1E59FF3CF6C0837C94DDD4910D43351EC14F8C169ABCFA51E63136D14C9E528",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/Wilfred/difftastic/0.64.0/difft-aarch64-unknown-linux-gnu.tar.gz",
+      "checksum": "F657B0CC1BABA3B5BCDE4FDFBAFBC58F2131476ED53D01E4880898D34A1CB124",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/Wilfred/difftastic/0.64.0/difft-x86_64-apple-darwin.tar.gz",
       "checksum": "D6B7F1C4A66495400F1F6E224EFDAF82AA66E8930FCB257BC9357D69D52DD69D",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/Wilfred/difftastic/0.64.0/difft-x86_64-unknown-linux-gnu.tar.gz",
-      "checksum": "9EC3AA9F784A54C8099D1AF71B6BC18D3AD12CE50055565FFA2979AFF93C5732",
+      "id": "github_release/github.com/Wilfred/difftastic/0.64.0/difft-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "06DD06DA5593EE29ED9753026310C6C45E0048CD37BB5807E7F07B8F90CFEA5E",
       "algorithm": "sha256"
     },
     {
@@ -336,6 +346,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.54.1/lazygit_0.54.1_darwin_arm64.tar.gz",
+      "checksum": "25710495177762F9DF2DCCAF5E7DEED8E5EC70871B7AD385CFFA8F7DE0646D1D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.54.1/lazygit_0.54.1_darwin_x86_64.tar.gz",
+      "checksum": "700FDA0F7E77E78B9CCCB7DE02EF277217757C8ACCD67C6B776296779CD2303D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.54.1/lazygit_0.54.1_linux_arm64.tar.gz",
+      "checksum": "D2E1D3B6F369E036EE048D78A9395F737A9E1E759D8E4F13D38A6E3EB6028367",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.54.1/lazygit_0.54.1_linux_x86_64.tar.gz",
+      "checksum": "AD89B26B479FB89B417E426690D9AF1D3B73C4DC7952D32AB7BB55C0E25A86CA",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jorgerojas26/lazysql/v0.3.9/lazysql_Darwin_arm64.tar.gz",
       "checksum": "74B49B45E5991BB5DBD4F0E37FE664F6BD36F88551825D72DFC8875CC2AE5CDE",
       "algorithm": "sha256"
@@ -506,23 +536,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/opentofu/opentofu/v1.10.5/tofu_1.10.5_darwin_amd64.zip",
-      "checksum": "943B727F1E1AD0FF5D2B039F2A79730573E9B7EB38242D1F995BE513206A3A62",
+      "id": "github_release/github.com/opentofu/opentofu/v1.10.5/tofu_1.10.5_darwin_amd64.tar.gz",
+      "checksum": "740123E89CA097BBD866189F5FC854D29C1205216A00AE7F518A8B5503330C79",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/opentofu/opentofu/v1.10.5/tofu_1.10.5_darwin_arm64.zip",
-      "checksum": "05DFB37DD24F795DE1F6B156E81BC7F830536738C955E2E82720D1A716116AED",
+      "id": "github_release/github.com/opentofu/opentofu/v1.10.5/tofu_1.10.5_darwin_arm64.tar.gz",
+      "checksum": "07A3760DB10F982A18F674C0803F4AF92AE0B67A195E4D16008B67563D0C4E21",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/opentofu/opentofu/v1.10.5/tofu_1.10.5_linux_amd64.zip",
-      "checksum": "D4FD8EE4C370EAF4B80A4E98FED2FCCBDCD117B0603129FF3478B8CB492C7670",
+      "id": "github_release/github.com/opentofu/opentofu/v1.10.5/tofu_1.10.5_linux_amd64.tar.gz",
+      "checksum": "B06F7EDA97D297CCE03BEF3697EBB0DC5786A10DD2188BDE1CAD6F8FE7E1E2F6",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/opentofu/opentofu/v1.10.5/tofu_1.10.5_linux_arm64.zip",
-      "checksum": "A5192EB96D61A7639939162E85E5B946D8A60E5AF5925B066F6E72E17D51E712",
+      "id": "github_release/github.com/opentofu/opentofu/v1.10.5/tofu_1.10.5_linux_arm64.tar.gz",
+      "checksum": "A0856A80D584D20EF9ED0EE635C418FA611F0B9213EDECE079C907B546A24C4D",
       "algorithm": "sha256"
     },
     {
@@ -776,8 +806,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.386.0/registry.yaml",
-      "checksum": "297DCBFBAC90D85B1C44F1C0E1EC9622A666B2FAEF5979BB553A761A28AA3E87C631E83E623B77EBF64B18D864DEDC7B90D7E646146AA91CBCE59509A0447386",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.398.0/registry.yaml",
+      "checksum": "7ECB8D2982D9147B59B8EE0FD7F01EEAEAA542BC9AD2A6E57E3FF250CB9FA8233347CC963ACC5BE4E0527B4E6967DA88613D99952B0BC42CCBE7C0FC60C562C5",
       "algorithm": "sha512"
     }
   ]
