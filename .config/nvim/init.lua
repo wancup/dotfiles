@@ -29,3 +29,4 @@ require("lazy").setup({
 require("configs.keymap")
 require("configs.goto")
 require("configs.autocmd")
+require("core.ft").setup()

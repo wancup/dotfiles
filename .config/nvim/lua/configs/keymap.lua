@@ -4,7 +4,6 @@ local git = require("core.git")
 local window = require("core.window")
 local register = require("core.register")
 local float_lsp = require("core.float-lsp")
-local ft = require("core.ft")
 local map = vim.keymap.set
 
 -- Remove unused default keymap
@@ -92,29 +91,3 @@ map("i", "<C-k>", "<C-o>d$")
 
 -- Visual
 map("x", "y", "ygv<Esc>")
-
--- FT
-map({ "n", "x" }, "f", function()
-	ft.highlight_ft("f", "any")
-end, { noremap = true })
-map({ "o" }, "f", function()
-	ft.highlight_ft("f", "o")
-end, { noremap = true })
-map({ "n", "x" }, "t", function()
-	ft.highlight_ft("t", "any")
-end, { noremap = true })
-map({ "o" }, "t", function()
-	ft.highlight_ft("t", "o")
-end, { noremap = true })
-map({ "n", "x" }, "F", function()
-	ft.highlight_ft("F", "any")
-end, { noremap = true })
-map({ "o" }, "F", function()
-	ft.highlight_ft("F", "o")
-end, { noremap = true })
-map({ "n", "x" }, "T", function()
-	ft.highlight_ft("T", "any")
-end, { noremap = true })
-map({ "o" }, "T", function()
-	ft.highlight_ft("T", "o")
-end, { noremap = true })
