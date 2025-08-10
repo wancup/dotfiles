@@ -47,7 +47,7 @@ packages:
   - name: neovim/neovim@v0.11.3
   - name: denoland/deno@v2.4.3
   - name: opentofu/opentofu@v1.10.5
-  - name: jorgerojas26/lazysql@v0.3.9
+  - name: jorgerojas26/lazysql@v0.4.0
   - name: Schniz/fnm@v1.38.1
   - name: golang/go@go1.24.5
   - name: shenwei356/csvtk@v0.34.0
