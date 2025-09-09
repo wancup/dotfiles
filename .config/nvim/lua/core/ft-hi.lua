@@ -56,7 +56,7 @@ end
 
 local function should_ignore()
 	local mode = vim.fn.mode()
-	return mode:match("^[it]") ~= nil
+	return mode:match("^[ict]") ~= nil
 end
 
 local function clear_highlight()
