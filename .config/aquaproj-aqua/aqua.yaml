@@ -52,5 +52,5 @@ packages:
   - name: golang/go@go1.25.1
   - name: shenwei356/csvtk@v0.34.0
   - name: pnpm/pnpm@v10.17.1
-  - name: astral-sh/uv@0.8.15
+  - name: astral-sh/uv@0.8.22
   - name: rust-lang/rust-analyzer@2025-04-21
