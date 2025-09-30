@@ -21,23 +21,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.1.0/stylua-linux-aarch64.zip",
-      "checksum": "D4DF7A455242C4EFB0E5614F99CB55168C0057485201AE71E1BE31C5FCD5A923",
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.3.0/stylua-linux-aarch64.zip",
+      "checksum": "A0874C81A2FDB5C7507B1280E02E0F5012322558328859C746348CA2304B436A",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.1.0/stylua-linux-x86_64-musl.zip",
-      "checksum": "7919A621CECC5BE5E66EA01C03038511FA5CB88F6277CCAD9CA3460D66B5D82A",
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.3.0/stylua-linux-x86_64-musl.zip",
+      "checksum": "E087BCC9AA0F7D17567666EA429B1A7D0FCEEFFBAF78C98105913D0FC48D7744",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.1.0/stylua-macos-aarch64.zip",
-      "checksum": "050D6EA19F05E655474598606405CF5054C322B9C759A4B7DC368701325ACDB3",
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.3.0/stylua-macos-aarch64.zip",
+      "checksum": "5C037DA91602317EE88846EF8EF001FDBB5C4DD9CF60E27318F67C6AE2C6B898",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.1.0/stylua-macos-x86_64.zip",
-      "checksum": "4C1C6DBC22120D921D4C24C5ED486789AAD6005520C7C4A64B4DAA5741768A8E",
+      "id": "github_release/github.com/JohnnyMorganz/StyLua/v2.3.0/stylua-macos-x86_64.zip",
+      "checksum": "C0AD32EC909EDC37670D3BC5D72D80C3C18672F9D6D6F654D08A57CF5CA49ED4",
       "algorithm": "sha256"
     },
     {
