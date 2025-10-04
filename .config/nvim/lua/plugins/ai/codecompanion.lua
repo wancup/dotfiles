@@ -70,9 +70,7 @@ return {
 				show_header_separator = true,
 				show_settings = true,
 				window = {
-					layout = "float",
-					height = 0.9,
-					width = 0.9,
+					layout = "horizontal",
 					opts = {
 						number = false,
 					},
@@ -165,6 +163,15 @@ return {
 			pattern = "CodeCompanionRequestFinished",
 			callback = function()
 				vim.notify("[CodeCompanion] Request Finished!")
+			end,
+		})
+
+		vim.api.nvim_create_autocmd("User", {
+			group = group,
+			pattern = "CodeCompanionChatOpened",
+			callback = function()
+				vim.cmd("wincmd J")
+				vim.cmd("FocusAutoresize")
 			end,
 		})
 	end,

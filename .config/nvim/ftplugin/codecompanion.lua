@@ -1,3 +1,5 @@
 vim.keymap.set("n", "q", function()
+	vim.cmd("wincmd p")
 	vim.cmd("CodeCompanionChat Toggle")
+	vim.cmd("FocusAutoresize")
 end, { buffer = true })
