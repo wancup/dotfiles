@@ -68,6 +68,22 @@ return {
 							requires_approval = false,
 						},
 					},
+					groups = {
+						["plan"] = {
+							description = "Tools for drafting implementation plans",
+							prompt = "I'm giving you access to ${tools} to help you create structured implementation plans for coding tasks",
+							tools = {
+								"file_search",
+								"get_changed_files",
+								"grep_search",
+								"list_code_usages",
+								"read_file",
+							},
+							opts = {
+								collapse_tools = true,
+							},
+						},
+					},
 				},
 			},
 			inline = {
