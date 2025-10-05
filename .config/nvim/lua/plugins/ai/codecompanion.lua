@@ -80,6 +80,13 @@ return {
 				enabled = false,
 			},
 		},
+		memory = {
+			opts = {
+				chat = {
+					enabled = true,
+				},
+			},
+		},
 		opts = {
 			language = "Japanese",
 		},
