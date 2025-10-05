@@ -4,6 +4,14 @@ local function augroup(name)
 	return vim.api.nvim_create_augroup(name, { clear = true })
 end
 
+vim.api.nvim_create_autocmd("FileType", {
+	group = augroup("NvimTreeSitterStart"),
+	callback = function()
+		pcall(vim.treesitter.start)
+		vim.treesitter.language.register("tsx", { "typescriptreact" })
+	end,
+})
+
 vim.api.nvim_create_autocmd("BufEnter", {
 	group = augroup("RemoveAutoComment"),
 	callback = function()

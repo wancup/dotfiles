@@ -54,3 +54,4 @@ packages:
   - name: pnpm/pnpm@v10.17.1
   - name: astral-sh/uv@0.8.22
   - name: rust-lang/rust-analyzer@2025-04-21
+  - name: tree-sitter/tree-sitter@v0.25.10
