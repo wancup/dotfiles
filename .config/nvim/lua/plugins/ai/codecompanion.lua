@@ -57,6 +57,18 @@ return {
 					stop = { modes = { n = "<C-c>", i = "<C-c>" } },
 					close = { modes = { n = "<C-S-c>", i = "<C-S-c>" } },
 				},
+				tools = {
+					["create_file"] = {
+						opts = {
+							requires_approval = false,
+						},
+					},
+					["insert_edit_into_file"] = {
+						opts = {
+							requires_approval = false,
+						},
+					},
+				},
 			},
 			inline = {
 				adapter = "copilot",
