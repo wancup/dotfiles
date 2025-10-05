@@ -5,6 +5,7 @@
     "github>aquaproj/aqua-renovate-config#2.9.0",
     "github>kachick/renovate-config-dprint#1.3.0"
   ],
+  "minimumReleaseAge": "5 days",
   "packageRules": [
     {
       "matchPackageNames": [
