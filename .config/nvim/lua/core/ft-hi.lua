@@ -89,6 +89,7 @@ M.setup = function()
 	vim.on_key(function(key)
 		if is_highlighted then
 			clear_highlight()
+			return
 		end
 
 		if should_ignore() then
