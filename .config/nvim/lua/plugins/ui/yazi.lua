@@ -2,14 +2,19 @@ return {
 	"mikavilpas/yazi.nvim",
 	keys = {
 		{
-			"<leader>e",
-			"<cmd>Yazi<cr>",
-			desc = "[E]xplore files",
-		},
-		{
-			"<leader>E",
+			"<leader>e<leader>",
 			"<cmd>Yazi toggle<cr>",
 			desc = "Yazi toggle",
+		},
+		{
+			"<leader>ee",
+			"<cmd>Yazi<cr>",
+			desc = "Yazi",
+		},
+		{
+			"<leader>ed",
+			"<cmd>Yazi cwd<cr>",
+			desc = "Yazi cwd",
 		},
 	},
 	opts = {
