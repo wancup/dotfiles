@@ -1,8 +1,8 @@
 {
-  "denops.vim": { "branch": "main", "commit": "10ae0c8d4e6f7a1214fe788b55cd3a311d9d0358" },
+  "denops.vim": { "branch": "main", "commit": "a278b8342459e4687f24d4d575d72ff593326cee" },
   "eskk.vim": { "branch": "master", "commit": "e530575790cca5d6603b8ab984298459ecf3c0c0" },
-  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
-  "skkeleton": { "branch": "main", "commit": "3e019b331fbf9bd1d4539e7bd650a1c543125cee" },
+  "lazy.nvim": { "branch": "main", "commit": "59334064f8604ca073791c25dcc5c9698865406e" },
+  "skkeleton": { "branch": "main", "commit": "8fa36fc8065d600706d5edeeb1008a5233eb1d51" },
   "tuskk.vim": { "branch": "main", "commit": "794e5edcf864b82a69f396c28e26d78ee5f91a9f" },
   "vim-maketable": { "branch": "master", "commit": "d72e73f333c64110524197ec637897bd1464830f" }
 }
