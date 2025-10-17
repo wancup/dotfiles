@@ -42,7 +42,7 @@ packages:
   - name: hadolint/hadolint@v2.14.0
   - name: sharkdp/hexyl@v0.16.0
   - name: o2sh/onefetch@2.25.0
-  - name: lsd-rs/lsd@v1.1.5
+  - name: lsd-rs/lsd@v1.2.0
   - name: jesseduffield/lazydocker@v0.24.1
   - name: neovim/neovim@v0.11.4
   - name: denoland/deno@v2.5.4
