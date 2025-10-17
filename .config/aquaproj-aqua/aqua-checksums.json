@@ -471,23 +471,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-aarch64-apple-darwin.tar.gz",
-      "checksum": "D39006922BABB1A96806E8F3F3BC197276C807A625617091C43836D8924A0C07",
+      "id": "github_release/github.com/lsd-rs/lsd/v1.2.0/lsd-v1.2.0-aarch64-apple-darwin.tar.gz",
+      "checksum": "9E34A5D392FF913302098AAD0543DAFA1883C531EAF229B82F086C3FCA675E3E",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "DD84C4ADD323288FF3DC072955E4FF2364A074A68BF9F1A6FB6556AD310C723B",
+      "id": "github_release/github.com/lsd-rs/lsd/v1.2.0/lsd-v1.2.0-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "642ECB1A763B9F790A99C83A1445C117A6813ED4EDB5D498D4420423C6353EB8",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-x86_64-apple-darwin.tar.gz",
-      "checksum": "4245E4E8F6FC14376A1F96D210DCF7C55954AFACB831C965D2759259CBA516EF",
+      "id": "github_release/github.com/lsd-rs/lsd/v1.2.0/lsd-v1.2.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "00D3C50551B270BBDF7DA97816E5BA7F5FD10294CD310165F7F8B5523E738B9C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lsd-rs/lsd/v1.1.5/lsd-v1.1.5-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "AF10FBEF2472134C676396A27ECFFFB34ADB107DA2F95D0453A3150CED33AE47",
+      "id": "github_release/github.com/lsd-rs/lsd/v1.2.0/lsd-v1.2.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "77849DA1210336534258551A581401BA19AE6B8D7B66A2A1FEFF148AD41E3814",
       "algorithm": "sha256"
     },
     {
