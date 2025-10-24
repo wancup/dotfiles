@@ -6,6 +6,14 @@ local fmt = require("luasnip.extras.fmt").fmt
 
 return {
 	s(
+		"ecac",
+		fmt("export const {} = {} as const;", {
+			i(1, ""),
+			i(2, ""),
+		})
+	),
+
+	s(
 		"ec",
 		fmt("export const {} = {};", {
 			i(1, ""),
@@ -347,6 +355,8 @@ return {
 			i(2),
 		})
 	),
+
+	s("ac", { t("as const") }),
 
 	s("sat", { t("satisfies ") }),
 
