@@ -76,7 +76,7 @@ return {
 
 	s(
 		"mafn",
-		fmt("async {}({}): {} {{\n}}", {
+		fmt("async {}({}): Promise<{}> {{\n}}", {
 			i(1, "name"),
 			i(2, ""),
 			i(3, "void"),
