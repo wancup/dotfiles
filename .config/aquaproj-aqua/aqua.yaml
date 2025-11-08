@@ -14,7 +14,7 @@ packages:
   - name: sharkdp/fd@v10.3.0
   - name: sharkdp/bat@v0.26.0
   - name: BurntSushi/ripgrep@15.0.0
-  - name: jesseduffield/lazygit@v0.55.1
+  - name: jesseduffield/lazygit@v0.56.0
   - name: jqlang/jq@jq-1.8.1
   - name: JohnnyMorganz/StyLua@v2.3.1
   - name: ajeetdsouza/zoxide@v0.9.8
