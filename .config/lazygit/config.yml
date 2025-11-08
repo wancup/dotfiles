@@ -5,20 +5,18 @@ gui:
       - underline
   showDivergenceFromBaseBranch: arrowAndNumber
   expandFocusedSidePanel: true
-
 customCommands:
   - key: "<c-space>"
     command: "gitmoji -c"
     context: "files"
     description: "Commit changes with gitmoji"
     output: terminal
-
 git:
   commit:
     autoWrapCommitMessage: false
-  paging:
-    colorArg: always
-    pager: delta --dark --paging=never
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
   branchLogCmd: "git log \
     --graph \
     --color=always \
@@ -28,9 +26,7 @@ git:
     --pretty=format:\"%C(auto)%H %d%nAuthor(%ad): %an <%ae>%nCommit(%cd): %cn <%ce>%n%n%w(0,4,4)%B%n\" \
     {{branchName}} --"
   overrideGpg: true
-
 promptToReturnFromSubprocess: false
-
 os:
   editPreset: "nvim-remote"
   edit: '[ -z "$NVIM" ] && (nvim -- {{filename}}) || (nvim --server "$NVIM" --remote-send "q" && nvim --server "$NVIM" --remote {{filename}} && nvim --server "$NVIM" --remote-send ":split {{filename}}<cr>")'
