@@ -451,23 +451,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/leoafarias/fvm/3.2.1/fvm-3.2.1-linux-arm64.tar.gz",
-      "checksum": "A5F8902AA503BCB7AB6421F460C73B69008A18DC76C833F4DBBD6AB10875832C",
+      "id": "github_release/github.com/leoafarias/fvm/4.0.0/fvm-4.0.0-linux-arm64.tar.gz",
+      "checksum": "6A151D7EDD0BB842CA6047A4A874A84B96ACB63EF7FF130E31B0178452A182B8",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/leoafarias/fvm/3.2.1/fvm-3.2.1-linux-x64.tar.gz",
-      "checksum": "39E8EBDB46B93DE1C2AEDBFA9AA75103EF16C9BF50048A928EF70ABBB456F4F8",
+      "id": "github_release/github.com/leoafarias/fvm/4.0.0/fvm-4.0.0-linux-x64.tar.gz",
+      "checksum": "58891A42EE8C775CC3B4BAEB214D52CAEFB6BB312BD973C08A2561CC25BAAE4B",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/leoafarias/fvm/3.2.1/fvm-3.2.1-macos-arm64.tar.gz",
-      "checksum": "375CE6E0FE05E783040C38860B415FAD8B40548BFE077879EC38E4FC8853B15A",
+      "id": "github_release/github.com/leoafarias/fvm/4.0.0/fvm-4.0.0-macos-arm64.tar.gz",
+      "checksum": "30D295D9FB5AB459AD6010B844C565952FE16B7C3989D3EA909D877F31B0BB6D",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/leoafarias/fvm/3.2.1/fvm-3.2.1-macos-x64.tar.gz",
-      "checksum": "052D59CF1E10F56914F47DE006ADEECF920E6AB5733BDD9F10E1347AEACACD83",
+      "id": "github_release/github.com/leoafarias/fvm/4.0.0/fvm-4.0.0-macos-x64.tar.gz",
+      "checksum": "9C3FDBC57430C058FF815A592E4D5EA5D7DD864BE51A50CA280008F12A4971EA",
       "algorithm": "sha256"
     },
     {
