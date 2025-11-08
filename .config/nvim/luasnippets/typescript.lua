@@ -349,6 +349,14 @@ return {
 	),
 
 	s(
+		"iff",
+		fmt('import {{{}}} from "{}"', {
+			i(2),
+			i(1),
+		})
+	),
+
+	s(
 		"eff",
 		fmt('export {} from "./{}"', {
 			i(1, "*"),
