@@ -283,7 +283,7 @@ return {
 	),
 
 	s(
-		"iff",
+		"ipf",
 		fmt('import {{{}}} from "{}"', {
 			i(2),
 			i(1),
@@ -291,7 +291,7 @@ return {
 	),
 
 	s(
-		"eff",
+		"epf",
 		fmt('export {} from "./{}"', {
 			i(1, "*"),
 			i(2),
