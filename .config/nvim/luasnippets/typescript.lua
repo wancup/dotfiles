@@ -135,6 +135,14 @@ return {
 	),
 
 	s(
+		"ift",
+		fmt("if ({}) throw new Error({})", {
+			i(1),
+			i(2),
+		})
+	),
+
+	s(
 		"else",
 		fmt("else {{\n{}\n}}", {
 			i(1),
@@ -361,6 +369,13 @@ return {
 		fmt('export {} from "./{}"', {
 			i(1, "*"),
 			i(2),
+		})
+	),
+
+	s(
+		"tne",
+		fmt("throw new Error({})", {
+			i(1),
 		})
 	),
 
