@@ -53,6 +53,7 @@ return {
 			typescriptreact = function(bufnr)
 				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
 			end,
+			go = { "gofmt" },
 			rust = { "rustfmt" },
 			python = { "ruff_format", "ruff_fix" },
 			terraform = { "tofu_fmt" },
