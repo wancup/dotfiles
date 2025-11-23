@@ -681,18 +681,18 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/hyperfine/v1.19.0/hyperfine-v1.19.0-aarch64-unknown-linux-gnu.tar.gz",
-      "checksum": "7F9C0522E1ACF869E0558E085C43F2CEA3E30E4F7A4B7BC3D5540CBDEE7B4273",
+      "id": "github_release/github.com/sharkdp/hyperfine/v1.20.0/hyperfine-v1.20.0-aarch64-unknown-linux-gnu.tar.gz",
+      "checksum": "90875CB1DB7A1D797C311174D061728361E58FC70E3B62262A00635AC3B1997C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/hyperfine/v1.19.0/hyperfine-v1.19.0-x86_64-apple-darwin.tar.gz",
-      "checksum": "80AD420C0A9A5D090F6CA0DDC9305A139D57BA6B6E8E7ADF22C800389BAF3AB6",
+      "id": "github_release/github.com/sharkdp/hyperfine/v1.20.0/hyperfine-v1.20.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "F58D0B90993FADFA122A351428C469CE24AFEF3865F027F0E6E86F0830D088F1",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/hyperfine/v1.19.0/hyperfine-v1.19.0-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "825287143F397774093539CA2458854AB3735C0E8A1AAF075C22EDCE7D261556",
+      "id": "github_release/github.com/sharkdp/hyperfine/v1.20.0/hyperfine-v1.20.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "3285EC7959285288137043DD81DCE0DDE056227018A8277532D9A364B4F03C2B",
       "algorithm": "sha256"
     },
     {
