@@ -56,3 +56,4 @@ packages:
   - name: rust-lang/rust-analyzer@2025-04-21
   - name: tree-sitter/tree-sitter@v0.25.10
   - name: aws/aws-cli@2.32.3
+  - name: golangci/golangci-lint@v2.6.2
