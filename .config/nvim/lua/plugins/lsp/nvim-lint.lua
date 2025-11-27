@@ -12,6 +12,7 @@ return {
 			javascriptreact = { "eslint_d" },
 			typescript = { "eslint_d" },
 			typescriptreact = { "eslint_d" },
+			go = { "golangcilint" },
 			rust = { "clippy" },
 			["yaml.gha"] = { "actionlint" },
 		}
