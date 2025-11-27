@@ -511,6 +511,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/lusingander/stu/v0.7.5/stu-0.7.5-aarch64-apple-darwin.tar.gz",
+      "checksum": "832A0B4CC82AD5E2C6746B53FA6D7A1726F2BA91CB270162892036212347C50A",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/lusingander/stu/v0.7.5/stu-0.7.5-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "D6650C2DE10DF8673E9DF8C240089DDA8E8733FA4FF529003DE3CEC82F5B7EF9",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/lusingander/stu/v0.7.5/stu-0.7.5-x86_64-apple-darwin.tar.gz",
+      "checksum": "EE4A03444100BD95CF9FFC09A2A091807DA1680D9D71B06012AB0EEEF128E5C2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/lusingander/stu/v0.7.5/stu-0.7.5-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "64543D88F92C122EBA37E2B15A95D9CCEBE9336E4B40DC0D5CC0B829389F9DCE",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/mattn/efm-langserver/v0.0.54/efm-langserver_v0.0.54_darwin_amd64.zip",
       "checksum": "2A65211D4AB1D27C4CF11B2200BCBE3E62DA7073E5BA5F3A67C5262D725729B2",
       "algorithm": "sha256"
