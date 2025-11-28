@@ -53,6 +53,7 @@ return {
 					model = chat_model,
 				} or "copilot",
 				keymaps = {
+					send = { modes = { n = "<C-s>", i = "<C-s>" } },
 					clear = { modes = { n = "<S-BS>" } },
 					stop = { modes = { n = "<C-c>", i = "<C-c>" } },
 					close = { modes = { n = "<C-S-c>", i = "<C-S-c>" } },
