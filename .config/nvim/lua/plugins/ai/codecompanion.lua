@@ -25,6 +25,7 @@ return {
 			desc = "Add selection to CodeCompanion Chat",
 			mode = { "x" },
 		},
+		{ "<leader>ac", "<cmd>CodeCompanionChat<cr>", desc = "New CodeCompanion Chat", mode = { "n" } },
 		{ "<leader>al", ":'<,'>CodeCompanion<cr>", desc = "Open Inline CodeCompanion", mode = { "n", "x" } },
 		{
 			"<leader>ai",
