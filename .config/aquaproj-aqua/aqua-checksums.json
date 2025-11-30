@@ -886,6 +886,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "http/static.rust-lang.org/rustup/archive/1.28.2/aarch64-apple-darwin/rustup-init",
+      "checksum": "20EF5516C31B1AC2290084199BA77DBBCAA1406C45C1D978CA68558EF5964EF5",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/static.rust-lang.org/rustup/archive/1.28.2/aarch64-unknown-linux-gnu/rustup-init",
+      "checksum": "E3853C5A252FCA15252D07CB23A1BDD9377A8C6F3EFA01531109281AE47F841C",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/static.rust-lang.org/rustup/archive/1.28.2/x86_64-apple-darwin/rustup-init",
+      "checksum": "9C331076F62B4D0EDEAE63D9D1C9442D5FE39B37B05025EC8D41C5ED35486496",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "http/static.rust-lang.org/rustup/archive/1.28.2/x86_64-unknown-linux-gnu/rustup-init",
+      "checksum": "20A06E644B0D9BD2FBDBFD52D42540BDDE820EA7DF86E92E533C073DA0CDD43C",
+      "algorithm": "sha256"
+    },
+    {
       "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.436.0/registry.yaml",
       "checksum": "D10A9E3D8F3D28C8A75E536FD30C8B1C2E91C92637DF4BC97B61E375E133DDF271E277F9F7F628DBC8A1CA2C5F03CD4CAADB338EEB549B3C00C4BA9F5E444BEB",
       "algorithm": "sha512"
