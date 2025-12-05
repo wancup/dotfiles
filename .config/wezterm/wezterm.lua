@@ -35,6 +35,10 @@ local config = {
 		cursor_border = "#524f67",
 		compose_cursor = "#524f67",
 	},
+	inactive_pane_hsb = {
+		saturation = 0.8,
+		brightness = 0.5,
+	},
 	disable_default_key_bindings = true,
 	leader = { key = "-", mods = "CTRL", timeout_milliseconds = 5000 },
 	keys = {
