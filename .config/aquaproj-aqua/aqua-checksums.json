@@ -351,6 +351,21 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/ip7z/7zip/25.01/7z2501-linux-arm64.tar.xz",
+      "checksum": "39C5140F02CE4436599303C59A149F654CB1BBC47CDC105A942120D747AE040D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/ip7z/7zip/25.01/7z2501-linux-x64.tar.xz",
+      "checksum": "4CA3B7C6F2F67866B92622818B58233DC70367BE2F36B498EB0BDEAAA44B53F4",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/ip7z/7zip/25.01/7z2501-mac.tar.xz",
+      "checksum": "26AA75BC262BB10BF0805617B95569C3035C2C590A99F7DB55C7E9607B2685E0",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/jesseduffield/lazydocker/v0.24.2/lazydocker_0.24.2_Darwin_arm64.tar.gz",
       "checksum": "6B00CF2CC6D55C64363D715995732BDCC6997D30CEEF2393DDA2953F8C7EA3F3",
       "algorithm": "sha256"
