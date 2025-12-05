@@ -6,8 +6,8 @@ return {
 	event = { "WinNew" },
 	opts = {
 		debounce_threshold = {
-			falling = 500,
-			rising = 100,
+			falling = 100,
+			rising = 50,
 		},
 		hide = {
 			cursorline = true,
