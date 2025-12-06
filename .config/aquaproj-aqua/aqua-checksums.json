@@ -676,6 +676,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/secretlint/secretlint/v11.2.5/secretlint-11.2.5-darwin-arm64",
+      "checksum": "E25D6E5F03045785CA2690BD53C0BD1CCB590685D881C69D7F3B8AF6600C5F33",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/secretlint/secretlint/v11.2.5/secretlint-11.2.5-darwin-x64",
+      "checksum": "AE6C7AE57685DFA1B900F290226833CDEAEBD2F38CF8A0950B87F064B61FB7E8",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/secretlint/secretlint/v11.2.5/secretlint-11.2.5-linux-arm64",
+      "checksum": "50898317E4A5B662E6F41AB6E332C473BB0D12B2B5656DCB44A2D31C621CE2B7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/secretlint/secretlint/v11.2.5/secretlint-11.2.5-linux-x64",
+      "checksum": "388B370E9813BE83D604BB2C8239F0937D1E7C0826DD53D122448DFABFF86669",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sharkdp/bat/v0.26.0/bat-v0.26.0-aarch64-apple-darwin.tar.gz",
       "checksum": "0B66666577B551E2ADBA9CDCF35A265AE595C5B8D4B500ACB85817C4678D2F85",
       "algorithm": "sha256"
