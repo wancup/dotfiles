@@ -40,7 +40,7 @@ return {
 				require("nvim-web-devicons").get_icon_color(file_name, file_extension, { default = true })
 			local modified = vim.bo[props.buf].modified
 			local shorten_file_path = string.len(file_path) > MAX_FILE_PATH_LENGTH
-					and ".." .. string.sub(file_path, -MAX_FILE_PATH_LENGTH)
+					and "…" .. string.sub(file_path, -MAX_FILE_PATH_LENGTH)
 				or file_path
 
 			return {

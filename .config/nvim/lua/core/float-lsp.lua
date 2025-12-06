@@ -15,7 +15,7 @@ end
 ---@return string
 local function make_window_tile(window_width, filename)
 	local border_width = 2
-	local marker = ".."
+	local marker = "…"
 
 	local file_path = vim.fn.fnamemodify(filename, ":p:.")
 	local max_title = math.floor(window_width * 0.95) - (border_width + string.len(marker))
