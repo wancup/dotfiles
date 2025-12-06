@@ -54,10 +54,7 @@ return {
 				{ shorten_file_path },
 				"/",
 				{ file_name, gui = modified and "bold,italic" or "bold" },
-				{
-					vim.bo[props.buf].modified and "・" or "",
-					group = "WarningMsg",
-				},
+				{ modified and "・" or "", group = "WarningMsg" },
 				" ",
 			}
 		end,
