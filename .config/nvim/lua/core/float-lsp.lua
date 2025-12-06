@@ -10,12 +10,26 @@ M.close_all_window = function()
 	windows = {}
 end
 
+---@param window_width number
+---@param filename string
+---@return string
+local function make_window_tile(window_width, filename)
+	local border_width = 2
+	local marker = ".."
+
+	local file_path = vim.fn.fnamemodify(filename, ":p:.")
+	local max_title = math.floor(window_width * 0.95) - (border_width + string.len(marker))
+	return string.len(file_path) > max_title and marker .. string.sub(file_path, -max_title) or file_path
+end
+
 ---@param bufnr integer
 ---@param item table
 ---@return integer
 local function open_float_window(bufnr, item)
 	local width = math.ceil(vim.o.columns * 0.7)
 	local height = math.ceil(vim.o.lines * 0.4)
+	local title = make_window_tile(width, item.filename)
+
 	local win = vim.api.nvim_open_win(bufnr, true, {
 		relative = "cursor",
 		width = width,
@@ -23,6 +37,8 @@ local function open_float_window(bufnr, item)
 		row = 1,
 		col = 0,
 		border = "rounded",
+		title = { { title, "Comment" } },
+		title_pos = "left",
 		zindex = #windows + 1,
 	})
 	vim.api.nvim_win_set_buf(win, bufnr)
