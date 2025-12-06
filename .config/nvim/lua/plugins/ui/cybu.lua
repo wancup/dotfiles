@@ -8,7 +8,7 @@ return {
 	opts = {
 		position = {
 			relative_to = "win",
-			anchor = "topright",
+			anchor = "centerright",
 		},
 		behavior = {
 			mode = {
@@ -17,6 +17,6 @@ return {
 				},
 			},
 		},
-		display_time = 500,
+		display_time = 2000,
 	},
 }
