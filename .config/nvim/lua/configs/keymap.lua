@@ -91,3 +91,7 @@ map("i", "<C-k>", "<C-o>d$")
 
 -- Visual
 map("x", "y", "ygv<Esc>")
+
+-- Terminal
+map("t", "<C-\\><Esc>", "<C-\\><C-n>")
+map("t", "<C-\\>q", "<C-\\><C-n>:q<cr>")
