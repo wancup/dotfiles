@@ -54,6 +54,7 @@ return {
 		},
 	},
 	opts = {
+		open_mapping = { [[<c-\><c-\>]], [[<c-¥><c-¥>]] },
 		float_opts = {
 			width = math.floor(vim.o.columns * 0.95),
 			height = math.floor(vim.o.lines * 0.95),
