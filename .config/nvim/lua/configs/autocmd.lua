@@ -43,19 +43,14 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
-vim.api.nvim_create_autocmd("WinClosed", {
+vim.api.nvim_create_autocmd("WinLeave", {
 	group = reset_cellwidths_group,
 	callback = function(event)
-		local win_id = tonumber(event.match)
-		if not win_id then
-			return
-		end
-		local buf = vim.api.nvim_win_get_buf(win_id)
-		if (not buf) or (not vim.api.nvim_buf_is_valid(buf)) then
+		if not vim.api.nvim_buf_is_valid(event.buf) then
 			return
 		end
 
-		local filetype = vim.api.nvim_get_option_value("filetype", { buf = buf })
+		local filetype = vim.api.nvim_get_option_value("filetype", { buf = event.buf })
 		if vim.tbl_contains(force_single_width_fts, filetype) then
 			font.apply_cellwidths()
 		end
