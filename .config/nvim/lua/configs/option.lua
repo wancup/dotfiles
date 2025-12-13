@@ -48,6 +48,7 @@ vim.diagnostic.config({
 })
 vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("dprint")
+vim.lsp.inlay_hint.enable(true)
 
 -- Custom Filetype
 vim.filetype.add({
