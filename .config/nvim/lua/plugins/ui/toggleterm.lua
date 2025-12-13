@@ -52,6 +52,35 @@ return {
 			end,
 			desc = "lazysql",
 		},
+		{
+			"<leader>mc",
+			function()
+				local Terminal = require("toggleterm.Terminal").Terminal
+				local lazysql = Terminal:new({
+					cmd = "copilot",
+					direction = "horizontal",
+					on_open = function(term)
+						local height = math.floor(vim.o.lines * 0.4)
+						vim.api.nvim_win_set_height(term.window, height)
+
+						local function set_keymap(target, command)
+							vim.api.nvim_buf_set_keymap(
+								term.bufnr,
+								"t",
+								target,
+								command,
+								{ noremap = true, silent = true }
+							)
+						end
+						set_keymap("<C-c>", "<Esc>")
+						set_keymap("<Esc>", "<C-\\><C-n>")
+						set_keymap("g<C-c>", "<C-c>")
+					end,
+				})
+				lazysql:toggle()
+			end,
+			desc = "Copilot CLI",
+		},
 	},
 	opts = {
 		open_mapping = { [[<c-\><c-\>]], [[<c-¥><c-¥>]] },
