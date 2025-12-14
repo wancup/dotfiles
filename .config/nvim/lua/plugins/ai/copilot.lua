@@ -2,6 +2,16 @@ return {
 	"zbirenbaum/copilot.lua",
 	cmd = { "Copilot" },
 	event = { "InsertEnter" },
+	keys = {
+		{
+			"<leader>ai",
+			function()
+				require("copilot.suggestion").toggle_auto_trigger()
+			end,
+			mode = { "n" },
+			desc = "Toggle auto inline completion",
+		},
+	},
 	opts = {
 		panel = { enabled = false },
 		suggestion = {
