@@ -10,7 +10,7 @@ return {
 			mode = { "n", "t", "i", "x" },
 		},
 		{
-			"<leader>as",
+			"<leader>at",
 			function()
 				require("sidekick.cli").send({ msg = "{this}" })
 			end,
