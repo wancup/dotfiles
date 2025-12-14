@@ -1,4 +1,4 @@
-local agent_on_open = function(term)
+local function on_open(term)
 	local height = math.floor(vim.o.lines * 0.4)
 	vim.api.nvim_win_set_height(term.window, height)
 
@@ -15,14 +15,14 @@ local copilot_opts = {
 	open_mapping = { [[<leader>mg]] },
 	cmd = "copilot",
 	direction = "horizontal",
-	on_open = agent_on_open,
+	on_open = on_open,
 }
 
 local claude_opts = {
 	open_mapping = { [[<leader>mc]] },
 	cmd = "claude",
 	direction = "horizontal",
-	on_open = agent_on_open,
+	on_open = on_open,
 }
 
 return {
