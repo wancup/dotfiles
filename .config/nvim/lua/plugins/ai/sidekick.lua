@@ -57,6 +57,9 @@ return {
 		},
 	},
 	opts = {
+		nes = {
+			enabled = false,
+		},
 		cli = {
 			win = {
 				layout = "bottom",
