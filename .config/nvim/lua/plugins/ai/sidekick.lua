@@ -70,6 +70,22 @@ return {
 					hide_ctrl_z = { "<c-z>", "hide", mode = "nt", desc = "hide the terminal window" },
 					prompt = { "<C-S-p>", "prompt", mode = "t", desc = "insert prompt or context" },
 					stopinsert = { "<Esc>", "stopinsert", mode = "t", desc = "enter normal mode" },
+					esc = {
+						"<C-c>",
+						function(term)
+							vim.fn.chansend(term.job, "\x1b")
+						end,
+						mode = "t",
+						desc = "send escape to terminal",
+					},
+					ctrl_c = {
+						"g<C-c>",
+						function(term)
+							vim.fn.chansend(term.job, "\x03")
+						end,
+						mode = "t",
+						desc = "send C-c to terminal",
+					},
 					nav_left = false,
 					nav_down = false,
 					nav_up = false,
