@@ -1,19 +1,28 @@
+local agent_on_open = function(term)
+	local height = math.floor(vim.o.lines * 0.4)
+	vim.api.nvim_win_set_height(term.window, height)
+
+	local function set_t_keymap(target, command)
+		vim.api.nvim_buf_set_keymap(term.bufnr, "t", target, command, { noremap = true, silent = true })
+	end
+	set_t_keymap("<C-c>", "<Esc>")
+	set_t_keymap("<Esc>", "<C-\\><C-n>")
+	set_t_keymap("g<C-c>", "<C-c>")
+	vim.api.nvim_buf_set_keymap(term.bufnr, "n", "q", "<cmd>close<cr>", { noremap = true, silent = true })
+end
+
 local copilot_opts = {
-	open_mapping = { [[<leader>mc]] },
+	open_mapping = { [[<leader>mg]] },
 	cmd = "copilot",
 	direction = "horizontal",
-	on_open = function(term)
-		local height = math.floor(vim.o.lines * 0.4)
-		vim.api.nvim_win_set_height(term.window, height)
+	on_open = agent_on_open,
+}
 
-		local function set_t_keymap(target, command)
-			vim.api.nvim_buf_set_keymap(term.bufnr, "t", target, command, { noremap = true, silent = true })
-		end
-		set_t_keymap("<C-c>", "<Esc>")
-		set_t_keymap("<Esc>", "<C-\\><C-n>")
-		set_t_keymap("g<C-c>", "<C-c>")
-		vim.api.nvim_buf_set_keymap(term.bufnr, "n", "q", "<cmd>close<cr>", { noremap = true, silent = true })
-	end,
+local claude_opts = {
+	open_mapping = { [[<leader>mc]] },
+	cmd = "claude",
+	direction = "horizontal",
+	on_open = agent_on_open,
 }
 
 return {
@@ -71,8 +80,12 @@ return {
 			desc = "lazysql",
 		},
 		{
-			"<leader>mc",
+			"<leader>mg",
 			desc = "Copilot CLI",
+		},
+		{
+			"<leader>mc",
+			desc = "Claude Code",
 		},
 	},
 	config = function()
@@ -86,9 +99,13 @@ return {
 
 		local Terminal = require("toggleterm.Terminal").Terminal
 		local copilot = Terminal:new(copilot_opts)
+		local claude = Terminal:new(claude_opts)
 
-		vim.keymap.set("n", "<leader>mc", function()
+		vim.keymap.set("n", "<leader>mg", function()
 			copilot:toggle()
 		end, { noremap = true, silent = true, desc = "Copilot CLI" })
+		vim.keymap.set("n", "<leader>mc", function()
+			claude:toggle()
+		end, { noremap = true, silent = true, desc = "Claude Code" })
 	end,
 }
