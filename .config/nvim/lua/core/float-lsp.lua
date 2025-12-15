@@ -3,7 +3,7 @@ local M = {}
 local windows = {}
 local processing = false
 
-M.close_all_window = function()
+function M.close_all_window()
 	for _, win in ipairs(windows) do
 		vim.api.nvim_win_close(win, false)
 	end

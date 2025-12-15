@@ -2,7 +2,7 @@ local M = {}
 
 local conflict_pattern = "^<<<<<<<"
 
-M.conflict_list = function()
+function M.conflict_list()
 	local bufnr = vim.api.nvim_get_current_buf()
 	local lines = vim.fn.getline(1, "$")
 
@@ -24,7 +24,7 @@ M.conflict_list = function()
 	vim.api.nvim_command("copen")
 end
 
-M.prev_conflict = function()
+function M.prev_conflict()
 	local current_line = vim.fn.line(".") + 1
 	local lines = vim.fn.getline(1, current_line)
 	for i, line in ipairs(lines) do
@@ -35,7 +35,7 @@ M.prev_conflict = function()
 	end
 end
 
-M.next_conflict = function()
+function M.next_conflict()
 	local start_line = vim.fn.line(".") + 1
 	local lines = vim.fn.getline(start_line, "$")
 	for i, line in ipairs(lines) do

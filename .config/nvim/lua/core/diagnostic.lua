@@ -21,7 +21,7 @@ local add_qflist = function(diagnostic)
 	vim.fn.setqflist({ entry }, "a")
 end
 
-M.current_buf_list = function()
+function M.current_buf_list()
 	local current_bufnr = vim.api.nvim_get_current_buf()
 
 	local all = vim.diagnostic.get(current_bufnr)
@@ -33,7 +33,7 @@ M.current_buf_list = function()
 	vim.api.nvim_command("copen")
 end
 
-M.workspace_list = function()
+function M.workspace_list()
 	local all = vim.diagnostic.get()
 	vim.fn.setqflist({}, " ", { title = "Diagnostics(Workspace)" })
 	for _, item in ipairs(all) do

@@ -1,7 +1,7 @@
 local M = {}
 
 -- Avoid to invalid ambiwidth chars display
-M.apply_cellwidths = function()
+function M.apply_cellwidths()
 	vim.fn.setcellwidths({
 		{ 0x1F000, 0x1FFFF, 2 }, -- 🀀 ~ 🫸
 		{ 0x2190, 0x2193, 2 }, -- ← ~ ↓

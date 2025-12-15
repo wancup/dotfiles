@@ -121,7 +121,7 @@ local function get_focusable_wins()
 end
 
 ---@param callback fun(win_id: integer)
-M.select_win = function(callback)
+function M.select_win(callback)
 	local current_win = vim.api.nvim_get_current_win()
 	local focusable_wins = get_focusable_wins()
 	local focusable_win_size = table.maxn(focusable_wins)
@@ -152,11 +152,11 @@ M.select_win = function(callback)
 	end
 end
 
-M.pick_win = function()
+function M.pick_win()
 	M.select_win(vim.api.nvim_set_current_win)
 end
 
-M.previous_win = function()
+function M.previous_win()
 	local current_win = vim.api.nvim_get_current_win()
 	vim.cmd("wincmd p")
 	local selected_win = vim.api.nvim_get_current_win()
@@ -167,7 +167,7 @@ M.previous_win = function()
 	M.pick_win()
 end
 
-M.remove_win_buf = function()
+function M.remove_win_buf()
 	local _remove_buf = function(win_id)
 		local buf = vim.api.nvim_win_get_buf(win_id)
 		vim.api.nvim_buf_call(buf, function()
@@ -177,12 +177,12 @@ M.remove_win_buf = function()
 	M.select_win(_remove_buf)
 end
 
-M.hide_win = function()
+function M.hide_win()
 	M.select_win(vim.api.nvim_win_hide)
 end
 
 local aspect_ratio = 2.5
-M.toggle_orientation = function()
+function M.toggle_orientation()
 	local buf = vim.api.nvim_get_current_buf()
 	local win_width = vim.api.nvim_win_get_width(0)
 	local win_height = vim.api.nvim_win_get_height(0)

@@ -1,6 +1,6 @@
 local M = {}
 
-M.edit_register = function()
+function M.edit_register()
 	local reg = vim.v.register
 	local current_content = vim.fn.getreg(reg)
 

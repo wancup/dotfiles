@@ -85,7 +85,7 @@ local function apply_highlight(command)
 	vim.api.nvim_command("redraw")
 end
 
-M.setup = function()
+function M.setup()
 	vim.on_key(function(key)
 		if is_highlighted then
 			clear_highlight()
