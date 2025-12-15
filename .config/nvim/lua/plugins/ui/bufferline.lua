@@ -2,6 +2,7 @@
 return {
 	"akinsho/bufferline.nvim",
 	event = { "BufReadPost", "BufNewFile" },
+	cond = false,
 	keys = {
 		{ "[b", "<Cmd>BufferLineCyclePrev<CR>", desc = "Buffer Prev" },
 		{ "]b", "<Cmd>BufferLineCycleNext<CR>", desc = "Buffer Next" },

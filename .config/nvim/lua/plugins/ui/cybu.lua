@@ -1,6 +1,7 @@
 -- Buffer Cycle
 return {
 	"ghillb/cybu.nvim",
+	cond = false,
 	keys = {
 		{ "<C-S-tab>", "<Plug>(CybuLastusedPrev)" },
 		{ "<C-tab>", "<Plug>(CybuLastusedNext)" },
