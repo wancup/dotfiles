@@ -26,7 +26,7 @@ return {
 			rising = 50,
 		},
 		hide = {
-			cursorline = true,
+			cursorline = "smart",
 		},
 		window = {
 			zindex = 1,
