@@ -33,6 +33,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 local force_single_width_fts = {
 	"yazi",
 	"toggleterm",
+	"sidekick_terminal",
 }
 local reset_cellwidths_group = augroup("ResetCellWidths")
 vim.api.nvim_create_autocmd("FileType", {
