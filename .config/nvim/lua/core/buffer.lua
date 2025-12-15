@@ -25,4 +25,13 @@ M.delete_buffer = function()
 	end
 end
 
+M.delete_other_buffers = function()
+	local current_buf = vim.api.nvim_get_current_buf()
+	for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+		if vim.api.nvim_buf_is_valid(buf) and buf ~= current_buf then
+			vim.api.nvim_buf_delete(buf, {})
+		end
+	end
+end
+
 return M

@@ -58,6 +58,7 @@ map("n", "<S-cr>", "i<Cr><Esc>")
 map("n", "<leader>w", "<cmd>wa<cr>", { desc = "Write All" })
 map("n", "<leader>q", "<cmd>qa<cr>", { desc = "Quit All" })
 map("n", "<leader>bd", buffer.delete_buffer, { desc = "Buffer Delete" })
+map("n", "<leader>bo", buffer.delete_other_buffers, { desc = "Buffer Delete Other" })
 map("n", "<leader>bc", function()
 	for _, buf in ipairs(vim.api.nvim_list_bufs()) do
 		if vim.bo[buf].buftype == "acwrite" then

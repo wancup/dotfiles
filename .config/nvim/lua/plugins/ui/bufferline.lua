@@ -11,7 +11,6 @@ return {
 		{ "<leader>bt", "<Cmd>BufferLineTogglePin<CR>", desc = "Buffer Toggle Pin" },
 		{ "<leader>bH", "<Cmd>BufferLineCloseLeft<CR>", desc = "Buffer Close Left" },
 		{ "<leader>bL", "<Cmd>BufferLineCloseRight<CR>", desc = "Buffer Close Right" },
-		{ "<leader>bo", "<Cmd>BufferLineCloseOthers<CR>", desc = "Buffer Close Others" },
 		{ "<leader>bh", "<Cmd>BufferLineMovePrev<CR>", desc = "Buffer Move Left" },
 		{ "<leader>bl", "<Cmd>BufferLineMoveNext<CR>", desc = "Buffer Move Right" },
 	},
