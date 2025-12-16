@@ -28,9 +28,16 @@ end
 function M.delete_other_buffers()
 	local current_buf = vim.api.nvim_get_current_buf()
 	for _, buf in ipairs(vim.api.nvim_list_bufs()) do
-		if vim.api.nvim_buf_is_valid(buf) and buf ~= current_buf then
+		if not vim.api.nvim_buf_is_valid(buf) or buf == current_buf then
+			goto continue
+		end
+
+		local buftype = vim.api.nvim_get_option_value("buftype", { buf = buf })
+		if buftype ~= "terminal" then
 			vim.api.nvim_buf_delete(buf, {})
 		end
+
+		::continue::
 	end
 end
 
