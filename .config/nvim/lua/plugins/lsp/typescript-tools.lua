@@ -15,9 +15,9 @@ return {
 			tsserver_file_preferences = {
 				includeInlayParameterNameHints = "all",
 				includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-				includeInlayFunctionParameterTypeHints = true,
-				includeInlayVariableTypeHints = true,
-				includeInlayVariableTypeHintsWhenTypeMatchesName = true,
+				includeInlayFunctionParameterTypeHints = false,
+				includeInlayVariableTypeHints = false,
+				includeInlayVariableTypeHintsWhenTypeMatchesName = false,
 				includeInlayPropertyDeclarationTypeHints = true,
 				includeInlayFunctionLikeReturnTypeHints = true,
 				includeInlayEnumMemberValueHints = true,
