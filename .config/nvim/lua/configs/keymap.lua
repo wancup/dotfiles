@@ -4,6 +4,7 @@ local git = require("core.git")
 local window = require("core.window")
 local register = require("core.register")
 local float_lsp = require("core.float-lsp")
+local input = require("core.input")
 local map = vim.keymap.set
 
 -- Remove unused default keymap
@@ -96,3 +97,4 @@ map("x", "y", "ygv<Esc>")
 -- Terminal
 map("t", "<C-\\><Esc>", "<C-\\><C-n>")
 map("t", "<C-\\>q", "<C-\\><C-n>:q<cr>")
+map("t", "<C-i>", input.open_input, { desc = "Open Floating Input Window" })
