@@ -97,4 +97,4 @@ map("x", "y", "ygv<Esc>")
 -- Terminal
 map("t", "<C-\\><Esc>", "<C-\\><C-n>")
 map("t", "<C-\\>q", "<C-\\><C-n>:q<cr>")
-map("t", "<C-i>", input.open_input, { desc = "Open Floating Input Window" })
+map("t", "<C-S-i>", input.open_input, { desc = "Open Floating Input Window" })
