@@ -34,7 +34,7 @@ return {
 			mode = { "n", "x" },
 		},
 		{
-			"<leader>at",
+			"<leader>aT",
 			":'<,'>CodeCompanion /translate<cr>",
 			desc = "Translare text to Japanese",
 			mode = { "x" },
@@ -47,7 +47,7 @@ return {
 		},
 	},
 	opts = {
-		strategies = {
+		interactions = {
 			chat = {
 				adapter = chat_model and {
 					name = "copilot",
@@ -122,10 +122,10 @@ return {
 		},
 		prompt_library = {
 			["Translate"] = {
-				strategy = "chat",
+				interaction = "chat",
 				description = "Translate text to Japanese",
 				opts = {
-					short_name = "translate",
+					alias = "translate",
 					modes = { "x" },
 					auto_submit = true,
 					user_prompt = false,
@@ -151,10 +151,10 @@ return {
 			},
 
 			["Naming"] = {
-				strategy = "chat",
+				interaction = "chat",
 				description = "Naming suggestion",
 				opts = {
-					short_name = "naming",
+					alias = "naming",
 					modes = { "n" },
 					auto_submit = true,
 					user_prompt = true,
