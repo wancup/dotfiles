@@ -1,5 +1,3 @@
-local MAX_FILE_PATH_LENGTH = 15
-
 local function get_diagnostic_label(bufnr)
 	local icons = { error = "", warn = "", info = "", hint = "" }
 	local label = {}
@@ -39,9 +37,6 @@ return {
 			local icon, icon_color =
 				require("nvim-web-devicons").get_icon_color(file_name, file_extension, { default = true })
 			local modified = vim.bo[props.buf].modified
-			local shorten_file_path = string.len(file_path) > MAX_FILE_PATH_LENGTH
-					and "…" .. string.sub(file_path, -MAX_FILE_PATH_LENGTH)
-				or file_path
 
 			return {
 				{ get_diagnostic_label(props.buf) },
@@ -51,7 +46,7 @@ return {
 					guifg = icon_color,
 				},
 				" ",
-				{ shorten_file_path },
+				{ file_path },
 				"/",
 				{ file_name, gui = modified and "bold,italic" or "bold" },
 				{ modified and "・" or "", group = "WarningMsg" },
