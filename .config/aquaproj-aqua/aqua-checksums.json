@@ -76,21 +76,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-aarch64-unknown-linux-gnu.tar.gz",
-      "checksum": "EF514FD12CFC3EE2D1725E5ECB866EE1123163004879EC285B22F3323389EBE2",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-x86_64-apple-darwin.tar.gz",
-      "checksum": "2AF8ABB6A08B0513F9D16CA2C7CD37949B858D2A3E3227BE8CC412B3B4937D5B",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/XAMPPRocky/tokei/v12.1.2/tokei-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "331E77046935D655DCE8D97EBB943FCC7E9684586DADF3D197F3DF5E760CD31B",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/YS-L/csvlens/v0.15.0/csvlens-aarch64-apple-darwin.tar.xz",
       "checksum": "C21FB2FEB90909850F960F913BDE83E8A6F89B5B77710A0B376B5871CBF341DB",
       "algorithm": "sha256"
