@@ -25,6 +25,7 @@ opt.laststatus = 3
 opt.list = true
 opt.listchars = { tab = "» ", lead = "˒" }
 opt.ambiwidth = "single"
+opt.winborder = "rounded"
 font.apply_cellwidths()
 
 -- Search
