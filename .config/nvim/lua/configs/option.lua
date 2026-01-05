@@ -24,8 +24,8 @@ opt.pumheight = 10
 opt.laststatus = 3
 opt.list = true
 opt.listchars = { tab = "» ", lead = "˒" }
-opt.ambiwidth = "single"
 opt.winborder = "rounded"
+opt.ambiwidth = "single"
 font.apply_cellwidths()
 
 -- Search
