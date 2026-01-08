@@ -55,6 +55,7 @@ abbr nn nvim_clipboard
 abbr o. "open ."
 abbr p pnpm
 abbr reload "source $HOME/.config/fish/config.fish && setup -f"
+abbr sws static-web-server
 if test "$TERM_PROGRAM" = WezTerm
     abbr ic "wezterm imgcat"
 end

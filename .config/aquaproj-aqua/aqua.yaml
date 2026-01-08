@@ -9,7 +9,7 @@ checksum:
     - linux
 registries:
   - type: standard
-    ref: v4.446.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.452.0 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: sharkdp/fd@v10.3.0
   - name: sharkdp/bat@v0.26.1
@@ -61,3 +61,4 @@ packages:
   - name: rust-lang/rustup@1.28.2
   - name: ip7z/7zip@25.01
   - name: secretlint/secretlint@v11.2.5
+  - name: static-web-server/static-web-server@v2.40.1

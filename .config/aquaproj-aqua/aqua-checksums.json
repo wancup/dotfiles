@@ -806,6 +806,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/static-web-server/static-web-server/v2.40.1/static-web-server-v2.40.1-aarch64-apple-darwin.tar.gz",
+      "checksum": "58370CC01799C826FC5D3398762C2E6ACB5440AB0EC9A289AB9B709E76CFF242",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/static-web-server/static-web-server/v2.40.1/static-web-server-v2.40.1-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "A1DCAF126A2AFAFBFC526901C40C5F006B0BADDE79CBDC9E22D82C0886903168",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/static-web-server/static-web-server/v2.40.1/static-web-server-v2.40.1-x86_64-apple-darwin.tar.gz",
+      "checksum": "FBDB678AB2E7886EF20719BDE2A929C49EC1B24DC4900F409BD377E49A85DD32",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/static-web-server/static-web-server/v2.40.1/static-web-server-v2.40.1-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "BE4D06D6C71AEAB2CB913DA176DF8A66DE5E91A77A250C96BFB3D2D541F9B1BD",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sxyazi/yazi/v25.12.29/yazi-aarch64-apple-darwin.zip",
       "checksum": "20AC3D7AA2371645E1E1A95FCD25172AB16A338D3EBAAA661E61A35F2F524BA8",
       "algorithm": "sha256"
@@ -941,8 +961,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.446.0/registry.yaml",
-      "checksum": "F89F41662F54892E9E06168596845AA2C84865B6ED9782B527C47622BE3035E3C126C51D80BFFF76B41C4150D41FF1F70F6B521EA52FB6B4933D6170CACEF9F3",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.452.0/registry.yaml",
+      "checksum": "F080AE6062D53C7B51E41A87732F81A0E37F91134FC36EF9EE36769A1A13F7461D304BC413A9D47E6A47E6499F542FD176F75A2CD4A9B275D5F13C4B435AAC98",
       "algorithm": "sha512"
     }
   ]
