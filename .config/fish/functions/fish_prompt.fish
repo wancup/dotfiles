@@ -5,6 +5,7 @@ function fish_prompt
 
     # VCS
     set -lx __fish_git_prompt_showdirtystate true
+    set -lx __fish_git_prompt_showuntrackedfiles true
     set -lx __fish_git_prompt_showupstream informative
     set -lx __fish_git_prompt_showcolorhints true
     set -lx __fish_git_prompt_showstashstate true
