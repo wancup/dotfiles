@@ -75,20 +75,6 @@ return {
 				documentation = cmp.config.window.bordered(),
 			},
 			mapping = mapping,
-			formatting = {
-				format = require("lspkind").cmp_format({
-					mode = "symbol_text",
-					maxwidth = {
-						menu = function()
-							return math.floor(0.3 * vim.api.nvim_win_get_width(0))
-						end,
-						abbr = function()
-							return math.floor(0.4 * vim.api.nvim_win_get_width(0))
-						end,
-					},
-					ellipsis_char = "…",
-				}),
-			},
 		})
 
 		cmp.setup.cmdline(":", {
