@@ -9,9 +9,9 @@ return {
 	event = { "VimLeavePre" },
 	cmd = { "SessionLoad", "SessionSave", "SessionToggle" },
 	keys = {
-		{ "<leader>St", "<cmd>SessionToggle<cr>", desc = "[S]ession [T]oggle" },
-		{ "<leader>Ss", "<cmd>SessionSave<cr>", desc = "[S]ession [S]ave" },
-		{ "<leader>Sl", "<cmd>SessionLoad<cr>", desc = "[S]ession [L]oad" },
+		{ "<leader>St", "<cmd>Persisted toggle<cr>", desc = "[S]ession [T]oggle" },
+		{ "<leader>Ss", "<cmd>Persisted save<cr>", desc = "[S]ession [S]ave" },
+		{ "<leader>Sl", "<cmd>Persisted load<cr>", desc = "[S]ession [L]oad" },
 	},
 	opts = {
 		should_save = function()
