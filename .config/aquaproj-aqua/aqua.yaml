@@ -33,7 +33,7 @@ packages:
   - name: leoafarias/fvm@4.0.5
   - name: sxyazi/yazi@v26.1.4
   - name: bensadeh/tailspin@5.5.0
-  - name: watchexec/watchexec@v2.3.2
+  - name: watchexec/watchexec@v2.3.3
   - name: zaghaghi/openapi-tui@0.10.2
   - name: Wilfred/difftastic@0.67.0
   - name: dprint/dprint@0.51.1
