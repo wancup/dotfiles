@@ -266,6 +266,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/dprint/dprint/0.51.1/dprint-aarch64-unknown-linux-musl.zip",
+      "checksum": "8CD2A46FF5D6940DB5E708C9A5BE8ABC9F68E6324D6FD51C8977ADDD2188648A",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/dprint/dprint/0.51.1/dprint-x86_64-apple-darwin.zip",
       "checksum": "D7AFCB650F4A6E7D60DC46924DEDE9A44F276A4F044600DE7BABAD67C0479876",
       "algorithm": "sha256"
@@ -946,8 +951,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.454.0/registry.yaml",
-      "checksum": "D77D206459D218048DBE5CC33FD826481046617266E80414078EE9BB78BD71ED794289D9B08DB0A735618984110B8521B602D32884887CCAC2996EF16E775E0D",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.459.0/registry.yaml",
+      "checksum": "04B5D882BCDDCE0F8528A8D2CB6573F4B97493BE7C744C382806956D6ED5D58DEEE97BEF365508A153A9FE59552A2A634EB9AA39E37DD8475AEEEEE2CFBDBABE",
       "algorithm": "sha512"
     }
   ]
