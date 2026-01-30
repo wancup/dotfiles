@@ -851,23 +851,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.3.2/watchexec-2.3.2-aarch64-apple-darwin.tar.xz",
-      "checksum": "88EA43AF48597F7DBFCEB1783E131D53AABE920C2B253A1538CC4EFEEE686F01C1282821DDCA5DD56CB490FC7105E4E1BE2D55E523F873A980B9A19EA157D523",
+      "id": "github_release/github.com/watchexec/watchexec/v2.3.3/watchexec-2.3.3-aarch64-apple-darwin.tar.xz",
+      "checksum": "ED5634EDA9F8EC3571BC89EEA0932F6C848B8034EEE35E37B7008710B69DC5181F1771EFC93CFE8DCE93C26DB284319C995AAADD79649382BF89C9B8CCF4E465",
       "algorithm": "sha512"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.3.2/watchexec-2.3.2-aarch64-unknown-linux-gnu.tar.xz",
-      "checksum": "DDBD811740B3CE144B5C7CEF1EF817BD497631466C4DF48AAFD473EC24B10FF85D8F31C2D4A4825AC10165BFA529DF806EE3F53519493AE9C62FCBE44A316BFC",
+      "id": "github_release/github.com/watchexec/watchexec/v2.3.3/watchexec-2.3.3-aarch64-unknown-linux-gnu.tar.xz",
+      "checksum": "FDBD201B036E56048A1873F3D7A4F3850800AA1A7383C7ED3EB5D94A1A12721A04064236F50478E8A2BF805A3372774AB03EE53639C4CACBCF4F4DCD08630EB1",
       "algorithm": "sha512"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.3.2/watchexec-2.3.2-x86_64-apple-darwin.tar.xz",
-      "checksum": "80899B26B9A8CF0FD751368D38BA33E79E2FDDDDF0208E73DDC207F5A199466667113A62D495359E366B0AE90E3E7733CB238AD0450D5AC4653F281CB377B21D",
+      "id": "github_release/github.com/watchexec/watchexec/v2.3.3/watchexec-2.3.3-x86_64-apple-darwin.tar.xz",
+      "checksum": "5A4E9AE4439BB70CD6167D0257A301C819292F3F295C1560C7E750103E33D2EB46F348D29BD8D199DF39119B3331099AA4F3EC28EDC3B1163DAEE539695E63E1",
       "algorithm": "sha512"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.3.2/watchexec-2.3.2-x86_64-unknown-linux-musl.tar.xz",
-      "checksum": "CC160B0A66903D55A4AFE66C948A619F3149795AA8A40699ECEC76164B8CC76FDF9A608CAA5BAD161F1A6C2D9353CF4E2F804E429020663C34B5AAABFB07FA90",
+      "id": "github_release/github.com/watchexec/watchexec/v2.3.3/watchexec-2.3.3-x86_64-unknown-linux-musl.tar.xz",
+      "checksum": "DC32CD63D0AC5619DCF51BBB71AD8D7A64E716405C6C162906C465E57FEE447717915E2F42F03667A02BCB5035F1DD31E645B56E41B10CB193FEBEF43B83E771",
       "algorithm": "sha512"
     },
     {
