@@ -60,5 +60,5 @@ packages:
   - name: lusingander/stu@v0.7.5
   - name: rust-lang/rustup@1.28.2
   - name: ip7z/7zip@25.01
-  - name: secretlint/secretlint@v11.3.0
+  - name: secretlint/secretlint@v11.3.1
   - name: static-web-server/static-web-server@v2.40.1
