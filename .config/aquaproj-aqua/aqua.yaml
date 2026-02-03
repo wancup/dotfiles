@@ -52,7 +52,7 @@ packages:
   - name: golang/go@go1.25.6
   - name: shenwei356/csvtk@v0.36.0
   - name: pnpm/pnpm@v10.28.2
-  - name: astral-sh/uv@0.9.27
+  - name: astral-sh/uv@0.9.28
   - name: rust-lang/rust-analyzer@2025-04-21
   - name: tree-sitter/tree-sitter@v0.26.3
   - name: aws/aws-cli@2.33.8
