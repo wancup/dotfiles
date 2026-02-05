@@ -516,23 +516,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lusingander/stu/v0.7.5/stu-0.7.5-aarch64-apple-darwin.tar.gz",
-      "checksum": "832A0B4CC82AD5E2C6746B53FA6D7A1726F2BA91CB270162892036212347C50A",
+      "id": "github_release/github.com/lusingander/stu/v0.7.6/stu-0.7.6-aarch64-apple-darwin.tar.gz",
+      "checksum": "37CCEE93B4F38C0224990674AA0F84410ABFB79E071E94B8B6D9F15C39FAE8F3",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lusingander/stu/v0.7.5/stu-0.7.5-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "D6650C2DE10DF8673E9DF8C240089DDA8E8733FA4FF529003DE3CEC82F5B7EF9",
+      "id": "github_release/github.com/lusingander/stu/v0.7.6/stu-0.7.6-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "2A9B498B561E38A4CF686B65C5151064742AEADA8E79AFBEB38DB88F15B978DF",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lusingander/stu/v0.7.5/stu-0.7.5-x86_64-apple-darwin.tar.gz",
-      "checksum": "EE4A03444100BD95CF9FFC09A2A091807DA1680D9D71B06012AB0EEEF128E5C2",
+      "id": "github_release/github.com/lusingander/stu/v0.7.6/stu-0.7.6-x86_64-apple-darwin.tar.gz",
+      "checksum": "9797B99D5C82EB976211F4093B9C913A4C16802D3FE3B8D0A27297732C0F24EF",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/lusingander/stu/v0.7.5/stu-0.7.5-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "64543D88F92C122EBA37E2B15A95D9CCEBE9336E4B40DC0D5CC0B829389F9DCE",
+      "id": "github_release/github.com/lusingander/stu/v0.7.6/stu-0.7.6-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "AE608BD9CD39779AB722EBC10978EBD4DBC8AD523C8B0F1E175065CD8F7F1084",
       "algorithm": "sha256"
     },
     {
