@@ -726,23 +726,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/hexyl/v0.16.0/hexyl-v0.16.0-aarch64-apple-darwin.tar.gz",
-      "checksum": "8F4CE1ED5B89267D74FE48D767AABCC2D78C0A546329B8B08209D1C3D0DB4D50",
+      "id": "github_release/github.com/sharkdp/hexyl/v0.17.0/hexyl-v0.17.0-aarch64-apple-darwin.tar.gz",
+      "checksum": "D8C50F5EC688FAF566EA4C13D6AA12A5681DC370DAB3FFBA0A9DB935A5986630",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/hexyl/v0.16.0/hexyl-v0.16.0-aarch64-unknown-linux-gnu.tar.gz",
-      "checksum": "6D903B7F69AF1AF8C662700F1F681D3FE70F4F16884B9F6C07487FA363BB5DA8",
+      "id": "github_release/github.com/sharkdp/hexyl/v0.17.0/hexyl-v0.17.0-aarch64-unknown-linux-gnu.tar.gz",
+      "checksum": "70B97648935F98801FD3C3E4758FF4E92AFCF7E75316FF65D4E4F5D2E321B658",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/hexyl/v0.16.0/hexyl-v0.16.0-x86_64-apple-darwin.tar.gz",
-      "checksum": "A1592F9EB9C80CF29A46930DE5E9CC16B516A9C9E26F9F9EBF8A0B4669763E3F",
+      "id": "github_release/github.com/sharkdp/hexyl/v0.17.0/hexyl-v0.17.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "55346F1DCEE92BF93F32E104B0FB9D31FAB8EEC36532A9B6107B4E0E0AEF5F46",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/hexyl/v0.16.0/hexyl-v0.16.0-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "62AE62A5E5FDD67A587E45BA19ACDBE0099A6E60961CCD4DB9FE2AC1F3F29528",
+      "id": "github_release/github.com/sharkdp/hexyl/v0.17.0/hexyl-v0.17.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "82B374B800CC965F4116B9D5D6A50394945170D4F65B9EF6CED3B82B014DE8A6",
       "algorithm": "sha256"
     },
     {
