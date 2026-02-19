@@ -40,7 +40,7 @@ packages:
   - name: astral-sh/ruff@0.15.1
   - name: XAMPPRocky/tokei@v14.0.0
   - name: hadolint/hadolint@v2.14.0
-  - name: sharkdp/hexyl@v0.16.0
+  - name: sharkdp/hexyl@v0.17.0
   - name: o2sh/onefetch@2.26.1
   - name: lsd-rs/lsd@v1.2.0
   - name: jesseduffield/lazydocker@v0.24.4
