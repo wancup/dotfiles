@@ -761,18 +761,18 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/pastel/v0.11.0/pastel-v0.11.0-aarch64-unknown-linux-gnu.tar.gz",
-      "checksum": "EF8256678802F6DD94BDF7E9CE18342B7028884D2B6FFE6B2867FE3815DB0555",
+      "id": "github_release/github.com/sharkdp/pastel/v0.12.0/pastel-v0.12.0-aarch64-unknown-linux-gnu.tar.gz",
+      "checksum": "F437E19974399AB7AE99FA52B76A2CDFAD4FAFAFDE3B48243100D371894935BA",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/pastel/v0.11.0/pastel-v0.11.0-x86_64-apple-darwin.tar.gz",
-      "checksum": "1346EB94A01358BA005270C7849115E7F3F3B385BCBEB2240C4BB775CB291015",
+      "id": "github_release/github.com/sharkdp/pastel/v0.12.0/pastel-v0.12.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "EA941D276C41285B188CD51FF497145A348FA0F0E955E7C2DDD4EA7CA42E712C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/pastel/v0.11.0/pastel-v0.11.0-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "2BF6FA8D8C03B1296868CB9D82EEF6C8C0969F1BF5CBC47E6976D01EF400B916",
+      "id": "github_release/github.com/sharkdp/pastel/v0.12.0/pastel-v0.12.0-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "96DDD6593D08FD3868F2423F18ED5C6117A5F1AAB335C1FC9E8347DB7F219F2A",
       "algorithm": "sha256"
     },
     {
