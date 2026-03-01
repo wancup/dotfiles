@@ -1,3 +1,5 @@
+local cli_name = os.getenv("SIDEKICK_CLI_NAME")
+
 return {
 	"folke/sidekick.nvim",
 	keys = {
@@ -14,7 +16,11 @@ return {
 		{
 			"<c-.>",
 			function()
-				require("sidekick.cli").toggle()
+				if cli_name then
+					require("sidekick.cli").toggle({ name = cli_name })
+				else
+					require("sidekick.cli").toggle()
+				end
 			end,
 			desc = "Sidekick Toggle",
 			mode = { "n", "t", "i", "x" },
@@ -52,18 +58,11 @@ return {
 		},
 		-- Example of a keybinding to open Claude directly
 		{
-			"<leader>ac",
+			"<leader>as",
 			function()
-				require("sidekick.cli").toggle({ name = "claude", focus = true })
+				require("sidekick.cli").select()
 			end,
-			desc = "Sidekick Toggle Claude",
-		},
-		{
-			"<leader>ag",
-			function()
-				require("sidekick.cli").toggle({ name = "copilot", focus = true })
-			end,
-			desc = "Sidekick Toggle Copilot",
+			desc = "Sidekick Select CLI",
 		},
 	},
 	opts = {
