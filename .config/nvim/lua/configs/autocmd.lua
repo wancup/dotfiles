@@ -36,11 +36,13 @@ local force_single_width_fts = {
 	"sidekick_terminal",
 }
 local reset_cellwidths_group = augroup("ResetCellWidths")
-vim.api.nvim_create_autocmd("FileType", {
+vim.api.nvim_create_autocmd({ "FileType", "BufEnter" }, {
 	group = reset_cellwidths_group,
-	pattern = force_single_width_fts,
-	callback = function()
-		vim.fn.setcellwidths({})
+	callback = function(event)
+		local filetype = vim.api.nvim_get_option_value("filetype", { buf = event.buf })
+		if vim.tbl_contains(force_single_width_fts, filetype) then
+			vim.fn.setcellwidths({})
+		end
 	end,
 })
 
