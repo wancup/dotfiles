@@ -1,7 +1,9 @@
+[init]
+	templateDir = ~/.config/git/templates
+
 [core]
   pager = delta
   editor = nvim
-  hooksPath = ~/.config/git/hooks
 
 [log]
   date = iso-strict
