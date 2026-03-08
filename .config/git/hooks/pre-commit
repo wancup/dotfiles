@@ -2,7 +2,7 @@
 set -o errexit -o nounset -o pipefail
 
 GIT_ROOT=$(git rev-parse --show-superproject-working-tree --show-toplevel | head -1)
-LOCAL_HOOK="${GIT_ROOT}/hooks/pre-commit"
+LOCAL_HOOK="${GIT_ROOT}/.git/hooks/pre-commit"
 
 if [ -f "$LOCAL_HOOK" ]; then
   echo "[INFO: pre-commit] Run Local Hook"
