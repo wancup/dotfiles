@@ -25,6 +25,25 @@ return {
 						"rg",
 						"--files",
 						"--hidden",
+						"--color",
+						"never",
+						"--glob",
+						"!**/.git/*",
+					},
+				})
+			end,
+			desc = "[F]ind [F]iles",
+		},
+		{
+			"<leader>fF",
+			function()
+				require("telescope.builtin").find_files({
+					find_command = {
+						"rg",
+						"--files",
+						"--hidden",
+						"--color",
+						"never",
 						"--no-ignore",
 						"--glob",
 						"!**/.git/*",
@@ -35,7 +54,7 @@ return {
 					},
 				})
 			end,
-			desc = "[F]ind [F]iles",
+			desc = "[F]ind [F]iles with gitignored files",
 		},
 		{ "<leader>fr", "<cmd>Telescope resume<cr>", desc = "[F]ind [R]esume" },
 		{ "<leader>fR", "<cmd>Telescope oldfiles<cr>", desc = "[F]ind [R]ecent Files" },
