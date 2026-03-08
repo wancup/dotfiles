@@ -2,7 +2,7 @@
 name: review-local
 description: GitHub Issueに対して現在のブランチのローカル実装をレビューする
 argument-hint: <issue-number>
-allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(git log:*), Bash(git diff:*)
+allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(git rev-parse:*), Bash(git log:*), Bash(git diff:*)
 ---
 
 # Issue実装レビュー
@@ -13,13 +13,16 @@ allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(git log:*), Bash(gi
 
 ## 2. 実装差分の取得
 
-以下の2種類の差分を取得してください:
+### 2.1 分岐元の特定
 
-### コミット済みの変更
+`git rev-parse --abbrev-ref @{upstream}` で現在のブランチの追跡ブランチを取得してください。
+追跡ブランチが設定されていない場合は、`gh repo view --json defaultBranchRef --jq '.defaultBranchRef.name'` でデフォルトブランチ名を取得し、`origin/<デフォルトブランチ名>` を分岐元としてください。
 
-`git log --oneline main..HEAD` でコミット一覧を確認し、`git diff main...HEAD` でmainブランチからのコミット済み差分を取得。
+### 2.2 コミット済みの変更
 
-### 未コミットの変更
+`git log --oneline <分岐元>..HEAD` でコミット一覧を確認し、`git diff <分岐元>...HEAD` で分岐元からのコミット済み差分を取得。
+
+### 2.3 未コミットの変更
 
 `git diff HEAD` でステージ済み・未ステージの両方を含む未コミット差分を取得。未コミットの変更がある場合は、レビュー結果内で **[未コミット]** と明示すること。
 
