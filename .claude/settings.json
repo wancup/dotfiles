@@ -3,7 +3,7 @@
   "model": "opus",
   "statusLine": {
     "type": "command",
-    "command": "jq -r '\"[\\(.model.display_name)] context: \\(.context_window.used_percentage // 0)%\"'"
+    "command": "jq -r '\"[\\(.model.display_name)] context: \\(.context_window.used_percentage // 0)% | cost: $\\(.cost.total_cost_usd // 0)\"'"
   },
   "plansDirectory": "./.__tmp/claude/plans",
   "language": "japanese"
