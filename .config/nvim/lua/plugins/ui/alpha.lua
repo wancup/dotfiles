@@ -80,7 +80,7 @@ Zero One Infinity rule
 			dashboard.button(
 				"f",
 				"  Find Files",
-				':lua require("telescope.builtin").find_files({ find_command = {"rg", "--files", "--hidden", "--no-ignore", "--glob", "!**/.git/*", "--glob", "!**/node_modules/*", "--glob", "!**/target/*"} })<cr>'
+				':lua require("telescope.builtin").find_files({ find_command = {"rg", "--files", "--hidden", "--glob", "!**/.git/*" } })<cr>'
 			),
 			dashboard.button("r", "󰡦  Find Recent Files", ":Telescope oldfiles<CR>"),
 			dashboard.button("p", "  Plugins", ":Lazy<CR>"),
