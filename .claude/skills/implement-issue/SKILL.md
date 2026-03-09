@@ -13,7 +13,7 @@ allowed-tools: Skill, AskUserQuestion, Agent, Read, Edit, Write, Glob, Grep, Bas
 
 以下の3つのコマンドは互いに独立しているため、**並列で実行**してください:
 
-- `gh issue view $ARGUMENTS --comments` でIssueのタイトル・本文・ラベル・コメントを取得
+- `gh issue view $ARGUMENTS --json title,body,labels,comments` でIssueのタイトル・本文・ラベル・コメントを取得
 - `git branch -a` で既存ブランチの命名規則を確認
 - `gh repo view --json defaultBranchRef --jq '.defaultBranchRef.name'` でデフォルトブランチ名を取得
 

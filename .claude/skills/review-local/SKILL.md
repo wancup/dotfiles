@@ -9,7 +9,7 @@ allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Ba
 
 ## 1. Issue内容の取得
 
-`gh issue view $ARGUMENTS --comments` を実行して、Issueのタイトル・本文・ラベル・コメントを取得してください。
+`gh issue view $ARGUMENTS --json title,body,labels,comments` を実行して、Issueのタイトル・本文・ラベル・コメントを取得してください。
 
 ## 2. 実装差分の取得
 
