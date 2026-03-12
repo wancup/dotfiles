@@ -16,7 +16,7 @@ return {
 		panel = { enabled = false },
 		suggestion = {
 			enable = true,
-			auto_trigger = true,
+			auto_trigger = false,
 			keymap = {
 				accept = "<C-cr>",
 				accept_word = false,
