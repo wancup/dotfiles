@@ -24,7 +24,7 @@ packages:
   - name: rhysd/actionlint@v1.7.11
   - name: ducaale/xh@v0.25.3
   - name: crate-ci/typos@v1.44.0
-  - name: mattn/efm-langserver@v0.0.55
+  - name: mattn/efm-langserver@v0.0.56
   - name: YS-L/csvlens@v0.15.1
   - name: koalaman/shellcheck@v0.11.0
   - name: sharkdp/hyperfine@v1.20.0
