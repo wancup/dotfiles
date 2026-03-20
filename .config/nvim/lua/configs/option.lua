@@ -48,8 +48,10 @@ vim.diagnostic.config({
 	underline = true,
 	severity_sort = true,
 })
-vim.lsp.enable("rust_analyzer")
-vim.lsp.enable("dprint")
+vim.lsp.enable({
+	"rust_analyzer",
+	"dprint",
+})
 vim.lsp.inlay_hint.enable(true)
 
 -- Custom Filetype
