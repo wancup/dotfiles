@@ -32,6 +32,7 @@ font.apply_cellwidths()
 opt.hlsearch = true
 opt.ignorecase = true
 opt.smartcase = true
+opt.magic = false
 
 -- Indent
 opt.expandtab = true
