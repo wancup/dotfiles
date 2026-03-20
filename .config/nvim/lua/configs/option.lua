@@ -49,8 +49,9 @@ vim.diagnostic.config({
 	severity_sort = true,
 })
 vim.lsp.enable({
-	"rust_analyzer",
 	"dprint",
+	"rumdl",
+	"rust_analyzer",
 })
 vim.lsp.inlay_hint.enable(true)
 

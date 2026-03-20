@@ -18,16 +18,6 @@ tools:
     lint-formats:
       - "-:%l:%c: %m"
 
-  markdown-markdownlint: &markdown-markdownlint
-    lint-source: markdownlint
-    lint-severity: 2
-    lint-command: "markdownlint -s"
-    lint-stdin: true
-    lint-formats:
-      - "%f:%l %m"
-      - "%f:%l:%c %m"
-      - "%f: %l: %m"
-
   dockerfile-hadolint: &dockerfile-hadolint
     lint-source: hadolint
     lint-command: "hadolint --no-color -"
@@ -49,8 +39,6 @@ tools:
 languages:
   =:
     - <<: *any-typos
-  markdown:
-    - <<: *markdown-markdownlint
   dockerfile:
     - <<: *dockerfile-hadolint
   yaml.gha:

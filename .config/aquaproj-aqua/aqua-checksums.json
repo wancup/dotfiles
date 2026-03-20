@@ -666,6 +666,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/rvben/rumdl/v0.1.57/rumdl-v0.1.57-aarch64-apple-darwin.tar.gz",
+      "checksum": "C83CF3668D3143063C4103F127B0AE7EBE2040D48741B27C37B065AA3A87E525",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rvben/rumdl/v0.1.57/rumdl-v0.1.57-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "236DF78F26E7AD92E622D164E51678AFDDB1D8EC561EE1076C56AE29B428B9EC",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rvben/rumdl/v0.1.57/rumdl-v0.1.57-x86_64-apple-darwin.tar.gz",
+      "checksum": "7BE35F19E03BEA0EB15C6B5D45E32FDA5918E15481E16BCAB9A0EC0788D86AAF",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/rvben/rumdl/v0.1.57/rumdl-v0.1.57-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "9C70C98348CA5B8BECF4A90048850A92D12FED1163F15E8928212B0A3BD8B588",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/secretlint/secretlint/v11.3.1/secretlint-11.3.1-darwin-arm64",
       "checksum": "8CE3D939774F3D127DA4735B2DA28ED729257575E49A7E3713C7453BFD30347E",
       "algorithm": "sha256"

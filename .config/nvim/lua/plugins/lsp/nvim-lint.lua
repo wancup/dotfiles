@@ -5,7 +5,6 @@ return {
 		local lint = require("lint")
 		lint.linters_by_ft = {
 			fish = { "fish" },
-			markdown = { "markdownlint" },
 			dockerfile = { "hadolint" },
 			astro = { "eslint_d" },
 			javascript = { "eslint_d" },
