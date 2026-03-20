@@ -17,9 +17,6 @@ return {
 	event = { "BufWritePre" },
 	opts = {
 		formatters = {
-			dprint = {
-				require_cwd = true,
-			},
 			prettier = {
 				require_cwd = true,
 			},
@@ -31,27 +28,70 @@ return {
 			lua = { "stylua" },
 			fish = { "fish_indent" },
 			dart = { "dart_format" },
-			dockerfile = { "dprint" },
-			markdown = { "dprint", "prettierd", "prettier", stop_after_first = true },
-			yaml = { "dprint", "prettierd", "prettier", stop_after_first = true },
-			json = { "dprint", "prettierd", "prettier", stop_after_first = true },
-			jsonc = { "dprint", "prettierd", "prettier", stop_after_first = true },
-			css = { "dprint", "prettierd", "prettier", stop_after_first = true },
-			toml = { "dprint" },
+			markdown = {
+				"prettierd",
+				"prettier",
+				stop_after_first = true,
+				lsp_format = "first",
+			},
+			yaml = {
+				"prettierd",
+				"prettier",
+				stop_after_first = true,
+				lsp_format = "first",
+			},
+			json = {
+				"prettierd",
+				"prettier",
+				stop_after_first = true,
+				lsp_format = "first",
+			},
+			jsonc = {
+				"prettierd",
+				"prettier",
+				stop_after_first = true,
+				lsp_format = "first",
+			},
+			css = {
+				"prettierd",
+				"prettier",
+				stop_after_first = true,
+				lsp_format = "first",
+			},
 			astro = function(bufnr)
-				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+				return {
+					get_available_formatter(bufnr, "prettierd", "prettier"),
+					"eslint_d",
+					lsp_format = "first",
+				}
 			end,
 			javascript = function(bufnr)
-				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+				return {
+					get_available_formatter(bufnr, "prettierd", "prettier"),
+					"eslint_d",
+					lsp_format = "first",
+				}
 			end,
 			javascriptreact = function(bufnr)
-				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+				return {
+					get_available_formatter(bufnr, "prettierd", "prettier"),
+					"eslint_d",
+					lsp_format = "first",
+				}
 			end,
 			typescript = function(bufnr)
-				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+				return {
+					get_available_formatter(bufnr, "prettierd", "prettier"),
+					"eslint_d",
+					lsp_format = "first",
+				}
 			end,
 			typescriptreact = function(bufnr)
-				return { get_available_formatter(bufnr, "dprint", "prettierd", "prettier"), "eslint_d" }
+				return {
+					get_available_formatter(bufnr, "prettierd", "prettier"),
+					"eslint_d",
+					lsp_format = "first",
+				}
 			end,
 			go = { "gofmt" },
 			rust = { "rustfmt" },
@@ -61,7 +101,10 @@ return {
 		},
 		format_on_save = function()
 			if vim.g.format_on_save then
-				return { timeout_ms = 5000, lsp_fallback = false }
+				return {
+					timeout_ms = 5000,
+					lsp_format = "fallback",
+				}
 			end
 		end,
 	},
