@@ -24,6 +24,7 @@ set smartindent
 set nomagic
 
 syntax on
+set regexpengine=0
 set showmatch
 set encoding=utf-8
 
