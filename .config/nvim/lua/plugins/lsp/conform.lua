@@ -16,6 +16,9 @@ return {
 	"stevearc/conform.nvim",
 	event = { "BufWritePre" },
 	opts = {
+		default_format_opts = {
+			lsp_format = "fallback",
+		},
 		formatters = {
 			prettier = {
 				require_cwd = true,
@@ -103,7 +106,6 @@ return {
 			if vim.g.format_on_save then
 				return {
 					timeout_ms = 5000,
-					lsp_format = "fallback",
 				}
 			end
 		end,
