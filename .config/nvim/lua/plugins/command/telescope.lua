@@ -14,7 +14,9 @@ return {
 		-- Telescope Commands
 		{
 			"<leader>f<leader>",
-			":lua require('telescope').extensions.live_grep_args.live_grep_args()<cr>",
+			function()
+				require("telescope").extensions.live_grep_args.live_grep_args()
+			end,
 			desc = "Find Live Grep",
 		},
 		{
@@ -153,8 +155,9 @@ return {
 					auto_quoting = true,
 					mappings = {
 						i = {
-							["<C-t>"] = lga_actions.quote_prompt({ postfix = " -t " }),
-							["<C-g>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
+							["<C-S-f>"] = lga_actions.quote_prompt({ postfix = " --fixed-strings " }),
+							["<C-S-g>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
+							["<C-S-t>"] = lga_actions.quote_prompt({ postfix = " -t " }),
 						},
 					},
 				},
