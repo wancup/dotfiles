@@ -1,4 +1,5 @@
 local cli_name = os.getenv("SIDEKICK_CLI_NAME")
+local selected_cli_name = nil
 
 return {
 	"folke/sidekick.nvim",
@@ -16,8 +17,9 @@ return {
 		{
 			"<c-.>",
 			function()
-				if cli_name then
-					require("sidekick.cli").toggle({ name = cli_name })
+				local name = selected_cli_name or cli_name
+				if name then
+					require("sidekick.cli").toggle({ name = name })
 				else
 					require("sidekick.cli").toggle()
 				end
@@ -60,7 +62,16 @@ return {
 		{
 			"<leader>as",
 			function()
-				require("sidekick.cli").select()
+				require("sidekick.cli").select({
+					cb = function(state)
+						if state then
+							selected_cli_name = state.tool.name
+							require("sidekick.cli").focus({
+								name = selected_cli_name,
+							})
+						end
+					end,
+				})
 			end,
 			desc = "Sidekick Select CLI",
 		},
