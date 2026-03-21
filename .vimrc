@@ -21,7 +21,6 @@ set shiftwidth=0
 set softtabstop=-1
 set autoindent
 set smartindent
-set nomagic
 
 syntax on
 set regexpengine=0

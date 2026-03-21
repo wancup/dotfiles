@@ -15,6 +15,8 @@ vim.keymap.del({ "n", "x" }, "gra")
 
 -- Normal and Visual
 map({ "n", "x" }, "<leader>y", '"+y', { desc = "Yank to Clipboard" })
+map({ "n", "x" }, "/", "/\\V", { desc = "Search (very nomagic)" })
+map({ "n", "x" }, "?", "?\\V", { desc = "Search backward (very nomagic)" })
 map({ "n", "x" }, "M", "`m")
 map({ "n", "x" }, "j", "gj", { noremap = true })
 map({ "n", "x" }, "gj", "j", { noremap = true })
