@@ -25,6 +25,10 @@ return {
 		})
 
 		vim.lsp.config("jsonls", {
+			on_attach = function(client)
+				client.server_capabilities.documentFormattingProvider = false
+				client.server_capabilities.documentRangeFormattingProvider = false
+			end,
 			settings = {
 				json = {
 					schemas = require("schemastore").json.schemas(),
@@ -34,6 +38,10 @@ return {
 		})
 
 		vim.lsp.config("yamlls", {
+			on_attach = function(client)
+				client.server_capabilities.documentFormattingProvider = false
+				client.server_capabilities.documentRangeFormattingProvider = false
+			end,
 			settings = {
 				yaml = {
 					schemaStore = {
