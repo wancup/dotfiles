@@ -1,4 +1,4 @@
-local cli_name = os.getenv("SIDEKICK_CLI_NAME")
+local default_cli_name = os.getenv("SIDEKICK_CLI_NAME")
 local selected_cli_name = nil
 
 return {
@@ -17,7 +17,7 @@ return {
 		{
 			"<c-.>",
 			function()
-				local name = selected_cli_name or cli_name
+				local name = selected_cli_name or default_cli_name
 				if name then
 					require("sidekick.cli").toggle({ name = name })
 				else
