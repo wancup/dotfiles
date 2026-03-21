@@ -4,6 +4,9 @@ return {
 		"javascriptreact",
 		"typescript",
 		"typescriptreact",
+		"astro",
+		"html",
+		"css",
 		"json",
 		"jsonc",
 		"markdown",
@@ -12,6 +15,5 @@ return {
 		"graphql",
 		"dockerfile",
 		"yaml",
-		"css",
 	},
 }
