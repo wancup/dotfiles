@@ -23,104 +23,6 @@ end
 return {
 	"stevearc/conform.nvim",
 	event = { "BufWritePre" },
-	opts = {
-		default_format_opts = {
-			lsp_format = "fallback",
-		},
-		formatters = {
-			prettier = {
-				require_cwd = true,
-			},
-			prettierd = {
-				require_cwd = true,
-			},
-		},
-		formatters_by_ft = {
-			lua = { "stylua" },
-			fish = { "fish_indent" },
-			dart = { "dart_format" },
-			markdown = {
-				"prettierd",
-				"prettier",
-				stop_after_first = true,
-				lsp_format = "first",
-			},
-			yaml = {
-				"prettierd",
-				"prettier",
-				stop_after_first = true,
-				lsp_format = "first",
-			},
-			json = {
-				"prettierd",
-				"prettier",
-				stop_after_first = true,
-				lsp_format = "first",
-			},
-			jsonc = {
-				"prettierd",
-				"prettier",
-				stop_after_first = true,
-				lsp_format = "first",
-			},
-			css = {
-				"prettierd",
-				"prettier",
-				stop_after_first = true,
-				lsp_format = "first",
-			},
-			astro = function(bufnr)
-				return {
-					get_available_formatter(bufnr, "prettierd", "prettier"),
-					"eslint_d",
-					lsp_format = "first",
-				}
-			end,
-			javascript = function(bufnr)
-				return {
-					get_available_formatter(bufnr, "prettierd", "prettier"),
-					"eslint_d",
-					lsp_format = "first",
-				}
-			end,
-			javascriptreact = function(bufnr)
-				return {
-					get_available_formatter(bufnr, "prettierd", "prettier"),
-					"eslint_d",
-					lsp_format = "first",
-				}
-			end,
-			typescript = function(bufnr)
-				return {
-					get_available_formatter(bufnr, "prettierd", "prettier"),
-					"eslint_d",
-					lsp_format = "first",
-				}
-			end,
-			typescriptreact = function(bufnr)
-				return {
-					get_available_formatter(bufnr, "prettierd", "prettier"),
-					"eslint_d",
-					lsp_format = "first",
-				}
-			end,
-			go = { "gofmt" },
-			rust = { "rustfmt" },
-			python = { "ruff_format", "ruff_fix" },
-			terraform = { "tofu_fmt" },
-			["terraform-vars"] = { "tofu_fmt" },
-		},
-		format_on_save = function()
-			if vim.g.format_on_save then
-				return {
-					timeout_ms = 5000,
-					filter = function(client)
-						return not vim.tbl_contains(disabled_autoformatting_ls, client.name)
-					end,
-				}
-			end
-		end,
-	},
 	init = function()
 		vim.g.format_on_save = true
 		vim.api.nvim_create_user_command("FormatOff", function()
@@ -141,6 +43,119 @@ return {
 		end, {
 			desc = "Format by conform",
 			force = true,
+		})
+	end,
+	config = function()
+		require("conform").setup({
+			default_format_opts = {
+				lsp_format = "fallback",
+			},
+			formatters = {
+				prettier = {
+					require_cwd = true,
+				},
+				prettierd = {
+					require_cwd = true,
+				},
+				eslint_d = {
+					cwd = require("conform.util").root_file({
+						"eslint.config.js",
+						"eslint.config.mjs",
+						-- ↓ Legacy Config
+						".eslintrc.js",
+						".eslintrc.cjs",
+						".eslintrc.yaml",
+						".eslintrc.yml",
+						".eslintrc.json",
+					}),
+					require_cwd = true,
+				},
+			},
+			formatters_by_ft = {
+				lua = { "stylua" },
+				fish = { "fish_indent" },
+				dart = { "dart_format" },
+				markdown = {
+					"prettierd",
+					"prettier",
+					stop_after_first = true,
+					lsp_format = "first",
+				},
+				yaml = {
+					"prettierd",
+					"prettier",
+					stop_after_first = true,
+					lsp_format = "first",
+				},
+				json = {
+					"prettierd",
+					"prettier",
+					stop_after_first = true,
+					lsp_format = "first",
+				},
+				jsonc = {
+					"prettierd",
+					"prettier",
+					stop_after_first = true,
+					lsp_format = "first",
+				},
+				css = {
+					"prettierd",
+					"prettier",
+					stop_after_first = true,
+					lsp_format = "first",
+				},
+				astro = function(bufnr)
+					return {
+						get_available_formatter(bufnr, "prettierd", "prettier"),
+						"eslint_d",
+						lsp_format = "first",
+					}
+				end,
+				javascript = function(bufnr)
+					return {
+						get_available_formatter(bufnr, "prettierd", "prettier"),
+						"eslint_d",
+						lsp_format = "first",
+					}
+				end,
+				javascriptreact = function(bufnr)
+					return {
+						get_available_formatter(bufnr, "prettierd", "prettier"),
+						"eslint_d",
+						lsp_format = "first",
+					}
+				end,
+				typescript = function(bufnr)
+					return {
+						get_available_formatter(bufnr, "prettierd", "prettier"),
+						"eslint_d",
+						lsp_format = "first",
+					}
+				end,
+				typescriptreact = function(bufnr)
+					return {
+						get_available_formatter(bufnr, "prettierd", "prettier"),
+						"eslint_d",
+						lsp_format = "first",
+					}
+				end,
+				go = { "gofmt" },
+				rust = { "rustfmt" },
+				python = { "ruff_format", "ruff_fix" },
+				terraform = { "tofu_fmt" },
+				["terraform-vars"] = { "tofu_fmt" },
+			},
+			format_on_save = function()
+				if vim.g.format_on_save then
+					return {
+						timeout_ms = 5000,
+						filter = function(client)
+							return not vim.tbl_contains(disabled_autoformatting_ls, client.name)
+						end,
+					}
+				end
+			end,
 		})
 	end,
 }
