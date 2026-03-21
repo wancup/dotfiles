@@ -67,7 +67,9 @@ return {
 	},
 	opts = {
 		nes = {
-			enabled = false,
+			enabled = function()
+				return vim.b.copilot_suggestion_auto_trigger or false
+			end,
 		},
 		cli = {
 			win = {
