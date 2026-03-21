@@ -876,6 +876,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/tamasfe/taplo/0.10.0/taplo-darwin-aarch64.gz",
+      "checksum": "713734314C3E71894B9E77513C5349835EEFBD52908445A0D73B0C7DC469347D",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tamasfe/taplo/0.10.0/taplo-darwin-x86_64.gz",
+      "checksum": "898122CDE3A0B1CD1CBC2D52D3624F23338218C91B5DDB71518236A4C2C10EF2",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tamasfe/taplo/0.10.0/taplo-linux-aarch64.gz",
+      "checksum": "033681D01EEC8376C3FD38FA3703C79316F5E14BB013D859943B60A07BCCDCC3",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/tamasfe/taplo/0.10.0/taplo-linux-x86_64.gz",
+      "checksum": "8FE196B894CCF9072F98D4E1013A180306E17D244830B03986EE5E8EABEB6156",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/tree-sitter/tree-sitter/v0.26.7/tree-sitter-linux-arm64.gz",
       "checksum": "86A317732CC597E1576F8B11B4853F78FEDD2A3C756923E33F323667DEE6B4BE",
       "algorithm": "sha256"
