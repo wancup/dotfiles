@@ -1,6 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "model": "opus",
+  "permissions": {
+    "deny": [
+      "Bash(npx *)",
+      "Bash(pnpx *)",
+      "Bash(pnpm dlx *)",
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)"
+    ]
+  },
   "statusLine": {
     "type": "command",
     "command": "jq -r '\"[\\(.model.display_name)] ctx: \\(.context_window.used_percentage // 0)% | limits: \\(.rate_limits.five_hour.used_percentage // 0 | floor)%(5h)/\\(.rate_limits.seven_day.used_percentage // 0 | floor)%(7d) | cost: $\\((.cost.total_cost_usd // 0) * 10000 | floor / 10000)\"'"
