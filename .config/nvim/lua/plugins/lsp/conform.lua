@@ -1,3 +1,11 @@
+local disabled_autoformatting_ls = {
+	"jsonls",
+	"rumdl",
+	"taplo",
+	"typescript-tools",
+	"yamlls",
+}
+
 ---@param bufnr integer
 ---@param ... string
 ---@return string
@@ -106,6 +114,9 @@ return {
 			if vim.g.format_on_save then
 				return {
 					timeout_ms = 5000,
+					filter = function(client)
+						return not vim.tbl_contains(disabled_autoformatting_ls, client.name)
+					end,
 				}
 			end
 		end,
@@ -126,7 +137,7 @@ return {
 		})
 
 		vim.api.nvim_create_user_command("Format", function()
-			require("conform").format({ async = true })
+			require("conform").format()
 		end, {
 			desc = "Format by conform",
 			force = true,

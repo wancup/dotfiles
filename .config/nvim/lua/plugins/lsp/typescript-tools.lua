@@ -3,10 +3,6 @@ return {
 	dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
 	ft = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
 	opts = {
-		on_attach = function(client)
-			client.server_capabilities.documentFormattingProvider = false
-			client.server_capabilities.documentRangeFormattingProvider = false
-		end,
 		settings = {
 			separate_diagnostic_server = true,
 			publish_diagnostic_on = "insert_leave",
