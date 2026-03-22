@@ -13,7 +13,7 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "jq -r '\"[\\(.model.display_name)] ctx: \\(.context_window.used_percentage // 0)% | limits: \\(.rate_limits.five_hour.used_percentage // 0 | floor)%(5h)/\\(.rate_limits.seven_day.used_percentage // 0 | floor)%(7d) | cost: $\\((.cost.total_cost_usd // 0) * 10000 | floor / 10000)\"'"
+    "command": "jq -r --argjson now \"$(date +%s)\" '((.rate_limits.five_hour.resets_at // $now) - $now) as $s5 | ((.rate_limits.seven_day.resets_at // $now) - $now) as $s7 | \"[\\(.model.display_name)] ctx: \\(.context_window.used_percentage // 0)% | limits: \\(.rate_limits.five_hour.used_percentage // 0 | floor)%(\\($s5 / 3600 | floor)h\\($s5 % 3600 / 60 | floor)m)/\\(.rate_limits.seven_day.used_percentage // 0 | floor)%(\\($s7 / 86400 | floor)d\\($s7 % 86400 / 3600 | floor)h) | cost: $\\((.cost.total_cost_usd // 0) * 10000 | floor / 10000)\"'"
   },
   "language": "japanese",
   "plansDirectory": "./.__tmp/claude/plans"
