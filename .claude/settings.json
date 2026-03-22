@@ -6,6 +6,12 @@
       "Bash(npx *)",
       "Bash(pnpx *)",
       "Bash(pnpm dlx *)",
+      "Bash(npm i)",
+      "Bash(npm install)",
+      "Bash(yarn add)",
+      "Bash(pnpm i)",
+      "Bash(pnpm install)",
+      "Bash(pnpm add)",
       "Read(./.env)",
       "Read(./.env.*)",
       "Read(./secrets/**)"
