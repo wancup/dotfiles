@@ -1,9 +1,5 @@
-local disabled_autoformatting_ls = {
-	"jsonls",
-	"rumdl",
-	"taplo",
-	"typescript-tools",
-	"yamlls",
+local enabled_autoformatting_ls = {
+	"dprint",
 }
 
 ---@param bufnr integer
@@ -151,7 +147,7 @@ return {
 					return {
 						timeout_ms = 5000,
 						filter = function(client)
-							return not vim.tbl_contains(disabled_autoformatting_ls, client.name)
+							return vim.tbl_contains(enabled_autoformatting_ls, client.name)
 						end,
 					}
 				end
