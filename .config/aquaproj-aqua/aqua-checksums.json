@@ -576,13 +576,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/o2sh/onefetch/2.27.0/onefetch-linux.tar.gz",
-      "checksum": "D03CF5730D35352FD9D2BC57C97158933B4DD3807601841B4338F0B568C4BE6D",
+      "id": "github_release/github.com/o2sh/onefetch/2.27.1/onefetch-linux.tar.gz",
+      "checksum": "51D6D1D2F7A85BD29DFCA2AA3DF390616CCE322970F7F3CC1840A2295454B0F5",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/o2sh/onefetch/2.27.0/onefetch-mac.tar.gz",
-      "checksum": "873CE04226AE6A5B0276079B79EAB07533C4C2F0FD046CEBF5B49637CF5990AB",
+      "id": "github_release/github.com/o2sh/onefetch/2.27.1/onefetch-mac.tar.gz",
+      "checksum": "5597E2DF7CF4BC56D8755C35DA8071B0906878EA945147848BB1BA2B91B3EA3A",
       "algorithm": "sha256"
     },
     {
