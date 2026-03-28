@@ -4,6 +4,7 @@
   "author": "",
   "packageManager": "pnpm@10.32.1",
   "dependencies": {
-    "gitmoji-cli": "9.7.0"
+    "gitmoji-cli": "9.7.0",
+    "oxlint": "1.57.0"
   }
 }
