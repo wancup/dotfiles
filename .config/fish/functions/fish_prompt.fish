@@ -30,7 +30,7 @@ function fish_prompt
         if test -f "package.json"
             set -l dev_node_ver (command jq -r '.devEngines.runtime | select(type == "object" and .name == "node") | .version' package.json 2>/dev/null)
             if test -n "$dev_node_ver"
-                echo -n -s " dev-node:" $node_ver "(dev: " $dev_node_ver ")"
+                echo -n -s " dev-node:" $dev_node_ver
             else
                 echo -n -s " node:" (node --version)
             end
