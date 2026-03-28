@@ -104,7 +104,7 @@ return {
 						desc = "send escape to terminal",
 					},
 					ctrl_c = {
-						"g<C-c>",
+						"<C-c><C-c>",
 						function(term)
 							vim.fn.chansend(term.job, "\x03")
 						end,
