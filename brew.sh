@@ -3,9 +3,7 @@ set -o errexit
 
 brew install aquaproj/aqua/aqua
 brew install fish
-
 brew install imagemagick
-brew install gitmoji
 
 if [ "$(uname)" = 'Darwin' ]; then
   brew install wezterm

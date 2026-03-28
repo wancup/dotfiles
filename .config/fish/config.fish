@@ -83,6 +83,7 @@ set -gx EDITOR nvim
 # paths
 fish_add_path $AQUA_ROOT_DIR/bin
 fish_add_path $HOME/.cargo/bin
+fish_add_path (realpath $XDG_CONFIG_HOME/fish)/../../npm/node_modules/.bin
 
 # setup
 if test -z "$NVIM"

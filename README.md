@@ -12,6 +12,7 @@ sh install.sh
 sh brew.sh
 aqua i -a -l
 ya pkg install
+cd npm && pnpm install && cd ..
 ```
 
 ### Windows(WSL)
