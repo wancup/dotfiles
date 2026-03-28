@@ -46,18 +46,6 @@ return {
 			},
 		})
 
-		-- Install Non-lsp deps
-		local registry = require("mason-registry")
-		for _, pkg_name in ipairs({ "eslint_d" }) do
-			local ok, pkg = pcall(registry.get_package, pkg_name)
-			if ok then
-				if not pkg:is_installed() then
-					vim.notify("Missing [" .. pkg.name .. "], installing...", vim.log.levels.INFO)
-					pkg:install()
-				end
-			end
-		end
-
 		vim.lsp.enable(require("mason-lspconfig").get_installed_servers())
 	end,
 }
