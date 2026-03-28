@@ -28,7 +28,12 @@ function fish_prompt
     function show_runtime_version
         set_color bryellow
         if test -f "package.json"
-            echo -n -s " node:" (node --version)
+            set -l dev_node_ver (command jq -r '.devEngines.runtime | select(type == "object" and .name == "node") | .version' package.json 2>/dev/null)
+            if test -n "$dev_node_ver"
+                echo -n -s " dev-node:" $node_ver "(dev: " $dev_node_ver ")"
+            else
+                echo -n -s " node:" (node --version)
+            end
         else if test -f "Cargo.toml"
             echo -n -s " rust:" (string split " " (rustc --version))[2]
         else if test -n "$VIRTUAL_ENV"
