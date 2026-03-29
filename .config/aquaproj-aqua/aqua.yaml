@@ -63,5 +63,5 @@ packages:
   - name: secretlint/secretlint@v11.4.0
   - name: static-web-server/static-web-server@v2.41.0
   - name: suzuki-shunsuke/pinact@v3.9.0
-  - name: rvben/rumdl@v0.1.58
+  - name: rvben/rumdl@v0.1.59
   - name: tamasfe/taplo@0.10.0
