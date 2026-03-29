@@ -26,3 +26,6 @@ skk_dir="${HOME}/.local/share/skk"
 mkdir -p "${skk_dir}"
 curl https://skk-dev.github.io/dict/SKK-JISYO.L.gz --output "${skk_dir}/SKK-JISYO.L.gz"
 gzip -d -f "${skk_dir}/SKK-JISYO.L.gz"
+
+# Global npm
+(cd "${base_dir}/npm" && pnpm install)

@@ -8,11 +8,10 @@
 
 ```sh
 mkdir ~/.config
-sh install.sh
 sh brew.sh
 aqua i -a -l
+sh install.sh
 ya pkg install
-cd npm && pnpm install && cd ..
 ```
 
 ### Windows(WSL)
