@@ -3,6 +3,16 @@ local enabled_autoformatting_ls = {
 }
 
 ---@param bufnr integer
+local function run_oxlint(bufnr)
+	local commands = vim.api.nvim_buf_get_commands(bufnr, {})
+	-- LspOxlintFixAll is available when Oxlint LSP is attached (via nvim-lspconfig)
+	-- https://github.com/neovim/nvim-lspconfig/blob/16812abf0e8d8175155f26143a8504e8253e92b0/lsp/oxlint.lua
+	if commands["LspOxlintFixAll"] then
+		vim.cmd("LspOxlintFixAll")
+	end
+end
+
+---@param bufnr integer
 ---@param ... string
 ---@return string
 local function get_available_formatter(bufnr, ...)
@@ -142,8 +152,9 @@ return {
 				terraform = { "tofu_fmt" },
 				["terraform-vars"] = { "tofu_fmt" },
 			},
-			format_on_save = function()
+			format_on_save = function(bufnr)
 				if vim.g.format_on_save then
+					run_oxlint(bufnr)
 					return {
 						timeout_ms = 5000,
 						filter = function(client)
