@@ -11,3 +11,4 @@ _typos.toml
 # AI tool
 .aider*
 **/.claude/settings.local.json
+.playwright-cli/
