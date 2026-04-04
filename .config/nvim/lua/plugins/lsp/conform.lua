@@ -4,11 +4,18 @@ local enabled_autoformatting_ls = {
 
 ---@param bufnr integer
 local function run_oxlint(bufnr)
-	local commands = vim.api.nvim_buf_get_commands(bufnr, {})
-	-- LspOxlintFixAll is available when Oxlint LSP is attached (via nvim-lspconfig)
-	-- https://github.com/neovim/nvim-lspconfig/blob/16812abf0e8d8175155f26143a8504e8253e92b0/lsp/oxlint.lua
-	if commands["LspOxlintFixAll"] then
-		vim.cmd("LspOxlintFixAll")
+	local client = vim.lsp.get_clients({ name = "oxlint", bufnr = bufnr })[1]
+	if not client then
+		return
+	end
+
+	local request_result = client:request_sync("workspace/executeCommand", {
+		command = "oxc.fixAll",
+		arguments = { { uri = vim.uri_from_bufnr(bufnr) } },
+	})
+	if request_result and request_result.err then
+		vim.notify(request_result.err.message, vim.log.levels.ERROR)
+		return
 	end
 end
 
