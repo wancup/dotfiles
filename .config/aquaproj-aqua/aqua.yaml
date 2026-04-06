@@ -61,7 +61,7 @@ packages:
   - name: rust-lang/rustup@1.28.2
   - name: ip7z/7zip@25.01
   - name: secretlint/secretlint@v11.4.0
-  - name: static-web-server/static-web-server@v2.41.0
+  - name: static-web-server/static-web-server@v2.42.0
   - name: suzuki-shunsuke/pinact@v3.9.0
   - name: rvben/rumdl@v0.1.62
   - name: tamasfe/taplo@0.10.0
