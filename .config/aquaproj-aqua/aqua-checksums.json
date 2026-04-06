@@ -686,23 +686,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/secretlint/secretlint/v11.4.0/secretlint-11.4.0-darwin-arm64",
-      "checksum": "11971D0D723776D5CD663E3F17494F8FA7A1FD993FA4548CD8BDD645C2A0FAB7",
+      "id": "github_release/github.com/secretlint/secretlint/v11.4.1/secretlint-11.4.1-darwin-arm64",
+      "checksum": "28F2FDF79940980145896353FFD4325184ED5713ACBE6EEB575A243B4DBF3F87",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/secretlint/secretlint/v11.4.0/secretlint-11.4.0-darwin-x64",
-      "checksum": "553C573AC748376F87F52F331A17109507975D2764D95846D75B8C535590A09B",
+      "id": "github_release/github.com/secretlint/secretlint/v11.4.1/secretlint-11.4.1-darwin-x64",
+      "checksum": "B6726FD9951A3136FCF8BE26759D1A5740E720EC4640841485A5CB056E972773",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/secretlint/secretlint/v11.4.0/secretlint-11.4.0-linux-arm64",
-      "checksum": "0452BDE755DF29AB4152B47A01768C6BA0E1E9695738AB9F52378B95F1F4273B",
+      "id": "github_release/github.com/secretlint/secretlint/v11.4.1/secretlint-11.4.1-linux-arm64",
+      "checksum": "8384382B5F6AB91E091A6B1AA69173C9AF031232FC11DDF77DEF4BC30F04CC93",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/secretlint/secretlint/v11.4.0/secretlint-11.4.0-linux-x64",
-      "checksum": "174DFA94AD428003925AC2E627F05309C6D1522428A4E16235D8B4088FF0FA96",
+      "id": "github_release/github.com/secretlint/secretlint/v11.4.1/secretlint-11.4.1-linux-x64",
+      "checksum": "4FE183C99C2855F04114B082B8D27852CE117A58B136692FA5BC2358B85B2D16",
       "algorithm": "sha256"
     },
     {
