@@ -92,6 +92,8 @@ map("i", "<C-l>", "<Esc>la")
 map("i", "<C-n>", "<Down>")
 map("i", "<C-p>", "<Up>")
 map("i", "<C-k>", "<C-o>d$")
+map("i", "<PageUp>", "<Nop>")
+map("i", "<PageDown>", "<Nop>")
 
 -- Visual
 map("x", "y", "ygv<Esc>")
