@@ -28,4 +28,4 @@ curl https://skk-dev.github.io/dict/SKK-JISYO.L.gz --output "${skk_dir}/SKK-JISY
 gzip -d -f "${skk_dir}/SKK-JISYO.L.gz"
 
 # Global npm
-(cd "${base_dir}/npm" && pnpm install)
+(cd "${base_dir}/npm" && pnpm install --frozen-lockfile)
