@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@playwright/cli':
-        specifier: 0.1.4
-        version: 0.1.4
+        specifier: 0.1.5
+        version: 0.1.5
       eslint_d:
         specifier: 15.0.2
         version: 15.0.2
@@ -204,8 +204,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@playwright/cli@0.1.4':
-    resolution: {integrity: sha512-aT6VgMeJ/tkZxz0HvHYZ4tySeruuypksPkEggZ++eqMK3Tg3Sr/CUm63ExlNVsqQpsyp9FgukmpSYc8T8zFz3A==}
+  '@playwright/cli@0.1.5':
+    resolution: {integrity: sha512-UsvKLL3f3vqDJg/nbmTCXnpj5l92ma75Rl1r8G4Y3qIBMC7kitZV3bc52JtbPe1kaFSU/flJzpdwAVykSRm43w==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -865,13 +865,13 @@ packages:
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
-  playwright-core@1.60.0-alpha-1775061447000:
-    resolution: {integrity: sha512-8xEKqw04tk+79l/5XlU4HXyf37ngAf8uJUcOd4FLpGjbxwgRpYoqOFlR4wWcQPOxNS5T+22px0QRIF/kZYwEHg==}
+  playwright-core@1.60.0-alpha-1775237291000:
+    resolution: {integrity: sha512-pH1BxJ0wIAfJSMeDXOW1ExjayMQ37BDXrTL6iX7kPxjIbf4EHkTQyaO9PrLfsf+NenOvQbwK5oPUQ/99xpMcyw==}
     engines: {node: '>=18'}
     hasBin: true
 
-  playwright@1.60.0-alpha-1775061447000:
-    resolution: {integrity: sha512-OrClfQgiBMhp55a5d7KTGxKbCcLoevmvu18cUXJQE+pXXQ7yjFj7zbMlrPbIcgNtxJGFtX6sx0PR/1Yk8OlG+g==}
+  playwright@1.60.0-alpha-1775237291000:
+    resolution: {integrity: sha512-WU8VBPknldUr2NePq/AR+4Fh6UjVEwYiEoNngPM3ItpB9Pobqcsn5n7Zk2unVykuBG9FUs3sW18dqFj8fh3FEQ==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1206,10 +1206,10 @@ snapshots:
   '@oxlint/binding-win32-x64-msvc@1.58.0':
     optional: true
 
-  '@playwright/cli@0.1.4':
+  '@playwright/cli@0.1.5':
     dependencies:
       minimist: 1.2.8
-      playwright: 1.60.0-alpha-1775061447000
+      playwright: 1.60.0-alpha-1775237291000
 
   '@pnpm/config.env-replace@1.1.0': {}
 
@@ -1887,11 +1887,11 @@ snapshots:
 
   picocolors@1.1.1: {}
 
-  playwright-core@1.60.0-alpha-1775061447000: {}
+  playwright-core@1.60.0-alpha-1775237291000: {}
 
-  playwright@1.60.0-alpha-1775061447000:
+  playwright@1.60.0-alpha-1775237291000:
     dependencies:
-      playwright-core: 1.60.0-alpha-1775061447000
+      playwright-core: 1.60.0-alpha-1775237291000
     optionalDependencies:
       fsevents: 2.3.2
 
