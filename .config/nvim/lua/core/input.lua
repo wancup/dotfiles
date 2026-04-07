@@ -6,16 +6,17 @@ function M.open_input()
 
 	local float_width = math.floor(vim.o.columns * 0.5)
 	local float_win = vim.api.nvim_open_win(input_buf, true, {
-		relative = "win",
+		relative = "editor",
 		win = current_win,
-		row = -8,
-		col = math.floor((vim.o.columns - float_width) / 2),
+		row = vim.o.lines - 6,
+		col = vim.o.columns - float_width,
 		width = float_width,
-		height = 5,
+		height = 3,
 		style = "minimal",
 		border = "rounded",
 	})
 
+	vim.wo[float_win].winblend = 50
 	vim.keymap.set("n", "q", "<cmd>close<cr>", { buffer = input_buf, noremap = true })
 	vim.keymap.set({ "n", "i" }, "<C-s>", function()
 		local lines = vim.api.nvim_buf_get_lines(input_buf, 0, -1, false)
