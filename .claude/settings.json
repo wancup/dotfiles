@@ -11,9 +11,9 @@
       "Bash(pnpm i)",
       "Bash(pnpm install)",
       "Bash(pnpm add)",
-      "Read(./.env)",
-      "Read(./.env.*)",
-      "Read(./secrets/**)"
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/secrets/**)"
     ]
   },
   "model": "opusplan",
