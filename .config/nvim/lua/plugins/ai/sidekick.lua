@@ -96,7 +96,7 @@ return {
 					prompt = { "<C-S-p>", "prompt", mode = "t", desc = "insert prompt or context" },
 					stopinsert = { "<Esc>", "stopinsert", mode = "t", desc = "enter normal mode" },
 					esc = {
-						"<C-c>",
+						"<C-c><Esc>",
 						function(term)
 							vim.fn.chansend(term.job, "\x1b")
 						end,
