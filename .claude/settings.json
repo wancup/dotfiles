@@ -13,7 +13,16 @@
       "Bash(pnpm add)",
       "Read(**/.env)",
       "Read(**/.env.*)",
+      "Read(**/.ssh/**)",
+      "Read(**/*key*)",
+      "Read(**/*token*)",
       "Read(**/secrets/**)"
+    ],
+    "ask": [
+      "Bash(rm:*)",
+      "Bash(git push:*)",
+      "Bash(git reset:*)",
+      "Bash(git rebase:*)"
     ]
   },
   "model": "opusplan",
