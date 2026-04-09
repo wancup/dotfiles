@@ -111,23 +111,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/ruff/0.15.8/ruff-aarch64-apple-darwin.tar.gz",
-      "checksum": "94FC061F928C8F2B04C4B3A98AAD2B1B04F38B4C808839BC5B33A2F0A63A47A3",
+      "id": "github_release/github.com/astral-sh/ruff/0.15.9/ruff-aarch64-apple-darwin.tar.gz",
+      "checksum": "013D878F17C625550E4A6B19235C22FC229639F66F563BB72CB2C896AECA11E8",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/ruff/0.15.8/ruff-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "15E6A6C21696BBE59C56D0F1C437452B960BCDFE81ECC3BC19FA89E6A7D70EB6",
+      "id": "github_release/github.com/astral-sh/ruff/0.15.9/ruff-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "E017DD0C1FD7475AADDC49BDE8CDDCEE3C27D42F6CE139A96DF0C1022E06D85B",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/ruff/0.15.8/ruff-x86_64-apple-darwin.tar.gz",
-      "checksum": "153D1801068DF606290E832058CE2E5601584AC302788A055D0390ADF6C772CE",
+      "id": "github_release/github.com/astral-sh/ruff/0.15.9/ruff-x86_64-apple-darwin.tar.gz",
+      "checksum": "7E0FE9DABA25848F85CB3D43E47ECD7D23F14E92E8799F92C1BCD8319A4CE4F8",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/ruff/0.15.8/ruff-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "D541BEAE99D550ED4ABB3A1D026B907886C7CDF44A533B24624871E3D8C81330",
+      "id": "github_release/github.com/astral-sh/ruff/0.15.9/ruff-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "E30E6E50DBF925B42335F28E2FA296D404294F294159B314DCA47B88317FC477",
       "algorithm": "sha256"
     },
     {
