@@ -31,6 +31,9 @@ local config = {
 	audible_bell = "Disabled",
 	window_decorations = "INTEGRATED_BUTTONS|RESIZE",
 	switch_to_last_active_tab_when_closing_tab = true,
+	window_frame = {
+		font_size = 13,
+	},
 	colors = {
 		cursor_bg = "#524f67",
 		cursor_fg = "#e0def4",
