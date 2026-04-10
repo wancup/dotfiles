@@ -29,6 +29,7 @@ local config = {
 	initial_rows = 48,
 	color_scheme = "tokyonight_night",
 	audible_bell = "Disabled",
+	window_decorations = "INTEGRATED_BUTTONS|RESIZE",
 	switch_to_last_active_tab_when_closing_tab = true,
 	colors = {
 		cursor_bg = "#524f67",
