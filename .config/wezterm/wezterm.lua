@@ -39,9 +39,6 @@ local config = {
 		cursor_fg = "#e0def4",
 		cursor_border = "#524f67",
 		compose_cursor = "#524f67",
-		tab_bar = {
-			inactive_tab_edge = "none",
-		},
 	},
 	inactive_pane_hsb = {
 		saturation = 0.8,
