@@ -11,11 +11,11 @@ local tab_colors = {
 	},
 	cc_notification = {
 		background = "#292929",
-		foreground = "#c78585",
+		foreground = "#ff5f79",
 	},
 	cc_stop = {
 		background = "#292929",
-		foreground = "#62b7b7",
+		foreground = "#40c8cc",
 	},
 }
 
