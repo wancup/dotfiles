@@ -1,6 +1,6 @@
 ---
 name: translate-to-ja
-description: 英語テキストを日本語に翻訳する。ファイルやURLの内容も翻訳可能。
+description: 英語テキストを日本語に翻訳する。
 argument-hint: <翻訳したいテキスト、ファイルパス、またはURL>
 allowed-tools: Read, Glob
 ---
@@ -21,7 +21,7 @@ allowed-tools: Read, Glob
 2. **翻訳の出力**
    - 日本語訳を **1パターン** 出力する
    - 自然で読みやすい日本語にする
-   - 必要に応じて補足説明を英語で簡潔に添える
+   - 必要に応じて補足説明を日本語で簡潔に添える
 
 ## ルール
 

@@ -1,6 +1,6 @@
 ---
 name: translate-to-en
-description: 日本語テキストを英語に翻訳し、複数パターンで出力する。ファイルやURLの内容も翻訳可能。
+description: 日本語テキストを英語に翻訳し、複数パターンで出力する。
 argument-hint: <翻訳したいテキスト、ファイルパス、またはURL>
 allowed-tools: Read, Glob
 ---
