@@ -65,3 +65,4 @@ packages:
   - name: suzuki-shunsuke/pinact@v3.9.0
   - name: rvben/rumdl@v0.1.67
   - name: tamasfe/taplo@0.10.0
+  - name: ollama/ollama@v0.20.5
