@@ -151,23 +151,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bensadeh/tailspin/5.5.0/tailspin-aarch64-apple-darwin.tar.gz",
-      "checksum": "B5CF1B094381EDE67DD4AE0FE1EEC62FC73DB90CE49FF325912CD234FE92D2DA",
+      "id": "github_release/github.com/bensadeh/tailspin/6.0.0/tailspin-aarch64-apple-darwin.tar.gz",
+      "checksum": "3B3227433F50478D5F70572D879A7BEF844AB40BC91BBAA180043A6AE06E1363",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bensadeh/tailspin/5.5.0/tailspin-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "7996E20A2C6CA438645B27B0ADC9EA3A2063841440ABCBC8B35AE7E5780FFDC9",
+      "id": "github_release/github.com/bensadeh/tailspin/6.0.0/tailspin-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "B01A5D7354A70A7BB9A8D93C8920A782C428DB7F24964076FE5C4D738E599477",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bensadeh/tailspin/5.5.0/tailspin-x86_64-apple-darwin.tar.gz",
-      "checksum": "5F75AE5260DCBA35FDEFED839F4A33B410D8FFA2AFB8C99CCFED285CDED28142",
+      "id": "github_release/github.com/bensadeh/tailspin/6.0.0/tailspin-x86_64-apple-darwin.tar.gz",
+      "checksum": "077F6FCC9EA88B4ED584D1E9256B5AF3339AFB425F1D7BD447FCB0E7FABD0FD3",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bensadeh/tailspin/5.5.0/tailspin-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "56C7EC9593BB733727999CF7305211136E2DBA300C6024B2B0D6E98A2A948DC2",
+      "id": "github_release/github.com/bensadeh/tailspin/6.0.0/tailspin-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "CB96D5CB1160CC4679C67A4C465D8E232688F34882776B5A8EA2A7A312F0E066",
       "algorithm": "sha256"
     },
     {
