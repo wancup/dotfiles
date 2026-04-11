@@ -2,7 +2,7 @@
 set -o errexit -o nounset
 
 base_dir=$(cd "$(dirname "$0")" && pwd)
-top_file_list='.claude .vimrc .zshrc'
+top_file_list='.claude .pi .vimrc .zshrc'
 
 for top_file in $top_file_list ; do
   top_link_path="${HOME}/${top_file}"
