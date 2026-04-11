@@ -9,11 +9,11 @@ local tab_colors = {
 		background = "#000000",
 		foreground = "#FFFFFF",
 	},
-	cc_notification = {
+	status_notify = {
 		background = "#292929",
 		foreground = "#f1b100",
 	},
-	cc_stop = {
+	status_finish = {
 		background = "#292929",
 		foreground = "#00bac0",
 	},
@@ -21,19 +21,19 @@ local tab_colors = {
 
 wezterm.on("format-tab-title", function(tab, _, _, _, _, _)
 	local color = tab_colors.dimmed
-	local is_cc_status = string.find(tab.tab_title, "^cc:") ~= nil
+	local is_status_updating = string.find(tab.tab_title, "^status:") ~= nil
 
-	if tab.tab_title == "cc:notification" then
-		color = tab_colors.cc_notification
-	elseif tab.tab_title == "cc:stop" then
-		color = tab_colors.cc_stop
+	if tab.tab_title == "status:notify" then
+		color = tab_colors.status_notify
+	elseif tab.tab_title == "status:finish" then
+		color = tab_colors.status_finish
 	end
 
 	if tab.is_active then
 		color = tab_colors.active
 
 		-- reset status
-		if is_cc_status then
+		if is_status_updating then
 			wezterm.mux.get_tab(tab.tab_id):set_title("")
 		end
 	end
@@ -41,7 +41,7 @@ wezterm.on("format-tab-title", function(tab, _, _, _, _, _)
 	local title = " "
 		.. (tab.tab_index + 1)
 		.. " "
-		.. (is_cc_status and " " or (tab.tab_title .. " "))
+		.. (is_status_updating and " " or (tab.tab_title .. " "))
 		.. tab.active_pane.title
 		.. " "
 	return {

@@ -34,7 +34,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "wezterm cli set-tab-title cc:notification",
+            "command": "wezterm cli set-tab-title status:notify",
             "async": true
           }
         ]
@@ -45,7 +45,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "wezterm cli set-tab-title cc:stop",
+            "command": "wezterm cli set-tab-title status:finish",
             "async": true
           }
         ]
