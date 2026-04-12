@@ -1,6 +1,2 @@
-/agent/**/*
-!/agent/skills
-!/agent/APPEND_SYSTEM.md
-!/agent/keybindings.json
-!/agent/models.json
-!/agent/settings.json
+sessions/
+auth.json
