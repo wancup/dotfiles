@@ -1,25 +1,33 @@
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 import { isToolCallEventType } from "@mariozechner/pi-coding-agent";
 
-const ASK_PATTERNS = [
-  /\brm\s+-rf\b/i,
-  /\brm\s+-f\b/i,
+const _ASK_COMMANDS = [
+  "rm -rf",
+  "rm -f",
+];
+const _DENY_COMMANDS = [
+  "npx",
+  "pnpx",
+  "pnpm dlx",
+  "npm i",
+  "npm install",
+  "yarn add",
+  "pnpm i",
+  "pnpm install",
+  "pnpm add",
+  "sudo",
+  "chmod",
+  "chown",
 ];
 
-const DENY_PATTERNS = [
-  /\bnpx\b/i,
-  /\bpnpx\b/i,
-  /\bpnpm\s+dlx\b/i,
-  /\bnpm\s+i\b/i,
-  /\bnpm\s+install\b/i,
-  /\byarn\s+add\b/i,
-  /\bpnpm\s+i\b/i,
-  /\bpnpm\s+install\b/i,
-  /\bpnpm\s+add\b/i,
-  /\bsudo\b/i,
-  /\bchmod\b/i,
-  /\bchown\b/i,
-];
+function createPatterns(strings: string[]): RegExp[] {
+  return strings.map(
+    (s) => new RegExp(`\\b${s.replace(/\s+/g, "\\s+")}\\b`, "i"),
+  );
+}
+
+const ASK_PATTERNS = createPatterns(_ASK_COMMANDS);
+const DENY_PATTERNS = createPatterns(_DENY_COMMANDS);
 
 export default function(pi: ExtensionAPI) {
   pi.on("tool_call", async (event, ctx) => {
