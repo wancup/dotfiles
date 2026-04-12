@@ -16,7 +16,7 @@ packages:
   - name: BurntSushi/ripgrep@15.1.0
   - name: jesseduffield/lazygit@v0.60.0
   - name: jqlang/jq@jq-1.8.1
-  - name: JohnnyMorganz/StyLua@v2.4.0
+  - name: JohnnyMorganz/StyLua@v2.4.1
   - name: ajeetdsouza/zoxide@v0.9.9
   - name: junegunn/fzf@v0.71.0
   - name: dandavison/delta@0.18.2
