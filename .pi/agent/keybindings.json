@@ -1,16 +1,19 @@
 {
-  "tui.editor.cursorUp": [ "up", "ctrl+p" ],
-  "tui.editor.cursorDown": [ "down", "ctrl+n" ],
-  "tui.editor.deleteCharBackward": [ "backspace", "ctrl+h" ],
+  "tui.editor.cursorUp": ["up", "ctrl+p"],
+  "tui.editor.cursorDown": ["down", "ctrl+n"],
+  "tui.editor.deleteCharBackward": ["backspace", "ctrl+h"],
 
-  "tui.input.submit": [ "enter", "ctrl+s" ],
+  "tui.input.submit": ["enter", "ctrl+s"],
 
-  "tui.select.up": [ "up", "ctrl+p" ],
-  "tui.select.down": [ "down", "ctrl+n" ],
-  "tui.select.cancel": [ "escape", "ctrl+c", "ctrl+d" ],
+  "tui.select.up": ["up", "ctrl+p"],
+  "tui.select.down": ["down", "ctrl+n"],
+  "tui.select.cancel": ["escape", "ctrl+c", "ctrl+d"],
 
-  "app.model.cycleForward": [ "ctrl+tab" ],
-  "app.model.cycleBackward": [ "ctrl+shift+tab" ],
-  "app.thinking.cycle": [ "ctrl+t" ],
-  "app.thinking.toggle": [ "ctrl+shift+t" ]
+  "app.session.new": ["shift+backspace"],
+
+  "app.model.select": ["ctrl+m"],
+  "app.model.cycleForward": ["ctrl+tab"],
+  "app.model.cycleBackward": ["ctrl+shift+tab"],
+  "app.thinking.cycle": ["ctrl+t"],
+  "app.thinking.toggle": ["ctrl+shift+t"]
 }
