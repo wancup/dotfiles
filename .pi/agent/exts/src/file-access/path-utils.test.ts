@@ -36,33 +36,21 @@ describe("expandPath", () => {
 });
 
 describe("isForbiddenFile", () => {
-  it(".env を禁止する", () => {
-    assert.equal(isForbiddenFile("/project/.env"), true);
-  });
+  const forbiddenPaths: string[] = [
+    "/project/.env",
+    "/project/.env.local",
+    "/project/.env.production",
+    "/home/user/.netrc",
+    "/home/user/.npmrc",
+    "/home/user/.ssh/id_rsa",
+    "/home/user/.keys/secret.pem",
+  ];
 
-  it(".env.local を禁止する", () => {
-    assert.equal(isForbiddenFile("/project/.env.local"), true);
-  });
-
-  it(".env.production を禁止する", () => {
-    assert.equal(isForbiddenFile("/project/.env.production"), true);
-  });
-
-  it(".netrc を禁止する", () => {
-    assert.equal(isForbiddenFile("/home/user/.netrc"), true);
-  });
-
-  it(".npmrc を禁止する", () => {
-    assert.equal(isForbiddenFile("/home/user/.npmrc"), true);
-  });
-
-  it(".ssh 配下のファイルを禁止する", () => {
-    assert.equal(isForbiddenFile("/home/user/.ssh/id_rsa"), true);
-  });
-
-  it("keys 配下のファイルを禁止する", () => {
-    assert.equal(isForbiddenFile("/home/user/.keys/secret.pem"), true);
-  });
+  for (const path of forbiddenPaths) {
+    it(`禁止されたパスを禁止する: ${path}`, () => {
+      assert.equal(isForbiddenFile(path), true);
+    });
+  }
 
   it("通常のファイルは許可する", () => {
     assert.equal(isForbiddenFile("/project/src/index.ts"), false);
