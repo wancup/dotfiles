@@ -11,7 +11,7 @@
 
   "app.session.new": ["shift+backspace"],
 
-  "app.model.select": ["ctrl+m"],
+  "app.model.select": ["ctrl+space"],
   "app.model.cycleForward": ["ctrl+tab"],
   "app.model.cycleBackward": ["ctrl+shift+tab"],
   "app.thinking.cycle": ["ctrl+t"],
