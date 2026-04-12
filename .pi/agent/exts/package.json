@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test src/**/*.test.ts"
   },
   "devDependencies": {
     "@mariozechner/pi-coding-agent": "0.66.1",
