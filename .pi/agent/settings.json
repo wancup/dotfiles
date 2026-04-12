@@ -1,5 +1,5 @@
 {
-  "lastChangelogVersion": "0.65.2",
+  "lastChangelogVersion": "0.66.1",
   "defaultProvider": "ollama",
   "defaultModel": "gemma4:26b",
   "hideThinkingBlock": false,
@@ -15,3 +15,4 @@
     "./exts/src"
   ]
 }
+
