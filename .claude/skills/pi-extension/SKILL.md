@@ -1,7 +1,7 @@
 ---
 name: pi-extension
 description: piコーディングエージェントのextensionを作成する
-argument-hint: <extensionの機能説明>
+argument-hint: <global|project> <extensionの機能説明>
 allowed-tools: Bash, Read, Edit, Write, Glob, Grep
 ---
 
@@ -9,7 +9,14 @@ allowed-tools: Bash, Read, Edit, Write, Glob, Grep
 
 以下の手順を順番に実行してください。
 
-作成するextension: `$ARGUMENTS`
+引数: `$ARGUMENTS`
+
+`$ARGUMENTS` の先頭トークンが `global` または `project` かを確認してください。
+- 先頭が `global` → **グローバルextension** (`~/.pi/agent/exts/src` 配下に作成)
+- 先頭が `project` → **プロジェクトローカルextension** (`.pi/extensions/` 配下に作成)
+- どちらでもない場合はユーザーに確認する
+
+先頭トークンを除いた残りの文字列が **extensionの機能説明** です。
 
 ## 1. ドキュメントの読み込み
 
@@ -28,7 +35,9 @@ echo "$dotfiles_dir/npm/node_modules/@mariozechner/pi-coding-agent/docs/extensio
 
 1. **使用するAPI** — イベント (`pi.on`)、カスタムツール (`pi.registerTool`)、コマンド (`pi.registerCommand`)、ショートカット (`pi.registerShortcut`) のうち何が必要か
 2. **extension構成** — 単一ファイル (`.ts`) / ディレクトリ (`index.ts`) / パッケージ (`package.json`) のどれが適切か
-3. **配置場所** — グローバル (`~/.pi/agent/extensions/`) またはプロジェクトローカル (`.pi/extensions/`)
+3. **配置場所** — `$ARGUMENTS` 先頭トークンに従い決定:
+   - `global` → `~/.pi/agent/exts/src/`
+   - `project` → `.pi/extensions/`
 4. **状態管理** — セッションをまたいで状態を保持する必要があるか
 
 ## 3. 実装
