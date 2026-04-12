@@ -1,6 +1,5 @@
 {
   "lastChangelogVersion": "0.65.2",
-
   "defaultProvider": "ollama",
   "defaultModel": "gemma4:26b",
   "hideThinkingBlock": false,
@@ -10,9 +9,6 @@
     "github-copilot/claude-sonnet-4.6",
     "github-copilot/claude-opus-4.6"
   ],
-
   "quietStartup": true,
-
   "packages": []
 }
-
