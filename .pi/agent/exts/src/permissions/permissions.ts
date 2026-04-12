@@ -1,6 +1,5 @@
-export const ASK_COMMANDS = [
-  "rm -rf",
-  "rm -f",
+export const ALLOW_COMMANDS = [
+  "ls",
 ];
 
 export const DENY_COMMANDS = [
@@ -24,7 +23,7 @@ export function createPatterns(strings: string[]): RegExp[] {
   );
 }
 
-export const ASK_PATTERNS = createPatterns(ASK_COMMANDS);
+export const ALLOW_PATTERNS = createPatterns(ALLOW_COMMANDS);
 export const DENY_PATTERNS = createPatterns(DENY_COMMANDS);
 
 export type EvalResult = "deny" | "ask" | "allow";
@@ -35,10 +34,10 @@ export function evaluateCommand(command: string): EvalResult {
     return "deny";
   }
 
-  const shouldAsk = ASK_PATTERNS.some((pattern) => pattern.test(command));
-  if (shouldAsk) {
-    return "ask";
+  const isAllowed = ALLOW_PATTERNS.some((pattern) => pattern.test(command));
+  if (isAllowed) {
+    return "allow";
   }
 
-  return "allow";
+  return "ask";
 }

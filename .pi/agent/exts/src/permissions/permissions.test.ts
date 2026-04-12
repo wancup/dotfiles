@@ -59,14 +59,34 @@ describe("evaluateCommand – deny", () => {
   });
 });
 
-describe("evaluateCommand – ask", () => {
-  const askCases = [
-    ["rm -rf /tmp/test", "rm -rf"],
-    ["rm -f file.txt", "rm -f"],
+describe("evaluateCommand – allow", () => {
+  const allowCases = [
+    ["ls", "ls"],
+    ["ls -la", "ls"],
+    ["ls /tmp", "ls"],
   ] as const;
 
-  for (const [command, keyword] of askCases) {
-    it(`"${keyword}" を含むコマンドは ask: ${command}`, () => {
+  for (const [command, keyword] of allowCases) {
+    it(`"${keyword}" を含むコマンドは allow: ${command}`, () => {
+      assert.equal(evaluateCommand(command), "allow");
+    });
+  }
+});
+
+describe("evaluateCommand – ask (デフォルト)", () => {
+  const askCases = [
+    "echo hello",
+    "cat file.txt",
+    "grep -r pattern .",
+    "node script.js",
+    "git status",
+    "rm file.txt",
+    "rm -rf /tmp/test",
+    "rm -f file.txt",
+  ];
+
+  for (const command of askCases) {
+    it(`allowリストにないコマンドはデフォルトで ask: ${command}`, () => {
       assert.equal(evaluateCommand(command), "ask");
     });
   }
@@ -76,27 +96,13 @@ describe("evaluateCommand – ask", () => {
   });
 });
 
-describe("evaluateCommand – allow", () => {
-  const allowCases = [
-    "ls -la",
-    "echo hello",
-    "cat file.txt",
-    "grep -r pattern .",
-    "node script.js",
-    "git status",
-    "rm file.txt",
-  ];
-
-  for (const command of allowCases) {
-    it(`安全なコマンドは allow: ${command}`, () => {
-      assert.equal(evaluateCommand(command), "allow");
-    });
-  }
-});
-
 describe("evaluateCommand – 優先順位", () => {
   it("deny と ask の両方にマッチする場合は deny が優先", () => {
-    // "sudo rm -rf /" は deny(sudo) と ask(rm -rf) の両方にマッチ
+    // "sudo rm -rf /" は deny(sudo) と ask(デフォルト) の両方にマッチ
     assert.equal(evaluateCommand("sudo rm -rf /"), "deny");
+  });
+
+  it("deny と allow の両方にマッチする場合は deny が優先", () => {
+    assert.equal(evaluateCommand("sudo ls"), "deny");
   });
 });
