@@ -3,6 +3,9 @@ local selected_cli_name = nil
 
 return {
 	"folke/sidekick.nvim",
+	dependencies = {
+		"nvim-telescope/telescope.nvim",
+	},
 	keys = {
 		{
 			"<tab>",
