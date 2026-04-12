@@ -10,5 +10,8 @@
     "github-copilot/claude-opus-4.6"
   ],
   "quietStartup": true,
-  "packages": []
+  "packages": [],
+  "extensions": [
+    "./exts/src"
+  ]
 }
