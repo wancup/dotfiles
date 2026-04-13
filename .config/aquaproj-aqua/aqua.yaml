@@ -9,7 +9,7 @@ checksum:
     - linux
 registries:
   - type: standard
-    ref: v4.487.0 # renovate: depName=aquaproj/aqua-registry
+    ref: v4.492.0 # renovate: depName=aquaproj/aqua-registry
 packages:
   - name: sharkdp/fd@v10.4.2
   - name: sharkdp/bat@v0.26.1
