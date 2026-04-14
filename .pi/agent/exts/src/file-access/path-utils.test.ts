@@ -81,6 +81,10 @@ describe("isOutsideCwd", () => {
   it("プレフィックスが一致するだけの別ディレクトリは外部と判定する", () => {
     assert.equal(isOutsideCwd("/project-other/file.ts", "/project"), true);
   });
+
+  it("** 始まりのグロブパスは true を返す", () => {
+    assert.equal(isOutsideCwd("**/*.ts", "/project"), true);
+  });
 });
 
 describe("extractPathsFromCommand", () => {
@@ -134,5 +138,9 @@ describe("extractPathsFromCommand", () => {
 
   it("空コマンドでは空配列を返す", () => {
     assert.deepEqual(extractPathsFromCommand(""), []);
+  });
+
+  it("** 始まりのグロブパスを抽出する", () => {
+    assert.deepEqual(extractPathsFromCommand("cat **/*.ts"), ["**/*.ts"]);
   });
 });

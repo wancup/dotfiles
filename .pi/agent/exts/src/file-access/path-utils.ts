@@ -33,6 +33,7 @@ export function isOutsideCwd(absolutePath: string, cwd: string): boolean {
 
 function looksLikePath(token: string): boolean {
   if (token.startsWith(".") || token.startsWith("~") || token.startsWith("/")) return true;
+  if (token.startsWith("**")) return true;
   if (token.includes("..")) return true;
   return false;
 }
