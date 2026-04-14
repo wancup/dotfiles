@@ -7,6 +7,7 @@ set belloff=all
 set confirm
 set hidden
 set autoread
+set nomodeline
 
 set hlsearch
 set incsearch

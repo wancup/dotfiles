@@ -11,6 +11,7 @@ opt.mouse = "a"
 opt.undofile = true
 opt.timeoutlen = 5000
 opt.shell = "fish"
+opt.modeline = false
 
 -- UI
 opt.cursorline = true
