@@ -54,6 +54,7 @@ vim.lsp.enable({
 	"rumdl",
 	"rust_analyzer",
 	"taplo",
+	"ty",
 })
 vim.lsp.inlay_hint.enable(true)
 
