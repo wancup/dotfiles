@@ -1,5 +1,8 @@
 export const ALLOW_COMMANDS = [
   "ls",
+  "find",
+  "head",
+  "tail",
 ];
 
 export const DENY_COMMANDS = [
