@@ -9,7 +9,7 @@ local tab_colors = {
 		background = "#000000",
 		foreground = "#FFFFFF",
 	},
-	status_notify = {
+	status_waiting = {
 		background = "#292929",
 		foreground = "#f1b100",
 	},
@@ -23,8 +23,8 @@ wezterm.on("format-tab-title", function(tab, _, _, _, _, _)
 	local color = tab_colors.dimmed
 	local is_status_updating = string.find(tab.tab_title, "^status:") ~= nil
 
-	if tab.tab_title == "status:notify" then
-		color = tab_colors.status_notify
+	if tab.tab_title == "status:waiting" then
+		color = tab_colors.status_waiting
 	elseif tab.tab_title == "status:finish" then
 		color = tab_colors.status_finish
 	end
