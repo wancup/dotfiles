@@ -7,7 +7,8 @@
   "enabledModels": [
     "ollama/gemma4:26b",
     "github-copilot/claude-sonnet-4.6",
-    "github-copilot/claude-opus-4.6"
+    "github-copilot/claude-opus-4.6",
+    "github-copilot/gpt-5.3-codex"
   ],
   "quietStartup": true,
   "packages": [],
@@ -15,3 +16,4 @@
     "./exts/src"
   ]
 }
+
