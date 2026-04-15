@@ -33,13 +33,13 @@ export default function(pi: ExtensionAPI) {
         return { block: true, reason: `カレントディレクトリ外のファイルへのアクセスがブロックされました: ${filePath}` };
       }
 
+      notifyStatus("waiting");
       const choice = await ctx.ui.select(
         `カレントディレクトリ外へのアクセス\n\n`
           + `${toolName} が CWD 外のファイルにアクセスしようとしています:\n\n`
           + `  Resolved: ${resolved}\n  CWD: ${cwd}\n\n許可しますか？`,
         [...PERMISSION_CHOICES],
       );
-      notifyStatus("waiting");
 
       if (choice === "セッション中は常に許可（このパス）") {
         sessionAllowedPaths.add(resolved);

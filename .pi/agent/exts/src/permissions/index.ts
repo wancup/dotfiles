@@ -44,11 +44,11 @@ export default function(pi: ExtensionAPI) {
         };
       }
 
+      notifyStatus("waiting");
       const choice = await ctx.ui.select(
         `以下のコマンドを実行しようとしています:\n\n\`\`\`bash\n${command}\n\`\`\`\n\n実行を許可しますか？`,
         [...PERMISSION_CHOICES],
       );
-      notifyStatus("waiting");
 
       if (choice === "セッション中は常に許可") {
         sessionAllowedCommands.add(command);
