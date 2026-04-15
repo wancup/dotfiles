@@ -1,5 +1,6 @@
 import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
 import { isToolCallEventType } from "@mariozechner/pi-coding-agent";
+import { notifyStatus } from "../_shared/notify-status.ts";
 import { evaluateCommand } from "./permissions.ts";
 
 const PERMISSION_CHOICES = [
@@ -47,6 +48,7 @@ export default function(pi: ExtensionAPI) {
         `以下のコマンドを実行しようとしています:\n\n\`\`\`bash\n${command}\n\`\`\`\n\n実行を許可しますか？`,
         [...PERMISSION_CHOICES],
       );
+      notifyStatus("waiting");
 
       if (choice === "セッション中は常に許可") {
         sessionAllowedCommands.add(command);
