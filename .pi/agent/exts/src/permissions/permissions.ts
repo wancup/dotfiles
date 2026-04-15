@@ -3,6 +3,7 @@ export const ALLOW_COMMANDS = [
   "find",
   "head",
   "tail",
+  "mkdir"
 ];
 
 export const DENY_COMMANDS = [
