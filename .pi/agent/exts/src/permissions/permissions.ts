@@ -3,7 +3,9 @@ export const ALLOW_COMMANDS = [
   "find",
   "head",
   "tail",
-  "mkdir"
+  "mkdir",
+  "git diff",
+  "git status",
 ];
 
 export const DENY_COMMANDS = [
