@@ -4,6 +4,8 @@ export const ALLOW_COMMANDS = [
   "head",
   "tail",
   "mkdir",
+  "grep",
+  "rg",
   "git diff",
   "git status",
 ];
