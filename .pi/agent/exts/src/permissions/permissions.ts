@@ -7,6 +7,8 @@ export const ALLOW_COMMANDS = [
   "grep",
   "rg",
   "git diff",
+  "git log",
+  "git show",
   "git status",
 ];
 
