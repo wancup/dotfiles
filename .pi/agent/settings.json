@@ -6,9 +6,9 @@
   "defaultThinkingLevel": "high",
   "enabledModels": [
     "ollama/gemma4:26b",
-    "github-copilot/claude-sonnet-4.6",
     "github-copilot/claude-opus-4.6",
-    "github-copilot/gpt-5.3-codex"
+    "github-copilot/gpt-5.4",
+    "github-copilot/gpt-5.4-mini"
   ],
   "quietStartup": true,
   "packages": [],
