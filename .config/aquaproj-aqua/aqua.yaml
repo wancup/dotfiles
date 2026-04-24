@@ -66,4 +66,4 @@ packages:
   - name: rvben/rumdl@v0.1.70
   - name: tamasfe/taplo@0.10.0
   - name: ollama/ollama@v0.20.7
-  - name: astral-sh/ty@0.0.29
+  - name: astral-sh/ty@0.0.31
