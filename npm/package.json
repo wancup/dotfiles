@@ -8,6 +8,6 @@
     "@playwright/cli": "0.1.8",
     "eslint_d": "15.0.2",
     "gitmoji-cli": "9.7.0",
-    "oxlint": "1.60.0"
+    "oxlint": "1.61.0"
   }
 }
