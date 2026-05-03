@@ -1,11 +1,5 @@
 #!/bin/sh
 set -o errexit -o nounset -o pipefail
 
-FILES=$(git diff --cached --name-only --diff-filter=ACMR | sed 's| |\\ |g')
-if [ -z "$FILES" ]; then
-  echo "[INFO: pre-commit] SKIPPED: No Diff"
-  exit 0
-fi
-
-echo "[INFO: pre-commit] Run secretlint"
-echo "$FILES" | xargs secretlint --secretlintrc "${XDG_CONFIG_HOME}/secretlint/.secretlintrc.json"
+echo "[INFO: pre-commit] Run betterleaks"
+betterleaks git --pre-commit --redact --staged --verbose

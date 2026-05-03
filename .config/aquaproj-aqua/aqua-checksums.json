@@ -191,6 +191,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/betterleaks/betterleaks/v1.1.2/betterleaks_1.1.2_darwin_arm64.tar.gz",
+      "checksum": "19CC2298463D7ABF0AEE9A03208A49834AB2E6F8411781C4CF1360827B3DED36",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/betterleaks/betterleaks/v1.1.2/betterleaks_1.1.2_darwin_x64.tar.gz",
+      "checksum": "D51904879ED77FABAD157EC67CB8DD3F5548E975FC32082E6ABC30A026E1BEC1",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/betterleaks/betterleaks/v1.1.2/betterleaks_1.1.2_linux_arm64.tar.gz",
+      "checksum": "4D73DCBFE38C38878EE69E82B5AAA539398BE8331F62B5640EB214AC04D890B0",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/betterleaks/betterleaks/v1.1.2/betterleaks_1.1.2_linux_x64.tar.gz",
+      "checksum": "648C20617178065072FF1791D383192A62C911D9B4427F0426A8C504A6D9DDAD",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/cli/cli/v2.90.0/gh_2.90.0_linux_amd64.tar.gz",
       "checksum": "B2AEF7B23EC6899BF27F37A32C57A7935D0A178568AC33DC9BB03842F724195A",
       "algorithm": "sha256"
