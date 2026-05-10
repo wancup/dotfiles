@@ -64,6 +64,6 @@ packages:
   - name: suzuki-shunsuke/pinact@v3.9.2
   - name: rvben/rumdl@v0.1.88
   - name: tamasfe/taplo@0.10.0
-  - name: ollama/ollama@v0.21.2
+  - name: ollama/ollama@v0.23.1
   - name: astral-sh/ty@0.0.34
   - name: betterleaks/betterleaks@v1.1.2
