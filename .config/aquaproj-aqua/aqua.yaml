@@ -49,7 +49,7 @@ packages:
   - name: opentofu/opentofu@v1.11.6
   - name: jorgerojas26/lazysql@v0.4.9
   - name: Schniz/fnm@v1.39.0
-  - name: golang/go@go1.26.2
+  - name: golang/go@go1.26.3
   - name: shenwei356/csvtk@v0.37.0
   - name: pnpm/pnpm@v10.33.4
   - name: astral-sh/uv@0.11.10
