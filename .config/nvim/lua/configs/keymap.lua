@@ -36,6 +36,9 @@ map({ "n", "x" }, "gB", vim.lsp.buf.workspace_symbol, { desc = "Goto Symbol(Work
 map({ "n", "x" }, "<leader>d", function()
 	vim.diagnostic.open_float({ source = true })
 end, { desc = "[D]iagnostics" })
+map({ "n", "x" }, "<leader>uh", function()
+	vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end, { desc = "[U]i inlay [H]ints toggle" })
 
 map({ "n", "x" }, "<leader>rn", vim.lsp.buf.rename, { desc = "ReName" })
 
