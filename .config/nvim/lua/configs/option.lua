@@ -50,6 +50,7 @@ vim.diagnostic.config({
 })
 vim.lsp.enable({
 	"dprint",
+	"oxfmt",
 	"oxlint",
 	"rumdl",
 	"rust_analyzer",
