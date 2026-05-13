@@ -926,9 +926,9 @@
       "algorithm": "sha512"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.5.1/watchexec-2.5.1-aarch64-unknown-linux-gnu.tar.xz",
-      "checksum": "3C22B500F373E1D014FD37909F22132A2CE80875CCAE66D2CDA6A04CCCE4A9C522BF351CDD024841394BA22CCE2DDCD02DF016A74DDBC7F5207E25E4944604E1",
-      "algorithm": "sha512"
+      "id": "github_release/github.com/watchexec/watchexec/v2.5.1/watchexec-2.5.1-aarch64-unknown-linux-musl.tar.xz",
+      "checksum": "C073887583D502FA0B393A8B847BB4460A111B3B0A199D1F70DAFD5D89E71A2F",
+      "algorithm": "sha256"
     },
     {
       "id": "github_release/github.com/watchexec/watchexec/v2.5.1/watchexec-2.5.1-x86_64-apple-darwin.tar.xz",
@@ -1016,8 +1016,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.493.0/registry.yaml",
-      "checksum": "52F7AE5A30509EE24AFAA908195F380A2AC1A0840FBB5C5E129E885B340AA6038E33A212262232E018728BAB1127F1AB034CBF93453FB2B35927ADB39CCB9A83",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.511.1/registry.yaml",
+      "checksum": "52705257EC97BC4F2819D2D10DC4B1CFE5BCE06DAB3B5BEE5CE15BC6143A60C908672F2F287B64EA50FA000B658F2C86BF6CE5232E33C97591257FCF41AB1665",
       "algorithm": "sha512"
     }
   ]
