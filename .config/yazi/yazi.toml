@@ -1,4 +1,4 @@
-"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+#:schema https://yazi-rs.github.io/schemas/yazi.json
 
 [mgr]
 sort_dir_first = true
@@ -10,14 +10,16 @@ wrap = "yes"
 
 [[plugin.prepend_fetchers]]
 id = "git"
-name = "*"
+url = "*"
 run = "git"
+group = "git"
 
 [[plugin.prepend_fetchers]]
 id = "git"
-name = "*/"
+url = "*/"
 run = "git"
+group = "git"
 
 [[plugin.append_previewers]]
-name = "*"
+url = "*"
 run = 'piper -- hexyl --border=none --terminal-width=$w "$1"'
