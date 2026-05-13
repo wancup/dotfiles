@@ -1,7 +1,6 @@
 minimumReleaseAge: 4320
 blockExoticSubdeps: true
 trustPolicy: "no-downgrade"
-ignoreScripts: true
 allowBuilds:
   "@google/genai": false
   koffi: false
