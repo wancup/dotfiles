@@ -1,5 +1,7 @@
 {
-  "toml": {},
+  "toml": {
+    "comment.forceLeadingSpace": false
+  },
   "json": {},
   "yaml": {},
   "typescript": {},
