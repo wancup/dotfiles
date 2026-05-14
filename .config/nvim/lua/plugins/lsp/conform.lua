@@ -1,5 +1,6 @@
 local enabled_autoformatting_ls = {
 	"dprint",
+	"oxfmt",
 }
 
 ---@param bufnr integer
