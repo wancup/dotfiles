@@ -111,23 +111,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/ty/0.0.34/ty-aarch64-apple-darwin.tar.gz",
-      "checksum": "7F571161BE28CB2CA211F609959B23DD8CEA79B7B5B7857C3970E5F69A872FEC",
+      "id": "github_release/github.com/astral-sh/ty/0.0.35/ty-aarch64-apple-darwin.tar.gz",
+      "checksum": "AABC46C301EBF55DD5C47297636F2549C635FBA1B0789C01C2CBAABE92EC2A35",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/ty/0.0.34/ty-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "658FBB36846D28ED4E71DF0DDAF3BF6F5AC64913AE2FE2105B086436A123E3FD",
+      "id": "github_release/github.com/astral-sh/ty/0.0.35/ty-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "735D4C284FFA9CC83A067785EBF4F3BE4FCD72D7017C777E82B4C6B99FE7864F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/ty/0.0.34/ty-x86_64-apple-darwin.tar.gz",
-      "checksum": "AA28BAC4AD4FFD138FD94B1274049F269835752AAB2B9BC1D5044CA0F08062D3",
+      "id": "github_release/github.com/astral-sh/ty/0.0.35/ty-x86_64-apple-darwin.tar.gz",
+      "checksum": "905A86E324110CE97EA660837013D67E3425373B497DF88513C00C52A2EA4FAA",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/astral-sh/ty/0.0.34/ty-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "6579D8436FB17F49F338AED854027464A259AF2CBF92FDE10717461D8C867C90",
+      "id": "github_release/github.com/astral-sh/ty/0.0.35/ty-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "D2C832307B3ACF88B0C664C0CB89B55A07324880CCDBECEE9724DCA3CC8CBFD2",
       "algorithm": "sha256"
     },
     {
