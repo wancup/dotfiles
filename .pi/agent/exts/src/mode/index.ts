@@ -38,7 +38,7 @@ export default function modeExtension(pi: ExtensionAPI): void {
   });
 
   pi.on("session_start", async (_event, ctx) => {
-    setMode("normal", ctx);
+    setMode("edit", ctx);
   });
 
   pi.on("tool_call", async (event, ctx) => {
