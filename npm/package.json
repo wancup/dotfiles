@@ -2,7 +2,7 @@
   "private": true,
   "description": "",
   "author": "",
-  "packageManager": "pnpm@11.1.0",
+  "packageManager": "pnpm@11.1.2",
   "dependencies": {
     "@mariozechner/pi-coding-agent": "0.73.1",
     "@playwright/cli": "0.1.13",
