@@ -51,7 +51,7 @@ packages:
   - name: golang/go@go1.26.3
   - name: shenwei356/csvtk@v0.37.0
   - name: pnpm/pnpm@v11.1.1
-  - name: astral-sh/uv@0.11.13
+  - name: astral-sh/uv@0.11.14
   - name: rust-lang/rust-analyzer@2025-04-21
   - name: tree-sitter/tree-sitter@v0.26.8
   - name: aws/aws-cli@2.34.46
