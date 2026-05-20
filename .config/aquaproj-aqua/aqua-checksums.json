@@ -151,26 +151,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/bensadeh/tailspin/6.1.0/tailspin-aarch64-apple-darwin.tar.gz",
-      "checksum": "7362C55990E84FDA52DE6E909D3E518C99E1F08D5A1AECC177895BBC54969A6A",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/bensadeh/tailspin/6.1.0/tailspin-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "3E6B1C28FDBA8C5E714B8F0079801A379A3277CF4989ED39D0A5EF4E9B666BBC",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/bensadeh/tailspin/6.1.0/tailspin-x86_64-apple-darwin.tar.gz",
-      "checksum": "A6C0D225522E1140AFC63D1DFE8E78F25C8E3B8DEE824231CA464C267667FE11",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/bensadeh/tailspin/6.1.0/tailspin-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "DBFE695FA50B9A42049FFAF3F6131FF61655BD94A52EF85B8C4E60A26D668BCB",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/betterleaks/betterleaks/v1.2.0/betterleaks_1.2.0_darwin_arm64.tar.gz",
       "checksum": "76D0ABD1F6DD61CA190E152289B3D96A5B06F8E66C859954300BF21C07416859",
       "algorithm": "sha256"
