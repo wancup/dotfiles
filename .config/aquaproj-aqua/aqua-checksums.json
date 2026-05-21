@@ -596,23 +596,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/opentofu/opentofu/v1.11.8/tofu_1.11.8_darwin_amd64.tar.gz",
-      "checksum": "D3F2B3C64A77E36B04F177B488DA0003FC4D33F33A66F4A40C197E8B9351A238",
+      "id": "github_release/github.com/opentofu/opentofu/v1.12.0/tofu_1.12.0_darwin_amd64.tar.gz",
+      "checksum": "472A9B14BD9FC617B58DD00CF39411F64BD6FFF6474D968A7CE041F33E991E72",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/opentofu/opentofu/v1.11.8/tofu_1.11.8_darwin_arm64.tar.gz",
-      "checksum": "0025B81A800C875B6C0B0A6635546AAE32F46A3E420621E8AE54FDE34C7D1D6C",
+      "id": "github_release/github.com/opentofu/opentofu/v1.12.0/tofu_1.12.0_darwin_arm64.tar.gz",
+      "checksum": "9AD35307131102371D770CFC1A9806225FD5040ACF1A3D3D8C3B5AD5418CD454",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/opentofu/opentofu/v1.11.8/tofu_1.11.8_linux_amd64.tar.gz",
-      "checksum": "7E2E9A7322AC35C82305B69E2F799E771BFA413F0CE860F5C7241D2B13908F11",
+      "id": "github_release/github.com/opentofu/opentofu/v1.12.0/tofu_1.12.0_linux_amd64.tar.gz",
+      "checksum": "5FE1DA79E7779538A13713809E83ABE1238B95A7ABD43ECFFC6161AF10B0DDF7",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/opentofu/opentofu/v1.11.8/tofu_1.11.8_linux_arm64.tar.gz",
-      "checksum": "310C6B3F50490A92EDE9DB61D5755296DE089342C75BCD99EA86A570304F26E8",
+      "id": "github_release/github.com/opentofu/opentofu/v1.12.0/tofu_1.12.0_linux_arm64.tar.gz",
+      "checksum": "2C7F48F95678CF75BBE34B66EEEE35DE75E6EE46E2EC4B55F80A0D93445F47D8",
       "algorithm": "sha256"
     },
     {
