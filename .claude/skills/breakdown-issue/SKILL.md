@@ -2,7 +2,7 @@
 name: breakdown-issue
 description: GitHub Issueを親Issueとしてタスク分解し、子Issueを作成する。
 argument-hint: <親Issue番号>
-allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*)
+allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(gh issue create:*), Bash(bash ~/.claude/skills/breakdown-issue/scripts/add-sub-issue.sh *)
 ---
 
 # 親Issueからのタスク分解ワークフロー
@@ -11,7 +11,7 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 
 以下を**並列で**実行してください:
 
-- `gh issue view $ARGUMENTS --json title,body,labels,comments` で親Issueの内容を取得
+- `gh issue view $ARGUMENTS --json id,title,body,labels,comments,url` で親Issueの内容とIssue IDを取得
 - `gh repo view --json defaultBranchRef --jq '.defaultBranchRef.name'` でデフォルトブランチ名を取得
 
 ## 2. コードベースの調査
@@ -70,28 +70,19 @@ AskUserQuestionツールで以下を確認:
 ユーザーの承認を得たら、各子Issueを `gh issue create` で作成してください。
 
 各子Issueの本文には以下を含めること:
-- 親Issue: #<番号> への参照リンク
 - タスクの詳細な説明
 - 完了条件（Acceptance Criteria）
 - 依存関係がある場合はその旨
 
-## 7. 親Issueの更新
+各子Issueを作成したら、ヘルパースクリプトを使って `addSubIssue` mutation を呼び出し、親Issueと関連付けてください。
+親Issueの `id` は手順1で取得した値を使い、子Issueは `gh issue create` の戻り値URLを `subIssueUrl` として以下のコマンドに渡してください。
 
-すべての子Issueを作成したら、親Issueの本文にタスク一覧（子Issueへのリンク付き）を**追記**してください。
-`gh issue edit` を使用し、既存の本文は削除せず末尾に追加すること。
-
-追記する形式:
-```markdown
-
-## タスク分解
-
-- [ ] #<子Issue番号1> <タイトル1>
-- [ ] #<子Issue番号2> <タイトル2>
-...
+```bash
+bash ~/.claude/skills/breakdown-issue/scripts/add-sub-issue.sh '<親IssueのID>' '<子IssueのURL>'
 ```
 
 ## 8. 結果の報告
 
 以下をユーザーに報告してください:
 - 作成した子Issueの一覧（番号・タイトル・URL）
-- 親Issueが更新されたこと
+- 各子Issueが親Issueの sub-issue relationship として関連付けられたこと
