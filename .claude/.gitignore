@@ -2,4 +2,6 @@
 !.gitignore
 !/skills
 !/skills/**
+!/build-claude-settings.sh
 !/settings.json
+!/settings.shared.json
