@@ -304,8 +304,4 @@ return {
 			i(1),
 		})
 	),
-
-	s("co", { t('import "client-only"') }),
-
-	s("so", { t('import "server-only"') }),
 }

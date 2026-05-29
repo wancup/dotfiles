@@ -383,10 +383,6 @@ return {
 
 	s("sat", { t("satisfies ") }),
 
-	s("co", { t('import "client-only"') }),
-
-	s("so", { t('import "server-only"') }),
-
 	s("eslint", { t("// eslint-disable-next-line ") }),
 
 	s("tse", { t("// @ts-expect-error ") }),
