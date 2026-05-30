@@ -3,7 +3,6 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-telescope/telescope-live-grep-args.nvim",
-		"olacin/telescope-gitmoji.nvim",
 		"nvim-telescope/telescope-ui-select.nvim",
 	},
 	cmd = "Telescope",
@@ -86,7 +85,6 @@ return {
 		{ "<leader>fgs", "<cmd>Telescope git_status<cr>", desc = "[F]ind [G]it [S]tatus" },
 		{ "<leader>fgS", "<cmd>Telescope git_stash<cr>", desc = "[F]ind [G]it [S]tash" },
 		{ "<leader>fgS", "<cmd>Telescope git_stash<cr>", desc = "[F]ind [G]it [S]tash" },
-		{ "<leader>fgm", "<cmd>Telescope gitmoji<cr>", desc = "[F]ind [G]it[M]oji" },
 	},
 	config = function()
 		local telescope = require("telescope")
@@ -143,14 +141,6 @@ return {
 			},
 
 			extensions = {
-				gitmoji = {
-					action = function(entry)
-						local emoji = entry.value.value
-						vim.fn.setreg(vim.v.register, emoji)
-						vim.fn.setreg("+", emoji)
-					end,
-				},
-
 				live_grep_args = {
 					auto_quoting = true,
 					mappings = {
@@ -171,7 +161,6 @@ return {
 		})
 
 		telescope.load_extension("live_grep_args")
-		telescope.load_extension("gitmoji")
 		telescope.load_extension("persisted")
 		telescope.load_extension("ui-select")
 	end,
