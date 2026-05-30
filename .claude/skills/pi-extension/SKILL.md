@@ -13,6 +13,7 @@ allowed-tools: Bash, Read, Edit, Write, Glob, Grep
 引数: `$ARGUMENTS`
 
 `$ARGUMENTS` の先頭トークンが `global` または `project` かを確認してください。
+
 - 先頭が `global` → **グローバルextension** (`~/.pi/agent/exts/src` 配下に作成)
 - 先頭が `project` → **プロジェクトローカルextension** (`.pi/extensions/` 配下に作成)
 - どちらでもない場合はユーザーに確認する

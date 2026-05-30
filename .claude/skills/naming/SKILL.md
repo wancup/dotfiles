@@ -30,7 +30,7 @@ allowed-tools: Read, Glob, Grep
 
 ## 出力フォーマット
 
-```
+```markdown
 ## 命名候補: <対象の簡潔な説明>
 
 | # | 候補名 | ニュアンス | 適する場面 |

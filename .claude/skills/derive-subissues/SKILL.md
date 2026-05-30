@@ -25,6 +25,7 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 親Issueの内容やコードベースの調査結果をもとに、実装方針や分解の方向性について不明点・疑問点がある場合は、AskUserQuestionツールで開発者に確認してください。
 
 確認すべき例:
+
 - 技術的なアプローチの選択肢がある場合、どちらを採用するか
 - Issueの要件に曖昧な部分がある場合の解釈
 - スコープの判断が難しい場合の優先度
@@ -43,7 +44,7 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 
 分解したタスク一覧を以下の形式でユーザーに提示してください:
 
-```
+```markdown
 親Issue: #<番号> <タイトル>
 
 子Issue一覧:
@@ -59,6 +60,7 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 ```
 
 AskUserQuestionツールで以下を確認:
+
 - タスクの分解粒度は適切か
 - 追加・削除・修正したいタスクはあるか
 - この内容で子Issueを作成してよいか
@@ -71,6 +73,7 @@ AskUserQuestionツールで以下を確認:
 ユーザーの承認を得たら、各子Issueを `gh issue create` で作成してください。
 
 各子Issueの本文には以下を含めること:
+
 - タスクの詳細な説明
 - 完了条件（Acceptance Criteria）
 - 依存関係がある場合はその旨
@@ -85,5 +88,6 @@ bash ~/.claude/skills/derive-subissues/scripts/add-sub-issue.sh '<親IssueのID>
 ## 8. 結果の報告
 
 以下をユーザーに報告してください:
+
 - 作成した子Issueの一覧（番号・タイトル・URL）
 - 各子Issueが親Issueの sub-issue relationship として関連付けられたこと
