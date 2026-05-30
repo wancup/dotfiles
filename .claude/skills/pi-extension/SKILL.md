@@ -2,6 +2,7 @@
 name: pi-extension
 description: piコーディングエージェントのextensionを作成する
 argument-hint: <global|project> <extensionの機能説明>
+disable-model-invocation: true
 allowed-tools: Bash, Read, Edit, Write, Glob, Grep
 ---
 

@@ -2,6 +2,7 @@
 name: implement-issue
 description: GitHub Issue番号を受け取り、計画立案・ブランチ作成・TDD実装・コードレビュー修正ループを一連で実行する
 argument-hint: <issue-number>
+disable-model-invocation: true
 allowed-tools: Skill, AskUserQuestion, Agent, Read, Edit, Write, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(git branch:*), Bash(git fetch:*), Bash(git switch:*), Bash(git diff:*)
 ---
 
