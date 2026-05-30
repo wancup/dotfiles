@@ -1,9 +1,9 @@
 ---
-name: breakdown-issue
+name: derive-subissues
 description: GitHub Issueを親Issueとしてタスク分解し、子Issueを作成する。
 argument-hint: <親Issue番号>
 disable-model-invocation: true
-allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(gh issue create:*), Bash(bash ~/.claude/skills/breakdown-issue/scripts/add-sub-issue.sh *)
+allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(gh issue create:*), Bash(bash ~/.claude/skills/derive-subissues/scripts/add-sub-issue.sh *)
 ---
 
 # 親Issueからのタスク分解ワークフロー
@@ -79,7 +79,7 @@ AskUserQuestionツールで以下を確認:
 親Issueの `id` は手順1で取得した値を使い、子Issueは `gh issue create` の戻り値URLを `subIssueUrl` として以下のコマンドに渡してください。
 
 ```bash
-bash ~/.claude/skills/breakdown-issue/scripts/add-sub-issue.sh '<親IssueのID>' '<子IssueのURL>'
+bash ~/.claude/skills/derive-subissues/scripts/add-sub-issue.sh '<親IssueのID>' '<子IssueのURL>'
 ```
 
 ## 8. 結果の報告
