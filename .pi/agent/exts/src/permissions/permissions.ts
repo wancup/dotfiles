@@ -10,6 +10,7 @@ export const ALLOW_COMMANDS = [
   "git log",
   "git show",
   "git status",
+  "playwright-cli",
 ];
 
 export const DENY_COMMANDS = [
