@@ -1,7 +1,7 @@
 ---
 name: implement-issue
-description: GitHub Issue番号を受け取り、実装方針策定・ブランチ作成・TDD実装・コードレビュー修正ループを一連で実行する
-argument-hint: <issue番号>
+description: GitHub Issue番号と任意の分岐元ブランチ名を受け取り、実装方針策定・ブランチ作成・TDD実装・コードレビュー修正ループを一連で実行する
+argument-hint: <issue番号> [分岐元ブランチ名]
 disable-model-invocation: true
 allowed-tools: Skill, AskUserQuestion, Agent, Read, Edit, Write, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(git branch:*), Bash(git fetch:*), Bash(git switch:*), Bash(git diff:*)
 ---
@@ -12,23 +12,27 @@ allowed-tools: Skill, AskUserQuestion, Agent, Read, Edit, Write, Glob, Grep, Bas
 
 ## 1. Issue内容の取得とブランチ準備
 
-以下の3つのコマンドは互いに独立しているため、**並列で実行**してください:
+最初に `$ARGUMENTS` を解析し、先頭の値を **Issue番号**、2つ目の値があれば **分岐元ブランチ名** として扱ってください。分岐元ブランチ名が未指定の場合は、デフォルトブランチを分岐元として使用します。
 
-- `gh issue view $ARGUMENTS --json title,body,labels,comments` でIssueのタイトル・本文・ラベル・コメントを取得
+以下のコマンドのうち、必要なものを **並列で実行**してください:
+
+- `gh issue view <Issue番号> --json title,body,labels,comments` でIssueのタイトル・本文・ラベル・コメントを取得
 - `git branch -a` で既存ブランチの命名規則を確認
-- `gh repo view --json defaultBranchRef --jq '.defaultBranchRef.name'` でデフォルトブランチ名を取得
+- 分岐元ブランチ名が未指定の場合のみ、`gh repo view --json defaultBranchRef --jq '.defaultBranchRef.name'` でデフォルトブランチ名を取得
+
+以降のステップでは、指定された分岐元ブランチ名があればそれを、未指定であれば取得したデフォルトブランチ名を **分岐元ブランチ名** として扱ってください。
 
 取得したIssue内容を以降のステップで参照できるよう、要件を整理してまとめてください。
 
 ## 2. ブランチの作成
 
-### 2.1 デフォルトブランチの最新を取得
+### 2.1 分岐元ブランチの最新を取得
 
-`git fetch origin <デフォルトブランチ名>` を実行してください。
+`git fetch origin <分岐元ブランチ名>` を実行してください。
 
 ### 2.2 ブランチを作成してチェックアウト
 
-既存ブランチの命名規則に従い、Issueの内容に基づいた適切なブランチ名を決定し、`git switch -c <ブランチ名> --no-track origin/<デフォルトブランチ名>` で新しいブランチを作成してください。
+既存ブランチの命名規則に従い、Issueの内容に基づいた適切なブランチ名を決定し、`git switch -c <ブランチ名> --no-track origin/<分岐元ブランチ名>` で新しいブランチを作成してください。
 
 ## 3. 実装方針の策定
 
@@ -66,7 +70,7 @@ argsには以下の情報をすべて含めてください:
 
 ### 5.1 コードレビュー
 
-Skillツールを使用して **review-local** スキルを呼び出してください。argsにはIssue番号（`$ARGUMENTS`）を渡してください。
+Skillツールを使用して **review-local** スキルを呼び出してください。argsには、`$ARGUMENTS` から解析した **Issue番号のみ** を渡してください。
 
 レビュー結果の総合判定を確認し、「要議論」の場合は「要修正」として扱ってください。
 
@@ -92,6 +96,7 @@ Skillツールを使用して **review-local** スキルを呼び出してくだ
 すべてのステップが完了したら、以下をユーザーに報告してください:
 
 - 作成したブランチ名
+- 分岐元ブランチ名
 - 実装の概要（TDDサイクルで作成したテストと実装の一覧）
 - コードレビューの最終結果（総合判定・ループ回数）
 - 残存する指摘事項があればその内容
