@@ -47,7 +47,7 @@
       "Bash(git rebase *)"
     ]
   },
-  "model": "opusplan",
+  "model": "opus",
   "hooks": {
     "Notification": [
       {
