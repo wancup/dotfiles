@@ -3,4 +3,5 @@
 !/skills
 !/skills/**
 !/build-claude-settings.sh
+!/CLAUDE.md
 !/settings.shared.json
