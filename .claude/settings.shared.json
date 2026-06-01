@@ -48,6 +48,7 @@
     ]
   },
   "model": "opus",
+  "autoMemoryEnabled": false,
   "hooks": {
     "Notification": [
       {
