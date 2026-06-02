@@ -27,6 +27,7 @@ abbr dcu "docker compose up"
 abbr dcud "docker compose up -d"
 abbr dsp "docker system prune"
 abbr dspa "docker system prune -a"
+abbr fgw find_git_worktree
 abbr ffr find_gh_pr_for_review
 abbr fpr find_gh_pr
 abbr fgb find_git_branch
