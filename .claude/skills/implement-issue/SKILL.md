@@ -3,7 +3,7 @@ name: implement-issue
 description: GitHub Issue番号と任意の分岐元ブランチ名を受け取り、実装方針策定・ブランチ作成・TDD実装・コードレビュー修正ループを一連で実行する
 argument-hint: <issue番号> [分岐元ブランチ名]
 disable-model-invocation: true
-allowed-tools: Skill(sketch *), Skill(tdd *), Skill(review-local *), AskUserQuestion, Agent, Read, Edit, Write, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(git branch:*), Bash(git fetch:*), Bash(git switch:*), Bash(git diff:*)
+allowed-tools: Skill(sketch), Skill(tdd), Skill(review-local), AskUserQuestion, Agent, Read, Edit, Write, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(git branch:*), Bash(git fetch:*), Bash(git switch:*), Bash(git diff:*)
 ---
 
 # Issue実装ワークフロー
