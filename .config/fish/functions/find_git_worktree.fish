@@ -17,7 +17,7 @@ function find_git_worktree -d "Select a git worktree with fzf and cd into it"
             | fzf --delimiter='\t' \
                 --with-nth=3 \
                 --preview='git -C {1} status --short --branch --untracked-files=no; echo; git -C {1} log --oneline --decorate -n 20' \
-                --preview-window='right:60%'
+                --preview-window='up:60%'
     )
 
     test -n "$selection"; or return
