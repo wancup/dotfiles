@@ -51,5 +51,24 @@ WORKTREE PATH:
     git -C "$repo_root" worktree add --no-track -b "$new_branch" "$target_dir" "$base_branch"
     or return 1
 
+    set -l ignored_paths (
+        git -C "$current_worktree_root" ls-files --others -i --exclude-standard -- .claude .agents
+    )
+
+    for rel_path in $ignored_paths
+        set -l source_path "$current_worktree_root/$rel_path"
+        if not test -e "$source_path"
+            if not test -L "$source_path"
+                continue
+            end
+        end
+
+        set -l destination_path "$target_dir/$rel_path"
+
+        mkdir -p (dirname "$destination_path")
+        cp -nRP "$source_path" "$destination_path"
+        or return 1
+    end
+
     cd "$target_dir"
 end
