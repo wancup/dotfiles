@@ -34,6 +34,7 @@ abbr fgw find_git_worktree
 abbr fpr find_gh_pr
 abbr gbi "git blame --ignore-revs-file .git-blame-ignore-revs"
 abbr gc "git clone"
+abbr gwa git_worktree_add
 abbr gdd "GIT_EXTERNAL_DIFF=difft git diff"
 abbr gds "GIT_EXTERNAL_DIFF=difft git show --ext-diff"
 abbr gdl "GIT_EXTERNAL_DIFF=difft git log -p --ext-diff"
