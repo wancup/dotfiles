@@ -1,4 +1,4 @@
-function git_worktree_add -d "Create a git worktree from the repository root and cd into it"
+function git_worktree_add -d "Create a git worktree from the current worktree root and cd into it"
     function show_help
         echo -e "
 USAGE:
@@ -31,12 +31,16 @@ WORKTREE PATH:
         return 1
     end
 
-    set -l repo_root (git rev-parse --show-toplevel)
-    if test "$PWD" != "$repo_root"
-        echo "Please run this command in the repository root" >&2
+    set -l current_worktree_root (git rev-parse --show-toplevel)
+    if test "$PWD" != "$current_worktree_root"
+        echo "Please run this command in a worktree root" >&2
         return 1
     end
 
+    set -l common_git_dir (git rev-parse --path-format=absolute --git-common-dir)
+    or return 1
+
+    set -l repo_root (dirname "$common_git_dir")
     set -l new_branch $argv[1]
     set -l base_branch $argv[2]
     set -l repo_name (basename "$repo_root")
