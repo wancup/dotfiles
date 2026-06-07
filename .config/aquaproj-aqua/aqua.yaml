@@ -63,5 +63,5 @@ packages:
   - name: rvben/rumdl@v0.2.4
   - name: tamasfe/taplo@0.10.0
   - name: ollama/ollama@v0.30.0
-  - name: astral-sh/ty@0.0.41
+  - name: astral-sh/ty@0.0.42
   - name: betterleaks/betterleaks@v1.3.1
