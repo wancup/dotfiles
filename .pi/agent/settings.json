@@ -1,14 +1,15 @@
 {
   "lastChangelogVersion": "0.78.0",
-  "defaultProvider": "ollama",
-  "defaultModel": "gemma4:26b",
+  "defaultProvider": "openai-codex",
+  "defaultModel": "gpt-5.5",
   "hideThinkingBlock": false,
   "defaultThinkingLevel": "high",
   "enabledModels": [
     "ollama/gemma4:26b",
+    "ollama/gemma4:e4b",
     "github-copilot/gpt-5.4",
-    "github-copilot/gpt-5.4-mini",
-    "ollama/gemma4:e4b"
+    "openai-codex/gpt-5.5",
+    "openai-codex/gpt-5.4-mini"
   ],
   "quietStartup": true,
   "packages": [],
