@@ -8,5 +8,5 @@
     "@mariozechner/pi-coding-agent": "0.73.1",
     "typescript": "6.0.3"
   },
-  "packageManager": "pnpm@11.5.0"
+  "packageManager": "pnpm@11.5.1"
 }
