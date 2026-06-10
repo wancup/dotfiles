@@ -2,14 +2,18 @@
 name: review-local
 description: GitHub Issueに対して現在のブランチのローカル実装をレビューする
 argument-hint: <issue-number>
-allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(git rev-parse:*), Bash(git log:*), Bash(git diff:*)
+allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(bash ~/.claude/skills/implement-issue/scripts/get-issue-relationships.sh *), Bash(git rev-parse:*), Bash(git log:*), Bash(git diff:*)
 ---
 
 # Issue実装レビュー
 
-## 1. Issue内容の取得
+## 1. Issue内容の取得と親Issue確認
 
-`gh issue view $ARGUMENTS --json title,body,labels,comments` を実行して、Issueのタイトル・本文・ラベル・コメントを取得してください。
+`gh issue view $ARGUMENTS --json number,title,body,labels,comments,state,url` を実行して、対象Issueの番号・タイトル・本文・ラベル・コメント・状態・URLを取得してください。
+
+GitHub上のIssue relationshipでParent issueが設定されているか確認するため、`bash ~/.claude/skills/implement-issue/scripts/get-issue-relationships.sh $ARGUMENTS` を実行してください。Parent issueが存在する場合は、`gh issue view <親Issue番号またはURL> --json number,title,body,labels,comments,state,url` で親Issueの内容も取得してください。
+
+以降のレビューでは、対象Issueの要件に加えて、親Issueの目的・制約・スコープも判断材料として参照してください。
 
 ## 2. 実装差分の取得
 
@@ -28,11 +32,12 @@ allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Ba
 
 ## 3. レビューの実施
 
-Issueの要件と実装差分を照らし合わせて、以下の観点でレビューしてください:
+対象Issueおよび親Issueの要件と実装差分を照らし合わせて、以下の観点でレビューしてください:
 
-- **要件の充足**: Issueで求められている機能・修正がすべて実装されているか
-- **実装漏れ**: Issueの要件に対して未対応の項目がないか
-- **スコープ逸脱**: Issueの範囲外の変更が含まれていないか
+- **要件の充足**: 対象Issueで求められている機能・修正がすべて実装されているか
+- **実装漏れ**: 対象Issueの要件に対して未対応の項目がないか
+- **親Issueとの整合性**: 親Issueの目的・制約・スコープに反する実装になっていないか
+- **スコープ逸脱**: 対象Issueおよび親Issueの範囲外の変更が含まれていないか
 - **コード品質**: バグ、エッジケースの未処理、セキュリティ上の懸念がないか
 - **テスト**: 必要なテストが追加・更新されているか
 
@@ -42,11 +47,11 @@ Issueの要件と実装差分を照らし合わせて、以下の観点でレビ
 
 ### サマリー
 
-Issueの要件に対する実装の全体的な評価を1〜2文で。
+対象Issueの要件に対する実装の全体的な評価を1〜2文で。親Issueを参照した場合は、その観点での評価も含めること。
 
 ### 要件チェックリスト
 
-Issueの各要件について、対応状況を一覧で示す。
+対象Issueの各要件について、対応状況を一覧で示す。親Issueを参照した場合は、親Issue由来の制約・スコープとの整合性も示す。
 
 ### 指摘事項
 
