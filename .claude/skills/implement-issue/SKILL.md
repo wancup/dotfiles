@@ -3,7 +3,7 @@ name: implement-issue
 description: GitHub Issue番号と任意の分岐元ブランチ名を受け取り、実装方針策定・ブランチ作成・TDD実装・コードレビュー修正ループを一連で実行する
 argument-hint: <issue番号> [分岐元ブランチ名]
 disable-model-invocation: true
-allowed-tools: Skill(sketch), Skill(tdd), Skill(review-local), AskUserQuestion, Agent, Read, Edit, Write, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(bash ~/.claude/skills/implement-issue/scripts/get-issue-relationships.sh *), Bash(git branch:*), Bash(git fetch:*), Bash(git switch:*), Bash(git diff:*)
+allowed-tools: Skill(sketch), Skill(tdd), Skill(review-local), AskUserQuestion, Agent, Read, Edit, Write, Glob, Grep, Bash(gh issue view:*), Bash(gh issue list:*), Bash(gh repo view:*), Bash(git branch:*), Bash(git fetch:*), Bash(git switch:*), Bash(git diff:*)
 ---
 
 # Issue実装ワークフロー
@@ -20,7 +20,7 @@ allowed-tools: Skill(sketch), Skill(tdd), Skill(review-local), AskUserQuestion, 
 - `git branch -a` で既存ブランチの命名規則を確認
 - 分岐元ブランチ名が未指定の場合のみ、`gh repo view --json defaultBranchRef --jq '.defaultBranchRef.name'` でデフォルトブランチ名を取得
 
-GitHub上のIssue relationship（Parent issue、Sub-issues、依存関係、Tracked in/tracked issuesなど）が設定されているか確認するため、`bash ~/.claude/skills/implement-issue/scripts/get-issue-relationships.sh <Issue番号>`を実行してください。このスクリプトは固定GraphQLクエリでrelationship情報のみを取得します。relationshipが設定されている場合は、該当するIssueも `gh issue view <Issue番号またはURL> --json number,title,body,labels,comments,state,url` で取得してください。取得した親Issue・関連Issueについても同じスクリプトでGitHub上のrelationshipを確認し、実装判断に必要な範囲で同様に取得してください。
+GitHub上のIssue relationship（Parent issue、Sub-issues、依存関係など）が設定されているか確認するため、`gh issue list --state all --limit 1000 --json number,title,state,url,parent,subIssues,blockedBy,blocking --jq '.[] | select(.number == <Issue番号>)'` を実行してください。relationshipが設定されている場合は、該当するIssueも `gh issue view <Issue番号またはURL> --json number,title,body,labels,comments,state,url` で取得してください。取得した親Issue・関連Issueについても同じ `gh issue list --state all --limit 1000 --json number,title,state,url,parent,subIssues,blockedBy,blocking --jq '.[] | select(.number == <Issue番号>)'` でGitHub上のrelationshipを確認し、実装判断に必要な範囲で同様に取得してください。
 
 以降のステップでは、指定された分岐元ブランチ名があればそれを、未指定であれば取得したデフォルトブランチ名を **分岐元ブランチ名** として扱ってください。
 

@@ -3,7 +3,7 @@ name: derive-subissues
 description: GitHub Issueを親Issueとしてタスク分解し、子Issueを作成する。
 argument-hint: <親Issue番号>
 disable-model-invocation: true
-allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(gh issue create:*), Bash(bash ~/.claude/skills/derive-subissues/scripts/add-sub-issue.sh *)
+allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(gh issue create:*), Bash(gh issue edit:*)
 ---
 
 # 親Issueからのタスク分解ワークフロー
@@ -12,7 +12,7 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 
 以下を**並列で**実行してください:
 
-- `gh issue view $ARGUMENTS --json id,title,body,labels,comments,url` で親Issueの内容とIssue IDを取得
+- `gh issue view $ARGUMENTS --json number,title,body,labels,comments,url` で親Issueの内容を取得
 - `gh repo view --json defaultBranchRef --jq '.defaultBranchRef.name'` でデフォルトブランチ名を取得
 
 ## 2. コードベースの調査
@@ -96,16 +96,16 @@ AskUserQuestionツールで、その子Issueを実際に登録してよいかを
 - 完了条件（Acceptance Criteria）
 - 依存関係がある場合はその旨
 
-各子Issueを作成したら、ヘルパースクリプトを使って `addSubIssue` mutation を呼び出し、親Issueと関連付けてください。
-親Issueの `id` は手順1で取得した値を使い、子Issueは `gh issue create` の戻り値URLを `subIssueUrl` として以下のコマンドに渡してください。
+各子Issueを作成したら、GitHub CLIで親Issueと関連付けてください。
+子Issueは `gh issue create` の戻り値URLを指定し、親Issueは手順1で取得した親Issue番号または `$ARGUMENTS` を指定してください。
 
 ```bash
-bash ~/.claude/skills/derive-subissues/scripts/add-sub-issue.sh '<親IssueのID>' '<子IssueのURL>'
+gh issue edit '<子IssueのURL>' --parent '<親Issue番号またはURL>'
 ```
 
-## 8. 結果の報告
+## 7. 結果の報告
 
 以下をユーザーに報告してください:
 
 - 作成した子Issueの一覧（番号・タイトル・URL）
-- 各子Issueが親Issueの sub-issue relationship として関連付けられたこと
+- 各子Issueに親Issueが設定され、sub-issue relationship として関連付けられたこと

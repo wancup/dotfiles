@@ -2,7 +2,7 @@
 name: review-local
 description: GitHub Issueに対して現在のブランチのローカル実装をレビューする
 argument-hint: <Issue番号> [分岐元ブランチ]
-allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Bash(bash ~/.claude/skills/implement-issue/scripts/get-issue-relationships.sh *), Bash(git rev-parse:*), Bash(git log:*), Bash(git diff:*)
+allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(gh issue list:*), Bash(gh repo view:*), Bash(git rev-parse:*), Bash(git log:*), Bash(git diff:*)
 ---
 
 # Issue実装レビュー
@@ -13,7 +13,7 @@ allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(gh repo view:*), Ba
 
 `gh issue view <Issue番号> --json number,title,body,labels,comments,state,url` を実行して、対象Issueの番号・タイトル・本文・ラベル・コメント・状態・URLを取得してください。
 
-GitHub上のIssue relationshipでParent issueが設定されているか確認するため、`bash ~/.claude/skills/implement-issue/scripts/get-issue-relationships.sh <Issue番号>` を実行してください。Parent issueが存在する場合は、`gh issue view <親Issue番号またはURL> --json number,title,body,labels,comments,state,url` で親Issueの内容も取得してください。
+GitHub上のIssue relationshipでParent issue等が設定されているか確認するため、`gh issue list --state all --search "#<Issue番号>" --json number,parent,subIssues,subIssuesSummary,blocking,blockedBy --jq '.[] | select(.number == <Issue番号>)'` を実行してください。Parent issueが存在する場合は、`gh issue view <親Issue番号またはURL> --json number,title,body,labels,comments,state,url` で親Issueの内容も取得してください。
 
 以降のレビューでは、対象Issueの要件に加えて、親Issueの目的・制約・スコープも判断材料として参照してください。
 
