@@ -39,6 +39,7 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 - 各タスクは独立して実装・レビュー・マージできる粒度にする
 - タスク間の依存関係がある場合は明記する
 - 各タスクには明確な完了条件を含める
+- 作成予定の子Issue同士を参照する必要がある場合、暫定IDとして`#1`のようなGitHub Issue参照形式を使わない。意図しない既存Issueへのリンクを避けるため、作成前の参照は`TASK-A`や`<作成後にIssue番号を反映>`のようなリンク化されない表記にする
 
 ## 5. 子Issue内容の確認
 
@@ -95,6 +96,13 @@ AskUserQuestionツールで、その子Issueを実際に登録してよいかを
 - タスクの詳細な説明
 - 完了条件（Acceptance Criteria）
 - 依存関係がある場合はその旨
+
+作成する子Issueの本文内で、他の作成予定の子Issueを参照する場合:
+
+- 作成前・確認時点では`#1`のようなGitHub Issue参照形式を使わない
+- 参照先Issueがすでに作成済みの場合のみ、実際のIssue番号（例: `#123`）またはURLで参照する
+- 参照先Issueが未作成の場合は、いったんリンク化されない表記（例: `TASK-A`、`<作成後にIssue番号を反映>`）で作成し、参照先Issueの作成後に `gh issue edit` で本文を更新して実際のIssue番号に置き換える
+- Issue番号の置き換えが必要なIssueは記録しておき、すべての子Issue作成後に漏れなく更新する
 
 各子Issueを作成したら、GitHub CLIで親Issueと関連付けてください。
 子Issueは `gh issue create` の戻り値URLを指定し、親Issueは手順1で取得した親Issue番号または `$ARGUMENTS` を指定してください。
