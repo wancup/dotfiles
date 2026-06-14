@@ -59,7 +59,7 @@ packages:
   - name: rust-lang/rustup@1.28.2
   - name: ip7z/7zip@25.01
   - name: static-web-server/static-web-server@v2.42.0
-  - name: suzuki-shunsuke/pinact@v4.0.0
+  - name: suzuki-shunsuke/pinact@v4.1.0
   - name: rvben/rumdl@v0.2.10
   - name: tamasfe/taplo@0.10.0
   - name: ollama/ollama@v0.30.7
