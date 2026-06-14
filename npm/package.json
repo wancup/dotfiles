@@ -8,7 +8,7 @@
     "eslint_d": "15.0.2",
     "gitmoji-cli": "9.7.0",
     "oxfmt": "0.54.0",
-    "oxlint": "1.68.0"
+    "oxlint": "1.69.0"
   },
   "packageManager": "pnpm@11.5.2"
 }
