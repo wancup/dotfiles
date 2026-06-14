@@ -1,3 +1,4 @@
 node_modules/
 sessions/
 auth.json
+trust.json
