@@ -1,7 +1,7 @@
 #!/bin/sh
 set -o errexit
 
-brew install aquaproj/aqua/aqua
+brew install aqua
 brew install fish
 brew install imagemagick
 
