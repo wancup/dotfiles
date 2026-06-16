@@ -6,7 +6,7 @@
 
 ## Git
 
-- worktreeを作成するときは、リポジトリルートでfishの`git_worktree_add`コメンドを使う
+- worktreeを作成するときは、リポジトリルートでfishの`git_worktree_add`コマンドを使う
 - commitメッセージはなるべく一文で書く
 - commitメッセージには**なぜこの変更をおこなったか**というWhyを含める
 - commitメッセージの形式は直近のログを参照して慣習に合わせる
