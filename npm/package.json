@@ -3,7 +3,7 @@
   "description": "",
   "author": "",
   "dependencies": {
-    "@earendil-works/pi-coding-agent": "0.79.0",
+    "@earendil-works/pi-coding-agent": "0.79.3",
     "@playwright/cli": "0.1.13",
     "eslint_d": "15.0.2",
     "gitmoji-cli": "9.7.0",

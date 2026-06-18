@@ -5,7 +5,7 @@
     "test": "node --test src/**/*.test.ts"
   },
   "devDependencies": {
-    "@earendil-works/pi-coding-agent": "0.79.0",
+    "@earendil-works/pi-coding-agent": "0.79.3",
     "typescript": "6.0.3"
   },
   "packageManager": "pnpm@11.5.3"
