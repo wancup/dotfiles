@@ -671,23 +671,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/rvben/rumdl/v0.2.12/rumdl-v0.2.12-aarch64-apple-darwin.tar.gz",
-      "checksum": "BD07A167C7B7BA713A4F3726AB5761508F756E7C627DA236FA0E611FBD14D5CD",
+      "id": "github_release/github.com/rvben/rumdl/v0.2.16/rumdl-v0.2.16-aarch64-apple-darwin.tar.gz",
+      "checksum": "CCD18DE0460E549BEFF672B8EF99F6A083E961AEBD779138B460B32AE2DE1946",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/rvben/rumdl/v0.2.12/rumdl-v0.2.12-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "1038E064E6FEE7F31A278899E60638F1D3BDAD8F2EFD751EDD67A2DA3C7B38B2",
+      "id": "github_release/github.com/rvben/rumdl/v0.2.16/rumdl-v0.2.16-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "2CB6B59AC7BAD391D6DA04E961587784A9D1D41220C5D42878794FE606499E9F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/rvben/rumdl/v0.2.12/rumdl-v0.2.12-x86_64-apple-darwin.tar.gz",
-      "checksum": "FE28C87B76A6CBD785F122D035D13375C570A8F2F22ED811193796682E2B707F",
+      "id": "github_release/github.com/rvben/rumdl/v0.2.16/rumdl-v0.2.16-x86_64-apple-darwin.tar.gz",
+      "checksum": "F1B7CEF39FB4880ED8BEF3993A9B2DC247722808B8A0309653A4D080520A64DA",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/rvben/rumdl/v0.2.12/rumdl-v0.2.12-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "0B1BA634723DA8400704B987464CAF1E4934D859AB7DEE7757F1934664B3DF54",
+      "id": "github_release/github.com/rvben/rumdl/v0.2.16/rumdl-v0.2.16-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "1CD2328D17C773387CCBF39068FB4A3689D4A4FA68C75406BA42F66D3A6DB0F9",
       "algorithm": "sha256"
     },
     {
