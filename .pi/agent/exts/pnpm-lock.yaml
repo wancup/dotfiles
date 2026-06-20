@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@earendil-works/pi-coding-agent':
-        specifier: 0.79.3
-        version: 0.79.3(ws@8.21.0)(zod@4.4.3)
+        specifier: 0.79.4
+        version: 0.79.4(ws@8.21.0)(zod@4.4.3)
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -140,8 +140,8 @@ packages:
     engines: {node: '>=22.19.0'}
     hasBin: true
 
-  '@earendil-works/pi-coding-agent@0.79.3':
-    resolution: {integrity: sha512-B3rAyw4/f1l3EYjQpCKpevzuBIPjYor6fHxPHQpLMdn/NTv3536i1P4ZrsyFkKpXqJWH66xKK5hyf8sqRe3dGA==}
+  '@earendil-works/pi-coding-agent@0.79.4':
+    resolution: {integrity: sha512-PthzVzM5m4XH/hrU+2fVjuwuH5M4eMFWbd0NCRScH14XKpwlPc8/Fh6JDz0jQb5kTBT9oQT183YLTHVVulFL9A==}
     engines: {node: '>=22.19.0'}
     hasBin: true
 
@@ -528,6 +528,11 @@ packages:
   safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
 
+  semver@7.8.0:
+    resolution: {integrity: sha512-AcM7dV/5ul4EekoQ29Agm5vri8JNqRyj39o0qpX6vDF2GZrtutZl5RwgD1XnZjiTAfncsJhMI48QQH3sN87YNA==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
     engines: {node: '>=8'}
@@ -654,7 +659,7 @@ snapshots:
       '@aws-sdk/types': 3.973.13
       '@smithy/core': 3.25.0
       '@smithy/fetch-http-handler': 5.5.0
-      '@smithy/node-http-handler': 4.7.3
+      '@smithy/node-http-handler': 4.8.0
       '@smithy/types': 4.15.0
       tslib: 2.8.1
 
@@ -868,7 +873,7 @@ snapshots:
       - ws
       - zod
 
-  '@earendil-works/pi-coding-agent@0.79.3(ws@8.21.0)(zod@4.4.3)':
+  '@earendil-works/pi-coding-agent@0.79.4(ws@8.21.0)(zod@4.4.3)':
     dependencies:
       '@earendil-works/pi-agent-core': 0.79.6(ws@8.21.0)(zod@4.4.3)
       '@earendil-works/pi-ai': 0.79.6(ws@8.21.0)(zod@4.4.3)
@@ -884,6 +889,7 @@ snapshots:
       jiti: 2.7.0
       minimatch: 10.2.5
       proper-lockfile: 4.1.2
+      semver: 7.8.0
       typebox: 1.1.38
       undici: 8.3.0
       yaml: 2.9.0
@@ -1264,6 +1270,8 @@ snapshots:
   retry@0.13.1: {}
 
   safe-buffer@5.2.1: {}
+
+  semver@7.8.0: {}
 
   shebang-command@2.0.0:
     dependencies:
