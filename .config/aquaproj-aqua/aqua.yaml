@@ -64,4 +64,4 @@ packages:
   - name: tamasfe/taplo@0.10.0
   - name: ollama/ollama@v0.30.9
   - name: astral-sh/ty@0.0.49
-  - name: betterleaks/betterleaks@v1.4.1
+  - name: betterleaks/betterleaks@v1.5.0
