@@ -49,7 +49,7 @@ packages:
   - name: Schniz/fnm@v1.39.0
   - name: golang/go@go1.26.4
   - name: shenwei356/csvtk@v0.37.0
-  - name: pnpm/pnpm@v11.5.3
+  - name: pnpm/pnpm@v11.7.0
   - name: astral-sh/uv@0.11.21
   - name: rust-lang/rust-analyzer@2025-04-21
   - name: tree-sitter/tree-sitter@v0.26.9
