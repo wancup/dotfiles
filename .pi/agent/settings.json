@@ -15,5 +15,6 @@
   "packages": [],
   "extensions": [
     "./exts/src"
-  ]
+  ],
+  "theme": "dark"
 }
