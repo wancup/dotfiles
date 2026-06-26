@@ -2,9 +2,10 @@
   "private": true,
   "scripts": {
     "typecheck": "tsc --noEmit --skipLibCheck",
-    "test": "node --test src/**/*.test.ts"
+    "test": "node --test 'src/**/*.test.ts'"
   },
   "devDependencies": {
+    "@earendil-works/pi-ai": "0.79.6",
     "@earendil-works/pi-coding-agent": "0.79.6",
     "typescript": "6.0.3"
   },

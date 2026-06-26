@@ -1,18 +1,3 @@
-export const ALLOW_COMMANDS = [
-  "ls",
-  "find",
-  "head",
-  "tail",
-  "mkdir",
-  "grep",
-  "rg",
-  "git diff",
-  "git log",
-  "git show",
-  "git status",
-  "playwright-cli",
-];
-
 export const DENY_COMMANDS = [
   "npx",
   "pnpx",
@@ -34,20 +19,17 @@ export function createPatterns(strings: string[]): RegExp[] {
   );
 }
 
-export const ALLOW_PATTERNS = createPatterns(ALLOW_COMMANDS);
 export const DENY_PATTERNS = createPatterns(DENY_COMMANDS);
 
-export type EvalResult = "deny" | "ask" | "allow";
+export type EvalResult = "deny" | "ask";
+
+export function containsDeniedCommand(command: string): boolean {
+  return DENY_PATTERNS.some((pattern) => pattern.test(command));
+}
 
 export function evaluateCommand(command: string): EvalResult {
-  const isDenied = DENY_PATTERNS.some((pattern) => pattern.test(command));
-  if (isDenied) {
+  if (containsDeniedCommand(command)) {
     return "deny";
-  }
-
-  const isAllowed = ALLOW_PATTERNS.some((pattern) => pattern.test(command));
-  if (isAllowed) {
-    return "allow";
   }
 
   return "ask";

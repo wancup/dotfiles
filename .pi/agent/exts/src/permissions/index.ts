@@ -1,7 +1,9 @@
-import type { ExtensionAPI } from "@mariozechner/pi-coding-agent";
-import { isToolCallEventType } from "@mariozechner/pi-coding-agent";
+import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
+import { isToolCallEventType } from "@earendil-works/pi-coding-agent";
 import { notifyStatus } from "../_shared/notify-status.ts";
-import { evaluateCommand } from "./permissions.ts";
+import { evaluateCommand } from "./core/deny.ts";
+import { reviewCommandSafety } from "./review/ai-reviewer.ts";
+import { buildPermissionPrompt, classificationLabel } from "./ui/permission-prompt.ts";
 
 const PERMISSION_CHOICES = [
   "一回だけ許可",
@@ -32,37 +34,43 @@ export default function(pi: ExtensionAPI) {
       };
     }
 
-    if (result === "ask") {
-      if (sessionAllowedCommands.has(command)) {
-        return;
-      }
+    if (sessionAllowedCommands.has(command)) {
+      return;
+    }
 
-      if (!ctx.hasUI) {
-        return {
-          block: true,
-          reason: "UIによる許可を求められなため、危険なコマンドとして拒否しました。",
-        };
-      }
+    const review = await reviewCommandSafety(command, ctx);
 
-      notifyStatus("waiting");
-      const choice = await ctx.ui.select(
-        `以下のコマンドを実行しようとしています:\n\n\`\`\`bash\n${command}\n\`\`\`\n\n実行を許可しますか？`,
-        [...PERMISSION_CHOICES],
-      );
+    if (review.classification === "safe") {
+      return;
+    }
 
-      if (choice === "セッション中は常に許可") {
-        sessionAllowedCommands.add(command);
-        return;
-      }
-
-      if (choice === "一回だけ許可") {
-        return;
-      }
-
+    if (!ctx.hasUI) {
       return {
         block: true,
-        reason: "ユーザーによって危険なコマンドとして拒否されました。",
+        reason: `AI判定が「${
+          classificationLabel(review.classification)
+        }」のため、実行前の確認が必要ですが、UIによる許可を求められないため拒否しました。\n\n${review.description}`,
       };
     }
+
+    notifyStatus("waiting");
+    const choice = await ctx.ui.select(
+      buildPermissionPrompt(command, review),
+      [...PERMISSION_CHOICES],
+    );
+
+    if (choice === "セッション中は常に許可") {
+      sessionAllowedCommands.add(command);
+      return;
+    }
+
+    if (choice === "一回だけ許可") {
+      return;
+    }
+
+    return {
+      block: true,
+      reason: `ユーザーによって危険または不明なコマンドとして拒否されました。\n\n${review.description}`,
+    };
   });
 }
