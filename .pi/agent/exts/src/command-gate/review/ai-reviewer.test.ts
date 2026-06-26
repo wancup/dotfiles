@@ -4,7 +4,6 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import {
   buildSafetyReviewPrompt,
-  type CollectCommandReviewContext,
   type CompleteSafetyReview,
   createCommandSafetyReviewer,
   SAFETY_MODEL_ID,
@@ -56,14 +55,13 @@ function assistantMessage(text: string): AssistantMessage {
 }
 
 function context(options?: {
-  cwd?: string;
   foundModel?: Model<Api>;
   auth?: Awaited<ReturnType<ExtensionContext["modelRegistry"]["getApiKeyAndHeaders"]>>;
   signal?: AbortSignal;
   trusted?: boolean;
 }): ExtensionContext {
   return {
-    cwd: options?.cwd ?? "/repo",
+    cwd: "/repo",
     signal: options?.signal,
     isProjectTrusted: () => options?.trusted ?? false,
     modelRegistry: {
@@ -92,23 +90,8 @@ describe("buildSafetyReviewPrompt", () => {
     assert.match(prompt, /safe\|caution\|dangerous\|unknown/);
   });
 
-  it("追加コンテキストとしてpackage.jsonのパスと本文を含める", () => {
-    const prompt = buildSafetyReviewPrompt("pnpm test", "/repo", [
-      {
-        kind: "package.json",
-        path: "/repo/package.json",
-        content: "{\"scripts\":{\"test\":\"node --test\"}}",
-        truncated: false,
-      },
-    ]);
-
-    assert.match(prompt, /追加コンテキスト/);
-    assert.match(prompt, /package\.json path: \/repo\/package\.json/);
-    assert.match(prompt, /```json\n\{"scripts":\{"test":"node --test"\}\}\n```/);
-  });
-
   it("プロジェクト開発者が許可したコマンドを尊重する指示を含める", () => {
-    const prompt = buildSafetyReviewPrompt("pnpm test", "/repo", [], ["pnpm test", "pnpm typecheck"]);
+    const prompt = buildSafetyReviewPrompt("pnpm test", "/repo", ["pnpm test", "pnpm typecheck"]);
 
     assert.match(prompt, /プロジェクト開発者が許可したコマンド/);
     assert.match(prompt, /- pnpm test/);
@@ -145,37 +128,6 @@ describe("createCommandSafetyReviewer", () => {
     assert.match(JSON.stringify(receivedContext), /ls -la/);
   });
 
-  it("収集したpackage.jsonコンテキストをモデルへのプロンプトに含める", async () => {
-    let receivedContext: Context | undefined;
-    const complete: CompleteSafetyReview = async (_model, requestContext) => {
-      receivedContext = requestContext;
-      return assistantMessage(
-        "{\"classification\":\"safe\",\"commandDescription\":\"テストを実行します。\",\"classificationReason\":\"package.jsonのtest scriptが読み取り中心のテスト実行であるためです。\"}",
-      );
-    };
-    const collectReviewContext: CollectCommandReviewContext = async (command, cwd) => {
-      assert.equal(command, "pnpm test");
-      assert.equal(cwd, "/repo");
-      return [
-        {
-          kind: "package.json",
-          path: "/repo/package.json",
-          content: "{\"scripts\":{\"test\":\"node --test\"}}",
-          truncated: false,
-        },
-      ];
-    };
-
-    await createCommandSafetyReviewer(complete, collectReviewContext)(
-      "pnpm test",
-      context({ foundModel: model }),
-    );
-
-    const prompt = JSON.stringify(receivedContext);
-    assert.match(prompt, /\/repo\/package\.json/);
-    assert.match(prompt, /node --test/);
-  });
-
   it("読み込んだ許可コマンドをモデルへのプロンプトに含める", async () => {
     let receivedContext: Context | undefined;
     const complete: CompleteSafetyReview = async (_model, requestContext) => {
@@ -185,14 +137,10 @@ describe("createCommandSafetyReviewer", () => {
       );
     };
 
-    await createCommandSafetyReviewer(
-      complete,
-      async () => [],
-      async (ctx) => {
-        assert.equal(ctx.cwd, "/repo");
-        return { allow: ["pnpm test"] };
-      },
-    )("pnpm test", context({ foundModel: model }));
+    await createCommandSafetyReviewer(complete, async (ctx) => {
+      assert.equal(ctx.cwd, "/repo");
+      return { allow: ["pnpm test"] };
+    })("pnpm test", context({ foundModel: model }));
 
     const prompt = JSON.stringify(receivedContext);
     assert.match(prompt, /プロジェクト開発者が許可したコマンド/);

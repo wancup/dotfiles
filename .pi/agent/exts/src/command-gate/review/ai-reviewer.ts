@@ -7,7 +7,6 @@ import {
   type ProviderStreamOptions,
 } from "@earendil-works/pi-ai";
 import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
-import { collectCommandReviewContext, type CommandReviewContext } from "./command-context.ts";
 import { type CommandGateConfig, loadCommandGateConfig } from "./command-gate-config.ts";
 import { fallbackReview, parseSafetyReview, type SafetyReview } from "./safety-review.ts";
 
@@ -20,32 +19,12 @@ export type CompleteSafetyReview = (
   options: ProviderStreamOptions,
 ) => Promise<AssistantMessage>;
 
-export type CollectCommandReviewContext = (command: string, cwd: string) => Promise<CommandReviewContext[]>;
-
 export type LoadCommandGateConfigForReview = (ctx: ExtensionContext) => Promise<CommandGateConfig>;
 
 async function loadProjectCommandGateConfig(ctx: ExtensionContext): Promise<CommandGateConfig> {
   return loadCommandGateConfig(ctx.cwd, {
     isProjectTrusted: () => ctx.isProjectTrusted(),
   });
-}
-
-function formatCommandReviewContexts(contexts: CommandReviewContext[]): string[] {
-  if (contexts.length === 0) return [];
-
-  return [
-    "",
-    "追加コンテキスト:",
-    "以下は実行予定コマンドの安全性判断に役立つ可能性がある、現在のCWDから読み込んだファイルです。",
-    ...contexts.flatMap((context) => [
-      "",
-      `${context.kind} path: ${context.path}`,
-      context.truncated ? "注: 内容はサイズ上限により切り詰められています。" : "注: 内容は全体です。",
-      "```json",
-      context.content,
-      "```",
-    ]),
-  ];
 }
 
 function formatAllowedCommands(allowedCommands: string[]): string[] {
@@ -64,7 +43,6 @@ function formatAllowedCommands(allowedCommands: string[]): string[] {
 export function buildSafetyReviewPrompt(
   command: string,
   cwd: string,
-  contexts: CommandReviewContext[] = [],
   allowedCommands: string[] = [],
 ): string {
   return [
@@ -87,7 +65,6 @@ export function buildSafetyReviewPrompt(
     "実行予定のbashコマンド:",
     command,
     ...formatAllowedCommands(allowedCommands),
-    ...formatCommandReviewContexts(contexts),
   ].join("\n");
 }
 
@@ -101,7 +78,6 @@ function extractTextContent(message: AssistantMessage): string {
 
 export function createCommandSafetyReviewer(
   completeSafetyReview: CompleteSafetyReview,
-  collectReviewContext: CollectCommandReviewContext = collectCommandReviewContext,
   loadConfig: LoadCommandGateConfigForReview = loadProjectCommandGateConfig,
 ) {
   return async function reviewCommandSafety(
@@ -132,7 +108,6 @@ export function createCommandSafetyReviewer(
       if (auth.headers) options.headers = auth.headers;
       if (ctx.signal) options.signal = ctx.signal;
 
-      const commandContexts = await collectReviewContext(command, ctx.cwd);
       const commandGateConfig = await loadConfig(ctx);
       const response = await completeSafetyReview(
         model,
@@ -140,10 +115,7 @@ export function createCommandSafetyReviewer(
           messages: [
             {
               role: "user",
-              content: [{
-                type: "text",
-                text: buildSafetyReviewPrompt(command, ctx.cwd, commandContexts, commandGateConfig.allow),
-              }],
+              content: [{ type: "text", text: buildSafetyReviewPrompt(command, ctx.cwd, commandGateConfig.allow) }],
               timestamp: Date.now(),
             },
           ],
