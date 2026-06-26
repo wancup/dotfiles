@@ -83,7 +83,7 @@ describe("buildSafetyReviewPrompt", () => {
     assert.match(prompt, /CWD: \/repo/);
     assert.match(prompt, /ls -la/);
     assert.match(prompt, /classification/);
-    assert.match(prompt, /safe\|dangerous\|unknown/);
+    assert.match(prompt, /safe\|caution\|dangerous\|unknown/);
   });
 });
 

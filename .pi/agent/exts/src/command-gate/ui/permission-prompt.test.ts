@@ -5,6 +5,7 @@ import { buildPermissionPrompt, classificationLabel } from "./permission-prompt.
 describe("classificationLabel", () => {
   it("classificationを日本語ラベルに変換する", () => {
     assert.equal(classificationLabel("safe"), "安全");
+    assert.equal(classificationLabel("caution"), "注意");
     assert.equal(classificationLabel("dangerous"), "危険");
     assert.equal(classificationLabel("unknown"), "不明");
   });

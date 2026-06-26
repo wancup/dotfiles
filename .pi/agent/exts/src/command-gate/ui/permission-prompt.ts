@@ -4,6 +4,8 @@ export function classificationLabel(classification: SafetyReview["classification
   switch (classification) {
     case "safe":
       return "安全";
+    case "caution":
+      return "注意";
     case "dangerous":
       return "危険";
     case "unknown":

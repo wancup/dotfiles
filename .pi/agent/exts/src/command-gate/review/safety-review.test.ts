@@ -33,6 +33,24 @@ describe("parseSafetyReview", () => {
     );
   });
 
+  it("caution判定と日本語の注意をパースする", () => {
+    assert.deepEqual(
+      parseSafetyReview("{\"classification\":\"caution\",\"description\":\"作業ツリーに変更を加える可能性があります。\"}"),
+      {
+        classification: "caution",
+        description: "作業ツリーに変更を加える可能性があります。",
+      },
+    );
+
+    assert.deepEqual(
+      parseSafetyReview("{\"classification\":\"注意\",\"description\":\"ディレクトリを作成します。\"}"),
+      {
+        classification: "caution",
+        description: "ディレクトリを作成します。",
+      },
+    );
+  });
+
   it("未知のclassificationはunknownに正規化する", () => {
     assert.deepEqual(
       parseSafetyReview("{\"classification\":\"maybe\",\"description\":\"判断できません。\"}"),

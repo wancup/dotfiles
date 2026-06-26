@@ -1,4 +1,4 @@
-export type SafetyClassification = "safe" | "dangerous" | "unknown";
+export type SafetyClassification = "safe" | "caution" | "dangerous" | "unknown";
 
 export type SafetyReview = {
   classification: SafetyClassification;
@@ -36,6 +36,11 @@ function normalizeClassification(value: unknown): SafetyClassification {
     case "safe":
     case "安全":
       return "safe";
+    case "caution":
+    case "warning":
+    case "warn":
+    case "注意":
+      return "caution";
     case "dangerous":
     case "danger":
     case "unsafe":
