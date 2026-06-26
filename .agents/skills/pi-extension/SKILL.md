@@ -26,7 +26,7 @@ Bashツールで以下のコマンドを実行し、extensions.mdのパスを取
 
 ```bash
 dotfiles_dir="$(dirname "$(dirname "$(realpath "$XDG_CONFIG_HOME/fish")")")"
-echo "$dotfiles_dir/npm/node_modules/@mariozechner/pi-coding-agent/docs/extensions.md"
+echo "$dotfiles_dir/npm/node_modules/@earendil-works/pi-coding-agent/docs/extensions.md"
 ```
 
 取得したパスをReadツールで読み込み、APIの仕様（イベント、ツール登録、コマンド登録、UI操作など）を把握してください。
@@ -47,9 +47,9 @@ echo "$dotfiles_dir/npm/node_modules/@mariozechner/pi-coding-agent/docs/extensio
 以下の注意点に従いextensionを実装してください:
 
 - TypeScriptで記述し、コンパイル不要（jitiで実行される）
-- `import type { ExtensionAPI } from "@mariozechner/pi-coding-agent"` でAPIをインポート
-- `import { Type } from "@sinclair/typebox"` でスキーマ定義
-- string enumは `StringEnum` (@mariozechner/pi-aiから) を使う（Google API互換のため）
+- `import type { ExtensionAPI } from "@earendil-works/pi-coding-agent"` でAPIをインポート
+- `import { Type } from "typebox"` でスキーマ定義
+- string enumは `StringEnum` (@earendil-works/pi-aiから) を使う（Google API互換のため）
 - ツールの出力は50KB / 2000行を超えないよう truncateHead / truncateTail でトランケートする
 - ファイルを変更するツールは `withFileMutationQueue` でラップする
 - エラーを示す場合は return ではなく throw を使う
