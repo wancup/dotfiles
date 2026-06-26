@@ -5,7 +5,7 @@ import { fallbackReview, parseSafetyReview } from "./safety-review.ts";
 describe("parseSafetyReview", () => {
   it("JSONのsafe判定と説明をパースする", () => {
     assert.deepEqual(
-      parseSafetyReview('{"classification":"safe","description":"ファイル一覧を表示します。"}'),
+      parseSafetyReview("{\"classification\":\"safe\",\"description\":\"ファイル一覧を表示します。\"}"),
       {
         classification: "safe",
         description: "ファイル一覧を表示します。",
@@ -15,7 +15,7 @@ describe("parseSafetyReview", () => {
 
   it("コードフェンス内のJSONもパースする", () => {
     assert.deepEqual(
-      parseSafetyReview('```json\n{"classification":"dangerous","description":"ファイルを削除します。"}\n```'),
+      parseSafetyReview("```json\n{\"classification\":\"dangerous\",\"description\":\"ファイルを削除します。\"}\n```"),
       {
         classification: "dangerous",
         description: "ファイルを削除します。",
@@ -25,7 +25,7 @@ describe("parseSafetyReview", () => {
 
   it("別名フィールドのclassificationと説明を受け付ける", () => {
     assert.deepEqual(
-      parseSafetyReview('{"result":"不明","reason":"安全と言い切れません。"}'),
+      parseSafetyReview("{\"result\":\"不明\",\"reason\":\"安全と言い切れません。\"}"),
       {
         classification: "unknown",
         description: "安全と言い切れません。",
@@ -35,7 +35,7 @@ describe("parseSafetyReview", () => {
 
   it("未知のclassificationはunknownに正規化する", () => {
     assert.deepEqual(
-      parseSafetyReview('{"classification":"maybe","description":"判断できません。"}'),
+      parseSafetyReview("{\"classification\":\"maybe\",\"description\":\"判断できません。\"}"),
       {
         classification: "unknown",
         description: "判断できません。",

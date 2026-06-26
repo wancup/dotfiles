@@ -1,13 +1,13 @@
-import assert from "node:assert/strict";
-import { describe, it } from "node:test";
 import type { Api, AssistantMessage, Context, Model, ProviderStreamOptions } from "@earendil-works/pi-ai";
 import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
+import assert from "node:assert/strict";
+import { describe, it } from "node:test";
 import {
   buildSafetyReviewPrompt,
+  type CompleteSafetyReview,
   createCommandSafetyReviewer,
   SAFETY_MODEL_ID,
   SAFETY_MODEL_PROVIDER,
-  type CompleteSafetyReview,
 } from "./ai-reviewer.ts";
 
 const model: Model<Api> = {
@@ -94,7 +94,7 @@ describe("createCommandSafetyReviewer", () => {
     const complete: CompleteSafetyReview = async (_model, requestContext, options) => {
       receivedContext = requestContext;
       receivedOptions = options;
-      return assistantMessage('{"classification":"safe","description":"一覧を表示します。"}');
+      return assistantMessage("{\"classification\":\"safe\",\"description\":\"一覧を表示します。\"}");
     };
 
     const review = await createCommandSafetyReviewer(complete)(

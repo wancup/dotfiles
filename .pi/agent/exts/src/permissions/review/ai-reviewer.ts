@@ -1,7 +1,7 @@
 import {
-  complete,
   type Api,
   type AssistantMessage,
+  complete,
   type Context,
   type Model,
   type ProviderStreamOptions,
@@ -30,7 +30,7 @@ export function buildSafetyReviewPrompt(command: string, cwd: string): string {
     "",
     "必ずJSONだけを返してください。Markdownやコードフェンスは不要です。",
     "形式:",
-    '{"classification":"safe|dangerous|unknown","description":"コマンドが何をするかと判定理由を日本語で簡潔に説明"}',
+    "{\"classification\":\"safe|dangerous|unknown\",\"description\":\"コマンドが何をするかと判定理由を日本語で簡潔に説明\"}",
     "",
     `CWD: ${cwd}`,
     "実行予定のbashコマンド:",
