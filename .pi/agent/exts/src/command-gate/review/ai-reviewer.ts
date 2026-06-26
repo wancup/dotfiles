@@ -7,6 +7,7 @@ import {
   type ProviderStreamOptions,
 } from "@earendil-works/pi-ai";
 import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
+import { collectCommandReviewContext, type CommandReviewContext } from "./command-context.ts";
 import { fallbackReview, parseSafetyReview, type SafetyReview } from "./safety-review.ts";
 
 export const SAFETY_MODEL_PROVIDER = "openai-codex";
@@ -18,7 +19,27 @@ export type CompleteSafetyReview = (
   options: ProviderStreamOptions,
 ) => Promise<AssistantMessage>;
 
-export function buildSafetyReviewPrompt(command: string, cwd: string): string {
+export type CollectCommandReviewContext = (command: string, cwd: string) => Promise<CommandReviewContext[]>;
+
+function formatCommandReviewContexts(contexts: CommandReviewContext[]): string[] {
+  if (contexts.length === 0) return [];
+
+  return [
+    "",
+    "追加コンテキスト:",
+    "以下は実行予定コマンドの安全性判断に役立つ可能性がある、現在のCWDから読み込んだファイルです。",
+    ...contexts.flatMap((context) => [
+      "",
+      `${context.kind} path: ${context.path}`,
+      context.truncated ? "注: 内容はサイズ上限により切り詰められています。" : "注: 内容は全体です。",
+      "```json",
+      context.content,
+      "```",
+    ]),
+  ];
+}
+
+export function buildSafetyReviewPrompt(command: string, cwd: string, contexts: CommandReviewContext[] = []): string {
   return [
     "あなたはローカル開発環境で実行されるbashコマンドの安全性を判定するセキュリティレビュアーです。",
     "ユーザー環境への影響を保守的に評価してください。",
@@ -38,6 +59,7 @@ export function buildSafetyReviewPrompt(command: string, cwd: string): string {
     `CWD: ${cwd}`,
     "実行予定のbashコマンド:",
     command,
+    ...formatCommandReviewContexts(contexts),
   ].join("\n");
 }
 
@@ -49,7 +71,10 @@ function extractTextContent(message: AssistantMessage): string {
     .trim();
 }
 
-export function createCommandSafetyReviewer(completeSafetyReview: CompleteSafetyReview) {
+export function createCommandSafetyReviewer(
+  completeSafetyReview: CompleteSafetyReview,
+  collectReviewContext: CollectCommandReviewContext = collectCommandReviewContext,
+) {
   return async function reviewCommandSafety(
     command: string,
     ctx: ExtensionContext,
@@ -78,13 +103,14 @@ export function createCommandSafetyReviewer(completeSafetyReview: CompleteSafety
       if (auth.headers) options.headers = auth.headers;
       if (ctx.signal) options.signal = ctx.signal;
 
+      const commandContexts = await collectReviewContext(command, ctx.cwd);
       const response = await completeSafetyReview(
         model,
         {
           messages: [
             {
               role: "user",
-              content: [{ type: "text", text: buildSafetyReviewPrompt(command, ctx.cwd) }],
+              content: [{ type: "text", text: buildSafetyReviewPrompt(command, ctx.cwd, commandContexts) }],
               timestamp: Date.now(),
             },
           ],

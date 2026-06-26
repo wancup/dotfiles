@@ -4,6 +4,7 @@ import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import {
   buildSafetyReviewPrompt,
+  type CollectCommandReviewContext,
   type CompleteSafetyReview,
   createCommandSafetyReviewer,
   SAFETY_MODEL_ID,
@@ -55,12 +56,13 @@ function assistantMessage(text: string): AssistantMessage {
 }
 
 function context(options?: {
+  cwd?: string;
   foundModel?: Model<Api>;
   auth?: Awaited<ReturnType<ExtensionContext["modelRegistry"]["getApiKeyAndHeaders"]>>;
   signal?: AbortSignal;
 }): ExtensionContext {
   return {
-    cwd: "/repo",
+    cwd: options?.cwd ?? "/repo",
     signal: options?.signal,
     modelRegistry: {
       find(provider: string, modelId: string) {
@@ -86,6 +88,21 @@ describe("buildSafetyReviewPrompt", () => {
     assert.match(prompt, /commandDescription/);
     assert.match(prompt, /classificationReason/);
     assert.match(prompt, /safe\|caution\|dangerous\|unknown/);
+  });
+
+  it("追加コンテキストとしてpackage.jsonのパスと本文を含める", () => {
+    const prompt = buildSafetyReviewPrompt("pnpm test", "/repo", [
+      {
+        kind: "package.json",
+        path: "/repo/package.json",
+        content: "{\"scripts\":{\"test\":\"node --test\"}}",
+        truncated: false,
+      },
+    ]);
+
+    assert.match(prompt, /追加コンテキスト/);
+    assert.match(prompt, /package\.json path: \/repo\/package\.json/);
+    assert.match(prompt, /```json\n\{"scripts":\{"test":"node --test"\}\}\n```/);
   });
 });
 
@@ -114,6 +131,37 @@ describe("createCommandSafetyReviewer", () => {
     assert.equal(receivedOptions?.apiKey, "test-key");
     assert.deepEqual(receivedOptions?.headers, { "x-test": "1" });
     assert.match(JSON.stringify(receivedContext), /ls -la/);
+  });
+
+  it("収集したpackage.jsonコンテキストをモデルへのプロンプトに含める", async () => {
+    let receivedContext: Context | undefined;
+    const complete: CompleteSafetyReview = async (_model, requestContext) => {
+      receivedContext = requestContext;
+      return assistantMessage(
+        "{\"classification\":\"safe\",\"commandDescription\":\"テストを実行します。\",\"classificationReason\":\"package.jsonのtest scriptが読み取り中心のテスト実行であるためです。\"}",
+      );
+    };
+    const collectReviewContext: CollectCommandReviewContext = async (command, cwd) => {
+      assert.equal(command, "pnpm test");
+      assert.equal(cwd, "/repo");
+      return [
+        {
+          kind: "package.json",
+          path: "/repo/package.json",
+          content: "{\"scripts\":{\"test\":\"node --test\"}}",
+          truncated: false,
+        },
+      ];
+    };
+
+    await createCommandSafetyReviewer(complete, collectReviewContext)(
+      "pnpm test",
+      context({ foundModel: model }),
+    );
+
+    const prompt = JSON.stringify(receivedContext);
+    assert.match(prompt, /\/repo\/package\.json/);
+    assert.match(prompt, /node --test/);
   });
 
   it("モデルが見つからない場合はunknownにする", async () => {
