@@ -83,6 +83,8 @@ describe("buildSafetyReviewPrompt", () => {
     assert.match(prompt, /CWD: \/repo/);
     assert.match(prompt, /ls -la/);
     assert.match(prompt, /classification/);
+    assert.match(prompt, /commandDescription/);
+    assert.match(prompt, /classificationReason/);
     assert.match(prompt, /safe\|caution\|dangerous\|unknown/);
   });
 });
@@ -94,7 +96,9 @@ describe("createCommandSafetyReviewer", () => {
     const complete: CompleteSafetyReview = async (_model, requestContext, options) => {
       receivedContext = requestContext;
       receivedOptions = options;
-      return assistantMessage("{\"classification\":\"safe\",\"description\":\"一覧を表示します。\"}");
+      return assistantMessage(
+        "{\"classification\":\"safe\",\"commandDescription\":\"一覧を表示します。\",\"classificationReason\":\"読み取り専用の操作です。\"}",
+      );
     };
 
     const review = await createCommandSafetyReviewer(complete)(
@@ -104,7 +108,8 @@ describe("createCommandSafetyReviewer", () => {
 
     assert.deepEqual(review, {
       classification: "safe",
-      description: "一覧を表示します。",
+      commandDescription: "一覧を表示します。",
+      classificationReason: "読み取り専用の操作です。",
     });
     assert.equal(receivedOptions?.apiKey, "test-key");
     assert.deepEqual(receivedOptions?.headers, { "x-test": "1" });
@@ -118,7 +123,7 @@ describe("createCommandSafetyReviewer", () => {
     );
 
     assert.equal(review.classification, "unknown");
-    assert.match(review.description, /モデル.*見つかりません/);
+    assert.match(review.classificationReason, /モデル.*見つかりません/);
   });
 
   it("APIキーがない場合はunknownにする", async () => {
@@ -128,7 +133,7 @@ describe("createCommandSafetyReviewer", () => {
     );
 
     assert.equal(review.classification, "unknown");
-    assert.match(review.description, /APIキー/);
+    assert.match(review.classificationReason, /APIキー/);
   });
 
   it("モデル呼び出しが失敗した場合はunknownにする", async () => {
@@ -137,7 +142,7 @@ describe("createCommandSafetyReviewer", () => {
     })("ls", context({ foundModel: model }));
 
     assert.equal(review.classification, "unknown");
-    assert.match(review.description, /network error/);
+    assert.match(review.classificationReason, /network error/);
   });
 
   it("モデル応答が空の場合はunknownにする", async () => {
@@ -147,6 +152,6 @@ describe("createCommandSafetyReviewer", () => {
     );
 
     assert.equal(review.classification, "unknown");
-    assert.match(review.description, /空の応答/);
+    assert.match(review.classificationReason, /空の応答/);
   });
 });

@@ -3,60 +3,73 @@ import { describe, it } from "node:test";
 import { fallbackReview, parseSafetyReview } from "./safety-review.ts";
 
 describe("parseSafetyReview", () => {
-  it("JSONのsafe判定と説明をパースする", () => {
+  it("JSONのsafe判定、コマンド説明、分類根拠をパースする", () => {
     assert.deepEqual(
-      parseSafetyReview("{\"classification\":\"safe\",\"description\":\"ファイル一覧を表示します。\"}"),
+      parseSafetyReview(
+        "{\"classification\":\"safe\",\"commandDescription\":\"ファイル一覧を表示します。\",\"classificationReason\":\"読み取り専用の操作です。\"}",
+      ),
       {
         classification: "safe",
-        description: "ファイル一覧を表示します。",
+        commandDescription: "ファイル一覧を表示します。",
+        classificationReason: "読み取り専用の操作です。",
       },
     );
   });
 
   it("コードフェンス内のJSONもパースする", () => {
     assert.deepEqual(
-      parseSafetyReview("```json\n{\"classification\":\"dangerous\",\"description\":\"ファイルを削除します。\"}\n```"),
+      parseSafetyReview(
+        "```json\n{\"classification\":\"dangerous\",\"commandDescription\":\"ファイルを削除します。\",\"classificationReason\":\"削除操作を含むため危険です。\"}\n```",
+      ),
       {
         classification: "dangerous",
-        description: "ファイルを削除します。",
-      },
-    );
-  });
-
-  it("別名フィールドのclassificationと説明を受け付ける", () => {
-    assert.deepEqual(
-      parseSafetyReview("{\"result\":\"不明\",\"reason\":\"安全と言い切れません。\"}"),
-      {
-        classification: "unknown",
-        description: "安全と言い切れません。",
+        commandDescription: "ファイルを削除します。",
+        classificationReason: "削除操作を含むため危険です。",
       },
     );
   });
 
   it("caution判定と日本語の注意をパースする", () => {
     assert.deepEqual(
-      parseSafetyReview("{\"classification\":\"caution\",\"description\":\"作業ツリーに変更を加える可能性があります。\"}"),
+      parseSafetyReview(
+        "{\"classification\":\"caution\",\"commandDescription\":\"ディレクトリを作成します。\",\"classificationReason\":\"ファイルシステムを変更する可能性があります。\"}",
+      ),
       {
         classification: "caution",
-        description: "作業ツリーに変更を加える可能性があります。",
+        commandDescription: "ディレクトリを作成します。",
+        classificationReason: "ファイルシステムを変更する可能性があります。",
       },
     );
 
     assert.deepEqual(
-      parseSafetyReview("{\"classification\":\"注意\",\"description\":\"ディレクトリを作成します。\"}"),
+      parseSafetyReview(
+        "{\"classification\":\"注意\",\"commandDescription\":\"ディレクトリを作成します。\",\"classificationReason\":\"新しいパスが作られます。\"}",
+      ),
       {
         classification: "caution",
-        description: "ディレクトリを作成します。",
+        commandDescription: "ディレクトリを作成します。",
+        classificationReason: "新しいパスが作られます。",
       },
     );
   });
 
+  it("旧形式のdescriptionだけではunknownを返す", () => {
+    const result = parseSafetyReview("{\"classification\":\"safe\",\"description\":\"ファイル一覧を表示します。\"}");
+
+    assert.equal(result.classification, "unknown");
+    assert.ok(result.commandDescription.length > 0);
+    assert.ok(result.classificationReason.length > 0);
+  });
+
   it("未知のclassificationはunknownに正規化する", () => {
     assert.deepEqual(
-      parseSafetyReview("{\"classification\":\"maybe\",\"description\":\"判断できません。\"}"),
+      parseSafetyReview(
+        "{\"classification\":\"maybe\",\"commandDescription\":\"内容を確認します。\",\"classificationReason\":\"判断できません。\"}",
+      ),
       {
         classification: "unknown",
-        description: "判断できません。",
+        commandDescription: "内容を確認します。",
+        classificationReason: "判断できません。",
       },
     );
   });
@@ -64,15 +77,17 @@ describe("parseSafetyReview", () => {
   it("不正なJSONはunknownを返す", () => {
     const result = parseSafetyReview("not json");
     assert.equal(result.classification, "unknown");
-    assert.ok(result.description.length > 0);
+    assert.ok(result.commandDescription.length > 0);
+    assert.ok(result.classificationReason.length > 0);
   });
 });
 
 describe("fallbackReview", () => {
-  it("指定した説明でunknown判定を作る", () => {
+  it("指定した説明を分類根拠にしたunknown判定を作る", () => {
     assert.deepEqual(fallbackReview("失敗しました。"), {
       classification: "unknown",
-      description: "失敗しました。",
+      commandDescription: "コマンドの動作内容を確認できませんでした。",
+      classificationReason: "失敗しました。",
     });
   });
 });

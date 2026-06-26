@@ -2,15 +2,18 @@ export type SafetyClassification = "safe" | "caution" | "dangerous" | "unknown";
 
 export type SafetyReview = {
   classification: SafetyClassification;
-  description: string;
+  commandDescription: string;
+  classificationReason: string;
 };
 
-export const DEFAULT_UNKNOWN_DESCRIPTION = "AIによる安全性判定結果を解析できませんでした。";
+export const DEFAULT_UNKNOWN_COMMAND_DESCRIPTION = "コマンドの動作内容を確認できませんでした。";
+export const DEFAULT_UNKNOWN_CLASSIFICATION_REASON = "AIによる安全性判定結果を解析できませんでした。";
 
-export function fallbackReview(description: string): SafetyReview {
+export function fallbackReview(classificationReason: string): SafetyReview {
   return {
     classification: "unknown",
-    description,
+    commandDescription: DEFAULT_UNKNOWN_COMMAND_DESCRIPTION,
+    classificationReason,
   };
 }
 
@@ -54,29 +57,29 @@ function normalizeClassification(value: unknown): SafetyClassification {
   }
 }
 
-function extractDescription(value: Record<string, unknown>): string {
-  const candidates = [value.description, value.explanation, value.reason, value.summary];
+function extractRequiredString(value: unknown): string | undefined {
+  if (typeof value !== "string") return undefined;
 
-  for (const candidate of candidates) {
-    if (typeof candidate === "string" && candidate.trim().length > 0) {
-      return candidate.trim();
-    }
-  }
-
-  return DEFAULT_UNKNOWN_DESCRIPTION;
+  const trimmed = value.trim();
+  return trimmed.length > 0 ? trimmed : undefined;
 }
 
 export function parseSafetyReview(text: string): SafetyReview {
   try {
     const parsed = JSON.parse(extractJsonCandidate(text)) as Record<string, unknown>;
+    const commandDescription = extractRequiredString(parsed.commandDescription);
+    const classificationReason = extractRequiredString(parsed.classificationReason);
+
+    if (!commandDescription || !classificationReason) {
+      return fallbackReview(DEFAULT_UNKNOWN_CLASSIFICATION_REASON);
+    }
+
     return {
-      classification: normalizeClassification(parsed.classification ?? parsed.safety ?? parsed.result),
-      description: extractDescription(parsed),
+      classification: normalizeClassification(parsed.classification),
+      commandDescription,
+      classificationReason,
     };
   } catch {
-    return {
-      classification: "unknown",
-      description: DEFAULT_UNKNOWN_DESCRIPTION,
-    };
+    return fallbackReview(DEFAULT_UNKNOWN_CLASSIFICATION_REASON);
   }
 }

@@ -3,7 +3,7 @@ import { isToolCallEventType } from "@earendil-works/pi-coding-agent";
 import { notifyStatus } from "../_shared/notify-status.ts";
 import { evaluateCommand } from "./core/deny.ts";
 import { reviewCommandSafety } from "./review/ai-reviewer.ts";
-import { buildPermissionPrompt, classificationLabel } from "./ui/permission-prompt.ts";
+import { buildPermissionPrompt, classificationLabel, formatSafetyReviewDetails } from "./ui/permission-prompt.ts";
 
 const PERMISSION_CHOICES = [
   "一回だけ許可",
@@ -49,7 +49,7 @@ export default function(pi: ExtensionAPI) {
         block: true,
         reason: `AI判定が「${
           classificationLabel(review.classification)
-        }」のため、実行前の確認が必要ですが、UIによる許可を求められないため拒否しました。\n\n${review.description}`,
+        }」のため、実行前の確認が必要ですが、UIによる許可を求められないため拒否しました。\n\n${formatSafetyReviewDetails(review)}`,
       };
     }
 
@@ -70,7 +70,7 @@ export default function(pi: ExtensionAPI) {
 
     return {
       block: true,
-      reason: `ユーザーによって危険または不明なコマンドとして拒否されました。\n\n${review.description}`,
+      reason: `ユーザーによって危険または不明なコマンドとして拒否されました。\n\n${formatSafetyReviewDetails(review)}`,
     };
   });
 }

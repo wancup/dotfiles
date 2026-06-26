@@ -13,6 +13,16 @@ export function classificationLabel(classification: SafetyReview["classification
   }
 }
 
+export function formatSafetyReviewDetails(review: SafetyReview): string {
+  return [
+    "コマンドの説明:",
+    review.commandDescription,
+    "",
+    "分類の根拠:",
+    review.classificationReason,
+  ].join("\n");
+}
+
 export function buildPermissionPrompt(command: string, review: SafetyReview): string {
   return [
     "以下のコマンドを実行しようとしています:",
@@ -23,8 +33,7 @@ export function buildPermissionPrompt(command: string, review: SafetyReview): st
     "",
     `AI判定: ${classificationLabel(review.classification)}`,
     "",
-    "動作内容:",
-    review.description,
+    formatSafetyReviewDetails(review),
     "",
     "実行を許可しますか？",
   ].join("\n");

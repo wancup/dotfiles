@@ -12,15 +12,17 @@ describe("classificationLabel", () => {
 });
 
 describe("buildPermissionPrompt", () => {
-  it("コマンド、判定、説明を含む確認文を作る", () => {
+  it("コマンド、判定、コマンド説明、分類根拠を含む確認文を作る", () => {
     const prompt = buildPermissionPrompt("rm -rf tmp", {
       classification: "dangerous",
-      description: "tmpを削除します。",
+      commandDescription: "tmpを再帰的に削除します。",
+      classificationReason: "削除操作を含むため危険です。",
     });
 
     assert.match(prompt, /```bash\nrm -rf tmp\n```/);
     assert.match(prompt, /AI判定: 危険/);
-    assert.match(prompt, /tmpを削除します。/);
+    assert.match(prompt, /コマンドの説明:\ntmpを再帰的に削除します。/);
+    assert.match(prompt, /分類の根拠:\n削除操作を含むため危険です。/);
     assert.match(prompt, /実行を許可しますか？/);
   });
 });
