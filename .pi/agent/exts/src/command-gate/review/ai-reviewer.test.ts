@@ -60,10 +60,12 @@ function context(options?: {
   foundModel?: Model<Api>;
   auth?: Awaited<ReturnType<ExtensionContext["modelRegistry"]["getApiKeyAndHeaders"]>>;
   signal?: AbortSignal;
+  trusted?: boolean;
 }): ExtensionContext {
   return {
     cwd: options?.cwd ?? "/repo",
     signal: options?.signal,
+    isProjectTrusted: () => options?.trusted ?? false,
     modelRegistry: {
       find(provider: string, modelId: string) {
         if (provider === SAFETY_MODEL_PROVIDER && modelId === SAFETY_MODEL_ID) {
@@ -103,6 +105,16 @@ describe("buildSafetyReviewPrompt", () => {
     assert.match(prompt, /追加コンテキスト/);
     assert.match(prompt, /package\.json path: \/repo\/package\.json/);
     assert.match(prompt, /```json\n\{"scripts":\{"test":"node --test"\}\}\n```/);
+  });
+
+  it("プロジェクト開発者が許可したコマンドを尊重する指示を含める", () => {
+    const prompt = buildSafetyReviewPrompt("pnpm test", "/repo", [], ["pnpm test", "pnpm typecheck"]);
+
+    assert.match(prompt, /プロジェクト開発者が許可したコマンド/);
+    assert.match(prompt, /- pnpm test/);
+    assert.match(prompt, /- pnpm typecheck/);
+    assert.match(prompt, /完全一致する場合は原則としてsafe/);
+    assert.match(prompt, /許可コマンド以外の操作/);
   });
 });
 
@@ -162,6 +174,29 @@ describe("createCommandSafetyReviewer", () => {
     const prompt = JSON.stringify(receivedContext);
     assert.match(prompt, /\/repo\/package\.json/);
     assert.match(prompt, /node --test/);
+  });
+
+  it("読み込んだ許可コマンドをモデルへのプロンプトに含める", async () => {
+    let receivedContext: Context | undefined;
+    const complete: CompleteSafetyReview = async (_model, requestContext) => {
+      receivedContext = requestContext;
+      return assistantMessage(
+        "{\"classification\":\"safe\",\"commandDescription\":\"テストを実行します。\",\"classificationReason\":\"プロジェクト開発者が許可したコマンドと一致します。\"}",
+      );
+    };
+
+    await createCommandSafetyReviewer(
+      complete,
+      async () => [],
+      async (ctx) => {
+        assert.equal(ctx.cwd, "/repo");
+        return { allow: ["pnpm test"] };
+      },
+    )("pnpm test", context({ foundModel: model }));
+
+    const prompt = JSON.stringify(receivedContext);
+    assert.match(prompt, /プロジェクト開発者が許可したコマンド/);
+    assert.match(prompt, /pnpm test/);
   });
 
   it("モデルが見つからない場合はunknownにする", async () => {
