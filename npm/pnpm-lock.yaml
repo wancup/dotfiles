@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@earendil-works/pi-coding-agent':
-        specifier: 0.79.6
-        version: 0.79.6(ws@8.21.0)(zod@4.4.3)
+        specifier: 0.79.9
+        version: 0.79.9(ws@8.21.0)(zod@4.4.3)
       '@playwright/cli':
         specifier: 0.1.14
         version: 0.1.14
@@ -19,7 +19,7 @@ importers:
         version: 15.0.2(jiti@2.7.0)
       gitmoji-cli:
         specifier: 9.7.0
-        version: 9.7.0(@types/node@26.0.0)
+        version: 9.7.0(@types/node@26.0.0)(supports-color@10.2.2)
       oxfmt:
         specifier: 0.55.0
         version: 0.55.0
@@ -152,8 +152,8 @@ packages:
     engines: {node: '>=22.19.0'}
     hasBin: true
 
-  '@earendil-works/pi-coding-agent@0.79.6':
-    resolution: {integrity: sha512-xPQDoA3+4Q8UsInST8OGFHPHyi7JQIbx51ku5kf2VuhXrrTv/npjVTXYD3A3D5xs6QRebV0B2mQqHfXaxQAplw==}
+  '@earendil-works/pi-coding-agent@0.79.9':
+    resolution: {integrity: sha512-8TZ796Zn0NE4vmhxG9hv4ZtJDGJzhqMjlmFg8ZkUKxfqB7LJa4ums2jSJKtnyAZfAamN6VzqzN0A82RNDqv8Ag==}
     engines: {node: '>=22.19.0'}
     hasBin: true
 
@@ -1630,8 +1630,8 @@ packages:
   undici-types@8.3.0:
     resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
 
-  undici@8.3.0:
-    resolution: {integrity: sha512-TkUDgb6tl7KOGZ+7e8E3d2FYgUQgF6z5YypqjWmixVQSQERFcVrVg0ySADm2LVLRh5ljAaHTCR5Fmz3Q34rB7Q==}
+  undici@8.5.0:
+    resolution: {integrity: sha512-xamtWoB1EshgjpmlXd7GGm2VfdDtw1+rD8uhry8pSNW3If6S8E0m2T2+orSKeZXEn/aPJMviCpDBA65WJt8zhg==}
     engines: {node: '>=22.19.0'}
 
   update-notifier@7.3.1:
@@ -1769,7 +1769,7 @@ snapshots:
       '@aws-sdk/types': 3.973.13
       '@smithy/core': 3.26.0
       '@smithy/fetch-http-handler': 5.5.2
-      '@smithy/node-http-handler': 4.7.3
+      '@smithy/node-http-handler': 4.8.2
       '@smithy/types': 4.15.0
       tslib: 2.8.1
 
@@ -1983,7 +1983,7 @@ snapshots:
       - ws
       - zod
 
-  '@earendil-works/pi-coding-agent@0.79.6(ws@8.21.0)(zod@4.4.3)':
+  '@earendil-works/pi-coding-agent@0.79.9(ws@8.21.0)(zod@4.4.3)':
     dependencies:
       '@earendil-works/pi-agent-core': 0.79.10(ws@8.21.0)(zod@4.4.3)
       '@earendil-works/pi-ai': 0.79.10(ws@8.21.0)(zod@4.4.3)
@@ -2001,7 +2001,7 @@ snapshots:
       proper-lockfile: 4.1.2
       semver: 7.8.0
       typebox: 1.1.38
-      undici: 8.3.0
+      undici: 8.5.0
       yaml: 2.9.0
     optionalDependencies:
       '@mariozechner/clipboard': 0.3.9
@@ -2732,7 +2732,7 @@ snapshots:
 
   get-stream@8.0.1: {}
 
-  get-uri@6.0.5:
+  get-uri@6.0.5(supports-color@10.2.2):
     dependencies:
       basic-ftp: 5.3.1
       data-uri-to-buffer: 6.0.2
@@ -2740,7 +2740,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  gitmoji-cli@9.7.0(@types/node@26.0.0):
+  gitmoji-cli@9.7.0(@types/node@26.0.0)(supports-color@10.2.2):
     dependencies:
       chalk: 5.6.2
       conf: 13.1.0
@@ -2752,7 +2752,7 @@ snapshots:
       node-fetch: 3.3.2
       ora: 8.2.0
       path-exists: 5.0.0
-      proxy-agent: 6.5.0
+      proxy-agent: 6.5.0(supports-color@10.2.2)
       update-notifier: 7.3.1
       validator: 13.15.35
     transitivePeerDependencies:
@@ -3109,12 +3109,12 @@ snapshots:
       '@types/retry': 0.12.0
       retry: 0.13.1
 
-  pac-proxy-agent@7.2.0:
+  pac-proxy-agent@7.2.0(supports-color@10.2.2):
     dependencies:
       '@tootallnate/quickjs-emscripten': 0.23.0
       agent-base: 7.1.4
       debug: 4.4.3(supports-color@10.2.2)
-      get-uri: 6.0.5
+      get-uri: 6.0.5(supports-color@10.2.2)
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.6
       pac-resolver: 7.0.1
@@ -3183,14 +3183,14 @@ snapshots:
       '@types/node': 26.0.0
       long: 5.3.2
 
-  proxy-agent@6.5.0:
+  proxy-agent@6.5.0(supports-color@10.2.2):
     dependencies:
       agent-base: 7.1.4
       debug: 4.4.3(supports-color@10.2.2)
       http-proxy-agent: 7.0.2
       https-proxy-agent: 7.0.6
       lru-cache: 7.18.3
-      pac-proxy-agent: 7.2.0
+      pac-proxy-agent: 7.2.0(supports-color@10.2.2)
       proxy-from-env: 1.1.0
       socks-proxy-agent: 8.0.5
     transitivePeerDependencies:
@@ -3347,7 +3347,7 @@ snapshots:
 
   undici-types@8.3.0: {}
 
-  undici@8.3.0: {}
+  undici@8.5.0: {}
 
   update-notifier@7.3.1:
     dependencies:
