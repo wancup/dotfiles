@@ -12,8 +12,8 @@ importers:
         specifier: 0.79.9
         version: 0.79.9(ws@8.21.0)(zod@4.4.3)
       '@earendil-works/pi-coding-agent':
-        specifier: 0.79.6
-        version: 0.79.6(ws@8.21.0)(zod@4.4.3)
+        specifier: 0.79.9
+        version: 0.79.9(ws@8.21.0)(zod@4.4.3)
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -148,8 +148,8 @@ packages:
     engines: {node: '>=22.19.0'}
     hasBin: true
 
-  '@earendil-works/pi-coding-agent@0.79.6':
-    resolution: {integrity: sha512-xPQDoA3+4Q8UsInST8OGFHPHyi7JQIbx51ku5kf2VuhXrrTv/npjVTXYD3A3D5xs6QRebV0B2mQqHfXaxQAplw==}
+  '@earendil-works/pi-coding-agent@0.79.9':
+    resolution: {integrity: sha512-8TZ796Zn0NE4vmhxG9hv4ZtJDGJzhqMjlmFg8ZkUKxfqB7LJa4ums2jSJKtnyAZfAamN6VzqzN0A82RNDqv8Ag==}
     engines: {node: '>=22.19.0'}
     hasBin: true
 
@@ -565,8 +565,8 @@ packages:
   undici-types@8.3.0:
     resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
 
-  undici@8.3.0:
-    resolution: {integrity: sha512-TkUDgb6tl7KOGZ+7e8E3d2FYgUQgF6z5YypqjWmixVQSQERFcVrVg0ySADm2LVLRh5ljAaHTCR5Fmz3Q34rB7Q==}
+  undici@8.5.0:
+    resolution: {integrity: sha512-xamtWoB1EshgjpmlXd7GGm2VfdDtw1+rD8uhry8pSNW3If6S8E0m2T2+orSKeZXEn/aPJMviCpDBA65WJt8zhg==}
     engines: {node: '>=22.19.0'}
 
   web-streams-polyfill@3.3.3:
@@ -891,7 +891,7 @@ snapshots:
       - ws
       - zod
 
-  '@earendil-works/pi-coding-agent@0.79.6(ws@8.21.0)(zod@4.4.3)':
+  '@earendil-works/pi-coding-agent@0.79.9(ws@8.21.0)(zod@4.4.3)':
     dependencies:
       '@earendil-works/pi-agent-core': 0.79.10(ws@8.21.0)(zod@4.4.3)
       '@earendil-works/pi-ai': 0.79.9(ws@8.21.0)(zod@4.4.3)
@@ -909,7 +909,7 @@ snapshots:
       proper-lockfile: 4.1.2
       semver: 7.8.0
       typebox: 1.1.38
-      undici: 8.3.0
+      undici: 8.5.0
       yaml: 2.9.0
     optionalDependencies:
       '@mariozechner/clipboard': 0.3.9
@@ -1298,7 +1298,7 @@ snapshots:
 
   undici-types@8.3.0: {}
 
-  undici@8.3.0: {}
+  undici@8.5.0: {}
 
   web-streams-polyfill@3.3.3: {}
 
