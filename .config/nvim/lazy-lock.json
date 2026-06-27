@@ -12,7 +12,6 @@
   "denops.vim": { "branch": "main", "commit": "e82c5a94ca1154b05c9d74d6f6f58c9991b1424f" },
   "dial.nvim": { "branch": "master", "commit": "f2634758455cfa52a8acea6f142dcd6271a1bf57" },
   "flash.nvim": { "branch": "main", "commit": "fcea7ff883235d9024dc41e638f164a450c14ca2" },
-  "flutter-tools.nvim": { "branch": "main", "commit": "7d1acfd139215e02d2784733af69a61aaebe06e8" },
   "focus.nvim": { "branch": "master", "commit": "36ebedeebe82ebea250c9d671769194caa033902" },
   "gitlinker.nvim": { "branch": "master", "commit": "a1b74070bbd5e50128190c85b09f1431ea5fbd83" },
   "gitmoji.nvim": { "branch": "main", "commit": "3339f97b12e923de77331e09cd427b19139e306f" },

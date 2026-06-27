@@ -24,8 +24,6 @@ return {
 				PackageInfoUpToDateVersion = { fg = "highlight_med" },
 				-- Snipe Window
 				SnipeWinLabel = { fg = "love" },
-				-- Flutter-Tools
-				FlutterWidgetGuides = { fg = "muted" },
 				-- Flash
 				FlashMatch = { fg = "text", bg = "highlight_high" },
 				FlashLabel = { fg = "gold", bg = "base", bold = true },
