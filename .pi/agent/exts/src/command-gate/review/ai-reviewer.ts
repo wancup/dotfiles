@@ -35,7 +35,7 @@ function formatAllowedCommands(allowedCommands: string[]): string[] {
     "プロジェクト開発者が許可したコマンド:",
     ...allowedCommands.map((allowedCommand) => `- ${allowedCommand}`),
     "",
-    "上記はプロジェクト開発者が意図的に許可したコマンドです。実行予定のbashコマンドが完全一致する場合は原則としてsafeに分類してください。",
+    "上記はプロジェクト開発者が意図的に許可したコマンドです。実行予定のbashコマンドの内容が一致する場合は原則としてsafeに分類してください。",
     "ただし、実行予定のbashコマンドに許可コマンド以外の操作が含まれる場合は、その追加操作の安全性も含めてコマンド全体を判定してください。",
   ];
 }
