@@ -3,6 +3,7 @@ import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
 import {
+  type BuildSafetyReviewPrompt,
   buildSafetyReviewPrompt,
   type CompleteSafetyReview,
   createCommandSafetyReviewer,
@@ -90,14 +91,11 @@ describe("buildSafetyReviewPrompt", () => {
     assert.match(prompt, /safe\|caution\|dangerous\|unknown/);
   });
 
-  it("プロジェクト開発者が許可したコマンドを尊重する指示を含める", () => {
+  it("許可コマンドをプロンプトに含める", () => {
     const prompt = buildSafetyReviewPrompt("pnpm test", "/repo", ["pnpm test", "pnpm typecheck"]);
 
-    assert.match(prompt, /プロジェクト開発者が許可したコマンド/);
-    assert.match(prompt, /- pnpm test/);
-    assert.match(prompt, /- pnpm typecheck/);
-    assert.match(prompt, /完全一致する場合は原則としてsafe/);
-    assert.match(prompt, /許可コマンド以外の操作/);
+    assert.match(prompt, /pnpm test/);
+    assert.match(prompt, /pnpm typecheck/);
   });
 });
 
@@ -128,23 +126,31 @@ describe("createCommandSafetyReviewer", () => {
     assert.match(JSON.stringify(receivedContext), /ls -la/);
   });
 
-  it("読み込んだ許可コマンドをモデルへのプロンプトに含める", async () => {
+  it("読み込んだ許可コマンドをプロンプトビルダーに渡す", async () => {
     let receivedContext: Context | undefined;
+    let receivedPromptInput: Parameters<BuildSafetyReviewPrompt> | undefined;
     const complete: CompleteSafetyReview = async (_model, requestContext) => {
       receivedContext = requestContext;
       return assistantMessage(
-        "{\"classification\":\"safe\",\"commandDescription\":\"テストを実行します。\",\"classificationReason\":\"プロジェクト開発者が許可したコマンドと一致します。\"}",
+        "{\"classification\":\"safe\",\"commandDescription\":\"テストを実行します。\",\"classificationReason\":\"プロンプトビルダーに渡された情報で判定します。\"}",
       );
     };
+    const buildPrompt: BuildSafetyReviewPrompt = (...args) => {
+      receivedPromptInput = args;
+      return "安全性判定プロンプト";
+    };
 
-    await createCommandSafetyReviewer(complete, async (ctx) => {
-      assert.equal(ctx.cwd, "/repo");
-      return { allow: ["pnpm test"] };
-    })("pnpm test", context({ foundModel: model }));
+    await createCommandSafetyReviewer(
+      complete,
+      async (ctx) => {
+        assert.equal(ctx.cwd, "/repo");
+        return { allow: ["pnpm test"] };
+      },
+      buildPrompt,
+    )("pnpm test", context({ foundModel: model }));
 
-    const prompt = JSON.stringify(receivedContext);
-    assert.match(prompt, /プロジェクト開発者が許可したコマンド/);
-    assert.match(prompt, /pnpm test/);
+    assert.deepEqual(receivedPromptInput, ["pnpm test", "/repo", ["pnpm test"]]);
+    assert.deepEqual(receivedContext?.messages[0]?.content, [{ type: "text", text: "安全性判定プロンプト" }]);
   });
 
   it("モデルが見つからない場合はunknownにする", async () => {

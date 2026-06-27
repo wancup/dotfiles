@@ -21,6 +21,8 @@ export type CompleteSafetyReview = (
 
 export type LoadCommandGateConfigForReview = (ctx: ExtensionContext) => Promise<CommandGateConfig>;
 
+export type BuildSafetyReviewPrompt = (command: string, cwd: string, allowedCommands: string[]) => string;
+
 async function loadProjectCommandGateConfig(ctx: ExtensionContext): Promise<CommandGateConfig> {
   return loadCommandGateConfig(ctx.cwd, {
     isProjectTrusted: () => ctx.isProjectTrusted(),
@@ -79,6 +81,7 @@ function extractTextContent(message: AssistantMessage): string {
 export function createCommandSafetyReviewer(
   completeSafetyReview: CompleteSafetyReview,
   loadConfig: LoadCommandGateConfigForReview = loadProjectCommandGateConfig,
+  buildPrompt: BuildSafetyReviewPrompt = buildSafetyReviewPrompt,
 ) {
   return async function reviewCommandSafety(
     command: string,
@@ -115,7 +118,7 @@ export function createCommandSafetyReviewer(
           messages: [
             {
               role: "user",
-              content: [{ type: "text", text: buildSafetyReviewPrompt(command, ctx.cwd, commandGateConfig.allow) }],
+              content: [{ type: "text", text: buildPrompt(command, ctx.cwd, commandGateConfig.allow) }],
               timestamp: Date.now(),
             },
           ],
