@@ -1,6 +1,26 @@
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
+export const DEFAULT_ALLOWED_COMMANDS = [
+  "gh issue list",
+  "gh issue view",
+  "gh pr checks",
+  "gh pr list",
+  "gh pr status",
+  "gh pr view",
+  "gh pr diff",
+  "gh run list",
+  "gh run view",
+  "gh workflow list",
+  "gh workflow view",
+  "git diff",
+  "git log",
+  "git ls-files",
+  "git rev-parse",
+  "git show",
+  "git status",
+];
+
 export type CommandGateConfig = {
   allow: string[];
 };
@@ -23,6 +43,10 @@ function parseCommandGateConfig(text: string): CommandGateConfig {
   return { allow };
 }
 
+function mergeWithDefaultAllowedCommands(allowedCommands: string[] = []): CommandGateConfig {
+  return { allow: [...new Set([...DEFAULT_ALLOWED_COMMANDS, ...allowedCommands])] };
+}
+
 export async function loadCommandGateConfig(
   cwd: string,
   options: LoadCommandGateConfigOptions,
@@ -35,8 +59,9 @@ export async function loadCommandGateConfig(
   const configPath = resolve(cwd, ".pi", "command-gate.json");
 
   try {
-    return parseCommandGateConfig(await readTextFile(configPath));
+    const projectConfig = parseCommandGateConfig(await readTextFile(configPath));
+    return mergeWithDefaultAllowedCommands(projectConfig.allow);
   } catch {
-    return { allow: [] };
+    return mergeWithDefaultAllowedCommands();
   }
 }
