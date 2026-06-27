@@ -15,11 +15,9 @@ export function classificationLabel(classification: SafetyReview["classification
 
 export function formatSafetyReviewDetails(review: SafetyReview): string {
   return [
-    "コマンドの説明:",
-    review.commandDescription,
+    `コマンドの説明: ${review.commandDescription}`,
     "",
-    "分類の根拠:",
-    review.classificationReason,
+    `分類の根拠: ${review.classificationReason}`,
   ].join("\n");
 }
 
