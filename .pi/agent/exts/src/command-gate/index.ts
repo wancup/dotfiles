@@ -49,7 +49,9 @@ export default function(pi: ExtensionAPI) {
         block: true,
         reason: `AI判定が「${
           classificationLabel(review.classification)
-        }」のため、実行前の確認が必要ですが、UIによる許可を求められないため拒否しました。\n\n${formatSafetyReviewDetails(review)}`,
+        }」のため、実行前の確認が必要ですが、UIによる許可を求められないため拒否しました。\n\n${
+          formatSafetyReviewDetails(review)
+        }`,
       };
     }
 
