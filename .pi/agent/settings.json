@@ -7,7 +7,6 @@
   "enabledModels": [
     "ollama/gemma4:26b",
     "ollama/gemma4:e4b",
-    "github-copilot/gpt-5.4",
     "openai-codex/gpt-5.5",
     "openai-codex/gpt-5.4-mini"
   ],
