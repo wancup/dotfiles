@@ -10,19 +10,19 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 
 ## 1. 親Issue内容の取得
 
-以下を**並列で**実行してください:
+以下を**並列で**実行する:
 
 - `gh issue view $ARGUMENTS --json number,title,body,labels,comments,url` で親Issueの内容を取得
 - `gh repo view --json defaultBranchRef --jq '.defaultBranchRef.name'` でデフォルトブランチ名を取得
 
 ## 2. コードベースの調査
 
-親Issueの内容を踏まえ、Agentツール（subagent_type: Explore）を使用してコードベースを調査してください。
-調査の目的は、タスク分解の粒度と内容を適切に判断するためです。
+親Issueの内容を踏まえ、Agentツール（subagent_type: Explore）を使用してコードベースを調査する。
+調査の目的は、タスク分解の粒度と内容を適切に判断するためである。
 
 ## 3. 方針の確認
 
-親Issueの内容やコードベースの調査結果をもとに、実装方針や分解の方向性について不明点・疑問点がある場合は、AskUserQuestionツールで開発者に確認してください。
+親Issueの内容やコードベースの調査結果をもとに、実装方針や分解の方向性について不明点・疑問点がある場合は、AskUserQuestionツールで開発者に確認する。
 
 確認すべき例:
 
@@ -34,7 +34,7 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 
 ## 4. タスクの分解
 
-親Issueの要件を実装可能な適切な単位に分解してください。分解の指針:
+親Issueの要件を実装可能な適切な単位に分解する。分解の指針:
 
 - 各タスクは独立して実装・レビュー・マージできる粒度にする
 - タスク間の依存関係がある場合は明記する
@@ -43,7 +43,7 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 
 ## 5. 子Issue内容の確認
 
-分解したタスク一覧を以下の形式でユーザーに提示してください:
+分解したタスク一覧を以下の形式でユーザーに提示する:
 
 ```markdown
 親Issue: #<番号> <タイトル>
@@ -71,9 +71,9 @@ AskUserQuestionツールで以下を確認:
 
 ## 6. 子Issueの作成
 
-ユーザーの承認を得たら、子Issueを1件ずつ作成してください。
+ユーザーの承認を得たら、子Issueを1件ずつ作成する。
 
-各子Issueを作成する直前に、実際に登録する内容を以下の形式でユーザーに提示してください:
+各子Issueを作成する直前に、実際に登録する内容を以下の形式でユーザーに提示する:
 
 ```markdown
 作成予定の子Issue <現在番号>/<総数>
@@ -84,7 +84,7 @@ AskUserQuestionツールで以下を確認:
 <gh issue createに渡す本文全文>
 ```
 
-AskUserQuestionツールで、その子Issueを実際に登録してよいかを1件ずつ確認してください。
+AskUserQuestionツールで、その子Issueを実際に登録してよいかを1件ずつ確認する。
 
 - 承認された場合のみ、その子Issueを `gh issue create` で作成する
 - 修正指示があった場合は内容を修正し、修正後の内容を再提示して再度確認する
@@ -104,8 +104,8 @@ AskUserQuestionツールで、その子Issueを実際に登録してよいかを
 - 参照先Issueが未作成の場合は、いったんリンク化されない表記（例: `TASK-A`、`<作成後にIssue番号を反映>`）で作成し、参照先Issueの作成後に `gh issue edit` で本文を更新して実際のIssue番号に置き換える
 - Issue番号の置き換えが必要なIssueは記録しておき、すべての子Issue作成後に漏れなく更新する
 
-各子Issueを作成したら、GitHub CLIで親Issueと関連付けてください。
-子Issueは `gh issue create` の戻り値URLを指定し、親Issueは手順1で取得した親Issue番号または `$ARGUMENTS` を指定してください。
+各子Issueを作成したら、GitHub CLIで親Issueと関連付ける。
+子Issueは `gh issue create` の戻り値URLを指定し、親Issueは手順1で取得した親Issue番号または `$ARGUMENTS` を指定する。
 
 ```bash
 gh issue edit '<子IssueのURL>' --parent '<親Issue番号またはURL>'
@@ -113,7 +113,7 @@ gh issue edit '<子IssueのURL>' --parent '<親Issue番号またはURL>'
 
 ## 7. 結果の報告
 
-以下をユーザーに報告してください:
+以下をユーザーに報告する:
 
 - 作成した子Issueの一覧（番号・タイトル・URL）
 - 各子Issueに親Issueが設定され、sub-issue relationship として関連付けられたこと

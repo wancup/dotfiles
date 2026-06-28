@@ -8,32 +8,32 @@ allowed-tools: Bash, Read, Edit, Write, Glob, Grep
 
 # pi extension作成ワークフロー
 
-以下の手順を順番に実行してください。
+以下の手順を順番に実行する。
 
 引数: `$ARGUMENTS`
 
-`$ARGUMENTS` の先頭トークンが `global` または `project` かを確認してください。
+`$ARGUMENTS` の先頭トークンが `global` または `project` かを確認する。
 
 - 先頭が `global` → **グローバルextension** (`~/.pi/agent/exts/src` 配下に作成)
 - 先頭が `project` → **プロジェクトローカルextension** (`.pi/extensions/` 配下に作成)
 - どちらでもない場合はユーザーに確認する
 
-先頭トークンを除いた残りの文字列が **extensionの機能説明** です。
+先頭トークンを除いた残りの文字列を **extensionの機能説明** とする。
 
 ## 1. ドキュメントの読み込み
 
-Bashツールで以下のコマンドを実行し、extensions.mdのパスを取得してください:
+Bashツールで以下のコマンドを実行し、extensions.mdのパスを取得する:
 
 ```bash
 dotfiles_dir="$(dirname "$(dirname "$(realpath "$XDG_CONFIG_HOME/fish")")")"
 echo "$dotfiles_dir/npm/node_modules/@earendil-works/pi-coding-agent/docs/extensions.md"
 ```
 
-取得したパスをReadツールで読み込み、APIの仕様（イベント、ツール登録、コマンド登録、UI操作など）を把握してください。
+取得したパスをReadツールで読み込み、APIの仕様（イベント、ツール登録、コマンド登録、UI操作など）を把握する。
 
 ## 2. 要件分析と設計
 
-`$ARGUMENTS` をもとに以下を決定してください:
+`$ARGUMENTS` をもとに以下を決定する:
 
 1. **使用するAPI** — イベント (`pi.on`)、カスタムツール (`pi.registerTool`)、コマンド (`pi.registerCommand`)、ショートカット (`pi.registerShortcut`) のうち何が必要か
 2. **extension構成** — 単一ファイル (`.ts`) / ディレクトリ (`index.ts`) / パッケージ (`package.json`) のどれが適切か
@@ -44,7 +44,7 @@ echo "$dotfiles_dir/npm/node_modules/@earendil-works/pi-coding-agent/docs/extens
 
 ## 3. 実装
 
-以下の注意点に従いextensionを実装してください:
+以下の注意点に従いextensionを実装する:
 
 - TypeScriptで記述し、コンパイル不要（jitiで実行される）
 - `import type { ExtensionAPI } from "@earendil-works/pi-coding-agent"` でAPIをインポート
@@ -56,7 +56,7 @@ echo "$dotfiles_dir/npm/node_modules/@earendil-works/pi-coding-agent/docs/extens
 
 ## 4. 結果の報告
 
-以下のフォーマットで報告してください:
+以下のフォーマットで報告する:
 
 ### 作成したextension
 
