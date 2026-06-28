@@ -24,7 +24,7 @@
     {
       "groupName": "pi",
       "matchDatasources": ["npm"],
-      "matchPackageNames": ["/^@earendil-works///"]
+      "matchPackageNames": ["/^@earendil-works//"]
     }
   ]
 }
