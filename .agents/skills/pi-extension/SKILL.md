@@ -60,11 +60,11 @@ echo "$dotfiles_dir/npm/node_modules/@earendil-works/pi-coding-agent/docs/extens
 
 ### 作成したextension
 
-| 項目 | 内容 |
-|------|------|
-| ファイルパス | ... |
-| 機能概要 | ... |
-| 使用API | ... |
+| 項目         | 内容 |
+| ------------ | ---- |
+| ファイルパス | ...  |
+| 機能概要     | ...  |
+| 使用API      | ...  |
 
 ### 使い方
 

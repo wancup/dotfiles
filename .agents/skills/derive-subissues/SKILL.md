@@ -49,6 +49,7 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 親Issue: #<番号> <タイトル>
 
 子Issue一覧:
+
 1. <タイトル1>
    内容: <概要>
    ラベル: <ラベル>
