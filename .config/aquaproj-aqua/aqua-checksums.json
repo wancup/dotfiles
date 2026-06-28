@@ -296,6 +296,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/fallow-rs/fallow/v2.102.0/fallow-aarch64-apple-darwin.tar.gz",
+      "checksum": "482450D61DAA0ADDC76202469A8ED597855CAFE6BA65E2E463EC97C623BC8A3B",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/fallow-rs/fallow/v2.102.0/fallow-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "6FB84F6206FB891E3693D466EB303D4AE938202C84CD08353818E3C27E540D58",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/fallow-rs/fallow/v2.102.0/fallow-x86_64-apple-darwin.tar.gz",
+      "checksum": "1B663448108002D4B75FE75C70714149AE1424B62F86CF41C1BF89CD77F30427",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/fallow-rs/fallow/v2.102.0/fallow-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "D22A95F5E477DCAB47AAB5A67290A4D9C554B19982CF460A2FB54272469059CC",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/golangci/golangci-lint/v2.12.2/golangci-lint-2.12.2-darwin-amd64.tar.gz",
       "checksum": "F6F06D94B6241521C53D15450C5209B028270BF966F842AFB11C030C79F5BC16",
       "algorithm": "sha256"
