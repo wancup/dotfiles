@@ -5,6 +5,7 @@
   "json": {},
   "yaml": {},
   "typescript": {},
+  "markdown": {},
   "excludes": [
     "**/node_modules",
     "pnpm-lock.yaml"
