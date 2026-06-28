@@ -20,6 +20,11 @@
         "npm"
       ],
       "minimumReleaseAge": "5 days"
+    },
+    {
+      "groupName": "pi",
+      "matchDatasources": ["npm"],
+      "matchPackageNames": ["/^@earendil-works///"]
     }
   ]
 }
