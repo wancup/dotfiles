@@ -34,7 +34,7 @@ packages:
   - name: watchexec/watchexec@v2.5.1
   - name: zaghaghi/openapi-tui@0.10.2
   - name: dprint/dprint@0.54.0
-  - name: astral-sh/ruff@0.15.18
+  - name: astral-sh/ruff@0.15.19
   - name: hadolint/hadolint@v2.14.0
   - name: sharkdp/hexyl@v0.17.0
   - name: o2sh/onefetch@2.27.1
