@@ -65,3 +65,4 @@ packages:
   - name: betterleaks/betterleaks@v1.6.0
   - name: fallow-rs/fallow@v2.102.0
   - name: LuaLS/lua-language-server@3.18.2
+  - name: golang.org/x/tools/gopls@v0.22.0

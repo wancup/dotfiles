@@ -62,6 +62,7 @@ vim.lsp.enable({
 	"taplo",
 	"ty",
 	"yamlls",
+	"gopls",
 })
 vim.lsp.inlay_hint.enable(true)
 
