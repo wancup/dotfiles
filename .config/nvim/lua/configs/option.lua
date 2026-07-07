@@ -49,13 +49,19 @@ vim.diagnostic.config({
 	severity_sort = true,
 })
 vim.lsp.enable({
+	"bashls",
+	"cssls",
 	"dprint",
+	"html",
+	"jsonls",
+	"lua_ls",
 	"oxfmt",
 	"oxlint",
 	"rumdl",
 	"rust_analyzer",
 	"taplo",
 	"ty",
+	"yamlls",
 })
 vim.lsp.inlay_hint.enable(true)
 

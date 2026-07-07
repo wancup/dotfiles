@@ -41,6 +41,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/LuaLS/lua-language-server/3.18.2/lua-language-server-3.18.2-darwin-arm64.tar.gz",
+      "checksum": "CEC99D70B1F612ACEC4A10A79A03664E3AA0C229D4D8A586CB3F928EC37D509E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/LuaLS/lua-language-server/3.18.2/lua-language-server-3.18.2-darwin-x64.tar.gz",
+      "checksum": "E26CFEFE423DD7326FC7C649539E4D4AAA4F35F34D2FEFD8AF2ED7090B72C556",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/LuaLS/lua-language-server/3.18.2/lua-language-server-3.18.2-linux-arm64.tar.gz",
+      "checksum": "273AF33F26F4A1143F27C96D9F9E1188ABA619C71E0807042134F66B4BD27F24",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/LuaLS/lua-language-server/3.18.2/lua-language-server-3.18.2-linux-x64.tar.gz",
+      "checksum": "CA71415DD19F19E30AAA35A4915AEFCA9FDB5FEC31B98331CC3D77F778D539C5",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/Schniz/fnm/v1.39.0/fnm-arm64.zip",
       "checksum": "4EAFF58B2C5BF30D0934027572DD0B5BBB60D2A1AF309230B53662D4B1D45599",
       "algorithm": "sha256"

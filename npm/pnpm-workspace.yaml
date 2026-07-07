@@ -3,5 +3,6 @@ blockExoticSubdeps: true
 trustPolicy: "no-downgrade"
 allowBuilds:
   "@google/genai": false
+  core-js: false
   koffi: false
   protobufjs: false
