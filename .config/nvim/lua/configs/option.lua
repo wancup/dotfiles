@@ -49,6 +49,7 @@ vim.diagnostic.config({
 	severity_sort = true,
 })
 vim.lsp.enable({
+	"astro",
 	"bashls",
 	"cssls",
 	"dprint",
