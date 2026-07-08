@@ -25,9 +25,10 @@ OPTIONS:
     set -l cache_dir "$XDG_CACHE_HOME/fish"
     set -l cache_file "$cache_dir/setup.fish"
     if not test -f "$cache_file"; or set -ql _flag_force
-        mkdir -p $cache_dir
-        aqua completion fish >~/.config/fish/completions/aqua.fish
-        fnm completions --shell fish >~/.config/fish/completions/fnm.fish
+        set -l completions_dir ~/.config/fish/completions
+        mkdir -p $cache_dir $completions_dir
+        aqua completion fish >$completions_dir/aqua.fish
+        fnm completions --shell fish >$completions_dir/fnm.fish
 
         echo "" >$cache_file
         zoxide init fish >>$cache_file
