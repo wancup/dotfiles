@@ -21,8 +21,8 @@ describe("buildPermissionPrompt", () => {
 
     assert.match(prompt, /```bash\nrm -rf tmp\n```/);
     assert.match(prompt, /AI判定: 危険/);
-    assert.match(prompt, /コマンドの説明:\ntmpを再帰的に削除します。/);
-    assert.match(prompt, /分類の根拠:\n削除操作を含むため危険です。/);
+    assert.match(prompt, /コマンドの説明: tmpを再帰的に削除します。/);
+    assert.match(prompt, /分類の根拠: 削除操作を含むため危険です。/);
     assert.match(prompt, /実行を許可しますか？/);
   });
 });
