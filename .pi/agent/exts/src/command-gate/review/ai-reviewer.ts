@@ -11,7 +11,7 @@ import { type CommandGateConfig, loadCommandGateConfig } from "./command-gate-co
 import { fallbackReview, parseSafetyReview, type SafetyReview } from "./safety-review.ts";
 
 export const SAFETY_MODEL_PROVIDER = "openai-codex";
-export const SAFETY_MODEL_ID = "gpt-5.4-mini";
+export const SAFETY_MODEL_ID = "gpt-5.6-luna";
 
 export type CompleteSafetyReview = (
   model: Model<Api>,
