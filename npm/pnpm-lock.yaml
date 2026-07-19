@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/language-server':
-        specifier: 2.16.11
-        version: 2.16.11(prettier@3.9.4)(typescript@4.9.5)
+        specifier: 2.16.12
+        version: 2.16.12(prettier@3.9.4)(typescript@4.9.5)
       '@earendil-works/pi-coding-agent':
         specifier: 0.80.2
         version: 0.80.2(supports-color@10.2.2)(ws@8.21.0)(zod@4.4.3)
@@ -53,8 +53,8 @@ packages:
   '@astrojs/compiler@2.13.1':
     resolution: {integrity: sha512-f3FN83d2G/v32ipNClRKgYv30onQlMZX1vCeZMjPsMMPl1mDpmbl0+N5BYo4S/ofzqJyS5hvwacEo0CCVDn/Qg==}
 
-  '@astrojs/language-server@2.16.11':
-    resolution: {integrity: sha512-sJ/EfnFp0+gurTrkvONtd9qRqmMZLT9bHelfI1SA35CaQVTrRrA74qteOcNT/al1b9Atg3IiH1Jk/qfckyC+fg==}
+  '@astrojs/language-server@2.16.12':
+    resolution: {integrity: sha512-3LpFphBCzveUgm5ZVDINB/v3YA4TgPa1EMOEFn3Zt/Ww6jojR25iN+kmzeUz7v/b9xkmq+hMACTX4hizN3VCEQ==}
     hasBin: true
     peerDependencies:
       prettier: ^3.0.0
@@ -2177,7 +2177,7 @@ snapshots:
 
   '@astrojs/compiler@2.13.1': {}
 
-  '@astrojs/language-server@2.16.11(prettier@3.9.4)(typescript@4.9.5)':
+  '@astrojs/language-server@2.16.12(prettier@3.9.4)(typescript@4.9.5)':
     dependencies:
       '@astrojs/compiler': 2.13.1
       '@astrojs/yaml2ts': 0.2.4
