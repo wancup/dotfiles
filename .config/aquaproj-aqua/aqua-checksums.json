@@ -316,23 +316,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/fallow-rs/fallow/v3.5.0/fallow-aarch64-apple-darwin.tar.gz",
-      "checksum": "D0812F2A5CDFA2BCC9C677B7C546698980788BD6ED6FBB19EF0EFC75D703A1F8",
+      "id": "github_release/github.com/fallow-rs/fallow/v3.6.0/fallow-aarch64-apple-darwin.tar.gz",
+      "checksum": "DDD174244DB9E97862149CCF660AD8A9FA18F4782AD037898A62CF2AA2E0258D",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/fallow-rs/fallow/v3.5.0/fallow-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "6EF574F7470D319B9D8087A748965D1354FB771FFFBCC2A4F30D2F3963DF3736",
+      "id": "github_release/github.com/fallow-rs/fallow/v3.6.0/fallow-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "41A34B3C374075434D580E4150D012945DAC8AAA60EC5F46F6048DB97EA50219",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/fallow-rs/fallow/v3.5.0/fallow-x86_64-apple-darwin.tar.gz",
-      "checksum": "710B9F82F98DDCE620E55ACCD0589E5515C0174DC049E071C1CD4A5B952526D2",
+      "id": "github_release/github.com/fallow-rs/fallow/v3.6.0/fallow-x86_64-apple-darwin.tar.gz",
+      "checksum": "BB689C0C1FF79491DA1473B17250914AC30A1B8FF043E1D0AEFCF454718A1439",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/fallow-rs/fallow/v3.5.0/fallow-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "CDB7C2DBA0646E8DDB257D872DC79D1FCCCB86547D5D4D05B8FFCC39319137CE",
+      "id": "github_release/github.com/fallow-rs/fallow/v3.6.0/fallow-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "F60C94A21C147497D8FF3D7889B8BE831A64C1F23F47924956C738DB6D7F26C4",
       "algorithm": "sha256"
     },
     {
