@@ -21,8 +21,8 @@ importers:
         specifier: 5.6.0
         version: 5.6.0
       eslint_d:
-        specifier: 15.0.2
-        version: 15.0.2(jiti@2.7.0)
+        specifier: 15.0.3
+        version: 15.0.3(jiti@2.7.0)
       gitmoji-cli:
         specifier: 9.7.0
         version: 9.7.0(@types/node@26.1.1)(supports-color@10.2.2)
@@ -1097,8 +1097,8 @@ packages:
       jiti:
         optional: true
 
-  eslint_d@15.0.2:
-    resolution: {integrity: sha512-08qxnTNAHi6gaOJdixu/5gliLFRQzTAeX/aXxcFK78FPK9RQuCNnvwq2tDzlSmXc/dkK/Q2n3P4nvPhvTQJa2Q==}
+  eslint_d@15.0.3:
+    resolution: {integrity: sha512-bCS3HTNhIZLTaOXmJ7Xp63itEfwGWjmHfZh5CtvCZ2Re4UVOSwSZTdvOiqMQ7ceXDGJDgty3HlL3fCfFH/Rl6g==}
     engines: {node: '>=22'}
     hasBin: true
 
@@ -3299,7 +3299,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint_d@15.0.2(jiti@2.7.0):
+  eslint_d@15.0.3(jiti@2.7.0):
     dependencies:
       debug: 4.4.3(supports-color@10.2.2)
       eslint: 10.7.0(jiti@2.7.0)(supports-color@10.2.2)
