@@ -1,4 +1,11 @@
-import type { Api, AssistantMessage, Context, Model, ProviderStreamOptions } from "@earendil-works/pi-ai";
+import type {
+  Api,
+  AssistantMessage,
+  Context,
+  Model,
+  OpenAICodexResponsesOptions,
+  Provider,
+} from "@earendil-works/pi-ai";
 import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
@@ -7,11 +14,12 @@ import {
   buildSafetyReviewPrompt,
   type CompleteSafetyReview,
   createCommandSafetyReviewer,
+  SAFETY_MODEL_API,
   SAFETY_MODEL_ID,
   SAFETY_MODEL_PROVIDER,
 } from "./ai-reviewer.ts";
 
-const model: Model<Api> = {
+const model: Model<typeof SAFETY_MODEL_API> = {
   id: SAFETY_MODEL_ID,
   name: SAFETY_MODEL_ID,
   api: "openai-codex-responses",
@@ -28,6 +36,8 @@ const model: Model<Api> = {
   contextWindow: 128000,
   maxTokens: 4096,
 };
+
+const safetyProvider = { id: SAFETY_MODEL_PROVIDER } as Provider;
 
 function assistantMessage(text: string): AssistantMessage {
   return {
@@ -57,6 +67,7 @@ function assistantMessage(text: string): AssistantMessage {
 
 function context(options?: {
   foundModel?: Model<Api>;
+  provider?: Provider | null;
   auth?: Awaited<ReturnType<ExtensionContext["modelRegistry"]["getApiKeyAndHeaders"]>>;
   signal?: AbortSignal;
   trusted?: boolean;
@@ -71,6 +82,10 @@ function context(options?: {
           return options?.foundModel;
         }
         return undefined;
+      },
+      getProvider(providerId: string) {
+        if (providerId !== SAFETY_MODEL_PROVIDER || options?.provider === null) return undefined;
+        return options?.provider ?? safetyProvider;
       },
       async getApiKeyAndHeaders() {
         return options?.auth ?? { ok: true, apiKey: "test-key" };
@@ -101,9 +116,11 @@ describe("buildSafetyReviewPrompt", () => {
 
 describe("createCommandSafetyReviewer", () => {
   it("モデル応答をSafetyReviewとして返す", async () => {
+    let receivedProvider: Provider | undefined;
     let receivedContext: Context | undefined;
-    let receivedOptions: ProviderStreamOptions | undefined;
-    const complete: CompleteSafetyReview = async (_model, requestContext, options) => {
+    let receivedOptions: OpenAICodexResponsesOptions | undefined;
+    const complete: CompleteSafetyReview = async (provider, _model, requestContext, options) => {
+      receivedProvider = provider;
       receivedContext = requestContext;
       receivedOptions = options;
       return assistantMessage(
@@ -113,7 +130,15 @@ describe("createCommandSafetyReviewer", () => {
 
     const review = await createCommandSafetyReviewer(complete)(
       "ls -la",
-      context({ foundModel: model, auth: { ok: true, apiKey: "test-key", headers: { "x-test": "1" } } }),
+      context({
+        foundModel: model,
+        auth: {
+          ok: true,
+          apiKey: "test-key",
+          headers: { "x-test": "1" },
+          env: { HTTPS_PROXY: "https://proxy.example.com" },
+        },
+      }),
     );
 
     assert.deepEqual(review, {
@@ -121,15 +146,17 @@ describe("createCommandSafetyReviewer", () => {
       commandDescription: "一覧を表示します。",
       classificationReason: "読み取り専用の操作です。",
     });
+    assert.equal(receivedProvider, safetyProvider);
     assert.equal(receivedOptions?.apiKey, "test-key");
     assert.deepEqual(receivedOptions?.headers, { "x-test": "1" });
+    assert.deepEqual(receivedOptions?.env, { HTTPS_PROXY: "https://proxy.example.com" });
     assert.match(JSON.stringify(receivedContext), /ls -la/);
   });
 
   it("読み込んだ許可コマンドをプロンプトビルダーに渡す", async () => {
     let receivedContext: Context | undefined;
     let receivedPromptInput: Parameters<BuildSafetyReviewPrompt> | undefined;
-    const complete: CompleteSafetyReview = async (_model, requestContext) => {
+    const complete: CompleteSafetyReview = async (_provider, _model, requestContext) => {
       receivedContext = requestContext;
       return assistantMessage(
         "{\"classification\":\"safe\",\"commandDescription\":\"テストを実行します。\",\"classificationReason\":\"プロンプトビルダーに渡された情報で判定します。\"}",
@@ -161,6 +188,27 @@ describe("createCommandSafetyReviewer", () => {
 
     assert.equal(review.classification, "unknown");
     assert.match(review.classificationReason, /モデル.*見つかりません/);
+  });
+
+  it("モデルのAPIが想定と異なる場合はunknownにする", async () => {
+    const mismatchedModel: Model<Api> = { ...model, api: "openai-responses" };
+    const review = await createCommandSafetyReviewer(async () => assistantMessage("{}"))(
+      "ls",
+      context({ foundModel: mismatchedModel }),
+    );
+
+    assert.equal(review.classification, "unknown");
+    assert.match(review.classificationReason, /API.*openai-codex-responses/);
+  });
+
+  it("プロバイダーが見つからない場合はunknownにする", async () => {
+    const review = await createCommandSafetyReviewer(async () => assistantMessage("{}"))(
+      "ls",
+      context({ foundModel: model, provider: null }),
+    );
+
+    assert.equal(review.classification, "unknown");
+    assert.match(review.classificationReason, /プロバイダー.*見つかりません/);
   });
 
   it("APIキーがない場合はunknownにする", async () => {

@@ -1,10 +1,10 @@
 import {
-  type Api,
   type AssistantMessage,
-  complete,
   type Context,
+  hasApi,
   type Model,
-  type ProviderStreamOptions,
+  type OpenAICodexResponsesOptions,
+  type Provider,
 } from "@earendil-works/pi-ai";
 import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
 import { type CommandGateConfig, loadCommandGateConfig } from "./command-gate-config.ts";
@@ -12,12 +12,17 @@ import { fallbackReview, parseSafetyReview, type SafetyReview } from "./safety-r
 
 export const SAFETY_MODEL_PROVIDER = "openai-codex";
 export const SAFETY_MODEL_ID = "gpt-5.6-luna";
+export const SAFETY_MODEL_API = "openai-codex-responses";
 
 export type CompleteSafetyReview = (
-  model: Model<Api>,
+  provider: Provider,
+  model: Model<typeof SAFETY_MODEL_API>,
   context: Context,
-  options: ProviderStreamOptions,
+  options: OpenAICodexResponsesOptions,
 ) => Promise<AssistantMessage>;
+
+const completeWithProvider: CompleteSafetyReview = (provider, model, context, options) =>
+  provider.stream(model, context, options).result();
 
 export type LoadCommandGateConfigForReview = (ctx: ExtensionContext) => Promise<CommandGateConfig>;
 
@@ -92,6 +97,17 @@ export function createCommandSafetyReviewer(
       return fallbackReview(`安全性判定モデル ${SAFETY_MODEL_PROVIDER}/${SAFETY_MODEL_ID} が見つかりませんでした。`);
     }
 
+    if (!hasApi(model, SAFETY_MODEL_API)) {
+      return fallbackReview(
+        `安全性判定モデル ${SAFETY_MODEL_PROVIDER}/${SAFETY_MODEL_ID} のAPIが${SAFETY_MODEL_API}ではありませんでした: ${model.api}`,
+      );
+    }
+
+    const provider = ctx.modelRegistry.getProvider(model.provider);
+    if (!provider) {
+      return fallbackReview(`安全性判定プロバイダー ${model.provider} が見つかりませんでした。`);
+    }
+
     const auth = await ctx.modelRegistry.getApiKeyAndHeaders(model);
     if (!auth.ok) {
       return fallbackReview(`安全性判定モデルの認証情報を取得できませんでした: ${auth.error}`);
@@ -102,17 +118,19 @@ export function createCommandSafetyReviewer(
     }
 
     try {
-      const options: ProviderStreamOptions = {
+      const options: OpenAICodexResponsesOptions = {
         apiKey: auth.apiKey,
         maxTokens: 800,
         timeoutMs: 30_000,
         reasoningEffort: "low",
       };
       if (auth.headers) options.headers = auth.headers;
+      if (auth.env) options.env = auth.env;
       if (ctx.signal) options.signal = ctx.signal;
 
       const commandGateConfig = await loadConfig(ctx);
       const response = await completeSafetyReview(
+        provider,
         model,
         {
           messages: [
@@ -139,4 +157,4 @@ export function createCommandSafetyReviewer(
   };
 }
 
-export const reviewCommandSafety = createCommandSafetyReviewer(complete);
+export const reviewCommandSafety = createCommandSafetyReviewer(completeWithProvider);
