@@ -30,5 +30,8 @@ gzip -d -f "${skk_dir}/SKK-JISYO.L.gz"
 # Claude Code settings
 bash "${base_dir}/.claude/build-claude-settings.sh"
 
+# Pi settings
+bash "${base_dir}/.pi/agent/build-pi-settings.sh"
+
 # Global npm
 (cd "${base_dir}/npm" && pnpm install --frozen-lockfile)

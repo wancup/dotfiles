@@ -3,8 +3,9 @@
 !.gitignore
 !/agent/
 !/agent/APPEND_SYSTEM.md
+!/agent/build-pi-settings.sh
 !/agent/keybindings.json
-!/agent/settings.json
+!/agent/settings.shared.json
 
 !/agent/exts/
 !/agent/exts/**
