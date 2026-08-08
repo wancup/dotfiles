@@ -1,4 +1,12 @@
-node_modules/
-sessions/
-auth.json
-trust.json
+*
+
+!.gitignore
+!/agent/
+!/agent/APPEND_SYSTEM.md
+!/agent/keybindings.json
+!/agent/settings.json
+
+!/agent/exts/
+!/agent/exts/**
+/agent/exts/node_modules
+/agent/exts/.pi/
