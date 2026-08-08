@@ -6,8 +6,8 @@
     "test": "node --test 'src/**/*.test.ts'"
   },
   "devDependencies": {
-    "@earendil-works/pi-ai": "0.82.1",
-    "@earendil-works/pi-coding-agent": "0.82.1",
+    "@earendil-works/pi-ai": "0.83.0",
+    "@earendil-works/pi-coding-agent": "0.83.0",
     "typescript": "6.0.3"
   },
   "packageManager": "pnpm@11.19.0"
