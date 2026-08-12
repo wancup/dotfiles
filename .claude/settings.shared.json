@@ -35,7 +35,6 @@
       "Read(**/.env)",
       "Read(**/.env.*)",
       "Read(**/.ssh/**)",
-      "Read(**/*token*)",
       "Read(**/.key/**)",
       "Read(**/key/**)",
       "Read(**/keys/**)",
