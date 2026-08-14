@@ -110,6 +110,7 @@ local function handle_lsp_list(event)
 		end
 	else
 		vim.fn.setqflist({}, " ", { title = event.title, items = event.items })
+		M.close_all_window()
 		vim.cmd("botright copen")
 	end
 end
