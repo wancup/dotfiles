@@ -636,18 +636,18 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/pnpm/pnpm/v11.15.1/pnpm-darwin-arm64.tar.gz",
-      "checksum": "4FF53ECC9DE8DF115D4EFEF60EAB77F91BE4F8237CDACA078351A22E707D1849",
+      "id": "github_release/github.com/pnpm/pnpm/v11.20.0/pnpm-darwin-arm64.tar.gz",
+      "checksum": "4BC97FEA72E5C92EEC1FEFC8D410C35D01E0D0D52F3160C59F38C32DB58B5CD2",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/pnpm/pnpm/v11.15.1/pnpm-linux-arm64.tar.gz",
-      "checksum": "361E385867146972D0635A41A1871CB44C9C23F65ACCE78A5F1CA1D44AC0AFCD",
+      "id": "github_release/github.com/pnpm/pnpm/v11.20.0/pnpm-linux-arm64.tar.gz",
+      "checksum": "F00FC2041BB41742B7943BF2BB24183AD20320E8384824A8031EB94EDF2F57A5",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/pnpm/pnpm/v11.15.1/pnpm-linux-x64.tar.gz",
-      "checksum": "0C1373B6390F6B89FF8B896D3647C9826577DDC49173A2F732DA69B36569F9E0",
+      "id": "github_release/github.com/pnpm/pnpm/v11.20.0/pnpm-linux-x64.tar.gz",
+      "checksum": "B4AD6AD2B21DB2F8CD50AF416C3AA148BA704C31C84893F465A770A01C2C4572",
       "algorithm": "sha256"
     },
     {
