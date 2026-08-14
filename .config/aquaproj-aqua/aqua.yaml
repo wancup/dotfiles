@@ -35,7 +35,7 @@ packages:
   - name: zaghaghi/openapi-tui@0.10.2
   - name: dprint/dprint@0.55.2
   - name: astral-sh/ruff@0.16.1
-  - name: hadolint/hadolint@v2.14.0
+  - name: hadolint/hadolint@v2.15.1
   - name: sharkdp/hexyl@v0.17.0
   - name: o2sh/onefetch@2.27.1
   - name: lsd-rs/lsd@v1.2.0
