@@ -5,6 +5,7 @@ return {
 		"typescript",
 		"typescriptreact",
 		"astro",
+		"vue",
 		"html",
 		"css",
 		"json",

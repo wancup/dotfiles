@@ -126,6 +126,13 @@ return {
 						lsp_format = "first",
 					}
 				end,
+				vue = function(bufnr)
+					return {
+						get_available_formatter(bufnr, "prettierd", "prettier"),
+						"eslint_d",
+						lsp_format = "first",
+					}
+				end,
 				javascript = function(bufnr)
 					return {
 						get_available_formatter(bufnr, "prettierd", "prettier"),
