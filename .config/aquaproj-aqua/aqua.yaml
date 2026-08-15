@@ -64,5 +64,5 @@ packages:
   - name: astral-sh/ty@0.0.69
   - name: betterleaks/betterleaks@v1.7.3
   - name: fallow-rs/fallow@v3.14.0
-  - name: LuaLS/lua-language-server@3.18.2
+  - name: LuaLS/lua-language-server@3.19.0
   - name: golang.org/x/tools/gopls@v0.23.0
