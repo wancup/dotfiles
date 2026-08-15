@@ -143,4 +143,16 @@ describe("extractPathsFromCommand", () => {
   it("** 始まりのグロブパスを抽出する", () => {
     assert.deepEqual(extractPathsFromCommand("cat **/*.ts"), ["**/*.ts"]);
   });
+
+  it("JSXやHTMLの自己終了タグをパスとして抽出しない", () => {
+    const command = `cat > ./Card.tsx <<'EOF'
+export const Card = () => (
+  <article>
+    <img src="/logo.svg" />
+  </article>
+);
+EOF`;
+
+    assert.deepEqual(extractPathsFromCommand(command), ["./Card.tsx"]);
+  });
 });
