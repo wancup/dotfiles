@@ -178,7 +178,7 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 alt-semicolon = 'mode service'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#enable
-alt-q = 'enable off'
+# alt-q = 'enable off'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#macos-native-minimize
 alt-w = 'macos-native-minimize'
