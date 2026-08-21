@@ -61,7 +61,7 @@ packages:
   - name: rvben/rumdl@v0.2.54
   - name: tamasfe/taplo@0.10.0
   - name: ollama/ollama@v0.32.9
-  - name: astral-sh/ty@0.0.70
+  - name: astral-sh/ty@0.0.72
   - name: betterleaks/betterleaks@v1.7.4
   - name: fallow-rs/fallow@v3.15.0
   - name: LuaLS/lua-language-server@3.19.0
