@@ -62,7 +62,7 @@ packages:
   - name: tamasfe/taplo@0.10.0
   - name: ollama/ollama@v0.32.14
   - name: astral-sh/ty@0.0.72
-  - name: betterleaks/betterleaks@v1.7.4
+  - name: betterleaks/betterleaks@v1.8.0
   - name: fallow-rs/fallow@v3.17.0
   - name: LuaLS/lua-language-server@3.19.1
   - name: golang.org/x/tools/gopls@v0.23.0
