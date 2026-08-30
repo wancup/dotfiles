@@ -39,6 +39,7 @@ allowed-tools: AskUserQuestion, Agent, Read, Glob, Grep, Bash(gh issue view:*), 
 - 各タスクは独立して実装・レビュー・マージできる粒度にする
 - タスク間の依存関係がある場合は明記する
 - 各タスクには明確な完了条件を含める
+- 子Issueには要件と実装方針を簡潔に記載し、実装方法の詳細には言及しない
 - 作成予定の子Issue同士を参照する必要がある場合、暫定IDとして`#1`のようなGitHub Issue参照形式を使わない。意図しない既存Issueへのリンクを避けるため、作成前の参照は`TASK-A`や`<作成後にIssue番号を反映>`のようなリンク化されない表記にする
 
 ## 5. 子Issue内容の確認
@@ -94,7 +95,7 @@ AskUserQuestionツールで、その子Issueを実際に登録してよいかを
 
 各子Issueの本文には以下を含めること:
 
-- タスクの詳細な説明
+- タスクの簡潔な概要
 - 完了条件（Acceptance Criteria）
 - 依存関係がある場合はその旨
 
