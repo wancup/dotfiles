@@ -9,7 +9,7 @@
     "bash-language-server": "5.6.0",
     "eslint_d": "15.0.3",
     "gitmoji-cli": "9.7.0",
-    "oxfmt": "0.64.0",
+    "oxfmt": "0.65.0",
     "oxlint": "1.79.0",
     "vscode-langservers-extracted": "4.10.0",
     "yaml-language-server": "1.24.0"
