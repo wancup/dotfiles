@@ -4,7 +4,7 @@
   "author": "",
   "dependencies": {
     "@astrojs/language-server": "2.16.14",
-    "@earendil-works/pi-coding-agent": "0.84.2",
+    "@earendil-works/pi-coding-agent": "0.84.4",
     "@playwright/cli": "0.1.18",
     "bash-language-server": "5.6.0",
     "eslint_d": "15.0.3",
