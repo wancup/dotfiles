@@ -926,24 +926,24 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.5.1/watchexec-2.5.1-aarch64-apple-darwin.tar.xz",
-      "checksum": "286BBF39AF7A996CAE8DA067B6DF78DFC4F111C148930629D36A85B0F4F5F9DA5D57D42B922E2D28E8F322EA69AB13CC08BBB2BD23265D4844BE9563264663CF",
-      "algorithm": "sha512"
-    },
-    {
-      "id": "github_release/github.com/watchexec/watchexec/v2.5.1/watchexec-2.5.1-aarch64-unknown-linux-musl.tar.xz",
-      "checksum": "C073887583D502FA0B393A8B847BB4460A111B3B0A199D1F70DAFD5D89E71A2F",
+      "id": "github_release/github.com/watchexec/watchexec/v2.7.0/watchexec-2.7.0-aarch64-apple-darwin.tar.xz",
+      "checksum": "63402816E7EFBE3B3FE6F418D476D57F236BC63DE7CFD6F1BADC50B254B295FB",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.5.1/watchexec-2.5.1-x86_64-apple-darwin.tar.xz",
-      "checksum": "FC352FEAEB3F5AFC7216077B47473CF999331B9EEE9BE76C99148EF6617E880A517A5640CD54076890E72FF2EB76AF37A628B3D237567AA89BEEBB2225517624",
-      "algorithm": "sha512"
+      "id": "github_release/github.com/watchexec/watchexec/v2.7.0/watchexec-2.7.0-aarch64-unknown-linux-musl.tar.xz",
+      "checksum": "A24A0362C89106CB6AF23316DCC538BCB8EE28D067D770BADB474850DEADAD38",
+      "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.5.1/watchexec-2.5.1-x86_64-unknown-linux-musl.tar.xz",
-      "checksum": "AF9DF5F48D7F45083AF7A8AEBCF189C632A4A93B7F8CE3D119FD11698234F2581D1B19ED88D335412FF63F027D1538DD56ECCD8C549E6812E211F082AE694374",
-      "algorithm": "sha512"
+      "id": "github_release/github.com/watchexec/watchexec/v2.7.0/watchexec-2.7.0-x86_64-apple-darwin.tar.xz",
+      "checksum": "765E2FDCF7142E3EC228EC5A25597D09A16842C5860CDBBAC713D035488A2F82",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/watchexec/watchexec/v2.7.0/watchexec-2.7.0-x86_64-unknown-linux-musl.tar.xz",
+      "checksum": "480065F4459B9F7FB25927AC43DF85FF7F46A9B25D04F90001022B875AB0B1A5",
+      "algorithm": "sha256"
     },
     {
       "id": "github_release/github.com/zaghaghi/openapi-tui/0.10.2/openapi-tui-0.10.2-linux-arm64.tar.gz",
