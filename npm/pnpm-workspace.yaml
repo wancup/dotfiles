@@ -4,5 +4,6 @@ trustPolicy: "no-downgrade"
 allowBuilds:
   "@google/genai": false
   core-js: false
+  esbuild: false
   koffi: false
   protobufjs: false
