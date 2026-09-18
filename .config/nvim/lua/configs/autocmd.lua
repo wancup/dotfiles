@@ -1,4 +1,5 @@
 local font = require("core/font")
+local package_outdated = require("core/package-outdated")
 
 local function augroup(name)
 	return vim.api.nvim_create_augroup(name, { clear = true })
@@ -9,6 +10,14 @@ vim.api.nvim_create_autocmd("FileType", {
 	callback = function()
 		pcall(vim.treesitter.start)
 		vim.treesitter.language.register("tsx", { "typescriptreact" })
+	end,
+})
+
+vim.api.nvim_create_autocmd("BufReadPost", {
+	group = augroup("PackageOutdated"),
+	pattern = { "package.json", "pnpm-workspace.yaml" },
+	callback = function(event)
+		package_outdated.check(event.buf)
 	end,
 })
 
