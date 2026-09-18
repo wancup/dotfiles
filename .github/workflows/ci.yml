@@ -26,7 +26,19 @@ jobs:
         with:
           runtime: node@24
           cache: true
+          install: false
+          cache-dependency-path: |
+            .pi/agent/exts/pnpm-lock.yaml
+            npm/pnpm-lock.yaml
           working-directory: .pi/agent/exts
+
+      - name: Install npm dependencies
+        working-directory: npm
+        run: pnpm ci
+
+      - name: Install pi extension dependencies
+        working-directory: .pi/agent/exts
+        run: pnpm ci
 
       - name: Typecheck pi extensions
         working-directory: .pi/agent/exts
