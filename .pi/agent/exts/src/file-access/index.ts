@@ -26,7 +26,7 @@ export default function(pi: ExtensionAPI) {
       return { block: true, reason: `"${filePath}" はセンシティブなファイルのためアクセスが禁止されています` };
     }
 
-    if (resolved === "/dev/null") return;
+    if (resolved === "/dev/null" || resolved.startsWith("/tmp/")) return;
 
     if (isOutsideCwd(resolved, cwd)) {
       if (sessionAllowedPaths.has(resolved)) return;
