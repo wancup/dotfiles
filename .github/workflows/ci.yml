@@ -21,6 +21,22 @@ jobs:
           AQUA_CONFIG: .config/aquaproj-aqua/aqua.yaml
           AQUA_LOG_LEVEL: info
 
+      - name: Install pnpm and Node.js
+        uses: pnpm/setup@703c52620218391530e48b9e8870d5c0082e1b9b # v2.1.0
+        with:
+          runtime: node@24
+          cache: true
+          package-json-file: .pi/agent/exts/package.json
+          cache-dependency-path: .pi/agent/exts/pnpm-lock.yaml
+
+      - name: Typecheck pi extensions
+        working-directory: .pi/agent/exts
+        run: pnpm run typecheck
+
+      - name: Test pi extensions
+        working-directory: .pi/agent/exts
+        run: pnpm run test
+
       - name: Format Lua
         run: stylua --check --allow-hidden .
 
