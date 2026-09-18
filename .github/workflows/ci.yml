@@ -26,8 +26,7 @@ jobs:
         with:
           runtime: node@24
           cache: true
-          package-json-file: .pi/agent/exts/package.json
-          cache-dependency-path: .pi/agent/exts/pnpm-lock.yaml
+          working-directory: .pi/agent/exts
 
       - name: Typecheck pi extensions
         working-directory: .pi/agent/exts
