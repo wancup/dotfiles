@@ -37,7 +37,7 @@ packages:
   - name: astral-sh/ruff@0.16.7
   - name: hadolint/hadolint@v2.15.1
   - name: sharkdp/hexyl@v0.17.0
-  - name: o2sh/onefetch@2.27.1
+  - name: o2sh/onefetch@2.28.1
   - name: lsd-rs/lsd@v1.2.0
   - name: jesseduffield/lazydocker@v0.25.2
   - name: neovim/neovim@v0.12.5
