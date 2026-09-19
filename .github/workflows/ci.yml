@@ -30,7 +30,6 @@ jobs:
           cache-dependency-path: |
             .pi/agent/exts/pnpm-lock.yaml
             npm/pnpm-lock.yaml
-          working-directory: .pi/agent/exts
 
       - name: Install npm dependencies
         working-directory: npm
