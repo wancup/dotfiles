@@ -926,23 +926,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.7.2/watchexec-2.7.2-aarch64-apple-darwin.tar.xz",
-      "checksum": "31E553B7160720796266168987C5E0728C388CC4776A26297B6A9FEB00AB6437",
+      "id": "github_release/github.com/watchexec/watchexec/v2.7.3/watchexec-2.7.3-aarch64-apple-darwin.tar.xz",
+      "checksum": "BB2A3ACC02DE5C64F87779FC0226274D47D79026C6DF969C8C1034A110B2EFAD",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.7.2/watchexec-2.7.2-aarch64-unknown-linux-musl.tar.xz",
-      "checksum": "83CBCE2FFC85ADAAB14D6DED09B292F4383358AC6D9A51B4E4E083DF0CB7C831",
+      "id": "github_release/github.com/watchexec/watchexec/v2.7.3/watchexec-2.7.3-aarch64-unknown-linux-musl.tar.xz",
+      "checksum": "80BD9ACFC25E4035624D99585B2F920ADD5ECBDC0C732C4E42FA1451B63D80A5",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.7.2/watchexec-2.7.2-x86_64-apple-darwin.tar.xz",
-      "checksum": "6A5481A14165F30DA8826C7AE1AB3501402328834E7E2483D7C8B7EC4E608810",
+      "id": "github_release/github.com/watchexec/watchexec/v2.7.3/watchexec-2.7.3-x86_64-apple-darwin.tar.xz",
+      "checksum": "DDCA28BBD6B219A14FFEC4893D56DAD2E29CFC8B3E47F49E275706C9AF20B4C2",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/watchexec/watchexec/v2.7.2/watchexec-2.7.2-x86_64-unknown-linux-musl.tar.xz",
-      "checksum": "A2C01F82FB4CDAFCA1FA12CB88E4A1145DEC63364DBDF92664EFBAAC3BB44DD2",
+      "id": "github_release/github.com/watchexec/watchexec/v2.7.3/watchexec-2.7.3-x86_64-unknown-linux-musl.tar.xz",
+      "checksum": "B5BCD00AE3EBB53F7EA5D499FDF98BDA14711589A7ECC0619E1847586BEAA24D",
       "algorithm": "sha256"
     },
     {
