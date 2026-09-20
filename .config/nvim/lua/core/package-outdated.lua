@@ -64,12 +64,21 @@ end
 ---@param row integer
 ---@param update table?
 local function render_update(bufnr, row, update)
-	if not update or type(update.latest) ~= "string" then
+	if not update then
+		return
+	end
+
+	local message
+	if update.isDeprecated then
+		message = "🚨 Deprecated"
+	elseif type(update.latest) == "string" then
+		message = "⬆️ " .. update.latest
+	else
 		return
 	end
 
 	vim.api.nvim_buf_set_extmark(bufnr, namespace, row, 0, {
-		virt_text = { { "(⬆️ " .. update.latest .. ")", "DiagnosticVirtualTextHint" } },
+		virt_text = { { "(" .. message .. ")", "DiagnosticVirtualTextHint" } },
 		virt_text_pos = "eol",
 	})
 end
