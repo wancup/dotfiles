@@ -601,18 +601,18 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ollama/ollama/v0.34.1/ollama-darwin.tgz",
-      "checksum": "F18FBA83FB1EB415E143FB0C24372EBC4388FD7206F4927D4899932653E8C11D",
+      "id": "github_release/github.com/ollama/ollama/v0.34.2/ollama-darwin.tgz",
+      "checksum": "F33B2A5AA59BC6C961ED3EC23BA9DC646CA6D99CED8D2A0D46EB3A522167DD3F",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ollama/ollama/v0.34.1/ollama-linux-amd64.tar.zst",
-      "checksum": "F361DC3992EC07E4AD429F4BB2D10D4663BA2C295F9A9A688C7D52F4BA650034",
+      "id": "github_release/github.com/ollama/ollama/v0.34.2/ollama-linux-amd64.tar.zst",
+      "checksum": "E155B83589986D2C581FDBF1381EA3EBDB16549883679CD5A0627F7CDC05B12B",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ollama/ollama/v0.34.1/ollama-linux-arm64.tar.zst",
-      "checksum": "B4BDBBBF5FAF2FC15F9F6D775C984A33D5C6FEE7B4FDEB3FB56612E58A172DB9",
+      "id": "github_release/github.com/ollama/ollama/v0.34.2/ollama-linux-arm64.tar.zst",
+      "checksum": "8EDCFE99EB7546D9422CFA8297D341DCD50E090E192CE1A8092A6AB6D182867B",
       "algorithm": "sha256"
     },
     {
