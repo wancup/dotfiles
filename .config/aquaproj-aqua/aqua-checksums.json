@@ -751,6 +751,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/sharkdp/fd/v10.5.0/fd-v10.5.0-x86_64-apple-darwin.tar.gz",
+      "checksum": "7E31028C62C6955877735D0406807AA484C2A5E6F86235A59E26C29C301DA590",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/sharkdp/fd/v10.5.0/fd-v10.5.0-x86_64-unknown-linux-musl.tar.gz",
       "checksum": "761C72DC8E120D85B22292063BE8A796E2EEB20EB3E4F38B8FA2343CCF3514A7",
       "algorithm": "sha256"
@@ -1021,8 +1026,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.553.0/registry.yaml",
-      "checksum": "A0610103BC291509498CA448B8E9FB09588A1999FD0E391D1BEBEA8E596348A0",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.563.0/registry.yaml",
+      "checksum": "180F82867167BFB2D7AE40273FFC4CFC613B8A2745BD190BBDE9F817B0B3DEBA",
       "algorithm": "sha256"
     }
   ]
