@@ -2,7 +2,14 @@ import type { ExtensionAPI, ExtensionContext } from "@earendil-works/pi-coding-a
 import { isToolCallEventType } from "@earendil-works/pi-coding-agent";
 import { resolve } from "node:path";
 import { notifyStatus } from "../_shared/notify-status.ts";
-import { expandPath, extractPathsFromCommand, isForbiddenFile, isOutsideCwd, normalizePath } from "./path-utils.ts";
+import {
+  expandPath,
+  extractPathsFromCommand,
+  isForbiddenFile,
+  isGlobalSkillPath,
+  isOutsideCwd,
+  normalizePath,
+} from "./path-utils.ts";
 
 const PERMISSION_CHOICES = ["一回だけ許可", "セッション中は常に許可（このパス）", "拒否"] as const;
 
@@ -26,7 +33,7 @@ export default function(pi: ExtensionAPI) {
       return { block: true, reason: `"${filePath}" はセンシティブなファイルのためアクセスが禁止されています` };
     }
 
-    if (resolved === "/dev/null" || resolved.startsWith("/tmp/")) return;
+    if (resolved === "/dev/null" || resolved.startsWith("/tmp/") || isGlobalSkillPath(resolved)) return;
 
     if (isOutsideCwd(resolved, cwd)) {
       if (sessionAllowedPaths.has(resolved)) return;

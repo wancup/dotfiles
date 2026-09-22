@@ -1,5 +1,6 @@
+import { realpathSync } from "node:fs";
 import { homedir } from "node:os";
-import { basename } from "node:path";
+import { basename, resolve } from "node:path";
 
 const FORBIDDEN_BASENAME_PATTERNS = [
   /^\.env(\..*)?$/, // .env, .env.local, .env.production, etc.
@@ -29,6 +30,16 @@ export function isForbiddenFile(absolutePath: string): boolean {
 export function isOutsideCwd(absolutePath: string, cwd: string): boolean {
   const normalizedCwd = cwd.endsWith("/") ? cwd : cwd + "/";
   return !absolutePath.startsWith(normalizedCwd) && absolutePath !== cwd;
+}
+
+export function isGlobalSkillPath(absolutePath: string): boolean {
+  const globalSkillsDir = resolve(homedir(), ".agents/skills");
+  try {
+    const resolvedSkillsDir = realpathSync(globalSkillsDir);
+    return !isOutsideCwd(absolutePath, globalSkillsDir) || !isOutsideCwd(absolutePath, resolvedSkillsDir);
+  } catch {
+    return false;
+  }
 }
 
 function looksLikePath(token: string): boolean {
