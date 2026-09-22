@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { homedir } from "node:os";
 import { describe, it } from "node:test";
-import { expandPath, extractPathsFromCommand, isForbiddenFile, isOutsideCwd, normalizePath } from "./path-utils.ts";
+import { expandPath, extractPathsFromCommand, isForbiddenFile, isOutsideDirectory, normalizePath } from "./path-utils.ts";
 
 describe("normalizePath", () => {
   it("@ プレフィックスを除去する", () => {
@@ -61,29 +61,29 @@ describe("isForbiddenFile", () => {
   });
 });
 
-describe("isOutsideCwd", () => {
-  it("CWD 内のパスは false を返す", () => {
-    assert.equal(isOutsideCwd("/project/src/index.ts", "/project"), false);
+describe("isOutsideDirectory", () => {
+  it("基準ディレクトリ内のパスはfalseを返す", () => {
+    assert.equal(isOutsideDirectory("/project/src/index.ts", "/project"), false);
   });
 
-  it("CWD 自体は false を返す", () => {
-    assert.equal(isOutsideCwd("/project", "/project"), false);
+  it("基準ディレクトリ自体はfalseを返す", () => {
+    assert.equal(isOutsideDirectory("/project", "/project"), false);
   });
 
-  it("CWD 外のパスは true を返す", () => {
-    assert.equal(isOutsideCwd("/other/file.ts", "/project"), true);
+  it("基準ディレクトリ外のパスはtrueを返す", () => {
+    assert.equal(isOutsideDirectory("/other/file.ts", "/project"), true);
   });
 
-  it("CWD がスラッシュ付きでも正しく判定する", () => {
-    assert.equal(isOutsideCwd("/project/src/index.ts", "/project/"), false);
+  it("基準ディレクトリがスラッシュ付きでも正しく判定する", () => {
+    assert.equal(isOutsideDirectory("/project/src/index.ts", "/project/"), false);
   });
 
   it("プレフィックスが一致するだけの別ディレクトリは外部と判定する", () => {
-    assert.equal(isOutsideCwd("/project-other/file.ts", "/project"), true);
+    assert.equal(isOutsideDirectory("/project-other/file.ts", "/project"), true);
   });
 
-  it("** 始まりのグロブパスは true を返す", () => {
-    assert.equal(isOutsideCwd("**/*.ts", "/project"), true);
+  it("**始まりのグロブパスはtrueを返す", () => {
+    assert.equal(isOutsideDirectory("**/*.ts", "/project"), true);
   });
 });
 

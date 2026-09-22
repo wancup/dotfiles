@@ -7,7 +7,7 @@ import {
   extractPathsFromCommand,
   isForbiddenFile,
   isGlobalSkillPath,
-  isOutsideCwd,
+  isOutsideDirectory,
   normalizePath,
 } from "./path-utils.ts";
 
@@ -35,7 +35,7 @@ export default function(pi: ExtensionAPI) {
 
     if (resolved === "/dev/null" || resolved.startsWith("/tmp/") || isGlobalSkillPath(resolved)) return;
 
-    if (isOutsideCwd(resolved, cwd)) {
+    if (isOutsideDirectory(resolved, cwd)) {
       if (sessionAllowedPaths.has(resolved)) return;
 
       if (!ctx.hasUI) {

@@ -27,16 +27,16 @@ export function isForbiddenFile(absolutePath: string): boolean {
   return FORBIDDEN_PATH_PATTERNS.some((p) => p.test(absolutePath));
 }
 
-export function isOutsideCwd(absolutePath: string, cwd: string): boolean {
-  const normalizedCwd = cwd.endsWith("/") ? cwd : cwd + "/";
-  return !absolutePath.startsWith(normalizedCwd) && absolutePath !== cwd;
+export function isOutsideDirectory(absolutePath: string, baseDirectory: string): boolean {
+  const directoryPrefix = baseDirectory.endsWith("/") ? baseDirectory : baseDirectory + "/";
+  return !absolutePath.startsWith(directoryPrefix) && absolutePath !== baseDirectory;
 }
 
 export function isGlobalSkillPath(absolutePath: string): boolean {
   const globalSkillsDir = resolve(homedir(), ".agents/skills");
   try {
     const resolvedSkillsDir = realpathSync(globalSkillsDir);
-    return !isOutsideCwd(absolutePath, globalSkillsDir) || !isOutsideCwd(absolutePath, resolvedSkillsDir);
+    return !isOutsideDirectory(absolutePath, globalSkillsDir) || !isOutsideDirectory(absolutePath, resolvedSkillsDir);
   } catch {
     return false;
   }
