@@ -1,7 +1,13 @@
 import assert from "node:assert/strict";
 import { homedir } from "node:os";
 import { describe, it } from "node:test";
-import { expandPath, extractPathsFromCommand, isForbiddenFile, isOutsideDirectory, normalizePath } from "./path-utils.ts";
+import {
+  expandPath,
+  extractPathsFromCommand,
+  isForbiddenFile,
+  isOutsideDirectory,
+  normalizePath,
+} from "./path-utils.ts";
 
 describe("normalizePath", () => {
   it("@ プレフィックスを除去する", () => {
