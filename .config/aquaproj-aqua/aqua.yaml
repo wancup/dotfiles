@@ -63,6 +63,6 @@ packages:
   - name: ollama/ollama@v0.34.2
   - name: astral-sh/ty@0.0.82
   - name: betterleaks/betterleaks@v1.8.1
-  - name: fallow-rs/fallow@v3.26.0
+  - name: fallow-rs/fallow@v3.27.0
   - name: LuaLS/lua-language-server@3.19.1
   - name: golang.org/x/tools/gopls@v0.23.0
