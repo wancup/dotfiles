@@ -58,7 +58,7 @@ packages:
   - name: ip7z/7zip@25.01
   - name: static-web-server/static-web-server@v2.44.0
   - name: suzuki-shunsuke/pinact@v5.0.0
-  - name: rvben/rumdl@v0.2.74
+  - name: rvben/rumdl@v0.2.75
   - name: tamasfe/taplo@0.10.0
   - name: ollama/ollama@v0.34.2
   - name: astral-sh/ty@0.0.82
