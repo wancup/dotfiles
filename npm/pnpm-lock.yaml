@@ -176,8 +176,8 @@ importers:
         specifier: 0.1.21
         version: 0.1.21
       bash-language-server:
-        specifier: 5.8.0
-        version: 5.8.0
+        specifier: 5.8.1
+        version: 5.8.1
       eslint_d:
         specifier: 15.0.3
         version: 15.0.3(jiti@2.7.0)
@@ -1183,8 +1183,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  bash-language-server@5.8.0:
-    resolution: {integrity: sha512-zdbIsxWTZcDipT/qsU6qw1GP25ORdvI7XFvplZR5eR0S+x5cBuodYjASUq+ca+s9GPXZYGQ2TRG8cZAHYKAjcQ==}
+  bash-language-server@5.8.1:
+    resolution: {integrity: sha512-F3g0hKZhCiKbLUf9wkrST6+ZypsHvJqaJxw/+J7WK2ywhFyc8+7jSHSTU1UDYncZkyWgbKV6+eZy5qWTZtoXww==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -3418,7 +3418,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  bash-language-server@5.8.0:
+  bash-language-server@5.8.1:
     dependencies:
       editorconfig: 3.0.2
       fast-glob: 3.3.3
