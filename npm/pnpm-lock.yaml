@@ -167,8 +167,8 @@ importers:
   .:
     dependencies:
       '@astrojs/language-server':
-        specifier: 2.17.0
-        version: 2.17.0(@emnapi/runtime@1.11.3)(prettier@3.9.6)(typescript@4.9.5)
+        specifier: 2.17.1
+        version: 2.17.1(@emnapi/runtime@1.11.3)(prettier@3.9.6)(typescript@4.9.5)
       '@earendil-works/pi-coding-agent':
         specifier: 0.85.1
         version: 0.85.1(supports-color@10.2.2)(ws@8.21.3)(zod@3.25.76)
@@ -212,8 +212,8 @@ packages:
     resolution: {integrity: sha512-tgprkax8mcF+BiHJQBdoQ+REqtvvnLlYzV0yCeLMdcv3pJIutdlinWNHUzN1jMOT5VRlYTtMmDdaoPrtd3cBAQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
 
-  '@astrojs/language-server@2.17.0':
-    resolution: {integrity: sha512-ZvT7UEo7/jBdfjXD3nNYssziEezNKM8G6FUYRnGUidAs7FmowqsQhQ0Xwl5Q4tjqlOjhnpxQuoEb4jwESL+nKQ==}
+  '@astrojs/language-server@2.17.1':
+    resolution: {integrity: sha512-gG7bvMVNIXgoSe1pM9dI1HsSDLU1EIc/dSAYQ0DuReLyLkOBjsiqvaRYgQltWaldLxh0bNEqjgreLfjd9OnUxQ==}
     hasBin: true
     peerDependencies:
       prettier: ^3.0.0
@@ -2404,6 +2404,9 @@ packages:
   vscode-uri@3.1.0:
     resolution: {integrity: sha512-/BpdSx+yCQGnCvecbyXdxHDkuk55/G3xwnC0GqY4gmQ3j+A+g8kzzgB4Nk/SINjqn6+waqw3EgbVF2QKExkRxQ==}
 
+  vscode-uri@3.2.0:
+    resolution: {integrity: sha512-m2gXo3bn0G1kT9InzMf07fTbqMbGtyckj3bH5ktLO+1Ssv+yiATZ4dhwaQv9UZWxJh6E9IFGnQyjgWVDWVBDrg==}
+
   wcwidth@1.0.1:
     resolution: {integrity: sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==}
 
@@ -2499,7 +2502,7 @@ snapshots:
     transitivePeerDependencies:
       - '@emnapi/runtime'
 
-  '@astrojs/language-server@2.17.0(@emnapi/runtime@1.11.3)(prettier@3.9.6)(typescript@4.9.5)':
+  '@astrojs/language-server@2.17.1(@emnapi/runtime@1.11.3)(prettier@3.9.6)(typescript@4.9.5)':
     dependencies:
       '@astrojs/astro2tsx': 0.1.0(@emnapi/runtime@1.11.3)
       '@astrojs/yaml2ts': 0.2.4
@@ -2517,7 +2520,7 @@ snapshots:
       volar-service-typescript-twoslash-queries: 0.0.71(@volar/language-service@2.4.28(typescript@4.9.5))(typescript@4.9.5)
       volar-service-yaml: 0.0.71(@volar/language-service@2.4.28(typescript@4.9.5))
       vscode-html-languageservice: 5.6.2
-      vscode-uri: 3.1.0
+      vscode-uri: 3.2.0
     optionalDependencies:
       prettier: 3.9.6
     transitivePeerDependencies:
@@ -3316,7 +3319,7 @@ snapshots:
       path-browserify: 1.0.1
       request-light: 0.7.0
       vscode-languageserver: 9.0.1
-      vscode-languageserver-protocol: 3.18.2
+      vscode-languageserver-protocol: 3.18.3
       vscode-languageserver-textdocument: 1.0.14
       vscode-uri: 3.1.0
     optionalDependencies:
@@ -3325,7 +3328,7 @@ snapshots:
   '@volar/language-service@2.4.28(typescript@4.9.5)':
     dependencies:
       '@volar/language-core': 2.4.28
-      vscode-languageserver-protocol: 3.18.2
+      vscode-languageserver-protocol: 3.18.3
       vscode-languageserver-textdocument: 1.0.14
       vscode-uri: 3.1.0
     optionalDependencies:
@@ -3346,7 +3349,7 @@ snapshots:
       emmet: 2.4.11
       jsonc-parser: 2.3.1
       vscode-languageserver-textdocument: 1.0.14
-      vscode-languageserver-types: 3.18.0
+      vscode-languageserver-types: 3.18.3
       vscode-uri: 3.1.0
 
   '@vscode/l10n@0.0.18': {}
@@ -4622,7 +4625,7 @@ snapshots:
     dependencies:
       jsonc-parser: 3.3.1
       vscode-languageserver-textdocument: 1.0.14
-      vscode-languageserver-types: 3.18.0
+      vscode-languageserver-types: 3.18.3
       vscode-nls: 5.2.0
       vscode-uri: 3.1.0
 
@@ -4709,6 +4712,8 @@ snapshots:
 
   vscode-uri@3.1.0: {}
 
+  vscode-uri@3.2.0: {}
+
   wcwidth@1.0.1:
     dependencies:
       defaults: 1.0.4
@@ -4756,7 +4761,7 @@ snapshots:
       vscode-json-languageservice: 4.1.8
       vscode-languageserver: 9.0.1
       vscode-languageserver-textdocument: 1.0.14
-      vscode-languageserver-types: 3.18.0
+      vscode-languageserver-types: 3.18.3
       vscode-uri: 3.1.0
       yaml: 2.8.3
 
