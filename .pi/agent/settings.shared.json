@@ -1,13 +1,13 @@
 {
   "defaultProvider": "openai-codex",
-  "defaultModel": "gpt-6-sol",
+  "defaultModel": "gpt-6.1-sol",
   "hideThinkingBlock": false,
   "defaultThinkingLevel": "xhigh",
   "enabledModels": [
     "ollama/gemma4:26b",
     "ollama/gemma4:e4b",
     "openai-codex/gpt-6-astra",
-    "openai-codex/gpt-6-sol",
+    "openai-codex/gpt-6.1-sol",
     "openai-codex/gpt-6-luna"
   ],
   "quietStartup": true,
