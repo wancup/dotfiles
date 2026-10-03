@@ -816,23 +816,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/shenwei356/csvtk/v0.37.0/csvtk_darwin_amd64.tar.gz",
-      "checksum": "20A8B442ED19A91653DB45BD283483A7C500736FA6592B683ABD2955DF8834A0",
+      "id": "github_release/github.com/shenwei356/csvtk/v0.38.0/csvtk_darwin_amd64.tar.gz",
+      "checksum": "77C2611FDFC67164A8B2F8AF310D1DD1847733FE43E9A830C274AB0EA47B9742",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/shenwei356/csvtk/v0.37.0/csvtk_darwin_arm64.tar.gz",
-      "checksum": "DF07EF61545A0759A63F4DD4F7BCBE72426B29B87E04A85A9EBE0989A30F7E93",
+      "id": "github_release/github.com/shenwei356/csvtk/v0.38.0/csvtk_darwin_arm64.tar.gz",
+      "checksum": "54A9170AC0413287125132A6C1C14D18CDCB72177A00DCA7F1BAF1879301CEAF",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/shenwei356/csvtk/v0.37.0/csvtk_linux_amd64.tar.gz",
-      "checksum": "F6D09493B7AD1BA8C5EE79E6904DE9499F7411CA97FCFCD8CF6B816E9C967411",
+      "id": "github_release/github.com/shenwei356/csvtk/v0.38.0/csvtk_linux_amd64.tar.gz",
+      "checksum": "43EAC0A8E3DA02158184737298FAD461D1AF075F78F049AAE9902D868C8846A5",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/shenwei356/csvtk/v0.37.0/csvtk_linux_arm64.tar.gz",
-      "checksum": "7F481B8EE1948B14C3D7A1C9C6C8CDF36D3F537C5A51F07AF7F243E4EE31B708",
+      "id": "github_release/github.com/shenwei356/csvtk/v0.38.0/csvtk_linux_arm64.tar.gz",
+      "checksum": "2F9FC0FB763DF5BC83A12D9916F72D16461E70589FB20B190E72A544D5AB5D6F",
       "algorithm": "sha256"
     },
     {
