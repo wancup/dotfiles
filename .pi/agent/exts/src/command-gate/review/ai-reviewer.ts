@@ -1,10 +1,11 @@
 import {
   type AssistantMessage,
-  type Context,
   hasApi,
   type Model,
+  normalizeContext,
   type OpenAICodexResponsesOptions,
   type Provider,
+  type TranscriptContext,
 } from "@earendil-works/pi-ai";
 import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
 import { type CommandGateConfig, loadCommandGateConfig } from "./command-gate-config.ts";
@@ -17,7 +18,7 @@ export const SAFETY_MODEL_API = "openai-codex-responses";
 export type CompleteSafetyReview = (
   provider: Provider,
   model: Model<typeof SAFETY_MODEL_API>,
-  context: Context,
+  context: TranscriptContext,
   options: OpenAICodexResponsesOptions,
 ) => Promise<AssistantMessage>;
 
@@ -135,7 +136,7 @@ export function createCommandSafetyReviewer(
       const response = await completeSafetyReview(
         provider,
         model,
-        {
+        normalizeContext({
           messages: [
             {
               role: "user",
@@ -143,7 +144,7 @@ export function createCommandSafetyReviewer(
               timestamp: Date.now(),
             },
           ],
-        },
+        }),
         options,
       );
 

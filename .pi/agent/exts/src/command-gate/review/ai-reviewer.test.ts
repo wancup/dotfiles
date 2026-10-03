@@ -1,10 +1,10 @@
 import type {
   Api,
   AssistantMessage,
-  Context,
   Model,
   OpenAICodexResponsesOptions,
   Provider,
+  TranscriptContext,
 } from "@earendil-works/pi-ai";
 import type { ExtensionContext } from "@earendil-works/pi-coding-agent";
 import assert from "node:assert/strict";
@@ -117,7 +117,7 @@ describe("buildSafetyReviewPrompt", () => {
 describe("createCommandSafetyReviewer", () => {
   it("モデル応答をSafetyReviewとして返す", async () => {
     let receivedProvider: Provider | undefined;
-    let receivedContext: Context | undefined;
+    let receivedContext: TranscriptContext | undefined;
     let receivedOptions: OpenAICodexResponsesOptions | undefined;
     const complete: CompleteSafetyReview = async (provider, _model, requestContext, options) => {
       receivedProvider = provider;
@@ -154,7 +154,7 @@ describe("createCommandSafetyReviewer", () => {
   });
 
   it("読み込んだ許可コマンドをプロンプトビルダーに渡す", async () => {
-    let receivedContext: Context | undefined;
+    let receivedContext: TranscriptContext | undefined;
     let receivedPromptInput: Parameters<BuildSafetyReviewPrompt> | undefined;
     const complete: CompleteSafetyReview = async (_provider, _model, requestContext) => {
       receivedContext = requestContext;
