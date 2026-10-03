@@ -376,18 +376,18 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ip7z/7zip/25.01/7z2501-linux-arm64.tar.xz",
-      "checksum": "39C5140F02CE4436599303C59A149F654CB1BBC47CDC105A942120D747AE040D",
+      "id": "github_release/github.com/ip7z/7zip/26.03/7z2603-linux-arm64.tar.xz",
+      "checksum": "2389BA20E4D8295E8709C20B6263B69BD1EC4972FE38A04AD7A1BADBF595B996",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ip7z/7zip/25.01/7z2501-linux-x64.tar.xz",
-      "checksum": "4CA3B7C6F2F67866B92622818B58233DC70367BE2F36B498EB0BDEAAA44B53F4",
+      "id": "github_release/github.com/ip7z/7zip/26.03/7z2603-linux-x64.tar.xz",
+      "checksum": "DC99EFF5008F1AB79BD7084C68513701547A808A89502BF4133683535AB3C695",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ip7z/7zip/25.01/7z2501-mac.tar.xz",
-      "checksum": "26AA75BC262BB10BF0805617B95569C3035C2C590A99F7DB55C7E9607B2685E0",
+      "id": "github_release/github.com/ip7z/7zip/26.03/7z2603-mac.tar.xz",
+      "checksum": "5CA87677072C59F5602E5C49BAA27D4694BACD2259B4E507F0094249D4281480",
       "algorithm": "sha256"
     },
     {
