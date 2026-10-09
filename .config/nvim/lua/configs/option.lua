@@ -62,6 +62,7 @@ vim.lsp.enable({
 	"rust_analyzer",
 	"taplo",
 	"ty",
+	"tsc",
 	"yamlls",
 	"gopls",
 })

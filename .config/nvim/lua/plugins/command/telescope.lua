@@ -8,7 +8,22 @@ return {
 	cmd = "Telescope",
 	keys = {
 		-- CodeAction with Telescope UI
-		{ "<leader><leader>", vim.lsp.buf.code_action, mode = { "n", "x" }, { desc = "Code Action" } },
+		{
+			"<leader><leader>",
+			function()
+				vim.lsp.buf.code_action({
+					context = {
+						only = {
+							"quickfix",
+							"refactor",
+							"source",
+						},
+					},
+				})
+			end,
+			mode = { "n", "x" },
+			{ desc = "Code Action" },
+		},
 
 		-- Telescope Commands
 		{
