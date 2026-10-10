@@ -431,23 +431,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jorgerojas26/lazysql/v0.5.9/lazysql_Darwin_arm64.tar.gz",
-      "checksum": "59F3F03458D8B3B2F7F2AF95C546864AA15C6D89BA5594EEA7283B9D9773ACAF",
+      "id": "github_release/github.com/jorgerojas26/lazysql/v0.6.0/lazysql_Darwin_arm64.tar.gz",
+      "checksum": "9EAD7110D62A5AC03AAF14854105A0D4C399FBE84D3A4F4FA7771F4652C2A2C3",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jorgerojas26/lazysql/v0.5.9/lazysql_Darwin_x86_64.tar.gz",
-      "checksum": "88AA3ABE901284D1E70B23DF0156F162CA3C290D8760B3DE2BFB0A1DD4926780",
+      "id": "github_release/github.com/jorgerojas26/lazysql/v0.6.0/lazysql_Darwin_x86_64.tar.gz",
+      "checksum": "FB032E65686DFDC2A614EFFF94EF4AE27D16DBCEB783EB01C4B3A75968B8B035",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jorgerojas26/lazysql/v0.5.9/lazysql_Linux_arm64.tar.gz",
-      "checksum": "24950C7BB1DC304DF73415A3FD6FCF71B88D0ED88907A3403F67A40F5C2F6059",
+      "id": "github_release/github.com/jorgerojas26/lazysql/v0.6.0/lazysql_Linux_arm64.tar.gz",
+      "checksum": "E7EA1760E7FFCDCDDDC6B693E7DC79675AEDC3441B3E85B27AA7A376BE7BF48A",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jorgerojas26/lazysql/v0.5.9/lazysql_Linux_x86_64.tar.gz",
-      "checksum": "D392EE8FE4225E5D3D746F2610C1416709615CB37E6B0F44F35FF7C9BD56ABAA",
+      "id": "github_release/github.com/jorgerojas26/lazysql/v0.6.0/lazysql_Linux_x86_64.tar.gz",
+      "checksum": "84115066CAC3444DD7934AB23D5189495A3FC7A0A74575BE1A3EF5D38EAF5B2B",
       "algorithm": "sha256"
     },
     {
