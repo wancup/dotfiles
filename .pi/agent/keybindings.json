@@ -9,6 +9,11 @@
   "tui.select.down": ["down", "ctrl+n"],
   "tui.select.cancel": ["escape", "ctrl+c", "ctrl+d"],
 
+  "tui.altScreen.pageUp": [],
+  "tui.altScreen.pageDown": [],
+  "tui.altScreen.halfPageUp": ["pageUp"],
+  "tui.altScreen.halfPageDown": ["pageDown"],
+
   "app.session.new": ["shift+backspace"],
 
   "app.model.select": ["ctrl+space"],
