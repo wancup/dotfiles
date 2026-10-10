@@ -33,7 +33,7 @@ packages:
   - name: sxyazi/yazi@v26.9.1
   - name: watchexec/watchexec@v2.7.4
   - name: zaghaghi/openapi-tui@0.10.2
-  - name: dprint/dprint@0.57.4
+  - name: dprint/dprint@0.60.1
   - name: astral-sh/ruff@0.16.10
   - name: hadolint/hadolint@v2.15.1
   - name: sharkdp/hexyl@v0.17.0
