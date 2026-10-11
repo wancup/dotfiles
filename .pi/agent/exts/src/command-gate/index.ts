@@ -3,7 +3,12 @@ import { isToolCallEventType } from "@earendil-works/pi-coding-agent";
 import { notifyStatus } from "../_shared/notify-status.ts";
 import { evaluateCommand } from "./core/deny.ts";
 import { reviewCommandSafety } from "./review/ai-reviewer.ts";
-import { buildPermissionPrompt, classificationLabel, formatSafetyReviewDetails } from "./ui/permission-prompt.ts";
+import {
+  buildPermissionPrompt,
+  classificationLabel,
+  formatSafetyReviewDetails,
+  resolveTerminalSize,
+} from "./ui/permission-prompt.ts";
 
 const PERMISSION_CHOICES = [
   "一回だけ許可",
@@ -55,11 +60,18 @@ export default function(pi: ExtensionAPI) {
       };
     }
 
+    const terminalSize = resolveTerminalSize(ctx.mode, process.stdout.columns, process.stdout.rows);
+    const [prompt, error] = buildPermissionPrompt(command, review, terminalSize);
+    if (error !== null) {
+      ctx.ui.notify(error, "error");
+      return {
+        block: true,
+        reason: `${error}\n\n${formatSafetyReviewDetails(review)}`,
+      };
+    }
+
     notifyStatus("waiting");
-    const choice = await ctx.ui.select(
-      buildPermissionPrompt(command, review),
-      [...PERMISSION_CHOICES],
-    );
+    const choice = await ctx.ui.select(prompt, [...PERMISSION_CHOICES]);
 
     if (choice === "セッション中は常に許可") {
       sessionAllowedCommands.add(command);

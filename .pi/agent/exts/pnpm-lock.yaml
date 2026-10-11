@@ -172,6 +172,9 @@ importers:
       '@earendil-works/pi-coding-agent':
         specifier: 1.0.3
         version: 1.0.3(@aws-sdk/credential-provider-node@3.972.84)(@smithy/signature-v4@5.7.3)(ws@8.21.3)
+      '@earendil-works/pi-tui':
+        specifier: 1.0.3
+        version: 1.0.3
       typescript:
         specifier: 7.0.2
         version: 7.0.2
@@ -304,6 +307,10 @@ packages:
 
   '@earendil-works/pi-telemetry@1.0.4':
     resolution: {integrity: sha512-DL2eXXtnL5/VQkuQd97fL57GXTG1/zKHtMmDsrv8tGeJ5EgYYTWvzy44dqbYL0lD0Z22v/NOwqU3PHO75HVrqA==}
+    engines: {node: '>=22.19.0'}
+
+  '@earendil-works/pi-tui@1.0.3':
+    resolution: {integrity: sha512-C7b8Y+7iz+/oPEZUJubv6NPm3M/4ziq0hjQ2jhqMNpBwcXeqDMYKL2FYP90t2b5S1IoGc2io47dj5ZlIC1IZWg==}
     engines: {node: '>=22.19.0'}
 
   '@earendil-works/pi-tui@1.0.4':
@@ -1274,6 +1281,11 @@ snapshots:
       cross-spawn: 7.0.6
 
   '@earendil-works/pi-telemetry@1.0.4': {}
+
+  '@earendil-works/pi-tui@1.0.3':
+    dependencies:
+      get-east-asian-width: 1.6.0
+      marked: 18.0.11
 
   '@earendil-works/pi-tui@1.0.4':
     dependencies:
