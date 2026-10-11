@@ -411,23 +411,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.65.1/lazygit_0.65.1_darwin_arm64.tar.gz",
-      "checksum": "65A367C6EA9A88EFEBAAF7998A6835EEDB987E04916CEF677264FF9B31B1B13E",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.66.0/lazygit_0.66.0_darwin_arm64.tar.gz",
+      "checksum": "E9FE2FE1F1BBC1B4C3214B33E8E0D57A4D6E3C2276AA9AA713F9BCBDC223E65C",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.65.1/lazygit_0.65.1_darwin_x86_64.tar.gz",
-      "checksum": "FDE13DAF583511AA24C42CA154911643231A5AF784C7CDD8117264B2FC035B33",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.66.0/lazygit_0.66.0_darwin_x86_64.tar.gz",
+      "checksum": "2B621118F03B8249F0CC6BED378E25BF679E0EF1C97CEED01F92814F5A91A576",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.65.1/lazygit_0.65.1_linux_arm64.tar.gz",
-      "checksum": "49ABECDF6ADF4F2DFDB11BF7B9BFADA267EA523612ED809D1C6D87F6C04000A7",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.66.0/lazygit_0.66.0_linux_arm64.tar.gz",
+      "checksum": "9A4FC4656897AC9F7877B835473CE1A75620CC267F554C57FC4FF266407F3257",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/jesseduffield/lazygit/v0.65.1/lazygit_0.65.1_linux_x86_64.tar.gz",
-      "checksum": "02BEACBCDA0FA342E50AE3480BA8147307353AF3FB28E1D5F790E02329C201A6",
+      "id": "github_release/github.com/jesseduffield/lazygit/v0.66.0/lazygit_0.66.0_linux_x86_64.tar.gz",
+      "checksum": "5B45541155D20BD32BF2CC5AB5B7E3D91C2EEBF0FB1242281350EDC27D59D2B7",
       "algorithm": "sha256"
     },
     {
