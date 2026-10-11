@@ -1,23 +1,25 @@
 import { Text } from "@earendil-works/pi-tui";
 import assert from "node:assert/strict";
 import { describe, it } from "node:test";
-import { buildPermissionPrompt, classificationLabel, resolveTerminalSize } from "./permission-prompt.ts";
+import { buildPermissionPrompt, classificationLabel, resolveTerminalColumns } from "./permission-prompt.ts";
 
-const terminalSize = { columns: 80, rows: 48 };
+const terminalColumns = 80;
 const review = {
   classification: "dangerous",
   commandDescription: "tmpを再帰的に削除します。",
   classificationReason: "削除操作を含むため危険です。",
 } as const;
 
-describe("resolveTerminalSize", () => {
-  it("TUIでは取得した端末サイズを使う", () => {
-    assert.deepEqual(resolveTerminalSize("tui", 120, 60), { columns: 120, rows: 60 });
+describe("resolveTerminalColumns", () => {
+  it("TUIでは取得した端末幅を使う", () => {
+    assert.equal(resolveTerminalColumns("tui", 120), 120);
   });
 
-  it("RPCや端末サイズが取得できない場合は80桁×48行を使う", () => {
-    assert.deepEqual(resolveTerminalSize("rpc", 120, 60), terminalSize);
-    assert.deepEqual(resolveTerminalSize("tui"), terminalSize);
+  it("RPCや有効な端末幅が取得できない場合は80桁を使う", () => {
+    assert.equal(resolveTerminalColumns("rpc", 120), terminalColumns);
+    for (const columns of [undefined, 0, -1, 1.5, NaN, Infinity]) {
+      assert.equal(resolveTerminalColumns("tui", columns), terminalColumns);
+    }
   });
 });
 
@@ -32,10 +34,7 @@ describe("classificationLabel", () => {
 
 describe("buildPermissionPrompt", () => {
   it("短いコマンドは省略せず、判定、コマンド説明、分類根拠を含む確認文を作る", () => {
-    const [prompt, error] = buildPermissionPrompt("rm -rf tmp", review, terminalSize);
-
-    assert.equal(error, null);
-    assert.ok(prompt);
+    const prompt = buildPermissionPrompt("rm -rf tmp", review, terminalColumns);
     assert.match(prompt, /```bash\nrm -rf tmp\n```/);
     assert.match(prompt, /AI判定: 危険/);
     assert.match(prompt, /コマンドの説明: tmpを再帰的に削除します。/);
@@ -44,20 +43,28 @@ describe("buildPermissionPrompt", () => {
     assert.ok(!prompt.includes("-- (省略) --"));
   });
 
-  it("長いコマンドは先頭と独立した省略行を表示する", () => {
-    const [prompt, error] = buildPermissionPrompt(`echo ${"x".repeat(5000)}`, review, terminalSize);
+  it("折り返し後24行までは省略せず、25行以上は先頭24行と独立した省略行を表示する", () => {
+    for (const columns of [40, terminalColumns, 120]) {
+      for (
+        const { line, separator } of [
+          { line: "x".repeat(columns - 2), separator: "" },
+          { line: "あ".repeat((columns - 2) / 2), separator: "" },
+          { line: "echo hello", separator: "\n" },
+        ]
+      ) {
+        for (const rows of [24, 25, 64]) {
+          const command = Array(rows).fill(line).join(separator);
+          assert.equal(new Text(command, 0, 0).render(columns - 2).length, rows);
 
-    assert.equal(error, null);
-    assert.ok(prompt);
-    assert.match(prompt, /```bash\necho\b/);
-    assert.ok(prompt.includes("\n-- (省略) --\n```"));
-    assert.ok(new Text(prompt, 1, 0).render(terminalSize.columns).length <= terminalSize.rows - 16);
-  });
+          const prompt = buildPermissionPrompt(command, review, columns);
+          const expectedCommand = rows <= 24
+            ? command
+            : `${Array(24).fill(line).join("\n")}\n-- (省略) --`;
 
-  it("表示領域が不足する場合は文面をnullにしてエラー内容を返す", () => {
-    assert.deepEqual(buildPermissionPrompt("echo hello", review, { ...terminalSize, rows: 16 }), [
-      null,
-      "確認画面の表示領域が不足しているため、コマンドの実行を拒否しました。",
-    ]);
+          assert.ok(prompt.includes(`\`\`\`bash\n${expectedCommand}\n\`\`\``));
+          assert.equal(prompt.includes("-- (省略) --"), rows > 24);
+        }
+      }
+    }
   });
 });

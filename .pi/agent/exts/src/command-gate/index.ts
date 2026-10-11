@@ -7,7 +7,7 @@ import {
   buildPermissionPrompt,
   classificationLabel,
   formatSafetyReviewDetails,
-  resolveTerminalSize,
+  resolveTerminalColumns,
 } from "./ui/permission-prompt.ts";
 
 const PERMISSION_CHOICES = [
@@ -60,15 +60,8 @@ export default function(pi: ExtensionAPI) {
       };
     }
 
-    const terminalSize = resolveTerminalSize(ctx.mode, process.stdout.columns, process.stdout.rows);
-    const [prompt, error] = buildPermissionPrompt(command, review, terminalSize);
-    if (error !== null) {
-      ctx.ui.notify(error, "error");
-      return {
-        block: true,
-        reason: `${error}\n\n${formatSafetyReviewDetails(review)}`,
-      };
-    }
+    const columns = resolveTerminalColumns(ctx.mode, process.stdout.columns);
+    const prompt = buildPermissionPrompt(command, review, columns);
 
     notifyStatus("waiting");
     const choice = await ctx.ui.select(prompt, [...PERMISSION_CHOICES]);
