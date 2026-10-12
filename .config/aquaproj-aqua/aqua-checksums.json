@@ -81,6 +81,11 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/YS-L/csvlens/v0.15.1/csvlens-aarch64-unknown-linux-gnu.tar.xz",
+      "checksum": "7671466036EBC22B1B9B958890A638FD21A06452137FB9CA1321448E5AFEA7AD",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/YS-L/csvlens/v0.15.1/csvlens-x86_64-apple-darwin.tar.xz",
       "checksum": "26374C1D11FD628475E26D7ECBC8E6F4C4BBD76B15F48F31DD8609FDBBDD0137",
       "algorithm": "sha256"
@@ -1031,8 +1036,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.563.0/registry.yaml",
-      "checksum": "180F82867167BFB2D7AE40273FFC4CFC613B8A2745BD190BBDE9F817B0B3DEBA",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.572.0/registry.yaml",
+      "checksum": "4243DD2A71177D47B876247242815C95B077332C9D3A10C56184B1CF76609F71",
       "algorithm": "sha256"
     }
   ]
