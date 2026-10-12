@@ -301,26 +301,6 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/ducaale/xh/v0.26.2/xh-v0.26.2-aarch64-apple-darwin.tar.gz",
-      "checksum": "CC5739D061A8469D0011CA0AB92D4A5CD726CC56F0EF30108953B119F54D0719",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/ducaale/xh/v0.26.2/xh-v0.26.2-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "3A44900A8AC53F614AA0CD1D2E54ECF4E93584384C1AD091AA18D7992686D7EB",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/ducaale/xh/v0.26.2/xh-v0.26.2-x86_64-apple-darwin.tar.gz",
-      "checksum": "1F19AE1A2F411C58BD6943C638472CD5C4179ED019FE4F786E524B27DA4C14A2",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/ducaale/xh/v0.26.2/xh-v0.26.2-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "8C53B6A23435754F9E2EA8AB8C0D0296A1921404B88132CF9B364FF6E8C22A6E",
-      "algorithm": "sha256"
-    },
-    {
       "id": "github_release/github.com/fallow-rs/fallow/v3.32.0/fallow-aarch64-apple-darwin.tar.gz",
       "checksum": "E2B49E029199B11FF23FE20E200993C87A604114C5EF22205E75BDFBDB38BBB6",
       "algorithm": "sha256"
@@ -593,16 +573,6 @@
     {
       "id": "github_release/github.com/neovim/neovim/v0.12.5/nvim-macos-x86_64.tar.gz",
       "checksum": "81F4518622CB059B450EE2E498C6A1082A222F6BD89589DE5BBCF0C6A68AA3FD",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/o2sh/onefetch/3.0.0/onefetch-linux.tar.gz",
-      "checksum": "AE5BBDCB44201B17B75AB76F1CFCA103972BF168F06897466385C09A05A9E954",
-      "algorithm": "sha256"
-    },
-    {
-      "id": "github_release/github.com/o2sh/onefetch/3.0.0/onefetch-mac.tar.gz",
-      "checksum": "594B0E8AB771E9CFFEC8E788324B46B4F859DBFB472586231AF8EE38C7F554B3",
       "algorithm": "sha256"
     },
     {
