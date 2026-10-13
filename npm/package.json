@@ -3,7 +3,7 @@
   "description": "",
   "author": "",
   "dependencies": {
-    "@astrojs/language-server": "2.17.1",
+    "@astrojs/language-server": "2.17.2",
     "@earendil-works/pi-coding-agent": "1.0.4",
     "@playwright/cli": "0.1.22",
     "bash-language-server": "5.8.1",
