@@ -29,30 +29,6 @@ describe("parseSafetyReview", () => {
     );
   });
 
-  it("caution判定と日本語の注意をパースする", () => {
-    assert.deepEqual(
-      parseSafetyReview(
-        "{\"classification\":\"caution\",\"commandDescription\":\"ディレクトリを作成します。\",\"classificationReason\":\"ファイルシステムを変更する可能性があります。\"}",
-      ),
-      {
-        classification: "caution",
-        commandDescription: "ディレクトリを作成します。",
-        classificationReason: "ファイルシステムを変更する可能性があります。",
-      },
-    );
-
-    assert.deepEqual(
-      parseSafetyReview(
-        "{\"classification\":\"注意\",\"commandDescription\":\"ディレクトリを作成します。\",\"classificationReason\":\"新しいパスが作られます。\"}",
-      ),
-      {
-        classification: "caution",
-        commandDescription: "ディレクトリを作成します。",
-        classificationReason: "新しいパスが作られます。",
-      },
-    );
-  });
-
   it("旧形式のdescriptionだけではunknownを返す", () => {
     const result = parseSafetyReview("{\"classification\":\"safe\",\"description\":\"ファイル一覧を表示します。\"}");
 
@@ -61,17 +37,24 @@ describe("parseSafetyReview", () => {
     assert.ok(result.classificationReason.length > 0);
   });
 
-  it("未知のclassificationはunknownに正規化する", () => {
-    assert.deepEqual(
-      parseSafetyReview(
-        "{\"classification\":\"maybe\",\"commandDescription\":\"内容を確認します。\",\"classificationReason\":\"判断できません。\"}",
-      ),
-      {
-        classification: "unknown",
-        commandDescription: "内容を確認します。",
-        classificationReason: "判断できません。",
-      },
-    );
+  it("未知または廃止したclassificationはunknownに正規化する", () => {
+    for (const classification of ["maybe", "caution", "warning", "warn", "注意"]) {
+      assert.deepEqual(
+        parseSafetyReview(
+          JSON.stringify({
+            classification,
+            commandDescription: "内容を確認します。",
+            classificationReason: "判断できません。",
+          }),
+        ),
+        {
+          classification: "unknown",
+          commandDescription: "内容を確認します。",
+          classificationReason: "判断できません。",
+        },
+        classification,
+      );
+    }
   });
 
   it("不正なJSONはunknownを返す", () => {

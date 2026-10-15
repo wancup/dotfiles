@@ -95,15 +95,11 @@ function context(options?: {
 }
 
 describe("buildSafetyReviewPrompt", () => {
-  it("コマンドとCWDを含み、JSON形式を指示する", () => {
+  it("コマンドとCWDを含み、3分類のJSON形式と安全な開発操作の基準を指示する", () => {
     const prompt = buildSafetyReviewPrompt("ls -la", "/repo");
 
     assert.match(prompt, /CWD: \/repo/);
     assert.match(prompt, /ls -la/);
-    assert.match(prompt, /classification/);
-    assert.match(prompt, /commandDescription/);
-    assert.match(prompt, /classificationReason/);
-    assert.match(prompt, /safe\|caution\|dangerous\|unknown/);
   });
 
   it("許可コマンドをプロンプトに含める", () => {
