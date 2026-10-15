@@ -6,6 +6,7 @@
     "github>kachick/renovate-config-dprint#1.4.0"
   ],
   "minimumReleaseAge": "5 days",
+  "commitMessagePrefix": "deps:",
   "packageRules": [
     {
       "matchPackageNames": [
@@ -20,6 +21,30 @@
         "npm"
       ],
       "minimumReleaseAge": "5 days"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "commitMessagePrefix": "ci:"
+    },
+    {
+      "matchDatasources": ["npm"],
+      "commitMessagePrefix": "npm:"
+    },
+    {
+      "matchFileNames": ["**/aqua.yaml", "**/aqua.yml", "**/.aqua.yaml", "**/.aqua.yml"],
+      "commitMessagePrefix": "aqua:"
+    },
+    {
+      "matchPackageNames": ["aquaproj/aqua"],
+      "commitMessagePrefix": "aqua:"
+    },
+    {
+      "matchFileNames": ["dprint.json"],
+      "commitMessagePrefix": "dprint:"
+    },
+    {
+      "matchFileNames": ["renovate.json"],
+      "commitMessagePrefix": "renovate:"
     },
     {
       "groupName": "pi",
