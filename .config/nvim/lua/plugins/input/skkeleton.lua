@@ -15,6 +15,7 @@ return {
 			userDictionary = "~/.local/state/skkeleton",
 		})
 		vim.fn["skkeleton#register_kanatable"]("rom", {
+			["L"] = false, -- 全角英数モードへの移行を無効化
 			-- [" "] = { "　" }, -- skkleton issue 183
 			["("] = { "（" },
 			[")"] = { "）" },
