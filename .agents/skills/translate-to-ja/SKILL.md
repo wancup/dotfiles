@@ -2,6 +2,7 @@
 name: translate-to-ja
 description: 英語テキストを日本語に翻訳する。
 argument-hint: <翻訳したいテキスト、ファイルパス、またはURL>
+disable-model-invocation: true
 allowed-tools: Read, Glob
 ---
 
