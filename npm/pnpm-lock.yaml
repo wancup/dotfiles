@@ -191,8 +191,8 @@ importers:
         specifier: 4.10.0
         version: 4.10.0
       yaml-language-server:
-        specifier: 1.24.0
-        version: 1.24.0
+        specifier: 1.25.0
+        version: 1.25.0
 
 packages:
 
@@ -2252,8 +2252,8 @@ packages:
     resolution: {integrity: sha512-3qVyCOexLCWw06PQa5kRPwvMWMZ/eZeCRWUvgD6a0OkqL/4iCnxy2WumbWifa937Uo5xhyWJ0uxlU39ljhNh7A==}
     hasBin: true
 
-  yaml-language-server@1.24.0:
-    resolution: {integrity: sha512-+HGcwu4M7IC+UDhDZScTZR8qsl2MMj/X1E5e83QcWzWn2pctj0fv8HHdrHHcbc1KB3CuRPJ4gc1Nm36D0iCu0g==}
+  yaml-language-server@1.25.0:
+    resolution: {integrity: sha512-SDMkX/TWbP7yzTpvB5PAvirdfwlB+oqkXRZLQ6jR4f1XP42cF/mVeN35Mc1TIG2Dh0dpW82V3NSZ7vaVrdSyZw==}
     hasBin: true
 
   yaml@2.8.3:
@@ -4427,7 +4427,7 @@ snapshots:
       vscode-uri: 3.2.0
       yaml: 2.8.3
 
-  yaml-language-server@1.24.0:
+  yaml-language-server@1.25.0:
     dependencies:
       '@vscode/l10n': 0.0.18
       ajv: 8.20.0
@@ -4438,9 +4438,9 @@ snapshots:
       prettier: 3.9.6
       request-light: 0.5.8
       vscode-languageserver: 9.0.1
-      vscode-languageserver-textdocument: 1.0.13
+      vscode-languageserver-textdocument: 1.0.14
       vscode-languageserver-types: 3.17.5
-      vscode-uri: 3.1.0
+      vscode-uri: 3.2.0
       yaml: 2.8.3
 
   yaml@2.8.3: {}
