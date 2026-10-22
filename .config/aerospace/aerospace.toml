@@ -252,6 +252,9 @@ run = "layout floating"
 [[on-window-detected]]
 if.app-id = "io.zsa.keymapp"
 run = "layout floating"
+[[on-window-detected]]
+if.app-id = "com.electron.dockerdesktop"
+run = "layout floating"
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
