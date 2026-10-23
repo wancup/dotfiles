@@ -761,8 +761,13 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/sharkdp/hyperfine/v2.0.0/hyperfine-v2.0.0-aarch64-unknown-linux-gnu.tar.gz",
-      "checksum": "F8244D1E17F8DA23EE6B3AE2CDC04A6A185A450F6B74E09BFF12E498038FCBC9",
+      "id": "github_release/github.com/sharkdp/hyperfine/v2.0.0/hyperfine-v2.0.0-aarch64-apple-darwin.tar.gz",
+      "checksum": "590B839CFEA386B384CE0B42D16DAF2910277CF30950656194BB3A5F20DEA81E",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/sharkdp/hyperfine/v2.0.0/hyperfine-v2.0.0-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "F0591C2CB8F66F2D2624D23979CF96DC99A67CB935F9925C82B9A4E3FFE5B2E1",
       "algorithm": "sha256"
     },
     {
@@ -1006,8 +1011,8 @@
       "algorithm": "sha256"
     },
     {
-      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.572.0/registry.yaml",
-      "checksum": "4243DD2A71177D47B876247242815C95B077332C9D3A10C56184B1CF76609F71",
+      "id": "registries/github_content/github.com/aquaproj/aqua-registry/v4.574.1/registry.yaml",
+      "checksum": "B4F0E425BC813721E1BD4CD7DECA9FDEA64BE0AFD759F529E3122AE5E1B584F3",
       "algorithm": "sha256"
     }
   ]
