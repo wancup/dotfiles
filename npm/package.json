@@ -11,7 +11,7 @@
     "gitmoji-cli": "9.7.0",
     "typescript": "7.0.2",
     "vscode-langservers-extracted": "4.10.0",
-    "yaml-language-server": "1.25.0"
+    "yaml-language-server": "2.0.0"
   },
   "packageManager": "pnpm@12.14.0"
 }
