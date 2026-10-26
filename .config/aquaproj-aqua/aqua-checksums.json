@@ -281,23 +281,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dprint/dprint/0.64.0/dprint-aarch64-apple-darwin.zip",
-      "checksum": "791560CF48299933A9FFF2AEA93B7E42B39E62D8A109634619D01C4F2C1AA68A",
+      "id": "github_release/github.com/dprint/dprint/0.64.1/dprint-aarch64-apple-darwin.zip",
+      "checksum": "D2A6E67E6AA308ED13D09627E8A8E8FE2CD3F62AEB406FE653D59BCEC2C25C47",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dprint/dprint/0.64.0/dprint-aarch64-unknown-linux-musl.zip",
-      "checksum": "6366CDA97E81DE1BBC54D91D461E857AFA595FEB568BD1BEC94AB2122E13D969",
+      "id": "github_release/github.com/dprint/dprint/0.64.1/dprint-aarch64-unknown-linux-musl.zip",
+      "checksum": "C8826C0B72FC0E1655404BF91FC29F821C01436E53152788E417DF13A40D0671",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dprint/dprint/0.64.0/dprint-x86_64-apple-darwin.zip",
-      "checksum": "C5EB2A8B07E12D32818EE9F3C19C708D88BE2C974EEDAAB7C4A31E902E30F429",
+      "id": "github_release/github.com/dprint/dprint/0.64.1/dprint-x86_64-apple-darwin.zip",
+      "checksum": "8A6F9D9E75E0379FB1B7FBC4A4528D33F72E050075BBA7B20445BE975A6D3273",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/dprint/dprint/0.64.0/dprint-x86_64-unknown-linux-musl.zip",
-      "checksum": "21AC931303BB420BBDF3E0589506E5C32611C9FCFF4ED2EB9802DB657C499E9A",
+      "id": "github_release/github.com/dprint/dprint/0.64.1/dprint-x86_64-unknown-linux-musl.zip",
+      "checksum": "AAD2EE102014C563112DCDAD65E131DBCFE123355EF948AE91D806E833CDBF40",
       "algorithm": "sha256"
     },
     {
