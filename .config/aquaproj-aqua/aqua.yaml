@@ -33,7 +33,7 @@ packages:
   - name: watchexec/watchexec@v2.8.0
   - name: zaghaghi/openapi-tui@0.10.2
   - name: dprint/dprint@0.64.1
-  - name: astral-sh/ruff@0.17.1
+  - name: astral-sh/ruff@0.17.2
   - name: hadolint/hadolint@v2.15.1
   - name: sharkdp/hexyl@v0.17.0
   - name: lsd-rs/lsd@v1.2.0
