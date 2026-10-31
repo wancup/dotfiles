@@ -66,7 +66,6 @@ vim.lsp.enable({
 	"yamlls",
 	"gopls",
 })
-vim.lsp.inlay_hint.enable(true)
 
 -- Custom Filetype
 vim.filetype.add({
