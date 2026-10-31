@@ -8,7 +8,6 @@ brew install imagemagick
 if [ "$(uname)" = 'Darwin' ]; then
   brew install wezterm
   brew install FelixKratz/formulae/borders
-  brew install --cask macskk
   brew install --cask nikitabobko/tap/aerospace
 
   brew install font-noto-emoji

@@ -42,9 +42,6 @@ return {
 
 		cmp.setup({
 			enabled = function()
-				if vim.fn.exists("skkeleton#is_enabled") and vim.fn["skkeleton#is_enabled"]() then
-					return false
-				end
 				local disabled = false
 
 				disabled = disabled or (vim.api.nvim_get_option_value("buftype", { buf = 0 }) == "prompt")
