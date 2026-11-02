@@ -24,4 +24,7 @@ return {
 			gitsigns = true,
 		},
 	},
+	init = function()
+		vim.g.scrollbar_v2_notice = false
+	end,
 }
