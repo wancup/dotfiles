@@ -49,6 +49,7 @@
   },
   "model": "opus",
   "autoMemoryEnabled": false,
+  "syncClaudeAiSkills": false,
   "hooks": {
     "Notification": [
       {
