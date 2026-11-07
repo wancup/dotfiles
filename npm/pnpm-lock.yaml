@@ -173,8 +173,8 @@ importers:
         specifier: 1.4.0
         version: 1.4.0(@aws-sdk/credential-provider-node@3.972.84)(@smithy/signature-v4@5.7.3)(supports-color@10.2.2)(ws@8.21.3)(zod@3.25.76)
       '@playwright/cli':
-        specifier: 0.1.22
-        version: 0.1.22
+        specifier: 0.1.23
+        version: 0.1.23
       bash-language-server:
         specifier: 5.8.1
         version: 5.8.1
@@ -465,8 +465,8 @@ packages:
   '@one-ini/wasm@0.2.1':
     resolution: {integrity: sha512-TUqERXGNTifZ9y2g3wPxQrw3HpHv/02DsW3D90T9x0hhonrL1ZqpSmNrU2XkoIq0fP1N6gZfVQzy2Fw1ZvGBNg==}
 
-  '@playwright/cli@0.1.22':
-    resolution: {integrity: sha512-6WMkQNM4VEzqMkdr/l60X9Cr7i+tI/arK87IWz2K7pB6j8I2ZJ8KN+1JfhJDLnK+SXnab6Op8xGt4adcGLsyfA==}
+  '@playwright/cli@0.1.23':
+    resolution: {integrity: sha512-+TuHfVgpK1SIlwyV7bcZ9SRRhnVOAIwJwxZCgEh5LWkZuyGfSYnHNx8J7H78dhCwMyLkJtGb/j5XICjzEKzrfg==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -1611,13 +1611,13 @@ packages:
     resolution: {integrity: sha512-RvwwcruNjI1ncT5xRakeyS9Lf8lcItv34KD+aif+VH9kduAyfYBipGh12274xtenIPZ119/R9BdTBa8gAwSh0A==}
     engines: {node: '>=12'}
 
-  playwright-core@1.64.0-alpha-1790635538000:
-    resolution: {integrity: sha512-pNwaXirhXMRLaRQs4NQ18EpTdtDoFwyPH9FOaaDC7YXG4hpwE2xmwCic/1srbuExVQC7zT9LJSJpDBAru+Vo9A==}
+  playwright-core@1.65.0-alpha-2026-10-30:
+    resolution: {integrity: sha512-LPMw8B/HRQKMcJeXTqWSrkB/AfCKKmbDQMbu0p7zg8MgibOWaKMjZWR/StAtrQkOxvOmZEju1o1TnPgdoOCwrg==}
     engines: {node: '>=20'}
     hasBin: true
 
-  playwright@1.64.0-alpha-1790635538000:
-    resolution: {integrity: sha512-/5XDUMxpOd/9AojJtWDFIRV3EJZNQ0AwvK69wgt3CPzy8wTgiBG9pX45VfxtqtvIRGwfWzMhrvawNKreG69Snw==}
+  playwright@1.65.0-alpha-2026-10-30:
+    resolution: {integrity: sha512-dmAJMVHKzHvMQjn+XDcaq/pxaZ0W6n8i78rwTM+VGRtQ3WBF5ZiSdB1yL/cyoYUGUMwg3jxN65KqC9cERaCbIg==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -2581,10 +2581,10 @@ snapshots:
 
   '@one-ini/wasm@0.2.1': {}
 
-  '@playwright/cli@0.1.22':
+  '@playwright/cli@0.1.23':
     dependencies:
-      playwright: 1.64.0-alpha-1790635538000
-      playwright-core: 1.64.0-alpha-1790635538000
+      playwright: 1.65.0-alpha-2026-10-30
+      playwright-core: 1.65.0-alpha-2026-10-30
 
   '@pnpm/config.env-replace@1.1.0': {}
 
@@ -3679,11 +3679,11 @@ snapshots:
 
   picomatch@4.0.5: {}
 
-  playwright-core@1.64.0-alpha-1790635538000: {}
+  playwright-core@1.65.0-alpha-2026-10-30: {}
 
-  playwright@1.64.0-alpha-1790635538000:
+  playwright@1.65.0-alpha-2026-10-30:
     dependencies:
-      playwright-core: 1.64.0-alpha-1790635538000
+      playwright-core: 1.65.0-alpha-2026-10-30
 
   prelude-ls@1.2.1: {}
 
