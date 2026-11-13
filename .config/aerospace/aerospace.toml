@@ -201,6 +201,9 @@ run = "move-node-to-workspace 0"
 [[on-window-detected]]
 if.app-id = "com.google.Chrome"
 run = "move-node-to-workspace 0"
+[[on-window-detected]]
+if.app-id = "com.openai.codex"
+run = "move-node-to-workspace 0"
 
 # Media
 [[on-window-detected]]
@@ -254,6 +257,9 @@ if.app-id = "io.zsa.keymapp"
 run = "layout floating"
 [[on-window-detected]]
 if.app-id = "com.electron.dockerdesktop"
+run = "layout floating"
+[[on-window-detected]]
+if.app-id = "com.bitwarden.desktop"
 run = "layout floating"
 
 # 'service' binding mode declaration.
