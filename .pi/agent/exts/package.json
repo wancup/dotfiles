@@ -6,9 +6,9 @@
     "test": "node --test 'src/**/*.test.ts'"
   },
   "devDependencies": {
-    "@earendil-works/pi-ai": "1.5.1",
-    "@earendil-works/pi-coding-agent": "1.5.1",
-    "@earendil-works/pi-tui": "1.5.1",
+    "@earendil-works/pi-ai": "1.5.2",
+    "@earendil-works/pi-coding-agent": "1.5.2",
+    "@earendil-works/pi-tui": "1.5.2",
     "typescript": "7.0.2"
   },
   "packageManager": "pnpm@12.19.0"
