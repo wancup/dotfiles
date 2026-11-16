@@ -51,5 +51,8 @@
       "matchDatasources": ["npm"],
       "matchPackageNames": ["/^@earendil-works//"]
     }
-  ]
+  ],
+  "lockFileMaintenance": {
+    "enabled": true
+  }
 }
