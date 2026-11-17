@@ -11,5 +11,5 @@
     "@earendil-works/pi-tui": "1.5.2",
     "typescript": "7.0.2"
   },
-  "packageManager": "pnpm@12.19.0"
+  "packageManager": "pnpm@12.20.0"
 }
