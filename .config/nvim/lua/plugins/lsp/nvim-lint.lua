@@ -6,11 +6,6 @@ return {
 		lint.linters_by_ft = {
 			fish = { "fish" },
 			dockerfile = { "hadolint" },
-			astro = { "eslint_d" },
-			javascript = { "eslint_d" },
-			javascriptreact = { "eslint_d" },
-			typescript = { "eslint_d" },
-			typescriptreact = { "eslint_d" },
 			go = { "golangcilint" },
 			rust = { "clippy" },
 			["yaml.gha"] = { "actionlint" },

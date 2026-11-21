@@ -71,19 +71,6 @@ return {
 				prettierd = {
 					require_cwd = true,
 				},
-				eslint_d = {
-					cwd = require("conform.util").root_file({
-						"eslint.config.js",
-						"eslint.config.mjs",
-						-- ↓ Legacy Config
-						".eslintrc.js",
-						".eslintrc.cjs",
-						".eslintrc.yaml",
-						".eslintrc.yml",
-						".eslintrc.json",
-					}),
-					require_cwd = true,
-				},
 			},
 			formatters_by_ft = {
 				lua = { "stylua" },
@@ -122,42 +109,36 @@ return {
 				astro = function(bufnr)
 					return {
 						get_available_formatter(bufnr, "prettierd", "prettier"),
-						"eslint_d",
 						lsp_format = "first",
 					}
 				end,
 				vue = function(bufnr)
 					return {
 						get_available_formatter(bufnr, "prettierd", "prettier"),
-						"eslint_d",
 						lsp_format = "first",
 					}
 				end,
 				javascript = function(bufnr)
 					return {
 						get_available_formatter(bufnr, "prettierd", "prettier"),
-						"eslint_d",
 						lsp_format = "first",
 					}
 				end,
 				javascriptreact = function(bufnr)
 					return {
 						get_available_formatter(bufnr, "prettierd", "prettier"),
-						"eslint_d",
 						lsp_format = "first",
 					}
 				end,
 				typescript = function(bufnr)
 					return {
 						get_available_formatter(bufnr, "prettierd", "prettier"),
-						"eslint_d",
 						lsp_format = "first",
 					}
 				end,
 				typescriptreact = function(bufnr)
 					return {
 						get_available_formatter(bufnr, "prettierd", "prettier"),
-						"eslint_d",
 						lsp_format = "first",
 					}
 				end,
