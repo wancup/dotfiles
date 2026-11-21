@@ -67,6 +67,17 @@ tools:
     lint-formats:
       - "%f:%l:%c: %m"
 
+  yaml-ghalint: &yaml-ghalint
+    lint-source: ghalint
+    lint-command: "ghalint --log-color never run"
+    lint-stdin: false
+    lint-ignore-exit-code: true
+    lint-after-open: true
+    lint-on-save: true
+    lint-formats:
+      - '%E%.%# ERR %.%# reference=%*\S %m'
+      - "%E%.%# ERR %m"
+
 languages:
   =:
     - <<: *any-typos
@@ -78,3 +89,4 @@ languages:
     - <<: *go-golangci-lint
   yaml.gha:
     - <<: *yaml-actionlint
+    - <<: *yaml-ghalint
