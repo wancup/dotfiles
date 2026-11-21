@@ -53,6 +53,7 @@ vim.lsp.enable({
 	"bashls",
 	"cssls",
 	"dprint",
+	"efm",
 	"html",
 	"jsonls",
 	"lua_ls",

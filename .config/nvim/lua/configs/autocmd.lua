@@ -13,6 +13,23 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 })
 
+-- Run the wildcard linter even when no FileType event is emitted.
+vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+	group = augroup("EfmWithoutFiletype"),
+	callback = function(event)
+		if vim.bo[event.buf].filetype == "" then
+			local config = vim.deepcopy(vim.lsp.config.efm)
+			if not config or type(config.root_dir) ~= "function" then
+				return
+			end
+			config.root_dir(event.buf, function(root)
+				config.root_dir = root
+				vim.lsp.start(config, { bufnr = event.buf })
+			end)
+		end
+	end,
+})
+
 vim.api.nvim_create_autocmd("BufReadPost", {
 	group = augroup("PackageOutdated"),
 	pattern = { "package.json", "pnpm-workspace.yaml" },

@@ -3,6 +3,7 @@
 version: 2
 lint-debounce: 1s
 format-debounce: 0.5s
+provide-definition: false
 
 root-markers:
   - .git/
@@ -10,36 +11,70 @@ root-markers:
 tools:
   any-typos: &any-typos
     lint-source: typos
-    lint-debounce: 3s
     lint-command: "typos - --format brief"
     lint-ignore-exit-code: true
     lint-stdin: true
     lint-severity: 3
     lint-formats:
-      - "-:%l:%c: %m"
+      - "-:%l:%c: error: %m"
+
+  fish-fish: &fish-fish
+    lint-source: fish
+    lint-command: "fish --no-execute /dev/stdin"
+    lint-stdin: true
+    lint-ignore-exit-code: true
+    lint-after-open: true
+    lint-formats:
+      - "%E/dev/stdin (line %l): %m"
+      - "%C%p^"
+      - "%C%.%#"
 
   dockerfile-hadolint: &dockerfile-hadolint
     lint-source: hadolint
     lint-command: "hadolint --no-color -"
     lint-stdin: true
+    lint-ignore-exit-code: true
+    lint-after-open: true
+    lint-category-map:
+      s: N
     lint-formats:
-      - "%f:%l DL%n %t%.%#: %m"
+      - "%f:%l DL%n %t%*[^:]: %m"
+      - "%f:%l SC%n %t%*[^:]: %m"
+
+  go-golangci-lint: &go-golangci-lint
+    lint-source: golangci-lint
+    lint-command: >-
+      golangci-lint run --path-mode=abs --show-stats=false
+      --output.text.path=stdout --output.text.colors=false --output.text.print-issued-lines=false ./...
+    root-markers:
+      - go.mod
+    require-marker: true
+    lint-workspace: true
+    lint-ignore-exit-code: true
+    lint-after-open: true
+    lint-severity: 2
+    lint-formats:
+      - "%f:%l:%c: %m"
+      - "%f:%l: %m"
 
   yaml-actionlint: &yaml-actionlint
     lint-source: actionlint
     lint-command: "actionlint -no-color -oneline -"
     lint-stdin: true
-    lint-formats:
-      - "%f:%l:%c: %.%#: SC%n:%trror:%m"
-      - "%f:%l:%c: %.%#: SC%n:%tarning:%m"
-      - "%f:%l:%c: %.%#: SC%n:%tnfo:%m"
-      - "%f:%l:%c: %m"
+    lint-ignore-exit-code: true
     lint-after-open: true
+    lint-severity: 2
+    lint-formats:
+      - "%f:%l:%c: %m"
 
 languages:
   =:
     - <<: *any-typos
+  fish:
+    - <<: *fish-fish
   dockerfile:
     - <<: *dockerfile-hadolint
+  go:
+    - <<: *go-golangci-lint
   yaml.gha:
     - <<: *yaml-actionlint
