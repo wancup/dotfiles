@@ -6,12 +6,16 @@ on:
 jobs:
   checks:
     runs-on: ubuntu-latest
-    permissions: read-all
+    timeout-minutes: 15
+    permissions:
+      contents: read
     env:
       AQUA_GLOBAL_CONFIG: .config/aquaproj-aqua/aqua.yaml
 
     steps:
       - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
 
       - uses: aquaproj/aqua-installer@v4.1.1
         with:
