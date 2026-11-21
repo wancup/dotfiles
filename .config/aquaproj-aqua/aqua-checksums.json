@@ -796,23 +796,23 @@
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/static-web-server/static-web-server/v2.44.2/static-web-server-v2.44.2-aarch64-apple-darwin.tar.gz",
-      "checksum": "40B35F6C3D6A503EC4BC9182B1DF047C2828D69F33C5D674D979AE53C3A3521D",
+      "id": "github_release/github.com/static-web-server/static-web-server/v2.44.3/static-web-server-v2.44.3-aarch64-apple-darwin.tar.gz",
+      "checksum": "23221B2DBD5F0E89FEE8C614DEB7995EAF81448A67E067F4ADEADFFF4FE292B4",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/static-web-server/static-web-server/v2.44.2/static-web-server-v2.44.2-aarch64-unknown-linux-musl.tar.gz",
-      "checksum": "2FAB8B2DCAFEF51C7B8C22855DBB29C686EFB82216BC832AAFABB3D06823A665",
+      "id": "github_release/github.com/static-web-server/static-web-server/v2.44.3/static-web-server-v2.44.3-aarch64-unknown-linux-musl.tar.gz",
+      "checksum": "92122A4006E2D7C8DFD6525809FE266E220C7A047C98739566506614F0F16EDD",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/static-web-server/static-web-server/v2.44.2/static-web-server-v2.44.2-x86_64-apple-darwin.tar.gz",
-      "checksum": "9E1BE45F41F4A9057D9F3BD740157EF6239B7F1889DD95D9A855A2361CFB7299",
+      "id": "github_release/github.com/static-web-server/static-web-server/v2.44.3/static-web-server-v2.44.3-x86_64-apple-darwin.tar.gz",
+      "checksum": "0DB04B0F885F7329FF229533D6D3BA300527E97FD81205D6BF5BD5CE9E1C7870",
       "algorithm": "sha256"
     },
     {
-      "id": "github_release/github.com/static-web-server/static-web-server/v2.44.2/static-web-server-v2.44.2-x86_64-unknown-linux-musl.tar.gz",
-      "checksum": "B4CA0495EB132A9F88317DDDE9E3FD572586BC9CDF9BD86931A1241EA7D731EB",
+      "id": "github_release/github.com/static-web-server/static-web-server/v2.44.3/static-web-server-v2.44.3-x86_64-unknown-linux-musl.tar.gz",
+      "checksum": "D97A9C74BE2E547C80669BCF797C1254FB3D4BAC92600967081DC60F594CE30A",
       "algorithm": "sha256"
     },
     {
