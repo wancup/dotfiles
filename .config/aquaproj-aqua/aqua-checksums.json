@@ -816,6 +816,26 @@
       "algorithm": "sha256"
     },
     {
+      "id": "github_release/github.com/suzuki-shunsuke/ghalint/v1.6.0/ghalint_1.6.0_darwin_amd64.tar.gz",
+      "checksum": "0B5CEDA34753D74B6FD024BA6306FA332CD03C855801430BD7CBD44A94692252",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghalint/v1.6.0/ghalint_1.6.0_darwin_arm64.tar.gz",
+      "checksum": "427ACB85CB6CDDA8828BF46643825B47CB46E6D2D5D3FA4F60B7BDFEE194D2C7",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghalint/v1.6.0/ghalint_1.6.0_linux_amd64.tar.gz",
+      "checksum": "EDA1AF79C1A4A31C2DE5831CD1333AD582FA6FA72015F8E9C1C4525D550C1D35",
+      "algorithm": "sha256"
+    },
+    {
+      "id": "github_release/github.com/suzuki-shunsuke/ghalint/v1.6.0/ghalint_1.6.0_linux_arm64.tar.gz",
+      "checksum": "F9D8E20A75C934D21EE6AB1967EB79FA125237EF5633C6BFD03B27999C6A6CDA",
+      "algorithm": "sha256"
+    },
+    {
       "id": "github_release/github.com/suzuki-shunsuke/pinact/v5.0.2/pinact_darwin_amd64.tar.gz",
       "checksum": "8FB6A0EE87B59BC2778371527C58A46073D5E289919BBD1C2559EFF7EFEB74E3",
       "algorithm": "sha256"

@@ -63,3 +63,4 @@ packages:
   - name: fallow-rs/fallow@v3.43.1
   - name: LuaLS/lua-language-server@3.19.2
   - name: golang.org/x/tools/gopls@v0.24.0
+  - name: suzuki-shunsuke/ghalint@v1.6.0
