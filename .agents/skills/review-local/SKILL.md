@@ -2,7 +2,7 @@
 name: review-local
 description: GitHub Issueに対して現在のブランチのローカル実装をレビューする
 argument-hint: <Issue番号> [分岐元ブランチ]
-allowed-tools: Skill(fallow-review), Read, Glob, Grep, Bash(gh issue view:*), Bash(gh issue list:*), Bash(gh repo view:*), Bash(git rev-parse:*), Bash(git log:*), Bash(git diff:*)
+allowed-tools: Read, Glob, Grep, Bash(gh issue view:*), Bash(gh issue list:*), Bash(gh repo view:*), Bash(git rev-parse:*), Bash(git log:*), Bash(git diff:*)
 ---
 
 # Issue実装レビュー
@@ -34,20 +34,9 @@ GitHub上のIssue relationshipでParent issue等が設定されているか確�
 
 `git diff HEAD` でステージ済み・未ステージの両方を含む未コミット差分を取得。未コミットの変更がある場合は、レビュー結果内で **[未コミット]** と明示すること。
 
-### 2.4 TS/JSプロジェクトの構造チェック
-
-以下のいずれかに該当する場合はTS/JSプロジェクトとして扱う。
-
-- リポジトリに`package.json`、`tsconfig.json`、`jsconfig.json`のいずれかが存在する
-- 分岐元からの変更ファイルに`.ts`、`.tsx`、`.js`、`.jsx`、`.mjs`、`.cjs`のいずれかが含まれる
-
-TS/JSプロジェクトの場合は、Skillツールを使用して **fallow-review** スキルを呼び出す。argsにはステップ2.1で特定した **分岐元ref** のみを渡す。
-
-fallow-reviewの結果は意味的レビューとは別の構造チェックとして扱い、指摘事項・総合判定に反映する。fallow-reviewが`要修正`の場合はreview-localの総合判定も原則`要修正`、`要議論`の場合は原則`要議論`以上として扱う。ただし、fallow-reviewの懸念が今回の差分に関係しないことを差分から明確に判断できる場合は、その理由を明記したうえで判定を調整してよい。
-
 ## 3. レビューの実施
 
-対象Issueおよび親Issueの要件、実装差分、TS/JSプロジェクトの場合はfallow-reviewの結果を照らし合わせて、以下の観点でレビューする:
+対象Issueおよび親Issueの要件と実装差分を照らし合わせて、以下の観点でレビューする:
 
 - **要件の充足**: 対象Issueで求められている機能・修正がすべて実装されているか
 - **実装漏れ**: 対象Issueの要件に対して未対応の項目がないか
@@ -74,10 +63,6 @@ fallow-reviewの結果は意味的レビューとは別の構造チェックと�
 ### 指摘事項
 
 問題や改善提案があれば、該当ファイル・行番号とともに具体的に記載。
-
-### 構造チェック
-
-TS/JSプロジェクトとしてfallow-reviewを実行した場合は、サマリー・構造的な懸念・判定を要約して記載する。実行しなかった場合は、その理由を簡潔に記載する。
 
 ### 総合判定
 
