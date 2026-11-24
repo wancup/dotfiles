@@ -204,13 +204,13 @@ run = "move-node-to-workspace 0"
 [[on-window-detected]]
 if.app-id = "com.openai.codex"
 run = "move-node-to-workspace 0"
-
-# Media
-[[on-window-detected]]
-if.app-id = "com.apple.Notes"
-run = "move-node-to-workspace 9"
 [[on-window-detected]]
 if.app-id = "com.spotify.client"
+run = "move-node-to-workspace 0"
+
+# Sub Apps
+[[on-window-detected]]
+if.app-id = "com.apple.Notes"
 run = "move-node-to-workspace 9"
 [[on-window-detected]]
 if.app-id = "com.valvesoftware.steam"
