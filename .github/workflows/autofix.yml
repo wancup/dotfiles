@@ -21,7 +21,7 @@ jobs:
           ref: ${{ github.head_ref }}
           persist-credentials: false
 
-      - uses: aquaproj/aqua-installer@v4.1.1
+      - uses: aquaproj/aqua-installer@v4.1.2
         with:
           aqua_version: v2.66.1
           working_directory: .config/aquaproj-aqua
